@@ -151,7 +151,6 @@ local icons = {
 return {
   get_icon = function(name, ext)
     local by_name = icons[name]
-    local by_ext = icons[ext]
 
     if by_name then
       local s = name
@@ -168,6 +167,7 @@ return {
       s = (s:gsub("^%l", string.upper))
       return by_name, s .. "Icon"
     else
+      local by_ext = icons[ext]
       return by_ext, (ext:gsub("^%l", string.upper)) .. "Icon"
     end
   end,
