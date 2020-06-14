@@ -12,7 +12,7 @@ local icons = {
   ['.vimrc'] = '';
   ['.vimrc'] = '';
   ['.zshrc'] = '';
-  ['DOCKERFILE'] = '';
+  ['Dockerfile'] = '';
   ['Gemfile$'] = '';
   ['LICENSE'] = '';
   ['Vagrantfile$'] = '';
@@ -154,8 +154,11 @@ return {
     local by_ext = icons[ext]
 
     if by_name then
+      local s = name
+      -- lowercase
+      s = s:lower()
       -- strip leading dot
-      local s = name:gsub("^%.", "")
+      s = name:gsub("^%.", "")
       -- strip ext
       s = s:gsub("%..*$", "")
       -- capitalize letters after dashes or underlines
