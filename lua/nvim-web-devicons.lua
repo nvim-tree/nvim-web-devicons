@@ -809,8 +809,13 @@ local icons = {
   };
 }
 
+local default_icon = {
+  icon = "",
+  color = "#6d8086",
+  name = "Default",
+}
+
 local function get_highlight_name(data)
-  if not data then return nil end
   return data.name and data.name .. "DevIcon"
 end
 
@@ -822,12 +827,13 @@ return {
     if by_name then
       return by_name, get_highlight_name(icon_data)
     else
-      icon_data = icons[ext]
-      local by_ext = icon_data and icon_data.icon or nil
+      icon_data = icons[ext] or default_icon
+      local by_ext = icon_data.icon
       return by_ext, get_highlight_name(icon_data)
     end
   end,
   setup = function()
+    table.insert(icons, 0, default_icon)
     for _, icon_data in pairs(icons) do
       if icon_data.color and icon_data.name then
         local hl_group = get_highlight_name(icon_data)
