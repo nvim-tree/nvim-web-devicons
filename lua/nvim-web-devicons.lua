@@ -1,813 +1,729 @@
-local colors = {
-  [".1"]= "#ecdebe",
-  [".1in"]= "#ecdebe",
-  [".1m"]= "#ecdebe",
-  [".1x"]= "#ecdebe",
-  [".2"]= "#ecdebe",
-  [".3"]= "#ecdebe",
-  [".3in"]= "#ecdebe",
-  [".3m"]= "#ecdebe",
-  [".3p"]= "#ecdebe",
-  [".3pm"]= "#ecdebe",
-  [".3qt"]= "#ecdebe",
-  [".3x"]= "#ecdebe",
-  [".4"]= "#ecdebe",
-  [".4th"]= "#341708",
-  [".5"]= "#ecdebe",
-  [".6"]= "#ecdebe",
-  [".6pl"]= "#0000fb",
-  [".6pm"]= "#0000fb",
-  [".7"]= "#ecdebe",
-  [".8"]= "#ecdebe",
-  [".8xk"]= "#A0AA87",
-  [".8xk.txt"]= "#A0AA87",
-  [".8xp"]= "#A0AA87",
-  [".8xp.txt"]= "#A0AA87",
-  [".9"]= "#ecdebe",
-  [".E"]= "#ccce35",
-  [".ML"]= "#dc566d",
-  ["._coffee"]= "#244776",
-  ["._js"]= "#f1e05a",
-  ["._ls"]= "#499886",
-  [".a51"]= "#6E4C13",
-  [".abap"]= "#E8274B",
-  [".ada"]= "#02f88c",
-  [".adb"]= "#02f88c",
-  [".adp"]= "#e4cc98",
-  [".ads"]= "#02f88c",
-  [".agda"]= "#315665",
-  [".ahk"]= "#6594b9",
-  [".ahkl"]= "#6594b9",
-  [".aj"]= "#a957b0",
-  [".al"]= "#0298c3",
-  [".als"]= "#64C800",
-  [".ampl"]= "#E6EFBB",
-  [".angelscript"]= "#C7D7DC",
-  [".apib"]= "#2ACCA8",
-  [".apl"]= "#5A8164",
-  [".app.src"]= "#B83998",
-  [".applescript"]= "#101F1F",
-  [".arc"]= "#aa2afe",
-  [".as"]= "#C7D7DC",
-  [".asax"]= "#6a40fd",
-  [".asc"]= "#B9D9FF",
-  [".ascx"]= "#6a40fd",
-  [".asd"]= "#3fb68b",
-  [".ash"]= "#B9D9FF",
-  [".ashx"]= "#6a40fd",
-  [".asm"]= "#6E4C13",
-  [".asmx"]= "#6a40fd",
-  [".asp"]= "#6a40fd",
-  [".aspx"]= "#6a40fd",
-  [".asy"]= "#4a0c0c",
-  [".au3"]= "#1C3552",
-  [".aux"]= "#3D6117",
-  [".aw"]= "#4F5D95",
-  [".axd"]= "#6a40fd",
-  [".axi"]= "#0aa0ff",
-  [".axi.erb"]= "#747faa",
-  [".axs"]= "#0aa0ff",
-  [".axs.erb"]= "#747faa",
-  [".b"]= "#2F2530",
-  [".bal"]= "#FF5000",
-  [".bas"]= "#867db1",
-  [".bash"]= "#89e051",
-  [".bat"]= "#C1F12E",
-  [".bats"]= "#89e051",
-  [".bbx"]= "#3D6117",
-  [".bdy"]= "#dad8d8",
-  [".bf"]= "#2F2530",
-  [".bmx"]= "#cd6400",
-  [".bones"]= "#f1e05a",
-  [".boo"]= "#d4bec1",
-  [".boot"]= "#db5855",
-  [".bsl"]= "#814CCC",
-  [".builder"]= "#701516",
-  [".bzl"]= "#76d275",
-  [".c"]= "#555555",
-  [".c++"]= "#f34b7d",
-  [".cake"]= "#244776",
-  [".cats"]= "#555555",
-  [".cbx"]= "#3D6117",
-  [".cc"]= "#f34b7d",
-  [".ceylon"]= "#dfa535",
-  [".cfm"]= "#ed2cd6",
-  [".cfml"]= "#ed2cd6",
-  [".cgi"]= "#89e051",
-  [".ch"]= "#403a40",
-  [".chpl"]= "#8dc63f",
-  [".cirru"]= "#ccccff",
-  [".cjs"]= "#f1e05a",
-  [".cjsx"]= "#244776",
-  [".cl"]= "#3fb68b",
-  [".cl2"]= "#db5855",
-  [".click"]= "#E4E6F3",
-  [".clj"]= "#db5855",
-  [".cljc"]= "#db5855",
-  [".cljs"]= "#db5855",
-  [".cljs.hl"]= "#db5855",
-  [".cljscm"]= "#db5855",
-  [".cljx"]= "#db5855",
-  [".cls"]= "#867db1",
-  [".clw"]= "#db901e",
-  [".cmd"]= "#C1F12E",
-  [".cnc"]= "#D08CF2",
-  [".cocci"]= "#c94949",
-  [".coffee"]= "#244776",
-  [".command"]= "#89e051",
-  [".cp"]= "#B0CE4E",
-  [".cpp"]= "#f34b7d",
-  [".cps"]= "#B0CE4E",
-  [".cr"]= "#000100",
-  [".cs"]= "#596706",
-  [".css"]= "#563d7c",
-  [".csx"]= "#178600",
-  [".ctp"]= "#4F5D95",
-  [".cu"]= "#3A4E3A",
-  [".cuh"]= "#3A4E3A",
-  [".cwl"]= "#B5314C",
-  [".cxx"]= "#f34b7d",
-  [".d"]= "#427819",
-  [".dart"]= "#00B4AB",
-  [".dats"]= "#1ac620",
-  [".dcl"]= "#3F85AF",
-  [".ddl"]= "#dad8d8",
-  [".dfm"]= "#E3F171",
-  [".dfy"]= "#FFEC25",
-  [".dhall"]= "#dfafff",
-  [".di"]= "#ba595e",
-  [".djs"]= "#cca760",
-  [".dlm"]= "#a3522f",
-  [".dm"]= "#447265",
-  [".dockerfile"]= "#384d54",
-  [".dpr"]= "#E3F171",
-  [".druby"]= "#c7a938",
-  [".dsp"]= "#c37240",
-  [".dtx"]= "#3D6117",
-  [".duby"]= "#c7a938",
-  [".dwl"]= "#003a52",
-  [".dyalog"]= "#5A8164",
-  [".dyl"]= "#6c616e",
-  [".dylan"]= "#6c616e",
-  [".e"]= "#946d57",
-  [".ec"]= "#913960",
-  [".ecl"]= "#8a1267",
-  [".eclxml"]= "#8a1267",
-  [".eh"]= "#913960",
-  [".el"]= "#c065db",
-  [".eliom"]= "#3be133",
-  [".eliomi"]= "#3be133",
-  [".elm"]= "#60B5CC",
-  [".em"]= "#FFF4F3",
-  [".emacs"]= "#c065db",
-  [".emacs.desktop"]= "#c065db",
-  [".emberscript"]= "#FFF4F3",
-  [".eps"]= "#da291c",
-  [".epsi"]= "#da291c",
-  [".eq"]= "#a78649",
-  [".erl"]= "#B83998",
-  [".es"]= "#f1e05a",
-  [".es6"]= "#f1e05a",
-  [".escript"]= "#B83998",
-  [".ex"]= "#6e4a7e",
-  [".exs"]= "#6e4a7e",
-  [".eye"]= "#701516",
-  [".f"]= "#4d41b1",
-  [".f77"]= "#4d41b1",
-  [".factor"]= "#636746",
-  [".fan"]= "#14253c",
-  [".fancypack"]= "#7b9db4",
-  [".fcgi"]= "#89e051",
-  [".feature"]= "#5B2063",
-  [".flux"]= "#88ccff",
-  [".fnc"]= "#dad8d8",
-  [".for"]= "#4d41b1",
-  [".forth"]= "#341708",
-  [".fpp"]= "#4d41b1",
-  [".fr"]= "#00cafe",
-  [".frag"]= "#f1e05a",
-  [".frm"]= "#867db1",
-  [".frt"]= "#341708",
-  [".frx"]= "#867db1",
-  [".fs"]= "#341708",
-  [".fsi"]= "#b845fc",
-  [".fst"]= "#572e30",
-  [".fsx"]= "#b845fc",
-  [".fth"]= "#341708",
-  [".ftl"]= "#0050b2",
-  [".fun"]= "#dc566d",
-  [".fut"]= "#5f021f",
-  [".fx"]= "#88ccff",
-  [".fy"]= "#7b9db4",
-  [".g"]= "#D08CF2",
-  [".g4"]= "#9DC3FF",
-  [".gaml"]= "#FFC766",
-  [".gco"]= "#D08CF2",
-  [".gcode"]= "#D08CF2",
-  [".gd"]= "#355570",
-  [".gemspec"]= "#701516",
-  [".gf"]= "#79aa7a",
-  [".glf"]= "#c1ac7f",
-  [".gml"]= "#71b417",
-  [".gnu"]= "#f0a9f0",
-  [".gnuplot"]= "#f0a9f0",
-  [".go"]= "#00ADD8",
-  [".god"]= "#701516",
-  [".golo"]= "#88562A",
-  [".gp"]= "#f0a9f0",
-  [".groovy"]= "#e69f56",
-  [".grt"]= "#e69f56",
-  [".gs"]= "#f1e05a",
-  [".gst"]= "#82937f",
-  [".gsx"]= "#82937f",
-  [".gtpl"]= "#e69f56",
-  [".gvy"]= "#e69f56",
-  [".gyp"]= "#3572A5",
-  [".gypi"]= "#3572A5",
-  [".h"]= "#438eff",
-  [".h++"]= "#f34b7d",
-  [".hack"]= "#878787",
-  [".hats"]= "#1ac620",
-  [".hb"]= "#0e60e3",
-  [".hc"]= "#ffefaf",
-  [".hh"]= "#878787",
-  [".hhi"]= "#878787",
-  [".hic"]= "#db5855",
-  [".hpp"]= "#f34b7d",
-  [".hqf"]= "#3F3F3F",
-  [".hql"]= "#dce200",
-  [".hrl"]= "#B83998",
-  [".hs"]= "#5e5086",
-  [".hs-boot"]= "#5e5086",
-  [".hsc"]= "#5e5086",
-  [".htm"]= "#e34c26",
-  [".html"]= "#e34c26",
-  [".html.hl"]= "#e34c26",
-  [".hx"]= "#df7900",
-  [".hxsl"]= "#df7900",
-  [".hxx"]= "#f34b7d",
-  [".hy"]= "#7790B2",
-  [".i"]= "#6E4C13",
-  [".i3"]= "#223388",
-  [".ice"]= "#003fa2",
-  [".iced"]= "#244776",
-  [".icl"]= "#3F85AF",
-  [".idc"]= "#555555",
-  [".idr"]= "#b30000",
-  [".ig"]= "#223388",
-  [".ijs"]= "#9EEDFF",
-  [".ik"]= "#078193",
-  [".inc"]= "#5c7611",
-  [".inl"]= "#f34b7d",
-  [".ino"]= "#f34b7d",
-  [".ins"]= "#3D6117",
-  [".intr"]= "#6c616e",
-  [".io"]= "#a9188d",
-  [".iol"]= "#843179",
-  [".ipf"]= "#0000cc",
-  [".ipp"]= "#f34b7d",
-  [".ipynb"]= "#DA5B0B",
-  [".j"]= "#ff0c5a",
-  [".jake"]= "#f1e05a",
-  [".java"]= "#b07219",
-  [".jbuilder"]= "#701516",
-  [".jl"]= "#a270ba",
-  [".jq"]= "#40d47e",
-  [".js"]= "#f1e05a",
-  [".jsb"]= "#f1e05a",
-  [".jscad"]= "#f1e05a",
-  [".jsfl"]= "#f1e05a",
-  [".jsm"]= "#f1e05a",
-  [".jsonnet"]= "#0064bd",
-  [".jss"]= "#f1e05a",
-  [".kojo"]= "#c22d40",
-  [".krl"]= "#28430A",
-  [".ksh"]= "#89e051",
-  [".ksy"]= "#773b37",
-  [".kt"]= "#F18E33",
-  [".ktm"]= "#F18E33",
-  [".kts"]= "#F18E33",
-  [".l"]= "#ecdebe",
-  [".las"]= "#999999",
-  [".lasso"]= "#999999",
-  [".lasso8"]= "#999999",
-  [".lasso9"]= "#999999",
-  [".lbx"]= "#3D6117",
-  [".lex"]= "#DBCA00",
-  [".lfe"]= "#4C3023",
-  [".libsonnet"]= "#0064bd",
-  [".lid"]= "#6c616e",
-  [".lidr"]= "#b30000",
-  [".linq"]= "#178600",
-  [".lisp"]= "#87AED7",
-  [".ll"]= "#185619",
-  [".lmi"]= "#3572A5",
-  [".lol"]= "#cc9900",
-  [".lookml"]= "#652B81",
-  [".lpr"]= "#E3F171",
-  [".ls"]= "#499886",
-  [".lsl"]= "#3d9970",
-  [".lslp"]= "#3d9970",
-  [".lsp"]= "#87AED7",
-  [".ltx"]= "#3D6117",
-  [".lua"]= "#000080",
-  [".m"]= "#438eff",
-  [".m2"]= "#d8ffff",
-  [".m3"]= "#223388",
-  [".mak"]= "#427819",
-  [".make"]= "#427819",
-  [".man"]= "#ecdebe",
-  [".mask"]= "#f97732",
-  [".matlab"]= "#e16737",
-  [".maxhelp"]= "#c4a79c",
-  [".maxpat"]= "#c4a79c",
-  [".maxproj"]= "#c4a79c",
-  [".mcfunction"]= "#E22837",
-  [".mcr"]= "#00a6a6",
-  [".mdoc"]= "#ecdebe",
-  [".me"]= "#ecdebe",
-  [".metal"]= "#8f14e9",
-  [".mg"]= "#223388",
-  [".mirah"]= "#c7a938",
-  [".mjs"]= "#f1e05a",
-  [".mk"]= "#427819",
-  [".mkfile"]= "#427819",
-  [".mkii"]= "#3D6117",
-  [".mkiv"]= "#3D6117",
-  [".mkvi"]= "#3D6117",
-  [".ml"]= "#3be133",
-  [".ml4"]= "#3be133",
-  [".mli"]= "#3be133",
-  [".mlir"]= "#5EC8DB",
-  [".mll"]= "#3be133",
-  [".mly"]= "#3be133",
-  [".mm"]= "#6866fb",
-  [".mod"]= "#E6EFBB",
-  [".model.lkml"]= "#652B81",
-  [".moo"]= "#ff2b2b",
-  [".mq4"]= "#62A8D6",
-  [".mq5"]= "#4A76B8",
-  [".mqh"]= "#4A76B8",
-  [".mrc"]= "#926059",
-  [".ms"]= "#ecdebe",
-  [".mspec"]= "#701516",
-  [".mtml"]= "#b7e1f4",
-  [".mud"]= "#dc75e5",
-  [".mxt"]= "#c4a79c",
-  [".n"]= "#ecdebe",
-  [".nasm"]= "#6E4C13",
-  [".nc"]= "#94B0C7",
-  [".ncl"]= "#28431f",
-  [".ne"]= "#990000",
-  [".nearley"]= "#990000",
-  [".nf"]= "#3ac486",
-  [".nim"]= "#ffc200",
-  [".nim.cfg"]= "#ffc200",
-  [".nimble"]= "#ffc200",
-  [".nimrod"]= "#ffc200",
-  [".nims"]= "#ffc200",
-  [".nit"]= "#009917",
-  [".nix"]= "#7e7eff",
-  [".njs"]= "#f1e05a",
-  [".nl"]= "#87AED7",
-  [".nlogo"]= "#ff6375",
-  [".nqp"]= "#0000fb",
-  [".nr"]= "#ecdebe",
-  [".nse"]= "#000080",
-  [".nu"]= "#c9df40",
-  [".nut"]= "#800000",
-  [".ny"]= "#3fb68b",
-  [".odin"]= "#60AFFE",
-  [".ol"]= "#843179",
-  [".omgrofl"]= "#cabbff",
-  [".ooc"]= "#b0b77e",
-  [".opal"]= "#f7ede0",
-  [".os"]= "#814CCC",
-  [".oxygene"]= "#cdd0e3",
-  [".oz"]= "#fab738",
-  [".p"]= "#f0a9f0",
-  [".p4"]= "#7055b5",
-  [".p6"]= "#0000fb",
-  [".p6l"]= "#0000fb",
-  [".p6m"]= "#0000fb",
-  [".p8"]= "#000080",
-  [".pac"]= "#f1e05a",
-  [".pan"]= "#cc0000",
-  [".parrot"]= "#f3ca0a",
-  [".pas"]= "#E3F171",
-  [".pascal"]= "#E3F171",
-  [".pat"]= "#c4a79c",
-  [".pb"]= "#5a6986",
-  [".pbi"]= "#5a6986",
-  [".pbt"]= "#8f0f8d",
-  [".pck"]= "#dad8d8",
-  [".pd_lua"]= "#000080",
-  [".pde"]= "#0096D8",
-  [".pep"]= "#C76F5B",
-  [".perl"]= "#0298c3",
-  [".pfa"]= "#da291c",
-  [".ph"]= "#0298c3",
-  [".php"]= "#4F5D95",
-  [".php3"]= "#4F5D95",
-  [".php4"]= "#4F5D95",
-  [".php5"]= "#4F5D95",
-  [".phps"]= "#4F5D95",
-  [".phpt"]= "#4F5D95",
-  [".pig"]= "#fcd7de",
-  [".pike"]= "#005390",
-  [".pkb"]= "#dad8d8",
-  [".pks"]= "#dad8d8",
-  [".pl"]= "#0000fb",
-  [".pl6"]= "#0000fb",
-  [".plb"]= "#dad8d8",
-  [".plot"]= "#f0a9f0",
-  [".pls"]= "#dad8d8",
-  [".plsql"]= "#dad8d8",
-  [".plt"]= "#f0a9f0",
-  [".pluginspec"]= "#701516",
-  [".plx"]= "#0298c3",
-  [".pm"]= "#0000fb",
-  [".pm6"]= "#0000fb",
-  [".pmod"]= "#005390",
-  [".podsl"]= "#3fb68b",
-  [".podspec"]= "#701516",
-  [".pogo"]= "#d80074",
-  [".pp"]= "#302B6D",
-  [".prc"]= "#dad8d8",
-  [".prg"]= "#403a40",
-  [".pro"]= "#74283c",
-  [".prolog"]= "#74283c",
-  [".prw"]= "#403a40",
-  [".ps"]= "#da291c",
-  [".ps1"]= "#012456",
-  [".psc"]= "#6600cc",
-  [".psd1"]= "#012456",
-  [".psgi"]= "#0298c3",
-  [".psm1"]= "#012456",
-  [".purs"]= "#1D222D",
-  [".pwn"]= "#dbb284",
-  [".py"]= "#3572A5",
-  [".py3"]= "#3572A5",
-  [".pyde"]= "#3572A5",
-  [".pyi"]= "#3572A5",
-  [".pyp"]= "#3572A5",
-  [".pyt"]= "#3572A5",
-  [".pyw"]= "#3572A5",
-  [".q"]= "#0040cd",
-  [".qasm"]= "#AA70FF",
-  [".qbs"]= "#44a51c",
-  [".qml"]= "#44a51c",
-  [".qs"]= "#00b841",
-  [".r"]= "#358a5b",
-  [".r2"]= "#358a5b",
-  [".r3"]= "#358a5b",
-  [".rabl"]= "#701516",
-  [".rake"]= "#701516",
-  [".raml"]= "#77d9fb",
-  [".rb"]= "#701516",
-  [".rbi"]= "#701516",
-  [".rbuild"]= "#701516",
-  [".rbw"]= "#701516",
-  [".rbx"]= "#701516",
-  [".rbxs"]= "#000080",
-  [".rd"]= "#198CE7",
-  [".re"]= "#ff5847",
-  [".reb"]= "#358a5b",
-  [".rebol"]= "#358a5b",
-  [".red"]= "#f50000",
-  [".reds"]= "#f50000",
-  [".rei"]= "#ff5847",
-  [".rg"]= "#cc0088",
-  [".ring"]= "#2D54CB",
-  [".riot"]= "#A71E49",
-  [".rkt"]= "#3c5caa",
-  [".rktd"]= "#3c5caa",
-  [".rktl"]= "#3c5caa",
-  [".rl"]= "#9d5200",
-  [".rnh"]= "#665a4e",
-  [".rno"]= "#ecdebe",
-  [".rockspec"]= "#000080",
-  [".roff"]= "#ecdebe",
-  [".rpy"]= "#ff7f7f",
-  [".rs"]= "#dea584",
-  [".rs.in"]= "#dea584",
-  [".rsc"]= "#fffaa0",
-  [".rsx"]= "#198CE7",
-  [".ru"]= "#701516",
-  [".ruby"]= "#701516",
-  [".sas"]= "#B34936",
-  [".sats"]= "#1ac620",
-  [".sbt"]= "#c22d40",
-  [".sc"]= "#46390b",
-  [".scala"]= "#c22d40",
-  [".scd"]= "#46390b",
-  [".sch"]= "#1e4aec",
-  [".scm"]= "#1e4aec",
-  [".scpt"]= "#101F1F",
-  [".scrbl"]= "#3c5caa",
-  [".sed"]= "#64b970",
-  [".self"]= "#0579aa",
-  [".sexp"]= "#3fb68b",
-  [".sh"]= "#89e051",
-  [".sh.in"]= "#89e051",
-  [".shen"]= "#120F14",
-  [".sig"]= "#dc566d",
-  [".sj"]= "#ff0c5a",
-  [".sjs"]= "#f1e05a",
-  [".sl"]= "#007eff",
-  [".sld"]= "#1e4aec",
-  [".sls"]= "#1e4aec",
-  [".sma"]= "#dbb284",
-  [".smk"]= "#3572A5",
-  [".sml"]= "#dc566d",
-  [".sp"]= "#5c7611",
-  [".spc"]= "#dad8d8",
-  [".spec"]= "#701516",
-  [".spin"]= "#7fa2a7",
-  [".sps"]= "#1e4aec",
-  [".sqf"]= "#3F3F3F",
-  [".sql"]= "#dad8d8",
-  [".sra"]= "#8f0f8d",
-  [".srt"]= "#348a34",
-  [".sru"]= "#8f0f8d",
-  [".srw"]= "#8f0f8d",
-  [".ss"]= "#1e4aec",
-  [".ssjs"]= "#f1e05a",
-  [".st"]= "#596706",
-  [".stan"]= "#b2011d",
-  [".sty"]= "#3D6117",
-  [".sv"]= "#DAE1C2",
-  [".svh"]= "#DAE1C2",
-  [".swift"]= "#ffac45",
-  [".t"]= "#cf142b",
-  [".tac"]= "#3572A5",
-  [".tcc"]= "#f34b7d",
-  [".tcl"]= "#e4cc98",
-  [".tex"]= "#3D6117",
-  [".thor"]= "#701516",
-  [".thy"]= "#FEFE00",
-  [".tm"]= "#e4cc98",
-  [".tmac"]= "#ecdebe",
-  [".tmux"]= "#89e051",
-  [".toc"]= "#3D6117",
-  [".tool"]= "#89e051",
-  [".tpb"]= "#dad8d8",
-  [".tpp"]= "#f34b7d",
-  [".tps"]= "#dad8d8",
-  [".trg"]= "#dad8d8",
-  [".ts"]= "#2b7489",
-  [".tu"]= "#cf142b",
-  [".uc"]= "#a54c4d",
-  [".v"]= "#b2b7f8",
-  [".vala"]= "#fbe5cd",
-  [".vapi"]= "#fbe5cd",
-  [".vark"]= "#82937f",
-  [".vb"]= "#945db7",
-  [".vba"]= "#199f4b",
-  [".vbhtml"]= "#945db7",
-  [".vbs"]= "#15dcdc",
-  [".vcl"]= "#148AA8",
-  [".veo"]= "#b2b7f8",
-  [".vh"]= "#DAE1C2",
-  [".vhd"]= "#adb2cb",
-  [".vhdl"]= "#adb2cb",
-  [".vhf"]= "#adb2cb",
-  [".vhi"]= "#adb2cb",
-  [".vho"]= "#adb2cb",
-  [".vhs"]= "#adb2cb",
-  [".vht"]= "#adb2cb",
-  [".vhw"]= "#adb2cb",
-  [".view.lkml"]= "#652B81",
-  [".vim"]= "#199f4b",
-  [".vmb"]= "#199f4b",
-  [".volt"]= "#1F1F1F",
-  [".vue"]= "#2c3e50",
-  [".vw"]= "#dad8d8",
-  [".wast"]= "#04133b",
-  [".wat"]= "#04133b",
-  [".watchr"]= "#701516",
-  [".wdl"]= "#42f1f4",
-  [".wisp"]= "#7582D1",
-  [".wlk"]= "#a23738",
-  [".wlua"]= "#000080",
-  [".wsgi"]= "#3572A5",
-  [".x10"]= "#4B6BEF",
-  [".xc"]= "#99DA07",
-  [".xht"]= "#e34c26",
-  [".xhtml"]= "#e34c26",
-  [".xpy"]= "#3572A5",
-  [".xq"]= "#5232e7",
-  [".xql"]= "#5232e7",
-  [".xqm"]= "#5232e7",
-  [".xquery"]= "#5232e7",
-  [".xqy"]= "#5232e7",
-  [".xrl"]= "#B83998",
-  [".xsjs"]= "#f1e05a",
-  [".xsjslib"]= "#f1e05a",
-  [".xsl"]= "#EB8CEB",
-  [".xslt"]= "#EB8CEB",
-  [".xzap"]= "#0d665e",
-  [".y"]= "#4B6C4B",
-  [".yacc"]= "#4B6C4B",
-  [".yap"]= "#74283c",
-  [".yar"]= "#220000",
-  [".yara"]= "#220000",
-  [".yasnippet"]= "#32AB90",
-  [".yrl"]= "#B83998",
-  [".yy"]= "#4B6C4B",
-  [".zap"]= "#0d665e",
-  [".zep"]= "#118f9e",
-  [".zig"]= "#ec915c",
-  [".zil"]= "#dc75e5",
-  [".zs"] = "#00BCD1",
-  [".zsh"]= "#89e051"
-}
-
+-- references:
+-- 1. Linguist: https://github.com/github/linguist
+-- 2. coc-explorer: https://github.com/weirongxu/coc-explorer/blob/59bd41f8fffdc871fbd77ac443548426bd31d2c3/src/icons.nerdfont.json#L2
+-- 3. chad-tree: https://github.com/ms-jpq/chadtree/blob/f9f333c062/artifacts/icons.json
+-- jquery = {
+--   icon = "",
+--   color = "#1B75BB"
+-- },
+-- angular = {
+--   icon = "",
+--   color = "#E23237"
+-- },
+-- backbone = {
+--   icon = "",
+--   color = "#0071B5"
+-- },
+-- requirejs = {
+--   icon = "",
+--   color = "#F44A41"
+-- },
+-- materialize = {
+--   icon = "",
+--   color = "#EE6E73"
+-- },
+-- mootools = {
+--   icon = "",
+--   color = "#ECECEC"
+-- },
+-- puppet = {
+--   icon = "",
+--   color = "#cbcb41"
+-- },
 
 local icons = {
-  ['.bashprofile'] = '';
-  ['.bashrc'] = '';
-  ['.babelrc'] = 'ﬥ';
-  ['.ds_store'] = '';
-  ['.gitattributes'] = '';
-  ['.gitconfig'] = '';
-  ['.gitignore'] = '';
-  ['.gitlab-ci.yml'] = '';
-  ['.gvimrc'] = '';
-  ['.npmignore'] = '';
-  ['.vimrc'] = '';
-  ['.vimrc'] = '';
-  ['.zshrc'] = '';
-  ['Dockerfile'] = '';
-  ['Gemfile$'] = '';
-  ['LICENSE'] = '';
-  ['Vagrantfile$'] = '';
-  ['_gvimrc'] = '';
-  ['_vimrc'] = '';
-  ['ai'] = '';
-  ['awk'] = '';
-  ['bash'] = '';
-  ['bat'] = '';
-  ['bmp'] = '';
-  ['c'] = '';
-  ['c++'] = '';
-  ['cc'] = '';
-  ['clj'] = '';
-  ['cljc'] = '';
-  ['cljs'] = '';
-  ['cmakelists.txt'] = '';
-  ['coffee'] = '';
-  ['conf'] = '';
-  ['config.ru'] = '';
-  ['cp'] = '';
-  ['cpp'] = '';
-  ['cs'] = '';
-  ['csh'] = '';
-  ['css'] = '';
-  ['cxx'] = '';
-  ['d'] = '';
-  ['dart'] = '';
-  ['db'] = '';
-  ['diff'] = '';
-  ['dockerfile'] = '';
-  ['dropbox'] = '';
-  ['dump'] = '';
-  ['edn'] = '';
-  ['eex'] = '';
-  ['ejs'] = '';
-  ['elm'] = '';
-  ['erl'] = '';
-  ['ex'] = '';
-  ['exs'] = '';
-  ['f#'] = '';
-  ['favicon.ico'] = '';
-  ['fish'] = '';
-  ['fs'] = '';
-  ['fsi'] = '';
-  ['fsscript'] = '';
-  ['fsx'] = '';
-  ['gemspec'] = '';
-  ['gif'] = '';
-  ['go'] = '';
-  ['h'] = '';
-  ['haml'] = '';
-  ['hbs'] = '';
-  ['hh'] = '';
-  ['hpp'] = '';
-  ['hrl'] = '';
-  ['hs'] = '';
-  ['htm'] = '';
-  ['html'] = '';
-  ['hxx'] = '';
-  ['ico'] = '';
-  ['ini'] = '';
-  ['java'] = '';
-  ['jl'] = '';
-  ['jpeg'] = '';
-  ['jpg'] = '';
-  ['js'] = '';
-  ['json'] = '';
-  ['jsx'] = '';
-  ['jsx'] = '';
-  ['ksh'] = '';
-  ['leex'] = '';
-  ['less'] = '';
-  ['lhs'] = '';
-  ['license'] = '';
-  ['lua'] = '';
-  ['makefile'] = '';
-  ['markdown'] = '';
-  ['md'] = '';
-  ['mdx'] = '';
-  ['mix.lock'] = '';
-  ['mjs'] = '';
-  ['ml'] = 'λ';
-  ['mli'] = 'λ';
-  ['mustache'] = '';
-  ['node_modules'] = '';
-  ['php'] = '';
-  ['pl'] = '';
-  ['pm'] = '';
-  ['png'] = '';
-  ['pp'] = '';
-  ['procfile'] = '';
-  ['ps1'] = '';
-  ['psb'] = '';
-  ['psd'] = '';
-  ['py'] = '';
-  ['pyc'] = '';
-  ['pyd'] = '';
-  ['pyo'] = '';
-  ['r'] = 'ﳒ';
-  ['rake'] = '';
-  ['rakefile'] = '';
-  ['rb'] = '';
-  ['rlib'] = '';
-  ['rmd'] = '';
-  ['rproj'] = '鉶';
-  ['rs'] = '';
-  ['rss'] = '';
-  ['sass'] = '';
-  ['scala'] = '';
-  ['scss'] = '';
-  ['sh'] = '';
-  ['slim'] = '';
-  ['sln'] = '';
-  ['sql'] = '';
-  ['styl'] = '';
-  ['suo'] = '';
-  ['swift'] = '';
-  ['t'] = '';
-  ['tex'] = 'ﭨ';
-  ['toml'] = '';
-  ['ts'] = '';
-  ['tsx'] = '';
-  ['twig'] = '';
-  ['vim'] = '';
-  ['vue'] = '﵂';
-  ['webmanifest'] = '';
-  ['webp'] = '';
-  ['xcplayground'] = '';
-  ['xul'] = '';
-  ['yaml'] = '';
-  ['yml'] = '';
-  ['zsh'] = '';
+  ["gruntfile"] = {
+    icon = "",
+    color = "#e37933",
+    name = "Gruntfile"
+  },
+  ["gulpfile"] = {
+    icon = "",
+    color = "#cc3e44",
+    name = "Gulpfile"
+  },
+  ["dropbox"] = {
+    icon = "",
+    color = "#0061FE",
+    name = "Dropbox",
+  },
+  ["xls"] = {
+    icon = "",
+    color = "#207245",
+    name = "Xls",
+  },
+  ["doc"] = {
+    icon = "",
+    color = "#185abd",
+    name = "Doc",
+  },
+  ["ppt"] = {
+    icon = "",
+    color = "#cb4a32",
+    name = "Ppt",
+  },
+  ["xml"] = {
+    icon = "謹",
+    color = "#e37933",
+    name = "Xml",
+  },
+  ["webpack"] = {
+    icon = "ﰩ",
+    color = "#519aba",
+    name = "Webpack",
+  },
+  [".settings.json"] = {
+    icon = "",
+    color = "#854CC7",
+    name = "SettingsJson",
+  },
+  ["cs"] = {
+    icon = "",
+    color = "#596706",
+    name = "Cs",
+  },
+  ["jl"] = {
+    icon = "",
+    color = "#a074c4",
+    name = "Jl"
+  },
+  ["procfile"] = {
+    icon = "",
+    color = "#a074c4"
+  },
+  ["svg"] = {
+    code = "ﰟ",
+    color = "#FFB13B"
+  },
+  [".bashprofile"] = {
+    icon = "",
+    color = "#89e051",
+    name = "BashProfile"
+  };
+  [".bashrc"] = {
+    icon = "",
+    color = "#89e051",
+    name = "Bashrc"
+  };
+  [".babelrc"] = {
+    icon = "ﬥ",
+    color = "#cbcb41",
+    name = "Babelrc"
+  };
+  [".ds_store"] = {
+    icon = "",
+    color = "#41535b",
+    name = "DsStore"
+  };
+  [".gitattributes"] = {
+    icon = "",
+    color = "#41535b",
+    name = "GitAttributes"
+  };
+  [".gitconfig"] = {
+    icon = "",
+    color = "#41535b",
+    name = "GitConfig"
+  };
+  [".gitignore"] = {
+    icon = "",
+    color = "#41535b",
+    name = "GitIgnore"
+  };
+  [".gitlab-ci.yml"] = {
+    icon = "",
+    color = "#41535b",
+    name = "GitlabCI"
+  };
+  [".gvimrc"] = {
+    icon = "",
+    color = "#019833",
+    name = "Gvimrc"
+  };
+  [".npmignore"] = {
+    icon = "",
+    color = "#E8274B",
+    name = "NPMIgnore"
+  };
+  [".vimrc"] = {
+    icon = "",
+    color = "#019833",
+    name = "Vimrc"
+  };
+  [".zshrc"] = {
+    icon = "",
+    color = "#89e051",
+    name = "Zshrc"
+  };
+  ["Dockerfile"] = {
+    icon = "",
+    color = "#384d54"
+  };
+  ["Gemfile$"] = {
+    icon = "",
+    color = "#701516"
+  };
+  ["LICENSE"] = {
+    icon = "",
+    color = "#cbcb41"
+  };
+  ["Vagrantfile$"] = {
+    icon = "",
+    color = "#1563FF"
+  };
+  ["_gvimrc"] = {
+    icon = "",
+    color = "#019833",
+  };
+  ["_vimrc"] = {
+    icon = "",
+    color = "#019833",
+  };
+  ["ai"] = {
+    icon = "",
+    color = "#cbcb41"
+  };
+  ["awk"] = {
+    icon = "",
+    color = "#4d5a5e"
+  };
+  ["bash"] = {
+    icon = "",
+    color = "#89e051"
+  };
+  ["bat"] = {
+    icon = "",
+    color = "#C1F12E",
+  };
+  ["bmp"] = {
+    icon = "",
+    color = "#a074c4",
+  };
+  ["c"] = {
+    icon = "",
+    color = "#555555",
+  };
+  ["c++"] = {
+    icon = "",
+    color = "#f34b7d",
+    name = "CplusPlus"
+  };
+  ["cc"] = {
+    icon = "",
+    color = "#f34b7d"
+  };
+  ["clj"] = {
+    icon = "",
+    color = "#8dc149"
+  };
+  ["cljc"] = {
+    icon = "",
+    color = "#8dc149"
+  };
+  ["cljs"] = {
+    icon = "",
+    color = "#519aba"
+  };
+  ["cmakelists.txt"] = {
+    icon = "",
+    color = "#6d8086",
+    name = "CmakeLists"
+  };
+  ["coffee"] = {
+    icon = "",
+    color = "#cbcb41"
+  };
+  ["conf"] = {
+    icon = "",
+    color = "#6d8086"
+  };
+  ["config.ru"] = {
+    icon = "",
+    color = "#701516",
+    name = "ConfigRu"
+  };
+  ["cp"] = {
+    icon = "",
+    color = "#519aba"
+  };
+  ["cpp"] = {
+    icon = "",
+    color = "#519aba"
+  };
+  ["csh"] = {
+    icon = "",
+    color = "#4d5a5e"
+  };
+  ["css"] = {
+    icon = "",
+    color = "#563d7c"
+  };
+  ["cxx"] = {
+    icon = "",
+    color = "#519aba"
+  };
+  ["d"] = {
+    icon = "",
+    color = "#427819",
+  };
+  ["dart"] = {
+    icon = "",
+    color = "#03589C"
+  };
+  ["db"] = {
+    icon = "",
+    color = "#dad8d8",
+  };
+  ["diff"] = {
+    icon = "",
+    color = "#41535b"
+  };
+  ["dockerfile"] = {
+    icon = "",
+    color = "#384d54"
+  };
+  ["dump"] = {
+    icon = "",
+    color = "#dad8d8",
+  };
+  ["edn"] = {
+    icon = "",
+    color = "#519aba"
+  };
+  ["eex"] = {
+    icon = "",
+    color = "#a074c4"
+  };
+  ["ejs"] = {
+    icon = "",
+    color = "#cbcb41"
+  };
+  ["elm"] = {
+    icon = "",
+    color = "#519aba"
+  };
+  ["erl"] = {
+    icon = "",
+    color = "#B83998",
+  };
+  ["ex"] = {
+    icon = "",
+    color = "#a074c4"
+  };
+  ["exs"] = {
+    icon = "",
+    color = "#a074c4"
+  };
+  ["f#"] = {
+    icon = "",
+    color = "#519aba",
+    name = "Fsharp"
+  };
+  ["favicon.ico"] = {
+    icon = "",
+    color = "#cbcb41",
+    name = "Favicon"
+  };
+  ["fish"] = {
+    icon = "",
+    color = "#4d5a5e"
+  };
+  ["fs"] = {
+    icon = "",
+    color = "#519aba"
+  };
+  ["fsi"] = {
+    icon = "",
+    color = "#519aba"
+  };
+  ["fsscript"] = {
+    icon = "",
+    color = "#519aba"
+  };
+  ["fsx"] = {
+    icon = "",
+    color = "#519aba"
+  };
+  ["gemspec"] = {
+    icon = "",
+    color = "#701516"
+  };
+  ["gif"] = {
+    icon = "",
+    color = "#a074c4",
+  };
+  ["go"] = {
+    icon = "",
+    color = "#519aba"
+  };
+  ["h"] = {
+    icon = "",
+    color = "#a074c4"
+  };
+  ["haml"] = {
+    icon = "",
+    color = "#eaeae1",
+  };
+  ["hbs"] = {
+    icon = "",
+    color = "#f0772b",
+  };
+  ["hh"] = {
+    icon = "",
+    color = "#a074c4"
+  };
+  ["hpp"] = {
+    icon = "",
+    color = "#a074c4"
+  };
+  ["hrl"] = {
+    icon = "",
+    color = "#B83998",
+  };
+  ["hs"] = {
+    icon = "",
+    color = "#a074c4"
+  };
+  ["htm"] = {
+    icon = "",
+    color = "#e34c26",
+  };
+  ["html"] = {
+    icon = "",
+    color = "#e34c26"
+  };
+  ["hxx"] = {
+    icon = "",
+    color = "#a074c4"
+  };
+  ["ico"] = {
+    icon = "",
+    color = "#cbcb41"
+  };
+  ["ini"] = {
+    icon = "",
+    color = "#6d8086"
+  };
+  ["java"] = {
+    icon = "",
+    color = "#cc3e44"
+  };
+  ["jl"] = {
+    icon = "",
+    color = "#a270ba",
+  };
+  ["jpeg"] = {
+    icon = "",
+    color = "#a074c4",
+  };
+  ["jpg"] = {
+    icon = "",
+    color = "#a074c4",
+  };
+  ["js"] = {
+    icon = "",
+    color = "#cbcb41"
+  };
+  ["json"] = {
+    icon = "",
+    color = "#cbcb41"
+  };
+  ["jsx"] = {
+    icon = "",
+    color = "#519aba"
+  };
+  ["ksh"] = {
+    icon = "",
+    color = "#4d5a5e"
+  };
+  ["leex"] = {
+    icon = "",
+    color = "#a074c4"
+  };
+  ["less"] = {
+    icon = "",
+    color = "#563d7c",
+  };
+  ["lhs"] = {
+    icon = "",
+    color = "#a074c4"
+  };
+  ["license"] = {
+    icon = "",
+    color = "#cbcb41"
+  };
+  ["lua"] = {
+    icon = "",
+    color = "#519aba"
+  };
+  ["makefile"] = {
+    icon = "",
+    color = "#6d8086"
+  };
+  ["markdown"] = {
+    icon = "",
+    color = "#519aba"
+  };
+  ["md"] = {
+    icon = "",
+    color = "#519aba"
+  };
+  ["mdx"] = {
+    icon = "",
+    color = "#519aba"
+  };
+  ["mix.lock"] = {
+    icon = "",
+    color = "#a074c4",
+    name = "MixLock"
+  };
+  ["mjs"] = {
+    icon = "",
+    color = "#f1e05a",
+  };
+  ["ml"] = {
+    icon = "λ",
+    color = "#e37933"
+  };
+  ["mli"] = {
+    icon = "λ",
+    color = "#e37933"
+  };
+  ["mustache"] = {
+    icon = "",
+    color = "#e37933"
+  };
+  ["node_modules"] = {
+    icon = "",
+    color = "#E8274B",
+    name = "NodeModules",
+  };
+  ["php"] = {
+    icon = "",
+    color = "#a074c4"
+  };
+  ["pl"] = {
+    icon = "",
+    color = "#519aba"
+  };
+  ["pm"] = {
+    icon = "",
+    color = "#519aba"
+  };
+  ["png"] = {
+    icon = "",
+    color = "#a074c4",
+  };
+  ["pp"] = {
+    icon = "",
+    color = "#302B6D",
+  };
+  ["ps1"] = {
+    icon = "",
+    color = "#4d5a5e"
+  };
+  ["psb"] = {
+    icon = "",
+    color = "#519aba"
+  };
+  ["psd"] = {
+    icon = "",
+    color = "#519aba"
+  };
+  ["py"] = {
+    icon = "",
+    color = "#3572A5"
+  };
+  ["pyc"] = {
+    icon = "",
+    color = "#519aba"
+  };
+  ["pyd"] = {
+    icon = "",
+    color = "#519aba"
+  };
+  ["pyo"] = {
+    icon = "",
+    color = "#519aba"
+  };
+  ["r"] = {
+    icon = "ﳒ",
+    color = "#358a5b",
+  };
+  ["rake"] = {
+    icon = "",
+    color = "#701516"
+  };
+  ["rakefile"] = {
+    icon = "",
+    color = "#701516"
+  };
+  ["rb"] = {
+    icon = "",
+    color = "#701516"
+  };
+  ["rlib"] = {
+    icon = "",
+    color = "#dea584",
+  };
+  ["rmd"] = {
+    icon = "",
+    color = "#519aba",
+  };
+  ["rproj"] = {
+    icon = "鉶",
+    color = "#358a5b",
+  };
+  ["rs"] = {
+    icon = "",
+    color = "#dea584",
+  };
+  ["rss"] = {
+    icon = "",
+    color = "#FB9D3B"
+  };
+  ["sass"] = {
+    icon = "",
+    color = "#f55385"
+  };
+  ["scala"] = {
+    icon = "",
+    color = "#cc3e44"
+  };
+  ["scss"] = {
+    icon = "",
+    color = "#f55385",
+  };
+  ["sh"] = {
+    icon = "",
+    color = "#4d5a5e"
+  };
+  ["slim"] = {
+    icon = "",
+    color = "#e34c26",
+  };
+  ["sln"] = {
+    icon = "",
+    color = "#854CC7"
+  };
+  ["sql"] = {
+    icon = "",
+    color = "#dad8d8"
+  };
+  ["styl"] = {
+    icon = "",
+    color = "#8dc149"
+  };
+  ["suo"] = {
+    icon = "",
+    color = "#854CC7"
+  };
+  ["swift"] = {
+    icon = "",
+    color = "#e37933"
+  };
+  ["t"] = {
+    icon = "",
+    color = "#519aba"
+  };
+  ["tex"] = {
+    icon = "ﭨ",
+    color = "#3D6117",
+  };
+  ["toml"] = {
+    icon = "",
+    color = "#6d8086"
+  };
+  ["ts"] = {
+    icon = "",
+    color = "#519aba",
+  };
+  ["tsx"] = {
+    icon = "",
+    color = "#519aba",
+  };
+  ["twig"] = {
+    icon = "",
+    color = "#8dc149"
+  };
+  ["vim"] = {
+    icon = "",
+    color = "#019833",
+  };
+  ["vue"] = {
+    icon = "﵂",
+    color = "#8dc149"
+  };
+  ["webmanifest"] = {
+    icon = "",
+    color = "#f1e05a",
+  };
+  ["webp"] = {
+    icon = "",
+    color = "#a074c4",
+  };
+  ["xcplayground"] = {
+    icon = "",
+    color = "#e37933",
+  };
+  ["xul"] = {
+    icon = "",
+    color = "#e37933"
+  };
+  ["yaml"] = {
+    icon = "",
+    color = "#6d8086"
+  };
+  ["yml"] = {
+    icon = "",
+    color = "#6d8086"
+  };
+  ["zsh"] = {
+    icon = "",
+    color = "#89e051"
+  };
 }
 
-local function get_highlight_name(name)
- if not name then return end
- return name:gsub("^%l", string.upper)
+local function get_highlight_name(data)
+ if not data then return end
+ return data.name .. "DevIcon"
+end
+
+local function normalise_name(name)
+  local s = name
+  -- lowercase
+  s = s:lower()
+  -- strip leading dot
+  s = name:gsub("^%.", "")
+  -- strip ext
+  s = s:gsub("%..*$", "")
+  -- capitalize letters after dashes or underlines
+  s = s:gsub("%-(%l)", string.upper)
+  s = s:gsub("_(%l)", string.upper)
+  -- capitalize first letter
+  s = (s:gsub("^%l", string.upper))
+  return s
 end
 
 return {
   get_icon = function(name, ext)
-    local by_name = icons[name]
+    local icon_data = icons[name]
+    local by_name = icon_data and icon_data.icon or nil
 
     if by_name then
-      local s = name
-      -- lowercase
-      s = s:lower()
-      -- strip leading dot
-      s = name:gsub("^%.", "")
-      -- strip ext
-      s = s:gsub("%..*$", "")
-      -- capitalize letters after dashes or underlines
-      s = s:gsub("%-(%l)", string.upper)
-      s = s:gsub("_(%l)", string.upper)
-      -- capitalize first letter
-      s = (s:gsub("^%l", string.upper))
-      return by_name, s .. "Icon"
+      return by_name, get_highlight_name(icon_data) .. "Icon"
     else
-      local by_ext = icons[ext]
-      return by_ext, get_highlight_name(ext) .. "Icon"
+      icon_data = icons[ext]
+      local by_ext = icon_data and icon_data.icon or nil
+      return by_ext, get_highlight_name(ext)
     end
   end,
   setup = function()
-    for icon, _ in pairs(icons) do
-      local color = colors['.'..icon]
-      if color then
-        local hl_group = get_highlight_name(icon) .. "Icon"
-        vim.cmd("highlight! "..hl_group.. " guifg="..color)
+    for name, icon in pairs(icons) do
+      if icon.color then
+        name = normalise_name(name)
+        local hl_group =  get_highlight_name(name)
+        vim.cmd("highlight! "..hl_group.. " guifg="..icon.color)
       end
     end
   end
