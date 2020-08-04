@@ -169,7 +169,7 @@ local icons = {
   };
   ["LICENSE"] = {
     icon = "",
-    color = "#cbcb41",
+    color = "#d0bf41",
     name = "License"
   };
   ["Vagrantfile$"] = {
@@ -524,7 +524,7 @@ local icons = {
   };
   ["lua"] = {
     icon = "",
-    color = "#519aba",
+    color = "#51a0cf",
     name = "Lua",
   };
   ["makefile"] = {
@@ -809,17 +809,18 @@ local icons = {
   };
 }
 
+local function get_highlight_name(data)
+  return data.name and data.name .. "DevIcon"
+end
+
 local default_icon = {
   icon = "",
   color = "#6d8086",
   name = "Default",
 }
 
-local function get_highlight_name(data)
-  return data.name and data.name .. "DevIcon"
-end
-
 return {
+  default_icon = default_icon,
   get_icon = function(name, ext)
     local icon_data = icons[name]
     local by_name = icon_data and icon_data.icon or nil
@@ -827,9 +828,11 @@ return {
     if by_name then
       return by_name, get_highlight_name(icon_data)
     else
-      icon_data = icons[ext] or default_icon
-      local by_ext = icon_data.icon
-      return by_ext, get_highlight_name(icon_data)
+      icon_data = icons[ext]
+      if icon_data then
+        local by_ext = icon_data.icon
+        return by_ext, get_highlight_name(icon_data)
+      end
     end
   end,
   setup = function()
