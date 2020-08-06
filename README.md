@@ -23,7 +23,7 @@ this might need to be re-called in a `Colorscheme` to re-apply cleared highlight
 if the color scheme changes
 
 ```lua
-require'nvim-lua-devicons'.setup()
+require'nvim-web-devicons'.setup()
 ```
 
 ### Get Icon
@@ -33,7 +33,7 @@ The name is passed in to check for an exact match e.g. `.bashrc` if there is no 
 is used.
 
 ```lua
-require'nvim-lua-devicons'.get_icon(filename, extension, options)
+require'nvim-web-devicons'.get_icon(filename, extension, options)
 ```
 
 The optional `options` argument can used to change how the plugin works the keys include
@@ -42,5 +42,5 @@ if there is no matching icon
 e.g.
 
 ```lua
-require'nvim-lua-devicons'.get_icon(filename, extension, { default = true })
+require'nvim-web-devicons'.get_icon(filename, extension, { default = true })
 ```
