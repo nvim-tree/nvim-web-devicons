@@ -820,8 +820,7 @@ local default_icon = {
 }
 
 return {
-  default_icon = default_icon,
-  get_icon = function(name, ext)
+  get_icon = function(name, ext, opts)
     local icon_data = icons[name]
     local by_name = icon_data and icon_data.icon or nil
 
@@ -829,6 +828,9 @@ return {
       return by_name, get_highlight_name(icon_data)
     else
       icon_data = icons[ext]
+      if opts and opts.default and not icon_data then
+        icon_data = default_icon
+      end
       if icon_data then
         local by_ext = icon_data.icon
         return by_ext, get_highlight_name(icon_data)
@@ -836,7 +838,7 @@ return {
     end
   end,
   setup = function()
-    table.insert(icons, 0, default_icon)
+    table.insert(icons, default_icon)
     for _, icon_data in pairs(icons) do
       if icon_data.color and icon_data.name then
         local hl_group = get_highlight_name(icon_data)
