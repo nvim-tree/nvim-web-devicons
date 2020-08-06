@@ -1,6 +1,17 @@
 # Nvim-web-devicons
 
-A `lua` fork of [vim-devicons]()
+A `lua` fork of [vim-devicons](https://github.com/ryanoasis/vim-devicons). This plugin provides the same icons _as well as_
+colors for each icon.
+
+## Requirements
+
+- [A patched font](https://www.nerdfonts.com/)
+
+## Installation
+
+```vim
+Plug 'kyazdani42/nvim-web-devicons'
+```
 
 ## Usage
 
@@ -15,7 +26,7 @@ if the color scheme changes
 require'nvim-lua-devicons'.setup()
 ```
 
-### Get icon
+### Get Icon
 
 Get the icon for a given file by passing in the `name`, the `extension` and an _optional_ options `table`.
 The name is passed in to check for an exact match e.g. `.bashrc` if there is no exact name match the extension
