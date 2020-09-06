@@ -82,18 +82,13 @@ local icons = {
     color = "#596706",
     name = "Cs",
   },
-  ["jl"] = {
-    icon = "",
-    color = "#a074c4",
-    name = "Jl"
-  },
   ["procfile"] = {
     icon = "",
     color = "#a074c4",
     name = "Procfile"
   },
   ["svg"] = {
-    code = "ﰟ",
+    icon = "ﰟ",
     color = "#FFB13B",
     name = "Svg",
   },
