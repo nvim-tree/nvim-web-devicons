@@ -832,7 +832,9 @@ return {
       end
     end
   end,
-  setup = function()
+  setup = function(user_icons)
+    icons = vim.tbl_extend("force", icons, user_icons or {});
+
     table.insert(icons, default_icon)
     for _, icon_data in pairs(icons) do
       if icon_data.color and icon_data.name then
