@@ -23,7 +23,15 @@ this might need to be re-called in a `Colorscheme` to re-apply cleared highlight
 if the color scheme changes
 
 ```lua
-require'nvim-web-devicons'.setup()
+require'nvim-web-devicons'.setup {
+ -- your personnal icons can go here (to override)
+ -- DevIcon will be appended to `name`
+  zsh = {
+    icon = "",
+    color = "#428850",
+    name = "Zsh"
+  };
+}
 ```
 
 ### Get Icon
