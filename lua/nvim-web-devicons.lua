@@ -567,6 +567,11 @@ local icons = {
     color = "#e37933",
     name = "Mustache",
   };
+  ["nix"] = {
+    icon = "",
+    color = "#7ebae4",
+    name = "Nix",
+  };
   ["node_modules"] = {
     icon = "",
     color = "#E8274B",
