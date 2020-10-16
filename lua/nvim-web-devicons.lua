@@ -808,7 +808,7 @@ local icons = {
     name = "Zsh"
   };
   ["terminal"] = {
-    icon = ""
+    icon = "",
     color = "#31B53E",
     name = "Terminal"
 }
