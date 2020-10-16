@@ -807,6 +807,10 @@ local icons = {
     color = "#89e051",
     name = "Zsh"
   };
+  ["terminal"] = {
+    icon = ""
+    color = "#31B53E",
+    name = "Terminal"
 }
 
 local function get_highlight_name(data)
