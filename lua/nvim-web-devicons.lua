@@ -819,7 +819,7 @@ local function get_highlight_name(data)
 end
 
 local default_icon = {
-  icon = "",
+  icon = "",
   color = "#6d8086",
   name = "Default",
 }
