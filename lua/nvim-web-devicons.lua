@@ -839,9 +839,7 @@ return {
     else
       icon_data = icons[ext]
 
-      if global_opts and global_opts.default and not icon_data then
-        icon_data = default_icon
-      elseif opts and opts.default and not icon_data then
+      if (global_opts.default or (opts and opts.default)) and not icon_data then
         icon_data = default_icon
       end
 
@@ -852,13 +850,13 @@ return {
     end
   end,
   setup = function(opts)
-    local user_icons = opts and opts.override or {}
+    local user_icons = opts or {}
 
-    if global_opts and not global_opts.default then
-      global_opts.default = opts and opts.default or false
+    if user_icons.default then
+      global_opts.default = true
     end
 
-    icons = vim.tbl_extend("force", icons, user_icons);
+    icons = vim.tbl_extend("force", icons, user_icons.override);
 
     table.insert(icons, default_icon)
     for _, icon_data in pairs(icons) do
