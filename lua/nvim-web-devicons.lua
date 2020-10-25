@@ -856,7 +856,7 @@ return {
       global_opts.default = true
     end
 
-    icons = vim.tbl_extend("force", icons, user_icons.override);
+    icons = vim.tbl_extend("force", icons, user_icons.override or {});
 
     table.insert(icons, default_icon)
     for _, icon_data in pairs(icons) do
