@@ -34,7 +34,7 @@ require'nvim-web-devicons'.setup {
   }
  };
  -- globally enable default icons (default to false)
- -- takes precedence over `get_icon` options
+ -- will get overriden by `get_icons` option
  default = true;
 }
 ```
