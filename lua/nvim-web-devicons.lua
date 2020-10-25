@@ -829,6 +829,8 @@ local global_opts = {
   default = false
 }
 
+local loaded = false
+
 return {
   get_icon = function(name, ext, opts)
     local icon_data = icons[name]
@@ -867,5 +869,8 @@ return {
         end
       end
     end
-  end
+
+    loaded = true
+  end,
+  has_loaded = function() return loaded end,
 }

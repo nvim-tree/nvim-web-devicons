@@ -57,3 +57,8 @@ e.g.
 ```lua
 require'nvim-web-devicons'.get_icon(filename, extension, { default = true })
 ```
+
+You can check if the setup function was already called with
+```lua
+require'nvim-web-devicons'.has_loaded()
+```
