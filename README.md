@@ -58,7 +58,8 @@ e.g.
 require'nvim-web-devicons'.get_icon(filename, extension, { default = true })
 ```
 
-You can check if the setup function was already called with
+You can check if the setup function was already called with. Calling `.setup()` more than
+once is safe.
 ```lua
 require'nvim-web-devicons'.has_loaded()
 ```

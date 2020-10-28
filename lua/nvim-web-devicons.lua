@@ -852,6 +852,11 @@ return {
     end
   end,
   setup = function(opts)
+    if loaded then
+      return
+    end
+    loaded = true
+
     local user_icons = opts or {}
 
     if user_icons.default then
@@ -869,8 +874,6 @@ return {
         end
       end
     end
-
-    loaded = true
   end,
   has_loaded = function() return loaded end,
 }
