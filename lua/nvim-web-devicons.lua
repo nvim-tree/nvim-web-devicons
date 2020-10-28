@@ -209,7 +209,7 @@ local icons = {
   };
   ["c"] = {
     icon = "",
-    color = "#555555",
+    color = "#599eff",
     name = "C"
   };
   ["c++"] = {
