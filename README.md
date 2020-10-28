@@ -43,7 +43,7 @@ require'nvim-web-devicons'.setup {
 
 Get the icon for a given file by passing in the `name`, the `extension` and an _optional_ options `table`.
 The name is passed in to check for an exact match e.g. `.bashrc` if there is no exact name match the extension
-is used.
+is used. Calls `.setup()` if it hasn't already ran.
 
 ```lua
 require'nvim-web-devicons'.get_icon(filename, extension, options)
@@ -58,8 +58,7 @@ e.g.
 require'nvim-web-devicons'.get_icon(filename, extension, { default = true })
 ```
 
-You can check if the setup function was already called with. Calling `.setup()` more than
-once is safe.
+You can check if the setup function was already called with:
 ```lua
 require'nvim-web-devicons'.has_loaded()
 ```

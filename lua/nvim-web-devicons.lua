@@ -814,10 +814,6 @@ local icons = {
   }
 }
 
-local function get_highlight_name(data)
-  return data.name and "DevIcon" .. data.name
-end
-
 local default_icon = {
   icon = "",
   color = "#6d8086",
@@ -829,51 +825,63 @@ local global_opts = {
   default = false
 }
 
+local function get_highlight_name(data)
+  return data.name and "DevIcon" .. data.name
+end
+
 local loaded = false
 
+local function setup(opts)
+  if loaded then
+    return
+  end
+  loaded = true
+
+  local user_icons = opts or {}
+
+  if user_icons.default then
+    global_opts.default = true
+  end
+
+  icons = vim.tbl_extend("force", icons, user_icons.override or {});
+
+  table.insert(icons, default_icon)
+  for _, icon_data in pairs(icons) do
+    if icon_data.color and icon_data.name then
+      local hl_group = get_highlight_name(icon_data)
+      if hl_group then
+        vim.cmd("highlight! "..hl_group.. " guifg="..icon_data.color)
+      end
+    end
+  end
+end
+
+local function get_icon(name, ext, opts)
+  if not loaded then
+    setup()
+  end
+
+  local icon_data = icons[name]
+  local by_name = icon_data and icon_data.icon or nil
+
+  if by_name then
+    return by_name, get_highlight_name(icon_data)
+  else
+    icon_data = icons[ext]
+
+    if (global_opts.default or (opts and opts.default)) and not icon_data then
+      icon_data = default_icon
+    end
+
+    if icon_data then
+      local by_ext = icon_data.icon
+      return by_ext, get_highlight_name(icon_data)
+    end
+  end
+end
+
 return {
-  get_icon = function(name, ext, opts)
-    local icon_data = icons[name]
-    local by_name = icon_data and icon_data.icon or nil
-
-    if by_name then
-      return by_name, get_highlight_name(icon_data)
-    else
-      icon_data = icons[ext]
-
-      if (global_opts.default or (opts and opts.default)) and not icon_data then
-        icon_data = default_icon
-      end
-
-      if icon_data then
-        local by_ext = icon_data.icon
-        return by_ext, get_highlight_name(icon_data)
-      end
-    end
-  end,
-  setup = function(opts)
-    if loaded then
-      return
-    end
-    loaded = true
-
-    local user_icons = opts or {}
-
-    if user_icons.default then
-      global_opts.default = true
-    end
-
-    icons = vim.tbl_extend("force", icons, user_icons.override or {});
-
-    table.insert(icons, default_icon)
-    for _, icon_data in pairs(icons) do
-      if icon_data.color and icon_data.name then
-        local hl_group = get_highlight_name(icon_data)
-        if hl_group then
-          vim.cmd("highlight! "..hl_group.. " guifg="..icon_data.color)
-        end
-      end
-    end
-  end,
+  get_icon = get_icon,
+  setup = setup,
   has_loaded = function() return loaded end,
 }
