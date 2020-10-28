@@ -815,7 +815,7 @@ local icons = {
 }
 
 local function get_highlight_name(data)
-  return data.name and data.name .. "DevIcon"
+  return data.name and "DevIcon" .. data.name
 end
 
 local default_icon = {
