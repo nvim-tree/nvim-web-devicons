@@ -847,7 +847,9 @@ local function setup(opts)
     if icon_data.color and icon_data.name then
       local hl_group = get_highlight_name(icon_data)
       if hl_group then
-        vim.cmd("highlight! "..hl_group.. " guifg="..icon_data.color)
+        vim.schedule_wrap(function()
+          vim.cmd("highlight! "..hl_group.. " guifg="..icon_data.color)
+        end)
       end
     end
   end
