@@ -112,6 +112,11 @@ local icons = {
     color = "#41535b",
     name = "DsStore"
   };
+  ["git"] = {
+    icon = "",
+    color = "#F14C28",
+    name = "GitLogo"
+  };
   [".gitattributes"] = {
     icon = "",
     color = "#41535b",
