@@ -852,7 +852,7 @@ local function setup(opts)
     if icon_data.color and icon_data.name then
       local hl_group = get_highlight_name(icon_data)
       if hl_group then
-        vim.cmd("highlight! "..hl_group.. " guifg="..icon_data.color)
+        vim.api.nvim_command("highlight! "..hl_group.. " guifg="..icon_data.color)
       end
     end
   end
@@ -871,7 +871,7 @@ local function get_icon(name, ext, opts)
   else
     icon_data = icons[ext]
 
-    if (global_opts.default or (opts and opts.default)) and not icon_data then
+    if not icon_data and ((opts and opts.default) or global_opts.default) then
       icon_data = default_icon
     end
 
