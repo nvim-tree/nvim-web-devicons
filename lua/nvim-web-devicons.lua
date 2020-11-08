@@ -845,6 +845,10 @@ local function setup(opts)
     global_opts.default = true
   end
 
+  if user_icons.override.default_icon then
+    default_icon = user_icons.override.default_icon
+  end
+
   icons = vim.tbl_extend("force", icons, user_icons.override or {});
 
   table.insert(icons, default_icon)
