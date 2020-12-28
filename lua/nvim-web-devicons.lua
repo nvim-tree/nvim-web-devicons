@@ -134,7 +134,7 @@ local icons = {
   };
   [".gitlab-ci.yml"] = {
     icon = "",
-    color = "#41535b",
+    color = "#e24329",
     name = "GitlabCI"
   };
   [".gvimrc"] = {
