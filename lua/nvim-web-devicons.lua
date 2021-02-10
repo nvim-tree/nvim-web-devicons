@@ -833,12 +833,14 @@ local global_opts = {
 local hl_groups = {}
 
 local function get_highlight_name(data)
-  local hl_group = data.name and "DevIcon" .. data.name
-  if hl_group and not hl_groups[hl_group] and data.color then
-    vim.api.nvim_command("highlight! "..hl_group.. " guifg="..data.color)
-    hl_groups[hl_group] = true
+  local name = data.name
+  if name and not hl_groups[name] then
+      hl_groups[name] = "DevIcon" .. name
+      if data.color then
+        vim.api.nvim_command("highlight! "..hl_groups[name].. " guifg="..data.color)
+      end
   end
-  return hl_group
+  return hl_groups[name]
 end
 
 local loaded = false
