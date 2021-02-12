@@ -837,9 +837,7 @@ local function get_highlight_name(data)
   if name and not hl_groups[name] then
       hl_groups[name] = "DevIcon" .. name
       if data.color then
-        vim.schedule(function()
-          vim.api.nvim_command("highlight! "..hl_groups[name].. " guifg="..data.color)
-        end)
+        vim.api.nvim_command("highlight! "..hl_groups[name].. " guifg="..data.color)
       end
   end
   return hl_groups[name]
