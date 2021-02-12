@@ -830,17 +830,8 @@ local global_opts = {
   default = false
 }
 
-local hl_groups = {}
-
 local function get_highlight_name(data)
-  local name = data.name
-  if name and not hl_groups[name] then
-      hl_groups[name] = "DevIcon" .. name
-      if data.color then
-        vim.api.nvim_command("highlight! "..hl_groups[name].. " guifg="..data.color)
-      end
-  end
-  return hl_groups[name]
+  return data.name and "DevIcon" .. data.name
 end
 
 local loaded = false
@@ -861,6 +852,14 @@ local function setup(opts)
   icons = vim.tbl_extend("force", icons, user_icons.override or {});
 
   table.insert(icons, default_icon)
+  for _, icon_data in pairs(icons) do
+    if icon_data.color and icon_data.name then
+      local hl_group = get_highlight_name(icon_data)
+      if hl_group then
+        vim.api.nvim_command("highlight! "..hl_group.. " guifg="..icon_data.color)
+      end
+    end
+  end
 end
 
 local function get_icon(name, ext, opts)
