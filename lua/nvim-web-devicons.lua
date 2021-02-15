@@ -816,7 +816,12 @@ local icons = {
     icon = "",
     color = "#31B53E",
     name = "Terminal"
-  }
+  };
+  ["pdf"] = {
+    icon = "",
+    color = "#b30b00",
+    name = "Pdf"
+  };
 }
 
 local default_icon = {
