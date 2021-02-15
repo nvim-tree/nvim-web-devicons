@@ -821,7 +821,7 @@ local icons = {
     icon = "",
     color = "#b30b00",
     name = "Pdf"
-  };
+  }
 }
 
 local default_icon = {
