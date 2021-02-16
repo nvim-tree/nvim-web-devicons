@@ -132,6 +132,11 @@ local icons = {
     color = "#41535b",
     name = "GitIgnore"
   };
+  ["COMMIT_EDITMSG"] = {
+    icon = "",
+    color = "#41535b",
+    name = "GitCommit"
+  };
   [".gitlab-ci.yml"] = {
     icon = "",
     color = "#e24329",
