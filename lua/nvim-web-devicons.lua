@@ -826,7 +826,12 @@ local icons = {
     icon = "",
     color = "#b30b00",
     name = "Pdf"
-  }
+  };
+  ["kt"] = {
+    icon = "𝙆",
+    color = "#F88A02",
+    name = "Kotlin"
+  };
 }
 
 local default_icon = {
