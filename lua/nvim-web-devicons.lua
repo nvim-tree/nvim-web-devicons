@@ -652,6 +652,11 @@ local icons = {
     color = "#358a5b",
     name = "R"
   };
+  ["R"] = {
+    icon = "ﳒ",
+    color = "#358a5b",
+    name = "R"
+  };
   ["rake"] = {
     icon = "",
     color = "#701516",
@@ -673,6 +678,11 @@ local icons = {
     name = "Rlib",
   };
   ["rmd"] = {
+    icon = "",
+    color = "#519aba",
+    name = "Rmd"
+  };
+  ["Rmd"] = {
     icon = "",
     color = "#519aba",
     name = "Rmd"
