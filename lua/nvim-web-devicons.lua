@@ -282,6 +282,11 @@ local icons = {
     color = "#4d5a5e",
     name = "Csh",
   };
+  ["cson"] = {
+    icon = "",
+    color = "#cbcb41",
+    name = "Cson",
+  };
   ["css"] = {
     icon = "",
     color = "#563d7c",
