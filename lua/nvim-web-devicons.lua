@@ -920,4 +920,5 @@ return {
   get_icon = get_icon,
   setup = setup,
   has_loaded = function() return loaded end,
+  get_icons = function() return icons end,
 }

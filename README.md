@@ -62,3 +62,13 @@ You can check if the setup function was already called with:
 ```lua
 require'nvim-web-devicons'.has_loaded()
 ```
+
+### Get all icons
+
+It is possible to get all of the registered icons with the `get_icons()` function:
+
+```lua
+require'nvim-web-devicons'.get_icons()
+```
+
+This can be useful for debugging purposes or for creating custom highlights for each icon.
