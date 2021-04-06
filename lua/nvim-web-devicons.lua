@@ -257,10 +257,15 @@ local icons = {
     color = "#519aba",
     name = "ClojureJS",
   };
-  ["cmakelists.txt"] = {
+  ["CMakeLists.txt"] = {
     icon = "",
     color = "#6d8086",
-    name = "CmakeLists"
+    name = "CMakeLists"
+  };
+  ["cmake"] = {
+    icon = "",
+    color = "#6d8086",
+    name = "CMake"
   };
   ["coffee"] = {
     icon = "",
