@@ -137,6 +137,16 @@ local icons = {
     color = "#41535b",
     name = "GitCommit"
   };
+  ["COPYING"] = {
+    icon = "",
+    color = "#cbcb41",
+    name = "License",
+  };
+  ["COPYING.LESSER"] = {
+    icon = "",
+    color = "#cbcb41",
+    name = "License",
+  };
   [".gitlab-ci.yml"] = {
     icon = "",
     color = "#e24329",
