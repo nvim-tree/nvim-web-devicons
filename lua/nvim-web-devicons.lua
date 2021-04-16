@@ -132,6 +132,11 @@ local icons = {
     color = "#41535b",
     name = "GitIgnore"
   };
+  [".gitmodules"] = {
+    icon = "",
+    color = "#41535b",
+    name = "GitModules"
+  };
   ["COMMIT_EDITMSG"] = {
     icon = "",
     color = "#41535b",
@@ -861,6 +866,66 @@ local icons = {
     icon = "𝙆",
     color = "#F88A02",
     name = "Kotlin"
+  };
+  ["gd"] = {
+    icon = "",
+    color = "#6d8086",
+    name = "GDScript"
+  };
+  ["tscn"] = {
+    icon = "",
+    color = "#a074c4",
+    name = "TextScene"
+  };
+  ["godot"] = {
+    icon = "",
+    color = "#6d8086",
+    name = "GodotProject"
+  };
+  ["tres"] = {
+    icon = "",
+    color = "#cbcb41",
+    name = "TextResource"
+  };
+  ["glb"] = {
+    icon = "",
+    color = "#FFB13B",
+    name = "BinaryGLTF"
+  };
+  ["import"] = {
+    icon = "",
+    color = "#ECECEC",
+    name = "ImportConfiguration"
+  };
+  ["material"] = {
+    icon = "",
+    color = "#B83998",
+    name = "Material"
+  };
+  ["otf"] = {
+    icon = "",
+    color = "#ECECEC",
+    name = "OpenTypeFont"
+  };
+  ["cfg"] = {
+    icon = "",
+    color = "#ECECEC",
+    name = "Configuration"
+  };
+  ["pck"] = {
+    icon = "",
+    color = "#6d8086",
+    name = "PackedResource"
+  };
+  ["desktop"] = {
+    icon = "",
+    color = "#563d7c",
+    name = "DesktopEntry"
+  };
+  ["opus"] = {
+    icon = "",
+    color = "#F88A02",
+    name = "OPUS"
   };
 }
 
