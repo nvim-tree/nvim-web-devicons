@@ -180,12 +180,12 @@ local icons = {
   [".zshenv"] = {
     icon = "",
     color = "#89e051",
-    name = "Zshrc"
+    name = "Zshenv"
   };
   [".zprofile"] = {
     icon = "",
     color = "#89e051",
-    name = "Zshrc"
+    name = "Zshprofile"
   };
   ["Dockerfile"] = {
     icon = "",
