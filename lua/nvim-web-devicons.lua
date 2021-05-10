@@ -177,6 +177,16 @@ local icons = {
     color = "#89e051",
     name = "Zshrc"
   };
+  [".zshenv"] = {
+    icon = "",
+    color = "#89e051",
+    name = "Zshrc"
+  };
+  [".zprofile"] = {
+    icon = "",
+    color = "#89e051",
+    name = "Zshrc"
+  };
   ["Dockerfile"] = {
     icon = "",
     color = "#384d54",
