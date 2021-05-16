@@ -477,6 +477,11 @@ local icons = {
     color = "#e34c26",
     name = "Html",
   };
+  ["erb"] = {
+    icon = "",
+    color = "#701516",
+    name = "Erb",
+  };
   ["hxx"] = {
     icon = "",
     color = "#a074c4",
