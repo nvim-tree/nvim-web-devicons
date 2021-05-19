@@ -942,6 +942,11 @@ local icons = {
     color = "#F88A02",
     name = "OPUS"
   };
+  ["svelte"] = {
+    icon = "",
+    color = "#ff3e00",
+    name = "Svelte"
+  };
 }
 
 local default_icon = {
