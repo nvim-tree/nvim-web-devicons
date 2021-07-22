@@ -762,6 +762,11 @@ local icons = {
     color = "#4d5a5e",
     name = "Sh"
   };
+  ["sig"] = {
+    icon = "λ",
+    color = "#e37933",
+    name = "Sig"
+  };
   ["slim"] = {
     icon = "",
     color = "#e34c26",
@@ -771,6 +776,11 @@ local icons = {
     icon = "",
     color = "#854CC7",
     name = "Sln"
+  };
+  ["sml"] = {
+    icon = "λ",
+    color = "#e37933",
+    name = "Sml"
   };
   ["sql"] = {
     icon = "",
