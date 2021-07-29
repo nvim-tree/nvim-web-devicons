@@ -307,6 +307,11 @@ local icons = {
     color = "#519aba",
     name = "Cpp",
   };
+  ["cr"] = {
+    icon = "",
+    color = "#000000",
+    name = "Crystal",
+  };
   ["csh"] = {
     icon = "",
     color = "#4d5a5e",
