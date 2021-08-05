@@ -962,6 +962,11 @@ local icons = {
     color = "#ff3e00",
     name = "Svelte"
   };
+  ["pro"] = {
+    icon = "",
+    color = "#e4b854",
+    name = "Prolog"
+  };
 }
 
 local default_icon = {
