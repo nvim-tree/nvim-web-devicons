@@ -282,11 +282,16 @@ local icons = {
     color = "#6d8086",
     name = "CMake"
   };
+  ["cobol"] = {
+    icon = "⚙",
+    color = "#005ca5",
+    name = "Cobol",
+  };
   ["coffee"] = {
     icon = "",
     color = "#cbcb41",
     name = "Coffee",
-  };
+  };  
   ["conf"] = {
     icon = "",
     color = "#6d8086",
