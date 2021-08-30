@@ -291,7 +291,7 @@ local icons = {
     icon = "",
     color = "#cbcb41",
     name = "Coffee",
-  };
+  };  
   ["conf"] = {
     icon = "",
     color = "#6d8086",
