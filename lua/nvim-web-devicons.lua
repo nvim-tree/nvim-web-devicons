@@ -287,6 +287,21 @@ local icons = {
     color = "#005ca5",
     name = "Cobol",
   };
+  ["cob"] = {
+    icon = "⚙",
+    color = "#005ca5",
+    name = "Cobol",
+  };
+  ["cbl"] = {
+    icon = "⚙",
+    color = "#005ca5",
+    name = "Cobol",
+  };
+  ["cpy"] = {
+    icon = "⚙",
+    color = "#005ca5",
+    name = "Cobol",
+  };
   ["coffee"] = {
     icon = "",
     color = "#cbcb41",
