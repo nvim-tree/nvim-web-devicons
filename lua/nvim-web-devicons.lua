@@ -1018,6 +1018,8 @@ end
 local loaded = false
 
 local function setup(opts)
+  if loaded then return end
+
   loaded = true
 
   local user_icons = opts or {}
