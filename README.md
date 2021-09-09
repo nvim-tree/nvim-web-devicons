@@ -72,3 +72,18 @@ require'nvim-web-devicons'.get_icons()
 ```
 
 This can be useful for debugging purposes or for creating custom highlights for each icon.
+
+
+### Set an icon
+
+You can override individual icons with the `set_icon({...})` function:
+
+```lua
+require("nvim-web-devicons").set_icon {
+  zsh = {
+    icon = "",
+    color = "#428850",
+    name = "Zsh"
+  }
+}
+```
