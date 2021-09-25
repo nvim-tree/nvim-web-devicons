@@ -1073,15 +1073,22 @@ local function get_icon(name, ext, opts)
 end
 
 local function set_icon(user_icons)
-  icons = vim.tbl_extend("force", icons, user_icons)
+  icons = vim.tbl_extend("force", icons, user_icons or {})
   for _, icon_data in pairs(user_icons) do
     set_up_highlight(icon_data)
   end
 end
 
+local function set_default_icon(icon, color)
+  default_icon.icon = icon
+  default_icon.color = color
+  set_up_highlight(default_icon)
+end
+
 return {
   get_icon = get_icon,
   set_icon = set_icon,
+  set_default_icon = set_default_icon,
   setup = setup,
   has_loaded = function() return loaded end,
   get_icons = function() return icons end,
