@@ -835,7 +835,7 @@ local icons = {
     name = "Tor"
   };
   ["tex"] = {
-    icon = "ﭨ",
+    icon = "<U+2066>ﭨ<U+2069>", -- Testing this
     color = Colors.gui0B,
     name = "Tex"
   };
