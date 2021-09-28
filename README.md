@@ -36,6 +36,7 @@ to override colors.
 Refer to the colors.lua file
 
 To override the default colorcheme:
+
 ``lua
 Colors = {
     gui00 = "#rrbbgg", -- Default Background
