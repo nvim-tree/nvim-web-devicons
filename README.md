@@ -9,11 +9,54 @@ colors for each icon.
 
 ## Installation
 
+Using Plug
 ```vim
 Plug 'kyazdani42/nvim-web-devicons'
 ```
 
+Using Packer
+```lua
+return require('packer').startup(function()
+    use {
+        'kyazdani42/nvim-web-devicons',
+        config = function()
+        -- Your config stuff goes here
+        end
+    },
+end)
+```
+
 ## Usage
+
+### Colorscheme
+
+Devicons now uses the base 16 architecture, which means that it is now easier 
+to override colors.
+
+Refer to the colors.lua file
+
+To override the default colorcheme:
+``lua
+Colors = {
+    gui00 = "#rrbbgg", -- Default Background
+    gui01 = "#rrbbgg", -- Lighter Background (Used for status bars, line number and folding marks)
+    gui02 = "#rrbbgg", -- Selection Background
+    gui03 = "#rrbbgg", -- Comments, Invisibles, Line Highlighting
+    gui04 = "#rrbbgg", -- Dark Foreground (Used for status bars)
+    gui05 = "#rrbbgg", -- Default Foreground, Caret, Delimiters, Operators
+    gui06 = "#rrbbgg", -- Light Foreground (Not often used)
+    gui07 = "#rrbbgg", -- Light Background (Not often used)
+    gui08 = "#rrbbgg", -- Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted (red)
+    gui09 = "#rrbbgg", -- Integers, Boolean, Constants, XML Attributes, Markup Link Url (orange)
+    gui0A = "#rrbbgg", -- Classes, Markup Bold, Search Text Background (yellow)
+    gui0B = "#rrbbgg", -- Strings, Inherited Class, Markup Code, Diff Inserted (green)
+    gui0C = "#rrbbgg", -- Support, Regular Expressions, Escape Characters, Markup Quotes (cyan)
+    gui0D = "#rrbbgg", -- Functions, Methods, Attribute IDs, Headings (blue)
+    gui0E = "#rrbbgg", -- Keywords, Storage, Selector, Markup Italic, Diff Changed (magenta)
+    gui0F = "#rrbbgg", -- Deprecated, Opening/Closing Embedded Language Tags, e.g. `<?php ?>` (pink)
+    }
+```
+
 
 ### Setup
 
