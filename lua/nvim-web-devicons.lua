@@ -24,7 +24,7 @@
 -- },
 -- mootools = {
 --   icon = "",
---   color = "#ECECEC"
+--   color = Colors.gui06
 -- },
 -- puppet = {
 --   icon = "",
@@ -51,17 +51,17 @@ local icons = {
   },
   ["xls"] = {
     icon = "",
-    color = "#207245",
+    color = Colors.gui0B,
     name = "Xls",
   },
   ["doc"] = {
     icon = "",
-    color = "#185abd",
+    color = Colors.gui0D,
     name = "Doc",
   },
   ["ppt"] = {
     icon = "",
-    color = "#cb4a32",
+    color = Colors.gui08,
     name = "Ppt",
   },
   ["xml"] = {
@@ -81,7 +81,7 @@ local icons = {
   },
   ["cs"] = {
     icon = "",
-    color = "#596706",
+    color = Colors.gui0E,
     name = "Cs",
   },
   ["procfile"] = {
@@ -96,12 +96,12 @@ local icons = {
   },
   [".bashprofile"] = {
     icon = "",
-    color = "#89e051",
+    color = Colors.gui06,
     name = "BashProfile"
   };
   [".bashrc"] = {
     icon = "",
-    color = "#89e051",
+    color = Colors.gui06,
     name = "Bashrc"
   };
   [".babelrc"] = {
@@ -111,37 +111,37 @@ local icons = {
   };
   [".ds_store"] = {
     icon = "",
-    color = "#41535b",
+    color = Colors.gui06,
     name = "DsStore"
   };
   ["git"] = {
     icon = "",
-    color = "#F14C28",
+    color = Colors.gui09,
     name = "GitLogo"
   };
   [".gitattributes"] = {
     icon = "",
-    color = "#41535b",
+    color = Colors.gui06,
     name = "GitAttributes"
   };
   [".gitconfig"] = {
     icon = "",
-    color = "#41535b",
+    color = Colors.gui06,
     name = "GitConfig"
   };
   [".gitignore"] = {
     icon = "",
-    color = "#41535b",
+    color = Colors.gui06,
     name = "GitIgnore"
   };
   [".gitmodules"] = {
     icon = "",
-    color = "#41535b",
+    color = Colors.gui06,
     name = "GitModules"
   };
   ["COMMIT_EDITMSG"] = {
     icon = "",
-    color = "#41535b",
+    color = Colors.gui06,
     name = "GitCommit"
   };
   ["COPYING"] = {
@@ -156,7 +156,7 @@ local icons = {
   };
   [".gitlab-ci.yml"] = {
     icon = "",
-    color = "#e24329",
+    color = Colors.gui09,
     name = "GitlabCI"
   };
   [".gvimrc"] = {
@@ -166,7 +166,7 @@ local icons = {
   };
   [".npmignore"] = {
     icon = "",
-    color = "#E8274B",
+    color = Colors.gui08,
     name = "NPMIgnore"
   };
   [".vimrc"] = {
@@ -176,32 +176,32 @@ local icons = {
   };
   [".zshrc"] = {
     icon = "",
-    color = "#89e051",
+    color = Colors.gui06,
     name = "Zshrc"
   };
   [".zshenv"] = {
     icon = "",
-    color = "#89e051",
+    color = Colors.gui06,
     name = "Zshenv"
   };
   [".zprofile"] = {
     icon = "",
-    color = "#89e051",
+    color = Colors.gui06,
     name = "Zshprofile"
   };
   ["Dockerfile"] = {
     icon = "",
-    color = "#384d54",
+    color = Colors.gui0D,
     name = "Dockerfile"
   };
   ["Gemfile$"] = {
     icon = "",
-    color = "#701516",
+    color = Colors.gui08,
     name = "Gemfile"
   };
   ["LICENSE"] = {
     icon = "",
-    color = "#d0bf41",
+    color = Colors.gui0A,
     name = "License"
   };
   ["Vagrantfile$"] = {
@@ -226,17 +226,17 @@ local icons = {
   };
   ["awk"] = {
     icon = "",
-    color = "#4d5a5e",
+    color = Colors.gui06,
     name = "Awk",
   };
   ["bash"] = {
     icon = "",
-    color = "#89e051",
+    color = Colors.gui06,
     name = "Bash",
   };
   ["bat"] = {
     icon = "",
-    color = "#C1F12E",
+    color = Colors.gui06,
     name = "Bat"
   };
   ["bmp"] = {
@@ -246,17 +246,17 @@ local icons = {
   };
   ["c"] = {
     icon = "",
-    color = "#599eff",
+    color = Colors.gui0D,
     name = "C"
   };
   ["c++"] = {
     icon = "",
-    color = "#f34b7d",
+    color = Colors.gui08,
     name = "CPlusPlus"
   };
   ["cc"] = {
     icon = "",
-    color = "#f34b7d",
+    color = Colors.gui08,
     name = "CPlusPlus"
   };
   ["clj"] = {
@@ -276,12 +276,12 @@ local icons = {
   };
   ["CMakeLists.txt"] = {
     icon = "",
-    color = "#6d8086",
+    color = Colors.gui06,
     name = "CMakeLists"
   };
   ["cmake"] = {
     icon = "",
-    color = "#6d8086",
+    color = Colors.gui06,
     name = "CMake"
   };
   ["cobol"] = {
@@ -311,12 +311,12 @@ local icons = {
   };
   ["conf"] = {
     icon = "",
-    color = "#6d8086",
+    color = Colors.gui06,
     name = "Conf",
   };
   ["config.ru"] = {
     icon = "",
-    color = "#701516",
+    color = Colors.gui08,
     name = "ConfigRu"
   };
   ["cp"] = {
@@ -331,12 +331,12 @@ local icons = {
   };
   ["cr"] = {
     icon = "",
-    color = "#000000",
+    color = Colors.gui0A,
     name = "Crystal",
   };
   ["csh"] = {
     icon = "",
-    color = "#4d5a5e",
+    color = Colors.gui06,
     name = "Csh",
   };
   ["cson"] = {
@@ -356,32 +356,32 @@ local icons = {
   };
   ["d"] = {
     icon = "",
-    color = "#427819",
+    color = Colors.gui0B,
     name = "D",
   };
   ["dart"] = {
     icon = "",
-    color = "#03589C",
+    color = Colors.gui0D,
     name = "Dart",
   };
   ["db"] = {
     icon = "",
-    color = "#dad8d8",
+    color = Colors.gui06,
     name = "Db",
   };
   ["diff"] = {
     icon = "",
-    color = "#41535b",
+    color = Colors.gui06,
     name = "Diff",
   };
   ["dockerfile"] = {
     icon = "",
-    color = "#384d54",
+    color = Colors.gui0D,
     name = "Dockerfile",
   };
   ["dump"] = {
     icon = "",
-    color = "#dad8d8",
+    color = Colors.gui06,
     name = "Dump",
   };
   ["edn"] = {
@@ -406,7 +406,7 @@ local icons = {
   };
   ["erl"] = {
     icon = "",
-    color = "#B83998",
+    color = Colors.gui0E,
     name = "Erl",
   };
   ["ex"] = {
@@ -431,7 +431,7 @@ local icons = {
   };
   ["fish"] = {
     icon = "",
-    color = "#4d5a5e",
+    color = Colors.gui06,
     name = "Fish",
   };
   ["fs"] = {
@@ -456,7 +456,7 @@ local icons = {
   };
   ["gemspec"] = {
     icon = "",
-    color = "#701516",
+    color = Colors.gui08,
     name = "Gemspec",
   };
   ["gif"] = {
@@ -476,12 +476,12 @@ local icons = {
   };
   ["haml"] = {
     icon = "",
-    color = "#eaeae1",
+    color = Colors.gui0A,
     name = "Haml",
   };
   ["hbs"] = {
     icon = "",
-    color = "#f0772b",
+    color = Colors.gui09,
     name = "Hbs",
   };
   ["hh"] = {
@@ -496,7 +496,7 @@ local icons = {
   };
   ["hrl"] = {
     icon = "",
-    color = "#B83998",
+    color = Colors.gui0E,
     name = "Hrl",
   };
   ["hs"] = {
@@ -516,7 +516,7 @@ local icons = {
   };
   ["erb"] = {
     icon = "",
-    color = "#701516",
+    color = Colors.gui08,
     name = "Erb",
   };
   ["hxx"] = {
@@ -531,7 +531,7 @@ local icons = {
   };
   ["ini"] = {
     icon = "",
-    color = "#6d8086",
+    color = Colors.gui06,
     name = "Ini",
   };
   ["java"] = {
@@ -571,7 +571,7 @@ local icons = {
   };
   ["ksh"] = {
     icon = "",
-    color = "#4d5a5e",
+    color = Colors.gui06,
     name = "Ksh",
   };
   ["leex"] = {
@@ -601,7 +601,7 @@ local icons = {
   };
   ["makefile"] = {
     icon = "",
-    color = "#6d8086",
+    color = Colors.gui06,
     name = "Makefile",
   };
   ["markdown"] = {
@@ -651,7 +651,7 @@ local icons = {
   };
   ["node_modules"] = {
     icon = "",
-    color = "#E8274B",
+    color = Colors.gui08,
     name = "NodeModules",
   };
   ["php"] = {
@@ -676,12 +676,12 @@ local icons = {
   };
   ["pp"] = {
     icon = "",
-    color = "#302B6D",
+    color = Colors.gui0E,
     name = "Pp"
   };
   ["ps1"] = {
     icon = "",
-    color = "#4d5a5e",
+    color = Colors.gui06,
     name = "PromptPs1"
   };
   ["psb"] = {
@@ -696,7 +696,7 @@ local icons = {
   };
   ["py"] = {
     icon = "",
-    color = "#3572A5",
+    color = Colors.gui0D,
     name = "Py"
   };
   ["pyc"] = {
@@ -726,22 +726,22 @@ local icons = {
   };
   ["rake"] = {
     icon = "",
-    color = "#701516",
+    color = Colors.gui08,
     name = "Rake"
   };
   ["rakefile"] = {
     icon = "",
-    color = "#701516",
+    color = Colors.gui08,
     name = "Rakefile"
   };
   ["rb"] = {
     icon = "",
-    color = "#701516",
+    color = Colors.gui08,
     name = "Rb"
   };
   ["rlib"] = {
     icon = "",
-    color = "#dea584",
+    color = Colors.gui0A,
     name = "Rlib",
   };
   ["rmd"] = {
@@ -761,12 +761,12 @@ local icons = {
   };
   ["rs"] = {
     icon = "",
-    color = "#dea584",
+    color = Colors.gui0A,
     name = "Rs"
   };
   ["rss"] = {
     icon = "",
-    color = "#FB9D3B",
+    color = Colors.gui0D,
     name = "Rss"
   };
   ["sass"] = {
@@ -786,7 +786,7 @@ local icons = {
   };
   ["sh"] = {
     icon = "",
-    color = "#4d5a5e",
+    color = Colors.gui06,
     name = "Sh"
   };
   ["sig"] = {
@@ -811,7 +811,7 @@ local icons = {
   };
   ["sql"] = {
     icon = "",
-    color = "#dad8d8",
+    color = Colors.gui0E,
     name = "Sql"
   };
   ["styl"] = {
@@ -841,7 +841,7 @@ local icons = {
   };
   ["toml"] = {
     icon = "",
-    color = "#6d8086",
+    color = Colors.gui06,
     name = "Toml"
   };
   ["ts"] = {
@@ -891,22 +891,22 @@ local icons = {
   };
   ["yaml"] = {
     icon = "",
-    color = "#6d8086",
+    color = Colors.gui06,
     name = "Yaml"
   };
   ["yml"] = {
     icon = "",
-    color = "#6d8086",
+    color = Colors.gui06,
     name = "Yml"
   };
   ["zsh"] = {
     icon = "",
-    color = "#89e051",
+    color = Colors.gui06,
     name = "Zsh"
   };
   ["terminal"] = {
     icon = "",
-    color = "#31B53E",
+    color = Colors.gui06,
     name = "Terminal"
   };
   ["pdf"] = {
@@ -921,7 +921,7 @@ local icons = {
   };
   ["gd"] = {
     icon = "",
-    color = "#6d8086",
+    color = Colors.gui06,
     name = "GDScript"
   };
   ["tscn"] = {
@@ -931,7 +931,7 @@ local icons = {
   };
   ["godot"] = {
     icon = "",
-    color = "#6d8086",
+    color = Colors.gui06,
     name = "GodotProject"
   };
   ["tres"] = {
@@ -946,27 +946,27 @@ local icons = {
   };
   ["import"] = {
     icon = "",
-    color = "#ECECEC",
+    color = Colors.gui06,
     name = "ImportConfiguration"
   };
   ["material"] = {
     icon = "",
-    color = "#B83998",
+    color = Colors.gui0E,
     name = "Material"
   };
   ["otf"] = {
     icon = "",
-    color = "#ECECEC",
+    color = Colors.gui06,
     name = "OpenTypeFont"
   };
   ["cfg"] = {
     icon = "",
-    color = "#ECECEC",
+    color = Colors.gui06,
     name = "Configuration"
   };
   ["pck"] = {
     icon = "",
-    color = "#6d8086",
+    color = Colors.gui06,
     name = "PackedResource"
   };
   ["desktop"] = {
@@ -993,7 +993,7 @@ local icons = {
 
 local default_icon = {
   icon = "",
-  color = "#6d8086",
+  color = Colors.gui06,
   name = "Default",
 }
 
