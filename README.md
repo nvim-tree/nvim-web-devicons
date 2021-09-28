@@ -15,6 +15,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 ```
 
 Using Packer
+
 ```lua
 return require('packer').startup(function()
     use {
@@ -30,14 +31,14 @@ end)
 
 ### Colorscheme
 
-Devicons now uses the base 16 architecture, which means that it is now easier 
+Devicons now uses the base 16 architecture, which means that it is now easier
 to override colors.
 
 Refer to the colors.lua file
 
 To override the default colorcheme:
 
-``lua
+```lua
 Colors = {
     gui00 = "#rrbbgg", -- Default Background
     gui01 = "#rrbbgg", -- Lighter Background (Used for status bars, line number and folding marks)
@@ -55,7 +56,7 @@ Colors = {
     gui0D = "#rrbbgg", -- Functions, Methods, Attribute IDs, Headings (blue)
     gui0E = "#rrbbgg", -- Keywords, Storage, Selector, Markup Italic, Diff Changed (magenta)
     gui0F = "#rrbbgg", -- Deprecated, Opening/Closing Embedded Language Tags, e.g. `<?php ?>` (pink)
-    }
+}
 ```
 
 
