@@ -91,7 +91,7 @@ local icons = {
   },
   ["svg"] = {
     icon = "ﰟ",
-    color = "#FFB13B",
+    color = Colors.gui0A,
     name = "Svg",
   },
   [".bashprofile"] = {
@@ -206,7 +206,7 @@ local icons = {
   };
   ["Vagrantfile$"] = {
     icon = "",
-    color = "#1563FF",
+    color = Colors.gui0D,
     name = "Vagrantfile"
   };
   ["_gvimrc"] = {
@@ -261,12 +261,12 @@ local icons = {
   };
   ["clj"] = {
     icon = "",
-    color = "#8dc149",
+    color = Colors.gui0B,
     name = "Clojure",
   };
   ["cljc"] = {
     icon = "",
-    color = "#8dc149",
+    color = Colors.gui0B,
     name = "ClojureC"
   };
   ["cljs"] = {
@@ -346,7 +346,7 @@ local icons = {
   };
   ["css"] = {
     icon = "",
-    color = "#563d7c",
+    color = Colors.gui0E,
     name = "Css",
   };
   ["cxx"] = {
@@ -506,12 +506,12 @@ local icons = {
   };
   ["htm"] = {
     icon = "",
-    color = "#e34c26",
+    color = Colors.gui08,
     name = "Htm",
   };
   ["html"] = {
     icon = "",
-    color = "#e34c26",
+    color = Colors.gui08,
     name = "Html",
   };
   ["erb"] = {
@@ -581,7 +581,7 @@ local icons = {
   };
   ["less"] = {
     icon = "",
-    color = "#563d7c",
+    color = Colors.gui0E,
     name = "Less",
   };
   ["lhs"] = {
@@ -596,7 +596,7 @@ local icons = {
   };
   ["lua"] = {
     icon = "",
-    color = "#51a0cf",
+    color = Colors.gui0C,
     name = "Lua",
   };
   ["makefile"] = {
@@ -646,7 +646,7 @@ local icons = {
   };
   ["nix"] = {
     icon = "",
-    color = "#7ebae4",
+    color = Colors.gui0C,
     name = "Nix",
   };
   ["node_modules"] = {
@@ -771,7 +771,7 @@ local icons = {
   };
   ["sass"] = {
     icon = "",
-    color = "#f55385",
+    color = Colors.gui0F,
     name = "Sass"
   };
   ["scala"] = {
@@ -781,7 +781,7 @@ local icons = {
   };
   ["scss"] = {
     icon = "",
-    color = "#f55385",
+    color = Colors.gui0F,
     name = "Scss"
   };
   ["sh"] = {
@@ -796,7 +796,7 @@ local icons = {
   };
   ["slim"] = {
     icon = "",
-    color = "#e34c26",
+    color = Colors.gui08,
     name = "Slim"
   };
   ["sln"] = {
@@ -816,7 +816,7 @@ local icons = {
   };
   ["styl"] = {
     icon = "",
-    color = "#8dc149",
+    color = Colors.gui0B,
     name = "Styl"
   };
   ["suo"] = {
@@ -836,7 +836,7 @@ local icons = {
   };
   ["tex"] = {
     icon = "ﭨ",
-    color = "#3D6117",
+    color = Colors.gui0B,
     name = "Tex"
   };
   ["toml"] = {
@@ -856,7 +856,7 @@ local icons = {
   };
   ["twig"] = {
     icon = "",
-    color = "#8dc149",
+    color = Colors.gui0B,
     name = "Twig"
   };
   ["vim"] = {
@@ -866,7 +866,7 @@ local icons = {
   };
   ["vue"] = {
     icon = "﵂",
-    color = "#8dc149",
+    color = Colors.gui0B,
     name = "Vue"
   };
   ["webmanifest"] = {
@@ -911,12 +911,12 @@ local icons = {
   };
   ["pdf"] = {
     icon = "",
-    color = "#b30b00",
+    color = Colors.gui08,
     name = "Pdf"
   };
   ["kt"] = {
     icon = "𝙆",
-    color = "#F88A02",
+    color = Colors.gui09,
     name = "Kotlin"
   };
   ["gd"] = {
@@ -941,7 +941,7 @@ local icons = {
   };
   ["glb"] = {
     icon = "",
-    color = "#FFB13B",
+    color = Colors.gui0A,
     name = "BinaryGLTF"
   };
   ["import"] = {
@@ -971,22 +971,22 @@ local icons = {
   };
   ["desktop"] = {
     icon = "",
-    color = "#563d7c",
+    color = Colors.gui0E,
     name = "DesktopEntry"
   };
   ["opus"] = {
     icon = "",
-    color = "#F88A02",
+    color = Colors.gui0A,
     name = "OPUS"
   };
   ["svelte"] = {
     icon = "",
-    color = "#ff3e00",
+    color = Colors.gui09,
     name = "Svelte"
   };
   ["pro"] = {
     icon = "",
-    color = "#e4b854",
+    color = Colors.gui0A,
     name = "Prolog"
   };
 }
