@@ -1053,6 +1053,7 @@ local function get_icon(name, ext, opts)
     setup()
   end
 
+  name = vim.fn.fnamemodify(name, ':t')
   local has_default = (opts and opts.default) or global_opts.default
   local icon_data = icons[name] or icons[ext] or (has_default and default_icon)
 
