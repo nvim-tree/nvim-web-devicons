@@ -63,6 +63,17 @@ You can check if the setup function was already called with:
 require'nvim-web-devicons'.has_loaded()
 ```
 
+### Get icon and color code
+
+`get_icon_color` differs from `get_icon` only in the second return value.
+`get_icon` returns icon and highlight name.
+If you want to get color code, you can use this function.
+```lua
+local icon, color = require'nvim-web-devicons'.get_icon_color("init.lua", "lua")
+assert(icon == "")
+assert(color == "#51a0cf")
+```
+
 ### Get all icons
 
 It is possible to get all of the registered icons with the `get_icons()` function:
