@@ -1049,6 +1049,7 @@ local function setup(opts)
 end
 
 local function get_icon(name, ext, opts)
+  ext = ext or name:match("^.*%.(.*)$") or ""
   if not loaded then
     setup()
   end
@@ -1062,6 +1063,7 @@ local function get_icon(name, ext, opts)
 end
 
 local function get_icon_color(name, ext, opts)
+  ext = ext or name:match("^.*%.(.*)$") or ""
   if not loaded then
     setup()
   end
