@@ -482,6 +482,11 @@ local icons = {
     color = "#f0772b",
     name = "Hbs",
   };
+  ["heex"] = {
+    icon = "",
+    color = "#a074c4",
+    name = "Heex",
+  };
   ["hh"] = {
     icon = "",
     color = "#a074c4",
