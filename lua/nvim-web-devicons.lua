@@ -987,6 +987,11 @@ local icons = {
     color = "#e4b854",
     name = "Prolog"
   };
+  ["zig"] = {
+    icon = '',
+    color = '#f69a1b',
+    name = 'Zig',
+  };
 }
 
 local default_icon = {
