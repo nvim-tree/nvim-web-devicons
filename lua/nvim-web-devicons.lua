@@ -484,6 +484,11 @@ local icons = {
     color = Colors.gui09,
     name = "Hbs",
   };
+  ["heex"] = {
+    icon = "",
+    color = "#a074c4",
+    name = "Heex",
+  };
   ["hh"] = {
     icon = "",
     color = Colors.gui0E,
@@ -989,6 +994,11 @@ local icons = {
     color = Colors.gui0A,
     name = "Prolog"
   };
+  ["zig"] = {
+    icon = '',
+    color = '#f69a1b',
+    name = 'Zig',
+  };
 }
 
 local default_icon = {
@@ -1051,6 +1061,7 @@ local function setup(opts)
 end
 
 local function get_icon(name, ext, opts)
+  ext = ext or name:match("^.*%.(.*)$") or ""
   if not loaded then
     setup()
   end
@@ -1064,6 +1075,7 @@ local function get_icon(name, ext, opts)
 end
 
 local function get_icon_color(name, ext, opts)
+  ext = ext or name:match("^.*%.(.*)$") or ""
   if not loaded then
     setup()
   end
