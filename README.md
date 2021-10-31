@@ -3,6 +3,8 @@
 A `lua` fork of [vim-devicons](https://github.com/ryanoasis/vim-devicons). This plugin provides the same icons _as well as_
 colors for each icon.
 
+Also there's cool icons wow :D
+
 ## Requirements
 
 - [A patched font](https://www.nerdfonts.com/)
@@ -11,7 +13,7 @@ colors for each icon.
 
 Using Plug
 ```vim
-Plug 'kyazdani42/nvim-web-devicons'
+Plug 'FrenzyExists/nvim-web-devicons'
 ```
 
 Using Packer
