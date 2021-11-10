@@ -132,6 +132,11 @@ local icons = {
     color = "#41535b",
     name = "GitIgnore"
   };
+  [".globalgitignore"] = {
+    icon = "",
+    color = "#41535b",
+    name = "GitIgnore"
+  };
   [".gitmodules"] = {
     icon = "",
     color = "#41535b",
@@ -742,6 +747,11 @@ local icons = {
     color = "#701516",
     name = "Rb"
   };
+  ["Brewfile"] = {
+    icon = "",
+    color = "#701516",
+    name = "Brewfile"
+  };
   ["rlib"] = {
     icon = "",
     color = "#dea584",
@@ -836,6 +846,11 @@ local icons = {
     icon = "",
     color = "#519aba",
     name = "Tor"
+  };
+  ["txt"] = {
+    icon = "",
+    color = "#89e051",
+    name = "Txt"
   };
   ["tex"] = {
     icon = "ﭨ",
