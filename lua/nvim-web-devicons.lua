@@ -132,11 +132,6 @@ local icons = {
     color = "#41535b",
     name = "GitIgnore"
   };
-  [".globalgitignore"] = {
-    icon = "",
-    color = "#41535b",
-    name = "GitIgnore"
-  };
   [".gitmodules"] = {
     icon = "",
     color = "#41535b",
