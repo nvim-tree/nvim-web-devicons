@@ -152,6 +152,12 @@ local icons = {
     cterm_color = "59",
     name = "GitIgnore",
   },
+  [".globalgitignore"] = {
+    icon = "",
+    color = "#41535b",
+    cterm_color = "59",
+    name = "GitIgnore"
+  };
   [".gitmodules"] = {
     icon = "",
     color = "#41535b",
@@ -884,6 +890,12 @@ local icons = {
     cterm_color = "52",
     name = "Rb",
   },
+  ["Brewfile"] = {
+    icon = "",
+    color = "#701516",
+    cterm_color = "52",
+    name = "Brewfile"
+  };
   ["rlib"] = {
     icon = "",
     color = "#dea584",
@@ -998,6 +1010,12 @@ local icons = {
     cterm_color = "67",
     name = "Tor",
   },
+  ["txt"] = {
+    icon = "",
+    color = "#89e051",
+    cterm_color = "113",
+    name = "Txt"
+  };
   ["tex"] = {
     icon = "ﭨ",
     color = "#3D6117",
