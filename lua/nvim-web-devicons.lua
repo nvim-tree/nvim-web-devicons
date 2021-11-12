@@ -152,12 +152,6 @@ local icons = {
     cterm_color = "59",
     name = "GitIgnore",
   },
-  [".globalgitignore"] = {
-    icon = "",
-    color = "#41535b",
-    cterm_color = "59",
-    name = "GitIgnore"
-  };
   [".gitmodules"] = {
     icon = "",
     color = "#41535b",
