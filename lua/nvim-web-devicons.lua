@@ -1007,6 +1007,11 @@ local icons = {
     color = '#f69a1b',
     name = 'Zig',
   };
+ ['mint'] = {
+   icon = "",
+   color ='#87c095',
+   name = "Mint",
+ },
 }
 
 local default_icon = {
