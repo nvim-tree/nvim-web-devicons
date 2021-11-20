@@ -744,6 +744,11 @@ local icons = {
     color = Colors.gui08,
     name = "Rb"
   };
+  ["Brewfile"] = {
+    icon = "",
+    color = "#701516",
+    name = "Brewfile"
+  };
   ["rlib"] = {
     icon = "",
     color = Colors.gui0A,
@@ -838,6 +843,11 @@ local icons = {
     icon = "",
     color = Colors.gui0C,
     name = "Tor"
+  };
+  ["txt"] = {
+    icon = "",
+    color = "#89e051",
+    name = "Txt"
   };
   ["tex"] = {
     icon = "<U+2066>ﭨ<U+2069>", -- Testing this
