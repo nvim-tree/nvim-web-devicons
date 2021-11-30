@@ -890,6 +890,11 @@ local icons = {
     cterm_color = "52",
     name = "Brewfile"
   };
+  ["Brewfile"] = {
+    icon = "",
+    color = "#701516",
+    name = "Brewfile"
+  };
   ["rlib"] = {
     icon = "",
     color = "#dea584",
@@ -1008,6 +1013,11 @@ local icons = {
     icon = "",
     color = "#89e051",
     cterm_color = "113",
+    name = "Txt"
+  };
+  ["txt"] = {
+    icon = "",
+    color = "#89e051",
     name = "Txt"
   };
   ["tex"] = {
@@ -1201,6 +1211,12 @@ local icons = {
     color = "#f69a1b",
     cterm_color = "208",
     name = "Zig",
+  },
+  ['mint'] = {
+    icon = "",
+    color ='#87c095',
+    cterm_color = "108",
+    name = "Mint",
   },
 }
 
