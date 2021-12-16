@@ -832,25 +832,25 @@ local icons = {
   },
   ["py"] = {
     icon = "",
-    color = "#3572A5",
+    color = "#ffbc03",
     cterm_color = "61",
     name = "Py",
   },
   ["pyc"] = {
     icon = "",
-    color = "#519aba",
+    color = "#ffe291",
     cterm_color = "67",
     name = "Pyc",
   },
   ["pyd"] = {
     icon = "",
-    color = "#519aba",
+    color = "#ffe291",
     cterm_color = "67",
     name = "Pyd",
   },
   ["pyo"] = {
     icon = "",
-    color = "#519aba",
+    color = "#ffe291",
     cterm_color = "67",
     name = "Pyo",
   },
@@ -985,6 +985,18 @@ local icons = {
     cterm_color = "188",
     name = "Sql",
   },
+  ["sqlite"] = {
+    icon = "",
+    color = "#dad8d8",
+    cterm_color = "188",
+    name = "Sql",
+  },
+  ["sqlite3"] = {
+    icon = "",
+    color = "#dad8d8",
+    cterm_color = "188",
+    name = "Sql",
+  },
   ["styl"] = {
     icon = "",
     color = "#8dc149",
@@ -994,6 +1006,12 @@ local icons = {
   ["suo"] = {
     icon = "",
     color = "#854CC7",
+    cterm_color = "98",
+    name = "Suo",
+  },
+  ["sublime"] = {
+    icon = "",
+    color = "#e37933",
     cterm_color = "98",
     name = "Suo",
   },
