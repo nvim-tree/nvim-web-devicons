@@ -27,8 +27,8 @@
 --   color = "#ECECEC"
 -- },
 -- puppet = {
---   icon = "",
---   color = "#cbcb41"
+--   icon = "",
+--   color = "#ffa61a"
 -- },
 
 local icons = {
@@ -807,11 +807,15 @@ local icons = {
     name = "Png",
   },
   ["pp"] = {
-    icon = "",
-    color = "#302B6D",
-    cterm_color = "53",
-    name = "Pp",
-  },
+    icon = "",
+    color = "#FFA61A",
+    name = "Pp"
+  };
+  ["epp"] = {
+    icon = "",
+    color = "#FFA61A",
+    name = "Epp"
+  };
   ["ps1"] = {
     icon = "",
     color = "#4d5a5e",
