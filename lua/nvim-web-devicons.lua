@@ -410,6 +410,12 @@ local icons = {
     cterm_color = "60",
     name = "Css",
   },
+  ["csv"] = {
+    icon = "",
+    color = "#89e051",
+    cterm_color = "113",
+    name = "Csv"
+  },
   ["cxx"] = {
     icon = "",
     color = "#519aba",
@@ -893,12 +899,7 @@ local icons = {
     color = "#701516",
     cterm_color = "52",
     name = "Brewfile"
-  };
-  ["Brewfile"] = {
-    icon = "",
-    color = "#701516",
-    name = "Brewfile"
-  };
+  },
   ["rlib"] = {
     icon = "",
     color = "#dea584",
@@ -1036,12 +1037,7 @@ local icons = {
     color = "#89e051",
     cterm_color = "113",
     name = "Txt"
-  };
-  ["txt"] = {
-    icon = "",
-    color = "#89e051",
-    name = "Txt"
-  };
+  },
   ["tex"] = {
     icon = "ﭨ",
     color = "#3D6117",
