@@ -1236,6 +1236,12 @@ local icons = {
     cterm_color = "108",
     name = "Mint",
   },
+  ["nim"] = {
+    icon = "👑",
+    color = "#f3d400",
+    cterm_color = "220",
+    name = "Nim",
+  },
 }
 
 local default_icon = {
