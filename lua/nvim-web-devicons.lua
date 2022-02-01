@@ -817,6 +817,12 @@ local icons = {
     cterm_color = "173",
     name = "Mustache",
   },
+  ["nim"] = {
+    icon = "👑",
+    color = "#f3d400",
+    cterm_color = "220",
+    name = "Nim",
+  },
   ["nix"] = {
     icon = "",
     color = "#7ebae4",
@@ -1235,12 +1241,6 @@ local icons = {
     color = "#89e051",
     cterm_color = "113",
     name = "Zsh",
-  },
-  ["nim"] = {
-    icon = "👑",
-    color = "#f3d400",
-    cterm_color = "220",
-    name = "Nim",
   },
 }
 
