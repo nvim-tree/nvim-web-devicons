@@ -98,6 +98,12 @@ local icons = {
     cterm_color = "161",
     name = "NPMIgnore",
   },
+  [".npmrc"] = {
+    icon = "",
+    color = "#E8274B",
+    cterm_color = "161",
+    name = "NPMrc",
+  },
   [".settings.json"] = {
     icon = "",
     color = "#854CC7",
@@ -846,6 +852,16 @@ local icons = {
     color = "#ECECEC",
     cterm_color = "231",
     name = "OpenTypeFont",
+  },
+  ['package.json'] = {
+    icon = "",
+    color = "#e8274b",
+    name = "PackageJson"
+  },
+  ['package-lock.json'] = {
+    icon = "",
+    color = "#7a0d21",
+    name = "PackageLockJson"
   },
   ["pck"] = {
     icon = "",
