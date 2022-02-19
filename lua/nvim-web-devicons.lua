@@ -1295,9 +1295,18 @@ local function set_up_highlight(icon_data)
   end
 end
 
+local function highlight_exists(group)
+  if not group then return end
+
+  local ok, hl = pcall(vim.api.nvim_get_hl_by_name, group, true)
+  return ok and not (hl or {})[true]
+end
+
 local function set_up_highlights()
   for _, icon_data in pairs(icons) do
-    if (icon_data.color or icon_data.cterm_color) and icon_data.name then
+    local has_color = icon_data.color or icon_data.cterm_color
+    local name_valid = icon_data.name and not highlight_exists(get_highlight_name(icon_data))
+    if has_color and name_valid then
       set_up_highlight(icon_data)
     end
   end
