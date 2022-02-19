@@ -38,7 +38,7 @@ local icons = {
     cterm_color = "185",
     name = "Babelrc",
   },
-  [".bashprofile"] = {
+  [".bash_profile"] = {
     icon = "",
     color = "#89e051",
     cterm_color = "113",
