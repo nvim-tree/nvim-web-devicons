@@ -1258,6 +1258,12 @@ local icons = {
     cterm_color = "113",
     name = "Zsh",
   },
+  ["sol"] = {
+    icon = "ﲹ",
+    color = "#519aba",
+    cterm_color = "67",
+    name = "Solidity",
+  },
 }
 
 local default_icon = {
