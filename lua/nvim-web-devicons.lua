@@ -505,6 +505,12 @@ local icons = {
     cterm_color = "185",
     name = "Favicon",
   },
+  ["fnl"] = {
+    color = "#fff3d7",
+    icon = "🌜",
+    cterm_color = "230",
+    name = "Fennel"
+  },
   ["fish"] = {
     icon = "",
     color = "#4d5a5e",
