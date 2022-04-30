@@ -1533,10 +1533,7 @@ end
 
 local function get_icon_by_filetype(ft, opts)
   local name = get_icon_name_by_filetype(ft)
-  if name == nil then
-    return
-  end
-  return get_icon(name, nil, opts)
+  return get_icon(name or '', nil, opts)
 end
 
 local function get_icon_colors(name, ext, opts)
@@ -1555,10 +1552,7 @@ end
 
 local function get_icon_colors_by_filetype(ft, opts)
   local name = get_icon_name_by_filetype(ft)
-  if name == nil then
-    return
-  end
-  return get_icon_colors(name, nil, opts)
+  return get_icon_colors(name or '', nil, opts)
 end
 
 local function get_icon_color(name, ext, opts)
@@ -1568,10 +1562,7 @@ end
 
 local function get_icon_color_by_filetype(ft, opts)
   local name = get_icon_name_by_filetype(ft)
-  if name == nil then
-    return
-  end
-  return get_icon_color(name, nil, opts)
+  return get_icon_color(name or '', nil, opts)
 end
 
 local function get_icon_cterm_color(name, ext, opts)
@@ -1581,10 +1572,7 @@ end
 
 local function get_icon_cterm_color_by_filetype(ft, opts)
   local name = get_icon_name_by_filetype(ft)
-  if name == nil then
-    return
-  end
-  return get_icon_cterm_color(name, nil, opts)
+  return get_icon_cterm_color(name or '', nil, opts)
 end
 
 local function set_icon(user_icons)
