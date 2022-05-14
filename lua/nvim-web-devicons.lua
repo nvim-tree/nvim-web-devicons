@@ -1480,6 +1480,15 @@ local function set_up_highlights()
   end
 end
 
+local function get_highlight_foreground(icon_data)
+  return string.format("#%06x", vim.api.nvim_get_hl_by_name(get_highlight_name(icon_data), true).foreground)
+end
+
+local function get_highlight_ctermfg(icon_data)
+  local _, _, ctermfg = string.find(vim.fn.execute("highlight " .. get_highlight_name(icon_data)), "ctermfg=(%d+)")
+  return ctermfg
+end
+
 local loaded = false
 
 local function setup(opts)
@@ -1546,7 +1555,13 @@ local function get_icon_colors(name, ext, opts)
   local icon_data = icons[name] or icons[ext] or (has_default and default_icon)
 
   if icon_data then
-    return icon_data.icon, icon_data.color, icon_data.cterm_color
+    local color = icon_data.color
+    local cterm_color = icon_data.cterm_color
+    if icon_data.name and highlight_exists(get_highlight_name(icon_data)) then
+      color = get_highlight_foreground(icon_data) or color
+      cterm_color = get_highlight_ctermfg(icon_data) or cterm_color
+    end
+    return icon_data.icon, color, cterm_color
   end
 end
 
