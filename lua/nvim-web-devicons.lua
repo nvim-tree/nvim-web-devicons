@@ -291,6 +291,12 @@ local icons = {
     cterm_color = "67",
     name = "ClojureJS",
   },
+  ["cljd"] = {
+    icon = "",
+    color = "#519aba",
+    cterm_color = "67",
+    name = "ClojureDart",
+  },
   ["cmake"] = {
     icon = "",
     color = "#6d8086",
