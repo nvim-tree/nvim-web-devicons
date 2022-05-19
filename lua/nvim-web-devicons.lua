@@ -740,6 +740,12 @@ local icons = {
     cterm_color = "208",
     name = "Kotlin",
   },
+  ["kts"] = {
+    icon = "𝙆",
+    color = "#F88A02",
+    cterm_color = "208",
+    name = "KotlinScript",
+  },
   ["leex"] = {
     icon = "",
     color = "#a074c4",
