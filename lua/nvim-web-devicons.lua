@@ -836,6 +836,12 @@ local icons = {
     cterm_color = "173",
     name = "Mli",
   },
+  ["mo"] = {
+    icon = "∞",
+    color = "#9772FB",
+    cterm_color = "99",
+    name = "Motoko",
+  },
   ["mustache"] = {
     icon = "",
     color = "#e37933",
@@ -1408,6 +1414,7 @@ local filetypes = {
   ["material"] = "material",
   ["mdx"] = "mdx",
   ["mint"] = "mint",
+  ["motoko"] = "mo",
   ["mustache"] = "mustache",
   ["nim"] = "nim",
   ["nix"] = "nix",
