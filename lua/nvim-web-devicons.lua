@@ -1145,6 +1145,18 @@ local icons = {
     cterm_color = "67",
     name = "Tor",
   },
+  ["tbc"] = {
+    icon = "﯑",
+    color = "#1e5cb3",
+    cterm_color = "67",
+    name = "Tcl",
+  },
+  ["tcl"] = {
+    icon = "﯑",
+    color = "#1e5cb3",
+    cterm_color = "67",
+    name = "Tcl",
+  },
   ["terminal"] = {
     icon = "",
     color = "#31B53E",
@@ -1420,6 +1432,7 @@ local filetypes = {
   ["svg"] = "svg",
   ["swift"] = "swift",
   ["tads"] = "t",
+  ["tcl"] = "tcl",
   ["terminal"] = "terminal",
   ["toml"] = "toml",
   ["tres"] = "tres",
