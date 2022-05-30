@@ -435,6 +435,12 @@ local icons = {
     cterm_color = "59",
     name = "Dockerfile",
   },
+  ["drools"] = {
+    icon = "",
+    color = "#ffafaf",
+    cterm_color = "217",
+    name = "Drools",
+  },
   ["dropbox"] = {
     icon = "",
     color = "#0061FE",
@@ -1373,6 +1379,7 @@ local filetypes = {
   ["dockerfile"] = "dockerfile",
   ["dosbatch"] = "bat",
   ["dosini"] = "ini",
+  ["drools"] = "drl",
   ["dropbox"] = "dropbox",
   ["dump"] = "dump",
   ["eex"] = "eex",
