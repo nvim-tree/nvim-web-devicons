@@ -435,7 +435,7 @@ local icons = {
     cterm_color = "59",
     name = "Dockerfile",
   },
-  ["drools"] = {
+  ["drl"] = {
     icon = "",
     color = "#ffafaf",
     cterm_color = "217",
