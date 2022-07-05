@@ -1476,6 +1476,7 @@ local filetypes = {
   ["postscr"] = "ai",
   ["ppt"] = "ppt",
   ["prisma"] = "prisma",
+  ["procfile"] = "Procfile",
   ["ps1"] = "ps1",
   ["psb"] = "psb",
   ["psd"] = "psd",
