@@ -51,7 +51,7 @@ local icons = {
     cterm_color = "113",
     name = "Bashrc",
   },
-  [".ds_store"] = {
+  [".DS_Store"] = {
     icon = "",
     color = "#41535b",
     cterm_color = "59",
@@ -376,9 +376,9 @@ local icons = {
     name = "Cson",
   },
   ["css"] = {
-    icon = "",
-    color = "#563d7c",
-    cterm_color = "60",
+    icon = "",
+    color = "#42a5f5",
+    cterm_color = "39",
     name = "Css",
   },
   ["csv"] = {
@@ -663,9 +663,9 @@ local icons = {
     name = "Htm",
   },
   ["html"] = {
-    icon = "",
-    color = "#e34c26",
-    cterm_color = "166",
+    icon = "",
+    color = "#e44d26",
+    cterm_color = "202",
     name = "Html",
   },
   ["hxx"] = {
@@ -801,13 +801,13 @@ local icons = {
     name = "Material",
   },
   ["md"] = {
-    icon = "",
-    color = "#519aba",
-    cterm_color = "67",
+    icon = "",
+    color = "#ffffff",
+    cterm_color = "white",
     name = "Md",
   },
   ["mdx"] = {
-    icon = "",
+    icon = "",
     color = "#519aba",
     cterm_color = "67",
     name = "Mdx",
@@ -947,7 +947,7 @@ local icons = {
     cterm_color = "179",
     name = "Prolog",
   },
-  ["procfile"] = {
+  ["Procfile"] = {
     icon = "",
     color = "#a074c4",
     cterm_color = "140",
@@ -1343,6 +1343,30 @@ local icons = {
     cterm_color = "67",
     name = "Solidity",
   },
+  [".env"] = {
+    icon = "",
+    color = "#faf743",
+    cterm_color = "226",
+    name = "Env",
+  },
+  ["prisma"] = {
+    icon = "卑",
+    color = "#ffffff",
+    cterm_color = "white",
+    name = "Prisma",
+  },
+  ["lock"] = {
+    icon = "",
+    color = "#bbbbbb",
+    cterm_color = "250",
+    name = "Lock",
+  },
+  ["log"] = {
+    icon = "",
+    color = "#ffffff",
+    cterm_color = "white",
+    name = "Log",
+  },
 }
 
 -- Map of filetypes -> icon names
@@ -1426,6 +1450,8 @@ local filetypes = {
   ["less"] = "less",
   ["lhaskell"] = "lhs",
   ["license"] = "license",
+  ["log"] = "log",
+  ["lock"] = "lock",
   ["lprolog"] = "sig",
   ["lua"] = "lua",
   ["make"] = "makefile",
@@ -1449,7 +1475,8 @@ local filetypes = {
   ["png"] = "png",
   ["postscr"] = "ai",
   ["ppt"] = "ppt",
-  ["procfile"] = "procfile",
+  ["prisma"] = "prisma",
+  ["procfile"] = "Procfile",
   ["ps1"] = "ps1",
   ["psb"] = "psb",
   ["psd"] = "psd",
