@@ -1353,7 +1353,7 @@ local icons = {
     icon = "卑",
     color = "#ffffff",
     cterm_color = "white",
-    name = "Prima",
+    name = "Prisma",
   },
   ["lock"] = {
     icon = "",
@@ -1362,7 +1362,7 @@ local icons = {
     name = "Lock",
   },
   ["log"] = {
-    icon = "",
+    icon = "",
     color = "#ffffff",
     cterm_color = "white",
     name = "Log",
