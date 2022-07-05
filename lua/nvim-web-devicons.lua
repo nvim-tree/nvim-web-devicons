@@ -51,7 +51,7 @@ local icons = {
     cterm_color = "113",
     name = "Bashrc",
   },
-  [".ds_store"] = {
+  [".DS_Store"] = {
     icon = "",
     color = "#41535b",
     cterm_color = "59",
@@ -947,7 +947,7 @@ local icons = {
     cterm_color = "179",
     name = "Prolog",
   },
-  ["procfile"] = {
+  ["Procfile"] = {
     icon = "",
     color = "#a074c4",
     cterm_color = "140",
