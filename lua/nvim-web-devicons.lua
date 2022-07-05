@@ -376,9 +376,9 @@ local icons = {
     name = "Cson",
   },
   ["css"] = {
-    icon = "",
-    color = "#563d7c",
-    cterm_color = "60",
+    icon = "",
+    color = "#42a5f5",
+    cterm_color = "39",
     name = "Css",
   },
   ["csv"] = {
@@ -663,9 +663,9 @@ local icons = {
     name = "Htm",
   },
   ["html"] = {
-    icon = "",
-    color = "#e34c26",
-    cterm_color = "166",
+    icon = "",
+    color = "#e44d26",
+    cterm_color = "202",
     name = "Html",
   },
   ["hxx"] = {
@@ -801,13 +801,13 @@ local icons = {
     name = "Material",
   },
   ["md"] = {
-    icon = "",
-    color = "#519aba",
-    cterm_color = "67",
+    icon = "",
+    color = "#ffffff",
+    cterm_color = "white",
     name = "Md",
   },
   ["mdx"] = {
-    icon = "",
+    icon = "",
     color = "#519aba",
     cterm_color = "67",
     name = "Mdx",
