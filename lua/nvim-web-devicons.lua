@@ -1343,6 +1343,30 @@ local icons = {
     cterm_color = "67",
     name = "Solidity",
   },
+  [".env"] = {
+    icon = "",
+    color = "#faf743",
+    cterm_color = "226",
+    name = "Env",
+  },
+  ["prisma"] = {
+    icon = "卑",
+    color = "#ffffff",
+    cterm_color = "white",
+    name = "Prima",
+  },
+  ["lock"] = {
+    icon = "",
+    color = "#bbbbbb",
+    cterm_color = "250",
+    name = "Lock",
+  },
+  ["log"] = {
+    icon = "",
+    color = "#ffffff",
+    cterm_color = "white",
+    name = "Log",
+  },
 }
 
 -- Map of filetypes -> icon names
@@ -1426,6 +1450,8 @@ local filetypes = {
   ["less"] = "less",
   ["lhaskell"] = "lhs",
   ["license"] = "license",
+  ["log"] = "log",
+  ["lock"] = "lock",
   ["lprolog"] = "sig",
   ["lua"] = "lua",
   ["make"] = "makefile",
@@ -1449,7 +1475,7 @@ local filetypes = {
   ["png"] = "png",
   ["postscr"] = "ai",
   ["ppt"] = "ppt",
-  ["procfile"] = "procfile",
+  ["prisma"] = "prisma",
   ["ps1"] = "ps1",
   ["psb"] = "psb",
   ["psd"] = "psd",
