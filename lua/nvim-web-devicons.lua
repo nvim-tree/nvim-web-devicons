@@ -1534,9 +1534,9 @@ local filetypes = {
 }
 
 local default_icon = {
-  icon = "",
-  color = "#6d8086",
+  color = "#42a5f5",
   cterm_color = "66",
+  icon = "",
   name = "Default",
 }
 
