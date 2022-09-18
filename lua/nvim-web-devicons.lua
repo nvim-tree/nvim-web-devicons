@@ -728,6 +728,12 @@ local icons = {
     cterm_color = "185",
     name = "Json",
   },
+  ["json5"] = {
+    icon = "ﬥ",
+    color = "#cbcb41",
+    cterm_color = "185",
+    name = "Json5",
+  },
   ["jsx"] = {
     icon = "",
     color = "#519aba",
