@@ -747,13 +747,13 @@ local icons = {
     name = "Ksh",
   },
   ["kt"] = {
-    icon = "𝙆",
+    icon = "",
     color = "#F88A02",
     cterm_color = "208",
     name = "Kotlin",
   },
   ["kts"] = {
-    icon = "𝙆",
+    icon = "",
     color = "#F88A02",
     cterm_color = "208",
     name = "KotlinScript",
