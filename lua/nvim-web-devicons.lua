@@ -1450,6 +1450,7 @@ local filetypes = {
   ["jpeg"] = "jpeg",
   ["jpg"] = "jpg",
   ["json"] = "json",
+  ["json5"] = "json5",
   ["julia"] = "jl",
   ["kotlin"] = "kt",
   ["leex"] = "leex",
