@@ -1067,6 +1067,12 @@ local icons = {
     cterm_color = "167",
     name = "Scala",
   },
+  ["scm"] = {
+    icon = "ﬦ",
+    color = "#000000",
+    cterm_color = "16",
+    name = "Scheme",
+  },
   ["scss"] = {
     icon = "",
     color = "#f55385",
@@ -1500,6 +1506,7 @@ local filetypes = {
   ["rust"] = "rs",
   ["sass"] = "sass",
   ["scala"] = "scala",
+  ["scheme"] = "scm",
   ["scss"] = "scss",
   ["sh"] = "sh",
   ["slim"] = "slim",
