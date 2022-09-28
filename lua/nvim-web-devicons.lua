@@ -1549,13 +1549,22 @@ local default_icon = {
 local global_opts = {
   override = {},
   default = false,
+  color_icons = true,
 }
 
 local function get_highlight_name(data)
+  if not global_opts.color_icons then
+  	data = default_icon
+  end
+
   return data.name and "DevIcon" .. data.name
 end
 
 local function set_up_highlight(icon_data)
+  if not global_opts.color_icons then
+  	icon_data = default_icon
+  end
+
   local hl_group = get_highlight_name(icon_data)
   if hl_group then
     local highlight_command = "highlight! " .. hl_group
@@ -1582,6 +1591,11 @@ local function highlight_exists(group)
 end
 
 local function set_up_highlights()
+  if not global_opts.color_icons then
+    set_up_highlight(default_icon)
+    return
+  end
+
   for _, icon_data in pairs(icons) do
     local has_color = icon_data.color or icon_data.cterm_color
     local name_valid = icon_data.name and not highlight_exists(get_highlight_name(icon_data))
@@ -1592,10 +1606,18 @@ local function set_up_highlights()
 end
 
 local function get_highlight_foreground(icon_data)
+  if not global_opts.color_icons then
+  	icon_data = default_icon
+  end
+
   return string.format("#%06x", vim.api.nvim_get_hl_by_name(get_highlight_name(icon_data), true).foreground)
 end
 
 local function get_highlight_ctermfg(icon_data)
+  if not global_opts.color_icons then
+  	icon_data = default_icon
+  end
+
   local _, _, ctermfg = string.find(vim.fn.execute("highlight " .. get_highlight_name(icon_data)), "ctermfg=(%d+)")
   return ctermfg
 end
@@ -1614,6 +1636,8 @@ local function setup(opts)
   if user_icons.default then
     global_opts.default = true
   end
+
+  global_opts.color_icons = vim.F.if_nil(opts.color_icons, global_opts.color_icons)
 
   if user_icons.override and user_icons.override.default_icon then
     default_icon = user_icons.override.default_icon
@@ -1703,6 +1727,10 @@ end
 
 local function set_icon(user_icons)
   icons = vim.tbl_extend("force", icons, user_icons or {})
+  if not global_opts.color_icons then
+  	return
+  end
+
   for _, icon_data in pairs(user_icons) do
     set_up_highlight(icon_data)
   end
