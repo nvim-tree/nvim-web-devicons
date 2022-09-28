@@ -1663,7 +1663,7 @@ local function get_icon(name, ext, opts)
     setup()
   end
 
-  local has_default = (opts and opts.default) or global_opts.default
+  local has_default = vim.F.if_nil(opts and opts.default, global_opts.default)
   local icon_data = icons[name] or icons[ext] or (has_default and default_icon)
 
   if icon_data then
@@ -1686,7 +1686,7 @@ local function get_icon_colors(name, ext, opts)
     setup()
   end
 
-  local has_default = (opts and opts.default) or global_opts.default
+  local has_default = vim.F.if_nil(opts and opts.default, global_opts.default)
   local icon_data = icons[name] or icons[ext] or (has_default and default_icon)
 
   if icon_data then
