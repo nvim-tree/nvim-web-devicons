@@ -1637,7 +1637,7 @@ local function setup(opts)
     global_opts.default = true
   end
 
-  global_opts.color_icons = vim.F.if_nil(opts.color_icons, global_opts.color_icons)
+  global_opts.color_icons = vim.F.if_nil(user_icons.color_icons, global_opts.color_icons)
 
   if user_icons.override and user_icons.override.default_icon then
     default_icon = user_icons.override.default_icon
