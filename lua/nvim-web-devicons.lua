@@ -596,6 +596,12 @@ local icons = {
     cterm_color = "66",
     name = "GodotProject",
   },
+  ["graphql"] = {
+    icon = "",
+    color = "#e535ab",
+    cterm_color = "199",
+    name = "GraphQL"
+  },
   ["gruntfile"] = {
     icon = "",
     color = "#e37933",
@@ -1439,6 +1445,7 @@ local filetypes = {
   ["glb"] = "glb",
   ["go"] = "go",
   ["godot"] = "godot",
+  ["graphql"] = "graphql",
   ["gruntfile"] = "gruntfile",
   ["gulpfile"] = "gulpfile",
   ["haml"] = "haml",
