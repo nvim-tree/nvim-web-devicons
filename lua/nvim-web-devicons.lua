@@ -794,6 +794,12 @@ local icons = {
     cterm_color = "74",
     name = "Lua",
   },
+  ["luau"] = {
+    icon = "",
+    color = "#51a0cf",
+    cterm_color = "74",
+    name = "Luau",
+  },
   ["makefile"] = {
     icon = "",
     color = "#6d8086",
