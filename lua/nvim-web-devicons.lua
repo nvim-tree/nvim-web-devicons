@@ -597,7 +597,7 @@ local icons = {
     name = "GodotProject",
   },
   ["graphql"] = {
-    icon = "",
+    icon = "",
     color = "#e535ab",
     cterm_color = "199",
     name = "GraphQL"
