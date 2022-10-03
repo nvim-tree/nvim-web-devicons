@@ -1013,6 +1013,12 @@ local icons = {
     cterm_color = "67",
     name = "Pyo",
   },
+  ["query"] = {
+    icon = "",
+    color = "#90a850",
+    cterm_color = "154",
+    name = "Query",
+  },
   ["r"] = {
     icon = "ﳒ",
     color = "#358a5b",
@@ -1511,6 +1517,7 @@ local filetypes = {
   ["pyd"] = "pyd",
   ["pyo"] = "pyo",
   ["python"] = "py",
+  ["query"] = "query",
   ["r"] = "r",
   ["rlib"] = "rlib",
   ["rmd"] = "rmd",
