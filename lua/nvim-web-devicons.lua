@@ -1079,6 +1079,12 @@ local icons = {
     cterm_color = "204",
     name = "Sass",
   },
+  ["sbt"] = {
+    icon = "",
+    color = "#cc3e44",
+    cterm_color = "167",
+    name = "sbt",
+  },
   ["scala"] = {
     icon = "",
     color = "#cc3e44",
@@ -1525,6 +1531,7 @@ local filetypes = {
   ["ruby"] = "rb",
   ["rust"] = "rs",
   ["sass"] = "sass",
+  ["sbt"] = "sbt",
   ["scala"] = "scala",
   ["scheme"] = "scm",
   ["scss"] = "scss",
