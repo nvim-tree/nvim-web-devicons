@@ -1630,8 +1630,7 @@ local function get_highlight_ctermfg(icon_data)
   	icon_data = default_icon
   end
 
-  local _, _, ctermfg = string.find(vim.fn.execute("highlight " .. get_highlight_name(icon_data)), "ctermfg=(%d+)")
-  return ctermfg
+  return vim.api.nvim_get_hl_by_name(get_highlight_name(icon_data), false).foreground
 end
 
 local loaded = false
