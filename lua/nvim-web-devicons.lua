@@ -1660,12 +1660,11 @@ local function setup(opts)
 
   set_up_highlights()
 
-  vim.cmd([[augroup NvimWebDevicons]])
-  vim.cmd([[autocmd!]])
-  vim.cmd(
-    [[autocmd ColorScheme * lua require('nvim-web-devicons').set_up_highlights()]]
-  )
-  vim.cmd([[augroup END]])
+  vim.api.nvim_create_autocmd("ColorScheme", {
+	  desc = "Re-apply icon colors after changing colorschemes",
+	  group = vim.api.nvim_create_augroup("NvimWebDevicons", { clear = true }),
+	  callback = set_up_highlights,
+  })
 end
 
 local function get_icon(name, ext, opts)
