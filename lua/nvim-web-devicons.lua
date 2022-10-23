@@ -1013,6 +1013,12 @@ local icons = {
     cterm_color = "67",
     name = "Pyo",
   },
+  ["query"] = {
+    icon = "",
+    color = "#90a850",
+    cterm_color = "154",
+    name = "Query",
+  },
   ["r"] = {
     icon = "ﳒ",
     color = "#358a5b",
@@ -1072,6 +1078,12 @@ local icons = {
     color = "#f55385",
     cterm_color = "204",
     name = "Sass",
+  },
+  ["sbt"] = {
+    icon = "",
+    color = "#cc3e44",
+    cterm_color = "167",
+    name = "sbt",
   },
   ["scala"] = {
     icon = "",
@@ -1511,6 +1523,7 @@ local filetypes = {
   ["pyd"] = "pyd",
   ["pyo"] = "pyo",
   ["python"] = "py",
+  ["query"] = "query",
   ["r"] = "r",
   ["rlib"] = "rlib",
   ["rmd"] = "rmd",
@@ -1518,6 +1531,7 @@ local filetypes = {
   ["ruby"] = "rb",
   ["rust"] = "rs",
   ["sass"] = "sass",
+  ["sbt"] = "sbt",
   ["scala"] = "scala",
   ["scheme"] = "scm",
   ["scss"] = "scss",
