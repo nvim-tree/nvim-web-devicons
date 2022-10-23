@@ -1587,20 +1587,11 @@ local function set_up_highlight(icon_data)
   end
 
   local hl_group = get_highlight_name(icon_data)
-  if hl_group then
-    local highlight_command = "highlight! " .. hl_group
-
-    if icon_data.color then
-      highlight_command = highlight_command .. " guifg=" .. icon_data.color
-    end
-
-    if icon_data.cterm_color then
-      highlight_command = highlight_command .. " ctermfg=" .. icon_data.cterm_color
-    end
-
-    if icon_data.color or icon_data.cterm_color then
-      vim.api.nvim_command(highlight_command)
-    end
+  if hl_group and (icon_data.color or icon_data.cterm_color) then
+	  vim.api.nvim_set_hl(0, get_highlight_name(icon_data), {
+		  fg = icon_data.color,
+		  ctermfg = tonumber(icon_data.cterm_color),
+	  })
   end
 end
 
