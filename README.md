@@ -24,7 +24,7 @@ use 'nvim-tree/nvim-web-devicons'
 ### Setup
 
 This adds all the highlight groups for the devicons
-i.e. it calls `highlight IconNameDevicon guifg='<color>' ctermfg='<cterm_color>'` for all icons
+i.e. it calls `vim.api.nvim_set_hl` for all icons
 this might need to be re-called in a `Colorscheme` to re-apply cleared highlights
 if the color scheme changes
 
