@@ -1553,6 +1553,7 @@ local filetypes = {
   ["tads"] = "t",
   ["tcl"] = "tcl",
   ["terminal"] = "terminal",
+  ["tex"] = "tex",
   ["toml"] = "toml",
   ["tres"] = "tres",
   ["tscn"] = "tscn",
