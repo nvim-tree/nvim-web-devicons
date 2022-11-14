@@ -1229,6 +1229,18 @@ local icons = {
     cterm_color = "58",
     name = "Tex",
   },
+  ["tf"] = {
+    icon = "",
+    color = "#5F43E9",
+    cterm_color = "57",
+    name = "Terraform",
+  },
+  ["tfvars"] = {
+    icon = "",
+    color = "#5F43E9",
+    cterm_color = "57",
+    name = "TFVars",
+  },
   ["toml"] = {
     icon = "",
     color = "#6d8086",
