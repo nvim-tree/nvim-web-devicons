@@ -1527,6 +1527,7 @@ local filetypes = {
   ["ppt"] = "ppt",
   ["prisma"] = "prisma",
   ["procfile"] = "Procfile",
+  ["prolog"] = "pro",
   ["ps1"] = "ps1",
   ["psb"] = "psb",
   ["psd"] = "psd",
