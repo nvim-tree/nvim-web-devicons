@@ -754,14 +754,14 @@ local icons = {
   },
   ["kt"] = {
     icon = "",
-    color = "#F88A02",
-    cterm_color = "208",
+    color = "#7F52FF",
+    cterm_color = "99",
     name = "Kotlin",
   },
   ["kts"] = {
     icon = "",
-    color = "#F88A02",
-    cterm_color = "208",
+    color = "#7F52FF",
+    cterm_color = "99",
     name = "KotlinScript",
   },
   ["leex"] = {
