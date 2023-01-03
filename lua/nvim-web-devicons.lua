@@ -153,6 +153,12 @@ local icons = {
     cterm_color = "59",
     name = "GitCommit",
   },
+  ["Containerfile"] = {
+    icon = "",
+    color = "#384d54",
+    cterm_color = "59",
+    name = "Dockerfile",
+  },
   ["COPYING"] = {
     icon = "",
     color = "#cbcb41",
