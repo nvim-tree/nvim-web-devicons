@@ -1704,6 +1704,10 @@ local function setup(opts)
   })
 end
 
+local function get_default_icon()
+  return default_icon
+end
+
 local function get_icon(name, ext, opts)
   ext = ext or name:match("^.*%.(.*)$") or ""
   if not loaded then
@@ -1802,6 +1806,7 @@ return {
   get_icon_cterm_color_by_filetype = get_icon_cterm_color_by_filetype,
   set_icon = set_icon,
   set_default_icon = set_default_icon,
+  get_default_icon = get_default_icon,
   setup = setup,
   has_loaded = function()
     return loaded
