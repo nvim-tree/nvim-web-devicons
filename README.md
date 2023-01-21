@@ -5,6 +5,7 @@ colors for each icon.
 
 ## Requirements
 
+- [neovim >=0.7.0](https://github.com/neovim/neovim/wiki/Installing-Neovim)
 - [A patched font](https://www.nerdfonts.com/)
 
 ## Installation
