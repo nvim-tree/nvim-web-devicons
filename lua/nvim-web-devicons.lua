@@ -740,6 +740,12 @@ local icons = {
     cterm_color = "185",
     name = "Js",
   },
+  ["test.js"] = {
+    icon = "",
+    color = "#e37933",
+    cterm_color = "173",
+    name = "TestJs",
+  },
   ["json"] = {
     icon = "",
     color = "#cbcb41",
