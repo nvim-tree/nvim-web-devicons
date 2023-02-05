@@ -10,6 +10,8 @@ colors for each icon.
 
 ## Installation
 
+[![LuaRocks](https://img.shields.io/luarocks/v/nvim-tree/nvim-web-devicons?logo=lua&color=purple)](https://luarocks.org/modules/nvim-tree/nvim-web-devicons)
+
 ```vim
 Plug 'nvim-tree/nvim-web-devicons'
 ```
