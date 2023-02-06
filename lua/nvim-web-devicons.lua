@@ -1344,7 +1344,7 @@ local icons = {
     name = "Vim",
   },
   ["vue"] = {
-    icon = "",
+    icon = "﵂",
     color = "#8dc149",
     cterm_color = "107",
     name = "Vue",
