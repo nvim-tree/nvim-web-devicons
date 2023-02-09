@@ -1850,6 +1850,7 @@ end
 
 local function get_icon_color_by_filetype(ft, opts)
   local name = get_icon_name_by_filetype(ft)
+  opts = opts or {}
   opts.strict = false
   return get_icon_color(name or '', nil, opts)
 end
