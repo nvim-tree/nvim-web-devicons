@@ -31,8 +31,7 @@
 --   color = "#ffa61a"
 -- },
 
--- When adding new icons, remember to add an entry to the `filetypes` table, if applicable.
-local icons = {
+local icons_by_filename = {
   [".babelrc"] = {
     icon = "ﬥ",
     color = "#cbcb41",
@@ -219,6 +218,85 @@ local icons = {
     cterm_color = "29",
     name = "Vimrc",
   },
+  ['package.json'] = {
+    icon = "",
+    color = "#e8274b",
+    name = "PackageJson"
+  },
+  ['package-lock.json'] = {
+    icon = "",
+    color = "#7a0d21",
+    name = "PackageLockJson"
+  },
+  ["node_modules"] = {
+    icon = "",
+    color = "#E8274B",
+    cterm_color = "161",
+    name = "NodeModules",
+  },
+  ["favicon.ico"] = {
+    icon = "",
+    color = "#cbcb41",
+    cterm_color = "185",
+    name = "Favicon",
+  },
+  ["makefile"] = {
+    icon = "",
+    color = "#6d8086",
+    cterm_color = "66",
+    name = "Makefile",
+  },
+  ["mix.lock"] = {
+    icon = "",
+    color = "#a074c4",
+    cterm_color = "140",
+    name = "MixLock",
+  },
+  [".env"] = {
+    icon = "",
+    color = "#faf743",
+    cterm_color = "226",
+    name = "Env",
+  },
+  ["gruntfile"] = {
+    icon = "",
+    color = "#e37933",
+    cterm_color = "173",
+    name = "Gruntfile",
+  },
+  ["gulpfile"] = {
+    icon = "",
+    color = "#cc3e44",
+    cterm_color = "167",
+    name = "Gulpfile",
+  },
+  ["webpack"] = {
+    icon = "ﰩ",
+    color = "#519aba",
+    cterm_color = "67",
+    name = "Webpack",
+  },
+  ["rakefile"] = {
+    icon = "",
+    color = "#701516",
+    cterm_color = "52",
+    name = "Rakefile",
+  },
+  ["Procfile"] = {
+    icon = "",
+    color = "#a074c4",
+    cterm_color = "140",
+    name = "Procfile",
+  },
+  ["dockerfile"] = {
+    icon = "",
+    color = "#384d54",
+    cterm_color = "59",
+    name = "Dockerfile",
+  },
+}
+
+local icons_by_file_extension = {
   ["ai"] = {
     icon = "",
     color = "#cbcb41",
@@ -435,12 +513,6 @@ local icons = {
     cterm_color = "25",
     name = "Doc",
   },
-  ["dockerfile"] = {
-    icon = "",
-    color = "#384d54",
-    cterm_color = "59",
-    name = "Dockerfile",
-  },
   ["drl"] = {
     icon = "",
     color = "#ffafaf",
@@ -517,12 +589,6 @@ local icons = {
     color = "#519aba",
     cterm_color = "67",
     name = "Fsharp",
-  },
-  ["favicon.ico"] = {
-    icon = "",
-    color = "#cbcb41",
-    cterm_color = "185",
-    name = "Favicon",
   },
   ["fnl"] = {
     color = "#fff3d7",
@@ -613,18 +679,6 @@ local icons = {
     color = "#e535ab",
     cterm_color = "199",
     name = "GraphQL"
-  },
-  ["gruntfile"] = {
-    icon = "",
-    color = "#e37933",
-    cterm_color = "173",
-    name = "Gruntfile",
-  },
-  ["gulpfile"] = {
-    icon = "",
-    color = "#cc3e44",
-    cterm_color = "167",
-    name = "Gulpfile",
   },
   ["h"] = {
     icon = "",
@@ -824,6 +878,12 @@ local icons = {
     cterm_color = "66",
     name = "Makefile",
   },
+  ["mk"] = {
+    icon = "",
+    color = "#6d8086",
+    cterm_color = "66",
+    name = "Makefile",
+  },
   ["markdown"] = {
     icon = "",
     color = "#519aba",
@@ -853,12 +913,6 @@ local icons = {
     color = "#87c095",
     cterm_color = "108",
     name = "Mint",
-  },
-  ["mix.lock"] = {
-    icon = "",
-    color = "#a074c4",
-    cterm_color = "140",
-    name = "MixLock",
   },
   ["mjs"] = {
     icon = "",
@@ -902,12 +956,6 @@ local icons = {
     cterm_color = "110",
     name = "Nix",
   },
-  ["node_modules"] = {
-    icon = "",
-    color = "#E8274B",
-    cterm_color = "161",
-    name = "NodeModules",
-  },
   ["opus"] = {
     icon = "",
     color = "#F88A02",
@@ -919,16 +967,6 @@ local icons = {
     color = "#ECECEC",
     cterm_color = "231",
     name = "OpenTypeFont",
-  },
-  ['package.json'] = {
-    icon = "",
-    color = "#e8274b",
-    name = "PackageJson"
-  },
-  ['package-lock.json'] = {
-    icon = "",
-    color = "#7a0d21",
-    name = "PackageLockJson"
   },
   ["pck"] = {
     icon = "",
@@ -982,12 +1020,6 @@ local icons = {
     color = "#e4b854",
     cterm_color = "179",
     name = "Prolog",
-  },
-  ["Procfile"] = {
-    icon = "",
-    color = "#a074c4",
-    cterm_color = "140",
-    name = "Procfile",
   },
   ["ps1"] = {
     icon = "󰨊",
@@ -1060,12 +1092,6 @@ local icons = {
     color = "#701516",
     cterm_color = "52",
     name = "Rake",
-  },
-  ["rakefile"] = {
-    icon = "",
-    color = "#701516",
-    cterm_color = "52",
-    name = "Rakefile",
   },
   ["rb"] = {
     icon = "",
@@ -1427,12 +1453,6 @@ local icons = {
     cterm_color = "67",
     name = "Solidity",
   },
-  [".env"] = {
-    icon = "",
-    color = "#faf743",
-    cterm_color = "226",
-    name = "Env",
-  },
   ["prisma"] = {
     icon = "卑",
     color = "#ffffff",
@@ -1452,6 +1472,9 @@ local icons = {
     name = "Log",
   },
 }
+
+-- When adding new icons, remember to add an entry to the `filetypes` table, if applicable.
+local icons = vim.tbl_extend("keep", {}, icons_by_filename, icons_by_file_extension)
 
 -- Map of filetypes -> icon names
 local filetypes = {
@@ -1637,6 +1660,7 @@ local default_icon = {
 
 local global_opts = {
   override = {},
+  strict = false,
   default = false,
   color_icons = true,
 }
@@ -1719,13 +1743,33 @@ local function setup(opts)
     global_opts.default = true
   end
 
+  if user_icons.strict then
+    global_opts.strict = true
+  end
+
   global_opts.color_icons = if_nil(user_icons.color_icons, global_opts.color_icons)
 
   if user_icons.override and user_icons.override.default_icon then
     default_icon = user_icons.override.default_icon
   end
 
-  icons = vim.tbl_extend("force", icons, user_icons.override or {})
+  local user_filename_icons = user_icons.override_by_filename
+  local user_file_ext_icons = user_icons.override_by_extension
+
+  icons = vim.tbl_extend(
+    "force",
+    icons,
+    user_icons.override or {},
+    user_filename_icons or {},
+    user_file_ext_icons or {}
+  )
+
+  if user_filename_icons then
+    icons_by_filename = vim.tbl_extend("force", icons_by_filename, user_filename_icons)
+  end
+  if user_file_ext_icons then
+    icons_by_file_extension = vim.tbl_extend("force", icons_by_file_extension, user_file_ext_icons)
+  end
 
   table.insert(icons, default_icon)
 
@@ -1749,7 +1793,13 @@ local function get_icon(name, ext, opts)
   end
 
   local has_default = if_nil(opts and opts.default, global_opts.default)
-  local icon_data = icons[name] or icons[ext] or (has_default and default_icon)
+  local is_strict = if_nil(opts and opts.strict, global_opts.strict)
+  local icon_data
+  if is_strict then
+    icon_data = icons_by_filename[name] or icons_by_file_extension[ext] or (has_default and default_icon)
+  else
+    icon_data = icons[name] or icons[ext] or (has_default and default_icon)
+  end
 
   if icon_data then
     return icon_data.icon, get_highlight_name(icon_data)
@@ -1762,6 +1812,8 @@ end
 
 local function get_icon_by_filetype(ft, opts)
   local name = get_icon_name_by_filetype(ft)
+  opts = opts or {}
+  opts.strict = false
   return get_icon(name or '', nil, opts)
 end
 
@@ -1772,7 +1824,13 @@ local function get_icon_colors(name, ext, opts)
   end
 
   local has_default = if_nil(opts and opts.default, global_opts.default)
-  local icon_data = icons[name] or icons[ext] or (has_default and default_icon)
+  local is_strict = if_nil(opts and opts.strict, global_opts.strict)
+  local icon_data
+  if is_strict then
+    icon_data = icons_by_filename[name] or icons_by_file_extension[ext] or (has_default and default_icon)
+  else
+    icon_data = icons[name] or icons[ext] or (has_default and default_icon)
+  end
 
   if icon_data then
     local color = icon_data.color
@@ -1797,6 +1855,8 @@ end
 
 local function get_icon_color_by_filetype(ft, opts)
   local name = get_icon_name_by_filetype(ft)
+  opts = opts or {}
+  opts.strict = false
   return get_icon_color(name or '', nil, opts)
 end
 
