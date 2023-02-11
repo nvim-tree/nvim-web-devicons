@@ -1746,8 +1746,8 @@ local function setup(opts)
     default_icon = user_icons.override.default_icon
   end
 
-  local user_filename_icons = user_icons.override and user_icons.override.by_filename
-  local user_file_ext_icons = user_icons.override and user_icons.override.by_extension
+  local user_filename_icons = user_icons.override_by_filename
+  local user_file_ext_icons = user_icons.override_by_extension
 
   icons = vim.tbl_extend(
     "force",
@@ -1759,11 +1759,9 @@ local function setup(opts)
 
   if user_filename_icons then
     icons_by_filename = vim.tbl_extend("force", icons_by_filename, user_filename_icons)
-    icons.by_filename = nil
   end
   if user_file_ext_icons then
     icons_by_file_extension = vim.tbl_extend("force", icons_by_file_extension, user_file_ext_icons)
-    icons.by_extension = nil
   end
 
   table.insert(icons, default_icon)
