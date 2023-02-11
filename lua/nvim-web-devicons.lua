@@ -1736,7 +1736,7 @@ local function get_default_icon()
 end
 
 local function get_icon(name, ext, opts)
-  ext = ext or name:match("^.*%.(.*)$") or ""
+  ext = ext or name:match("^.-%.(.*%.*.*)$") or ""
   if not loaded then
     setup()
   end
@@ -1759,7 +1759,7 @@ local function get_icon_by_filetype(ft, opts)
 end
 
 local function get_icon_colors(name, ext, opts)
-  ext = ext or name:match("^.*%.(.*)$") or ""
+  ext = ext or name:match("^.-%.(.*%.*.*)$") or ""
   if not loaded then
     setup()
   end
