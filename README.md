@@ -48,6 +48,29 @@ require'nvim-web-devicons'.setup {
  -- globally enable default icons (default to false)
  -- will get overriden by `get_icons` option
  default = true;
+ -- globally enable "strict" selection of icons - icon will be looked up in
+ -- different tables, first by filename, and if not found by extension; this
+ -- prevents cases when file doesn't have any extension but still gets some icon
+ -- because its name happened to match some extension (default to false)
+ strict = true;
+ -- same as `override` but specifically for overrides by filename
+ -- takes effect when `strict` is true
+ override_by_filename = {
+  [".gitignore"] = {
+    icon = "",
+    color = "#f1502f",
+    name = "Gitignore"
+  }
+ };
+ -- same as `override` but specifically for overrides by extension
+ -- takes effect when `strict` is true
+ override_by_extension = {
+  ["log"] = {
+    icon = "",
+    color = "#81e043",
+    name = "Log"
+  }
+ };
 }
 ```
 
@@ -62,8 +85,10 @@ require'nvim-web-devicons'.get_icon(filename, extension, options)
 ```
 
 The optional `options` argument can used to change how the plugin works the keys include
-`default = <boolean>`. If the default key is set to true this function will return a default
-if there is no matching icon
+`default = <boolean>` and `strict = <boolean>`. If the default key is set to true this
+function will return a default if there is no matching icon. If the strict key is set
+to true this function will lookup icon specifically by filename, and if not found then
+specifically by extension, and fallback to default icon if default key is set to true.
 e.g.
 
 ```lua
