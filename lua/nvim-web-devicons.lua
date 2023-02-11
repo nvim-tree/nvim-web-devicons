@@ -1613,6 +1613,7 @@ local filetypes = {
   ["txt"] = "txt",
   ["typescript"] = "ts",
   ["typescriptreact"] = "tsx",
+  ["vala"] = "vala",
   ["verilog"] = "v",
   ["vhdl"] = "vhd",
   ["vim"] = "vim",
