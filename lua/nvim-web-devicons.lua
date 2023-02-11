@@ -1319,6 +1319,12 @@ local icons = {
     cterm_color = "29",
     name = "Verilog",
   },
+  ["vala"] = {
+    icon = "",
+    color = "#7239b3",
+    cterm_color = "5",
+    name = "Vala",
+  },
   ["vh"] = {
     icon = "",
     color = "#019833",
@@ -1607,6 +1613,7 @@ local filetypes = {
   ["txt"] = "txt",
   ["typescript"] = "ts",
   ["typescriptreact"] = "tsx",
+  ["vala"] = "vala",
   ["verilog"] = "v",
   ["vhdl"] = "vhd",
   ["vim"] = "vim",
