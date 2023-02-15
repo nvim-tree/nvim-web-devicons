@@ -1,4 +1,4 @@
--- rferences:
+-- References:
 -- 1. Linguist: https://github.com/github/linguist
 -- 2. coc-explorer: https://github.com/weirongxu/coc-explorer/blob/59bd41f8fffdc871fbd77ac443548426bd31d2c3/src/icons.nerdfont.json#L2
 -- 3. chad-tree: https://github.com/ms-jpq/chadtree/blob/f9f333c062/artifacts/icons.json
@@ -242,20 +242,20 @@ local icons_by_filename = {
   },
   ["GNUmakefile"] = {
     icon = "",
-    color = "#ffffff",
-    cterm_color = "white",
+    color = "#6d8086",
+    cterm_color = "66",
     name = "Makefile",
   },
   ["Makefile"] = {
     icon = "",
-    color = "#ffffff",
-    cterm_color = "white",
+    color = "#6d8086",
+    cterm_color = "66",
     name = "Makefile",
   },
   ["makefile"] = {
     icon = "",
-    color = "#ffffff",
-    cterm_color = "white",
+    color = "#6d8086",
+    cterm_color = "66",
     name = "Makefile",
   },
   ["mix.lock"] = {
@@ -886,27 +886,26 @@ local icons_by_file_extension = {
   },
   ["GNUmakefile"] = {
     icon = "",
-    color = "#ffffff",
-    cterm_color = "white",
+    color = "#6d8086",
+    cterm_color = "66",
     name = "Makefile",
   },
   ["Makefile"] = {
     icon = "",
-    color = "#ffffff",
-    cterm_color = "white",
+    color = "#6d8086",
+    cterm_color = "66",
     name = "Makefile",
   },
   ["makefile"] = {
     icon = "",
-    color = "#ffffff",
-    cterm_color = "white",
+    color = "#6d8086",
+    cterm_color = "66",
     name = "Makefile",
   },
   ["mk"] = {
     icon = "",
-    color = "#ffffff",
-    color = "#ffffff",
-    cterm_color = "white",
+    color = "#6d8086",
+    cterm_color = "66",
     name = "Makefile",
   },
   ["markdown"] = {
@@ -1589,8 +1588,6 @@ local filetypes = {
   ["lock"] = "lock",
   ["lprolog"] = "sig",
   ["lua"] = "lua",
-  ["make"] = "GNUmakefile",
-  ["make"] = "Makefile",
   ["make"] = "makefile",
   ["markdown"] = "markdown",
   ["material"] = "material",
@@ -1937,3 +1934,4 @@ return {
   end,
   set_up_highlights = set_up_highlights,
 }
+
