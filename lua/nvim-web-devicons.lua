@@ -1471,6 +1471,12 @@ local icons_by_file_extension = {
     cterm_color = "white",
     name = "Log",
   },
+  ["wasm"] = {
+    icon = "",
+    color = "#5c4cdb",
+    cterm_color = "99",
+    name = "Wasm",
+  }
 }
 
 -- When adding new icons, remember to add an entry to the `filetypes` table, if applicable.
