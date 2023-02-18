@@ -1650,6 +1650,7 @@ local filetypes = {
   ["vhdl"] = "vhd",
   ["vim"] = "vim",
   ["vue"] = "vue",
+  ["wasm"] = "wasm",
   ["webp"] = "webp",
   ["webpack"] = "webpack",
   ["xcplayground"] = "xcplayground",
