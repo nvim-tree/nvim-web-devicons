@@ -153,9 +153,9 @@ local icons_by_filename = {
     name = "GitCommit",
   },
   ["Containerfile"] = {
-    icon = "",
-    color = "#384d54",
-    cterm_color = "59",
+    icon = "󰡨",
+    color = "#458ee6",
+    cterm_color = "33",
     name = "Dockerfile",
   },
   ["COPYING"] = {
@@ -171,9 +171,27 @@ local icons_by_filename = {
     name = "License",
   },
   ["Dockerfile"] = {
-    icon = "",
-    color = "#384d54",
-    cterm_color = "59",
+    icon = "󰡨",
+    color = "#458ee6",
+    cterm_color = "33",
+    name = "Dockerfile",
+  },
+  ["docker-compose.yml"] = {
+    icon = "󰡨",
+    color = "#458ee6",
+    cterm_color = "33",
+    name = "Dockerfile",
+  },
+  ["docker-compose.yaml"] = {
+    icon = "󰡨",
+    color = "#458ee6",
+    cterm_color = "33",
+    name = "Dockerfile",
+  },
+  [".dockerignore"] = {
+    icon = "󰡨",
+    color = "#458ee6",
+    cterm_color = "33",
     name = "Dockerfile",
   },
   ["Gemfile$"] = {
@@ -301,9 +319,9 @@ local icons_by_filename = {
     name = "Procfile",
   },
   ["dockerfile"] = {
-    icon = "",
-    color = "#384d54",
-    cterm_color = "59",
+    icon = "󰡨",
+    color = "#458ee6",
+    cterm_color = "33",
     name = "Dockerfile",
   },
 }
