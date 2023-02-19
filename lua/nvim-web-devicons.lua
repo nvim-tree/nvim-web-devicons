@@ -1,4 +1,4 @@
--- references:
+-- References:
 -- 1. Linguist: https://github.com/github/linguist
 -- 2. coc-explorer: https://github.com/weirongxu/coc-explorer/blob/59bd41f8fffdc871fbd77ac443548426bd31d2c3/src/icons.nerdfont.json#L2
 -- 3. chad-tree: https://github.com/ms-jpq/chadtree/blob/f9f333c062/artifacts/icons.json
@@ -240,8 +240,20 @@ local icons_by_filename = {
     cterm_color = "185",
     name = "Favicon",
   },
+  ["GNUmakefile"] = {
+    icon = "",
+    color = "#6d8086",
+    cterm_color = "66",
+    name = "Makefile",
+  },
+  ["Makefile"] = {
+    icon = "",
+    color = "#6d8086",
+    cterm_color = "66",
+    name = "Makefile",
+  },
   ["makefile"] = {
-    icon = "",
+    icon = "",
     color = "#6d8086",
     cterm_color = "66",
     name = "Makefile",
@@ -872,14 +884,26 @@ local icons_by_file_extension = {
     cterm_color = "74",
     name = "Luau",
   },
+  ["GNUmakefile"] = {
+    icon = "",
+    color = "#6d8086",
+    cterm_color = "66",
+    name = "Makefile",
+  },
+  ["Makefile"] = {
+    icon = "",
+    color = "#6d8086",
+    cterm_color = "66",
+    name = "Makefile",
+  },
   ["makefile"] = {
-    icon = "",
+    icon = "",
     color = "#6d8086",
     cterm_color = "66",
     name = "Makefile",
   },
   ["mk"] = {
-    icon = "",
+    icon = "",
     color = "#6d8086",
     cterm_color = "66",
     name = "Makefile",
@@ -1920,3 +1944,4 @@ return {
   end,
   set_up_highlights = set_up_highlights,
 }
+
