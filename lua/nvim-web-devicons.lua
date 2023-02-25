@@ -1726,7 +1726,7 @@ local global_opts = {
 
 local function get_highlight_name(data)
   if not global_opts.color_icons then
-    data = default_icon
+  	data = default_icon
   end
 
   return data.name and "DevIcon" .. data.name
@@ -1735,15 +1735,15 @@ end
 local nvim_set_hl = vim.api.nvim_set_hl
 local function set_up_highlight(icon_data)
   if not global_opts.color_icons then
-    icon_data = default_icon
+  	icon_data = default_icon
   end
 
   local hl_group = get_highlight_name(icon_data)
   if hl_group and (icon_data.color or icon_data.cterm_color) then
-    nvim_set_hl(0, get_highlight_name(icon_data), {
-      fg = icon_data.color,
-      ctermfg = tonumber(icon_data.cterm_color),
-    })
+	  nvim_set_hl(0, get_highlight_name(icon_data), {
+		  fg = icon_data.color,
+		  ctermfg = tonumber(icon_data.cterm_color),
+	  })
   end
 end
 
@@ -1772,7 +1772,7 @@ end
 
 local function get_highlight_foreground(icon_data)
   if not global_opts.color_icons then
-    icon_data = default_icon
+  	icon_data = default_icon
   end
 
   return string.format("#%06x", nvim_get_hl_by_name(get_highlight_name(icon_data), true).foreground)
@@ -1780,7 +1780,7 @@ end
 
 local function get_highlight_ctermfg(icon_data)
   if not global_opts.color_icons then
-    icon_data = default_icon
+  	icon_data = default_icon
   end
 
   return nvim_get_hl_by_name(get_highlight_name(icon_data), false).foreground
@@ -1835,9 +1835,9 @@ local function setup(opts)
   set_up_highlights()
 
   vim.api.nvim_create_autocmd("ColorScheme", {
-    desc = "Re-apply icon colors after changing colorschemes",
-    group = vim.api.nvim_create_augroup("NvimWebDevicons", { clear = true }),
-    callback = set_up_highlights,
+	  desc = "Re-apply icon colors after changing colorschemes",
+	  group = vim.api.nvim_create_augroup("NvimWebDevicons", { clear = true }),
+	  callback = set_up_highlights,
   })
 end
 
@@ -1932,7 +1932,7 @@ end
 local function set_icon(user_icons)
   icons = vim.tbl_extend("force", icons, user_icons or {})
   if not global_opts.color_icons then
-    return
+  	return
   end
 
   for _, icon_data in pairs(user_icons) do
@@ -1969,3 +1969,4 @@ return {
   end,
   set_up_highlights = set_up_highlights,
 }
+
