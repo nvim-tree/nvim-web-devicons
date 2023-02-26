@@ -1518,7 +1518,13 @@ local icons_by_file_extension = {
     color = "#5c4cdb",
     cterm_color = "99",
     name = "Wasm",
-  }
+  },
+  ["liquid"] = {
+    icon = "",
+    color = "#95BF47",
+    cterm_color = "148",
+    name = "Liquid",
+  },
 }
 
 -- When adding new icons, remember to add an entry to the `filetypes` table, if applicable.
@@ -1609,6 +1615,7 @@ local filetypes = {
   ["kotlin"] = "kt",
   ["leex"] = "leex",
   ["less"] = "less",
+  ["liquid"] = "liquid",
   ["lhaskell"] = "lhs",
   ["license"] = "license",
   ["log"] = "log",
