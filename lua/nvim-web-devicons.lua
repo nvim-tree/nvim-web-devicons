@@ -1357,6 +1357,18 @@ local icons_by_file_extension = {
     cterm_color = "67",
     name = "Ts",
   },
+  ["test.ts"] = {
+    icon = "",
+    color = "#519aba",
+    cterm_color = "67",
+    name = "TestTs",
+  },
+  ["spec.ts"] = {
+    icon = "",
+    color = "#519aba",
+    cterm_color = "67",
+    name = "SpecTs",
+  },
   ["tscn"] = {
     icon = "",
     color = "#a074c4",
