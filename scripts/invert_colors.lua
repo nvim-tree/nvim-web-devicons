@@ -21,6 +21,9 @@ end
 local function invert_color(rrggbb)
   local r, g, b = rrggbb:match"%#(%x%x)(%x%x)(%x%x)"
   r, g, b = tonumber("0x" .. r), tonumber("0x" .. g), tonumber("0x" .. b)
+  if r + g + b < 400 then
+    return rrggbb
+  end
   r = bit.tohex(255 - r):sub(-2)
   g = bit.tohex(255 - g):sub(-2)
   b = bit.tohex(255 - b):sub(-2)
