@@ -8,17 +8,11 @@
 
 -- :source this file when ready
 
-local fn, file = vim.fn, ''
+local fn = vim.fn
 
-if vim.o.background == "light" then
-  file = "lua/nvim-web-devicons-light.lua"
-else
-  file = "lua/nvim-web-devicons.lua"
-end
+vim.cmd("drop lua/nvim-web-devicons.lua")
 
-vim.cmd("drop " .. file)
-
-if not fn.bufname():find(vim.pesc(file) .. "$") then
+if not fn.bufname():find("nvim%-web%-devicons%.lua$") then
   error("The file could not be found!")
 end
 

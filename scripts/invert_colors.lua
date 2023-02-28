@@ -6,16 +6,12 @@
 -- IMPORTANT: the `cterm_color` key must always be below the `color` key of the
 --            same icon. Currently they are.
 
+-- IMPORTANT: there must be an empty line between the two icon tables in the
+--            main file. Currently there is.
+
 -- After this file is sourced, the newly created file should open in the same
 -- window of the main file.
 
--- The cterm-colors-generator.lua script should be run on the new file, so do
--- this:
---
--- 1. load a light colorscheme NOW (IMPORTANT)
--- 2. go back to the script window
--- 3. open cterm-colors-generator.lua in it and source the script
---
 -- :source this file when ready
 
 if not jit then
@@ -86,5 +82,37 @@ table.insert(lines2, "}")
 fn.writefile(lines, "lua/nvim-web-devicons-light.lua")
 fn.writefile(lines2, "lua/nvim-web-devicons-light.lua", "a")
 
+print("Finished creating new file!")
+
+if fn.filereadable("lua/nvim-web-devicons-light.lua") == 0 then
+  error("The file could not be found!")
+end
+
 vim.cmd("drop lua/nvim-web-devicons-light.lua")
+
+print("Starting to generate cterm colors!")
+
+-- move to first line
+vim.cmd(":1")
+local last = 0
+
+while true do
+  local cur = fn.search("^\\s*color =")
+  if cur < last then
+    break
+  end
+  last = cur
+  local color = fn.getline("."):match("%#......")
+  if fn.search("^\\s*cterm_color") < cur then
+    break
+  end
+  if fn.getline("."):find("%d") then
+    fn.setline(".", fn.substitute(fn.getline("."), '\\d\\+', function(matches)
+      return tostring(vim.fn["colortemplate#colorspace#approx"](color).index)
+    end, ""))
+  end
+end
+
+vim.cmd(":1")
+vim.cmd("wall")
 print("Finished!")
