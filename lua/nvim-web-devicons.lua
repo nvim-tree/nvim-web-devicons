@@ -1385,7 +1385,7 @@ local icons_by_file_extension = {
     icon = "",
     color = "#8dc149",
     cterm_color = "107",
-    name = "Twig"
+    name = "Twig",
   },
   ["txt"] = {
     icon = "",
