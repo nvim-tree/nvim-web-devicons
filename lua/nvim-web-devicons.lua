@@ -1539,8 +1539,28 @@ local icons_by_file_extension = {
   },
 }
 
+local icons
+
+local function refresh_icons(reload)
+  local by_filename, by_file_extension
+  if vim.o.background == 'light' then
+    by_filename = require("nvim-web-devicons-light").icons_by_filename
+    by_file_extension = require("nvim-web-devicons-light").icons_by_file_extension
+  else
+    by_filename = icons_by_filename
+    by_file_extension = icons_by_file_extension
+  end
+  icons = vim.tbl_extend("keep", {}, by_filename, by_file_extension)
+  if reload then
+    package.loaded["nvim-web-devicons"] = nil
+  end
+end
+
 -- When adding new icons, remember to add an entry to the `filetypes` table, if applicable.
-local icons = vim.tbl_extend("keep", {}, icons_by_filename, icons_by_file_extension)
+refresh_icons()
+
+-- Change icon set on background change
+vim.api.nvim_create_autocmd("OptionSet", { pattern = "background", callback = refresh_icons })
 
 -- Map of filetypes -> icon names
 local filetypes = {
