@@ -1,6 +1,7 @@
--- vim-colortemplate is needed
--- the current working directory must be set to the repo root
--- it's best to have the main file already open in another window
+-- Plugin lifepillar/vim-colortemplate must be available on &runtimepath
+--
+-- The current working directory must be set to the repo root
+-- It's best to have the main file already open in another window
 
 -- IMPORTANT: the `cterm_color` key must always be below the `color` key of the
 --            same icon. Currently they are.
@@ -9,7 +10,6 @@
 
 local fn = vim.fn
 
-vim.cmd("packadd vim-colortemplate")
 vim.cmd("drop lua/nvim-web-devicons.lua")
 
 if not fn.bufname():find("nvim%-web%-devicons%.lua$") then
