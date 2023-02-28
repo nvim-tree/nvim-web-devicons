@@ -18,15 +18,29 @@ if not jit then
   error("Neovim must be LuaJIT-enabled to source this script")
 end
 
-local function invert_color(rrggbb)
+local light34 = 255 / 4 * 9 -- (255 * 3) * 3 / 4
+local light12 = 255 / 2 * 3 -- (255 * 3) / 2
+local light13 = 255         -- (255 * 3) / 3
+
+local function darken_color(rrggbb)
   local r, g, b = rrggbb:match"%#(%x%x)(%x%x)(%x%x)"
   r, g, b = tonumber("0x" .. r), tonumber("0x" .. g), tonumber("0x" .. b)
-  if r + g + b < 400 then
+  local lum = r + g + b
+  if lum < light13 then -------------------- in the darkest tertile already
     return rrggbb
+  elseif lum < light12 then ---------------- darker than average
+    r = bit.tohex(r / 3 * 2):sub(-2)
+    g = bit.tohex(g / 3 * 2):sub(-2)
+    b = bit.tohex(b / 3 * 2):sub(-2)
+  elseif lum < light34 then ---------------- second lightest quartile
+    r = bit.tohex(r / 2):sub(-2)
+    g = bit.tohex(g / 2):sub(-2)
+    b = bit.tohex(b / 2):sub(-2)
+  else ------------------------------------- lightest quartile
+    r = bit.tohex(r / 3):sub(-2)
+    g = bit.tohex(g / 3):sub(-2)
+    b = bit.tohex(b / 3):sub(-2)
   end
-  r = bit.tohex(255 - r):sub(-2)
-  g = bit.tohex(255 - g):sub(-2)
-  b = bit.tohex(255 - b):sub(-2)
   return string.format("#%s%s%s", r, g, b)
 end
 
@@ -56,7 +70,7 @@ local lines = vim.api.nvim_buf_get_lines(fn.bufnr(), start, finish, true)
 for i = 1, #lines do
   if lines[i]:find("^%s*color =") then
     lines[i] = lines[i]:gsub('%#%x+', function(m)
-      return invert_color(m)
+      return darken_color(m)
     end)
   end
 end
@@ -71,7 +85,7 @@ local lines2 = vim.api.nvim_buf_get_lines(fn.bufnr(), start, finish, true)
 for i = 1, #lines2 do
   if lines2[i]:find("^%s*color =") then
     lines2[i] = lines2[i]:gsub('%#%x+', function(m)
-      return invert_color(m)
+      return darken_color(m)
     end)
   end
 end
