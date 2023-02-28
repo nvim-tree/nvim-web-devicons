@@ -844,8 +844,8 @@ local icons_by_file_extension = {
   },
   ["jsx"] = {
     icon = "",
-    color = "#519aba",
-    cterm_color = "67",
+    color = "#20c2e3",
+    cterm_color = "54",
     name = "Jsx",
   },
   ["ksh"] = {
@@ -1377,15 +1377,15 @@ local icons_by_file_extension = {
   },
   ["tsx"] = {
     icon = "",
-    color = "#519aba",
-    cterm_color = "67",
+    color = "#1354bf",
+    cterm_color = "26",
     name = "Tsx",
   },
   ["twig"] = {
     icon = "",
     color = "#8dc149",
     cterm_color = "107",
-    name = "Twig",
+    name = "Twig"
   },
   ["txt"] = {
     icon = "",
