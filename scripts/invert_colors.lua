@@ -53,8 +53,7 @@ start = fn.line(".") - 1
 vim.cmd("normal! }")
 finish = fn.line(".")
 local lines = vim.api.nvim_buf_get_lines(fn.bufnr(), start, finish, true)
-lines[1] = "local icons_by_filename = {"
-for i = 2, #lines do
+for i = 1, #lines do
   if lines[i]:find("^%s*color =") then
     lines[i] = lines[i]:gsub('%#%x+', function(m)
       return invert_color(m)
@@ -69,8 +68,7 @@ start = fn.line(".") - 1
 vim.cmd("normal! }")
 finish = fn.line(".")
 local lines2 = vim.api.nvim_buf_get_lines(fn.bufnr(), start, finish, true)
-lines2[1] = "local icons_by_file_extension = {"
-for i = 2, #lines2 do
+for i = 1, #lines2 do
   if lines2[i]:find("^%s*color =") then
     lines2[i] = lines2[i]:gsub('%#%x+', function(m)
       return invert_color(m)
