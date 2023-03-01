@@ -21,8 +21,9 @@ if fn.filereadable("lua/nvim-web-devicons.lua") == 0 then
   error("Your working directory isn't set to correctly.")
 end
 
-local light34 = 255 / 4 * 9 -- (255 * 3) * 3 / 4
-local light12 = 255 / 2 * 3 -- (255 * 3) / 2
+local light78 = 255 * 21 / 8 -- (255 * 3) * 7 / 8
+local light34 = 255 * 9 / 4 -- (255 * 3) * 3 / 4
+local light12 = 255 * 3 / 2 -- (255 * 3) / 2
 local light13 = 255         -- (255 * 3) / 3
 
 local function darken_color(rrggbb)
@@ -39,10 +40,14 @@ local function darken_color(rrggbb)
     r = bit.tohex(r / 3 * 2):sub(-2)
     g = bit.tohex(g / 3 * 2):sub(-2)
     b = bit.tohex(b / 3 * 2):sub(-2)
-  else ------------------------------------- lightest quartile
+  elseif lum < light78 then ---------------- second lightest octile
     r = bit.tohex(r / 3):sub(-2)
     g = bit.tohex(g / 3):sub(-2)
     b = bit.tohex(b / 3):sub(-2)
+  else ------------------------------------- lightest octile
+    r = bit.tohex(r / 5):sub(-2)
+    g = bit.tohex(g / 5):sub(-2)
+    b = bit.tohex(b / 5):sub(-2)
   end
   return string.format("#%s%s%s", r, g, b)
 end
