@@ -6,16 +6,19 @@
 -- IMPORTANT: the `cterm_color` key must always be below the `color` key of the
 --            same icon. Currently they are.
 
--- IMPORTANT: there must be an empty line between the two icon tables in the
---            main file. Currently there is.
-
 -- After this file is sourced, the newly created file should open in the same
 -- window of the main file.
 
 -- :source this file when ready
 
+local fn = vim.fn
+
 if not jit then
   error("Neovim must be LuaJIT-enabled to source this script")
+end
+
+if fn.filereadable("lua/nvim-web-devicons.lua") == 0 then
+  error("Your working directory isn't set to correctly.")
 end
 
 local light34 = 255 / 4 * 9 -- (255 * 3) * 3 / 4
@@ -45,14 +48,10 @@ local function darken_color(rrggbb)
 end
 
 --------------------------------------------------------------------------------
-
-local fn = vim.fn
+-- Generate file with icons for light backgrounds
+--------------------------------------------------------------------------------
 
 vim.cmd("drop lua/nvim-web-devicons.lua")
-
-if not fn.bufname():find("nvim%-web%-devicons%.lua$") then
-  error("The file could not be found!")
-end
 
 print("Starting!")
 
@@ -64,7 +63,7 @@ if fn.search("^local icons_by_filename") == 0 then
   error("Table not found!")
 end
 start = fn.line(".") - 1
-vim.cmd("normal! }")
+fn.search("^}")
 finish = fn.line(".")
 local lines = vim.api.nvim_buf_get_lines(fn.bufnr(), start, finish, true)
 for i = 1, #lines do
@@ -74,12 +73,13 @@ for i = 1, #lines do
     end)
   end
 end
+table.insert(lines, "")
 
 if fn.search("^local icons_by_file_extension") == 0 then
   error("Table not found!")
 end
 start = fn.line(".") - 1
-vim.cmd("normal! }")
+fn.search("^}")
 finish = fn.line(".")
 local lines2 = vim.api.nvim_buf_get_lines(fn.bufnr(), start, finish, true)
 for i = 1, #lines2 do
@@ -89,6 +89,7 @@ for i = 1, #lines2 do
     end)
   end
 end
+table.insert(lines2, "")
 table.insert(lines2, "return {")
 table.insert(lines2, "  icons_by_filename = icons_by_filename,")
 table.insert(lines2, "  icons_by_file_extension = icons_by_file_extension")
@@ -98,6 +99,10 @@ fn.writefile(lines, "lua/nvim-web-devicons-light.lua")
 fn.writefile(lines2, "lua/nvim-web-devicons-light.lua", "a")
 
 print("Finished creating new file!")
+
+--------------------------------------------------------------------------------
+-- Generate cterm colors for light background
+--------------------------------------------------------------------------------
 
 if fn.filereadable("lua/nvim-web-devicons-light.lua") == 0 then
   error("The file could not be found!")

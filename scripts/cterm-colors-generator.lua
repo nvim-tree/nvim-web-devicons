@@ -10,11 +10,11 @@
 
 local fn = vim.fn
 
-vim.cmd("drop lua/nvim-web-devicons.lua")
-
-if not fn.bufname():find("nvim%-web%-devicons%.lua$") then
-  error("The file could not be found!")
+if fn.filereadable("lua/nvim-web-devicons.lua") == 0 then
+  error("Your working directory isn't set to correctly.")
 end
+
+vim.cmd("drop lua/nvim-web-devicons.lua")
 
 print("Starting!")
 
