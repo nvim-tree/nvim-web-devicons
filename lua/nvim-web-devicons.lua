@@ -1868,10 +1868,31 @@ local function get_default_icon()
   return default_icon
 end
 
+local function get_icon_by_extension(name, ext, opts)
+  local is_strict = if_nil(opts and opts.strict, global_opts.strict)
+  local icon_table = is_strict and icons_by_file_extension or icons
+
+  if ext ~= nil then
+    return icon_table[ext]
+  end
+
+  if name == nil then
+    return nil
+  end
+
+  -- recursively iterate over each segment separated by '.' to parse extension with multiple dots in filename
+  local compound_ext = name:match("%.(.*)")
+  local icon = icon_table[compound_ext]
+  if icon then
+    return icon
+  end
+
+  return get_icon_by_extension(compound_ext, ext, opts)
+end
+
 local function get_icon(name, ext, opts)
 	name = name:lower()
 
-  ext = ext or name:match("^.*%.(.*)$") or ""
   if not loaded then
     setup()
   end
@@ -1880,9 +1901,9 @@ local function get_icon(name, ext, opts)
   local is_strict = if_nil(opts and opts.strict, global_opts.strict)
   local icon_data
   if is_strict then
-    icon_data = icons_by_filename[name] or icons_by_file_extension[ext] or (has_default and default_icon)
+    icon_data = icons_by_filename[name] or get_icon_by_extension(name, ext, opts) or (has_default and default_icon)
   else
-    icon_data = icons[name] or icons[ext] or (has_default and default_icon)
+    icon_data = icons[name] or get_icon_by_extension(name, ext, opts) or (has_default and default_icon)
   end
 
   if icon_data then
@@ -1902,7 +1923,6 @@ local function get_icon_by_filetype(ft, opts)
 end
 
 local function get_icon_colors(name, ext, opts)
-  ext = ext or name:match("^.*%.(.*)$") or ""
   if not loaded then
     setup()
   end
@@ -1911,9 +1931,9 @@ local function get_icon_colors(name, ext, opts)
   local is_strict = if_nil(opts and opts.strict, global_opts.strict)
   local icon_data
   if is_strict then
-    icon_data = icons_by_filename[name] or icons_by_file_extension[ext] or (has_default and default_icon)
+    icon_data = icons_by_filename[name] or get_icon_by_extension(name, ext, opts) or (has_default and default_icon)
   else
-    icon_data = icons[name] or icons[ext] or (has_default and default_icon)
+    icon_data = icons[name] or get_icon_by_extension(name, ext, opts) or (has_default and default_icon)
   end
 
   if icon_data then
