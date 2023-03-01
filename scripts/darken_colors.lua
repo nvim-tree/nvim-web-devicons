@@ -32,13 +32,13 @@ local function darken_color(rrggbb)
   if lum < light13 then -------------------- in the darkest tertile already
     return rrggbb
   elseif lum < light12 then ---------------- darker than average
+    r = bit.tohex(r / 4 * 3):sub(-2)
+    g = bit.tohex(g / 4 * 3):sub(-2)
+    b = bit.tohex(b / 4 * 3):sub(-2)
+  elseif lum < light34 then ---------------- second lightest quartile
     r = bit.tohex(r / 3 * 2):sub(-2)
     g = bit.tohex(g / 3 * 2):sub(-2)
     b = bit.tohex(b / 3 * 2):sub(-2)
-  elseif lum < light34 then ---------------- second lightest quartile
-    r = bit.tohex(r / 2):sub(-2)
-    g = bit.tohex(g / 2):sub(-2)
-    b = bit.tohex(b / 2):sub(-2)
   else ------------------------------------- lightest quartile
     r = bit.tohex(r / 3):sub(-2)
     g = bit.tohex(g / 3):sub(-2)
