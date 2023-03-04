@@ -26,7 +26,8 @@ end
 --------------------------------------------------------------------------------
 
 local light78 = 255 * 21 / 8 -- (255 * 3) * 7 / 8
-local light34 = 255 * 9 / 4 -- (255 * 3) * 3 / 4
+local light34 = 255 * 9 / 4 -- (255 * 3) * 6 / 8
+local light58 = 255 * 15 / 8 -- (255 * 3) * 5 / 8
 local light12 = 255 * 3 / 2 -- (255 * 3) / 2
 local light13 = 255         -- (255 * 3) / 3
 
@@ -34,20 +35,24 @@ local function darken_color(rrggbb)
   local r, g, b = rrggbb:match"%#(%x%x)(%x%x)(%x%x)"
   r, g, b = tonumber("0x" .. r), tonumber("0x" .. g), tonumber("0x" .. b)
   local lum = r + g + b
-  if lum < light13 then -------------------- in the darkest tertile already
+  if lum < light13 then -------------------- darkest tertile
     return rrggbb
-  elseif lum < light12 then ---------------- darker than average
+  elseif lum < light12 then ---------------- second darkest quartile
     r = bit.tohex(r / 4 * 3):sub(-2)
     g = bit.tohex(g / 4 * 3):sub(-2)
     b = bit.tohex(b / 4 * 3):sub(-2)
-  elseif lum < light34 then ---------------- second lightest quartile
+  elseif lum < light58 then ---------------- lightest octiles: first
     r = bit.tohex(r / 3 * 2):sub(-2)
     g = bit.tohex(g / 3 * 2):sub(-2)
     b = bit.tohex(b / 3 * 2):sub(-2)
-  elseif lum < light78 then ---------------- second lightest octile
-    r = bit.tohex(r / 3):sub(-2)
-    g = bit.tohex(g / 3):sub(-2)
-    b = bit.tohex(b / 3):sub(-2)
+  elseif lum < light34 then ---------------- lightest octiles: second
+    r = bit.tohex(r / 5 * 2):sub(-2)
+    g = bit.tohex(g / 5 * 2):sub(-2)
+    b = bit.tohex(b / 5 * 2):sub(-2)
+  elseif lum < light78 then ---------------- lightest octiles: third
+    r = bit.tohex(r / 7 * 2):sub(-2)
+    g = bit.tohex(g / 7 * 2):sub(-2)
+    b = bit.tohex(b / 7 * 2):sub(-2)
   else ------------------------------------- lightest octile
     r = bit.tohex(r / 5):sub(-2)
     g = bit.tohex(g / 5):sub(-2)
