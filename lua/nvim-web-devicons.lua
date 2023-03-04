@@ -825,10 +825,16 @@ local icons_by_file_extension = {
     name = "Js",
   },
   ["test.js"] = {
-    icon = "",
-    color = "#e37933",
-    cterm_color = "166",
+    icon = "",
+    color = "#cbcb41",
+    cterm_color = "185",
     name = "TestJs",
+  },
+  ["spec.js"] = {
+    icon = "",
+    color = "#cbcb41",
+    cterm_color = "185",
+    name = "SpecJs",
   },
   ["json"] = {
     icon = "",
@@ -847,6 +853,18 @@ local icons_by_file_extension = {
     color = "#20c2e3",
     cterm_color = "45",
     name = "Jsx",
+  },
+  ["test.jsx"] = {
+    icon = "",
+    color = "#20c2e3",
+    cterm_color = "45",
+    name = "JavaScriptReactTest"
+  },
+  ["spec.jsx"] = {
+    icon = "",
+    color = "#20c2e3",
+    cterm_color = "45",
+    name = "JavaScriptReactSpec"
   },
   ["ksh"] = {
     icon = "",
@@ -1380,6 +1398,18 @@ local icons_by_file_extension = {
     color = "#1354bf",
     cterm_color = "26",
     name = "Tsx",
+  },
+  ["test.tsx"] = {
+    icon = "",
+    color = "#1354bf",
+    cterm_color = "26",
+    name = "TypeScriptReactTest",
+  },
+  ["spec.tsx"] = {
+    icon = "",
+    color = "#1354bf",
+    cterm_color = "26",
+    name = "TypeScriptReactSpec",
   },
   ["twig"] = {
     icon = "",
