@@ -50,7 +50,7 @@ local icons_by_filename = {
     cterm_color = "113",
     name = "Bashrc",
   },
-  [".DS_Store"] = {
+  [".ds_store"] = {
     icon = "",
     color = "#41535b",
     cterm_color = "239",
@@ -134,47 +134,41 @@ local icons_by_filename = {
     cterm_color = "113",
     name = "Zshrc",
   },
-  ["Brewfile"] = {
+  ["brewfile"] = {
     icon = "",
     color = "#701516",
     cterm_color = "52",
     name = "Brewfile",
   },
-  ["CMakeLists.txt"] = {
+  ["cmakelists.txt"] = {
     icon = "",
     color = "#6d8086",
     cterm_color = "66",
     name = "CMakeLists",
   },
-  ["COMMIT_EDITMSG"] = {
+  ["commit_editmsg"] = {
     icon = "",
     color = "#41535b",
     cterm_color = "239",
     name = "GitCommit",
   },
-  ["Containerfile"] = {
+  ["containerfile"] = {
     icon = "󰡨",
     color = "#458ee6",
     cterm_color = "68",
     name = "Dockerfile",
   },
-  ["COPYING"] = {
+  ["copying"] = {
     icon = "",
     color = "#cbcb41",
     cterm_color = "185",
     name = "License",
   },
-  ["COPYING.LESSER"] = {
+  ["copying.lesser"] = {
     icon = "",
     color = "#cbcb41",
     cterm_color = "185",
     name = "License",
-  },
-  ["Dockerfile"] = {
-    icon = "󰡨",
-    color = "#458ee6",
-    cterm_color = "68",
-    name = "Dockerfile",
   },
   ["docker-compose.yml"] = {
     icon = "󰡨",
@@ -194,31 +188,31 @@ local icons_by_filename = {
     cterm_color = "68",
     name = "Dockerfile",
   },
-  ["Gemfile$"] = {
+  ["gemfile$"] = {
     icon = "",
     color = "#701516",
     cterm_color = "52",
     name = "Gemfile",
   },
-  ["LICENSE"] = {
+  ["license"] = {
     icon = "",
     color = "#d0bf41",
     cterm_color = "185",
     name = "License",
   },
-  ["R"] = {
+  ["r"] = {
     icon = "ﳒ",
     color = "#358a5b",
     cterm_color = "29",
     name = "R",
   },
-  ["Rmd"] = {
+  ["rmd"] = {
     icon = "",
     color = "#519aba",
     cterm_color = "74",
     name = "Rmd",
   },
-  ["Vagrantfile$"] = {
+  ["vagrantfile$"] = {
     icon = "",
     color = "#1563FF",
     cterm_color = "27",
@@ -258,13 +252,7 @@ local icons_by_filename = {
     cterm_color = "185",
     name = "Favicon",
   },
-  ["GNUmakefile"] = {
-    icon = "",
-    color = "#6d8086",
-    cterm_color = "66",
-    name = "Makefile",
-  },
-  ["Makefile"] = {
+  ["gnumakefile"] = {
     icon = "",
     color = "#6d8086",
     cterm_color = "66",
@@ -312,7 +300,7 @@ local icons_by_filename = {
     cterm_color = "52",
     name = "Rakefile",
   },
-  ["Procfile"] = {
+  ["procfile"] = {
     icon = "",
     color = "#a074c4",
     cterm_color = "140",
@@ -920,13 +908,7 @@ local icons_by_file_extension = {
     cterm_color = "74",
     name = "Luau",
   },
-  ["GNUmakefile"] = {
-    icon = "",
-    color = "#6d8086",
-    cterm_color = "66",
-    name = "Makefile",
-  },
-  ["Makefile"] = {
+  ["gnumakefile"] = {
     icon = "",
     color = "#6d8086",
     cterm_color = "66",
@@ -1574,13 +1556,12 @@ local icons = vim.tbl_extend("keep", {}, icons_by_filename, icons_by_file_extens
 
 -- Map of filetypes -> icon names
 local filetypes = {
-  ["Brewfile"] = "Brewfile",
-  ["COMMIT"] = "COMMIT_EDITMSG",
-  ["COPYING"] = "COPYING",
-  ["Gemfile"] = "Gemfile$",
-  ["LESSER"] = "COPYING.LESSER",
-  ["LICENSE"] = "LICENSE",
-  ["Vagrantfile"] = "Vagrantfile$",
+  ["brewfile"] = "brewfile",
+  ["commit"] = "commit_editmsg",
+  ["copying"] = "copying",
+  ["gemfile"] = "gemfile$",
+  ["lesser"] = "copying.lesser",
+  ["vagrantfile"] = "vagrantfile$",
   ["awk"] = "awk",
   ["bmp"] = "bmp",
   ["c"] = "c",
@@ -1627,7 +1608,7 @@ local filetypes = {
   ["gif"] = "gif",
   ["git"] = "git",
   ["gitconfig"] = ".gitconfig",
-  ["gitcommit"] = "COMMIT_EDITMSG",
+  ["gitcommit"] = "commit_editmsg",
   ["gitignore"] = ".gitignore",
   ["gitattributes"] = ".gitattributes",
   ["glb"] = "glb",
@@ -1686,7 +1667,7 @@ local filetypes = {
   ["postscr"] = "ai",
   ["ppt"] = "ppt",
   ["prisma"] = "prisma",
-  ["procfile"] = "Procfile",
+  ["procfile"] = "procfile",
   ["prolog"] = "pro",
   ["ps1"] = "ps1",
   ["psd1"] = "psd1",
@@ -1888,6 +1869,8 @@ local function get_default_icon()
 end
 
 local function get_icon(name, ext, opts)
+	name = name:lower()
+
   ext = ext or name:match("^.*%.(.*)$") or ""
   if not loaded then
     setup()
