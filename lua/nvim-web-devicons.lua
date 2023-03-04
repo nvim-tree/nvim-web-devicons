@@ -857,13 +857,13 @@ local icons_by_file_extension = {
   ["test.jsx"] = {
     icon = "",
     color = "#20c2e3",
-    cterm_color = "54",
+    cterm_color = "45",
     name = "JavaScriptReactTest"
   },
   ["spec.jsx"] = {
     icon = "",
     color = "#20c2e3",
-    cterm_color = "54",
+    cterm_color = "45",
     name = "JavaScriptReactSpec"
   },
   ["ksh"] = {
