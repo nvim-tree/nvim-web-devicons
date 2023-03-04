@@ -1,15 +1,11 @@
 -- Plugin lifepillar/vim-colortemplate must be available on &runtimepath
 --
 -- The current working directory must be set to the repo root
--- Have the main file already open in another window
 
 -- IMPORTANT: the `cterm_color` key must always be below the `color` key of the
 --            same icon. Currently they are.
 
--- After this file is sourced, the newly created file should open in the same
--- window of the main file.
-
--- :source this file when ready
+-- This file should be run from the shell with `make colors`
 
 local fn = vim.fn
 
@@ -18,8 +14,16 @@ if not jit then
 end
 
 if fn.filereadable("lua/nvim-web-devicons.lua") == 0 then
-  error("Your working directory isn't set to correctly.")
+  error("lua/nvim-web-devicons.lua not found")
 end
+
+if not vim.o.runtimepath:find("vim%-colortemplate") then
+  error("lifepillar/vim-colortemplate must be present in the runtimepath.")
+end
+
+--------------------------------------------------------------------------------
+-- Local functions
+--------------------------------------------------------------------------------
 
 local light78 = 255 * 21 / 8 -- (255 * 3) * 7 / 8
 local light34 = 255 * 9 / 4 -- (255 * 3) * 3 / 4
@@ -52,92 +56,103 @@ local function darken_color(rrggbb)
   return string.format("#%s%s%s", r, g, b)
 end
 
+local function update_cterm_colors()
+  -- move to first line
+  vim.cmd(":1")
+  local last = 0
+
+  while true do
+    local cur = fn.search("^\\s*color =")
+    if cur < last then
+      break
+    end
+    last = cur
+    local color = fn.getline("."):match("%#......")
+    if fn.search("^\\s*cterm_color") < cur then
+      break
+    end
+    if fn.getline("."):find("%d") then
+      fn.setline(".", fn.substitute(fn.getline("."), '\\d\\+', function()
+        return tostring(vim.fn["colortemplate#colorspace#approx"](color).index)
+      end, ""))
+    end
+  end
+end
+
+local function generate_lines()
+  local start = fn.line(".") - 1
+  fn.search("^}")
+  local finish = fn.line(".")
+  local lines = vim.api.nvim_buf_get_lines(fn.bufnr(), start, finish, true)
+  for i = 1, #lines do
+    if lines[i]:find("^%s*color =") then
+      lines[i] = lines[i]:gsub('%#%x+', function(m)
+        return darken_color(m)
+      end)
+    end
+  end
+  table.insert(lines, "")
+  return lines
+end
+
 --------------------------------------------------------------------------------
 -- Generate file with icons for light backgrounds
 --------------------------------------------------------------------------------
 
-vim.cmd("drop lua/nvim-web-devicons.lua")
+vim.cmd("noswapfile drop lua/nvim-web-devicons.lua")
 
-print("Starting!")
+print("Generating file with icons for light backgrounds...")
 
 -- move to first line
 vim.cmd(":1")
-local start, finish
 
+-- first table
 if fn.search("^local icons_by_filename") == 0 then
   error("Table not found!")
 end
-start = fn.line(".") - 1
-fn.search("^}")
-finish = fn.line(".")
-local lines = vim.api.nvim_buf_get_lines(fn.bufnr(), start, finish, true)
-for i = 1, #lines do
-  if lines[i]:find("^%s*color =") then
-    lines[i] = lines[i]:gsub('%#%x+', function(m)
-      return darken_color(m)
-    end)
-  end
-end
-table.insert(lines, "")
+local lines = generate_lines()
 
+-- second table
 if fn.search("^local icons_by_file_extension") == 0 then
   error("Table not found!")
 end
-start = fn.line(".") - 1
-fn.search("^}")
-finish = fn.line(".")
-local lines2 = vim.api.nvim_buf_get_lines(fn.bufnr(), start, finish, true)
-for i = 1, #lines2 do
-  if lines2[i]:find("^%s*color =") then
-    lines2[i] = lines2[i]:gsub('%#%x+', function(m)
-      return darken_color(m)
-    end)
-  end
-end
-table.insert(lines2, "")
+local lines2 = generate_lines()
 table.insert(lines2, "return {")
 table.insert(lines2, "  icons_by_filename = icons_by_filename,")
 table.insert(lines2, "  icons_by_file_extension = icons_by_file_extension")
 table.insert(lines2, "}")
 
+-- write both tables to file
 fn.writefile(lines, "lua/nvim-web-devicons-light.lua")
 fn.writefile(lines2, "lua/nvim-web-devicons-light.lua", "a")
 
 print("Finished creating new file!")
 
 --------------------------------------------------------------------------------
+-- Update cterm colors for dark background
+--------------------------------------------------------------------------------
+
+print("Generating cterm colors for dark background...\n")
+
+update_cterm_colors()
+
+vim.cmd("wall!")
+print("Finished!")
+
+--------------------------------------------------------------------------------
 -- Generate cterm colors for light background
 --------------------------------------------------------------------------------
 
 if fn.filereadable("lua/nvim-web-devicons-light.lua") == 0 then
-  error("The file could not be found!")
+  error("lua/nvim-web-devicons-light.lua not found!")
 end
 
-vim.cmd("drop lua/nvim-web-devicons-light.lua")
+vim.cmd("noswapfile drop lua/nvim-web-devicons-light.lua")
 
-print("Starting to generate cterm colors!")
+print("Generating cterm colors for light background...\n")
 
--- move to first line
-vim.cmd(":1")
-local last = 0
-
-while true do
-  local cur = fn.search("^\\s*color =")
-  if cur < last then
-    break
-  end
-  last = cur
-  local color = fn.getline("."):match("%#......")
-  if fn.search("^\\s*cterm_color") < cur then
-    break
-  end
-  if fn.getline("."):find("%d") then
-    fn.setline(".", fn.substitute(fn.getline("."), '\\d\\+', function(matches)
-      return tostring(vim.fn["colortemplate#colorspace#approx"](color).index)
-    end, ""))
-  end
-end
+update_cterm_colors()
 
 vim.cmd(":1")
-vim.cmd("wall")
+vim.cmd("wall!")
 print("Finished!")
