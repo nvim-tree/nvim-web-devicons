@@ -1868,6 +1868,21 @@ local function get_default_icon()
   return default_icon
 end
 
+-- recursively iterate over each segment separated by '.' to parse extension with multiple dots in filename
+local function iterate_multi_dotted_extension(name, icon_table)
+  if name == nil then
+    return nil
+  end
+
+  local compound_ext = name:match("%.(.*)")
+  local icon = icon_table[compound_ext]
+  if icon then
+    return icon
+  end
+
+  return iterate_multi_dotted_extension(compound_ext, icon_table)
+end
+
 local function get_icon_by_extension(name, ext, opts)
   local is_strict = if_nil(opts and opts.strict, global_opts.strict)
   local icon_table = is_strict and icons_by_file_extension or icons
@@ -1876,18 +1891,7 @@ local function get_icon_by_extension(name, ext, opts)
     return icon_table[ext]
   end
 
-  if name == nil then
-    return nil
-  end
-
-  -- recursively iterate over each segment separated by '.' to parse extension with multiple dots in filename
-  local compound_ext = name:match("%.(.*)")
-  local icon = icon_table[compound_ext]
-  if icon then
-    return icon
-  end
-
-  return get_icon_by_extension(compound_ext, ext, opts)
+  return iterate_multi_dotted_extension(name, icon_table)
 end
 
 local function get_icon(name, ext, opts)
