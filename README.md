@@ -23,7 +23,7 @@ use 'nvim-tree/nvim-web-devicons'
 
 ## Usage
 
-## Variants
+### Variants
 
 Light or dark color variants of the icons depend on `&background`.
 
