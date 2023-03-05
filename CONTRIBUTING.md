@@ -2,7 +2,7 @@
 
 Thank you for your contribution!
 
-## Generate Colours
+## Generate Colors
 
 Add or update icons in `scripts/nvim-web-devicons.lua`.
 
@@ -22,7 +22,7 @@ TODO @alex-courtis
 
 Please reference any issues in the description e.g. "resolves #1234".
 
-Please check "allow edits by maintainers" to allow nvim-web-devicnso developers to make small changes such as documentation tweaks.
+Please check "allow edits by maintainers" to allow nvim-web-devicons maintainers to make small changes such as documentation tweaks.
 
 ## Documentation
 
