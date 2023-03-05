@@ -26,4 +26,4 @@ Please check "allow edits by maintainers" to allow nvim-web-devicons maintainers
 
 ## Documentation
 
-When modifying or adding API, please update [Usage](../README.md#Usage)
+When modifying or adding API, please update [Usage](README.md#Usage)
