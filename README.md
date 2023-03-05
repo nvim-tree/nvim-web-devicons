@@ -158,3 +158,7 @@ require("nvim-web-devicons").get_icon_cterm_color_by_filetype(filetype, opts)
 These functions are the same as their counterparts without the `_by_filetype` suffix, but they take a filetype instead of a name/extension.
 
 You can also use `get_icon_name_by_filetype(filetype)` to get the icon name associated with the filetype.
+
+## Contributing
+
+PRs are always welcome! Please see [Contributing](#Contributing).
