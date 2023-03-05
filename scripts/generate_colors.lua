@@ -17,8 +17,9 @@ if fn.filereadable("lua/nvim-web-devicons.lua") == 0 then
   error("lua/nvim-web-devicons.lua not found")
 end
 
-if not vim.o.runtimepath:find("vim%-colortemplate") then
-  error("lifepillar/vim-colortemplate must be present in the runtimepath.")
+local rc, err = pcall(vim.fn["colortemplate#colorspace#approx"], "#000000")
+if not rc then
+  error(err .. "\nPlease ensure lifepillar/vim-colortemplate is present in the runtimepath.")
 end
 
 --------------------------------------------------------------------------------
