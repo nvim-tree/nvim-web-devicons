@@ -161,4 +161,4 @@ You can also use `get_icon_name_by_filetype(filetype)` to get the icon name asso
 
 ## Contributing
 
-PRs are always welcome! Please see [Contributing](#Contributing).
+PRs are always welcome! Please see [CONTRIBUTING](CONTRIBUTING.md)
