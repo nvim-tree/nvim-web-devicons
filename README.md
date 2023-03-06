@@ -1,7 +1,8 @@
 # Nvim-web-devicons
 
-A `lua` fork of [vim-devicons](https://github.com/ryanoasis/vim-devicons). This plugin provides the same icons _as well as_
-colors for each icon.
+A `lua` fork of [vim-devicons](https://github.com/ryanoasis/vim-devicons). This plugin provides the same icons _as well as_ colors for each icon.
+
+Light and dark color variants are provided.
 
 ## Requirements
 
@@ -21,6 +22,12 @@ use 'nvim-tree/nvim-web-devicons'
 ```
 
 ## Usage
+
+### Variants
+
+Light or dark color variants of the icons depend on `&background`.
+
+These will be updated following `OptionSet` `background` however be advised that the plugin using nvim-web-devicons may have cached the icons.
 
 ### Setup
 
@@ -158,3 +165,7 @@ require("nvim-web-devicons").get_icon_cterm_color_by_filetype(filetype, opts)
 These functions are the same as their counterparts without the `_by_filetype` suffix, but they take a filetype instead of a name/extension.
 
 You can also use `get_icon_name_by_filetype(filetype)` to get the icon name associated with the filetype.
+
+## Contributing
+
+PRs are always welcome! Please see [CONTRIBUTING](CONTRIBUTING.md)
