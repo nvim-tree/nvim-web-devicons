@@ -56,13 +56,19 @@ cargo install stylua
 luarocks install luacheck
 ```
 
+or via your OS package manager e.g. Arch linux:
+```sh
+pacman -S stylua
+pacman -S luacheck
+```
+
 Before committing, please run:
 ```sh
 stylua .
 luacheck .
 ```
 
-You may wish to setup a git pre-commit hook by running:
+Alternatively, you may wish to setup a git pre-commit hook by running:
 ```sh
 scripts/setup-hooks.sh
 ```
