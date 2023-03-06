@@ -48,7 +48,24 @@ Please commit both `nvim-web-devicons.lua` and `nvim-web-devicons-light.lua`
 
 ## Styling And Format
 
-TODO @alex-courtis
+Code is formatted using luacheck and linted using stylua.
+
+You can install these with:
+```sh
+luarocks install luacheck
+cargo install stylua
+```
+
+Before committing, please run:
+```sh
+stylua .
+luacheck .
+```
+
+You may wish to setup a git pre-commit hook by running:
+```sh
+scripts/setup-hooks.sh
+```
 
 ## Pull Request
 

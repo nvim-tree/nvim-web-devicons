@@ -197,15 +197,15 @@ local icons_by_filename = {
     cterm_color = "22",
     name = "Vimrc",
   },
-  ['package.json'] = {
+  ["package.json"] = {
     icon = "",
     color = "#ae1d38",
-    name = "PackageJson"
+    name = "PackageJson",
   },
-  ['package-lock.json'] = {
+  ["package-lock.json"] = {
     icon = "",
     color = "#7a0d21",
-    name = "PackageLockJson"
+    name = "PackageLockJson",
   },
   ["node_modules"] = {
     icon = "",
@@ -579,7 +579,7 @@ local icons_by_file_extension = {
     color = "#33312b",
     icon = "🌜",
     cterm_color = "236",
-    name = "Fennel"
+    name = "Fennel",
   },
   ["fish"] = {
     icon = "",
@@ -657,13 +657,13 @@ local icons_by_file_extension = {
     icon = "",
     color = "#ac2880",
     cterm_color = "126",
-    name = "GraphQL"
+    name = "GraphQL",
   },
   ["gql"] = {
     icon = "",
     color = "#ac2880",
     cterm_color = "126",
-    name = "GraphQL"
+    name = "GraphQL",
   },
   ["h"] = {
     icon = "",
@@ -813,13 +813,13 @@ local icons_by_file_extension = {
     icon = "",
     color = "#158197",
     cterm_color = "31",
-    name = "JavaScriptReactTest"
+    name = "JavaScriptReactTest",
   },
   ["spec.jsx"] = {
     icon = "",
     color = "#158197",
     cterm_color = "31",
-    name = "JavaScriptReactSpec"
+    name = "JavaScriptReactSpec",
   },
   ["ksh"] = {
     icon = "",
@@ -1520,5 +1520,5 @@ local icons_by_file_extension = {
 
 return {
   icons_by_filename = icons_by_filename,
-  icons_by_file_extension = icons_by_file_extension
+  icons_by_file_extension = icons_by_file_extension,
 }
