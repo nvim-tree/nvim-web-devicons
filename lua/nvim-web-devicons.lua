@@ -1,3 +1,4 @@
+-- exact match by file name
 local icons_by_filename = {
   [".babelrc"] = {
     icon = "ﬥ",
@@ -281,6 +282,7 @@ local icons_by_filename = {
   },
 }
 
+-- fuzzy match by extension
 local icons_by_file_extension = {
   ["ai"] = {
     icon = "",
