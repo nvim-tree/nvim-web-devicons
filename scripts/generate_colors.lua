@@ -129,7 +129,7 @@ end
 local lines2 = generate_lines()
 table.insert(lines2, "return {")
 table.insert(lines2, "  icons_by_filename = icons_by_filename,")
-table.insert(lines2, "  icons_by_file_extension = icons_by_file_extension")
+table.insert(lines2, "  icons_by_file_extension = icons_by_file_extension,")
 table.insert(lines2, "}")
 
 -- write both tables to file
