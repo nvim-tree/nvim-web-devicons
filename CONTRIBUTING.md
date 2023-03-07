@@ -10,6 +10,41 @@ Please name your commits and the PR simply e.g.
     update makefile icon
     update .kt colors
 
+## Styling And Format
+
+Code is formatted using stylua and linted using luacheck.
+
+You can install these with:
+```sh
+cargo install stylua
+luarocks install luacheck
+```
+
+or via your OS package manager e.g. Arch linux:
+```sh
+pacman -S stylua
+pacman -S luacheck
+```
+
+## Building
+
+Following your changes, please run:
+
+```sh
+make
+```
+
+This will:
+1. Generate cterm colors
+2. Generate light color variants
+3. Check style
+4. Lint
+
+You can automatically fix any style issues via:
+```sh
+make style-fix
+```
+
 ## Generate Colors
 
 Add or update icons in `scripts/nvim-web-devicons.lua`.
@@ -45,33 +80,6 @@ Run `make`. This will:
 - Generate `nvim-web-devicons-light.lua`
 
 Please commit both `nvim-web-devicons.lua` and `nvim-web-devicons-light.lua`
-
-## Styling And Format
-
-Code is formatted using stylua and linted using luacheck.
-
-You can install these with:
-```sh
-cargo install stylua
-luarocks install luacheck
-```
-
-or via your OS package manager e.g. Arch linux:
-```sh
-pacman -S stylua
-pacman -S luacheck
-```
-
-Before committing, please run:
-```sh
-stylua .
-luacheck .
-```
-
-Alternatively, you may wish to setup a git pre-commit hook by running:
-```sh
-scripts/setup-hooks.sh
-```
 
 ## Pull Request
 

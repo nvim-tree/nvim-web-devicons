@@ -165,4 +165,4 @@ update_cterm_colors()
 
 vim.cmd ":1"
 vim.cmd "wall!"
-print "Finished!"
+print "Finished!\n"
