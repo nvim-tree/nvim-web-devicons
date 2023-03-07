@@ -1874,7 +1874,9 @@ local function get_icon_by_extension(name, ext, opts)
 end
 
 local function get_icon(name, ext, opts)
-  name = name:lower()
+  if type(name) == "string" then
+    name = name:lower()
+  end
 
   if not loaded then
     setup()
