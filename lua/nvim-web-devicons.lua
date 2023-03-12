@@ -56,6 +56,12 @@ local icons_by_filename = {
     cterm_color = "239",
     name = "DsStore",
   },
+  [".eslintrc"] = {
+    icon = "",
+    color = "#4b32c3",
+    cterm_color = "56",
+    name = "Eslintrc"
+  },
   [".gitattributes"] = {
     icon = "",
     color = "#41535b",
