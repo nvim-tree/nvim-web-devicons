@@ -454,9 +454,9 @@ local icons_by_file_extension = {
     name = "Cobol",
   },
   ["cr"] = {
-    icon = "",
-    color = "#000000",
-    cterm_color = "16",
+    icon = "",
+    color = "#c8c8c8",
+    cterm_color = "251",
     name = "Crystal",
   },
   ["cs"] = {
