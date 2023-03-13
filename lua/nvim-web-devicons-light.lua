@@ -973,8 +973,8 @@ local icons_by_file_extension = {
   },
   ["org"] = {
     icon = "",
-    color = "#A04D32",
-    cterm_color = "94",
+    color = "#4f7166",
+    cterm_color = "66",
     name = "OrgMode"
   },
   ["otf"] = {

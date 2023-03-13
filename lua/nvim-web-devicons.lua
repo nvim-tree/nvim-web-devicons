@@ -1007,7 +1007,7 @@ local icons_by_file_extension = {
   ["org"] = {
     icon = "",
     color = "#77AA99",
-    cterm_color = "72",
+    cterm_color = "73",
     name = "OrgMode"
   },
   ["otf"] = {
