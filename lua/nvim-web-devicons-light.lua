@@ -971,6 +971,12 @@ local icons_by_file_extension = {
     cterm_color = "130",
     name = "OPUS",
   },
+  ["org"] = {
+    icon = "",
+    color = "#4f7166",
+    cterm_color = "66",
+    name = "OrgMode"
+  },
   ["otf"] = {
     icon = "",
     color = "#2f2f2f",
