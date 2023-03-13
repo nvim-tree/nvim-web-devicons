@@ -1286,7 +1286,7 @@ local icons_by_file_extension = {
     name = "SystemVerilog",
   },
   ["svelte"] = {
-    icon = "",
+    icon = "",
     color = "#ff3e00",
     cterm_color = "196",
     name = "Svelte",
