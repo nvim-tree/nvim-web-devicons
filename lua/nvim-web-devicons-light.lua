@@ -504,6 +504,12 @@ local icons_by_file_extension = {
     cterm_color = "26",
     name = "Doc",
   },
+  ["docx"] = {
+    icon = "",
+    color = "#185abd",
+    cterm_color = "26",
+    name = "Docx",
+  },
   ["drl"] = {
     icon = "",
     color = "#553a3a",
@@ -1455,6 +1461,12 @@ local icons_by_file_extension = {
     color = "#207245",
     cterm_color = "29",
     name = "Xls",
+  },
+  ["xlsx"] = {
+    icon = "",
+    color = "#207245",
+    cterm_color = "29",
+    name = "Xlsx",
   },
   ["xml"] = {
     icon = "謹",

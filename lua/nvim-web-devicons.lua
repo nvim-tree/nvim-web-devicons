@@ -537,6 +537,12 @@ local icons_by_file_extension = {
     cterm_color = "26",
     name = "Doc",
   },
+  ["docx"] = {
+    icon = "",
+    color = "#185abd",
+    cterm_color = "26",
+    name = "Docx",
+  },
   ["drl"] = {
     icon = "",
     color = "#ffafaf",
@@ -1489,6 +1495,12 @@ local icons_by_file_extension = {
     cterm_color = "29",
     name = "Xls",
   },
+  ["xlsx"] = {
+    icon = "",
+    color = "#207245",
+    cterm_color = "29",
+    name = "Xlsx",
+  },
   ["xml"] = {
     icon = "謹",
     color = "#e37933",
@@ -1609,6 +1621,7 @@ local filetypes = {
   ["desktop"] = "desktop",
   ["diff"] = "diff",
   ["doc"] = "doc",
+  ["docx"] = "docx",
   ["dockerfile"] = "dockerfile",
   ["dosbatch"] = "bat",
   ["dosini"] = "ini",
@@ -1752,6 +1765,7 @@ local filetypes = {
   ["webpack"] = "webpack",
   ["xcplayground"] = "xcplayground",
   ["xls"] = "xls",
+  ["xlsx"] = "xlsx",
   ["xml"] = "xml",
   ["yaml"] = "yaml",
   ["zig"] = "zig",
