@@ -1469,7 +1469,7 @@ local icons_by_file_extension = {
     name = "Xlsx",
   },
   ["xml"] = {
-    icon = "",
+    icon = "謹",
     color = "#975122",
     cterm_color = "130",
     name = "Xml",
