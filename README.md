@@ -1,3 +1,5 @@
+# DUMMY CHANGE TO TEST CI
+
 # Nvim-web-devicons
 
 A `lua` fork of [vim-devicons](https://github.com/ryanoasis/vim-devicons). This plugin provides the same icons _as well as_ colors for each icon.
