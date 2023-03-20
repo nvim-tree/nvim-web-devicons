@@ -1,36 +1,4 @@
--- References:
--- 1. Linguist: https://github.com/github/linguist
--- 2. coc-explorer: https://github.com/weirongxu/coc-explorer/blob/59bd41f8fffdc871fbd77ac443548426bd31d2c3/src/icons.nerdfont.json#L2
--- 3. chad-tree: https://github.com/ms-jpq/chadtree/blob/f9f333c062/artifacts/icons.json
--- jquery = {
---   icon = "",
---   color = "#1B75BB"
--- },
--- angular = {
---   icon = "",
---   color = "#E23237"
--- },
--- backbone = {
---   icon = "",
---   color = "#0071B5"
--- },
--- requirejs = {
---   icon = "",
---   color = "#F44A41"
--- },
--- materialize = {
---   icon = "",
---   color = "#EE6E73"
--- },
--- mootools = {
---   icon = "",
---   color = "#ECECEC"
--- },
--- puppet = {
---   icon = "",
---   color = "#ffa61a"
--- },
-
+-- exact match by file name
 local icons_by_filename = {
   [".babelrc"] = {
     icon = "ﬥ",
@@ -236,15 +204,15 @@ local icons_by_filename = {
     cterm_color = "28",
     name = "Vimrc",
   },
-  ['package.json'] = {
+  ["package.json"] = {
     icon = "",
     color = "#e8274b",
-    name = "PackageJson"
+    name = "PackageJson",
   },
-  ['package-lock.json'] = {
+  ["package-lock.json"] = {
     icon = "",
     color = "#7a0d21",
-    name = "PackageLockJson"
+    name = "PackageLockJson",
   },
   ["node_modules"] = {
     icon = "",
@@ -320,6 +288,7 @@ local icons_by_filename = {
   },
 }
 
+-- fuzzy match by extension
 local icons_by_file_extension = {
   ["ai"] = {
     icon = "",
@@ -624,7 +593,7 @@ local icons_by_file_extension = {
     color = "#fff3d7",
     icon = "🌜",
     cterm_color = "230",
-    name = "Fennel"
+    name = "Fennel",
   },
   ["fish"] = {
     icon = "",
@@ -702,13 +671,13 @@ local icons_by_file_extension = {
     icon = "",
     color = "#e535ab",
     cterm_color = "199",
-    name = "GraphQL"
+    name = "GraphQL",
   },
   ["gql"] = {
     icon = "",
     color = "#e535ab",
     cterm_color = "199",
-    name = "GraphQL"
+    name = "GraphQL",
   },
   ["h"] = {
     icon = "",
@@ -858,13 +827,13 @@ local icons_by_file_extension = {
     icon = "",
     color = "#20c2e3",
     cterm_color = "45",
-    name = "JavaScriptReactTest"
+    name = "JavaScriptReactTest",
   },
   ["spec.jsx"] = {
     icon = "",
     color = "#20c2e3",
     cterm_color = "45",
-    name = "JavaScriptReactSpec"
+    name = "JavaScriptReactSpec",
   },
   ["ksh"] = {
     icon = "",
@@ -1581,7 +1550,7 @@ local icons
 -- Set the current icons tables, depending on the 'background' option.
 local function refresh_icons()
   local by_filename, by_file_extension
-  if vim.o.background == 'light' then
+  if vim.o.background == "light" then
     by_filename = require("nvim-web-devicons-light").icons_by_filename
     by_file_extension = require("nvim-web-devicons-light").icons_by_file_extension
   else
@@ -1788,7 +1757,7 @@ local global_opts = {
 
 local function get_highlight_name(data)
   if not global_opts.color_icons then
-  	data = default_icon
+    data = default_icon
   end
 
   return data.name and "DevIcon" .. data.name
@@ -1797,21 +1766,23 @@ end
 local nvim_set_hl = vim.api.nvim_set_hl
 local function set_up_highlight(icon_data)
   if not global_opts.color_icons then
-  	icon_data = default_icon
+    icon_data = default_icon
   end
 
   local hl_group = get_highlight_name(icon_data)
   if hl_group and (icon_data.color or icon_data.cterm_color) then
-	  nvim_set_hl(0, get_highlight_name(icon_data), {
-		  fg = icon_data.color,
-		  ctermfg = tonumber(icon_data.cterm_color),
-	  })
+    nvim_set_hl(0, get_highlight_name(icon_data), {
+      fg = icon_data.color,
+      ctermfg = tonumber(icon_data.cterm_color),
+    })
   end
 end
 
 local nvim_get_hl_by_name = vim.api.nvim_get_hl_by_name
 local function highlight_exists(group)
-  if not group then return end
+  if not group then
+    return
+  end
 
   local ok, hl = pcall(nvim_get_hl_by_name, group, true)
   return ok and not (hl or {})[true]
@@ -1834,7 +1805,7 @@ end
 
 local function get_highlight_foreground(icon_data)
   if not global_opts.color_icons then
-  	icon_data = default_icon
+    icon_data = default_icon
   end
 
   return string.format("#%06x", nvim_get_hl_by_name(get_highlight_name(icon_data), true).foreground)
@@ -1842,7 +1813,7 @@ end
 
 local function get_highlight_ctermfg(icon_data)
   if not global_opts.color_icons then
-  	icon_data = default_icon
+    icon_data = default_icon
   end
 
   return nvim_get_hl_by_name(get_highlight_name(icon_data), false).foreground
@@ -1877,13 +1848,8 @@ local function setup(opts)
   local user_filename_icons = user_icons.override_by_filename
   local user_file_ext_icons = user_icons.override_by_extension
 
-  icons = vim.tbl_extend(
-    "force",
-    icons,
-    user_icons.override or {},
-    user_filename_icons or {},
-    user_file_ext_icons or {}
-  )
+  icons =
+    vim.tbl_extend("force", icons, user_icons.override or {}, user_filename_icons or {}, user_file_ext_icons or {})
 
   if user_filename_icons then
     icons_by_filename = vim.tbl_extend("force", icons_by_filename, user_filename_icons)
@@ -1897,9 +1863,9 @@ local function setup(opts)
   set_up_highlights()
 
   vim.api.nvim_create_autocmd("ColorScheme", {
-	  desc = "Re-apply icon colors after changing colorschemes",
-	  group = vim.api.nvim_create_augroup("NvimWebDevicons", { clear = true }),
-	  callback = set_up_highlights,
+    desc = "Re-apply icon colors after changing colorschemes",
+    group = vim.api.nvim_create_augroup("NvimWebDevicons", { clear = true }),
+    callback = set_up_highlights,
   })
 end
 
@@ -1913,7 +1879,7 @@ local function iterate_multi_dotted_extension(name, icon_table)
     return nil
   end
 
-  local compound_ext = name:match("%.(.*)")
+  local compound_ext = name:match "%.(.*)"
   local icon = icon_table[compound_ext]
   if icon then
     return icon
@@ -1935,7 +1901,7 @@ end
 
 local function get_icon(name, ext, opts)
   if type(name) == "string" then
-	  name = name:lower()
+    name = name:lower()
   end
 
   if not loaded then
@@ -1964,7 +1930,7 @@ local function get_icon_by_filetype(ft, opts)
   local name = get_icon_name_by_filetype(ft)
   opts = opts or {}
   opts.strict = false
-  return get_icon(name or '', nil, opts)
+  return get_icon(name or "", nil, opts)
 end
 
 local function get_icon_colors(name, ext, opts)
@@ -1994,7 +1960,7 @@ end
 
 local function get_icon_colors_by_filetype(ft, opts)
   local name = get_icon_name_by_filetype(ft)
-  return get_icon_colors(name or '', nil, opts)
+  return get_icon_colors(name or "", nil, opts)
 end
 
 local function get_icon_color(name, ext, opts)
@@ -2006,7 +1972,7 @@ local function get_icon_color_by_filetype(ft, opts)
   local name = get_icon_name_by_filetype(ft)
   opts = opts or {}
   opts.strict = false
-  return get_icon_color(name or '', nil, opts)
+  return get_icon_color(name or "", nil, opts)
 end
 
 local function get_icon_cterm_color(name, ext, opts)
@@ -2016,13 +1982,13 @@ end
 
 local function get_icon_cterm_color_by_filetype(ft, opts)
   local name = get_icon_name_by_filetype(ft)
-  return get_icon_cterm_color(name or '', nil, opts)
+  return get_icon_cterm_color(name or "", nil, opts)
 end
 
 local function set_icon(user_icons)
   icons = vim.tbl_extend("force", icons, user_icons or {})
   if not global_opts.color_icons then
-  	return
+    return
   end
 
   for _, icon_data in pairs(user_icons) do
@@ -2065,4 +2031,3 @@ return {
   end,
   set_up_highlights = set_up_highlights,
 }
-
