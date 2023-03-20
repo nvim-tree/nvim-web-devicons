@@ -28,7 +28,7 @@ local icons_by_filename = {
     icon = "",
     color = "#4b32c3",
     cterm_color = "56",
-    name = "Eslintrc"
+    name = "Eslintrc",
   },
   [".gitattributes"] = {
     icon = "",
@@ -989,7 +989,7 @@ local icons_by_file_extension = {
     icon = "",
     color = "#77AA99",
     cterm_color = "73",
-    name = "OrgMode"
+    name = "OrgMode",
   },
   ["otf"] = {
     icon = "",
