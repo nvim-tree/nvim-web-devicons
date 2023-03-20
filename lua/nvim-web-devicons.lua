@@ -589,6 +589,12 @@ local icons_by_file_extension = {
     cterm_color = "74",
     name = "Fsharp",
   },
+  ["f90"] = {
+    icon = "󱈚",
+    color = "#734f96",
+    cterm_color = "97",
+    name = "Fortran",
+  },
   ["fnl"] = {
     color = "#fff3d7",
     icon = "🌜",
@@ -1607,7 +1613,8 @@ local filetypes = {
   ["fennel"] = "fnl",
   ["fish"] = "fish",
   ["forth"] = "fs",
-  ["fortran"] = "f#",
+  ["fortran"] = "f90",
+  ["fsharp"] = "f#",
   ["fsi"] = "fsi",
   ["fsscript"] = "fsscript",
   ["fsx"] = "fsx",

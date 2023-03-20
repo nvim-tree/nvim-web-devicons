@@ -587,6 +587,12 @@ local icons_by_file_extension = {
     cterm_color = "24",
     name = "Fsharp",
   },
+  ["f90"] = {
+    icon = "󱈚",
+    color = "#563b70",
+    cterm_color = "53",
+    name = "Fortran",
+  },
   ["fnl"] = {
     color = "#33312b",
     icon = "🌜",
