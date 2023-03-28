@@ -1,11 +1,9 @@
 name: Lint
-on:
-  pull_request:
-    types: [opened, reopened]
+on: pull_request
 permissions:
   contents: read
 jobs:
-  auto-update:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
