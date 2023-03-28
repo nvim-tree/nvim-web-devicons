@@ -1,5 +1,5 @@
 -- exact match by file name
-local icons_by_filename = {
+  local icons_by_filename = {
   [".babelrc"] = {
     icon = "ﬥ",
     color = "#cbcb41",
