@@ -1,4 +1,5 @@
 -- testing CI
+-- testing CI some more
 -- exact match by file name
 local icons_by_filename = {
   [".babelrc"] = {
