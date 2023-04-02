@@ -1397,10 +1397,10 @@ local icons_by_file_extension = {
     name = "Txt",
   },
   ["v"] = {
-    icon = "",
-    color = "#017226",
-    cterm_color = "22",
-    name = "Verilog",
+    icon = "𝗩",
+    color = "#5D87BF",
+    cterm_color = "24",
+    name = "V",
   },
   ["vala"] = {
     icon = "",
@@ -1431,6 +1431,12 @@ local icons_by_file_extension = {
     color = "#017226",
     cterm_color = "22",
     name = "Vim",
+  },
+  ["vlang"] = {
+    icon = "𝗩",
+    color = "#5D87BF",
+    cterm_color = "24",
+    name = "V",
   },
   ["vue"] = {
     icon = "﵂",
