@@ -1,10 +1,4 @@
 local icons_by_filename = {
-  [".babelrc"] = {
-    icon = "ﬥ",
-    color = "#666620",
-    cterm_color = "58",
-    name = "Babelrc",
-  },
   [".bash_profile"] = {
     icon = "",
     color = "#447028",
