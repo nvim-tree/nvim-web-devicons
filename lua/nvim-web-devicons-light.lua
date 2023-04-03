@@ -972,7 +972,7 @@ local icons_by_file_extension = {
     name = "Mustache",
   },
   ["nim"] = {
-    icon = "👑",
+    icon = "",
     color = "#514700",
     cterm_color = "58",
     name = "Nim",
