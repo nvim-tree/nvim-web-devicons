@@ -1,10 +1,4 @@
 local icons_by_filename = {
-  [".bashrc"] = {
-    icon = "",
-    color = "#447028",
-    cterm_color = "22",
-    name = "Bashrc",
-  },
   [".ds_store"] = {
     icon = "",
     color = "#41535b",
