@@ -145,10 +145,10 @@ require("nvim-web-devicons").set_icon {
 }
 ```
 
-You can override the default icon with the `set_default_icon(icon, color)` function:
+You can override the default icon with the `set_default_icon(icon, color, cterm_color)` function:
 
 ```lua
-require("nvim-web-devicons").set_default_icon('', '#6d8086')
+require("nvim-web-devicons").set_default_icon('', '#6d8086', 65)
 ```
 
 ### Getting icons by filetype
