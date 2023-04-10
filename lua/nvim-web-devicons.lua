@@ -350,6 +350,12 @@ local icons_by_file_extension = {
     cterm_color = "255",
     name = "Configuration",
   },
+  ["cjs"] = {
+    icon = "",
+    color = "#cbcb41",
+    cterm_color = "185",
+    name = "Cjs",
+  },
   ["clj"] = {
     icon = "",
     color = "#8dc149",
