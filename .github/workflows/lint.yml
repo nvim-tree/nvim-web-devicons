@@ -16,6 +16,13 @@ jobs:
       - uses: rhysd/action-setup-vim@v1
         with:
           neovim: true
-      - uses: actions/setup-python@v4.5.0
-      - run: pip install pre-commit
-      - run: pre-commit run --all-files
+      - name: Luacheck
+        run: luacheck --
+      - uses: JohnnyMorganz/stylua-action@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          version: latest
+          args: --check .
+      - name: Light Colorscheme
+        run: |
+          nvim --headless -c 'source scripts/generate_colors.lua' -c 'qall'
