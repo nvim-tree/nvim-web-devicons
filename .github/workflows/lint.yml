@@ -17,7 +17,7 @@ jobs:
         with:
           neovim: true
       - name: Luacheck
-        run: luacheck --
+        run: luacheck lua plugin scripts
       - uses: JohnnyMorganz/stylua-action@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
