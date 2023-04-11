@@ -30,3 +30,4 @@ jobs:
       - name: Light Colorscheme
         run: |
           nvim --headless -c 'set rtp+=./vim-colortemplate' -c 'source scripts/generate_colors.lua' -c 'qall'
+          git diff --exit-code lua/nvim-web-devicons-light.lua
