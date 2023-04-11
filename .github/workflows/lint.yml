@@ -23,6 +23,10 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           version: latest
           args: --check .
+      - uses: actions/checkout@v3
+        with:
+          repository: lifepillar/vim-colortemplate
+          path: vim-colortemplate
       - name: Light Colorscheme
         run: |
-          nvim --headless -c 'source scripts/generate_colors.lua' -c 'qall'
+          nvim --headless -c 'set rtp+=./vim-colortemplate' -c 'source scripts/generate_colors.lua' -c 'qall'
