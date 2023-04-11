@@ -1,5 +1,11 @@
 -- exact match by file name
 local icons_by_filename = {
+  [".testy"] = {
+    icon = "ﬥ",
+    color = "#cbcb41",
+    cterm_color = "185",
+    name = "Babelrc",
+  },
   [".babelrc"] = {
     icon = "ﬥ",
     color = "#cbcb41",
