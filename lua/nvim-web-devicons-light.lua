@@ -1138,6 +1138,18 @@ local icons_by_file_extension = {
     cterm_color = "52",
     name = "Rb",
   },
+  ["res"] = {
+    icon = "",
+    color = "#b8383d",
+    cterm_color = "131",
+    name = "ReScript",
+  },
+  ["resi"] = {
+    icon = "",
+    color = "#dd4b78",
+    cterm_color = "168",
+    name = "ReScriptInterface",
+  },
   ["rlib"] = {
     icon = "",
     color = "#6f5242",
