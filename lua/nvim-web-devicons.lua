@@ -1140,6 +1140,18 @@ local icons_by_file_extension = {
     cterm_color = "52",
     name = "Rb",
   },
+  ["res"] = {
+    icon = "",
+    color = "#cc3e44",
+    cterm_color = "167",
+    name = "ReScript",
+  },
+  ["resi"] = {
+    icon = "",
+    color = "#f55385",
+    cterm_color = "204",
+    name = "ReScriptInterface",
+  },
   ["rlib"] = {
     icon = "",
     color = "#dea584",
@@ -1701,6 +1713,8 @@ local filetypes = {
   ["python"] = "py",
   ["query"] = "query",
   ["r"] = "r",
+  ["res"] = "rescript",
+  ["resi"] = "rescript",
   ["rlib"] = "rlib",
   ["rmd"] = "rmd",
   ["rproj"] = "rproj",
