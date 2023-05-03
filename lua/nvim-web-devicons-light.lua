@@ -1,6 +1,6 @@
 local icons_by_filename = {
   [".babelrc"] = {
-    icon = "ﬥ",
+    icon = "",
     color = "#666620",
     cterm_color = "58",
     name = "Babelrc",
@@ -822,7 +822,7 @@ local icons_by_file_extension = {
     name = "Json",
   },
   ["json5"] = {
-    icon = "ﬥ",
+    icon = "",
     color = "#666620",
     cterm_color = "58",
     name = "Json5",
@@ -1014,7 +1014,7 @@ local icons_by_file_extension = {
     name = "PackedResource",
   },
   ["pdf"] = {
-    icon = "",
+    icon = "",
     color = "#b30b00",
     cterm_color = "124",
     name = "Pdf",
@@ -1547,7 +1547,7 @@ local icons_by_file_extension = {
     name = "Lock",
   },
   ["log"] = {
-    icon = "",
+    icon = "󰌱",
     color = "#333333",
     cterm_color = "236",
     name = "Log",

@@ -1,7 +1,7 @@
 -- exact match by file name
 local icons_by_filename = {
   [".babelrc"] = {
-    icon = "ﬥ",
+    icon = "",
     color = "#cbcb41",
     cterm_color = "185",
     name = "Babelrc",
@@ -824,7 +824,7 @@ local icons_by_file_extension = {
     name = "Json",
   },
   ["json5"] = {
-    icon = "ﬥ",
+    icon = "",
     color = "#cbcb41",
     cterm_color = "185",
     name = "Json5",
@@ -1016,7 +1016,7 @@ local icons_by_file_extension = {
     name = "PackedResource",
   },
   ["pdf"] = {
-    icon = "",
+    icon = "",
     color = "#b30b00",
     cterm_color = "124",
     name = "Pdf",
@@ -1549,7 +1549,7 @@ local icons_by_file_extension = {
     name = "Lock",
   },
   ["log"] = {
-    icon = "",
+    icon = "󰌱",
     color = "#ffffff",
     cterm_color = "231",
     name = "Log",
