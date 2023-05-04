@@ -1453,7 +1453,7 @@ local icons_by_file_extension = {
     name = "Vim",
   },
   ["vue"] = {
-    icon = "",
+    icon = "﵂",
     color = "#8dc149",
     cterm_color = "113",
     name = "Vue",
