@@ -285,6 +285,18 @@ local icons_by_filename = {
     cterm_color = "25",
     name = "Dockerfile",
   },
+  ["build"] = {
+    icon = "",
+    color = "#447028",
+    cterm_color = "22",
+    name = "BazelBuild",
+  },
+  ["workspace"] = {
+    icon = "",
+    color = "#447028",
+    cterm_color = "22",
+    name = "BazelWorkspace",
+  },
 }
 
 local icons_by_file_extension = {
@@ -311,6 +323,18 @@ local icons_by_file_extension = {
     color = "#40500f",
     cterm_color = "58",
     name = "Bat",
+  },
+  ["bazel"] = {
+    icon = "",
+    color = "#447028",
+    cterm_color = "22",
+    name = "Bazel",
+  },
+  ["bzl"] = {
+    icon = "",
+    color = "#447028",
+    cterm_color = "22",
+    name = "Bzl",
   },
   ["bmp"] = {
     icon = "",
