@@ -1918,6 +1918,7 @@ local function setup(opts)
     desc = "Re-apply icon colors after changing colorschemes",
     group = vim.api.nvim_create_augroup("NvimWebDevicons", { clear = true }),
     callback = function()
+      loaded = false
       setup(opts)
     end,
   })
