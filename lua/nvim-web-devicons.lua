@@ -1917,7 +1917,9 @@ local function setup(opts)
   vim.api.nvim_create_autocmd("ColorScheme", {
     desc = "Re-apply icon colors after changing colorschemes",
     group = vim.api.nvim_create_augroup("NvimWebDevicons", { clear = true }),
-    callback = set_up_highlights,
+    callback = function()
+      setup(opts)
+    end,
   })
 end
 
