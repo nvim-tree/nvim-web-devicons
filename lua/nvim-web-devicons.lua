@@ -1919,7 +1919,7 @@ local function setup(opts)
     group = vim.api.nvim_create_augroup("NvimWebDevicons", { clear = true }),
     callback = function()
       loaded = false
-      setup(opts)
+      setup(user_icons)
     end,
   })
 end
