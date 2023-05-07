@@ -286,6 +286,18 @@ local icons_by_filename = {
     cterm_color = "68",
     name = "Dockerfile",
   },
+  ["build"] = {
+    icon = "",
+    color = "#89e051",
+    cterm_color = "113",
+    name = "BazelBuild",
+  },
+  ["workspace"] = {
+    icon = "",
+    color = "#89e051",
+    cterm_color = "113",
+    name = "BazelWorkspace",
+  },
 }
 
 -- fuzzy match by extension
@@ -313,6 +325,18 @@ local icons_by_file_extension = {
     color = "#C1F12E",
     cterm_color = "191",
     name = "Bat",
+  },
+  ["bazel"] = {
+    icon = "",
+    color = "#89e051",
+    cterm_color = "113",
+    name = "Bazel",
+  },
+  ["bzl"] = {
+    icon = "",
+    color = "#89e051",
+    cterm_color = "113",
+    name = "Bzl",
   },
   ["bmp"] = {
     icon = "",
@@ -1586,6 +1610,7 @@ end
 
 -- Map of filetypes -> icon names
 local filetypes = {
+  ["bzl"] = "bzl",
   ["brewfile"] = "brewfile",
   ["commit"] = "commit_editmsg",
   ["copying"] = "copying",
