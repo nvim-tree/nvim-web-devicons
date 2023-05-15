@@ -1840,7 +1840,7 @@ local function highlight_exists(group)
   return ok and not (hl or {})[true]
 end
 
-local function set_up_highlights()
+local function set_up_highlights(allow_override)
   if not global_opts.color_icons then
     set_up_highlight(default_icon)
     return
@@ -1848,8 +1848,9 @@ local function set_up_highlights()
 
   for _, icon_data in pairs(icons) do
     local has_color = icon_data.color or icon_data.cterm_color
-    local name_valid = icon_data.name and not highlight_exists(get_highlight_name(icon_data))
-    if has_color and name_valid then
+    local name_valid = icon_data.name
+    local defined_before = highlight_exists(get_highlight_name(icon_data))
+    if has_color and name_valid and (allow_override or not defined_before) then
       set_up_highlight(icon_data)
     end
   end
@@ -2059,7 +2060,13 @@ end
 refresh_icons()
 
 -- Change icon set on background change
-vim.api.nvim_create_autocmd("OptionSet", { pattern = "background", callback = refresh_icons })
+vim.api.nvim_create_autocmd("OptionSet", {
+  pattern = "background",
+  callback = function()
+    refresh_icons()
+    set_up_highlights(true) -- Force update highlights
+  end
+})
 
 return {
   get_icon = get_icon,
