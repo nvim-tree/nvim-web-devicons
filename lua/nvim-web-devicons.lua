@@ -2065,7 +2065,7 @@ vim.api.nvim_create_autocmd("OptionSet", {
   callback = function()
     refresh_icons()
     set_up_highlights(true) -- Force update highlights
-  end
+  end,
 })
 
 return {
