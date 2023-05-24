@@ -298,6 +298,12 @@ local icons_by_filename = {
     cterm_color = "113",
     name = "BazelWorkspace",
   },
+  ["unlicense"] = {
+    icon = "",
+    color = "#d0bf41",
+    cterm_color = "185",
+    name = "License",
+  },
 }
 
 -- fuzzy match by extension
@@ -1698,6 +1704,7 @@ local filetypes = {
   ["liquid"] = "liquid",
   ["lhaskell"] = "lhs",
   ["license"] = "license",
+  ["unlicense"] = "unlicense",
   ["log"] = "log",
   ["lock"] = "lock",
   ["lprolog"] = "sig",

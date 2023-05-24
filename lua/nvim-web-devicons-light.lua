@@ -297,6 +297,12 @@ local icons_by_filename = {
     cterm_color = "22",
     name = "BazelWorkspace",
   },
+  ["unlicense"] = {
+    icon = "",
+    color = "#686020",
+    cterm_color = "58",
+    name = "License",
+  },
 }
 
 local icons_by_file_extension = {
