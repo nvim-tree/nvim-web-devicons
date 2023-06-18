@@ -1,3 +1,4 @@
+testing CI
 # Notice
 Nerd fonts moved some symbols with version 3.0. Version 2.3 is meant for transition, supporting both version 2 and version 3 icons.
 
