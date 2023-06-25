@@ -1547,7 +1547,7 @@ local icons_by_file_extension = {
     name = "Yml",
   },
   ["zig"] = {
-    icon = "",
+    icon = "",
     color = "#7b4d0e",
     cterm_color = "94",
     name = "Zig",
