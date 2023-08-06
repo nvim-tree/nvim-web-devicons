@@ -1446,6 +1446,12 @@ local icons_by_file_extension = {
     cterm_color = "113",
     name = "Txt",
   },
+  ["vsh"] = {
+    icon = "",
+    color = "#5d87bf",
+    cterm_color = "67",
+    name = "Vlang",
+  },
   ["v"] = {
     icon = "󰍛",
     color = "#019833",
