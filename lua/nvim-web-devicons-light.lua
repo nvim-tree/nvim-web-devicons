@@ -851,6 +851,12 @@ local icons_by_file_extension = {
     cterm_color = "58",
     name = "Json",
   },
+  ["jsonc"] = {
+    icon = "",
+    color = "#666620",
+    cterm_color = "58",
+    name = "Jsonc",
+  },
   ["json5"] = {
     icon = "",
     color = "#666620",
