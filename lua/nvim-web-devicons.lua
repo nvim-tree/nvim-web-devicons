@@ -853,6 +853,12 @@ local icons_by_file_extension = {
     cterm_color = "185",
     name = "Json",
   },
+  ["jsonc"] = {
+    icon = "",
+    color = "#cbcb41",
+    cterm_color = "185",
+    name = "Jsonc",
+  },
   ["json5"] = {
     icon = "",
     color = "#cbcb41",
@@ -1702,6 +1708,7 @@ local filetypes = {
   ["jpeg"] = "jpeg",
   ["jpg"] = "jpg",
   ["json"] = "json",
+  ["jsonc"] = "jsonc",
   ["json5"] = "json5",
   ["julia"] = "jl",
   ["kotlin"] = "kt",
