@@ -84,6 +84,12 @@ local icons_by_filename = {
     cterm_color = "98",
     name = "SettingsJson",
   },
+  ["svelte.config.js"] = {
+    icon = "",
+    color = "#ff3e00",
+    cterm_color = "196",
+    name = "Svelte",
+  },
   [".vimrc"] = {
     icon = "",
     color = "#019833",
