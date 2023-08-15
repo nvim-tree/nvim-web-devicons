@@ -88,7 +88,7 @@ local icons_by_filename = {
     icon = "",
     color = "#ff3e00",
     cterm_color = "196",
-    name = "Svelte",
+    name = "SvelteConfig",
   },
   [".vimrc"] = {
     icon = "",
