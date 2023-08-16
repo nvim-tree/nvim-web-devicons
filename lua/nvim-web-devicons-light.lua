@@ -25,7 +25,7 @@ local icons_by_filename = {
   },
   [".editorconfig"] = {
     icon = "",
-    color = "#32310d",
+    color = "#333333",
     cterm_color = "236",
     name = "EditorConfig",
   },
