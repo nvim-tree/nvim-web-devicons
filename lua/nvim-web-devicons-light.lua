@@ -23,6 +23,12 @@ local icons_by_filename = {
     cterm_color = "239",
     name = "DsStore",
   },
+  [".editorconfig"] = {
+    icon = "",
+    color = "#32310d",
+    cterm_color = "236",
+    name = "EditorConfig",
+  },
   [".eslintrc"] = {
     icon = "",
     color = "#4b32c3",
