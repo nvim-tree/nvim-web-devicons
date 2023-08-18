@@ -796,7 +796,7 @@ local icons_by_file_extension = {
   ["huff"] = {
     icon = "󰡘",
     color = "#4242c7",
-    cterm_color = "63",
+    cterm_color = "56",
     name = "Huff"
   },
   ["hxx"] = {
