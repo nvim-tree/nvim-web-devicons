@@ -1614,6 +1614,12 @@ local icons_by_file_extension = {
     cterm_color = "62",
     name = "Wasm",
   },
+  ["wat"] = {
+    icon = "",
+    color = "#5c4cdb",
+    cterm_color = "62",
+    name = "Wat",
+  },
   ["liquid"] = {
     icon = "",
     color = "#95BF47",
@@ -1814,6 +1820,7 @@ local filetypes = {
   ["vim"] = "vim",
   ["vue"] = "vue",
   ["wasm"] = "wasm",
+  ["wat"] = "wasm",
   ["webp"] = "webp",
   ["webpack"] = "webpack",
   ["xcplayground"] = "xcplayground",
