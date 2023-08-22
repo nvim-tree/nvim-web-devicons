@@ -1612,6 +1612,12 @@ local icons_by_file_extension = {
     cterm_color = "55",
     name = "Wasm",
   },
+  ["wat"] = {
+    icon = "",
+    color = "#4539a4",
+    cterm_color = "55",
+    name = "Wat",
+  },
   ["liquid"] = {
     icon = "",
     color = "#4a6024",
