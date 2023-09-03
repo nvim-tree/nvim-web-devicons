@@ -2091,13 +2091,15 @@ end
 -- Load the icons already, the loaded tables depend on the 'background' setting.
 refresh_icons()
 
+local function refresh()
+  refresh_icons()
+  set_up_highlights(true)
+end
+
 -- Change icon set on background change
 vim.api.nvim_create_autocmd("OptionSet", {
   pattern = "background",
-  callback = function()
-    refresh_icons()
-    set_up_highlights(true) -- Force update highlights
-  end,
+  callback = refresh,
 })
 
 return {
@@ -2121,4 +2123,5 @@ return {
     return icons
   end,
   set_up_highlights = set_up_highlights,
+  refresh = refresh,
 }
