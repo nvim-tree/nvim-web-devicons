@@ -32,7 +32,11 @@ use 'nvim-tree/nvim-web-devicons'
 
 Light or dark color variants of the icons depend on `&background`.
 
-These will be updated following `OptionSet` `background` however be advised that the plugin using nvim-web-devicons may have cached the icons.
+The variant is updated:
+- on `OptionSet` event for `background`, or
+- after explicitly calling `require("nvim-web-devicons").refresh()`.
+
+However, be advised that the plugin using nvim-web-devicons may have cached the icons.
 
 ### Setup
 
