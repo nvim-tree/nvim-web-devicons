@@ -512,6 +512,12 @@ local icons_by_file_extension = {
     cterm_color = "113",
     name = "Csv",
   },
+  ["cts"] = {
+    icon = "",
+    color = "#519aba",
+    cterm_color = "74",
+    name = "Cts",
+  },
   ["cxx"] = {
     icon = "",
     color = "#519aba",
@@ -1026,6 +1032,12 @@ local icons_by_file_extension = {
     color = "#9772FB",
     cterm_color = "135",
     name = "Motoko",
+  },
+  ["mts"] = {
+    icon = "",
+    color = "#519aba",
+    cterm_color = "74",
+    name = "Mts",
   },
   ["mustache"] = {
     icon = "",
