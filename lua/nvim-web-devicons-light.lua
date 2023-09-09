@@ -791,6 +791,12 @@ local icons_by_file_extension = {
     cterm_color = "124",
     name = "Html",
   },
+  ["huff"] = {
+    icon = "󰡘",
+    color = "#4242c7",
+    cterm_color = "56",
+    name = "Huff",
+  },
   ["hxx"] = {
     icon = "",
     color = "#6b4d83",
