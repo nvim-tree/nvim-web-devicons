@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/johnnymorganz/stylua
-    rev: v0.18.1
+    rev: v0.18.2
     hooks:
       - id: stylua-github
   - repo: local
