@@ -119,6 +119,12 @@ local icons_by_filename = {
     cterm_color = "22",
     name = "Zshrc",
   },
+  ["avif"] = {
+    icon = "",
+    color = "#6b4d83",
+    cterm_color = "96",
+    name = "Avif",
+  },
   ["brewfile"] = {
     icon = "",
     color = "#701516",
