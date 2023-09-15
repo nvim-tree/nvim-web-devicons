@@ -120,6 +120,12 @@ local icons_by_filename = {
     cterm_color = "113",
     name = "Zshrc",
   },
+  ["avif"] = {
+    icon = "",
+    color = "#a074c4",
+    cterm_color = "140",
+    name = "Avif",
+  },
   ["brewfile"] = {
     icon = "",
     color = "#701516",
@@ -1658,6 +1664,7 @@ end
 
 -- Map of filetypes -> icon names
 local filetypes = {
+  ["avif"] = "avif",
   ["bzl"] = "bzl",
   ["brewfile"] = "brewfile",
   ["commit"] = "commit_editmsg",
