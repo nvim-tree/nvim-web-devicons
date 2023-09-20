@@ -1615,7 +1615,7 @@ local icons_by_file_extension = {
     name = "Solidity",
   },
   ["prisma"] = {
-    icon = "󰔶",
+    icon = "",
     color = "#ffffff",
     cterm_color = "231",
     name = "Prisma",
