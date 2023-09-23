@@ -197,6 +197,12 @@ local icons_by_filename = {
     cterm_color = "29",
     name = "R",
   },
+  ["R"] = {
+    icon = "󰟔",
+    color = "#286844",
+    cterm_color = "29",
+    name = "R",
+  },
   ["rmd"] = {
     icon = "",
     color = "#36677c",
@@ -1193,6 +1199,12 @@ local icons_by_file_extension = {
     name = "Query",
   },
   ["r"] = {
+    icon = "󰟔",
+    color = "#286844",
+    cterm_color = "29",
+    name = "R",
+  },
+  ["R"] = {
     icon = "󰟔",
     color = "#286844",
     cterm_color = "29",
