@@ -344,6 +344,12 @@ local icons_by_file_extension = {
     cterm_color = "240",
     name = "Awk",
   },
+  ["azcli"] = {
+    icon = "",
+    color = "#0078d4",
+    cterm_color = "32",
+    name = "AzureCli",
+  },
   ["bash"] = {
     icon = "",
     color = "#89e051",
