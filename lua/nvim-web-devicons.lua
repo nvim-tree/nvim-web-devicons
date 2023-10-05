@@ -1656,6 +1656,12 @@ local icons_by_file_extension = {
     cterm_color = "106",
     name = "Liquid",
   },
+  ["hurl"] = {
+    icon = "",
+    color = "#ff0288",
+    cterm_color = "198",
+    name = "Hurl",
+  },
 }
 
 -- When adding new icons, remember to add an entry to the `filetypes` table, if applicable.
