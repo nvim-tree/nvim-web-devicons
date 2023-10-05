@@ -506,6 +506,12 @@ local icons_by_file_extension = {
     cterm_color = "240",
     name = "Csh",
   },
+  ["cshtml"] = {
+    icon = "󱦗",
+    color = "#512bd4",
+    cterm_color = "56",
+    name = "RazorPage",
+  },
   ["cson"] = {
     icon = "",
     color = "#cbcb41",
@@ -1217,6 +1223,12 @@ local icons_by_file_extension = {
     color = "#701516",
     cterm_color = "52",
     name = "Rake",
+  },
+  ["razor"] = {
+    icon = "󱦘",
+    color = "#512bd4",
+    cterm_color = "56",
+    name = "RazorPage",
   },
   ["rb"] = {
     icon = "",
