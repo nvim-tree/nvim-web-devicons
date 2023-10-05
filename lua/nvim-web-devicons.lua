@@ -1620,6 +1620,12 @@ local icons_by_file_extension = {
     cterm_color = "255",
     name = "WebOpenFontFormat",
   },
+  ["xaml"] = {
+    icon = "󰙳",
+    color = "#512bd4",
+    cterm_color = "56",
+    name = "Xaml",
+  },
   ["xcplayground"] = {
     icon = "",
     color = "#e37933",
