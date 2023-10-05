@@ -638,6 +638,12 @@ local icons_by_file_extension = {
     cterm_color = "74",
     name = "Elm",
   },
+  ["eot"] = {
+    icon = "",
+    color = "#ECECEC",
+    cterm_color = "255",
+    name = "EmbeddedOpenTypeFont",
+  },
   ["epp"] = {
     icon = "",
     color = "#FFA61A",
@@ -1512,6 +1518,12 @@ local icons_by_file_extension = {
     cterm_color = "26",
     name = "TypeScriptReactSpec",
   },
+  ["ttf"] = {
+    icon = "",
+    color = "#ECECEC",
+    cterm_color = "255",
+    name = "TrueTypeFont",
+  },
   ["twig"] = {
     icon = "",
     color = "#8dc149",
@@ -1589,6 +1601,18 @@ local icons_by_file_extension = {
     color = "#519aba",
     cterm_color = "74",
     name = "Webpack",
+  },
+  ["woff"] = {
+    icon = "",
+    color = "#ECECEC",
+    cterm_color = "255",
+    name = "WebOpenFontFormat",
+  },
+  ["woff2"] = {
+    icon = "",
+    color = "#ECECEC",
+    cterm_color = "255",
+    name = "WebOpenFontFormat",
   },
   ["xcplayground"] = {
     icon = "",
