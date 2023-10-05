@@ -522,6 +522,12 @@ local icons_by_file_extension = {
     cterm_color = "58",
     name = "Cson",
   },
+  ["csproj"] = {
+    icon = "󰪮",
+    color = "#512bd4",
+    cterm_color = "56",
+    name = "CSharpProject",
+  },
   ["css"] = {
     icon = "",
     color = "#2c6ea3",
