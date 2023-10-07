@@ -1654,6 +1654,12 @@ local icons_by_file_extension = {
     cterm_color = "58",
     name = "Liquid",
   },
+  ["jxl"] = {
+    icon = "",
+    color = "#6b4d83",
+    cterm_color = "96",
+    name = "JpegXl",
+  },
   ["Dockerfile"] = {
     icon = "󰡨",
     color = "#2e5f99",
