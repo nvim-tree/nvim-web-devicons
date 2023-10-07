@@ -1662,6 +1662,12 @@ local icons_by_file_extension = {
     cterm_color = "140",
     name = "JpegXl",
   },
+  ["Dockerfile"] = {
+    icon = "󰡨",
+    color = "#458ee6",
+    cterm_color = "68",
+    name = "Dockerfile",
+  },
 }
 
 -- When adding new icons, remember to add an entry to the `filetypes` table, if applicable.
