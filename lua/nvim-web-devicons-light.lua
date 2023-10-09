@@ -354,6 +354,12 @@ local icons_by_file_extension = {
     cterm_color = "238",
     name = "Awk",
   },
+  ["azcli"] = {
+    icon = "",
+    color = "#005a9f",
+    cterm_color = "25",
+    name = "AzureCli",
+  },
   ["bash"] = {
     icon = "",
     color = "#447028",
@@ -516,11 +522,23 @@ local icons_by_file_extension = {
     cterm_color = "238",
     name = "Csh",
   },
+  ["cshtml"] = {
+    icon = "󱦗",
+    color = "#512bd4",
+    cterm_color = "56",
+    name = "RazorPage",
+  },
   ["cson"] = {
     icon = "",
     color = "#666620",
     cterm_color = "58",
     name = "Cson",
+  },
+  ["csproj"] = {
+    icon = "󰪮",
+    color = "#512bd4",
+    cterm_color = "56",
+    name = "CSharpProject",
   },
   ["css"] = {
     icon = "",
@@ -629,6 +647,12 @@ local icons_by_file_extension = {
     color = "#36677c",
     cterm_color = "24",
     name = "Elm",
+  },
+  ["eot"] = {
+    icon = "",
+    color = "#2f2f2f",
+    cterm_color = "236",
+    name = "EmbeddedOpenTypeFont",
   },
   ["epp"] = {
     icon = "",
@@ -1085,6 +1109,12 @@ local icons_by_file_extension = {
     cterm_color = "24",
     name = "Nix",
   },
+  ["nswag"] = {
+    icon = "",
+    color = "#427516",
+    cterm_color = "28",
+    name = "Nswag",
+  },
   ["opus"] = {
     icon = "󰈣",
     color = "#a55c01",
@@ -1233,6 +1263,12 @@ local icons_by_file_extension = {
     color = "#701516",
     cterm_color = "52",
     name = "Rake",
+  },
+  ["razor"] = {
+    icon = "󱦘",
+    color = "#512bd4",
+    cterm_color = "56",
+    name = "RazorPage",
   },
   ["rb"] = {
     icon = "",
@@ -1534,6 +1570,12 @@ local icons_by_file_extension = {
     cterm_color = "26",
     name = "Tsx",
   },
+  ["ttf"] = {
+    icon = "",
+    color = "#2f2f2f",
+    cterm_color = "236",
+    name = "TrueTypeFont",
+  },
   ["twig"] = {
     icon = "",
     color = "#466024",
@@ -1611,6 +1653,24 @@ local icons_by_file_extension = {
     color = "#36677c",
     cterm_color = "24",
     name = "Webpack",
+  },
+  ["woff"] = {
+    icon = "",
+    color = "#2f2f2f",
+    cterm_color = "236",
+    name = "WebOpenFontFormat",
+  },
+  ["woff2"] = {
+    icon = "",
+    color = "#2f2f2f",
+    cterm_color = "236",
+    name = "WebOpenFontFormat",
+  },
+  ["xaml"] = {
+    icon = "󰙳",
+    color = "#512bd4",
+    cterm_color = "56",
+    name = "Xaml",
   },
   ["xcplayground"] = {
     icon = "",
