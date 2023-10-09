@@ -10,6 +10,10 @@ Please name your commits and the PR simply e.g.
     update makefile icon
     update .kt colors
 
+## Order
+
+Please ensure `icons_by_filename`, `icons_by_file_extension` and `filetypes` are ordered alphabetically, to prevent merge conflicts.
+
 ## Prerequisites
 
 Add [vim-colortemplate](https://github.com/lifepillar/vim-colortemplate) to &runtimepath. The easiest way to do this is via your package manager.
