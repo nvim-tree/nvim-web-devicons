@@ -1,5 +1,5 @@
 -- When adding new icons, remember to add an entry to the `filetypes` table, if applicable.
-local icons
+local icons, icons_by_filename, icons_by_file_extension
 
 -- Set the current icons tables, depending on the 'background' option.
 local function refresh_icons()
@@ -9,7 +9,10 @@ local function refresh_icons()
   else
     theme = require "nvim-web-devicons.icons-default"
   end
-  icons = vim.tbl_extend("keep", {}, theme.icons_by_filename, theme.icons_by_file_extension)
+
+  icons_by_filename = theme.icons_by_filename
+  icons_by_file_extension = theme.icons_by_file_extension
+  icons = vim.tbl_extend("keep", {}, icons_by_filename, icons_by_file_extension)
 end
 
 -- Map of filetypes -> icon names
