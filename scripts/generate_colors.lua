@@ -109,7 +109,7 @@ end
 -- Generate file with icons for light backgrounds
 --------------------------------------------------------------------------------
 
-vim.cmd "noswapfile drop lua/nvim-web-devicons.lua"
+vim.cmd "noswapfile drop lua/nvim-web-devicons/icons-default.lua"
 
 print "Generating file with icons for light backgrounds..."
 
@@ -133,8 +133,8 @@ table.insert(lines2, "  icons_by_file_extension = icons_by_file_extension,")
 table.insert(lines2, "}")
 
 -- write both tables to file
-fn.writefile(lines, "lua/nvim-web-devicons-light.lua")
-fn.writefile(lines2, "lua/nvim-web-devicons-light.lua", "a")
+fn.writefile(lines, "lua/nvim-web-devicons/icons-light.lua")
+fn.writefile(lines2, "lua/nvim-web-devicons/icons-light.lua", "a")
 
 print "Finished creating new file!"
 
@@ -153,11 +153,11 @@ print "Finished!"
 -- Generate cterm colors for light background
 --------------------------------------------------------------------------------
 
-if fn.filereadable "lua/nvim-web-devicons-light.lua" == 0 then
-  error "lua/nvim-web-devicons-light.lua not found!"
+if fn.filereadable "lua/nvim-web-devicons/icons-light.lua" == 0 then
+  error "lua/nvim-web-devicons/icons-light.lua not found!"
 end
 
-vim.cmd "noswapfile drop lua/nvim-web-devicons-light.lua"
+vim.cmd "noswapfile drop lua/nvim-web-devicons/icons-light.lua"
 
 print "Generating cterm colors for light background...\n"
 
