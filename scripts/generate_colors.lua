@@ -109,6 +109,10 @@ end
 -- Generate file with icons for light backgrounds
 --------------------------------------------------------------------------------
 
+if fn.filereadable "lua/nvim-web-devicons/icons-default.lua" == 0 then
+  error "lua/nvim-web-devicons/icons-default.lua not found!"
+end
+
 vim.cmd "noswapfile drop lua/nvim-web-devicons/icons-default.lua"
 
 print "Generating file with icons for light backgrounds..."
