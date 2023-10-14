@@ -350,6 +350,12 @@ local icons_by_file_extension = {
     cterm_color = "185",
     name = "Ai",
   },
+  ["applescript"] = {
+    icon = "",
+    color = "#6d8085",
+    cterm_color = "66",
+    name = "AppleScript",
+  },
   ["awk"] = {
     icon = "",
     color = "#4d5a5e",
@@ -379,6 +385,12 @@ local icons_by_file_extension = {
     color = "#89e051",
     cterm_color = "113",
     name = "Bazel",
+  },
+  ["bib"] = {
+    icon = "󱉟",
+    color = "#cbcb41",
+    cterm_color = "185",
+    name = "BibTeX",
   },
   ["bmp"] = {
     icon = "",
