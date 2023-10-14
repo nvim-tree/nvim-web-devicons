@@ -386,8 +386,8 @@ local icons_by_file_extension = {
   },
   ["bib"] = {
     icon = "󱉟",
-    color = "#666620",
-    cterm_color = "58",
+    color = "#cbcb41",
+    cterm_color = "185",
     name = "BibTeX",
   },
   ["bmp"] = {
