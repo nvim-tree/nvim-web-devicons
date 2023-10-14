@@ -353,7 +353,7 @@ local icons_by_file_extension = {
   ["applescript"] = {
     icon = "",
     color = "#6d8085",
-    cterm_color = "241",
+    cterm_color = "66",
     name = "AppleScript",
   },
   ["awk"] = {
