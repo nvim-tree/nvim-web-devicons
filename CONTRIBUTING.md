@@ -53,7 +53,7 @@ make style-fix
 
 ## Generate Colors
 
-Add or update icons in `scripts/nvim-web-devicons.lua`.
+Add or update icons in `lua/nvim-web-devicons/icons-default.lua`
 
 There are two tables where icons can be added:
 1. icons_by_filename
@@ -81,9 +81,9 @@ ___Key/value pairs must appear in the same exact order!___
 Ensure your current working directory is the repo root.
 Run `make`. This will:
 - Update `cterm_color` based on `color`
-- Generate `nvim-web-devicons-light.lua`
+- Generate `lua/nvim-web-devicons/icons-light.lua`
 
-Please commit both `nvim-web-devicons.lua` and `nvim-web-devicons-light.lua`
+Please commit both `lua/nvim-web-devicons/icons-default.lua` and `lua/nvim-web-devicons/icons-light.lua`
 
 ## Pull Request
 
