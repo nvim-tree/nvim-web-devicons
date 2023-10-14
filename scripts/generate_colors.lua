@@ -121,13 +121,13 @@ print "Generating file with icons for light backgrounds..."
 vim.cmd ":1"
 
 -- first table
-if fn.search "^local icons_by_filename" == 0 then
+if fn.search("^local icons_by_filename", "c") == 0 then
   error "Table not found!"
 end
 local lines = generate_lines()
 
 -- second table
-if fn.search "^local icons_by_file_extension" == 0 then
+if fn.search("^local icons_by_file_extension", "c") == 0 then
   error "Table not found!"
 end
 local lines2 = generate_lines()
