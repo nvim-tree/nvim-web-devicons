@@ -1031,6 +1031,12 @@ local icons_by_file_extension = {
     cterm_color = "24",
     name = "Luau",
   },
+  ["m4v"] = {
+    icon = "",
+    color = "#7e4c10",
+    cterm_color = "94",
+    name = "M4V",
+  },
   ["makefile"] = {
     icon = "",
     color = "#526064",
@@ -1079,6 +1085,12 @@ local icons_by_file_extension = {
     cterm_color = "59",
     name = "Makefile",
   },
+  ["mkv"] = {
+    icon = "",
+    color = "#7e4c10",
+    cterm_color = "94",
+    name = "Mkv",
+  },
   ["ml"] = {
     icon = "λ",
     color = "#975122",
@@ -1096,6 +1108,18 @@ local icons_by_file_extension = {
     color = "#654ca7",
     cterm_color = "61",
     name = "Motoko",
+  },
+  ["mov"] = {
+    icon = "",
+    color = "#7e4c10",
+    cterm_color = "94",
+    name = "MOV",
+  },
+  ["mp4"] = {
+    icon = "",
+    color = "#7e4c10",
+    cterm_color = "94",
+    name = "Mp4",
   },
   ["mts"] = {
     icon = "",
@@ -1647,6 +1671,12 @@ local icons_by_file_extension = {
     color = "#466024",
     cterm_color = "22",
     name = "Vue",
+  },
+  ["webm"] = {
+    icon = "",
+    color = "#7e4c10",
+    cterm_color = "94",
+    name = "Webm",
   },
   ["webmanifest"] = {
     icon = "",
