@@ -1243,13 +1243,13 @@ local icons_by_file_extension = {
   ["pxd"] = {
     icon = "",
     color = "#5aa7e4",
-    cterm_color = "74",
+    cterm_color = "39",
     name = "Pxd",
   },
   ["pxi"] = {
     icon = "",
     color = "#5aa7e4",
-    cterm_color = "74",
+    cterm_color = "39",
     name = "Pxi",
   },
   ["py"] = {
@@ -1285,7 +1285,7 @@ local icons_by_file_extension = {
   ["pyx"] = {
     icon = "",
     color = "#5aa7e4",
-    cterm_color = "74",
+    cterm_color = "39",
     name = "Pyx",
   },
   ["query"] = {
