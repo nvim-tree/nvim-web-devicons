@@ -348,6 +348,12 @@ local icons_by_file_extension = {
     cterm_color = "29",
     name = "R",
   },
+  ["aac"] = {
+    icon = "",
+    color = "#66D8EF",
+    cterm_color = "45",
+    name = "Aac",
+  },
   ["ai"] = {
     icon = "",
     color = "#cbcb41",
@@ -713,6 +719,12 @@ local icons_by_file_extension = {
     cterm_color = "97",
     name = "Fortran",
   },
+  ["flac"] = {
+    icon = "",
+    color = "#66D8EF",
+    cterm_color = "45",
+    name = "Flac",
+  },
   ["fnl"] = {
     color = "#fff3d7",
     icon = "🌜",
@@ -1037,6 +1049,12 @@ local icons_by_file_extension = {
     cterm_color = "74",
     name = "Luau",
   },
+  ["m4a"] = {
+    icon = "",
+    color = "#66D8EF",
+    cterm_color = "45",
+    name = "M4A",
+  },
   ["m4v"] = {
     icon = "",
     color = "#FD971F",
@@ -1121,6 +1139,12 @@ local icons_by_file_extension = {
     cterm_color = "208",
     name = "MOV",
   },
+  ["mp3"] = {
+    icon = "",
+    color = "#66D8EF",
+    cterm_color = "45",
+    name = "Mp3",
+  },
   ["mp4"] = {
     icon = "",
     color = "#FD971F",
@@ -1156,6 +1180,12 @@ local icons_by_file_extension = {
     color = "#85ea2d",
     cterm_color = "112",
     name = "Nswag",
+  },
+  ["ogg"] = {
+    icon = "",
+    color = "#66D8EF",
+    cterm_color = "45",
+    name = "Ogg",
   },
   ["opus"] = {
     icon = "󰈣",
@@ -1701,6 +1731,12 @@ local icons_by_file_extension = {
     color = "#8dc149",
     cterm_color = "113",
     name = "Vue",
+  },
+  ["wav"] = {
+    icon = "",
+    color = "#66D8EF",
+    cterm_color = "45",
+    name = "Wav",
   },
   ["webm"] = {
     icon = "",
