@@ -279,6 +279,12 @@ local icons_by_filename = {
     cterm_color = "197",
     name = "Procfile",
   },
+  ["py.typed"] = {
+    icon = "",
+    color = "#ffbc03",
+    cterm_color = "214",
+    name = "Py.typed",
+  },
   ["r"] = {
     icon = "󰟔",
     color = "#358a5b",
@@ -1258,6 +1264,18 @@ local icons_by_file_extension = {
     cterm_color = "74",
     name = "Psd",
   },
+  ["pxd"] = {
+    icon = "",
+    color = "#5aa7e4",
+    cterm_color = "39",
+    name = "Pxd",
+  },
+  ["pxi"] = {
+    icon = "",
+    color = "#5aa7e4",
+    cterm_color = "39",
+    name = "Pxi",
+  },
   ["py"] = {
     icon = "",
     color = "#ffbc03",
@@ -1276,11 +1294,23 @@ local icons_by_file_extension = {
     cterm_color = "222",
     name = "Pyd",
   },
+  ["pyi"] = {
+    icon = "",
+    color = "#ffbc03",
+    cterm_color = "214",
+    name = "Pyi",
+  },
   ["pyo"] = {
     icon = "",
     color = "#ffe291",
     cterm_color = "222",
     name = "Pyo",
+  },
+  ["pyx"] = {
+    icon = "",
+    color = "#5aa7e4",
+    cterm_color = "39",
+    name = "Pyx",
   },
   ["query"] = {
     icon = "",
