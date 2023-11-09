@@ -173,6 +173,18 @@ local icons_by_filename = {
     cterm_color = "239",
     name = "GitCommit",
   },
+  ["compose.yaml"] = {
+    icon = "󰡨",
+    color = "#458ee6",
+    cterm_color = "68",
+    name = "Dockerfile",
+  },
+  ["compose.yml"] = {
+    icon = "󰡨",
+    color = "#458ee6",
+    cterm_color = "68",
+    name = "Dockerfile",
+  },
   ["containerfile"] = {
     icon = "󰡨",
     color = "#458ee6",
