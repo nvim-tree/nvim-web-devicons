@@ -1487,7 +1487,7 @@ local icons_by_file_extension = {
     name = "Sml",
   },
   ["sol"] = {
-    icon = "󰞻",
+    icon = "",
     color = "#519aba",
     cterm_color = "74",
     name = "Solidity",
