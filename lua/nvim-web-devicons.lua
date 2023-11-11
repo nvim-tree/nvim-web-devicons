@@ -1,5 +1,11 @@
+local M = {}
+
 -- When adding new icons, remember to add an entry to the `filetypes` table, if applicable.
 local icons, icons_by_filename, icons_by_file_extension
+
+function M.get_icons()
+  return icons
+end
 
 -- Set the current icons tables, depending on the 'background' option.
 local function refresh_icons()
@@ -261,7 +267,7 @@ local function highlight_exists(group)
   return ok and not (hl or {})[true]
 end
 
-local function set_up_highlights(allow_override)
+function M.set_up_highlights(allow_override)
   if not global_opts.color_icons then
     set_up_highlight(default_icon)
     return
@@ -295,8 +301,12 @@ end
 
 local loaded = false
 
+function M.has_loaded()
+  return loaded
+end
+
 local if_nil = vim.F.if_nil
-local function setup(opts)
+function M.setup(opts)
   if loaded then
     return
   end
@@ -334,16 +344,16 @@ local function setup(opts)
 
   table.insert(icons, default_icon)
 
-  set_up_highlights()
+  M.set_up_highlights()
 
   vim.api.nvim_create_autocmd("ColorScheme", {
     desc = "Re-apply icon colors after changing colorschemes",
     group = vim.api.nvim_create_augroup("NvimWebDevicons", { clear = true }),
-    callback = set_up_highlights,
+    callback = M.set_up_highlights,
   })
 end
 
-local function get_default_icon()
+function M.get_default_icon()
   return default_icon
 end
 
@@ -373,13 +383,13 @@ local function get_icon_by_extension(name, ext, opts)
   return iterate_multi_dotted_extension(name, icon_table)
 end
 
-local function get_icon(name, ext, opts)
+function M.get_icon(name, ext, opts)
   if type(name) == "string" then
     name = name:lower()
   end
 
   if not loaded then
-    setup()
+    M.setup()
   end
 
   local has_default = if_nil(opts and opts.default, global_opts.default)
@@ -396,20 +406,20 @@ local function get_icon(name, ext, opts)
   end
 end
 
-local function get_icon_name_by_filetype(ft)
+function M.get_icon_name_by_filetype(ft)
   return filetypes[ft]
 end
 
-local function get_icon_by_filetype(ft, opts)
-  local name = get_icon_name_by_filetype(ft)
+function M.get_icon_by_filetype(ft, opts)
+  local name = M.get_icon_name_by_filetype(ft)
   opts = opts or {}
   opts.strict = false
-  return get_icon(name or "", nil, opts)
+  return M.get_icon(name or "", nil, opts)
 end
 
-local function get_icon_colors(name, ext, opts)
+function M.get_icon_colors(name, ext, opts)
   if not loaded then
-    setup()
+    M.setup()
   end
 
   local has_default = if_nil(opts and opts.default, global_opts.default)
@@ -432,34 +442,34 @@ local function get_icon_colors(name, ext, opts)
   end
 end
 
-local function get_icon_colors_by_filetype(ft, opts)
-  local name = get_icon_name_by_filetype(ft)
-  return get_icon_colors(name or "", nil, opts)
+function M.get_icon_colors_by_filetype(ft, opts)
+  local name = M.get_icon_name_by_filetype(ft)
+  return M.get_icon_colors(name or "", nil, opts)
 end
 
-local function get_icon_color(name, ext, opts)
-  local data = { get_icon_colors(name, ext, opts) }
+function M.get_icon_color(name, ext, opts)
+  local data = { M.get_icon_colors(name, ext, opts) }
   return data[1], data[2]
 end
 
-local function get_icon_color_by_filetype(ft, opts)
-  local name = get_icon_name_by_filetype(ft)
+function M.get_icon_color_by_filetype(ft, opts)
+  local name = M.get_icon_name_by_filetype(ft)
   opts = opts or {}
   opts.strict = false
-  return get_icon_color(name or "", nil, opts)
+  return M.get_icon_color(name or "", nil, opts)
 end
 
-local function get_icon_cterm_color(name, ext, opts)
-  local data = { get_icon_colors(name, ext, opts) }
+function M.get_icon_cterm_color(name, ext, opts)
+  local data = { M.get_icon_colors(name, ext, opts) }
   return data[1], data[3]
 end
 
-local function get_icon_cterm_color_by_filetype(ft, opts)
-  local name = get_icon_name_by_filetype(ft)
-  return get_icon_cterm_color(name or "", nil, opts)
+function M.get_icon_cterm_color_by_filetype(ft, opts)
+  local name = M.get_icon_name_by_filetype(ft)
+  return M.get_icon_cterm_color(name or "", nil, opts)
 end
 
-local function set_icon(user_icons)
+function M.set_icon(user_icons)
   icons = vim.tbl_extend("force", icons, user_icons or {})
   if not global_opts.color_icons then
     return
@@ -470,7 +480,7 @@ local function set_icon(user_icons)
   end
 end
 
-local function set_default_icon(icon, color, cterm_color)
+function M.set_default_icon(icon, color, cterm_color)
   default_icon.icon = icon
   default_icon.color = color
   default_icon.cterm_color = cterm_color
@@ -480,37 +490,15 @@ end
 -- Load the icons already, the loaded tables depend on the 'background' setting.
 refresh_icons()
 
-local function refresh()
+function M.refresh()
   refresh_icons()
-  set_up_highlights(true)
+  M.set_up_highlights(true)
 end
 
 -- Change icon set on background change
 vim.api.nvim_create_autocmd("OptionSet", {
   pattern = "background",
-  callback = refresh,
+  callback = M.refresh,
 })
 
-return {
-  get_icon = get_icon,
-  get_icon_colors = get_icon_colors,
-  get_icon_color = get_icon_color,
-  get_icon_cterm_color = get_icon_cterm_color,
-  get_icon_name_by_filetype = get_icon_name_by_filetype,
-  get_icon_by_filetype = get_icon_by_filetype,
-  get_icon_colors_by_filetype = get_icon_colors_by_filetype,
-  get_icon_color_by_filetype = get_icon_color_by_filetype,
-  get_icon_cterm_color_by_filetype = get_icon_cterm_color_by_filetype,
-  set_icon = set_icon,
-  set_default_icon = set_default_icon,
-  get_default_icon = get_default_icon,
-  setup = setup,
-  has_loaded = function()
-    return loaded
-  end,
-  get_icons = function()
-    return icons
-  end,
-  set_up_highlights = set_up_highlights,
-  refresh = refresh,
-}
+return M
