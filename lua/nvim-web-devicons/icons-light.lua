@@ -139,8 +139,8 @@ local icons_by_filename = {
   },
   ["R"] = {
     icon = "󰟔",
-    color = "#286844",
-    cterm_color = "29",
+    color = "#1a4c8c",
+    cterm_color = "25",
     name = "R",
   },
   ["avif"] = {
@@ -299,8 +299,8 @@ local icons_by_filename = {
   },
   ["r"] = {
     icon = "󰟔",
-    color = "#286844",
-    cterm_color = "29",
+    color = "#1a4c8c",
+    cterm_color = "25",
     name = "R",
   },
   ["rakefile"] = {
@@ -356,8 +356,8 @@ local icons_by_file_extension = {
   },
   ["R"] = {
     icon = "󰟔",
-    color = "#286844",
-    cterm_color = "29",
+    color = "#1a4c8c",
+    cterm_color = "25",
     name = "R",
   },
   ["aac"] = {
@@ -1362,8 +1362,8 @@ local icons_by_file_extension = {
   },
   ["r"] = {
     icon = "󰟔",
-    color = "#286844",
-    cterm_color = "29",
+    color = "#1a4c8c",
+    cterm_color = "25",
     name = "R",
   },
   ["rake"] = {
