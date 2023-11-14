@@ -278,17 +278,19 @@ local icons_by_filename = {
   ["package.json"] = {
     icon = "",
     color = "#e8274b",
+    cterm_color = "197",
     name = "PackageJson",
   },
   ["package-lock.json"] = {
     icon = "",
     color = "#7a0d21",
+    cterm_color = "52",
     name = "PackageLockJson",
   },
   ["procfile"] = {
     icon = "",
     color = "#a074c4",
-    cterm_color = "197",
+    cterm_color = "140",
     name = "Procfile",
   },
   ["py.typed"] = {
@@ -693,12 +695,13 @@ local icons_by_file_extension = {
   ["epp"] = {
     icon = "",
     color = "#FFA61A",
+    cterm_color = "214",
     name = "Epp",
   },
   ["erb"] = {
     icon = "",
     color = "#701516",
-    cterm_color = "214",
+    cterm_color = "52",
     name = "Erb",
   },
   ["erl"] = {
@@ -738,8 +741,8 @@ local icons_by_file_extension = {
     name = "Flac",
   },
   ["fnl"] = {
-    color = "#fff3d7",
     icon = "🌜",
+    color = "#fff3d7",
     cterm_color = "230",
     name = "Fennel",
   },
@@ -1256,12 +1259,13 @@ local icons_by_file_extension = {
   ["pp"] = {
     icon = "",
     color = "#FFA61A",
+    cterm_color = "214",
     name = "Pp",
   },
   ["ppt"] = {
     icon = "󰈧",
     color = "#cb4a32",
-    cterm_color = "214",
+    cterm_color = "160",
     name = "Ppt",
   },
   ["prisma"] = {
