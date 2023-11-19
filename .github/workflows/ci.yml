@@ -50,6 +50,5 @@ jobs:
           neovim: true
 
       - name: make colors-check
-        run: |
-          make colors-check
+        run: make colors-check
 
