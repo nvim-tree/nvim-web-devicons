@@ -17,16 +17,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - uses: leafo/gh-actions-lua@v10
-        with:
-          luaVersion: "5.1"
-
-      - uses: leafo/gh-actions-luarocks@v4
+      - name: install
+        run: |
+          sudo add-apt-repository universe
+          sudo apt install luacheck=1.1 -y
 
       - name: luacheck
-        run: |
-          luarocks install luacheck 1.1.1
-          make lint
+        run: make lint
 
   style:
     runs-on: ubuntu-latest
@@ -50,6 +47,5 @@ jobs:
           neovim: true
 
       - name: make colors-check
-        run: |
-          make colors-check
+        run: make colors-check
 
