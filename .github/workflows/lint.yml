@@ -1,33 +1,40 @@
 name: Lint
-on: pull_request
+on:
+  pull_request:
+
 permissions:
   contents: read
+
 jobs:
-  lint:
+  luacheck:
+    name: luacheck
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: leafo/gh-actions-lua@v9
-        with:
-          luaVersion: "5.1"
+      - uses: actions/checkout@v4
       - uses: leafo/gh-actions-luarocks@v4
-      - name: Install luacheck
-        run: luarocks install luacheck
-      - uses: rhysd/action-setup-vim@v1
-        with:
-          neovim: true
-      - name: Luacheck
-        run: luacheck lua plugin scripts
-      - uses: JohnnyMorganz/stylua-action@v2
+        run: |
+          luarocks install luacheck
+          luacheck .
+
+  stylua:
+    name: stylua
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: JohnnyMorganz/stylua-action@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           version: latest
           args: --check .
-      - uses: actions/checkout@v3
+
+  colors:
+    name: colors
+    runs-on: ubuntu-latest
+    steps:
+      - uses: rhysd/action-setup-vim@v1
         with:
-          repository: lifepillar/vim-colortemplate
-          path: vim-colortemplate
-      - name: Light Colorscheme
+          neovim: true
         run: |
-          nvim --headless -c 'set rtp+=./vim-colortemplate' -c 'source scripts/generate_colors.lua' -c 'qall'
+          make colors
           git diff --exit-code lua/nvim-web-devicons/icons-light.lua
+
