@@ -10,9 +10,8 @@ jobs:
         uses: leafo/gh-actions-lua@v9
         with:
           luaVersion: "5.1"
-      - name: prepare luarocks
-        uses: leafo/gh-actions-luarocks@v4
       - name: prepare luacheck
+        uses: leafo/gh-actions-luarocks@v4
         run: luarocks install luacheck
       - name: prepare neovim
         uses: rhysd/action-setup-vim@v1
