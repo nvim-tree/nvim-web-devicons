@@ -12,9 +12,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: leafo/gh-actions-luarocks@v4
-        run: |
-          luarocks install luacheck
-          luacheck .
+      - name: prepare
+        run: luarocks install luacheck
+      - name: execute
+        run: luacheck .
 
   stylua:
     name: stylua
@@ -34,6 +35,7 @@ jobs:
       - uses: rhysd/action-setup-vim@v1
         with:
           neovim: true
+      - name: execute
         run: |
           make colors
           git diff --exit-code lua/nvim-web-devicons/icons-light.lua
