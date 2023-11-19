@@ -16,14 +16,8 @@ jobs:
       - uses: rhysd/action-setup-vim@v1
         with:
           neovim: true
-      - name: Luacheck
-        run: luacheck lua plugin scripts
       - uses: JohnnyMorganz/stylua-action@v2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          version: latest
-          args: --check .
-      - name: colors
+      - name: make
         run: |
-          make colors
+          make
           git diff --exit-code lua/nvim-web-devicons/icons-light.lua
