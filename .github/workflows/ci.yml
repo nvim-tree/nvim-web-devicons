@@ -10,21 +10,21 @@ jobs:
         uses: leafo/gh-actions-lua@v9
         with:
           luaVersion: "5.1"
-      - name: prepare luacheck
-        uses: leafo/gh-actions-luarocks@v4
-        run: luarocks install luacheck
-      - name: prepare neovim
-        uses: rhysd/action-setup-vim@v1
-        with:
-          neovim: true
       - name: luacheck
-        run: luacheck lua plugin scripts
+        uses: leafo/gh-actions-luarocks@v4
+        run: |
+          luarocks install luacheck
+          luacheck lua plugin scripts
       - name: stylua
         uses: JohnnyMorganz/stylua-action@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           version: latest
           args: --check .
+      - name: prepare neovim
+        uses: rhysd/action-setup-vim@v1
+        with:
+          neovim: true
       - name: colors
         run: |
           make colors
