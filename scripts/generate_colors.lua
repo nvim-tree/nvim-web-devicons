@@ -22,6 +22,9 @@ if not rc then
   error(err .. "\nPlease ensure lifepillar/vim-colortemplate is present in the runtimepath.")
 end
 
+-- Needed in order to have the correct indentation on line insertion
+vim.o.autoindent = true
+
 --------------------------------------------------------------------------------
 -- Local functions
 --------------------------------------------------------------------------------
@@ -74,17 +77,13 @@ local function update_cterm_colors()
       break
     end
     last = cur
-    local color = fn.getline("."):match "%#......"
-    if fn.search "^\\s*cterm_color" < cur then
-      break
-    end
-    if fn.getline("."):find "%d" then
-      fn.setline(
-        ".",
-        fn.substitute(fn.getline ".", "\\d\\+", function()
-          return tostring(vim.fn["colortemplate#colorspace#approx"](color).index)
-        end, "")
-      )
+    local color = vim.api.nvim_get_current_line():match "%#......"
+    local cterm_color = fn["colortemplate#colorspace#approx"](color).index
+    if fn.search "^\\s*cterm_color" == cur + 1 then
+      vim.cmd(string.format("s/=.*/= %q,", cterm_color))
+    else
+      vim.cmd(tostring(cur))
+      vim.cmd.normal(string.format("octerm_color = %q,", cterm_color))
     end
   end
 end
