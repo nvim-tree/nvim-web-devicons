@@ -39,7 +39,7 @@ make
 ```
 
 This will:
-1. `git clone https://github.com/lifepillar/vim-colortemplate.git /tmp/vim-colortemplate` if necessary
+1. `git clone --depth 1 https://github.com/lifepillar/vim-colortemplate.git vim-colortemplate` if necessary
 1. Generate cterm colors
 2. Generate light color variants
 3. Check style
