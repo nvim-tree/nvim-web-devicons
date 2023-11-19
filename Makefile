@@ -1,7 +1,15 @@
 all: colors style-check lint
 
-colors:
-	nvim --headless -c 'source scripts/generate_colors.lua' -c 'qall'
+colors: /tmp/vim-colortemplate
+	nvim \
+		--clean \
+		--headless \
+		--cmd "set rtp^=/tmp/vim-colortemplate" \
+		-c 'source scripts/generate_colors.lua' \
+		-c 'qall'
+
+/tmp/vim-colortemplate:
+	git clone https://github.com/lifepillar/vim-colortemplate.git /tmp/vim-colortemplate
 
 style-check:
 	stylua . --check
