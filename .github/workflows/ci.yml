@@ -49,8 +49,7 @@ jobs:
         with:
           neovim: true
 
-      - name: make colors
+      - name: make colors-check
         run: |
-          make colors
-          git diff --exit-code lua/nvim-web-devicons/icons-light.lua
+          make colors-check
 
