@@ -18,6 +18,6 @@ style-fix:
 	stylua .
 
 lint:
-	luacheck .
+	luacheck lua scripts
 
 .PHONY: all colors style-check style-fix lint
