@@ -1,10 +1,10 @@
-name: all
+name: ci
 on: pull_request
 permissions:
   contents: read
 jobs:
+  runs-on: ubuntu-latest
   lint:
-    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: leafo/gh-actions-lua@v9
@@ -23,6 +23,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           version: latest
           args: --check .
+  colors:
       - name: colors
         run: |
           make colors
