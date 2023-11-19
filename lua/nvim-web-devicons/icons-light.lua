@@ -22,6 +22,7 @@ local icons_by_filename = {
     color = "#2e5f99",
     cterm_color = "25",
     name = "Dockerfile",
+
   },
   [".ds_store"] = {
     icon = "",
