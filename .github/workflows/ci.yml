@@ -12,7 +12,7 @@ permissions:
   contents: read
 
 jobs:
-  lint:
+  all:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -20,14 +20,16 @@ jobs:
         with:
           luaVersion: "5.1"
       - uses: leafo/gh-actions-luarocks@v4
-      - name: Install luacheck
-        run: luarocks install luacheck
       - uses: rhysd/action-setup-vim@v1
         with:
           neovim: true
-      - name: Luacheck
-        run: luacheck lua plugin scripts
-      - uses: JohnnyMorganz/stylua-action@v2
+      - name: luacheck
+        uses: leafo/gh-actions-luarocks@v4
+        run: |
+          luarocks install luacheck
+          luacheck lua plugin scripts
+      - name: stylua
+        uses: JohnnyMorganz/stylua-action@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           version: latest
