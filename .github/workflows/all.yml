@@ -1,4 +1,4 @@
-name: Lint
+name: all
 on: pull_request
 permissions:
   contents: read
