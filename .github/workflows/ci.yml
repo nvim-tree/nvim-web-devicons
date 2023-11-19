@@ -6,14 +6,15 @@ jobs:
   all:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: leafo/gh-actions-lua@v9
+      - name: prepare lua
+        uses: leafo/gh-actions-lua@v9
         with:
           luaVersion: "5.1"
-      - uses: leafo/gh-actions-luarocks@v4
-      - name: luacheck install
+      - name: prepare luarocks
+        uses: leafo/gh-actions-luarocks@v4
+      - name: prepare luacheck
         run: luarocks install luacheck
-      - name: setup neovim
+      - name: prepare neovim
         uses: rhysd/action-setup-vim@v1
         with:
           neovim: true
