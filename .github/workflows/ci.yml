@@ -1,9 +1,9 @@
-name: all
+name: ci
 on: pull_request
 permissions:
   contents: read
 jobs:
-  lint:
+  all:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -11,14 +11,16 @@ jobs:
         with:
           luaVersion: "5.1"
       - uses: leafo/gh-actions-luarocks@v4
-      - name: Install luacheck
+      - name: luacheck install
         run: luarocks install luacheck
-      - uses: rhysd/action-setup-vim@v1
+      - name: setup neovim
+        uses: rhysd/action-setup-vim@v1
         with:
           neovim: true
-      - name: Luacheck
+      - name: luacheck
         run: luacheck lua plugin scripts
-      - uses: JohnnyMorganz/stylua-action@v2
+      - name: stylua
+        uses: JohnnyMorganz/stylua-action@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           version: latest
