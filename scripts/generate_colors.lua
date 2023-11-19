@@ -9,17 +9,25 @@
 
 local fn = vim.fn
 
+--- Exit vim
+--- @param msg string
+--- @param rc number
+local function error_exit(msg, rc)
+  print(msg .. "\n")
+  vim.cmd("cq " .. rc)
+end
+
 if not jit then
-  error "Neovim must be LuaJIT-enabled to source this script"
+  error_exit("Neovim must be LuaJIT-enabled to source this script", 1)
 end
 
 if fn.filereadable "lua/nvim-web-devicons.lua" == 0 then
-  error "lua/nvim-web-devicons.lua not found"
+  error_exit("lua/nvim-web-devicons.lua not found", 1)
 end
 
 local rc, err = pcall(vim.fn["colortemplate#colorspace#approx"], "#000000")
 if not rc then
-  error(err .. "\nPlease ensure lifepillar/vim-colortemplate is present in the runtimepath.")
+  error_exit(err .. "\nlifepillar/vim-colortemplate not present in &runtimepath '" .. vim.o.runtimepath .. "'", 1)
 end
 
 -- Needed in order to have the correct indentation on line insertion
@@ -109,7 +117,7 @@ end
 --------------------------------------------------------------------------------
 
 if fn.filereadable "lua/nvim-web-devicons/icons-default.lua" == 0 then
-  error "lua/nvim-web-devicons/icons-default.lua not found!"
+  error_exit("lua/nvim-web-devicons/icons-default.lua not found", 1)
 end
 
 vim.cmd "noswapfile drop lua/nvim-web-devicons/icons-default.lua"
@@ -121,13 +129,13 @@ vim.cmd ":1"
 
 -- first table
 if fn.search("^local icons_by_filename", "c") == 0 then
-  error "Table not found!"
+  error_exit("Table 'icons_by_filename' not found in lua/nvim-web-devicons/icons-default.lua", 1)
 end
 local lines = generate_lines()
 
 -- second table
 if fn.search("^local icons_by_file_extension", "c") == 0 then
-  error "Table not found!"
+  error_exit("Table 'icons_by_file_extension' not found in lua/nvim-web-devicons/icons-default.lua", 1)
 end
 local lines2 = generate_lines()
 table.insert(lines2, "return {")
@@ -157,7 +165,7 @@ print "Finished!"
 --------------------------------------------------------------------------------
 
 if fn.filereadable "lua/nvim-web-devicons/icons-light.lua" == 0 then
-  error "lua/nvim-web-devicons/icons-light.lua not found!"
+  error_exit("lua/nvim-web-devicons/icons-light.lua not found", 1)
 end
 
 vim.cmd "noswapfile drop lua/nvim-web-devicons/icons-light.lua"
