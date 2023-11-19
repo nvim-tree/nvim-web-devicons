@@ -23,7 +23,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           version: latest
           args: --check .
-      - name: colors
+      - name: make
         run: |
-          make colors
+          make
           git diff --exit-code lua/nvim-web-devicons/icons-light.lua
