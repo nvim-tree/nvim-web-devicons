@@ -20,7 +20,7 @@ jobs:
       - name: install
         run: |
           sudo add-apt-repository universe
-          sudo apt install luacheck=1.1 -y
+          sudo apt install lua=5.1 luacheck=1.1 -y
 
       - name: luacheck
         run: make lint
