@@ -1,7 +1,16 @@
-name: Lint
-on: pull_request
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - '*'
+  push:
+    branches:
+      - master
+
 permissions:
   contents: read
+
 jobs:
   lint:
     runs-on: ubuntu-latest
