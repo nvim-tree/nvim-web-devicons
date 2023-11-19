@@ -16,6 +16,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: leafo/gh-actions-lua@v9
+        with:
+          luaVersion: "5.1"
       - uses: leafo/gh-actions-luarocks@v4
       - name: luacheck
         run: |
@@ -26,6 +29,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: leafo/gh-actions-lua@v9
+        with:
+          luaVersion: "5.1"
       - uses: leafo/gh-actions-luarocks@v4
       - name: stylua
         uses: JohnnyMorganz/stylua-action@v2
