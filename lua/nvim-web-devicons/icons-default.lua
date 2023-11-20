@@ -1131,13 +1131,13 @@ local icons_by_file_extension = {
     name = "Mkv",
   },
   ["ml"] = {
-    icon = "λ",
+    icon = "",
     color = "#e37933",
     cterm_color = "166",
     name = "Ml",
   },
   ["mli"] = {
-    icon = "λ",
+    icon = "",
     color = "#e37933",
     cterm_color = "166",
     name = "Mli",
