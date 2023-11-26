@@ -741,7 +741,7 @@ local icons_by_file_extension = {
     name = "Flac",
   },
   ["fnl"] = {
-    icon = "🌜",
+    icon = "",
     color = "#33312b",
     cterm_color = "236",
     name = "Fennel",
