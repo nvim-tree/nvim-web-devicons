@@ -3,19 +3,20 @@ repos:
     rev: v0.19.1
     hooks:
       - id: stylua-github
+
   - repo: local
     hooks:
       - id: luacheck
         name: Luacheck
         description: Lints Lua files using Luacheck.
-        entry: luacheck --
+        entry: make lint
         language: system
-        types: [lua]
+
   - repo: local
     hooks:
-      - id: lighttheme
-        name: Light Color Scheme Generator
+      - id: colors
+        name: colors
         description: Ensures Light Color Scheme version has been generated.
-        entry: nvim --headless -c 'source scripts/generate_colors.lua' -c 'qall'
+        entry: make colors
         language: system
-        types: [lua]
+
