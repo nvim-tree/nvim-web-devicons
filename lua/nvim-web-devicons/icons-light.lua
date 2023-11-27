@@ -85,8 +85,8 @@ local icons_by_filename = {
   },
   [".luaurc"] = {
     icon = "",
-    color = "#005fd7",
-    cterm_color = "26",
+    color = "#007abf",
+    cterm_color = "32",
     name = "Luaurc",
   },
   [".npmignore"] = {
@@ -1066,8 +1066,8 @@ local icons_by_file_extension = {
   },
   ["luau"] = {
     icon = "",
-    color = "#005fd7",
-    cterm_color = "26",
+    color = "#007abf",
+    cterm_color = "32",
     name = "Luau",
   },
   ["m4a"] = {
