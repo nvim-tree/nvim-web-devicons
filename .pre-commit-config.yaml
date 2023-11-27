@@ -11,11 +11,3 @@ repos:
         entry: luacheck --
         language: system
         types: [lua]
-  - repo: local
-    hooks:
-      - id: lighttheme
-        name: Light Color Scheme Generator
-        description: Ensures Light Color Scheme version has been generated.
-        entry: nvim --headless -c 'source scripts/generate_colors.lua' -c 'qall'
-        language: system
-        types: [lua]
