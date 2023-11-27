@@ -83,6 +83,12 @@ local icons_by_filename = {
     cterm_color = "28",
     name = "Gvimrc",
   },
+  [".luaurc"] = {
+    icon = "",
+    color = "#00a2ff",
+    cterm_color = "75",
+    name = "Luaurc",
+  },
   [".npmignore"] = {
     icon = "",
     color = "#E8274B",
@@ -1060,8 +1066,8 @@ local icons_by_file_extension = {
   },
   ["luau"] = {
     icon = "",
-    color = "#51a0cf",
-    cterm_color = "74",
+    color = "#00a2ff",
+    cterm_color = "75",
     name = "Luau",
   },
   ["m4a"] = {
