@@ -3,15 +3,19 @@ repos:
     rev: v0.19.1
     hooks:
       - id: stylua-github
-
+        fail_fast: true
+        verbose: true
+        types: [lua]
   - repo: local
     hooks:
       - id: luacheck
         name: Luacheck
         description: Lints Lua files using Luacheck.
-        entry: make lint
+        entry: luacheck --
         language: system
-
+        fail_fast: true
+        verbose: true
+        types: [lua]
   - repo: local
     hooks:
       - id: colors
@@ -19,4 +23,7 @@ repos:
         description: Ensures Light Color Scheme version has been generated.
         entry: make colors
         language: system
+        require_serial: true
+        pass_filenames: false
+        verbose: true
 
