@@ -380,6 +380,12 @@ local icons_by_file_extension = {
     cterm_color = "185",
     name = "Ai",
   },
+  ["app"] = {
+    icon = "",
+    color = "#9F0500",
+    cterm_color = "196",
+    name = "App",
+  },
   ["applescript"] = {
     icon = "",
     color = "#6d8085",
@@ -686,6 +692,12 @@ local icons_by_file_extension = {
     cterm_color = "185",
     name = "Ejs",
   },
+  ["elf"] = {
+    icon = "",
+    color = "#9F0500",
+    cterm_color = "196",
+    name = "Elf",
+  },
   ["elm"] = {
     icon = "",
     color = "#519aba",
@@ -717,10 +729,16 @@ local icons_by_file_extension = {
     name = "Erl",
   },
   ["ex"] = {
-    icon = "",
+  icon = "",
     color = "#a074c4",
     cterm_color = "140",
     name = "Ex",
+  },
+  ["exe"] = {
+    icon = "",
+    color = "#9F0500",
+    cterm_color = "196",
+    name = "Exe",
   },
   ["exs"] = {
     icon = "",
@@ -783,7 +801,7 @@ local icons_by_file_extension = {
     name = "Fsx",
   },
   ["gd"] = {
-    icon = "",
+    icon = "",
     color = "#6d8086",
     cterm_color = "66",
     name = "GDScript",
@@ -825,7 +843,7 @@ local icons_by_file_extension = {
     name = "Go",
   },
   ["godot"] = {
-    icon = "",
+    icon = "",
     color = "#6d8086",
     cterm_color = "66",
     name = "GodotProject",
@@ -1225,6 +1243,12 @@ local icons_by_file_extension = {
     color = "#ECECEC",
     cterm_color = "255",
     name = "OpenTypeFont",
+  },
+  ["out"] = {
+    icon = "",
+    color = "#9F0500",
+    cterm_color = "196",
+    name = "Out",
   },
   ["pck"] = {
     icon = "",
