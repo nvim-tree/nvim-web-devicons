@@ -1250,7 +1250,6 @@ local icons_by_file_extension = {
     cterm_color = "196",
     name = "Out",
   },
-
   ["pck"] = {
     icon = "",
     color = "#526064",
