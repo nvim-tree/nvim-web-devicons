@@ -386,7 +386,6 @@ local icons_by_file_extension = {
     cterm_color = "196",
     name = "App",
   },
-
   ["applescript"] = {
     icon = "",
     color = "#526064",
@@ -699,14 +698,12 @@ local icons_by_file_extension = {
     cterm_color = "196",
     name = "Elf",
   },
-
   ["elm"] = {
     icon = "",
     color = "#36677c",
     cterm_color = "24",
     name = "Elm",
   },
-  
   ["eot"] = {
     icon = "",
     color = "#2f2f2f",
@@ -743,7 +740,6 @@ local icons_by_file_extension = {
     cterm_color = "196",
     name = "Exe",
   },
-
   ["exs"] = {
     icon = "",
     color = "#6b4d83",
