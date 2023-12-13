@@ -801,7 +801,7 @@ local icons_by_file_extension = {
     name = "Fsx",
   },
   ["gd"] = {
-    icon = "",
+    icon = "",
     color = "#6d8086",
     cterm_color = "66",
     name = "GDScript",
@@ -843,7 +843,7 @@ local icons_by_file_extension = {
     name = "Go",
   },
   ["godot"] = {
-    icon = "",
+    icon = "",
     color = "#6d8086",
     cterm_color = "66",
     name = "GodotProject",
