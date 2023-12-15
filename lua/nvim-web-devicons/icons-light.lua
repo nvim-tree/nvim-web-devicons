@@ -1683,9 +1683,9 @@ local icons_by_file_extension = {
     name = "TFVars",
   },
   ["toml"] = {
-    icon = "",
-    color = "#526064",
-    cterm_color = "59",
+    icon = "",
+    color = "#333333",
+    cterm_color = "236",
     name = "Toml",
   },
   ["tres"] = {
