@@ -729,7 +729,7 @@ local icons_by_file_extension = {
     name = "Erl",
   },
   ["ex"] = {
-  icon = "",
+    icon = "",
     color = "#a074c4",
     cterm_color = "140",
     name = "Ex",
