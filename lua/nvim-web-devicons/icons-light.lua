@@ -1610,6 +1610,12 @@ local icons_by_file_extension = {
     cterm_color = "25",
     name = "Tcl",
   },
+  ["templ"] = {
+    icon = "",
+    color = "#6e5e18",
+    cterm_color = "58",
+    name = "Templ",
+  },
   ["terminal"] = {
     icon = "",
     color = "#217929",
