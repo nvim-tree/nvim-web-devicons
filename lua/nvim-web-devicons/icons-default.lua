@@ -380,6 +380,12 @@ local icons_by_file_extension = {
     cterm_color = "185",
     name = "Ai",
   },
+  ["app"] = {
+    icon = "",
+    color = "#9F0500",
+    cterm_color = "124",
+    name = "App",
+  },
   ["applescript"] = {
     icon = "",
     color = "#6d8085",
@@ -686,6 +692,12 @@ local icons_by_file_extension = {
     cterm_color = "185",
     name = "Ejs",
   },
+  ["elf"] = {
+    icon = "",
+    color = "#9F0500",
+    cterm_color = "124",
+    name = "Elf",
+  },
   ["elm"] = {
     icon = "",
     color = "#519aba",
@@ -721,6 +733,12 @@ local icons_by_file_extension = {
     color = "#a074c4",
     cterm_color = "140",
     name = "Ex",
+  },
+  ["exe"] = {
+    icon = "",
+    color = "#f28ba28",
+    cterm_color = "211",
+    name = "Exe",
   },
   ["exs"] = {
     icon = "",
@@ -1225,6 +1243,12 @@ local icons_by_file_extension = {
     color = "#ECECEC",
     cterm_color = "255",
     name = "OpenTypeFont",
+  },
+  ["out"] = {
+    icon = "",
+    color = "#9F0500",
+    cterm_color = "124",
+    name = "Out",
   },
   ["pck"] = {
     icon = "",
