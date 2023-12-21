@@ -736,8 +736,8 @@ local icons_by_file_extension = {
   },
   ["exe"] = {
     icon = "",
-    color = "#794651",
-    cterm_color = "95",
+    color = "#9F0500",
+    cterm_color = "124",
     name = "Exe",
   },
   ["exs"] = {
