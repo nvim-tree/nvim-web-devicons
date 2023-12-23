@@ -103,9 +103,11 @@ local function generate_lines()
   local lines = vim.api.nvim_buf_get_lines(fn.bufnr(), start, finish, true)
   for i = 1, #lines do
     if lines[i]:find "^%s*color =" then
-      lines[i] = lines[i]:gsub("%#%x+", function(m)
-        return darken_color(m)
-      end)
+      local rrggbb = lines[i]:match '"(#%x%x%x%x%x%x)"'
+      if not rrggbb then
+        error_exit("invalid color at line " .. i .. ": '" .. lines[i] .. "'", 1)
+      end
+      lines[i] = lines[i]:gsub(rrggbb, darken_color)
     end
   end
   table.insert(lines, "")
