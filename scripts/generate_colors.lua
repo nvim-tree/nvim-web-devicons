@@ -105,7 +105,7 @@ local function generate_lines()
     if lines[i]:find "^%s*color =" then
       local rrggbb = lines[i]:match '"(#%x%x%x%x%x%x)"'
       if not rrggbb then
-        error_exit(string.format("invalid color at line %s: '%s'",  i,  lines[i]), 1)
+        error_exit(string.format("invalid color at line %s: '%s'", i, lines[i]), 1)
       end
       lines[i] = lines[i]:gsub(rrggbb, darken_color)
     end
