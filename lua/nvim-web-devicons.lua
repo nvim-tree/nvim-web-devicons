@@ -192,6 +192,7 @@ local filetypes = {
   ["systemverilog"] = "sv",
   ["tads"] = "t",
   ["tcl"] = "tcl",
+  ["templ"] = "templ",
   ["terminal"] = "terminal",
   ["tex"] = "tex",
   ["toml"] = "toml",
