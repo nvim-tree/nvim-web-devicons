@@ -1,7 +1,7 @@
 local M = {}
 
 -- When adding new icons, remember to add an entry to the `filetypes` table, if applicable.
-local icons, icons_by_filename, icons_by_file_extension
+local icons, icons_by_filename, icons_by_file_extension, icons_by_operating_system
 
 function M.get_icons()
   return icons
@@ -18,7 +18,8 @@ local function refresh_icons()
 
   icons_by_filename = theme.icons_by_filename
   icons_by_file_extension = theme.icons_by_file_extension
-  icons = vim.tbl_extend("keep", {}, icons_by_filename, icons_by_file_extension)
+  icons_by_operating_system = theme.icons_by_operating_system
+  icons = vim.tbl_extend("keep", {}, icons_by_filename, icons_by_file_extension, icons_by_operating_system)
 end
 
 -- Map of filetypes -> icon names

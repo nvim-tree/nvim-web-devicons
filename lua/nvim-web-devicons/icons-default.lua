@@ -1907,6 +1907,394 @@ local icons_by_operating_system = {
     cterm_color = "33",
     name = "Windows"
   },
+  ["linux"] = {
+    icon = "",
+    color = "#000000",
+    cterm_color = "0",
+    name = "Linux"
+  },
+   ["almalinux"] = {
+     icon = "",
+     color = "#000000",
+     cterm_color = "15",
+     name = "Almalinux"
+   },
+   ["alpine"] = {
+     icon = "",
+     color = "#0d597f",
+     cterm_color = "24",
+     name = "Alpine"
+   },
+   ["aosc"] = {
+     icon = "",
+     color = "#000000",
+     cterm_color = "15",
+     name = "AOSC"
+   },
+   -- -- This icon doesn't show up in my nerdfont patched font...
+   -- ["archcraft"] = {
+   --   icon = "",
+   --   color = "#98c47d",
+   --   cterm_color = "108",
+   --   name = "Archcraft"
+   -- },
+   -- Doesn't exist anymore
+   -- ["archlabs"] = {
+   --   icon = "",
+   --   color = "",
+   --   cterm_color = "",
+   --   name = "Archlabs"
+   -- },
+   ["archlinux"] = {
+     icon = "󰣇",
+     color = "#0f94d2",
+     cterm_color = "33",
+     name = "Arch"
+   },
+   -- -- This icon doesn't show up in my nerdfont patched font...
+   -- ["arcolinux"] = {
+   --   icon = "",
+   --   color = "#6790eb",
+   --   cterm_color = "111",
+   --   name = "Arco"
+   -- },
+   -- -- This icon doesn't show up in my nerdfont patched font...
+   -- ["arduino"] = {
+   --   icon = "",
+   --   color = "#00979C",
+   --   cterm_color = "79",
+   --   name = "Arduino"
+   -- },
+   ["artix"] = {
+     icon = "",
+     color = "#41b4d7",
+     cterm_color = "81",
+     name = "Artix"
+   },
+   -- -- This icon doesn't show up in my nerdfont patched font...
+   -- ["biglinux"] = {
+   --   icon = "",
+   --   color = "#808080",
+   --   cterm_color = "244",
+   --   name = "Biglinux"
+   -- },
+   ["budgie"] = {
+     icon = "",
+     color = "#ffffff",
+     cterm_color = "15",
+     name = "Budgie"
+   },
+   ["centos"] = {
+     icon = "",
+     color = "#a2518d",
+     cterm_color = "127",
+     name = "Centos"
+   },
+   -- -- Discontinued
+   -- ["coreos"] = {
+   --   icon = "",
+   --   color = "#ee0000",
+   --   cterm_color = "9",
+   --   name = "CoreOS"
+   -- },
+   -- -- This icon doesn't show up in my nerdfont patched font...
+   -- ["crystal"] = {
+   --   icon = "",
+   --   color = "#8839ef",
+   --   cterm_color = "55",
+   --   name = "Crystal"
+   -- },
+   ["debian"] = {
+     icon = "",
+     color = "#a80030",
+     cterm_color = "124",
+     name = "Debian"
+   },
+   ["deepin"] = {
+     icon = "",
+     color = "#2ca7f8",
+     cterm_color = "39",
+     name = "Deepin"
+   },
+   ["devuan"] = {
+     icon = "",
+     color = "#404a52",
+     cterm_color = "59",
+     name = "Devuan"
+   },
+   ["elementary"] = {
+     icon = "",
+     color = "#5890c2",
+     cterm_color = "67",
+     name = "Elementary",
+   },
+   ["endeavour"] = {
+     icon = "",
+     color = "#7b3db9",
+     cterm_color = "55",
+     name = "Endeavour"
+   },
+   ["fedora"] = {
+     icon = "",
+     color = "#072a5e",
+     cterm_color = "18",
+     name = "Fedora"
+   },
+   ["freebsd"] = {
+     icon = "",
+     color = "#c90f02",
+     cterm_color = "160",
+     name = "FreeBSD"
+   },
+   -- -- This icon doesn't show up in my nerdfont patched font...
+   -- ["garuda"] = {
+   --  icon = "",
+   --  color = "#26a9f1",
+   --  cterm_color = "39",
+   --  name = "Garuda"
+   -- },
+   ["gentoo"] = {
+     icon = "󰣨",
+     color = "#b1abce",
+     cterm_color = "146",
+     name = "Gentoo"
+   },
+   ["guix"] = {
+     icon = "",
+     color = "#ffcc00",
+     cterm_color = "220",
+     name = "Guix"
+   },
+   -- -- This icon doesn't show up in my nerdfont patched font...
+   -- ["hyperbola"] = {
+   --   icon = "",
+   --   color = "#d0d0d0",
+   --   cterm_color = "252",
+   --   name = "Hyperbola"
+   -- },
+   ["illumos"] = {
+     icon = "",
+     color = "#ff430f",
+     cterm_color = "9",
+     name = "Illumos"
+   },
+   ["kali_linux"] = {
+     icon = "",
+     color = "#ffffff",
+     cterm_color = "15",
+     name = "Kali"
+   },
+   -- -- This icon doesn't show up in my nerdfont patched font...
+   -- ["kde_neon"] = {
+   --   icon = "",
+   --   color = "#21a1a9",
+   --   cterm_color = "30",
+   --   name = "KDE Neon"
+   -- },
+   -- -- This icon doesn't show up in my nerdfont patched font...
+   -- ["kubuntu"] = {
+   --   icon = "",
+   --   color = "#0079c1",
+   --   cterm_color = "25",
+   --   name = "Kubuntu"
+   -- },
+   ["mint"] = {
+     icon = "󰣭",
+     color = "#66af3d",
+     cterm_color = "113",
+     name = "Mint"
+   },
+   -- -- This icon doesn't show up in my nerdfont patched font...
+   -- ["locos"] = {
+   --   icon = "",
+   --   color = "#000000",
+   --   cterm_color = "0",
+   --   name = "Locos"
+   -- },
+   -- -- This icon doesn't show up in my nerdfont patched font...
+   -- ["lxle"] = {
+   --   icon = "",
+   --   color = "#454545",
+   --   cterm_color = "238",
+   --   name = "LXLE"
+   -- },
+   ["mageia"] = {
+     icon = "",
+     color = "#2397d4",
+     cterm_color = "39",
+     name = "Mageia"
+   },
+   -- -- Discontinued
+   -- ["mandriva"] = {
+   --   icon = "",
+   --   color = "",
+   --   cterm_color = "",
+   --   name = "Mandriva"
+   -- },
+   ["manjaro"] = {
+     icon = "",
+     color = "#33b959",
+     cterm_color = "41",
+     name = "Manjaro"
+   },
+   -- -- This icon doesn't show up in my nerdfont patched font...
+   -- ["mate"] = {
+   --   icon = "",
+   --   color = "#93d750",
+   --   cterm_color = "112",
+   --   name = "Mate"
+   -- },
+   -- -- This icon doesn't show up in my nerdfont patched font...
+   -- ["mxlinux"] = {
+   --   icon = "",
+   --   color = "#ffffff",
+   --   cterm_color = "15",
+   --   name = "MX Linux"
+   -- },
+   -- -- Not an os but we should probably include this somewhere
+   -- -- This icon doesn't show up in my nerdfont patched font...
+   -- ["neovim"] = {
+   --   icon = "",
+   --   color = "#6ba63f",
+   --   cterm_color = "71",
+   --   name = "Neovim"
+   -- },
+   ["nixos"] = {
+     icon = "",
+     color = "#7ab1db",
+     cterm_color = "110",
+     name = "NixOS"
+   },
+   ["openbsd"] = {
+     icon = "",
+     color = "#000000",
+     cterm_color = "1",
+     name = "OpenBSD"
+   },
+   ["opensuse"] = {
+     icon = "",
+     color = "#6fb424",
+     cterm_color = "112",
+     name = "openSUSE"
+   },
+   -- -- This icon doesn't show up in my nerdfont patched font...
+   -- ["parabola"] = {
+   --   icon = "",
+   --   color = "#787dab",
+   --   cterm_color = "103",
+   --   name = "Parabola"
+   -- },
+   ["parrot"] = {
+     icon = "",
+     color = "#000000",
+     cterm_color = "1",
+     name = "Parrot"
+   },
+   ["pop_os"] = {
+     icon = "",
+     color = "#48b9c7",
+     cterm_color = "80",
+     name = "Pop!_OS"
+   },
+   -- This icon doesn't show up in my nerdfont patched font...
+   -- ["puppy"] = {
+   --   icon = "",
+   --   color = "#c6c6c6",
+   --   cterm_color = "242",
+   --   name = "Puppy"
+   -- },
+   -- -- This icon doesn't show up in my nerdfont patched font...
+   -- ["qubesos"] = {
+   --   icon = "",
+   --   color = "#63a1ff",
+   --   cterm_color = "75",
+   --   name = "Qubes OS"
+   -- },
+   ["raspberry_pi"] = {
+     icon = "",
+     color = "#be1848",
+     cterm_color = "124",
+     name = "Raspberry Pi OS"
+   },
+   ["redhat"] = {
+     icon = "󱄛",
+     color = "#EE0000",
+     cterm_color = "196",
+     name = "Redhat"
+   },
+   ["rocky_linux"] = {
+     icon = "",
+     color = "#0fb37d",
+     -- This one is really hard to match, this is the closest I could get
+     cterm_color = "80",
+     name = "Rocky Linux"
+   },
+   ["sabayon"] = {
+     icon = "",
+     color = "#c6c6c6",
+     cterm_color = "242",
+     name = "Sabayon"
+   },
+   ["slackware"] = {
+     icon = "",
+     color = "#475fa9",
+     cterm_color = "67",
+     name = "Slackware"
+   },
+   ["solus"] = {
+     icon = "",
+     color = "#4b5163",
+     cterm_color = "240",
+     name = "Solus"
+   },
+   -- -- This icon doesn't show up in my nerdfont patched font...
+   -- ["tails"] = {
+   --   icon = "",
+   --   color = "#56347c",
+   --   cterm_color = "92",
+   --   name = "Tails"
+   -- },
+   -- -- This icon doesn't show up in my nerdfont patched font...
+   -- ["trisquel"] = {
+   --   icon = "",
+   --   color = "#487cc2",
+   --   cterm_color = "32",
+   --   name = "Trisquel"
+   -- },
+   ["ubuntu"] = {
+     icon = "",
+     color = "#dd4814",
+     -- This one is really hard to match, this is the closest I could get
+     cterm_color = "166",
+     name = "Ubuntu"
+   },
+   -- -- This icon doesn't show up in my nerdfont patched font...
+   -- ["vanilla"] = {
+   --   icon = "",
+   --   color = "#fbbd4e",
+   --   cterm_color = "179",
+   --   name = "Vanilla"
+   -- },
+   ["void"] = {
+     icon = "",
+     color = "#295340",
+     cterm_color = "22",
+     name = "Void"
+   },
+   -- -- This icon doesn't show up in my nerdfont patched font... 
+   -- ["xerolinux"] = {
+   --    icon = "",
+   --    color = "#304381",
+   --    -- This one is really hard to match, this is the closest I could get
+   --    cterm_color = "60",
+   --    name = ""
+   --  },
+   ["zorin"] = {
+     icon = "",
+     color = "#14a1e8",
+     cterm_color = "39",
+     name = "Zorin"
+   },
 }
 
 return {
