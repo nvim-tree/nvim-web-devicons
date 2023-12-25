@@ -1894,7 +1894,23 @@ local icons_by_file_extension = {
   },
 }
 
+local icons_by_operating_system = {
+  ["apple"] = {
+    icon = "",
+    color = "#A2AAAD",
+    cterm_color = "8",
+    name = "Apple"
+  },
+  ["windows"] = {
+    icon = "",
+    color = "#00A4EF",
+    cterm_color = "33",
+    name = "Windows"
+  },
+}
+
 return {
   icons_by_filename = icons_by_filename,
   icons_by_file_extension = icons_by_file_extension,
+  icons_by_operating_system = icons_by_operating_system
 }
