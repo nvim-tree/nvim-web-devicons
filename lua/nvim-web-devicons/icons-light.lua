@@ -2194,7 +2194,7 @@ local icons_by_operating_system = {
      icon = "",
      color = "#48b9c7",
      cterm_color = "80",
-     name = "Pop!_OS"
+     name = "Pop_OS"
    },
    -- This icon doesn't show up in my nerdfont patched font...
    -- ["puppy"] = {
@@ -2214,7 +2214,7 @@ local icons_by_operating_system = {
      icon = "",
      color = "#be1848",
      cterm_color = "124",
-     name = "Raspberry Pi OS"
+     name = "RaspberryPiOS"
    },
    ["redhat"] = {
      icon = "󱄛",
@@ -2227,7 +2227,7 @@ local icons_by_operating_system = {
      color = "#0fb37d",
      -- This one is really hard to match, this is the closest I could get
      cterm_color = "80",
-     name = "Rocky Linux"
+     name = "RockyLinux"
    },
    ["sabayon"] = {
      icon = "",
