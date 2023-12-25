@@ -1938,13 +1938,6 @@ local icons_by_operating_system = {
    --   cterm_color = "108",
    --   name = "Archcraft"
    -- },
-   -- Doesn't exist anymore
-   -- ["archlabs"] = {
-   --   icon = "",
-   --   color = "",
-   --   cterm_color = "",
-   --   name = "Archlabs"
-   -- },
    ["archlinux"] = {
      icon = "󰣇",
      color = "#0f94d2",
@@ -2124,13 +2117,6 @@ local icons_by_operating_system = {
      cterm_color = "39",
      name = "Mageia"
    },
-   -- -- Discontinued
-   -- ["mandriva"] = {
-   --   icon = "",
-   --   color = "",
-   --   cterm_color = "",
-   --   name = "Mandriva"
-   -- },
    ["manjaro"] = {
      icon = "",
      color = "#33b959",
