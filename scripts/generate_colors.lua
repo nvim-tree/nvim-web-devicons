@@ -139,17 +139,10 @@ local lines = generate_lines()
 if fn.search("^local icons_by_file_extension", "c") == 0 then
   error_exit("Table 'icons_by_file_extension' not found in lua/nvim-web-devicons/icons-default.lua", 1)
 end
-
--- third table
-if fn.search("^local icons_by_operating_system", "c") == 0 then
-  error_exit("Table 'icons_by_operating_system' not found in lua/nvim-web-devicons/icons-default.lua", 1)
-end
-
 local lines2 = generate_lines()
 table.insert(lines2, "return {")
 table.insert(lines2, "  icons_by_filename = icons_by_filename,")
 table.insert(lines2, "  icons_by_file_extension = icons_by_file_extension,")
-table.insert(lines2, "  icons_by_operating_system = icons_by_operating_system,")
 table.insert(lines2, "}")
 
 -- write both tables to file
