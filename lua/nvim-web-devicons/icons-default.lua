@@ -1913,7 +1913,7 @@ local icons_by_operating_system = {
     cterm_color = "16",
     name = "Linux",
   },
-  ["almalinux"] = {
+  ["alma"] = {
     icon = "",
     color = "#000000",
     cterm_color = "16",
@@ -1931,7 +1931,7 @@ local icons_by_operating_system = {
     cterm_color = "16",
     name = "AOSC",
   },
-  ["archlinux"] = {
+  ["arch"] = {
     icon = "󰣇",
     color = "#0f94d2",
     cterm_color = "67",
@@ -2015,7 +2015,7 @@ local icons_by_operating_system = {
     cterm_color = "196",
     name = "Illumos",
   },
-  ["kali_linux"] = {
+  ["kali"] = {
     icon = "",
     color = "#ffffff",
     cterm_color = "231",
@@ -2081,7 +2081,7 @@ local icons_by_operating_system = {
     cterm_color = "196",
     name = "Redhat",
   },
-  ["rocky_linux"] = {
+  ["rocky"] = {
     icon = "",
     color = "#0fb37d",
     cterm_color = "36",
