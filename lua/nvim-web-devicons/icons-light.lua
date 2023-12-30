@@ -329,6 +329,12 @@ local icons_by_filename = {
     cterm_color = "160",
     name = "SvelteConfig",
   },
+  ["tsconfig.json"] = {
+    icon = "",
+    color = "#36677c",
+    cterm_color = "24",
+    name = "TSConfig",
+  },
   ["unlicense"] = {
     icon = "",
     color = "#686020",
