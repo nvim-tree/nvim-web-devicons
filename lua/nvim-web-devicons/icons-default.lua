@@ -1480,8 +1480,8 @@ local icons_by_file_extension = {
   },
   ["scm"] = {
     icon = "󰘧",
-    color = "#000000",
-    cterm_color = "16",
+    color = "#eeeeee",
+    cterm_color = "255",
     name = "Scheme",
   },
   ["scss"] = {
