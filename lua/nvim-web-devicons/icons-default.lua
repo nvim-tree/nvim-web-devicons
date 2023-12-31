@@ -51,7 +51,7 @@ local icons_by_filename = {
     icon = "",
     color = "#4b32c3",
     cterm_color = "56",
-    name = "Eslintrc",
+    name = "EslintIgnore",
   },
   [".gitattributes"] = {
     icon = "",
