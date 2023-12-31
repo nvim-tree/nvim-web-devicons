@@ -136,27 +136,35 @@ end
 local lines = generate_lines()
 
 -- second table
-if fn.search("^local icons_by_file_extension", "c") == 0 then
-  error_exit("Table 'icons_by_file_extension' not found in lua/nvim-web-devicons/icons-default.lua", 1)
+if fn.search("^local icons_by_file_prefix", "c") == 0 then
+  error_exit("Table 'icons_by_file_prefix' not found in lua/nvim-web-devicons/icons-default.lua", 1)
 end
 local lines2 = generate_lines()
 
 -- third table
-if fn.search("^local icons_by_operating_system", "c") == 0 then
-  error_exit("Table 'icons_by_operating_system' not found in lua/nvim-web-devicons/icons-default.lua", 1)
+if fn.search("^local icons_by_file_extension", "c") == 0 then
+  error_exit("Table 'icons_by_file_extension' not found in lua/nvim-web-devicons/icons-default.lua", 1)
 end
 local lines3 = generate_lines()
 
-table.insert(lines3, "return {")
-table.insert(lines3, "  icons_by_filename = icons_by_filename,")
-table.insert(lines3, "  icons_by_file_extension = icons_by_file_extension,")
-table.insert(lines3, "  icons_by_operating_system = icons_by_operating_system,")
-table.insert(lines3, "}")
+-- fourth table
+if fn.search("^local icons_by_operating_system", "c") == 0 then
+  error_exit("Table 'icons_by_operating_system' not found in lua/nvim-web-devicons/icons-default.lua", 1)
+end
+local lines4 = generate_lines()
+
+table.insert(lines4, "return {")
+table.insert(lines4, "  icons_by_filename = icons_by_filename,")
+table.insert(lines4, "  icons_by_file_prefix = icons_by_file_prefix,")
+table.insert(lines4, "  icons_by_file_extension = icons_by_file_extension,")
+table.insert(lines4, "  icons_by_operating_system = icons_by_operating_system,")
+table.insert(lines4, "}")
 
 -- write both tables to file
 fn.writefile(lines, "lua/nvim-web-devicons/icons-light.lua")
 fn.writefile(lines2, "lua/nvim-web-devicons/icons-light.lua", "a")
 fn.writefile(lines3, "lua/nvim-web-devicons/icons-light.lua", "a")
+fn.writefile(lines4, "lua/nvim-web-devicons/icons-light.lua", "a")
 
 print "Finished creating new file!"
 

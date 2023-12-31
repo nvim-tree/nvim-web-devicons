@@ -227,12 +227,6 @@ local icons_by_filename = {
     cterm_color = "25",
     name = "Dockerfile",
   },
-  ["dockerfile"] = {
-    icon = "󰡨",
-    color = "#2e5f99",
-    cterm_color = "25",
-    name = "Dockerfile",
-  },
   ["favicon.ico"] = {
     icon = "",
     color = "#666620",
@@ -367,13 +361,10 @@ local icons_by_filename = {
   },
 }
 
+local icons_by_file_prefix = {
+}
+
 local icons_by_file_extension = {
-  ["Dockerfile"] = {
-    icon = "󰡨",
-    color = "#2e5f99",
-    cterm_color = "25",
-    name = "Dockerfile",
-  },
   ["R"] = {
     icon = "󰟔",
     color = "#1a4c8c",
@@ -2139,6 +2130,7 @@ local icons_by_operating_system = {
 
 return {
   icons_by_filename = icons_by_filename,
+  icons_by_file_prefix = icons_by_file_prefix,
   icons_by_file_extension = icons_by_file_extension,
   icons_by_operating_system = icons_by_operating_system,
 }

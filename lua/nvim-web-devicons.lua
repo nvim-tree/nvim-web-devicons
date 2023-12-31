@@ -1,7 +1,7 @@
 local M = {}
 
 -- When adding new icons, remember to add an entry to the `filetypes` table, if applicable.
-local icons, icons_by_filename, icons_by_file_extension, icons_by_operating_system
+local icons, icons_by_filename, icons_by_file_prefix, icons_by_file_extension, icons_by_operating_system
 
 function M.get_icons()
   return icons
@@ -17,9 +17,10 @@ local function refresh_icons()
   end
 
   icons_by_filename = theme.icons_by_filename
+  icons_by_file_prefix = theme.icons_by_file_prefix
   icons_by_file_extension = theme.icons_by_file_extension
   icons_by_operating_system = theme.icons_by_operating_system
-  icons = vim.tbl_extend("keep", {}, icons_by_filename, icons_by_file_extension, icons_by_operating_system)
+  icons = vim.tbl_extend("keep", {}, icons_by_filename, icons_by_file_prefix, icons_by_file_extension, icons_by_operating_system)
 end
 
 -- Map of filetypes -> icon names
@@ -332,13 +333,17 @@ function M.setup(opts)
   end
 
   local user_filename_icons = user_icons.override_by_filename
+  local user_file_pre_icons = user_icons.override_by_prefix
   local user_file_ext_icons = user_icons.override_by_extension
 
   icons =
-    vim.tbl_extend("force", icons, user_icons.override or {}, user_filename_icons or {}, user_file_ext_icons or {})
+    vim.tbl_extend("force", icons, user_icons.override or {}, user_filename_icons or {}, user_file_pre_icons or {}, user_file_ext_icons or {})
 
   if user_filename_icons then
     icons_by_filename = vim.tbl_extend("force", icons_by_filename, user_filename_icons)
+  end
+  if user_file_pre_icons then
+    icons_by_file_prefix = vim.tbl_extend("force", icons_by_file_prefix, user_file_pre_icons)
   end
   if user_file_ext_icons then
     icons_by_file_extension = vim.tbl_extend("force", icons_by_file_extension, user_file_ext_icons)
@@ -359,6 +364,24 @@ function M.get_default_icon()
   return default_icon
 end
 
+-- recursively iterate over each segment separated by '.' to parse prefix with multiple dots in filename
+local function iterate_multi_dotted_prefix(name, icon_table)
+  if name == nil then
+    return nil
+  end
+
+  local compound_pre, rest = name:match "(.?[^.]*)%.(.*)"
+  local icon = icon_table[compound_pre]
+  if icon then
+    return icon
+  end
+  if not rest then
+    return nil
+  end
+
+  return iterate_multi_dotted_prefix(rest, icon_table)
+end
+
 -- recursively iterate over each segment separated by '.' to parse extension with multiple dots in filename
 local function iterate_multi_dotted_extension(name, icon_table)
   if name == nil then
@@ -374,6 +397,17 @@ local function iterate_multi_dotted_extension(name, icon_table)
   return iterate_multi_dotted_extension(compound_ext, icon_table)
 end
 
+local function get_icon_by_prefix(name, prefix, opts)
+  local is_strict = if_nil(opts and opts.strict, global_opts.strict)
+  local icon_table = is_strict and icons_by_file_prefix or icons
+
+  if prefix ~= nil then
+    return icon_table[prefix]
+  end
+
+  return iterate_multi_dotted_prefix(name, icon_table)
+end
+
 local function get_icon_by_extension(name, ext, opts)
   local is_strict = if_nil(opts and opts.strict, global_opts.strict)
   local icon_table = is_strict and icons_by_file_extension or icons
@@ -385,7 +419,7 @@ local function get_icon_by_extension(name, ext, opts)
   return iterate_multi_dotted_extension(name, icon_table)
 end
 
-function M.get_icon(name, ext, opts)
+function M.get_icon(name, pre_or_ext, opts)
   if type(name) == "string" then
     name = name:lower()
   end
@@ -398,9 +432,9 @@ function M.get_icon(name, ext, opts)
   local is_strict = if_nil(opts and opts.strict, global_opts.strict)
   local icon_data
   if is_strict then
-    icon_data = icons_by_filename[name] or get_icon_by_extension(name, ext, opts) or (has_default and default_icon)
+    icon_data = icons_by_filename[name] or get_icon_by_prefix(name, pre_or_ext, opts) or get_icon_by_extension(name, pre_or_ext, opts) or (has_default and default_icon)
   else
-    icon_data = icons[name] or get_icon_by_extension(name, ext, opts) or (has_default and default_icon)
+    icon_data = icons[name] or get_icon_by_prefix(name, pre_or_ext, opts) or get_icon_by_extension(name, pre_or_ext, opts) or (has_default and default_icon)
   end
 
   if icon_data then
@@ -419,7 +453,7 @@ function M.get_icon_by_filetype(ft, opts)
   return M.get_icon(name or "", nil, opts)
 end
 
-function M.get_icon_colors(name, ext, opts)
+function M.get_icon_colors(name, pre_or_ext, opts)
   if not loaded then
     M.setup()
   end
@@ -428,9 +462,9 @@ function M.get_icon_colors(name, ext, opts)
   local is_strict = if_nil(opts and opts.strict, global_opts.strict)
   local icon_data
   if is_strict then
-    icon_data = icons_by_filename[name] or get_icon_by_extension(name, ext, opts) or (has_default and default_icon)
+    icon_data = icons_by_filename[name] or get_icon_by_prefix(name, pre_or_ext, opts) or get_icon_by_extension(name, pre_or_ext, opts) or (has_default and default_icon)
   else
-    icon_data = icons[name] or get_icon_by_extension(name, ext, opts) or (has_default and default_icon)
+    icon_data = icons[name] or get_icon_by_prefix(name, pre_or_ext, opts) or get_icon_by_extension(name, pre_or_ext, opts) or (has_default and default_icon)
   end
 
   if icon_data then
@@ -449,8 +483,8 @@ function M.get_icon_colors_by_filetype(ft, opts)
   return M.get_icon_colors(name or "", nil, opts)
 end
 
-function M.get_icon_color(name, ext, opts)
-  local data = { M.get_icon_colors(name, ext, opts) }
+function M.get_icon_color(name, pre_or_ext, opts)
+  local data = { M.get_icon_colors(name, pre_or_ext, opts) }
   return data[1], data[2]
 end
 
@@ -461,8 +495,8 @@ function M.get_icon_color_by_filetype(ft, opts)
   return M.get_icon_color(name or "", nil, opts)
 end
 
-function M.get_icon_cterm_color(name, ext, opts)
-  local data = { M.get_icon_colors(name, ext, opts) }
+function M.get_icon_cterm_color(name, pre_or_ext, opts)
+  local data = { M.get_icon_colors(name, pre_or_ext, opts) }
   return data[1], data[3]
 end
 
