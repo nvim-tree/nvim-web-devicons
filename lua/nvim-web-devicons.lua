@@ -7,6 +7,13 @@ function M.get_icons()
   return icons
 end
 
+local global_opts = {
+  override = {},
+  strict = false,
+  default = false,
+  color_icons = true,
+}
+
 -- Set the current icons tables, depending on the 'background' option.
 local function refresh_icons()
   local theme
@@ -20,6 +27,7 @@ local function refresh_icons()
   icons_by_file_extension = theme.icons_by_file_extension
   icons_by_operating_system = theme.icons_by_operating_system
   icons = vim.tbl_extend("keep", {}, icons_by_filename, icons_by_file_extension, icons_by_operating_system)
+  icons = vim.tbl_extend("force", icons, global_opts.override)
 end
 
 -- Map of filetypes -> icon names
@@ -229,13 +237,6 @@ local default_icon = {
   name = "Default",
 }
 
-local global_opts = {
-  override = {},
-  strict = false,
-  default = false,
-  color_icons = true,
-}
-
 local function get_highlight_name(data)
   if not global_opts.color_icons then
     data = default_icon
@@ -336,6 +337,13 @@ function M.setup(opts)
 
   icons =
     vim.tbl_extend("force", icons, user_icons.override or {}, user_filename_icons or {}, user_file_ext_icons or {})
+  global_opts.override = vim.tbl_extend(
+    "force",
+    global_opts.override,
+    user_icons.override or {},
+    user_filename_icons or {},
+    user_file_ext_icons or {}
+  )
 
   if user_filename_icons then
     icons_by_filename = vim.tbl_extend("force", icons_by_filename, user_filename_icons)
