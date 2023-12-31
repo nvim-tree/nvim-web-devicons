@@ -20,7 +20,14 @@ local function refresh_icons()
   icons_by_file_prefix = theme.icons_by_file_prefix
   icons_by_file_extension = theme.icons_by_file_extension
   icons_by_operating_system = theme.icons_by_operating_system
-  icons = vim.tbl_extend("keep", {}, icons_by_filename, icons_by_file_prefix, icons_by_file_extension, icons_by_operating_system)
+  icons = vim.tbl_extend(
+    "keep",
+    {},
+    icons_by_filename,
+    icons_by_file_prefix,
+    icons_by_file_extension,
+    icons_by_operating_system
+  )
 end
 
 -- Map of filetypes -> icon names
@@ -336,8 +343,14 @@ function M.setup(opts)
   local user_file_pre_icons = user_icons.override_by_prefix
   local user_file_ext_icons = user_icons.override_by_extension
 
-  icons =
-    vim.tbl_extend("force", icons, user_icons.override or {}, user_filename_icons or {}, user_file_pre_icons or {}, user_file_ext_icons or {})
+  icons = vim.tbl_extend(
+    "force",
+    icons,
+    user_icons.override or {},
+    user_filename_icons or {},
+    user_file_pre_icons or {},
+    user_file_ext_icons or {}
+  )
 
   if user_filename_icons then
     icons_by_filename = vim.tbl_extend("force", icons_by_filename, user_filename_icons)
@@ -432,9 +445,15 @@ function M.get_icon(name, pre_or_ext, opts)
   local is_strict = if_nil(opts and opts.strict, global_opts.strict)
   local icon_data
   if is_strict then
-    icon_data = icons_by_filename[name] or get_icon_by_prefix(name, pre_or_ext, opts) or get_icon_by_extension(name, pre_or_ext, opts) or (has_default and default_icon)
+    icon_data = icons_by_filename[name]
+      or get_icon_by_prefix(name, pre_or_ext, opts)
+      or get_icon_by_extension(name, pre_or_ext, opts)
+      or (has_default and default_icon)
   else
-    icon_data = icons[name] or get_icon_by_prefix(name, pre_or_ext, opts) or get_icon_by_extension(name, pre_or_ext, opts) or (has_default and default_icon)
+    icon_data = icons[name]
+      or get_icon_by_prefix(name, pre_or_ext, opts)
+      or get_icon_by_extension(name, pre_or_ext, opts)
+      or (has_default and default_icon)
   end
 
   if icon_data then
@@ -462,9 +481,15 @@ function M.get_icon_colors(name, pre_or_ext, opts)
   local is_strict = if_nil(opts and opts.strict, global_opts.strict)
   local icon_data
   if is_strict then
-    icon_data = icons_by_filename[name] or get_icon_by_prefix(name, pre_or_ext, opts) or get_icon_by_extension(name, pre_or_ext, opts) or (has_default and default_icon)
+    icon_data = icons_by_filename[name]
+      or get_icon_by_prefix(name, pre_or_ext, opts)
+      or get_icon_by_extension(name, pre_or_ext, opts)
+      or (has_default and default_icon)
   else
-    icon_data = icons[name] or get_icon_by_prefix(name, pre_or_ext, opts) or get_icon_by_extension(name, pre_or_ext, opts) or (has_default and default_icon)
+    icon_data = icons[name]
+      or get_icon_by_prefix(name, pre_or_ext, opts)
+      or get_icon_by_extension(name, pre_or_ext, opts)
+      or (has_default and default_icon)
   end
 
   if icon_data then
