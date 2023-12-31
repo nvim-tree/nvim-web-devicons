@@ -362,6 +362,24 @@ local icons_by_filename = {
 }
 
 local icons_by_file_prefix = {
+  [".env"] = {
+    icon = "",
+    color = "#32310d",
+    cterm_color = "236",
+    name = "Env",
+  },
+  ["dockerfile"] = {
+    icon = "󰡨",
+    color = "#2e5f99",
+    cterm_color = "25",
+    name = "Dockerfile",
+  },
+  [".eslintrc"] = {
+    icon = "",
+    color = "#4b32c3",
+    cterm_color = "56",
+    name = "Eslintrc",
+  },
 }
 
 local icons_by_file_extension = {
