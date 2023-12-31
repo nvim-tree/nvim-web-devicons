@@ -483,8 +483,8 @@ local icons_by_file_extension = {
     name = "Configuration",
   },
   ["cjs"] = {
-    icon = "",
-    color = "#666620",
+    icon = "󰌞",
+    color = "#505011",
     cterm_color = "58",
     name = "Cjs",
   },
@@ -1149,8 +1149,8 @@ local icons_by_file_extension = {
     name = "Mint",
   },
   ["mjs"] = {
-    icon = "",
-    color = "#504b1e",
+    icon = "󰌞",
+    color = "#505011",
     cterm_color = "58",
     name = "Mjs",
   },
