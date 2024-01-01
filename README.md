@@ -65,9 +65,9 @@ require'nvim-web-devicons'.setup {
  -- will get overriden by `get_icons` option
  default = true;
  -- globally enable "strict" selection of icons - icon will be looked up in
- -- different tables, first by filename, and if not found by extension; this
+ -- different tables, first by filename, then by prefix, and if not found by extension; this
  -- prevents cases when file doesn't have any extension but still gets some icon
- -- because its name happened to match some extension (default to false)
+ -- because its name happened to match some prefix or extension (default to false)
  strict = true;
  -- same as `override` but specifically for overrides by filename
  -- takes effect when `strict` is true
@@ -77,6 +77,16 @@ require'nvim-web-devicons'.setup {
     color = "#f1502f",
     name = "Gitignore"
   }
+ };
+ -- same as `override` but specifically for overrides by prefix
+ -- takes effect when `strict` is true
+ override_by_prefix = {
+  ["dockerfile"] = {
+    icon = "󰡨",
+    color = "#458ee6",
+    cterm_color = "68",
+    name = "Dockerfile",
+  },
  };
  -- same as `override` but specifically for overrides by extension
  -- takes effect when `strict` is true
@@ -92,12 +102,12 @@ require'nvim-web-devicons'.setup {
 
 ### Get Icon
 
-Get the icon for a given file by passing in the `name`, the `extension` and an _optional_ options `table`.
+Get the icon for a given file by passing in the `name`, the `pre_or_ext` and an _optional_ options `table`.
 The name is passed in to check for an exact match e.g. `.bashrc` if there is no exact name match the extension
 is used. Calls `.setup()` if it hasn't already ran.
 
 ```lua
-require'nvim-web-devicons'.get_icon(filename, extension, options)
+require'nvim-web-devicons'.get_icon(filename, pre_or_ext, options)
 ```
 
 The optional `options` argument can used to change how the plugin works the keys include
@@ -108,7 +118,7 @@ specifically by extension, and fallback to default icon if default key is set to
 e.g.
 
 ```lua
-require'nvim-web-devicons'.get_icon(filename, extension, { default = true })
+require'nvim-web-devicons'.get_icon(filename, pre_or_ext, { default = true })
 ```
 
 You can check if the setup function was already called with:
@@ -171,7 +181,7 @@ require("nvim-web-devicons").get_icon_color_by_filetype(filetype, opts)
 require("nvim-web-devicons").get_icon_cterm_color_by_filetype(filetype, opts)
 ```
 
-These functions are the same as their counterparts without the `_by_filetype` suffix, but they take a filetype instead of a name/extension.
+These functions are the same as their counterparts without the `_by_filetype` suffix, but they take a filetype instead of a name, prefix or extension.
 
 You can also use `get_icon_name_by_filetype(filetype)` to get the icon name associated with the filetype.
 
