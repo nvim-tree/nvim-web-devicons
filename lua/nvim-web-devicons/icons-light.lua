@@ -1689,7 +1689,7 @@ local icons_by_file_extension = {
     name = "Tex",
   },
   ["tf"] = {
-    icon = "",
+    icon = "",
     color = "#4732af",
     cterm_color = "55",
     name = "Terraform",
