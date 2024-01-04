@@ -47,6 +47,12 @@ local icons_by_filename = {
     cterm_color = "56",
     name = "Eslintrc",
   },
+  [".eslintignore"] = {
+    icon = "",
+    color = "#4b32c3",
+    cterm_color = "56",
+    name = "EslintIgnore",
+  },
   [".gitattributes"] = {
     icon = "",
     color = "#41535b",
@@ -1683,7 +1689,7 @@ local icons_by_file_extension = {
     name = "Tex",
   },
   ["tf"] = {
-    icon = "",
+    icon = "",
     color = "#4732af",
     cterm_color = "55",
     name = "Terraform",
