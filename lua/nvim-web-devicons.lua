@@ -14,20 +14,69 @@ local global_opts = {
   color_icons = true,
 }
 
+local light78 = 255 * 7 / 8
+local light68 = 255 * 6 / 8
+local light58 = 255 * 5 / 8
+local light12 = 255 / 2
+local light13 = 255 / 3
+
+local function darken_color(rrggbb)
+  local r, g, b = rrggbb:match "%#(%x%x)(%x%x)(%x%x)"
+  r, g, b = tonumber("0x" .. r), tonumber("0x" .. g), tonumber("0x" .. b)
+  -- luminance formula: see https://stackoverflow.com/a/596243
+  local lum = 0.299 * r + 0.587 * g + 0.114 * b
+  if lum < light13 then -------------------- darkest tertile
+    return rrggbb
+  elseif lum < light12 then ---------------- second darkest quartile
+    r = bit.tohex(r / 4 * 3):sub(-2)
+    g = bit.tohex(g / 4 * 3):sub(-2)
+    b = bit.tohex(b / 4 * 3):sub(-2)
+  elseif lum < light58 then ---------------- lightest octiles: first
+    r = bit.tohex(r / 3 * 2):sub(-2)
+    g = bit.tohex(g / 3 * 2):sub(-2)
+    b = bit.tohex(b / 3 * 2):sub(-2)
+  elseif lum < light68 then ---------------- lightest octiles: second
+    r = bit.tohex(r / 2):sub(-2)
+    g = bit.tohex(g / 2):sub(-2)
+    b = bit.tohex(b / 2):sub(-2)
+  elseif lum < light78 then ---------------- lightest octiles: third
+    r = bit.tohex(r / 3):sub(-2)
+    g = bit.tohex(g / 3):sub(-2)
+    b = bit.tohex(b / 3):sub(-2)
+  else ------------------------------------- lightest octile
+    r = bit.tohex(r / 5):sub(-2)
+    g = bit.tohex(g / 5):sub(-2)
+    b = bit.tohex(b / 5):sub(-2)
+  end
+  return string.format("#%s%s%s", r, g, b)
+end
+
 -- Set the current icons tables, depending on the 'background' option.
 local function refresh_icons()
   local theme
+  local overrides
   if vim.o.background == "light" then
     theme = require "nvim-web-devicons.icons-light"
+    overrides = vim.tbl_map(function(value)
+      local new_val = {
+        icon = value.icon,
+        color = value.color and darken_color(value.color) or nil,
+        -- TODO: handle this properly
+        cterm_color = value.cterm_color,
+        name = value.name,
+      }
+      return new_val
+    end, global_opts.override)
   else
     theme = require "nvim-web-devicons.icons-default"
+    overrides = global_opts.override
   end
 
   icons_by_filename = theme.icons_by_filename
   icons_by_file_extension = theme.icons_by_file_extension
   icons_by_operating_system = theme.icons_by_operating_system
   icons = vim.tbl_extend("keep", {}, icons_by_filename, icons_by_file_extension, icons_by_operating_system)
-  icons = vim.tbl_extend("force", icons, global_opts.override)
+  icons = vim.tbl_extend("force", icons, overrides)
 end
 
 -- Map of filetypes -> icon names
