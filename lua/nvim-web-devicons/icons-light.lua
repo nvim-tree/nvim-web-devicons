@@ -1726,8 +1726,8 @@ local icons_by_file_extension = {
   },
   ["tsx"] = {
     icon = "",
-    color = "#1354bf",
-    cterm_color = "26",
+    color = "#158197",
+    cterm_color = "31",
     name = "Tsx",
   },
   ["ttf"] = {
