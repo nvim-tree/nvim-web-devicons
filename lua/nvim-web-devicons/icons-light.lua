@@ -335,6 +335,12 @@ local icons_by_filename = {
     cterm_color = "160",
     name = "SvelteConfig",
   },
+  ["tailwind.config.js"] = {
+    icon = "󱏿",
+    color = "#158197",
+    cterm_color = "31",
+    name = "TailwindConfig",
+  },
   ["tsconfig.json"] = {
     icon = "",
     color = "#36677c",
