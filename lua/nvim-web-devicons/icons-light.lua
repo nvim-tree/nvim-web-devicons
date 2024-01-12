@@ -336,7 +336,7 @@ local icons_by_filename = {
     name = "SvelteConfig",
   },
   ["tsconfig.json"] = {
-    icon = "",
+    icon = "",
     color = "#36677c",
     cterm_color = "24",
     name = "TSConfig",
@@ -615,7 +615,7 @@ local icons_by_file_extension = {
     name = "Csv",
   },
   ["cts"] = {
-    icon = "",
+    icon = "󰛦",
     color = "#36677c",
     cterm_color = "24",
     name = "Cts",
@@ -1203,7 +1203,7 @@ local icons_by_file_extension = {
     name = "Mp4",
   },
   ["mts"] = {
-    icon = "",
+    icon = "󰛦",
     color = "#36677c",
     cterm_color = "24",
     name = "Mts",
@@ -1713,7 +1713,7 @@ local icons_by_file_extension = {
     name = "TextResource",
   },
   ["ts"] = {
-    icon = "",
+    icon = "󰛦",
     color = "#36677c",
     cterm_color = "24",
     name = "Ts",
