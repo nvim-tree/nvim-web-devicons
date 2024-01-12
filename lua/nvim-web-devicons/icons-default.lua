@@ -483,9 +483,9 @@ local icons_by_file_extension = {
     name = "Configuration",
   },
   ["cjs"] = {
-    icon = "󰌞",
-    color = "#F1F134",
-    cterm_color = "227",
+    icon = "",
+    color = "#cbcb41",
+    cterm_color = "185",
     name = "Cjs",
   },
   ["clj"] = {
@@ -993,9 +993,9 @@ local icons_by_file_extension = {
     name = "Jpg",
   },
   ["js"] = {
-    icon = "󰌞",
-    color = "#F1F134",
-    cterm_color = "227",
+    icon = "",
+    color = "#cbcb41",
+    cterm_color = "185",
     name = "Js",
   },
   ["json"] = {
@@ -1149,9 +1149,9 @@ local icons_by_file_extension = {
     name = "Mint",
   },
   ["mjs"] = {
-    icon = "󰌞",
-    color = "#F1F134",
-    cterm_color = "227",
+    icon = "",
+    color = "#f1e05a",
+    cterm_color = "185",
     name = "Mjs",
   },
   ["mk"] = {
