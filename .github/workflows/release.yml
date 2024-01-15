@@ -1,4 +1,4 @@
-name: "release"
+name: Release
 
 on:
   push:
@@ -17,8 +17,12 @@ jobs:
         env:
           LUAROCKS_API_KEY: ${{ secrets.LUAROCKS_API_KEY }}
         with:
+          summary: Nerd Font icons for neovim
           detailed_description: |
-            Coloured file icons for neovim. Dark and light background variants.
-          labels: |
-            neovim
-            plugin
+            Coloured Nerd Font file icons for neovim.
+
+            Dark and light background variants.
+
+            https://www.nerdfonts.com/
+          license: MIT
+          labels: neovim
