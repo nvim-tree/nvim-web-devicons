@@ -1,8 +1,11 @@
 repos:
   - repo: https://github.com/johnnymorganz/stylua
-    rev: v0.17.1
+    rev: v0.19.1
     hooks:
       - id: stylua-github
+        fail_fast: true
+        verbose: true
+        types: [lua]
   - repo: local
     hooks:
       - id: luacheck
@@ -10,12 +13,17 @@ repos:
         description: Lints Lua files using Luacheck.
         entry: luacheck --
         language: system
+        fail_fast: true
+        verbose: true
         types: [lua]
   - repo: local
     hooks:
-      - id: lighttheme
-        name: Light Color Scheme Generator
+      - id: colors
+        name: colors
         description: Ensures Light Color Scheme version has been generated.
-        entry: nvim --headless -c 'source scripts/generate_colors.lua' -c 'qall'
+        entry: make colors
         language: system
-        types: [lua]
+        require_serial: true
+        pass_filenames: false
+        verbose: true
+

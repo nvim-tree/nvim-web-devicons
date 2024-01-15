@@ -1,1579 +1,54 @@
--- exact match by file name
-local icons_by_filename = {
-  [".babelrc"] = {
-    icon = "ﬥ",
-    color = "#cbcb41",
-    cterm_color = "185",
-    name = "Babelrc",
-  },
-  [".bash_profile"] = {
-    icon = "",
-    color = "#89e051",
-    cterm_color = "113",
-    name = "BashProfile",
-  },
-  [".bashrc"] = {
-    icon = "",
-    color = "#89e051",
-    cterm_color = "113",
-    name = "Bashrc",
-  },
-  [".ds_store"] = {
-    icon = "",
-    color = "#41535b",
-    cterm_color = "239",
-    name = "DsStore",
-  },
-  [".eslintrc"] = {
-    icon = "",
-    color = "#4b32c3",
-    cterm_color = "56",
-    name = "Eslintrc",
-  },
-  [".gitattributes"] = {
-    icon = "",
-    color = "#41535b",
-    cterm_color = "239",
-    name = "GitAttributes",
-  },
-  [".gitconfig"] = {
-    icon = "",
-    color = "#41535b",
-    cterm_color = "239",
-    name = "GitConfig",
-  },
-  [".gitignore"] = {
-    icon = "",
-    color = "#41535b",
-    cterm_color = "239",
-    name = "GitIgnore",
-  },
-  [".gitlab-ci.yml"] = {
-    icon = "",
-    color = "#e24329",
-    cterm_color = "196",
-    name = "GitlabCI",
-  },
-  [".gitmodules"] = {
-    icon = "",
-    color = "#41535b",
-    cterm_color = "239",
-    name = "GitModules",
-  },
-  [".gvimrc"] = {
-    icon = "",
-    color = "#019833",
-    cterm_color = "28",
-    name = "Gvimrc",
-  },
-  [".npmignore"] = {
-    icon = "",
-    color = "#E8274B",
-    cterm_color = "197",
-    name = "NPMIgnore",
-  },
-  [".npmrc"] = {
-    icon = "",
-    color = "#E8274B",
-    cterm_color = "197",
-    name = "NPMrc",
-  },
-  [".settings.json"] = {
-    icon = "",
-    color = "#854CC7",
-    cterm_color = "98",
-    name = "SettingsJson",
-  },
-  [".vimrc"] = {
-    icon = "",
-    color = "#019833",
-    cterm_color = "28",
-    name = "Vimrc",
-  },
-  [".zprofile"] = {
-    icon = "",
-    color = "#89e051",
-    cterm_color = "113",
-    name = "Zshprofile",
-  },
-  [".zshenv"] = {
-    icon = "",
-    color = "#89e051",
-    cterm_color = "113",
-    name = "Zshenv",
-  },
-  [".zshrc"] = {
-    icon = "",
-    color = "#89e051",
-    cterm_color = "113",
-    name = "Zshrc",
-  },
-  ["brewfile"] = {
-    icon = "",
-    color = "#701516",
-    cterm_color = "52",
-    name = "Brewfile",
-  },
-  ["cmakelists.txt"] = {
-    icon = "",
-    color = "#6d8086",
-    cterm_color = "66",
-    name = "CMakeLists",
-  },
-  ["commit_editmsg"] = {
-    icon = "",
-    color = "#41535b",
-    cterm_color = "239",
-    name = "GitCommit",
-  },
-  ["containerfile"] = {
-    icon = "󰡨",
-    color = "#458ee6",
-    cterm_color = "68",
-    name = "Dockerfile",
-  },
-  ["copying"] = {
-    icon = "",
-    color = "#cbcb41",
-    cterm_color = "185",
-    name = "License",
-  },
-  ["copying.lesser"] = {
-    icon = "",
-    color = "#cbcb41",
-    cterm_color = "185",
-    name = "License",
-  },
-  ["docker-compose.yml"] = {
-    icon = "󰡨",
-    color = "#458ee6",
-    cterm_color = "68",
-    name = "Dockerfile",
-  },
-  ["docker-compose.yaml"] = {
-    icon = "󰡨",
-    color = "#458ee6",
-    cterm_color = "68",
-    name = "Dockerfile",
-  },
-  [".dockerignore"] = {
-    icon = "󰡨",
-    color = "#458ee6",
-    cterm_color = "68",
-    name = "Dockerfile",
-  },
-  ["gemfile$"] = {
-    icon = "",
-    color = "#701516",
-    cterm_color = "52",
-    name = "Gemfile",
-  },
-  ["license"] = {
-    icon = "",
-    color = "#d0bf41",
-    cterm_color = "185",
-    name = "License",
-  },
-  ["r"] = {
-    icon = "ﳒ",
-    color = "#358a5b",
-    cterm_color = "29",
-    name = "R",
-  },
-  ["rmd"] = {
-    icon = "",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "Rmd",
-  },
-  ["vagrantfile$"] = {
-    icon = "",
-    color = "#1563FF",
-    cterm_color = "27",
-    name = "Vagrantfile",
-  },
-  ["_gvimrc"] = {
-    icon = "",
-    color = "#019833",
-    cterm_color = "28",
-    name = "Gvimrc",
-  },
-  ["_vimrc"] = {
-    icon = "",
-    color = "#019833",
-    cterm_color = "28",
-    name = "Vimrc",
-  },
-  ["package.json"] = {
-    icon = "",
-    color = "#e8274b",
-    name = "PackageJson",
-  },
-  ["package-lock.json"] = {
-    icon = "",
-    color = "#7a0d21",
-    name = "PackageLockJson",
-  },
-  ["node_modules"] = {
-    icon = "",
-    color = "#E8274B",
-    cterm_color = "197",
-    name = "NodeModules",
-  },
-  ["favicon.ico"] = {
-    icon = "",
-    color = "#cbcb41",
-    cterm_color = "185",
-    name = "Favicon",
-  },
-  ["gnumakefile"] = {
-    icon = "",
-    color = "#6d8086",
-    cterm_color = "66",
-    name = "Makefile",
-  },
-  ["makefile"] = {
-    icon = "",
-    color = "#6d8086",
-    cterm_color = "66",
-    name = "Makefile",
-  },
-  ["mix.lock"] = {
-    icon = "",
-    color = "#a074c4",
-    cterm_color = "140",
-    name = "MixLock",
-  },
-  [".env"] = {
-    icon = "",
-    color = "#faf743",
-    cterm_color = "227",
-    name = "Env",
-  },
-  ["gruntfile"] = {
-    icon = "",
-    color = "#e37933",
-    cterm_color = "166",
-    name = "Gruntfile",
-  },
-  ["gulpfile"] = {
-    icon = "",
-    color = "#cc3e44",
-    cterm_color = "167",
-    name = "Gulpfile",
-  },
-  ["webpack"] = {
-    icon = "ﰩ",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "Webpack",
-  },
-  ["rakefile"] = {
-    icon = "",
-    color = "#701516",
-    cterm_color = "52",
-    name = "Rakefile",
-  },
-  ["procfile"] = {
-    icon = "",
-    color = "#a074c4",
-    cterm_color = "140",
-    name = "Procfile",
-  },
-  ["dockerfile"] = {
-    icon = "󰡨",
-    color = "#458ee6",
-    cterm_color = "68",
-    name = "Dockerfile",
-  },
-}
-
--- fuzzy match by extension
-local icons_by_file_extension = {
-  ["ai"] = {
-    icon = "",
-    color = "#cbcb41",
-    cterm_color = "185",
-    name = "Ai",
-  },
-  ["awk"] = {
-    icon = "",
-    color = "#4d5a5e",
-    cterm_color = "240",
-    name = "Awk",
-  },
-  ["bash"] = {
-    icon = "",
-    color = "#89e051",
-    cterm_color = "113",
-    name = "Bash",
-  },
-  ["bat"] = {
-    icon = "",
-    color = "#C1F12E",
-    cterm_color = "191",
-    name = "Bat",
-  },
-  ["bmp"] = {
-    icon = "",
-    color = "#a074c4",
-    cterm_color = "140",
-    name = "Bmp",
-  },
-  ["c"] = {
-    icon = "",
-    color = "#599eff",
-    cterm_color = "111",
-    name = "C",
-  },
-  ["c++"] = {
-    icon = "",
-    color = "#f34b7d",
-    cterm_color = "204",
-    name = "CPlusPlus",
-  },
-  ["cbl"] = {
-    icon = "⚙",
-    color = "#005ca5",
-    cterm_color = "25",
-    name = "Cobol",
-  },
-  ["cc"] = {
-    icon = "",
-    color = "#f34b7d",
-    cterm_color = "204",
-    name = "CPlusPlus",
-  },
-  ["cfg"] = {
-    icon = "",
-    color = "#ECECEC",
-    cterm_color = "255",
-    name = "Configuration",
-  },
-  ["clj"] = {
-    icon = "",
-    color = "#8dc149",
-    cterm_color = "113",
-    name = "Clojure",
-  },
-  ["cljc"] = {
-    icon = "",
-    color = "#8dc149",
-    cterm_color = "113",
-    name = "ClojureC",
-  },
-  ["cljs"] = {
-    icon = "",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "ClojureJS",
-  },
-  ["cljd"] = {
-    icon = "",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "ClojureDart",
-  },
-  ["cmake"] = {
-    icon = "",
-    color = "#6d8086",
-    cterm_color = "66",
-    name = "CMake",
-  },
-  ["cob"] = {
-    icon = "⚙",
-    color = "#005ca5",
-    cterm_color = "25",
-    name = "Cobol",
-  },
-  ["cobol"] = {
-    icon = "⚙",
-    color = "#005ca5",
-    cterm_color = "25",
-    name = "Cobol",
-  },
-  ["coffee"] = {
-    icon = "",
-    color = "#cbcb41",
-    cterm_color = "185",
-    name = "Coffee",
-  },
-  ["conf"] = {
-    icon = "",
-    color = "#6d8086",
-    cterm_color = "66",
-    name = "Conf",
-  },
-  ["config.ru"] = {
-    icon = "",
-    color = "#701516",
-    cterm_color = "52",
-    name = "ConfigRu",
-  },
-  ["cp"] = {
-    icon = "",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "Cp",
-  },
-  ["cpp"] = {
-    icon = "",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "Cpp",
-  },
-  ["cpy"] = {
-    icon = "⚙",
-    color = "#005ca5",
-    cterm_color = "25",
-    name = "Cobol",
-  },
-  ["cr"] = {
-    icon = "",
-    color = "#c8c8c8",
-    cterm_color = "251",
-    name = "Crystal",
-  },
-  ["cs"] = {
-    icon = "",
-    color = "#596706",
-    cterm_color = "58",
-    name = "Cs",
-  },
-  ["csh"] = {
-    icon = "",
-    color = "#4d5a5e",
-    cterm_color = "240",
-    name = "Csh",
-  },
-  ["cson"] = {
-    icon = "",
-    color = "#cbcb41",
-    cterm_color = "185",
-    name = "Cson",
-  },
-  ["css"] = {
-    icon = "",
-    color = "#42a5f5",
-    cterm_color = "75",
-    name = "Css",
-  },
-  ["csv"] = {
-    icon = "",
-    color = "#89e051",
-    cterm_color = "113",
-    name = "Csv",
-  },
-  ["cxx"] = {
-    icon = "",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "Cxx",
-  },
-  ["d"] = {
-    icon = "",
-    color = "#427819",
-    cterm_color = "28",
-    name = "D",
-  },
-  ["dart"] = {
-    icon = "",
-    color = "#03589C",
-    cterm_color = "25",
-    name = "Dart",
-  },
-  ["db"] = {
-    icon = "",
-    color = "#dad8d8",
-    cterm_color = "188",
-    name = "Db",
-  },
-  ["desktop"] = {
-    icon = "",
-    color = "#563d7c",
-    cterm_color = "54",
-    name = "DesktopEntry",
-  },
-  ["diff"] = {
-    icon = "",
-    color = "#41535b",
-    cterm_color = "239",
-    name = "Diff",
-  },
-  ["doc"] = {
-    icon = "",
-    color = "#185abd",
-    cterm_color = "26",
-    name = "Doc",
-  },
-  ["docx"] = {
-    icon = "",
-    color = "#185abd",
-    cterm_color = "26",
-    name = "Docx",
-  },
-  ["drl"] = {
-    icon = "",
-    color = "#ffafaf",
-    cterm_color = "217",
-    name = "Drools",
-  },
-  ["dropbox"] = {
-    icon = "",
-    color = "#0061FE",
-    cterm_color = "27",
-    name = "Dropbox",
-  },
-  ["dump"] = {
-    icon = "",
-    color = "#dad8d8",
-    cterm_color = "188",
-    name = "Dump",
-  },
-  ["edn"] = {
-    icon = "",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "Edn",
-  },
-  ["eex"] = {
-    icon = "",
-    color = "#a074c4",
-    cterm_color = "140",
-    name = "Eex",
-  },
-  ["ejs"] = {
-    icon = "",
-    color = "#cbcb41",
-    cterm_color = "185",
-    name = "Ejs",
-  },
-  ["elm"] = {
-    icon = "",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "Elm",
-  },
-  ["epp"] = {
-    icon = "",
-    color = "#FFA61A",
-    name = "Epp",
-  },
-  ["erb"] = {
-    icon = "",
-    color = "#701516",
-    cterm_color = "214",
-    name = "Erb",
-  },
-  ["erl"] = {
-    icon = "",
-    color = "#B83998",
-    cterm_color = "163",
-    name = "Erl",
-  },
-  ["ex"] = {
-    icon = "",
-    color = "#a074c4",
-    cterm_color = "140",
-    name = "Ex",
-  },
-  ["exs"] = {
-    icon = "",
-    color = "#a074c4",
-    cterm_color = "140",
-    name = "Exs",
-  },
-  ["f#"] = {
-    icon = "",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "Fsharp",
-  },
-  ["f90"] = {
-    icon = "󱈚",
-    color = "#734f96",
-    cterm_color = "97",
-    name = "Fortran",
-  },
-  ["fnl"] = {
-    color = "#fff3d7",
-    icon = "🌜",
-    cterm_color = "230",
-    name = "Fennel",
-  },
-  ["fish"] = {
-    icon = "",
-    color = "#4d5a5e",
-    cterm_color = "240",
-    name = "Fish",
-  },
-  ["fs"] = {
-    icon = "",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "Fs",
-  },
-  ["fsi"] = {
-    icon = "",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "Fsi",
-  },
-  ["fsscript"] = {
-    icon = "",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "Fsscript",
-  },
-  ["fsx"] = {
-    icon = "",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "Fsx",
-  },
-  ["gd"] = {
-    icon = "",
-    color = "#6d8086",
-    cterm_color = "66",
-    name = "GDScript",
-  },
-  ["gemspec"] = {
-    icon = "",
-    color = "#701516",
-    cterm_color = "52",
-    name = "Gemspec",
-  },
-  ["gif"] = {
-    icon = "",
-    color = "#a074c4",
-    cterm_color = "140",
-    name = "Gif",
-  },
-  ["git"] = {
-    icon = "",
-    color = "#F14C28",
-    cterm_color = "196",
-    name = "GitLogo",
-  },
-  ["glb"] = {
-    icon = "",
-    color = "#FFB13B",
-    cterm_color = "214",
-    name = "BinaryGLTF",
-  },
-  ["go"] = {
-    icon = "",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "Go",
-  },
-  ["godot"] = {
-    icon = "",
-    color = "#6d8086",
-    cterm_color = "66",
-    name = "GodotProject",
-  },
-  ["graphql"] = {
-    icon = "",
-    color = "#e535ab",
-    cterm_color = "199",
-    name = "GraphQL",
-  },
-  ["gql"] = {
-    icon = "",
-    color = "#e535ab",
-    cterm_color = "199",
-    name = "GraphQL",
-  },
-  ["h"] = {
-    icon = "",
-    color = "#a074c4",
-    cterm_color = "140",
-    name = "H",
-  },
-  ["haml"] = {
-    icon = "",
-    color = "#eaeae1",
-    cterm_color = "255",
-    name = "Haml",
-  },
-  ["hbs"] = {
-    icon = "",
-    color = "#f0772b",
-    cterm_color = "202",
-    name = "Hbs",
-  },
-  ["heex"] = {
-    icon = "",
-    color = "#a074c4",
-    cterm_color = "140",
-    name = "Heex",
-  },
-  ["hh"] = {
-    icon = "",
-    color = "#a074c4",
-    cterm_color = "140",
-    name = "Hh",
-  },
-  ["hpp"] = {
-    icon = "",
-    color = "#a074c4",
-    cterm_color = "140",
-    name = "Hpp",
-  },
-  ["hrl"] = {
-    icon = "",
-    color = "#B83998",
-    cterm_color = "163",
-    name = "Hrl",
-  },
-  ["hs"] = {
-    icon = "",
-    color = "#a074c4",
-    cterm_color = "140",
-    name = "Hs",
-  },
-  ["htm"] = {
-    icon = "",
-    color = "#e34c26",
-    cterm_color = "196",
-    name = "Htm",
-  },
-  ["html"] = {
-    icon = "",
-    color = "#e44d26",
-    cterm_color = "196",
-    name = "Html",
-  },
-  ["hxx"] = {
-    icon = "",
-    color = "#a074c4",
-    cterm_color = "140",
-    name = "Hxx",
-  },
-  ["ico"] = {
-    icon = "",
-    color = "#cbcb41",
-    cterm_color = "185",
-    name = "Ico",
-  },
-  ["import"] = {
-    icon = "",
-    color = "#ECECEC",
-    cterm_color = "255",
-    name = "ImportConfiguration",
-  },
-  ["ini"] = {
-    icon = "",
-    color = "#6d8086",
-    cterm_color = "66",
-    name = "Ini",
-  },
-  ["java"] = {
-    icon = "",
-    color = "#cc3e44",
-    cterm_color = "167",
-    name = "Java",
-  },
-  ["jl"] = {
-    icon = "",
-    color = "#a270ba",
-    cterm_color = "133",
-    name = "Jl",
-  },
-  ["jpeg"] = {
-    icon = "",
-    color = "#a074c4",
-    cterm_color = "140",
-    name = "Jpeg",
-  },
-  ["jpg"] = {
-    icon = "",
-    color = "#a074c4",
-    cterm_color = "140",
-    name = "Jpg",
-  },
-  ["js"] = {
-    icon = "",
-    color = "#cbcb41",
-    cterm_color = "185",
-    name = "Js",
-  },
-  ["test.js"] = {
-    icon = "",
-    color = "#cbcb41",
-    cterm_color = "185",
-    name = "TestJs",
-  },
-  ["spec.js"] = {
-    icon = "",
-    color = "#cbcb41",
-    cterm_color = "185",
-    name = "SpecJs",
-  },
-  ["json"] = {
-    icon = "",
-    color = "#cbcb41",
-    cterm_color = "185",
-    name = "Json",
-  },
-  ["json5"] = {
-    icon = "ﬥ",
-    color = "#cbcb41",
-    cterm_color = "185",
-    name = "Json5",
-  },
-  ["jsx"] = {
-    icon = "",
-    color = "#20c2e3",
-    cterm_color = "45",
-    name = "Jsx",
-  },
-  ["test.jsx"] = {
-    icon = "",
-    color = "#20c2e3",
-    cterm_color = "45",
-    name = "JavaScriptReactTest",
-  },
-  ["spec.jsx"] = {
-    icon = "",
-    color = "#20c2e3",
-    cterm_color = "45",
-    name = "JavaScriptReactSpec",
-  },
-  ["ksh"] = {
-    icon = "",
-    color = "#4d5a5e",
-    cterm_color = "240",
-    name = "Ksh",
-  },
-  ["kt"] = {
-    icon = "",
-    color = "#7F52FF",
-    cterm_color = "99",
-    name = "Kotlin",
-  },
-  ["kts"] = {
-    icon = "",
-    color = "#7F52FF",
-    cterm_color = "99",
-    name = "KotlinScript",
-  },
-  ["leex"] = {
-    icon = "",
-    color = "#a074c4",
-    cterm_color = "140",
-    name = "Leex",
-  },
-  ["less"] = {
-    icon = "",
-    color = "#563d7c",
-    cterm_color = "54",
-    name = "Less",
-  },
-  ["lhs"] = {
-    icon = "",
-    color = "#a074c4",
-    cterm_color = "140",
-    name = "Lhs",
-  },
-  ["license"] = {
-    icon = "",
-    color = "#cbcb41",
-    cterm_color = "185",
-    name = "License",
-  },
-  ["lua"] = {
-    icon = "",
-    color = "#51a0cf",
-    cterm_color = "74",
-    name = "Lua",
-  },
-  ["luau"] = {
-    icon = "",
-    color = "#51a0cf",
-    cterm_color = "74",
-    name = "Luau",
-  },
-  ["gnumakefile"] = {
-    icon = "",
-    color = "#6d8086",
-    cterm_color = "66",
-    name = "Makefile",
-  },
-  ["makefile"] = {
-    icon = "",
-    color = "#6d8086",
-    cterm_color = "66",
-    name = "Makefile",
-  },
-  ["mk"] = {
-    icon = "",
-    color = "#6d8086",
-    cterm_color = "66",
-    name = "Makefile",
-  },
-  ["markdown"] = {
-    icon = "",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "Markdown",
-  },
-  ["material"] = {
-    icon = "",
-    color = "#B83998",
-    cterm_color = "163",
-    name = "Material",
-  },
-  ["md"] = {
-    icon = "",
-    color = "#ffffff",
-    cterm_color = "231",
-    name = "Md",
-  },
-  ["mdx"] = {
-    icon = "",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "Mdx",
-  },
-  ["mint"] = {
-    icon = "",
-    color = "#87c095",
-    cterm_color = "108",
-    name = "Mint",
-  },
-  ["mjs"] = {
-    icon = "",
-    color = "#f1e05a",
-    cterm_color = "185",
-    name = "Mjs",
-  },
-  ["ml"] = {
-    icon = "λ",
-    color = "#e37933",
-    cterm_color = "166",
-    name = "Ml",
-  },
-  ["mli"] = {
-    icon = "λ",
-    color = "#e37933",
-    cterm_color = "166",
-    name = "Mli",
-  },
-  ["mo"] = {
-    icon = "∞",
-    color = "#9772FB",
-    cterm_color = "135",
-    name = "Motoko",
-  },
-  ["mustache"] = {
-    icon = "",
-    color = "#e37933",
-    cterm_color = "166",
-    name = "Mustache",
-  },
-  ["nim"] = {
-    icon = "",
-    color = "#f3d400",
-    cterm_color = "220",
-    name = "Nim",
-  },
-  ["nix"] = {
-    icon = "",
-    color = "#7ebae4",
-    cterm_color = "110",
-    name = "Nix",
-  },
-  ["opus"] = {
-    icon = "",
-    color = "#F88A02",
-    cterm_color = "208",
-    name = "OPUS",
-  },
-  ["org"] = {
-    icon = "",
-    color = "#77AA99",
-    cterm_color = "73",
-    name = "OrgMode",
-  },
-  ["otf"] = {
-    icon = "",
-    color = "#ECECEC",
-    cterm_color = "255",
-    name = "OpenTypeFont",
-  },
-  ["pck"] = {
-    icon = "",
-    color = "#6d8086",
-    cterm_color = "66",
-    name = "PackedResource",
-  },
-  ["pdf"] = {
-    icon = "",
-    color = "#b30b00",
-    cterm_color = "124",
-    name = "Pdf",
-  },
-  ["php"] = {
-    icon = "",
-    color = "#a074c4",
-    cterm_color = "140",
-    name = "Php",
-  },
-  ["pl"] = {
-    icon = "",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "Pl",
-  },
-  ["pm"] = {
-    icon = "",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "Pm",
-  },
-  ["png"] = {
-    icon = "",
-    color = "#a074c4",
-    cterm_color = "140",
-    name = "Png",
-  },
-  ["pp"] = {
-    icon = "",
-    color = "#FFA61A",
-    name = "Pp",
-  },
-  ["ppt"] = {
-    icon = "",
-    color = "#cb4a32",
-    cterm_color = "214",
-    name = "Ppt",
-  },
-  ["pro"] = {
-    icon = "",
-    color = "#e4b854",
-    cterm_color = "179",
-    name = "Prolog",
-  },
-  ["ps1"] = {
-    icon = "󰨊",
-    color = "#4273ca",
-    cterm_color = "68",
-    name = "PsScriptfile",
-  },
-  ["psd1"] = {
-    icon = "󰨊",
-    color = "#6975c4",
-    cterm_color = "68",
-    name = "PsManifestfile",
-  },
-  ["psm1"] = {
-    icon = "󰨊",
-    color = "#6975c4",
-    cterm_color = "68",
-    name = "PsScriptModulefile",
-  },
-  ["psb"] = {
-    icon = "",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "Psb",
-  },
-  ["psd"] = {
-    icon = "",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "Psd",
-  },
-  ["py"] = {
-    icon = "",
-    color = "#ffbc03",
-    cterm_color = "214",
-    name = "Py",
-  },
-  ["pyc"] = {
-    icon = "",
-    color = "#ffe291",
-    cterm_color = "222",
-    name = "Pyc",
-  },
-  ["pyd"] = {
-    icon = "",
-    color = "#ffe291",
-    cterm_color = "222",
-    name = "Pyd",
-  },
-  ["pyo"] = {
-    icon = "",
-    color = "#ffe291",
-    cterm_color = "222",
-    name = "Pyo",
-  },
-  ["query"] = {
-    icon = "",
-    color = "#90a850",
-    cterm_color = "107",
-    name = "Query",
-  },
-  ["r"] = {
-    icon = "ﳒ",
-    color = "#358a5b",
-    cterm_color = "29",
-    name = "R",
-  },
-  ["rake"] = {
-    icon = "",
-    color = "#701516",
-    cterm_color = "52",
-    name = "Rake",
-  },
-  ["rb"] = {
-    icon = "",
-    color = "#701516",
-    cterm_color = "52",
-    name = "Rb",
-  },
-  ["rlib"] = {
-    icon = "",
-    color = "#dea584",
-    cterm_color = "216",
-    name = "Rlib",
-  },
-  ["rmd"] = {
-    icon = "",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "Rmd",
-  },
-  ["rproj"] = {
-    icon = "鉶",
-    color = "#358a5b",
-    cterm_color = "29",
-    name = "Rproj",
-  },
-  ["rs"] = {
-    icon = "",
-    color = "#dea584",
-    cterm_color = "216",
-    name = "Rs",
-  },
-  ["rss"] = {
-    icon = "",
-    color = "#FB9D3B",
-    cterm_color = "215",
-    name = "Rss",
-  },
-  ["sass"] = {
-    icon = "",
-    color = "#f55385",
-    cterm_color = "204",
-    name = "Sass",
-  },
-  ["sbt"] = {
-    icon = "",
-    color = "#cc3e44",
-    cterm_color = "167",
-    name = "sbt",
-  },
-  ["scala"] = {
-    icon = "",
-    color = "#cc3e44",
-    cterm_color = "167",
-    name = "Scala",
-  },
-  ["scm"] = {
-    icon = "ﬦ",
-    color = "#000000",
-    cterm_color = "16",
-    name = "Scheme",
-  },
-  ["scss"] = {
-    icon = "",
-    color = "#f55385",
-    cterm_color = "204",
-    name = "Scss",
-  },
-  ["sh"] = {
-    icon = "",
-    color = "#4d5a5e",
-    cterm_color = "240",
-    name = "Sh",
-  },
-  ["sig"] = {
-    icon = "λ",
-    color = "#e37933",
-    cterm_color = "166",
-    name = "Sig",
-  },
-  ["slim"] = {
-    icon = "",
-    color = "#e34c26",
-    cterm_color = "196",
-    name = "Slim",
-  },
-  ["sln"] = {
-    icon = "",
-    color = "#854CC7",
-    cterm_color = "98",
-    name = "Sln",
-  },
-  ["sml"] = {
-    icon = "λ",
-    color = "#e37933",
-    cterm_color = "166",
-    name = "Sml",
-  },
-  ["sql"] = {
-    icon = "",
-    color = "#dad8d8",
-    cterm_color = "188",
-    name = "Sql",
-  },
-  ["sqlite"] = {
-    icon = "",
-    color = "#dad8d8",
-    cterm_color = "188",
-    name = "Sql",
-  },
-  ["sqlite3"] = {
-    icon = "",
-    color = "#dad8d8",
-    cterm_color = "188",
-    name = "Sql",
-  },
-  ["styl"] = {
-    icon = "",
-    color = "#8dc149",
-    cterm_color = "113",
-    name = "Styl",
-  },
-  ["sublime"] = {
-    icon = "",
-    color = "#e37933",
-    cterm_color = "166",
-    name = "Suo",
-  },
-  ["suo"] = {
-    icon = "",
-    color = "#854CC7",
-    cterm_color = "98",
-    name = "Suo",
-  },
-  ["sv"] = {
-    icon = "",
-    color = "#019833",
-    cterm_color = "28",
-    name = "SystemVerilog",
-  },
-  ["svelte"] = {
-    icon = "",
-    color = "#ff3e00",
-    cterm_color = "196",
-    name = "Svelte",
-  },
-  ["svh"] = {
-    icon = "",
-    color = "#019833",
-    cterm_color = "28",
-    name = "SystemVerilog",
-  },
-  ["svg"] = {
-    icon = "ﰟ",
-    color = "#FFB13B",
-    cterm_color = "214",
-    name = "Svg",
-  },
-  ["swift"] = {
-    icon = "",
-    color = "#e37933",
-    cterm_color = "166",
-    name = "Swift",
-  },
-  ["t"] = {
-    icon = "",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "Tor",
-  },
-  ["tbc"] = {
-    icon = "﯑",
-    color = "#1e5cb3",
-    cterm_color = "25",
-    name = "Tcl",
-  },
-  ["tcl"] = {
-    icon = "﯑",
-    color = "#1e5cb3",
-    cterm_color = "25",
-    name = "Tcl",
-  },
-  ["terminal"] = {
-    icon = "",
-    color = "#31B53E",
-    cterm_color = "34",
-    name = "Terminal",
-  },
-  ["tex"] = {
-    icon = "ﭨ",
-    color = "#3D6117",
-    cterm_color = "22",
-    name = "Tex",
-  },
-  ["tf"] = {
-    icon = "",
-    color = "#5F43E9",
-    cterm_color = "93",
-    name = "Terraform",
-  },
-  ["tfvars"] = {
-    icon = "",
-    color = "#5F43E9",
-    cterm_color = "93",
-    name = "TFVars",
-  },
-  ["toml"] = {
-    icon = "",
-    color = "#6d8086",
-    cterm_color = "66",
-    name = "Toml",
-  },
-  ["tres"] = {
-    icon = "",
-    color = "#cbcb41",
-    cterm_color = "185",
-    name = "TextResource",
-  },
-  ["ts"] = {
-    icon = "",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "Ts",
-  },
-  ["test.ts"] = {
-    icon = "",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "TestTs",
-  },
-  ["spec.ts"] = {
-    icon = "",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "SpecTs",
-  },
-  ["tscn"] = {
-    icon = "",
-    color = "#a074c4",
-    cterm_color = "140",
-    name = "TextScene",
-  },
-  ["tsx"] = {
-    icon = "",
-    color = "#1354bf",
-    cterm_color = "26",
-    name = "Tsx",
-  },
-  ["test.tsx"] = {
-    icon = "",
-    color = "#1354bf",
-    cterm_color = "26",
-    name = "TypeScriptReactTest",
-  },
-  ["spec.tsx"] = {
-    icon = "",
-    color = "#1354bf",
-    cterm_color = "26",
-    name = "TypeScriptReactSpec",
-  },
-  ["twig"] = {
-    icon = "",
-    color = "#8dc149",
-    cterm_color = "113",
-    name = "Twig",
-  },
-  ["txt"] = {
-    icon = "",
-    color = "#89e051",
-    cterm_color = "113",
-    name = "Txt",
-  },
-  ["v"] = {
-    icon = "",
-    color = "#019833",
-    cterm_color = "28",
-    name = "Verilog",
-  },
-  ["vala"] = {
-    icon = "",
-    color = "#7239b3",
-    cterm_color = "91",
-    name = "Vala",
-  },
-  ["vh"] = {
-    icon = "",
-    color = "#019833",
-    cterm_color = "28",
-    name = "Verilog",
-  },
-  ["vhd"] = {
-    icon = "",
-    color = "#019833",
-    cterm_color = "28",
-    name = "VHDL",
-  },
-  ["vhdl"] = {
-    icon = "",
-    color = "#019833",
-    cterm_color = "28",
-    name = "VHDL",
-  },
-  ["vim"] = {
-    icon = "",
-    color = "#019833",
-    cterm_color = "28",
-    name = "Vim",
-  },
-  ["vue"] = {
-    icon = "﵂",
-    color = "#8dc149",
-    cterm_color = "113",
-    name = "Vue",
-  },
-  ["webmanifest"] = {
-    icon = "",
-    color = "#f1e05a",
-    cterm_color = "185",
-    name = "Webmanifest",
-  },
-  ["webp"] = {
-    icon = "",
-    color = "#a074c4",
-    cterm_color = "140",
-    name = "Webp",
-  },
-  ["webpack"] = {
-    icon = "ﰩ",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "Webpack",
-  },
-  ["xcplayground"] = {
-    icon = "",
-    color = "#e37933",
-    cterm_color = "166",
-    name = "XcPlayground",
-  },
-  ["xls"] = {
-    icon = "",
-    color = "#207245",
-    cterm_color = "29",
-    name = "Xls",
-  },
-  ["xlsx"] = {
-    icon = "",
-    color = "#207245",
-    cterm_color = "29",
-    name = "Xlsx",
-  },
-  ["xml"] = {
-    icon = "謹",
-    color = "#e37933",
-    cterm_color = "166",
-    name = "Xml",
-  },
-  ["xul"] = {
-    icon = "",
-    color = "#e37933",
-    cterm_color = "166",
-    name = "Xul",
-  },
-  ["yaml"] = {
-    icon = "",
-    color = "#6d8086",
-    cterm_color = "66",
-    name = "Yaml",
-  },
-  ["yml"] = {
-    icon = "",
-    color = "#6d8086",
-    cterm_color = "66",
-    name = "Yml",
-  },
-  ["zig"] = {
-    icon = "",
-    color = "#f69a1b",
-    cterm_color = "172",
-    name = "Zig",
-  },
-  ["zsh"] = {
-    icon = "",
-    color = "#89e051",
-    cterm_color = "113",
-    name = "Zsh",
-  },
-  ["sol"] = {
-    icon = "ﲹ",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "Solidity",
-  },
-  ["prisma"] = {
-    icon = "卑",
-    color = "#ffffff",
-    cterm_color = "231",
-    name = "Prisma",
-  },
-  ["lock"] = {
-    icon = "",
-    color = "#bbbbbb",
-    cterm_color = "250",
-    name = "Lock",
-  },
-  ["log"] = {
-    icon = "",
-    color = "#ffffff",
-    cterm_color = "231",
-    name = "Log",
-  },
-  ["wasm"] = {
-    icon = "",
-    color = "#5c4cdb",
-    cterm_color = "62",
-    name = "Wasm",
-  },
-  ["liquid"] = {
-    icon = "",
-    color = "#95BF47",
-    cterm_color = "106",
-    name = "Liquid",
-  },
-}
+local M = {}
 
 -- When adding new icons, remember to add an entry to the `filetypes` table, if applicable.
-local icons
+local icons, icons_by_filename, icons_by_file_extension, icons_by_operating_system
+
+local default_icon = {
+  icon = "",
+  color = "#6d8086",
+  cterm_color = "66",
+  name = "Default",
+}
+
+function M.get_icons()
+  return icons
+end
+
+local global_opts = {
+  override = {},
+  strict = false,
+  default = false,
+  color_icons = true,
+}
 
 -- Set the current icons tables, depending on the 'background' option.
 local function refresh_icons()
-  local by_filename, by_file_extension
+  local theme
   if vim.o.background == "light" then
-    by_filename = require("nvim-web-devicons-light").icons_by_filename
-    by_file_extension = require("nvim-web-devicons-light").icons_by_file_extension
+    theme = require "nvim-web-devicons.icons-light"
   else
-    by_filename = icons_by_filename
-    by_file_extension = icons_by_file_extension
+    theme = require "nvim-web-devicons.icons-default"
   end
-  icons = vim.tbl_extend("keep", {}, by_filename, by_file_extension)
+
+  icons_by_filename = theme.icons_by_filename
+  icons_by_file_extension = theme.icons_by_file_extension
+  icons_by_operating_system = theme.icons_by_operating_system
+  icons = vim.tbl_extend("keep", {}, icons_by_filename, icons_by_file_extension, icons_by_operating_system)
+  icons = vim.tbl_extend("force", icons, global_opts.override)
+  icons[1] = default_icon
 end
 
 -- Map of filetypes -> icon names
 local filetypes = {
+  ["avif"] = "avif",
+  ["bzl"] = "bzl",
   ["brewfile"] = "brewfile",
   ["commit"] = "commit_editmsg",
   ["copying"] = "copying",
   ["gemfile"] = "gemfile$",
   ["lesser"] = "copying.lesser",
   ["vagrantfile"] = "vagrantfile$",
+  ["aac"] = "aac",
   ["awk"] = "awk",
   ["bmp"] = "bmp",
   ["c"] = "c",
@@ -1612,6 +87,7 @@ local filetypes = {
   ["eruby"] = "erb",
   ["fennel"] = "fnl",
   ["fish"] = "fish",
+  ["flac"] = "flac",
   ["forth"] = "fs",
   ["fortran"] = "f90",
   ["fsharp"] = "f#",
@@ -1647,6 +123,7 @@ local filetypes = {
   ["jpeg"] = "jpeg",
   ["jpg"] = "jpg",
   ["json"] = "json",
+  ["jsonc"] = "jsonc",
   ["json5"] = "json5",
   ["julia"] = "jl",
   ["kotlin"] = "kt",
@@ -1655,6 +132,7 @@ local filetypes = {
   ["liquid"] = "liquid",
   ["lhaskell"] = "lhs",
   ["license"] = "license",
+  ["unlicense"] = "unlicense",
   ["log"] = "log",
   ["lock"] = "lock",
   ["lprolog"] = "sig",
@@ -1662,14 +140,21 @@ local filetypes = {
   ["make"] = "makefile",
   ["markdown"] = "markdown",
   ["material"] = "material",
+  ["m4a"] = "m4a",
+  ["m4v"] = "m4v",
   ["mdx"] = "mdx",
   ["mint"] = "mint",
+  ["mkv"] = "mkv",
   ["motoko"] = "mo",
+  ["mov"] = "mov",
+  ["mp3"] = "mp3",
+  ["mp4"] = "mp4",
   ["mustache"] = "mustache",
   ["nim"] = "nim",
   ["nix"] = "nix",
   ["node"] = "node_modules",
   ["ocaml"] = "ml",
+  ["ogg"] = "ogg",
   ["opus"] = "opus",
   ["otf"] = "otf",
   ["pck"] = "pck",
@@ -1695,6 +180,8 @@ local filetypes = {
   ["python"] = "py",
   ["query"] = "query",
   ["r"] = "r",
+  ["res"] = "rescript",
+  ["resi"] = "rescript",
   ["rlib"] = "rlib",
   ["rmd"] = "rmd",
   ["rproj"] = "rproj",
@@ -1722,6 +209,7 @@ local filetypes = {
   ["systemverilog"] = "sv",
   ["tads"] = "t",
   ["tcl"] = "tcl",
+  ["templ"] = "templ",
   ["terminal"] = "terminal",
   ["tex"] = "tex",
   ["toml"] = "toml",
@@ -1737,6 +225,8 @@ local filetypes = {
   ["vim"] = "vim",
   ["vue"] = "vue",
   ["wasm"] = "wasm",
+  ["wav"] = "wav",
+  ["webm"] = "webm",
   ["webp"] = "webp",
   ["webpack"] = "webpack",
   ["xcplayground"] = "xcplayground",
@@ -1746,20 +236,6 @@ local filetypes = {
   ["yaml"] = "yaml",
   ["zig"] = "zig",
   ["zsh"] = "zsh",
-}
-
-local default_icon = {
-  icon = "",
-  color = "#6d8086",
-  cterm_color = "66",
-  name = "Default",
-}
-
-local global_opts = {
-  override = {},
-  strict = false,
-  default = false,
-  color_icons = true,
 }
 
 local function get_highlight_name(data)
@@ -1795,7 +271,7 @@ local function highlight_exists(group)
   return ok and not (hl or {})[true]
 end
 
-local function set_up_highlights()
+function M.set_up_highlights(allow_override)
   if not global_opts.color_icons then
     set_up_highlight(default_icon)
     return
@@ -1803,8 +279,9 @@ local function set_up_highlights()
 
   for _, icon_data in pairs(icons) do
     local has_color = icon_data.color or icon_data.cterm_color
-    local name_valid = icon_data.name and not highlight_exists(get_highlight_name(icon_data))
-    if has_color and name_valid then
+    local name_valid = icon_data.name
+    local defined_before = highlight_exists(get_highlight_name(icon_data))
+    if has_color and name_valid and (allow_override or not defined_before) then
       set_up_highlight(icon_data)
     end
   end
@@ -1828,8 +305,12 @@ end
 
 local loaded = false
 
+function M.has_loaded()
+  return loaded
+end
+
 local if_nil = vim.F.if_nil
-local function setup(opts)
+function M.setup(opts)
   if loaded then
     return
   end
@@ -1857,6 +338,13 @@ local function setup(opts)
 
   icons =
     vim.tbl_extend("force", icons, user_icons.override or {}, user_filename_icons or {}, user_file_ext_icons or {})
+  global_opts.override = vim.tbl_extend(
+    "force",
+    global_opts.override,
+    user_icons.override or {},
+    user_filename_icons or {},
+    user_file_ext_icons or {}
+  )
 
   if user_filename_icons then
     icons_by_filename = vim.tbl_extend("force", icons_by_filename, user_filename_icons)
@@ -1865,18 +353,18 @@ local function setup(opts)
     icons_by_file_extension = vim.tbl_extend("force", icons_by_file_extension, user_file_ext_icons)
   end
 
-  table.insert(icons, default_icon)
+  icons[1] = default_icon
 
-  set_up_highlights()
+  M.set_up_highlights()
 
   vim.api.nvim_create_autocmd("ColorScheme", {
     desc = "Re-apply icon colors after changing colorschemes",
     group = vim.api.nvim_create_augroup("NvimWebDevicons", { clear = true }),
-    callback = set_up_highlights,
+    callback = M.set_up_highlights,
   })
 end
 
-local function get_default_icon()
+function M.get_default_icon()
   return default_icon
 end
 
@@ -1906,13 +394,13 @@ local function get_icon_by_extension(name, ext, opts)
   return iterate_multi_dotted_extension(name, icon_table)
 end
 
-local function get_icon(name, ext, opts)
+function M.get_icon(name, ext, opts)
   if type(name) == "string" then
     name = name:lower()
   end
 
   if not loaded then
-    setup()
+    M.setup()
   end
 
   local has_default = if_nil(opts and opts.default, global_opts.default)
@@ -1929,20 +417,20 @@ local function get_icon(name, ext, opts)
   end
 end
 
-local function get_icon_name_by_filetype(ft)
+function M.get_icon_name_by_filetype(ft)
   return filetypes[ft]
 end
 
-local function get_icon_by_filetype(ft, opts)
-  local name = get_icon_name_by_filetype(ft)
+function M.get_icon_by_filetype(ft, opts)
+  local name = M.get_icon_name_by_filetype(ft)
   opts = opts or {}
   opts.strict = false
-  return get_icon(name or "", nil, opts)
+  return M.get_icon(name or "", nil, opts)
 end
 
-local function get_icon_colors(name, ext, opts)
+function M.get_icon_colors(name, ext, opts)
   if not loaded then
-    setup()
+    M.setup()
   end
 
   local has_default = if_nil(opts and opts.default, global_opts.default)
@@ -1965,34 +453,34 @@ local function get_icon_colors(name, ext, opts)
   end
 end
 
-local function get_icon_colors_by_filetype(ft, opts)
-  local name = get_icon_name_by_filetype(ft)
-  return get_icon_colors(name or "", nil, opts)
+function M.get_icon_colors_by_filetype(ft, opts)
+  local name = M.get_icon_name_by_filetype(ft)
+  return M.get_icon_colors(name or "", nil, opts)
 end
 
-local function get_icon_color(name, ext, opts)
-  local data = { get_icon_colors(name, ext, opts) }
+function M.get_icon_color(name, ext, opts)
+  local data = { M.get_icon_colors(name, ext, opts) }
   return data[1], data[2]
 end
 
-local function get_icon_color_by_filetype(ft, opts)
-  local name = get_icon_name_by_filetype(ft)
+function M.get_icon_color_by_filetype(ft, opts)
+  local name = M.get_icon_name_by_filetype(ft)
   opts = opts or {}
   opts.strict = false
-  return get_icon_color(name or "", nil, opts)
+  return M.get_icon_color(name or "", nil, opts)
 end
 
-local function get_icon_cterm_color(name, ext, opts)
-  local data = { get_icon_colors(name, ext, opts) }
+function M.get_icon_cterm_color(name, ext, opts)
+  local data = { M.get_icon_colors(name, ext, opts) }
   return data[1], data[3]
 end
 
-local function get_icon_cterm_color_by_filetype(ft, opts)
-  local name = get_icon_name_by_filetype(ft)
-  return get_icon_cterm_color(name or "", nil, opts)
+function M.get_icon_cterm_color_by_filetype(ft, opts)
+  local name = M.get_icon_name_by_filetype(ft)
+  return M.get_icon_cterm_color(name or "", nil, opts)
 end
 
-local function set_icon(user_icons)
+function M.set_icon(user_icons)
   icons = vim.tbl_extend("force", icons, user_icons or {})
   if not global_opts.color_icons then
     return
@@ -2003,7 +491,7 @@ local function set_icon(user_icons)
   end
 end
 
-local function set_default_icon(icon, color, cterm_color)
+function M.set_default_icon(icon, color, cterm_color)
   default_icon.icon = icon
   default_icon.color = color
   default_icon.cterm_color = cterm_color
@@ -2013,28 +501,15 @@ end
 -- Load the icons already, the loaded tables depend on the 'background' setting.
 refresh_icons()
 
--- Change icon set on background change
-vim.api.nvim_create_autocmd("OptionSet", { pattern = "background", callback = refresh_icons })
+function M.refresh()
+  refresh_icons()
+  M.set_up_highlights(true)
+end
 
-return {
-  get_icon = get_icon,
-  get_icon_colors = get_icon_colors,
-  get_icon_color = get_icon_color,
-  get_icon_cterm_color = get_icon_cterm_color,
-  get_icon_name_by_filetype = get_icon_name_by_filetype,
-  get_icon_by_filetype = get_icon_by_filetype,
-  get_icon_colors_by_filetype = get_icon_colors_by_filetype,
-  get_icon_color_by_filetype = get_icon_color_by_filetype,
-  get_icon_cterm_color_by_filetype = get_icon_cterm_color_by_filetype,
-  set_icon = set_icon,
-  set_default_icon = set_default_icon,
-  get_default_icon = get_default_icon,
-  setup = setup,
-  has_loaded = function()
-    return loaded
-  end,
-  get_icons = function()
-    return icons
-  end,
-  set_up_highlights = set_up_highlights,
-}
+-- Change icon set on background change
+vim.api.nvim_create_autocmd("OptionSet", {
+  pattern = "background",
+  callback = M.refresh,
+})
+
+return M
