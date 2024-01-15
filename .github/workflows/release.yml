@@ -1,0 +1,22 @@
+name: "release"
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  luarocks-upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: LuaRocks Upload
+        uses: nvim-neorocks/luarocks-tag-release@v5
+        env:
+          LUAROCKS_API_KEY: ${{ secrets.LUAROCKS_API_KEY }}
+        with:
+          detailed_description: |
+            Coloured file icons for neovim. Dark and light background variants.
+          labels: |
+            neovim
+            plugin
