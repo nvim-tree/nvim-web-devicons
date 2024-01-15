@@ -5,6 +5,8 @@ on:
     tags:
       - 'v*'
 
+  workflow_dispatch:
+
 jobs:
   luarocks-upload:
     runs-on: ubuntu-latest
