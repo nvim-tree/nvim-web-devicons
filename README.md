@@ -26,6 +26,8 @@ or with [packer.nvim](https://github.com/wbthomason/packer.nvim)
 use 'nvim-tree/nvim-web-devicons'
 ```
 
+[![LuaRocks](https://img.shields.io/luarocks/v/nvim-tree/nvim-web-devicons?logo=lua&color=purple)](https://luarocks.org/modules/nvim-tree/nvim-web-devicons)
+
 ## Usage
 
 ### Variants
