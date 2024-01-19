@@ -323,7 +323,31 @@ local icons_by_filename = {
     cterm_color = "52",
     name = "Rakefile",
   },
+  ["ReadMe"] = {
+    icon = "󰋼",
+    color = "#701516",
+    cterm_color = "52",
+    name = "Readme",
+  },
+  ["README"] = {
+    icon = "󰋼",
+    color = "#701516",
+    cterm_color = "52",
+    name = "Readme",
+  },
   ["README.md"] = {
+    icon = "󰋼",
+    color = "#701516",
+    cterm_color = "52",
+    name = "Readme",
+  },
+  ["ReadMe.rst"] = {
+    icon = "󰋼",
+    color = "#701516",
+    cterm_color = "52",
+    name = "Readme",
+  },
+  ["README.rst"] = {
     icon = "󰋼",
     color = "#701516",
     cterm_color = "52",
@@ -336,12 +360,6 @@ local icons_by_filename = {
     name = "Readme",
   },
   ["ReadMe.txt"] = {
-    icon = "󰋼",
-    color = "#701516",
-    cterm_color = "52",
-    name = "Readme",
-  },
-  ["ReadMe.md"] = {
     icon = "󰋼",
     color = "#701516",
     cterm_color = "52",
