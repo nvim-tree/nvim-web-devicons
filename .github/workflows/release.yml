@@ -1,0 +1,28 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+  workflow_dispatch:
+
+jobs:
+  luarocks-upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: LuaRocks Upload
+        uses: nvim-neorocks/luarocks-tag-release@v5
+        env:
+          LUAROCKS_API_KEY: ${{ secrets.LUAROCKS_API_KEY }}
+        with:
+          summary: Nerd Font icons for neovim
+          detailed_description: |
+            Coloured Nerd Font file icons for neovim.
+
+            Dark and light background variants.
+
+            https://www.nerdfonts.com/
+          license: MIT
+          labels: neovim
