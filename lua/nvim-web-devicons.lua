@@ -105,6 +105,7 @@ local filetypes = {
   ["go"] = "go",
   ["godot"] = "godot",
   ["graphql"] = "graphql",
+  ["groovy"] = "groovy",
   ["gql"] = "gql",
   ["gruntfile"] = "gruntfile",
   ["gulpfile"] = "gulpfile",

@@ -251,6 +251,12 @@ local icons_by_filename = {
     cterm_color = "66",
     name = "Makefile",
   },
+  ["groovy"] = {
+    icon = "",
+    color = "#4a687c",
+    cterm_color = "24",
+    name = "Groovy",
+  },
   ["gruntfile"] = {
     icon = "",
     color = "#e37933",
