@@ -341,6 +341,12 @@ local icons_by_filename = {
     cterm_color = "31",
     name = "TailwindConfig",
   },
+  ["tailwind.config.mjs"] = {
+    icon = "󱏿",
+    color = "#158197",
+    cterm_color = "31",
+    name = "TailwindConfig",
+  },
   ["tailwind.config.ts"] = {
     icon = "󱏿",
     color = "#158197",
