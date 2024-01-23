@@ -114,6 +114,7 @@ local filetypes = {
   ["heex"] = "heex",
   ["html"] = "html",
   ["ico"] = "ico",
+  ["ino"] = "ino",
   ["idlang"] = "pro",
   ["import"] = "import",
   ["java"] = "java",
