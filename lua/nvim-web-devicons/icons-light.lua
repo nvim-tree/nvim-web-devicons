@@ -976,8 +976,8 @@ local icons_by_file_extension = {
   },
   ["ino"] = {
     icon = "",
-    color = "#4797a1",
-    cterm_color = "65",
+    color = "#397981",
+    cterm_color = "30",
     name = "arduino",
   },
   ["java"] = {
