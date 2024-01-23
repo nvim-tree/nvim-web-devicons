@@ -115,6 +115,7 @@ local filetypes = {
   ["html"] = "html",
   ["ico"] = "ico",
   ["idlang"] = "pro",
+  ["ino"] = "ino",
   ["import"] = "import",
   ["java"] = "java",
   ["javascript"] = "js",
