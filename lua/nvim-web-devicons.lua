@@ -66,6 +66,7 @@ local filetypes = {
   ["cson"] = "cson",
   ["css"] = "css",
   ["csv"] = "csv",
+  ["cuda"] = "cu",
   ["d"] = "d",
   ["dart"] = "dart",
   ["desktop"] = "desktop",

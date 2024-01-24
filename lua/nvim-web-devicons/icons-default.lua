@@ -626,6 +626,18 @@ local icons_by_file_extension = {
     cterm_color = "74",
     name = "Cts",
   },
+  ["cu"] = {
+    icon = "",
+    color = "#89e051",
+    cterm_color = "113",
+    name = "cuda",
+  },
+  ["cuh"] = {
+    icon = "",
+    color = "#a074c4",
+    cterm_color = "140",
+    name = "cudah",
+  },
   ["cxx"] = {
     icon = "",
     color = "#519aba",
