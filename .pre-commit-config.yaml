@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/johnnymorganz/stylua
-    rev: v0.19.1
+    rev: v0.20.0
     hooks:
       - id: stylua-github
         fail_fast: true
