@@ -251,6 +251,12 @@ local icons_by_filename = {
     cterm_color = "59",
     name = "Makefile",
   },
+  ["groovy"] = {
+    icon = "",
+    color = "#384e5d",
+    cterm_color = "239",
+    name = "Groovy",
+  },
   ["gruntfile"] = {
     icon = "",
     color = "#975122",
@@ -627,7 +633,7 @@ local icons_by_file_extension = {
     name = "Css",
   },
   ["csv"] = {
-    icon = "󰈙",
+    icon = "",
     color = "#447028",
     cterm_color = "22",
     name = "Csv",
@@ -637,6 +643,18 @@ local icons_by_file_extension = {
     color = "#36677c",
     cterm_color = "24",
     name = "Cts",
+  },
+  ["cu"] = {
+    icon = "",
+    color = "#447028",
+    cterm_color = "22",
+    name = "cuda",
+  },
+  ["cuh"] = {
+    icon = "",
+    color = "#6b4d83",
+    cterm_color = "96",
+    name = "cudah",
   },
   ["cxx"] = {
     icon = "",
@@ -985,6 +1003,12 @@ local icons_by_file_extension = {
     color = "#526064",
     cterm_color = "59",
     name = "Ini",
+  },
+  ["ino"] = {
+    icon = "",
+    color = "#397981",
+    cterm_color = "30",
+    name = "arduino",
   },
   ["java"] = {
     icon = "",
