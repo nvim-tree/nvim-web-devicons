@@ -992,6 +992,12 @@ local icons_by_file_extension = {
     cterm_color = "66",
     name = "Ini",
   },
+  ["ino"] = {
+    icon = "",
+    color = "#56b6c2",
+    cterm_color = "65",
+    name = "arduino",
+  },
   ["java"] = {
     icon = "",
     color = "#cc3e44",
