@@ -3,6 +3,13 @@ local M = {}
 -- When adding new icons, remember to add an entry to the `filetypes` table, if applicable.
 local icons, icons_by_filename, icons_by_file_extension, icons_by_operating_system
 
+local default_icon = {
+  icon = "",
+  color = "#6d8086",
+  cterm_color = "66",
+  name = "Default",
+}
+
 function M.get_icons()
   return icons
 end
@@ -28,6 +35,7 @@ local function refresh_icons()
   icons_by_operating_system = theme.icons_by_operating_system
   icons = vim.tbl_extend("keep", {}, icons_by_filename, icons_by_file_extension, icons_by_operating_system)
   icons = vim.tbl_extend("force", icons, global_opts.override)
+  icons[1] = default_icon
 end
 
 -- Map of filetypes -> icon names
@@ -58,6 +66,7 @@ local filetypes = {
   ["cson"] = "cson",
   ["css"] = "css",
   ["csv"] = "csv",
+  ["cuda"] = "cu",
   ["d"] = "d",
   ["dart"] = "dart",
   ["desktop"] = "desktop",
@@ -97,6 +106,7 @@ local filetypes = {
   ["go"] = "go",
   ["godot"] = "godot",
   ["graphql"] = "graphql",
+  ["groovy"] = "groovy",
   ["gql"] = "gql",
   ["gruntfile"] = "gruntfile",
   ["gulpfile"] = "gulpfile",
@@ -107,6 +117,7 @@ local filetypes = {
   ["html"] = "html",
   ["ico"] = "ico",
   ["idlang"] = "pro",
+  ["ino"] = "ino",
   ["import"] = "import",
   ["java"] = "java",
   ["javascript"] = "js",
@@ -230,13 +241,6 @@ local filetypes = {
   ["zsh"] = "zsh",
 }
 
-local default_icon = {
-  icon = "",
-  color = "#6d8086",
-  cterm_color = "66",
-  name = "Default",
-}
-
 local function get_highlight_name(data)
   if not global_opts.color_icons then
     data = default_icon
@@ -352,7 +356,7 @@ function M.setup(opts)
     icons_by_file_extension = vim.tbl_extend("force", icons_by_file_extension, user_file_ext_icons)
   end
 
-  table.insert(icons, default_icon)
+  icons[1] = default_icon
 
   M.set_up_highlights()
 
