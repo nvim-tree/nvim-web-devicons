@@ -938,6 +938,12 @@ local icons_by_file_extension = {
     cterm_color = "236",
     name = "Haml",
   },
+  ["hx"] = {
+    icon = "",
+    color = "#9c5715",
+    cterm_color = "130",
+    name = "Haxe",
+  },
   ["hbs"] = {
     icon = "",
     color = "#a04f1d",
