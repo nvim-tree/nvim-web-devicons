@@ -621,7 +621,7 @@ local icons_by_file_extension = {
     name = "Css",
   },
   ["csv"] = {
-    icon = "󰈙",
+    icon = "",
     color = "#447028",
     cterm_color = "22",
     name = "Csv",
