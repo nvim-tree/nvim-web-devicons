@@ -251,6 +251,12 @@ local icons_by_filename = {
     cterm_color = "66",
     name = "Makefile",
   },
+  ["groovy"] = {
+    icon = "",
+    color = "#4a687c",
+    cterm_color = "24",
+    name = "Groovy",
+  },
   ["gruntfile"] = {
     icon = "",
     color = "#e37933",
@@ -378,6 +384,18 @@ local icons_by_filename = {
     name = "SvelteConfig",
   },
   ["tailwind.config.js"] = {
+    icon = "󱏿",
+    color = "#20c2e3",
+    cterm_color = "45",
+    name = "TailwindConfig",
+  },
+  ["tailwind.config.mjs"] = {
+    icon = "󱏿",
+    color = "#20c2e3",
+    cterm_color = "45",
+    name = "TailwindConfig",
+  },
+  ["tailwind.config.ts"] = {
     icon = "󱏿",
     color = "#20c2e3",
     cterm_color = "45",
@@ -657,7 +675,7 @@ local icons_by_file_extension = {
     name = "Css",
   },
   ["csv"] = {
-    icon = "󰈙",
+    icon = "",
     color = "#89e051",
     cterm_color = "113",
     name = "Csv",
@@ -667,6 +685,18 @@ local icons_by_file_extension = {
     color = "#519aba",
     cterm_color = "74",
     name = "Cts",
+  },
+  ["cu"] = {
+    icon = "",
+    color = "#89e051",
+    cterm_color = "113",
+    name = "cuda",
+  },
+  ["cuh"] = {
+    icon = "",
+    color = "#a074c4",
+    cterm_color = "140",
+    name = "cudah",
   },
   ["cxx"] = {
     icon = "",
@@ -1015,6 +1045,12 @@ local icons_by_file_extension = {
     color = "#6d8086",
     cterm_color = "66",
     name = "Ini",
+  },
+  ["ino"] = {
+    icon = "",
+    color = "#56b6c2",
+    cterm_color = "65",
+    name = "arduino",
   },
   ["java"] = {
     icon = "",
