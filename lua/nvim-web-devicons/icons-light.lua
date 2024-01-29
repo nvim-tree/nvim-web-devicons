@@ -251,6 +251,12 @@ local icons_by_filename = {
     cterm_color = "59",
     name = "Makefile",
   },
+  ["groovy"] = {
+    icon = "",
+    color = "#384e5d",
+    cterm_color = "239",
+    name = "Groovy",
+  },
   ["gruntfile"] = {
     icon = "",
     color = "#975122",
@@ -615,7 +621,7 @@ local icons_by_file_extension = {
     name = "Css",
   },
   ["csv"] = {
-    icon = "󰈙",
+    icon = "",
     color = "#447028",
     cterm_color = "22",
     name = "Csv",
