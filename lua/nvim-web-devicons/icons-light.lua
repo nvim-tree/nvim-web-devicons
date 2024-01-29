@@ -500,6 +500,12 @@ local icons_by_file_extension = {
     cterm_color = "125",
     name = "CPlusPlus",
   },
+  ["ccm"] = {
+    icon = "",
+    color = "#a23253",
+    cterm_color = "125",
+    name = "CPlusPlusModule",
+  },
   ["cfg"] = {
     icon = "",
     color = "#2f2f2f",
@@ -584,6 +590,12 @@ local icons_by_file_extension = {
     cterm_color = "24",
     name = "Cpp",
   },
+  ["cppm"] = {
+    icon = "",
+    color = "#36677c",
+    cterm_color = "24",
+    name = "Cppm",
+  },
   ["cpy"] = {
     icon = "⚙",
     color = "#005ca5",
@@ -661,6 +673,12 @@ local icons_by_file_extension = {
     color = "#36677c",
     cterm_color = "24",
     name = "Cxx",
+  },
+  ["cxxm"] = {
+    icon = "",
+    color = "#36677c",
+    cterm_color = "24",
+    name = "Cxxm",
   },
   ["d"] = {
     icon = "",
@@ -992,6 +1010,12 @@ local icons_by_file_extension = {
     cterm_color = "96",
     name = "Hxx",
   },
+  ["ixx"] = {
+    icon = "",
+    color = "#36677c",
+    cterm_color = "24",
+    name = "Ixx",
+  },
   ["ico"] = {
     icon = "",
     color = "#666620",
@@ -1147,6 +1171,12 @@ local icons_by_file_extension = {
     color = "#007abf",
     cterm_color = "32",
     name = "Luau",
+  },
+  ["mpp"] = {
+    icon = "",
+    color = "#36677c",
+    cterm_color = "24",
+    name = "Mpp",
   },
   ["m4a"] = {
     icon = "",
