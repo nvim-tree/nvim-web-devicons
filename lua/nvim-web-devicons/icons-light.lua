@@ -634,14 +634,14 @@ local icons_by_file_extension = {
   },
   ["cu"] = {
     icon = "",
-    color = "#89e051",
-    cterm_color = "113",
+    color = "#447028",
+    cterm_color = "22",
     name = "cuda",
   },
   ["cuh"] = {
     icon = "",
-    color = "#a074c4",
-    cterm_color = "140",
+    color = "#6b4d83",
+    cterm_color = "96",
     name = "cudah",
   },
   ["cxx"] = {
