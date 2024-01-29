@@ -500,6 +500,12 @@ local icons_by_file_extension = {
     cterm_color = "204",
     name = "CPlusPlus",
   },
+  ["ccm"] = {
+    icon = "",
+    color = "#f34b7d",
+    cterm_color = "204",
+    name = "CPlusPlusModule",
+  },
   ["cfg"] = {
     icon = "",
     color = "#ECECEC",
@@ -584,6 +590,12 @@ local icons_by_file_extension = {
     cterm_color = "74",
     name = "Cpp",
   },
+  ["cppm"] = {
+    icon = "",
+    color = "#519aba",
+    cterm_color = "74",
+    name = "Cppm",
+  },
   ["cpy"] = {
     icon = "⚙",
     color = "#005ca5",
@@ -661,6 +673,12 @@ local icons_by_file_extension = {
     color = "#519aba",
     cterm_color = "74",
     name = "Cxx",
+  },
+  ["cxxm"] = {
+    icon = "",
+    color = "#519aba",
+    cterm_color = "74",
+    name = "Cxxm",
   },
   ["d"] = {
     icon = "",
@@ -986,6 +1004,12 @@ local icons_by_file_extension = {
     cterm_color = "140",
     name = "Hxx",
   },
+  ["ixx"] = {
+    icon = "",
+    color = "#519aba",
+    cterm_color = "74",
+    name = "Ixx",
+  },
   ["ico"] = {
     icon = "",
     color = "#cbcb41",
@@ -1007,7 +1031,7 @@ local icons_by_file_extension = {
   ["ino"] = {
     icon = "",
     color = "#56b6c2",
-    cterm_color = "65",
+    cterm_color = "73",
     name = "arduino",
   },
   ["java"] = {
@@ -1141,6 +1165,12 @@ local icons_by_file_extension = {
     color = "#00a2ff",
     cterm_color = "75",
     name = "Luau",
+  },
+  ["mpp"] = {
+    icon = "",
+    color = "#519aba",
+    cterm_color = "74",
+    name = "Mpp",
   },
   ["m4a"] = {
     icon = "",
