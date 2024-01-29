@@ -920,6 +920,12 @@ local icons_by_file_extension = {
     cterm_color = "255",
     name = "Haml",
   },
+  ["hx"] = {
+    icon = "",
+    color = "#ea8220",
+    cterm_color = "208",
+    name = "Haxe",
+  },
   ["hbs"] = {
     icon = "",
     color = "#f0772b",
@@ -1007,7 +1013,7 @@ local icons_by_file_extension = {
   ["ino"] = {
     icon = "",
     color = "#56b6c2",
-    cterm_color = "65",
+    cterm_color = "73",
     name = "arduino",
   },
   ["java"] = {
