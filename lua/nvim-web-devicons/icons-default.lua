@@ -923,7 +923,7 @@ local icons_by_file_extension = {
   ["haxe"] = {
     icon = "",
     color = "#ea8220",
-    cterm_color = "144",
+    cterm_color = "208",
     name = "Hx",
   },
   ["hbs"] = {
@@ -1013,7 +1013,7 @@ local icons_by_file_extension = {
   ["ino"] = {
     icon = "",
     color = "#56b6c2",
-    cterm_color = "65",
+    cterm_color = "73",
     name = "arduino",
   },
   ["java"] = {
