@@ -920,11 +920,11 @@ local icons_by_file_extension = {
     cterm_color = "255",
     name = "Haml",
   },
-  ["haxe"] = {
+  ["hx"] = {
     icon = "",
     color = "#ea8220",
     cterm_color = "208",
-    name = "Hx",
+    name = "Haxe",
   },
   ["hbs"] = {
     icon = "",
