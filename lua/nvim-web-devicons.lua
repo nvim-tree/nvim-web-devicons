@@ -111,6 +111,7 @@ local filetypes = {
   ["gruntfile"] = "gruntfile",
   ["gulpfile"] = "gulpfile",
   ["haml"] = "haml",
+  ["haxe"] = "hx",
   ["haskell"] = "hs",
   ["hbs"] = "hbs",
   ["heex"] = "heex",
