@@ -120,6 +120,7 @@ local filetypes = {
   ["idlang"] = "pro",
   ["ino"] = "ino",
   ["import"] = "import",
+  ["ipynb"] = "ipynb",
   ["java"] = "java",
   ["javascript"] = "js",
   ["javascript.jsx"] = "jsx",

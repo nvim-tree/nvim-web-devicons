@@ -1040,6 +1040,12 @@ local icons_by_file_extension = {
     cterm_color = "73",
     name = "arduino",
   },
+  ["ipynb"] = {
+    icon = "",
+    color = "#51a0cf",
+    cterm_color = "74",
+    name = "Notebook",
+  },
   ["java"] = {
     icon = "",
     color = "#cc3e44",
