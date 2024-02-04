@@ -1041,7 +1041,7 @@ local icons_by_file_extension = {
     name = "arduino",
   },
   ["ipynb"] = {
-    icon = "",
+    icon = "",
     color = "#51a0cf",
     cterm_color = "74",
     name = "Notebook",
