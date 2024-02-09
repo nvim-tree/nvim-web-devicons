@@ -389,6 +389,12 @@ local icons_by_filename = {
     cterm_color = "22",
     name = "BazelWorkspace",
   },
+  ["build.zig.zon"] = {
+    icon = "",
+    color = "#7b4d0e",
+    cterm_color = "94",
+    name = "Zig Object Notation",
+  },
 }
 
 local icons_by_file_extension = {
