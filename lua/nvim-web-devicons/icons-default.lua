@@ -393,7 +393,7 @@ local icons_by_filename = {
     icon = "",
     color = "#f69a1b",
     cterm_color = "172",
-    name = "Zig Object Notation",
+    name = "ZigObjectNotation",
   },
 }
 
