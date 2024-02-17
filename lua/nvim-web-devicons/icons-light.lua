@@ -1323,7 +1323,7 @@ local icons_by_file_extension = {
     name = "Nswag",
   },
   ["nu"] = {
-    icon = "",
+    icon = ">",
     color = "#276f4e",
     cterm_color = "29",
     name = "Nushell",
