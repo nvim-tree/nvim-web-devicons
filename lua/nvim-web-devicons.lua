@@ -157,6 +157,7 @@ local filetypes = {
   ["mustache"] = "mustache",
   ["nim"] = "nim",
   ["nix"] = "nix",
+  ["nu"] = "nu",
   ["node"] = "node_modules",
   ["ocaml"] = "ml",
   ["ogg"] = "ogg",

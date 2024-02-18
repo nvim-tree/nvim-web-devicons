@@ -1322,6 +1322,12 @@ local icons_by_file_extension = {
     cterm_color = "28",
     name = "Nswag",
   },
+  ["nu"] = {
+    icon = ">",
+    color = "#276f4e",
+    cterm_color = "29",
+    name = "Nushell",
+  },
   ["ogg"] = {
     icon = "",
     color = "#336c78",
