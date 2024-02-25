@@ -369,6 +369,18 @@ function M.setup(opts)
     group = vim.api.nvim_create_augroup("NvimWebDevicons", { clear = true }),
     callback = M.set_up_highlights,
   })
+
+  -- highlight test command
+  vim.api.nvim_create_user_command("NvimWebDeviconsHiTest", function()
+    require "nvim-web-devicons.hi-test"(
+      default_icon,
+      icons_by_filename,
+      icons_by_file_extension,
+      icons_by_operating_system
+    )
+  end, {
+    desc = "nvim-web-devicons: highlight test",
+  })
 end
 
 function M.get_default_icon()
