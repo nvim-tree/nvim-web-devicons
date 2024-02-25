@@ -30,6 +30,10 @@ use 'nvim-tree/nvim-web-devicons'
 
 ## Usage
 
+### Viewing
+
+Run `:NvimWebDeviconsHiTest` to see all icons and their highlighting.
+
 ### Variants
 
 Light or dark color variants of the icons depend on `&background`.
