@@ -173,6 +173,12 @@ local icons_by_filename = {
     cterm_color = "22",
     name = "BazelBuild",
   },
+  ["checkhealth"] = {
+    icon = "󰓙",
+    color = "#3a5a7e",
+    cterm_color = "24",
+    name = "Checkhealth",
+  },
   ["cmakelists.txt"] = {
     icon = "",
     color = "#526064",
