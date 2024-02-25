@@ -88,6 +88,13 @@ local function render_icons(bufnr, l, icons, header)
   return l
 end
 
+---Create a buffer similar to :ru syntax/hitest.vim displaying each set icons
+---Icon, name, <tag>, concrete highlight definition
+---tag and header follows param
+---@param default_icon table no tag "Default"
+---@param icons_by_filename table[] filename "By File Name"
+---@param icons_by_file_extension table[] extension "By File Extension"
+---@param icons_by_operating_system table[] os "By Operating System"
 return function(default_icon, icons_by_filename, icons_by_file_extension, icons_by_operating_system)
   -- create a buffer
   local bufnr = vim.api.nvim_create_buf(false, true)
@@ -97,7 +104,7 @@ return function(default_icon, icons_by_filename, icons_by_file_extension, icons_
   l = render_icons(bufnr, l, { default_icon }, "Default")
   l = render_icons(bufnr, l, icons_by_filename, "By File Name")
   l = render_icons(bufnr, l, icons_by_file_extension, "By File Extension")
-  l = render_icons(bufnr, l, icons_by_operating_system, "By Operating System")
+  render_icons(bufnr, l, icons_by_operating_system, "By Operating System")
 
   -- finalise and focus the buffer
   vim.api.nvim_buf_set_option(bufnr, "modifiable", false)
