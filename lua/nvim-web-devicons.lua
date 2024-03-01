@@ -510,6 +510,10 @@ function M.set_icon(user_icons)
   end
 end
 
+function M.set_icon_by_filetype(user_filetypes)
+  filetypes = vim.tbl_extend("force", filetypes, user_filetypes or {})
+end
+
 function M.set_default_icon(icon, color, cterm_color)
   default_icon.icon = icon
   default_icon.color = color
