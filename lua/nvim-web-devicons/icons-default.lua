@@ -31,8 +31,8 @@ local icons_by_filename = {
   },
   [".editorconfig"] = {
     icon = "",
-    color = "#ffffff",
-    cterm_color = "231",
+    color = "#fff2f2",
+    cterm_color = "255",
     name = "EditorConfig",
   },
   [".env"] = {
@@ -1174,8 +1174,8 @@ local icons_by_file_extension = {
   },
   ["log"] = {
     icon = "󰌱",
-    color = "#ffffff",
-    cterm_color = "231",
+    color = "#dddddd",
+    cterm_color = "253",
     name = "Log",
   },
   ["lua"] = {
@@ -1216,8 +1216,8 @@ local icons_by_file_extension = {
   },
   ["markdown"] = {
     icon = "",
-    color = "#519aba",
-    cterm_color = "74",
+    color = "#dddddd",
+    cterm_color = "253",
     name = "Markdown",
   },
   ["material"] = {
@@ -1228,8 +1228,8 @@ local icons_by_file_extension = {
   },
   ["md"] = {
     icon = "",
-    color = "#ffffff",
-    cterm_color = "231",
+    color = "#dddddd",
+    cterm_color = "253",
     name = "Md",
   },
   ["mdx"] = {
@@ -1414,8 +1414,8 @@ local icons_by_file_extension = {
   },
   ["prisma"] = {
     icon = "",
-    color = "#ffffff",
-    cterm_color = "231",
+    color = "#5a67d8",
+    cterm_color = "62",
     name = "Prisma",
   },
   ["pro"] = {
@@ -1804,8 +1804,8 @@ local icons_by_file_extension = {
   },
   ["toml"] = {
     icon = "",
-    color = "#ffffff",
-    cterm_color = "231",
+    color = "#9c4221",
+    cterm_color = "124",
     name = "Toml",
   },
   ["tres"] = {
@@ -2023,14 +2023,14 @@ local icons_by_operating_system = {
   },
   ["linux"] = {
     icon = "",
-    color = "#000000",
-    cterm_color = "16",
+    color = "#fdfdfb",
+    cterm_color = "231",
     name = "Linux",
   },
   ["alma"] = {
     icon = "",
-    color = "#000000",
-    cterm_color = "16",
+    color = "#ff4649",
+    cterm_color = "203",
     name = "Almalinux",
   },
   ["alpine"] = {
@@ -2041,8 +2041,8 @@ local icons_by_operating_system = {
   },
   ["aosc"] = {
     icon = "",
-    color = "#000000",
-    cterm_color = "16",
+    color = "#c00000",
+    cterm_color = "124",
     name = "AOSC",
   },
   ["arch"] = {
@@ -2059,8 +2059,8 @@ local icons_by_operating_system = {
   },
   ["budgie"] = {
     icon = "",
-    color = "#ffffff",
-    cterm_color = "231",
+    color = "#5195e3",
+    cterm_color = "68",
     name = "Budgie",
   },
   ["centos"] = {
@@ -2131,8 +2131,8 @@ local icons_by_operating_system = {
   },
   ["kali"] = {
     icon = "",
-    color = "#ffffff",
-    cterm_color = "231",
+    color = "#2777ff",
+    cterm_color = "69",
     name = "Kali",
   },
   ["mint"] = {
@@ -2161,8 +2161,8 @@ local icons_by_operating_system = {
   },
   ["openbsd"] = {
     icon = "",
-    color = "#000000",
-    cterm_color = "16",
+    color = "#f2ca30",
+    cterm_color = "220",
     name = "OpenBSD",
   },
   ["opensuse"] = {
@@ -2173,8 +2173,8 @@ local icons_by_operating_system = {
   },
   ["parrot"] = {
     icon = "",
-    color = "#000000",
-    cterm_color = "16",
+    color = "#54deff",
+    cterm_color = "45",
     name = "Parrot",
   },
   ["pop_os"] = {
