@@ -31,7 +31,7 @@ local icons_by_filename = {
   },
   [".editorconfig"] = {
     icon = "",
-    color = "#333333",
+    color = "#333030",
     cterm_color = "236",
     name = "EditorConfig",
   },
@@ -1174,8 +1174,8 @@ local icons_by_file_extension = {
   },
   ["log"] = {
     icon = "󰌱",
-    color = "#333333",
-    cterm_color = "236",
+    color = "#4a4a4a",
+    cterm_color = "239",
     name = "Log",
   },
   ["lua"] = {
@@ -1216,8 +1216,8 @@ local icons_by_file_extension = {
   },
   ["markdown"] = {
     icon = "",
-    color = "#36677c",
-    cterm_color = "24",
+    color = "#4a4a4a",
+    cterm_color = "239",
     name = "Markdown",
   },
   ["material"] = {
@@ -1228,8 +1228,8 @@ local icons_by_file_extension = {
   },
   ["md"] = {
     icon = "",
-    color = "#333333",
-    cterm_color = "236",
+    color = "#4a4a4a",
+    cterm_color = "239",
     name = "Md",
   },
   ["mdx"] = {
@@ -1414,8 +1414,8 @@ local icons_by_file_extension = {
   },
   ["prisma"] = {
     icon = "",
-    color = "#333333",
-    cterm_color = "236",
+    color = "#444da2",
+    cterm_color = "61",
     name = "Prisma",
   },
   ["pro"] = {
@@ -1804,8 +1804,8 @@ local icons_by_file_extension = {
   },
   ["toml"] = {
     icon = "",
-    color = "#333333",
-    cterm_color = "236",
+    color = "#753219",
+    cterm_color = "88",
     name = "Toml",
   },
   ["tres"] = {
