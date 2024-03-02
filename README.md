@@ -166,7 +166,7 @@ You can override the default icon with the `set_default_icon(icon, color, cterm_
 require("nvim-web-devicons").set_default_icon('', '#6d8086', 65)
 ```
 
-### Getting icons by filetype
+### Getting and setting icons by filetype
 
 You can get the icon and colors associated with a filetype using the `by_filetype` functions:
 
@@ -175,6 +175,12 @@ require("nvim-web-devicons").get_icon_by_filetype(filetype, opts)
 require("nvim-web-devicons").get_icon_colors_by_filetype(filetype, opts)
 require("nvim-web-devicons").get_icon_color_by_filetype(filetype, opts)
 require("nvim-web-devicons").get_icon_cterm_color_by_filetype(filetype, opts)
+```
+
+or set the icon to use for a filetype with:
+
+```lua
+require("nvim-web-devicons").set_icon_by_filetype { cpp = "c", pandoc = "md", }
 ```
 
 These functions are the same as their counterparts without the `_by_filetype` suffix, but they take a filetype instead of a name/extension.
