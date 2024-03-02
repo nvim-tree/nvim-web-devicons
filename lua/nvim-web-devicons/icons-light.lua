@@ -2023,14 +2023,14 @@ local icons_by_operating_system = {
   },
   ["linux"] = {
     icon = "",
-    color = "#000000",
-    cterm_color = "16",
+    color = "#333332",
+    cterm_color = "236",
     name = "Linux",
   },
   ["alma"] = {
     icon = "",
-    color = "#000000",
-    cterm_color = "16",
+    color = "#bf3437",
+    cterm_color = "160",
     name = "Almalinux",
   },
   ["alpine"] = {
@@ -2041,8 +2041,8 @@ local icons_by_operating_system = {
   },
   ["aosc"] = {
     icon = "",
-    color = "#000000",
-    cterm_color = "16",
+    color = "#c00000",
+    cterm_color = "124",
     name = "AOSC",
   },
   ["arch"] = {
@@ -2059,8 +2059,8 @@ local icons_by_operating_system = {
   },
   ["budgie"] = {
     icon = "",
-    color = "#333333",
-    cterm_color = "236",
+    color = "#366397",
+    cterm_color = "25",
     name = "Budgie",
   },
   ["centos"] = {
@@ -2131,8 +2131,8 @@ local icons_by_operating_system = {
   },
   ["kali"] = {
     icon = "",
-    color = "#333333",
-    cterm_color = "236",
+    color = "#1d59bf",
+    cterm_color = "26",
     name = "Kali",
   },
   ["mint"] = {
@@ -2161,8 +2161,8 @@ local icons_by_operating_system = {
   },
   ["openbsd"] = {
     icon = "",
-    color = "#000000",
-    cterm_color = "16",
+    color = "#514310",
+    cterm_color = "58",
     name = "OpenBSD",
   },
   ["opensuse"] = {
@@ -2173,8 +2173,8 @@ local icons_by_operating_system = {
   },
   ["parrot"] = {
     icon = "",
-    color = "#000000",
-    cterm_color = "16",
+    color = "#2a6f80",
+    cterm_color = "23",
     name = "Parrot",
   },
   ["pop_os"] = {
