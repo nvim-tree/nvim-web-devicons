@@ -293,6 +293,12 @@ local icons_by_filename = {
     cterm_color = "96",
     name = "MixLock",
   },
+  ["mp3"] = {
+    icon = "󰝚",
+    color = "#3c6f98",
+    cterm_color = "24",
+    name = "Mp3"
+  },
   ["node_modules"] = {
     icon = "",
     color = "#ae1d38",
