@@ -297,7 +297,7 @@ local icons_by_filename = {
     icon = "󰝚",
     color = "#00afff",
     cterm_color = "39",
-    name = "Mp3"
+    name = "Mp3",
   },
   ["node_modules"] = {
     icon = "",
