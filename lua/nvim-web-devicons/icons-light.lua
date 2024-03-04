@@ -295,7 +295,7 @@ local icons_by_filename = {
   },
   ["mp3"] = {
     icon = "󰝚",
-    color = "#3c6f98",
+    color = "#0075aa",
     cterm_color = "24",
     name = "Mp3",
   },
