@@ -251,6 +251,12 @@ local icons_by_filename = {
     cterm_color = "58",
     name = "Favicon",
   },
+  ["flac"] = {
+    icon = "󰝚",
+    color = "#005880",
+    cterm_color = "24",
+    name = "FreeLosslessAudioCodec",
+  },
   ["gemfile$"] = {
     icon = "",
     color = "#701516",
