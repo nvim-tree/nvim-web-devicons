@@ -1365,10 +1365,10 @@ local icons_by_file_extension = {
     name = "Nushell",
   },
   ["ogg"] = {
-    icon = "",
-    color = "#66D8EF",
-    cterm_color = "45",
-    name = "Ogg",
+    icon = "󰝚",
+    color = "#0075aa",
+    cterm_color = "24",
+    name = "OggVorbis",
   },
   ["opus"] = {
     icon = "󰈣",
