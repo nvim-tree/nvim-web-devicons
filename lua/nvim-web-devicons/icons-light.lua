@@ -389,6 +389,12 @@ local icons_by_filename = {
     cterm_color = "26",
     name = "Vagrantfile",
   },
+  ["wav"] = {
+    icon = "󰝚",
+    color = "#0075aa",
+    cterm_color = "24",
+    name = "Wav",
+  },
   ["webpack"] = {
     icon = "󰜫",
     color = "#36677c",
