@@ -1371,10 +1371,10 @@ local icons_by_file_extension = {
     name = "OggVorbis",
   },
   ["opus"] = {
-    icon = "󰈣",
-    color = "#F88A02",
-    cterm_color = "208",
-    name = "OPUS",
+    icon = "󰝚",
+    color = "#0075aa",
+    cterm_color = "24",
+    name = "OpusAudioFile",
   },
   ["org"] = {
     icon = "",
