@@ -173,6 +173,12 @@ local icons_by_filename = {
     cterm_color = "24",
     name = "AudioInterchangeFileFormat",
   },
+  ["ape"] = {
+    icon = "󰝚",
+    color = "#0075aa",
+    cterm_color = "24",
+    name = "MonkeysAudio",
+  },
   ["avif"] = {
     icon = "",
     color = "#6b4d83",
