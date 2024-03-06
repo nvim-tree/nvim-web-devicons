@@ -419,6 +419,12 @@ local icons_by_filename = {
     cterm_color = "24",
     name = "Webpack",
   },
+  ["wma"] = {
+    icon = "󰝚",
+    color = "#0075aa",
+    cterm_color = "24",
+    name = "WindowsMediaAudio",
+  },
   ["workspace"] = {
     icon = "",
     color = "#447028",
