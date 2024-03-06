@@ -281,6 +281,12 @@ local icons_by_filename = {
     cterm_color = "58",
     name = "License",
   },
+  ["m4a"] = {
+    icon = "󰝚",
+    color = "#0075aa",
+    cterm_color = "24",
+    name = "M4a",
+  },
   ["makefile"] = {
     icon = "",
     color = "#526064",
