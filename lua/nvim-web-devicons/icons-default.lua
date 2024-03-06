@@ -1,10 +1,4 @@
 local icons_by_filename = {
-  ["aac"] = {
-    icon = "󰝚",
-    color = "#00afff",
-    cterm_color = "39",
-    name = "AdvancedAudioCoding",
-  },
   [".babelrc"] = {
     icon = "",
     color = "#cbcb41",
@@ -160,6 +154,12 @@ local icons_by_filename = {
     color = "#2266ba",
     cterm_color = "25",
     name = "R",
+  },
+  ["aac"] = {
+    icon = "󰝚",
+    color = "#00afff",
+    cterm_color = "39",
+    name = "AdvancedAudioCoding",
   },
   ["avif"] = {
     icon = "",
