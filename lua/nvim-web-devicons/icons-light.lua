@@ -327,7 +327,7 @@ local icons_by_filename = {
     icon = "󰝚",
     color = "#0075aa",
     cterm_color = "24",
-    name = "Mp3",
+    name = "MPEGAudioLayerIII",
   },
   ["node_modules"] = {
     icon = "",
