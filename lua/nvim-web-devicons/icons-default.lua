@@ -161,6 +161,18 @@ local icons_by_filename = {
     cterm_color = "39",
     name = "AdvancedAudioCoding",
   },
+  ["aif"] = {
+    icon = "󰝚",
+    color = "#00afff",
+    cterm_color = "39",
+    name = "AudioInterchangeFileFormat",
+  },
+  ["aiff"] = {
+    icon = "󰝚",
+    color = "#00afff",
+    cterm_color = "39",
+    name = "AudioInterchangeFileFormat",
+  },
   ["avif"] = {
     icon = "",
     color = "#a074c4",
