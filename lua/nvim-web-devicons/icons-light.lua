@@ -1504,8 +1504,8 @@ local icons_by_file_extension = {
   },
   ["openscad"] = {
     icon = "",
-    color = "#f9d72c",
-    cterm_color = "226",
+    color = "#53480f",
+    cterm_color = "58",
     name = "OpenSCAD",
   },
   ["query"] = {
