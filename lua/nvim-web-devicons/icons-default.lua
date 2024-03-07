@@ -156,25 +156,25 @@ local icons_by_filename = {
     name = "R",
   },
   ["aac"] = {
-    icon = "󰝚",
+    icon = "",
     color = "#00afff",
     cterm_color = "39",
     name = "AdvancedAudioCoding",
   },
   ["aif"] = {
-    icon = "󰝚",
+    icon = "",
     color = "#00afff",
     cterm_color = "39",
     name = "AudioInterchangeFileFormat",
   },
   ["aiff"] = {
-    icon = "󰝚",
+    icon = "",
     color = "#00afff",
     cterm_color = "39",
     name = "AudioInterchangeFileFormat",
   },
   ["ape"] = {
-    icon = "󰝚",
+    icon = "",
     color = "#00afff",
     cterm_color = "39",
     name = "MonkeysAudio",
@@ -270,7 +270,7 @@ local icons_by_filename = {
     name = "Favicon",
   },
   ["flac"] = {
-    icon = "󰝚",
+    icon = "",
     color = "#0075aa",
     cterm_color = "24",
     name = "FreeLosslessAudioCodec",
@@ -312,7 +312,7 @@ local icons_by_filename = {
     name = "License",
   },
   ["m4a"] = {
-    icon = "󰝚",
+    icon = "",
     color = "#00afff",
     cterm_color = "39",
     name = "MPEG4",
@@ -330,7 +330,7 @@ local icons_by_filename = {
     name = "MixLock",
   },
   ["mp3"] = {
-    icon = "󰝚",
+    icon = "",
     color = "#00afff",
     cterm_color = "39",
     name = "MPEGAudioLayerIII",
@@ -426,7 +426,7 @@ local icons_by_filename = {
     name = "Vagrantfile",
   },
   ["wav"] = {
-    icon = "󰝚",
+    icon = "",
     color = "#00afff",
     cterm_color = "39",
     name = "WaveformAudioFile",
@@ -438,7 +438,7 @@ local icons_by_filename = {
     name = "Webpack",
   },
   ["wma"] = {
-    icon = "󰝚",
+    icon = "",
     color = "#00afff",
     cterm_color = "39",
     name = "WindowsMediaAudio",
@@ -1389,13 +1389,13 @@ local icons_by_file_extension = {
     name = "Nushell",
   },
   ["ogg"] = {
-    icon = "󰝚",
+    icon = "",
     color = "#0075aa",
     cterm_color = "24",
     name = "OggVorbis",
   },
   ["opus"] = {
-    icon = "󰝚",
+    icon = "",
     color = "#0075aa",
     cterm_color = "24",
     name = "OpusAudioFile",
