@@ -1502,12 +1502,6 @@ local icons_by_file_extension = {
     cterm_color = "39",
     name = "Pyx",
   },
-  ["scad"] = {
-    icon = "",
-    color = "#f9d72c",
-    cterm_color = "226",
-    name = "OpenSCAD",
-  },
   ["query"] = {
     icon = "",
     color = "#90a850",
@@ -1591,6 +1585,12 @@ local icons_by_file_extension = {
     color = "#cc3e44",
     cterm_color = "167",
     name = "sbt",
+  },
+  ["scad"] = {
+    icon = "",
+    color = "#f9d72c",
+    cterm_color = "226",
+    name = "OpenSCAD",
   },
   ["scala"] = {
     icon = "",
