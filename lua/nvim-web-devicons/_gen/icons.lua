@@ -4,11 +4,6 @@ return {
     icon = "",
     os = { "aosc" },
   },
-  Aac = {
-    color = "#66D8EF",
-    extension = { "aac" },
-    icon = "",
-  },
   Ai = {
     color = "#cbcb41",
     extension = { "ai" },
@@ -23,11 +18,6 @@ return {
     color = "#0d597f",
     icon = "",
     os = { "alpine" },
-  },
-  App = {
-    color = "#9F0500",
-    extension = { "app" },
-    icon = "",
   },
   Apple = {
     color = "#A2AAAD",
@@ -44,30 +34,25 @@ return {
     icon = "󰣇",
     os = { "arch" },
   },
+  Arduino = {
+    color = "#56b6c2",
+    extension = { "ino" },
+    icon = "",
+  },
   Artix = {
     color = "#41b4d7",
     icon = "",
     os = { "artix" },
   },
-  Avif = {
-    color = "#a074c4",
-    file = { "avif" },
-    icon = "",
-  },
-  Awk = {
-    color = "#4d5a5e",
-    extension = { "awk" },
-    icon = "",
+  Audio = {
+    color = "#66D8EF",
+    extension = { "aac", "flac", "mp3", "m4a", "ogg", "wav" },
+    icon = "",
   },
   AzureCli = {
     color = "#0078d4",
     extension = { "azcli" },
     icon = "",
-  },
-  Babelrc = {
-    color = "#cbcb41",
-    file = { ".babelrc" },
-    icon = "",
   },
   Backup = {
     color = "#6d8086",
@@ -79,14 +64,9 @@ return {
     extension = { "bash" },
     icon = "",
   },
-  BashProfile = {
+  BashConfig = {
     color = "#89e051",
-    file = { ".bash_profile" },
-    icon = "",
-  },
-  Bashrc = {
-    color = "#89e051",
-    file = { ".bashrc" },
+    file = { ".bash_profile", ".bashrc" },
     icon = "",
   },
   Bat = {
@@ -96,17 +76,8 @@ return {
   },
   Bazel = {
     color = "#89e051",
-    extension = { "bazel" },
-    icon = "",
-  },
-  BazelBuild = {
-    color = "#89e051",
-    file = { "build" },
-    icon = "",
-  },
-  BazelWorkspace = {
-    color = "#89e051",
-    file = { "workspace" },
+    extension = { "bzl", "bazel" },
+    file = { "build", "workspace" },
     icon = "",
   },
   BibTeX = {
@@ -119,11 +90,6 @@ return {
     extension = { "glb" },
     icon = "",
   },
-  Bmp = {
-    color = "#a074c4",
-    extension = { "bmp" },
-    icon = "",
-  },
   Brewfile = {
     color = "#701516",
     file = { "brewfile" },
@@ -134,11 +100,6 @@ return {
     icon = "",
     os = { "budgie" },
   },
-  Bzl = {
-    color = "#89e051",
-    extension = { "bzl" },
-    icon = "",
-  },
   C = {
     color = "#599eff",
     extension = { "c" },
@@ -147,21 +108,12 @@ return {
   CMake = {
     color = "#6d8086",
     extension = { "cmake" },
-    icon = "",
-  },
-  CMakeLists = {
-    color = "#6d8086",
     file = { "cmakelists.txt" },
     icon = "",
   },
   CPlusPlus = {
     color = "#f34b7d",
-    extension = { "c++", "cc" },
-    icon = "",
-  },
-  CPlusPlusModule = {
-    color = "#f34b7d",
-    extension = { "ccm" },
+    extension = { "c++", "cc", "ccm" },
     icon = "",
   },
   CSharpProject = {
@@ -178,11 +130,6 @@ return {
     color = "#75B4FB",
     file = { "checkhealth" },
     icon = "󰓙",
-  },
-  Cjs = {
-    color = "#F1F134",
-    extension = { "cjs" },
-    icon = "󰌞",
   },
   Clojure = {
     color = "#8dc149",
@@ -219,11 +166,6 @@ return {
     extension = { "conf" },
     icon = "",
   },
-  ConfigRu = {
-    color = "#701516",
-    extension = { "config.ru" },
-    icon = "",
-  },
   Configuration = {
     color = "#ECECEC",
     extension = { "cfg" },
@@ -231,17 +173,7 @@ return {
   },
   Cp = {
     color = "#519aba",
-    extension = { "cp" },
-    icon = "",
-  },
-  Cpp = {
-    color = "#519aba",
-    extension = { "cpp" },
-    icon = "",
-  },
-  Cppm = {
-    color = "#519aba",
-    extension = { "cppm" },
+    extension = { "cp", "cpp", "cxx", "cppm", "cxxm", "ixx", "mpp" },
     icon = "",
   },
   Crystal = {
@@ -253,11 +185,6 @@ return {
     color = "#596706",
     extension = { "cs" },
     icon = "󰌛",
-  },
-  Csh = {
-    color = "#4d5a5e",
-    extension = { "csh" },
-    icon = "",
   },
   Cson = {
     color = "#cbcb41",
@@ -274,20 +201,20 @@ return {
     extension = { "csv" },
     icon = "",
   },
-  Cts = {
-    color = "#519aba",
-    extension = { "cts" },
-    icon = "",
+  Cuda = {
+    color = "#89e051",
+    extension = { "cu" },
+    icon = "",
   },
-  Cxx = {
-    color = "#519aba",
-    extension = { "cxx" },
-    icon = "",
+  Cudah = {
+    color = "#a074c4",
+    extension = { "cuh" },
+    icon = "",
   },
-  Cxxm = {
-    color = "#519aba",
-    extension = { "cxxm" },
-    icon = "",
+  Cython = {
+    color = "#5aa7e4",
+    extension = { "pxd", "pxi", "pyx" },
+    icon = "",
   },
   D = {
     color = "#427819",
@@ -301,7 +228,7 @@ return {
   },
   Db = {
     color = "#dad8d8",
-    extension = { "db" },
+    extension = { "db", "dump", "sql", "sqlite", "sqlite3" },
     icon = "",
   },
   Debian = {
@@ -329,29 +256,19 @@ return {
     extension = { "diff" },
     icon = "",
   },
-  Doc = {
-    color = "#185abd",
-    extension = { "doc" },
-    icon = "󰈬",
-  },
   Dockerfile = {
     color = "#458ee6",
     extension = { "Dockerfile" },
     file = {
-      "compose.yaml",
-      "docker-compose.yaml",
       ".dockerignore",
+      "compose.yaml",
       "compose.yml",
-      "dockerfile",
-      "docker-compose.yml",
       "containerfile",
+      "dockerfile",
+      "docker-compose.yaml",
+      "docker-compose.yml",
     },
     icon = "󰡨",
-  },
-  Docx = {
-    color = "#185abd",
-    extension = { "docx" },
-    icon = "󰈬",
   },
   Drools = {
     color = "#ffafaf",
@@ -368,11 +285,6 @@ return {
     file = { ".ds_store" },
     icon = "",
   },
-  Dump = {
-    color = "#dad8d8",
-    extension = { "dump" },
-    icon = "",
-  },
   EditorConfig = {
     color = "#fff2f2",
     file = { ".editorconfig" },
@@ -382,11 +294,6 @@ return {
     color = "#519aba",
     extension = { "edn" },
     icon = "",
-  },
-  Eex = {
-    color = "#a074c4",
-    extension = { "eex" },
-    icon = "",
   },
   Ejs = {
     color = "#cbcb41",
@@ -398,20 +305,10 @@ return {
     icon = "",
     os = { "elementary" },
   },
-  Elf = {
-    color = "#9F0500",
-    extension = { "elf" },
-    icon = "",
-  },
   Elm = {
     color = "#519aba",
     extension = { "elm" },
     icon = "",
-  },
-  EmbeddedOpenTypeFont = {
-    color = "#ECECEC",
-    extension = { "eot" },
-    icon = "",
   },
   Endeavour = {
     color = "#7b3db9",
@@ -435,33 +332,29 @@ return {
   },
   Erl = {
     color = "#B83998",
-    extension = { "erl" },
+    extension = { "erl", "hrl" },
     icon = "",
   },
-  EslintIgnore = {
+  Eslint = {
     color = "#4b32c3",
-    file = { ".eslintignore" },
-    icon = "",
-  },
-  Eslintrc = {
-    color = "#4b32c3",
-    file = { ".eslintrc" },
+    file = { ".eslintignore", ".eslintrc" },
     icon = "",
   },
   Ex = {
     color = "#a074c4",
-    extension = { "ex" },
+    extension = { "ex", "exs", "eex", "leex", "heex" },
+    file = { "mix.lock" },
     icon = "",
+  },
+  Excel = {
+    color = "#207245",
+    extension = { "xls", "xlsx" },
+    icon = "󰈛",
   },
   Exe = {
     color = "#9F0500",
-    extension = { "exe" },
+    extension = { "app", "elf", "exe", "out" },
     icon = "",
-  },
-  Exs = {
-    color = "#a074c4",
-    extension = { "exs" },
-    icon = "",
   },
   Favicon = {
     color = "#cbcb41",
@@ -478,15 +371,10 @@ return {
     extension = { "fnl" },
     icon = "",
   },
-  Fish = {
-    color = "#4d5a5e",
-    extension = { "fish" },
-    icon = "",
-  },
-  Flac = {
-    color = "#66D8EF",
-    extension = { "flac" },
-    icon = "",
+  Font = {
+    color = "#ECECEC",
+    extension = { "eot", "otf", "ttf", "woff", "woff2" },
+    icon = "",
   },
   Fortran = {
     color = "#734f96",
@@ -498,29 +386,9 @@ return {
     icon = "",
     os = { "freebsd" },
   },
-  Fs = {
+  FSharp = {
     color = "#519aba",
-    extension = { "fs" },
-    icon = "",
-  },
-  Fsharp = {
-    color = "#519aba",
-    extension = { "f#" },
-    icon = "",
-  },
-  Fsi = {
-    color = "#519aba",
-    extension = { "fsi" },
-    icon = "",
-  },
-  Fsscript = {
-    color = "#519aba",
-    extension = { "fsscript" },
-    icon = "",
-  },
-  Fsx = {
-    color = "#519aba",
-    extension = { "fsx" },
+    extension = { "fs", "f#", "fsi", "fsscript", "fsx" },
     icon = "",
   },
   GDScript = {
@@ -528,34 +396,14 @@ return {
     extension = { "gd" },
     icon = "",
   },
-  Gemfile = {
-    color = "#701516",
-    file = { "gemfile$" },
-    icon = "",
-  },
-  Gemspec = {
-    color = "#701516",
-    extension = { "gemspec" },
-    icon = "",
-  },
   Gentoo = {
     color = "#b1abce",
     icon = "󰣨",
     os = { "gentoo" },
   },
-  Gif = {
-    color = "#a074c4",
-    extension = { "gif" },
-    icon = "",
-  },
-  GitAttributes = {
+  Git = {
     color = "#41535b",
-    file = { ".gitattributes" },
-    icon = "",
-  },
-  GitCommit = {
-    color = "#41535b",
-    file = { "commit_editmsg" },
+    file = { ".gitattributes", "commit_editmsg", ".gitignore", ".gitmodules" },
     icon = "",
   },
   GitConfig = {
@@ -563,19 +411,9 @@ return {
     file = { ".gitconfig" },
     icon = "",
   },
-  GitIgnore = {
-    color = "#41535b",
-    file = { ".gitignore" },
-    icon = "",
-  },
   GitLogo = {
     color = "#F14C28",
     extension = { "git" },
-    icon = "",
-  },
-  GitModules = {
-    color = "#41535b",
-    file = { ".gitmodules" },
     icon = "",
   },
   GitlabCI = {
@@ -618,14 +456,9 @@ return {
     file = { "gulpfile" },
     icon = "",
   },
-  Gvimrc = {
-    color = "#019833",
-    file = { ".gvimrc", "_gvimrc" },
-    icon = "",
-  },
   H = {
     color = "#a074c4",
-    extension = { "h" },
+    extension = { "h", "hh", "hpp", "hxx" },
     icon = "",
   },
   Haml = {
@@ -643,29 +476,9 @@ return {
     extension = { "hbs" },
     icon = "",
   },
-  Heex = {
-    color = "#a074c4",
-    extension = { "heex" },
-    icon = "",
-  },
-  Hh = {
-    color = "#a074c4",
-    extension = { "hh" },
-    icon = "",
-  },
-  Hpp = {
-    color = "#a074c4",
-    extension = { "hpp" },
-    icon = "",
-  },
-  Hrl = {
-    color = "#B83998",
-    extension = { "hrl" },
-    icon = "",
-  },
   Hs = {
     color = "#a074c4",
-    extension = { "hs" },
+    extension = { "hs", "lhs" },
     icon = "",
   },
   Htm = {
@@ -688,11 +501,6 @@ return {
     extension = { "hurl" },
     icon = "",
   },
-  Hxx = {
-    color = "#a074c4",
-    extension = { "hxx" },
-    icon = "",
-  },
   Ico = {
     color = "#cbcb41",
     extension = { "ico" },
@@ -713,24 +521,14 @@ return {
     extension = { "ini" },
     icon = "",
   },
-  Ixx = {
-    color = "#519aba",
-    extension = { "ixx" },
-    icon = "",
-  },
   Java = {
     color = "#cc3e44",
     extension = { "java" },
     icon = "",
   },
-  JavaScriptReactSpec = {
-    color = "#20c2e3",
-    extension = { "spec.jsx" },
-    icon = "",
-  },
   JavaScriptReactTest = {
     color = "#20c2e3",
-    extension = { "test.jsx" },
+    extension = { "spec.jsx", "test.jsx" },
     icon = "",
   },
   Jl = {
@@ -738,39 +536,15 @@ return {
     extension = { "jl" },
     icon = "",
   },
-  Jpeg = {
-    color = "#a074c4",
-    extension = { "jpeg" },
-    icon = "",
-  },
-  JpegXl = {
-    color = "#a074c4",
-    extension = { "jxl" },
-    icon = "",
-  },
-  Jpg = {
-    color = "#a074c4",
-    extension = { "jpg" },
-    icon = "",
-  },
   Js = {
     color = "#F1F134",
-    extension = { "js" },
+    extension = { "js", "cjs", "mjs" },
     icon = "󰌞",
   },
   Json = {
     color = "#cbcb41",
-    extension = { "json" },
-    icon = "",
-  },
-  Json5 = {
-    color = "#cbcb41",
-    extension = { "json5" },
-    icon = "",
-  },
-  Jsonc = {
-    color = "#cbcb41",
-    extension = { "jsonc" },
+    extension = { "json", "json5", "jsonc" },
+    file = { ".babelrc" },
     icon = "",
   },
   Jsx = {
@@ -785,33 +559,13 @@ return {
   },
   Kotlin = {
     color = "#7F52FF",
-    extension = { "kt" },
+    extension = { "kt", "kts" },
     icon = "",
-  },
-  KotlinScript = {
-    color = "#7F52FF",
-    extension = { "kts" },
-    icon = "",
-  },
-  Ksh = {
-    color = "#4d5a5e",
-    extension = { "ksh" },
-    icon = "",
-  },
-  Leex = {
-    color = "#a074c4",
-    extension = { "leex" },
-    icon = "",
   },
   Less = {
     color = "#563d7c",
     extension = { "less" },
     icon = "",
-  },
-  Lhs = {
-    color = "#a074c4",
-    extension = { "lhs" },
-    icon = "",
   },
   License = {
     color = "#cbcb41",
@@ -854,19 +608,9 @@ return {
     file = { ".luaurc" },
     icon = "",
   },
-  M4A = {
-    color = "#66D8EF",
-    extension = { "m4a" },
-    icon = "",
-  },
-  M4V = {
+  Movie = {
     color = "#FD971F",
-    extension = { "m4v" },
-    icon = "",
-  },
-  MOV = {
-    color = "#FD971F",
-    extension = { "mov" },
+    extension = { "m4v", "mkv", "mov", "mp4", "webm" },
     icon = "",
   },
   Mageia = {
@@ -911,29 +655,9 @@ return {
     icon = "󰌪",
     os = { "mint" },
   },
-  MixLock = {
-    color = "#a074c4",
-    file = { "mix.lock" },
-    icon = "",
-  },
-  Mjs = {
-    color = "#F1F134",
-    extension = { "mjs" },
-    icon = "󰌞",
-  },
-  Mkv = {
-    color = "#FD971F",
-    extension = { "mkv" },
-    icon = "",
-  },
   Ml = {
     color = "#e37933",
-    extension = { "ml" },
-    icon = "",
-  },
-  Mli = {
-    color = "#e37933",
-    extension = { "mli" },
+    extension = { "ml", "mli" },
     icon = "",
   },
   Motoko = {
@@ -941,39 +665,14 @@ return {
     extension = { "mo" },
     icon = "∞",
   },
-  Mp3 = {
-    color = "#66D8EF",
-    extension = { "mp3" },
-    icon = "",
-  },
-  Mp4 = {
-    color = "#FD971F",
-    extension = { "mp4" },
-    icon = "",
-  },
-  Mpp = {
-    color = "#519aba",
-    extension = { "mpp" },
-    icon = "",
-  },
-  Mts = {
-    color = "#519aba",
-    extension = { "mts" },
-    icon = "",
-  },
   Mustache = {
     color = "#e37933",
     extension = { "mustache" },
     icon = "",
   },
-  NPMIgnore = {
+  NPM = {
     color = "#E8274B",
-    file = { ".npmignore" },
-    icon = "",
-  },
-  NPMrc = {
-    color = "#E8274B",
-    file = { ".npmrc" },
+    file = { ".npmignore", ".npmrc" },
     icon = "",
   },
   Nim = {
@@ -1016,11 +715,6 @@ return {
     extension = { "opus" },
     icon = "󰈣",
   },
-  Ogg = {
-    color = "#66D8EF",
-    extension = { "ogg" },
-    icon = "",
-  },
   OpenBSD = {
     color = "#f2ca30",
     icon = "",
@@ -1031,20 +725,15 @@ return {
     extension = { "scad" },
     icon = "",
   },
-  OpenTypeFont = {
-    color = "#ECECEC",
-    extension = { "otf" },
-    icon = "",
+  OpenSUSE = {
+    color = "#6fb424",
+    icon = "",
+    os = { "opensuse" },
   },
   OrgMode = {
     color = "#77AA99",
     extension = { "org" },
     icon = "",
-  },
-  Out = {
-    color = "#9F0500",
-    extension = { "out" },
-    icon = "",
   },
   PackageJson = {
     color = "#e8274b",
@@ -1076,20 +765,15 @@ return {
     extension = { "php" },
     icon = "",
   },
+  Picture = {
+    color = "#a074c4",
+    extension = { "avif", "bmp", "gif", "jpeg", "jxl", "jpg", "png", "webp" },
+    icon = "",
+  },
   Pl = {
     color = "#519aba",
-    extension = { "pl" },
+    extension = { "pl", "pm" },
     icon = "",
-  },
-  Pm = {
-    color = "#519aba",
-    extension = { "pm" },
-    icon = "",
-  },
-  Png = {
-    color = "#a074c4",
-    extension = { "png" },
-    icon = "",
   },
   Pop_OS = {
     color = "#48b9c7",
@@ -1136,59 +820,20 @@ return {
     extension = { "ps1" },
     icon = "󰨊",
   },
-  Psb = {
+  PhotoShop = {
     color = "#519aba",
-    extension = { "psb" },
+    extension = { "psb", "psd" },
     icon = "",
-  },
-  Psd = {
-    color = "#519aba",
-    extension = { "psd" },
-    icon = "",
-  },
-  Pxd = {
-    color = "#5aa7e4",
-    extension = { "pxd" },
-    icon = "",
-  },
-  Pxi = {
-    color = "#5aa7e4",
-    extension = { "pxi" },
-    icon = "",
   },
   Py = {
     color = "#ffbc03",
-    extension = { "py" },
-    icon = "",
-  },
-  ["Py.typed"] = {
-    color = "#ffbc03",
+    extension = { "py", "pyi" },
     file = { "py.typed" },
     icon = "",
   },
-  Pyc = {
+  PyGen = {
     color = "#ffe291",
-    extension = { "pyc" },
-    icon = "",
-  },
-  Pyd = {
-    color = "#ffe291",
-    extension = { "pyd" },
-    icon = "",
-  },
-  Pyi = {
-    color = "#ffbc03",
-    extension = { "pyi" },
-    icon = "",
-  },
-  Pyo = {
-    color = "#ffe291",
-    extension = { "pyo" },
-    icon = "",
-  },
-  Pyx = {
-    color = "#5aa7e4",
-    extension = { "pyx" },
+    extension = { "pyc", "pyd", "pyo" },
     icon = "",
   },
   Query = {
@@ -1202,16 +847,6 @@ return {
     file = { "R", "r" },
     icon = "󰟔",
   },
-  Rake = {
-    color = "#701516",
-    extension = { "rake" },
-    icon = "",
-  },
-  Rakefile = {
-    color = "#701516",
-    file = { "rakefile" },
-    icon = "",
-  },
   RaspberryPiOS = {
     color = "#be1848",
     icon = "",
@@ -1222,9 +857,10 @@ return {
     extension = { "cshtml", "razor" },
     icon = "󱦗",
   },
-  Rb = {
+  Ruby = {
     color = "#701516",
-    extension = { "rb" },
+    extension = { "config.ru", "gemspec", "rake", "rb" },
+    file = { "gemfile$", "rakefile" },
     icon = "",
   },
   ReScript = {
@@ -1241,11 +877,6 @@ return {
     color = "#EE0000",
     icon = "󱄛",
     os = { "redhat" },
-  },
-  Rlib = {
-    color = "#dea584",
-    extension = { "rlib" },
-    icon = "",
   },
   Rmd = {
     color = "#519aba",
@@ -1265,7 +896,7 @@ return {
   },
   Rs = {
     color = "#dea584",
-    extension = { "rs" },
+    extension = { "rlib", "rs" },
     icon = "",
   },
   Rss = {
@@ -1280,23 +911,18 @@ return {
   },
   Sass = {
     color = "#f55385",
-    extension = { "sass" },
+    extension = { "sass", "scss" },
     icon = "",
   },
   Scala = {
     color = "#cc3e44",
-    extension = { "scala" },
+    extension = { "scala", "sbt" },
     icon = "",
   },
   Scheme = {
     color = "#eeeeee",
     extension = { "scm" },
     icon = "󰘧",
-  },
-  Scss = {
-    color = "#f55385",
-    extension = { "scss" },
-    icon = "",
   },
   SettingsJson = {
     color = "#854CC7",
@@ -1305,13 +931,8 @@ return {
   },
   Sh = {
     color = "#4d5a5e",
-    extension = { "sh" },
+    extension = { "awk", "csh", "fish", "ksh", "sh" },
     icon = "",
-  },
-  Sig = {
-    color = "#e37933",
-    extension = { "sig" },
-    icon = "λ",
   },
   Slackware = {
     color = "#475fa9",
@@ -1330,7 +951,7 @@ return {
   },
   Sml = {
     color = "#e37933",
-    extension = { "sml" },
+    extension = { "sig", "sml" },
     icon = "λ",
   },
   Solidity = {
@@ -1342,21 +963,6 @@ return {
     color = "#4b5163",
     icon = "",
     os = { "solus" },
-  },
-  SpecJs = {
-    color = "#cbcb41",
-    extension = { "spec.js" },
-    icon = "",
-  },
-  SpecTs = {
-    color = "#519aba",
-    extension = { "spec.ts" },
-    icon = "",
-  },
-  Sql = {
-    color = "#dad8d8",
-    extension = { "sql", "sqlite", "sqlite3" },
-    icon = "",
   },
   Styl = {
     color = "#8dc149",
@@ -1371,10 +977,6 @@ return {
   Svelte = {
     color = "#ff3e00",
     extension = { "svelte" },
-    icon = "",
-  },
-  SvelteConfig = {
-    color = "#ff3e00",
     file = { "svelte.config.js" },
     icon = "",
   },
@@ -1430,12 +1032,12 @@ return {
   },
   TestJs = {
     color = "#cbcb41",
-    extension = { "test.js" },
+    extension = { "spec.js", "test.js" },
     icon = "",
   },
   TestTs = {
     color = "#519aba",
-    extension = { "test.ts" },
+    extension = { "spec.ts", "test.ts" },
     icon = "",
   },
   Tex = {
@@ -1463,14 +1065,9 @@ return {
     extension = { "t" },
     icon = "",
   },
-  TrueTypeFont = {
-    color = "#ECECEC",
-    extension = { "ttf" },
-    icon = "",
-  },
   Ts = {
     color = "#519aba",
-    extension = { "ts" },
+    extension = { "cts", "mts", "ts" },
     icon = "",
   },
   Tsx = {
@@ -1488,14 +1085,9 @@ return {
     extension = { "txt" },
     icon = "󰈙",
   },
-  TypeScriptReactSpec = {
-    color = "#1354bf",
-    extension = { "spec.tsx" },
-    icon = "",
-  },
   TypeScriptReactTest = {
     color = "#1354bf",
-    extension = { "test.tsx" },
+    extension = { "spec.tsx", "test.tsx" },
     icon = "",
   },
   Ubuntu = {
@@ -1526,11 +1118,7 @@ return {
   Vim = {
     color = "#019833",
     extension = { "vim" },
-    icon = "",
-  },
-  Vimrc = {
-    color = "#019833",
-    file = { ".vimrc", "_vimrc" },
+    file = { ".gvimrc", ".vimrc", "_gvimrc", "_vimrc" },
     icon = "",
   },
   Vlang = {
@@ -1553,30 +1141,10 @@ return {
     extension = { "wasm" },
     icon = "",
   },
-  Wav = {
-    color = "#66D8EF",
-    extension = { "wav" },
-    icon = "",
-  },
-  WebOpenFontFormat = {
-    color = "#ECECEC",
-    extension = { "woff", "woff2" },
-    icon = "",
-  },
-  Webm = {
-    color = "#FD971F",
-    extension = { "webm" },
-    icon = "",
-  },
   Webmanifest = {
     color = "#f1e05a",
     extension = { "webmanifest" },
     icon = "",
-  },
-  Webp = {
-    color = "#a074c4",
-    extension = { "webp" },
-    icon = "",
   },
   Webpack = {
     color = "#519aba",
@@ -1589,6 +1157,11 @@ return {
     icon = "",
     os = { "windows" },
   },
+  Word = {
+    color = "#185abd",
+    extension = { "doc", "docx" },
+    icon = "󰈬",
+  },
   Xaml = {
     color = "#512bd4",
     extension = { "xaml" },
@@ -1598,16 +1171,6 @@ return {
     color = "#e37933",
     extension = { "xcplayground" },
     icon = "",
-  },
-  Xls = {
-    color = "#207245",
-    extension = { "xls" },
-    icon = "󰈛",
-  },
-  Xlsx = {
-    color = "#207245",
-    extension = { "xlsx" },
-    icon = "󰈛",
   },
   Xml = {
     color = "#e37933",
@@ -1621,21 +1184,12 @@ return {
   },
   Yaml = {
     color = "#6d8086",
-    extension = { "yaml" },
-    icon = "",
-  },
-  Yml = {
-    color = "#6d8086",
-    extension = { "yml" },
+    extension = { "yml", "yaml" },
     icon = "",
   },
   Zig = {
     color = "#f69a1b",
     extension = { "zig" },
-    icon = "",
-  },
-  ZigObjectNotation = {
-    color = "#f69a1b",
     file = { "build.zig.zon" },
     icon = "",
   },
@@ -1649,44 +1203,9 @@ return {
     extension = { "zsh" },
     icon = "",
   },
-  Zshenv = {
+  ZshConfig = {
     color = "#89e051",
-    file = { ".zshenv" },
+    file = { ".zshenv", ".zprofile", ".zshrc" },
     icon = "",
-  },
-  Zshprofile = {
-    color = "#89e051",
-    file = { ".zprofile" },
-    icon = "",
-  },
-  Zshrc = {
-    color = "#89e051",
-    file = { ".zshrc" },
-    icon = "",
-  },
-  arduino = {
-    color = "#56b6c2",
-    extension = { "ino" },
-    icon = "",
-  },
-  cuda = {
-    color = "#89e051",
-    extension = { "cu" },
-    icon = "",
-  },
-  cudah = {
-    color = "#a074c4",
-    extension = { "cuh" },
-    icon = "",
-  },
-  openSUSE = {
-    color = "#6fb424",
-    icon = "",
-    os = { "opensuse" },
-  },
-  sbt = {
-    color = "#cc3e44",
-    extension = { "sbt" },
-    icon = "",
   },
 }

@@ -17,7 +17,7 @@ return {
       color = "#66D8EF",
       cterm_color = "45",
       icon = "",
-      name = "Aac"
+      name = "Audio"
     },
     ai = {
       color = "#cbcb41",
@@ -29,7 +29,7 @@ return {
       color = "#9F0500",
       cterm_color = "124",
       icon = "",
-      name = "App"
+      name = "Exe"
     },
     applescript = {
       color = "#6d8085",
@@ -37,11 +37,17 @@ return {
       icon = "",
       name = "AppleScript"
     },
+    avif = {
+      color = "#a074c4",
+      cterm_color = "140",
+      icon = "",
+      name = "Picture"
+    },
     awk = {
       color = "#4d5a5e",
       cterm_color = "240",
       icon = "",
-      name = "Awk"
+      name = "Sh"
     },
     azcli = {
       color = "#0078d4",
@@ -83,13 +89,13 @@ return {
       color = "#a074c4",
       cterm_color = "140",
       icon = "",
-      name = "Bmp"
+      name = "Picture"
     },
     bzl = {
       color = "#89e051",
       cterm_color = "113",
       icon = "",
-      name = "Bzl"
+      name = "Bazel"
     },
     c = {
       color = "#599eff",
@@ -119,7 +125,7 @@ return {
       color = "#f34b7d",
       cterm_color = "204",
       icon = "",
-      name = "CPlusPlusModule"
+      name = "CPlusPlus"
     },
     cfg = {
       color = "#ECECEC",
@@ -131,7 +137,7 @@ return {
       color = "#F1F134",
       cterm_color = "227",
       icon = "󰌞",
-      name = "Cjs"
+      name = "Js"
     },
     clj = {
       color = "#8dc149",
@@ -191,7 +197,7 @@ return {
       color = "#701516",
       cterm_color = "52",
       icon = "",
-      name = "ConfigRu"
+      name = "Ruby"
     },
     cp = {
       color = "#519aba",
@@ -203,13 +209,13 @@ return {
       color = "#519aba",
       cterm_color = "74",
       icon = "",
-      name = "Cpp"
+      name = "Cp"
     },
     cppm = {
       color = "#519aba",
       cterm_color = "74",
       icon = "",
-      name = "Cppm"
+      name = "Cp"
     },
     cpy = {
       color = "#005ca5",
@@ -233,7 +239,7 @@ return {
       color = "#4d5a5e",
       cterm_color = "240",
       icon = "",
-      name = "Csh"
+      name = "Sh"
     },
     cshtml = {
       color = "#512bd4",
@@ -269,31 +275,31 @@ return {
       color = "#519aba",
       cterm_color = "74",
       icon = "",
-      name = "Cts"
+      name = "Ts"
     },
     cu = {
       color = "#89e051",
       cterm_color = "113",
       icon = "",
-      name = "cuda"
+      name = "Cuda"
     },
     cuh = {
       color = "#a074c4",
       cterm_color = "140",
       icon = "",
-      name = "cudah"
+      name = "Cudah"
     },
     cxx = {
       color = "#519aba",
       cterm_color = "74",
       icon = "",
-      name = "Cxx"
+      name = "Cp"
     },
     cxxm = {
       color = "#519aba",
       cterm_color = "74",
       icon = "",
-      name = "Cxxm"
+      name = "Cp"
     },
     d = {
       color = "#427819",
@@ -329,13 +335,13 @@ return {
       color = "#185abd",
       cterm_color = "26",
       icon = "󰈬",
-      name = "Doc"
+      name = "Word"
     },
     docx = {
       color = "#185abd",
       cterm_color = "26",
       icon = "󰈬",
-      name = "Docx"
+      name = "Word"
     },
     drl = {
       color = "#ffafaf",
@@ -353,7 +359,7 @@ return {
       color = "#dad8d8",
       cterm_color = "188",
       icon = "",
-      name = "Dump"
+      name = "Db"
     },
     edn = {
       color = "#519aba",
@@ -365,7 +371,7 @@ return {
       color = "#a074c4",
       cterm_color = "140",
       icon = "",
-      name = "Eex"
+      name = "Ex"
     },
     ejs = {
       color = "#cbcb41",
@@ -377,7 +383,7 @@ return {
       color = "#9F0500",
       cterm_color = "124",
       icon = "",
-      name = "Elf"
+      name = "Exe"
     },
     elm = {
       color = "#519aba",
@@ -389,7 +395,7 @@ return {
       color = "#ECECEC",
       cterm_color = "255",
       icon = "",
-      name = "EmbeddedOpenTypeFont"
+      name = "Font"
     },
     epp = {
       color = "#FFA61A",
@@ -425,13 +431,13 @@ return {
       color = "#a074c4",
       cterm_color = "140",
       icon = "",
-      name = "Exs"
+      name = "Ex"
     },
     ["f#"] = {
       color = "#519aba",
       cterm_color = "74",
       icon = "",
-      name = "Fsharp"
+      name = "FSharp"
     },
     f90 = {
       color = "#734f96",
@@ -443,13 +449,13 @@ return {
       color = "#4d5a5e",
       cterm_color = "240",
       icon = "",
-      name = "Fish"
+      name = "Sh"
     },
     flac = {
       color = "#66D8EF",
       cterm_color = "45",
       icon = "",
-      name = "Flac"
+      name = "Audio"
     },
     fnl = {
       color = "#fff3d7",
@@ -461,25 +467,25 @@ return {
       color = "#519aba",
       cterm_color = "74",
       icon = "",
-      name = "Fs"
+      name = "FSharp"
     },
     fsi = {
       color = "#519aba",
       cterm_color = "74",
       icon = "",
-      name = "Fsi"
+      name = "FSharp"
     },
     fsscript = {
       color = "#519aba",
       cterm_color = "74",
       icon = "",
-      name = "Fsscript"
+      name = "FSharp"
     },
     fsx = {
       color = "#519aba",
       cterm_color = "74",
       icon = "",
-      name = "Fsx"
+      name = "FSharp"
     },
     gd = {
       color = "#6d8086",
@@ -491,13 +497,13 @@ return {
       color = "#701516",
       cterm_color = "52",
       icon = "",
-      name = "Gemspec"
+      name = "Ruby"
     },
     gif = {
       color = "#a074c4",
       cterm_color = "140",
       icon = "",
-      name = "Gif"
+      name = "Picture"
     },
     git = {
       color = "#F14C28",
@@ -563,25 +569,25 @@ return {
       color = "#a074c4",
       cterm_color = "140",
       icon = "",
-      name = "Heex"
+      name = "Ex"
     },
     hh = {
       color = "#a074c4",
       cterm_color = "140",
       icon = "",
-      name = "Hh"
+      name = "H"
     },
     hpp = {
       color = "#a074c4",
       cterm_color = "140",
       icon = "",
-      name = "Hpp"
+      name = "H"
     },
     hrl = {
       color = "#B83998",
       cterm_color = "163",
       icon = "",
-      name = "Hrl"
+      name = "Erl"
     },
     hs = {
       color = "#a074c4",
@@ -623,7 +629,7 @@ return {
       color = "#a074c4",
       cterm_color = "140",
       icon = "",
-      name = "Hxx"
+      name = "H"
     },
     ico = {
       color = "#cbcb41",
@@ -647,7 +653,7 @@ return {
       color = "#56b6c2",
       cterm_color = "73",
       icon = "",
-      name = "arduino"
+      name = "Arduino"
     },
     ipynb = {
       color = "#51a0cf",
@@ -659,7 +665,7 @@ return {
       color = "#519aba",
       cterm_color = "74",
       icon = "",
-      name = "Ixx"
+      name = "Cp"
     },
     java = {
       color = "#cc3e44",
@@ -677,13 +683,13 @@ return {
       color = "#a074c4",
       cterm_color = "140",
       icon = "",
-      name = "Jpeg"
+      name = "Picture"
     },
     jpg = {
       color = "#a074c4",
       cterm_color = "140",
       icon = "",
-      name = "Jpg"
+      name = "Picture"
     },
     js = {
       color = "#F1F134",
@@ -701,13 +707,13 @@ return {
       color = "#cbcb41",
       cterm_color = "185",
       icon = "",
-      name = "Json5"
+      name = "Json"
     },
     jsonc = {
       color = "#cbcb41",
       cterm_color = "185",
       icon = "",
-      name = "Jsonc"
+      name = "Json"
     },
     jsx = {
       color = "#20c2e3",
@@ -719,13 +725,13 @@ return {
       color = "#a074c4",
       cterm_color = "140",
       icon = "",
-      name = "JpegXl"
+      name = "Picture"
     },
     ksh = {
       color = "#4d5a5e",
       cterm_color = "240",
       icon = "",
-      name = "Ksh"
+      name = "Sh"
     },
     kt = {
       color = "#7F52FF",
@@ -737,13 +743,13 @@ return {
       color = "#7F52FF",
       cterm_color = "99",
       icon = "",
-      name = "KotlinScript"
+      name = "Kotlin"
     },
     leex = {
       color = "#a074c4",
       cterm_color = "140",
       icon = "",
-      name = "Leex"
+      name = "Ex"
     },
     less = {
       color = "#563d7c",
@@ -755,7 +761,7 @@ return {
       color = "#a074c4",
       cterm_color = "140",
       icon = "",
-      name = "Lhs"
+      name = "Hs"
     },
     license = {
       color = "#cbcb41",
@@ -797,13 +803,13 @@ return {
       color = "#66D8EF",
       cterm_color = "45",
       icon = "",
-      name = "M4A"
+      name = "Audio"
     },
     m4v = {
       color = "#FD971F",
       cterm_color = "208",
       icon = "",
-      name = "M4V"
+      name = "Movie"
     },
     makefile = {
       color = "#6d8086",
@@ -845,7 +851,7 @@ return {
       color = "#F1F134",
       cterm_color = "227",
       icon = "󰌞",
-      name = "Mjs"
+      name = "Js"
     },
     mk = {
       color = "#6d8086",
@@ -857,7 +863,7 @@ return {
       color = "#FD971F",
       cterm_color = "208",
       icon = "",
-      name = "Mkv"
+      name = "Movie"
     },
     ml = {
       color = "#e37933",
@@ -869,7 +875,7 @@ return {
       color = "#e37933",
       cterm_color = "166",
       icon = "",
-      name = "Mli"
+      name = "Ml"
     },
     mo = {
       color = "#9772FB",
@@ -881,31 +887,31 @@ return {
       color = "#FD971F",
       cterm_color = "208",
       icon = "",
-      name = "MOV"
+      name = "Movie"
     },
     mp3 = {
       color = "#66D8EF",
       cterm_color = "45",
       icon = "",
-      name = "Mp3"
+      name = "Audio"
     },
     mp4 = {
       color = "#FD971F",
       cterm_color = "208",
       icon = "",
-      name = "Mp4"
+      name = "Movie"
     },
     mpp = {
       color = "#519aba",
       cterm_color = "74",
       icon = "",
-      name = "Mpp"
+      name = "Cp"
     },
     mts = {
       color = "#519aba",
       cterm_color = "74",
       icon = "",
-      name = "Mts"
+      name = "Ts"
     },
     mustache = {
       color = "#e37933",
@@ -941,7 +947,7 @@ return {
       color = "#66D8EF",
       cterm_color = "45",
       icon = "",
-      name = "Ogg"
+      name = "Audio"
     },
     opus = {
       color = "#F88A02",
@@ -959,13 +965,13 @@ return {
       color = "#ECECEC",
       cterm_color = "255",
       icon = "",
-      name = "OpenTypeFont"
+      name = "Font"
     },
     out = {
       color = "#9F0500",
       cterm_color = "124",
       icon = "",
-      name = "Out"
+      name = "Exe"
     },
     pck = {
       color = "#6d8086",
@@ -995,13 +1001,13 @@ return {
       color = "#519aba",
       cterm_color = "74",
       icon = "",
-      name = "Pm"
+      name = "Pl"
     },
     png = {
       color = "#a074c4",
       cterm_color = "140",
       icon = "",
-      name = "Png"
+      name = "Picture"
     },
     pp = {
       color = "#FFA61A",
@@ -1037,13 +1043,13 @@ return {
       color = "#519aba",
       cterm_color = "74",
       icon = "",
-      name = "Psb"
+      name = "PhotoShop"
     },
     psd = {
       color = "#519aba",
       cterm_color = "74",
       icon = "",
-      name = "Psd"
+      name = "PhotoShop"
     },
     psd1 = {
       color = "#6975c4",
@@ -1061,13 +1067,13 @@ return {
       color = "#5aa7e4",
       cterm_color = "39",
       icon = "",
-      name = "Pxd"
+      name = "Cython"
     },
     pxi = {
       color = "#5aa7e4",
       cterm_color = "39",
       icon = "",
-      name = "Pxi"
+      name = "Cython"
     },
     py = {
       color = "#ffbc03",
@@ -1079,31 +1085,31 @@ return {
       color = "#ffe291",
       cterm_color = "222",
       icon = "",
-      name = "Pyc"
+      name = "PyGen"
     },
     pyd = {
       color = "#ffe291",
       cterm_color = "222",
       icon = "",
-      name = "Pyd"
+      name = "PyGen"
     },
     pyi = {
       color = "#ffbc03",
       cterm_color = "214",
       icon = "",
-      name = "Pyi"
+      name = "Py"
     },
     pyo = {
       color = "#ffe291",
       cterm_color = "222",
       icon = "",
-      name = "Pyo"
+      name = "PyGen"
     },
     pyx = {
       color = "#5aa7e4",
       cterm_color = "39",
       icon = "",
-      name = "Pyx"
+      name = "Cython"
     },
     query = {
       color = "#90a850",
@@ -1121,7 +1127,7 @@ return {
       color = "#701516",
       cterm_color = "52",
       icon = "",
-      name = "Rake"
+      name = "Ruby"
     },
     razor = {
       color = "#512bd4",
@@ -1133,7 +1139,7 @@ return {
       color = "#701516",
       cterm_color = "52",
       icon = "",
-      name = "Rb"
+      name = "Ruby"
     },
     res = {
       color = "#cc3e44",
@@ -1151,7 +1157,7 @@ return {
       color = "#dea584",
       cterm_color = "216",
       icon = "",
-      name = "Rlib"
+      name = "Rs"
     },
     rmd = {
       color = "#519aba",
@@ -1187,7 +1193,7 @@ return {
       color = "#cc3e44",
       cterm_color = "167",
       icon = "",
-      name = "sbt"
+      name = "Scala"
     },
     scad = {
       color = "#f9d72c",
@@ -1211,7 +1217,7 @@ return {
       color = "#f55385",
       cterm_color = "204",
       icon = "",
-      name = "Scss"
+      name = "Sass"
     },
     sh = {
       color = "#4d5a5e",
@@ -1223,7 +1229,7 @@ return {
       color = "#e37933",
       cterm_color = "166",
       icon = "λ",
-      name = "Sig"
+      name = "Sml"
     },
     slim = {
       color = "#e34c26",
@@ -1253,43 +1259,43 @@ return {
       color = "#cbcb41",
       cterm_color = "185",
       icon = "",
-      name = "SpecJs"
+      name = "TestJs"
     },
     ["spec.jsx"] = {
       color = "#20c2e3",
       cterm_color = "45",
       icon = "",
-      name = "JavaScriptReactSpec"
+      name = "JavaScriptReactTest"
     },
     ["spec.ts"] = {
       color = "#519aba",
       cterm_color = "74",
       icon = "",
-      name = "SpecTs"
+      name = "TestTs"
     },
     ["spec.tsx"] = {
       color = "#1354bf",
       cterm_color = "26",
       icon = "",
-      name = "TypeScriptReactSpec"
+      name = "TypeScriptReactTest"
     },
     sql = {
       color = "#dad8d8",
       cterm_color = "188",
       icon = "",
-      name = "Sql"
+      name = "Db"
     },
     sqlite = {
       color = "#dad8d8",
       cterm_color = "188",
       icon = "",
-      name = "Sql"
+      name = "Db"
     },
     sqlite3 = {
       color = "#dad8d8",
       cterm_color = "188",
       icon = "",
-      name = "Sql"
+      name = "Db"
     },
     styl = {
       color = "#8dc149",
@@ -1445,7 +1451,7 @@ return {
       color = "#ECECEC",
       cterm_color = "255",
       icon = "",
-      name = "TrueTypeFont"
+      name = "Font"
     },
     twig = {
       color = "#8dc149",
@@ -1517,13 +1523,13 @@ return {
       color = "#66D8EF",
       cterm_color = "45",
       icon = "",
-      name = "Wav"
+      name = "Audio"
     },
     webm = {
       color = "#FD971F",
       cterm_color = "208",
       icon = "",
-      name = "Webm"
+      name = "Movie"
     },
     webmanifest = {
       color = "#f1e05a",
@@ -1535,7 +1541,7 @@ return {
       color = "#a074c4",
       cterm_color = "140",
       icon = "",
-      name = "Webp"
+      name = "Picture"
     },
     webpack = {
       color = "#519aba",
@@ -1547,13 +1553,13 @@ return {
       color = "#ECECEC",
       cterm_color = "255",
       icon = "",
-      name = "WebOpenFontFormat"
+      name = "Font"
     },
     woff2 = {
       color = "#ECECEC",
       cterm_color = "255",
       icon = "",
-      name = "WebOpenFontFormat"
+      name = "Font"
     },
     xaml = {
       color = "#512bd4",
@@ -1571,13 +1577,13 @@ return {
       color = "#207245",
       cterm_color = "29",
       icon = "󰈛",
-      name = "Xls"
+      name = "Excel"
     },
     xlsx = {
       color = "#207245",
       cterm_color = "29",
       icon = "󰈛",
-      name = "Xlsx"
+      name = "Excel"
     },
     xml = {
       color = "#e37933",
@@ -1601,7 +1607,7 @@ return {
       color = "#6d8086",
       cterm_color = "66",
       icon = "",
-      name = "Yml"
+      name = "Yaml"
     },
     zig = {
       color = "#f69a1b",
@@ -1621,19 +1627,19 @@ return {
       color = "#cbcb41",
       cterm_color = "185",
       icon = "",
-      name = "Babelrc"
+      name = "Json"
     },
     [".bash_profile"] = {
       color = "#89e051",
       cterm_color = "113",
       icon = "",
-      name = "BashProfile"
+      name = "BashConfig"
     },
     [".bashrc"] = {
       color = "#89e051",
       cterm_color = "113",
       icon = "",
-      name = "Bashrc"
+      name = "BashConfig"
     },
     [".dockerignore"] = {
       color = "#458ee6",
@@ -1663,19 +1669,19 @@ return {
       color = "#4b32c3",
       cterm_color = "56",
       icon = "",
-      name = "EslintIgnore"
+      name = "Eslint"
     },
     [".eslintrc"] = {
       color = "#4b32c3",
       cterm_color = "56",
       icon = "",
-      name = "Eslintrc"
+      name = "Eslint"
     },
     [".gitattributes"] = {
       color = "#41535b",
       cterm_color = "239",
       icon = "",
-      name = "GitAttributes"
+      name = "Git"
     },
     [".gitconfig"] = {
       color = "#41535b",
@@ -1687,7 +1693,7 @@ return {
       color = "#41535b",
       cterm_color = "239",
       icon = "",
-      name = "GitIgnore"
+      name = "Git"
     },
     [".gitlab-ci.yml"] = {
       color = "#e24329",
@@ -1699,13 +1705,13 @@ return {
       color = "#41535b",
       cterm_color = "239",
       icon = "",
-      name = "GitModules"
+      name = "Git"
     },
     [".gvimrc"] = {
       color = "#019833",
       cterm_color = "28",
       icon = "",
-      name = "Gvimrc"
+      name = "Vim"
     },
     [".luaurc"] = {
       color = "#00a2ff",
@@ -1717,13 +1723,13 @@ return {
       color = "#E8274B",
       cterm_color = "197",
       icon = "",
-      name = "NPMIgnore"
+      name = "NPM"
     },
     [".npmrc"] = {
       color = "#E8274B",
       cterm_color = "197",
       icon = "",
-      name = "NPMrc"
+      name = "NPM"
     },
     [".settings.json"] = {
       color = "#854CC7",
@@ -1735,25 +1741,25 @@ return {
       color = "#019833",
       cterm_color = "28",
       icon = "",
-      name = "Vimrc"
+      name = "Vim"
     },
     [".zprofile"] = {
       color = "#89e051",
       cterm_color = "113",
       icon = "",
-      name = "Zshprofile"
+      name = "ZshConfig"
     },
     [".zshenv"] = {
       color = "#89e051",
       cterm_color = "113",
       icon = "",
-      name = "Zshenv"
+      name = "ZshConfig"
     },
     [".zshrc"] = {
       color = "#89e051",
       cterm_color = "113",
       icon = "",
-      name = "Zshrc"
+      name = "ZshConfig"
     },
     R = {
       color = "#2266ba",
@@ -1765,19 +1771,13 @@ return {
       color = "#019833",
       cterm_color = "28",
       icon = "",
-      name = "Gvimrc"
+      name = "Vim"
     },
     _vimrc = {
       color = "#019833",
       cterm_color = "28",
       icon = "",
-      name = "Vimrc"
-    },
-    avif = {
-      color = "#a074c4",
-      cterm_color = "140",
-      icon = "",
-      name = "Avif"
+      name = "Vim"
     },
     brewfile = {
       color = "#701516",
@@ -1789,13 +1789,13 @@ return {
       color = "#89e051",
       cterm_color = "113",
       icon = "",
-      name = "BazelBuild"
+      name = "Bazel"
     },
     ["build.zig.zon"] = {
       color = "#f69a1b",
       cterm_color = "172",
       icon = "",
-      name = "ZigObjectNotation"
+      name = "Zig"
     },
     checkhealth = {
       color = "#75B4FB",
@@ -1807,13 +1807,13 @@ return {
       color = "#6d8086",
       cterm_color = "66",
       icon = "",
-      name = "CMakeLists"
+      name = "CMake"
     },
     commit_editmsg = {
       color = "#41535b",
       cterm_color = "239",
       icon = "",
-      name = "GitCommit"
+      name = "Git"
     },
     ["compose.yaml"] = {
       color = "#458ee6",
@@ -1873,7 +1873,7 @@ return {
       color = "#701516",
       cterm_color = "52",
       icon = "",
-      name = "Gemfile"
+      name = "Ruby"
     },
     gnumakefile = {
       color = "#6d8086",
@@ -1915,7 +1915,7 @@ return {
       color = "#a074c4",
       cterm_color = "140",
       icon = "",
-      name = "MixLock"
+      name = "Ex"
     },
     node_modules = {
       color = "#E8274B",
@@ -1945,7 +1945,7 @@ return {
       color = "#ffbc03",
       cterm_color = "214",
       icon = "",
-      name = "Py.typed"
+      name = "Py"
     },
     r = {
       color = "#2266ba",
@@ -1957,7 +1957,7 @@ return {
       color = "#701516",
       cterm_color = "52",
       icon = "",
-      name = "Rakefile"
+      name = "Ruby"
     },
     rmd = {
       color = "#519aba",
@@ -1969,7 +1969,7 @@ return {
       color = "#ff3e00",
       cterm_color = "196",
       icon = "",
-      name = "SvelteConfig"
+      name = "Svelte"
     },
     ["tailwind.config.js"] = {
       color = "#20c2e3",
@@ -2017,7 +2017,7 @@ return {
       color = "#89e051",
       cterm_color = "113",
       icon = "",
-      name = "BazelWorkspace"
+      name = "Bazel"
     }
   },
   icons_by_operating_system = {
@@ -2175,7 +2175,7 @@ return {
       color = "#6fb424",
       cterm_color = "70",
       icon = "",
-      name = "openSUSE"
+      name = "OpenSUSE"
     },
     parrot = {
       color = "#54deff",
