@@ -11,6 +11,8 @@ colors: vim-colortemplate
 		-l "lua/nvim-web-devicons/_gen/init.lua"
 
 colors-check: colors
+	git diff --exit-code lua/nvim-web-devicons/filetypes.lua
+	git diff --exit-code lua/nvim-web-devicons/icons-default.lua
 	git diff --exit-code lua/nvim-web-devicons/icons-light.lua
 
 vim-colortemplate:
@@ -23,7 +25,7 @@ style-fix:
 	stylua .
 
 lint:
-	luacheck lua scripts
+	luacheck lua
 
 clean:
 	rm -rf vim-colortemplate
