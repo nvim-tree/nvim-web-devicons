@@ -452,6 +452,12 @@ local icons_by_file_extension = {
     cterm_color = "32",
     name = "AzureCli",
   },
+  ["bak"] = {
+    icon = "󰁯",
+    color = "#6d8086",
+    cterm_color = "66",
+    name = "Backup",
+  },
   ["bash"] = {
     icon = "",
     color = "#89e051",
