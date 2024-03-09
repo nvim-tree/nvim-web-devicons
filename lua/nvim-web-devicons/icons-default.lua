@@ -1586,6 +1586,12 @@ local icons_by_file_extension = {
     cterm_color = "167",
     name = "sbt",
   },
+  ["scad"] = {
+    icon = "",
+    color = "#f9d72c",
+    cterm_color = "226",
+    name = "OpenSCAD",
+  },
   ["scala"] = {
     icon = "",
     color = "#cc3e44",

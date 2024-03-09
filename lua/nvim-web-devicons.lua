@@ -162,6 +162,7 @@ local filetypes = {
   ["node"] = "node_modules",
   ["ocaml"] = "ml",
   ["ogg"] = "ogg",
+  ["openscad"] = "scad",
   ["opus"] = "opus",
   ["otf"] = "otf",
   ["pck"] = "pck",
