@@ -7,15 +7,16 @@ colors: vim-colortemplate
 		--clean \
 		--headless \
 		--cmd "set rtp^=vim-colortemplate" \
-		-c 'source scripts/generate_colors.lua' \
-		-c 'qall'
+		--cmd "set rtp^=." \
+		-l "lua/nvim-web-devicons/_gen/init.lua"
 
 colors-check: colors
+	git diff --exit-code lua/nvim-web-devicons/filetypes.lua
+	git diff --exit-code lua/nvim-web-devicons/icons-default.lua
 	git diff --exit-code lua/nvim-web-devicons/icons-light.lua
 
 vim-colortemplate:
-	mkdir -p vim-colortemplate
-	curl -L https://github.com/lifepillar/vim-colortemplate/archive/refs/tags/v$(VIM_COLORTEMPLATE_VERSION).tar.gz | tar zx --directory vim-colortemplate --strip-components=1
+	git clone --depth 1 -b v$(VIM_COLORTEMPLATE_VERSION) https://github.com/lifepillar/vim-colortemplate.git vim-colortemplate
 
 style-check:
 	stylua . --check
@@ -24,7 +25,7 @@ style-fix:
 	stylua .
 
 lint:
-	luacheck lua scripts
+	luacheck lua
 
 clean:
 	rm -rf vim-colortemplate
