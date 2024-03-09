@@ -41,9 +41,22 @@ local function darken_color(rrggbb)
   return string.format("#%s%s%s", r, g, b)
 end
 
----@param write_to string
+---@param filename string
+---@param obj any
+local function write(filename, obj)
+  local generated = "-- Generated from lua/nvim-web-devicons/_gen/icons.lua, do not edit this!"
+    .. "\nreturn "
+    .. vim.inspect(obj)
+    .. "\n"
+  assert(loadstring(generated))
+  local file = assert(io.open(filename, "w"))
+  file:write(generated)
+  file:close()
+end
+
+---@param filename string
 ---@param light boolean
-local function generate(write_to, light)
+local function generate_icons(filename, light)
   local icons = {
     file = {},
     ext = {},
@@ -85,19 +98,28 @@ local function generate(write_to, light)
     end
   end
 
-  local generated = "-- Generated from lua/nvim-web-devicons/_gen/icons.lua, do not edit this!"
-    .. "\nreturn "
-    .. vim.inspect {
-      icons_by_filename = icons.file,
-      icons_by_file_extension = icons.ext,
-      icons_by_operating_system = icons.os,
-    }
-    .. "\n"
-  assert(loadstring(generated))
-  local file = assert(io.open(write_to, "w"))
-  file:write(generated)
-  file:close()
+  write(filename, {
+    icons_by_filename = icons.file,
+    icons_by_file_extension = icons.ext,
+    icons_by_operating_system = icons.os,
+  })
 end
 
-generate("lua/nvim-web-devicons/icons-default.lua", false)
-generate("lua/nvim-web-devicons/icons-light.lua", true)
+local function generate_filetypes(filename)
+  local filetypes = {}
+
+  for _, value in pairs(original) do
+    if value.filetype then
+      for _, filetype in ipairs(value.filetype) do
+        assert(filetypes[filetype] == nil)
+        filetypes[filetype] = assert(value.file and value.file[1] or value.extension and value.extension[1])
+      end
+    end
+  end
+
+  write(filename, filetypes)
+end
+
+generate_icons("lua/nvim-web-devicons/icons-default.lua", false)
+generate_icons("lua/nvim-web-devicons/icons-light.lua", true)
+generate_filetypes "lua/nvim-web-devicons/filetypes.lua"

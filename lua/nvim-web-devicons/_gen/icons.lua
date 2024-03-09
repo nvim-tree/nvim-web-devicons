@@ -27,6 +27,7 @@ return {
   AppleScript = {
     color = "#6d8085",
     extension = { "applescript" },
+    filetype = { "applescript" },
     icon = "",
   },
   Arch = {
@@ -37,6 +38,7 @@ return {
   Arduino = {
     color = "#56b6c2",
     extension = { "ino" },
+    filetype = { "arduino" },
     icon = "",
   },
   Artix = {
@@ -62,6 +64,7 @@ return {
   Bash = {
     color = "#89e051",
     extension = { "bash" },
+    filetype = { "bash" },
     icon = "",
   },
   BashConfig = {
@@ -72,17 +75,20 @@ return {
   Bat = {
     color = "#C1F12E",
     extension = { "bat" },
+    filetype = { "winbatch", "dosbatch" },
     icon = "",
   },
   Bazel = {
     color = "#89e051",
     extension = { "bzl", "bazel" },
     file = { "build", "workspace" },
+    filetype = { "bzl" },
     icon = "",
   },
   BibTeX = {
     color = "#cbcb41",
     extension = { "bib" },
+    filetype = { "bib" },
     icon = "󱉟",
   },
   BinaryGLTF = {
@@ -103,12 +109,14 @@ return {
   C = {
     color = "#599eff",
     extension = { "c" },
+    filetype = { "c" },
     icon = "",
   },
   CMake = {
     color = "#6d8086",
     extension = { "cmake" },
     file = { "cmakelists.txt" },
+    filetype = { "cmake" },
     icon = "",
   },
   CPlusPlus = {
@@ -129,11 +137,13 @@ return {
   Checkhealth = {
     color = "#75B4FB",
     file = { "checkhealth" },
+    filetype = { "checkhealth" },
     icon = "󰓙",
   },
   Clojure = {
     color = "#8dc149",
     extension = { "clj" },
+    filetype = { "clojure" },
     icon = "",
   },
   ClojureC = {
@@ -154,56 +164,67 @@ return {
   Cobol = {
     color = "#005ca5",
     extension = { "cob", "cobol", "cpy", "cbl" },
+    filetype = { "cobol" },
     icon = "⚙",
   },
   Coffee = {
     color = "#cbcb41",
     extension = { "coffee" },
+    filetype = { "coffee" },
     icon = "",
   },
   Conf = {
     color = "#6d8086",
     extension = { "conf" },
+    filetype = { "conf" },
     icon = "",
   },
   Configuration = {
     color = "#ECECEC",
     extension = { "cfg" },
+    filetype = { "cfg" },
     icon = "",
   },
   Cp = {
     color = "#519aba",
     extension = { "cp", "cpp", "cxx", "cppm", "cxxm", "ixx", "mpp" },
+    filetype = { "cpp" },
     icon = "",
   },
   Crystal = {
     color = "#c8c8c8",
     extension = { "cr" },
+    filetype = { "crystal" },
     icon = "",
   },
   Cs = {
     color = "#596706",
     extension = { "cs" },
+    filetype = { "cs" },
     icon = "󰌛",
   },
   Cson = {
     color = "#cbcb41",
     extension = { "cson" },
+    filetype = { "cson" },
     icon = "",
   },
   Css = {
     color = "#42a5f5",
     extension = { "css" },
+    filetype = { "css" },
     icon = "",
   },
   Csv = {
     color = "#89e051",
     extension = { "csv" },
+    filetype = { "csv" },
     icon = "",
   },
   Cuda = {
     color = "#89e051",
     extension = { "cu" },
+    filetype = { "cuda" },
     icon = "",
   },
   Cudah = {
@@ -219,16 +240,19 @@ return {
   D = {
     color = "#427819",
     extension = { "d" },
+    filetype = { "d" },
     icon = "",
   },
   Dart = {
     color = "#03589C",
     extension = { "dart" },
+    filetype = { "dart" },
     icon = "",
   },
   Db = {
     color = "#dad8d8",
     extension = { "db", "dump", "sql", "sqlite", "sqlite3" },
+    filetype = { "sql", "mysql" },
     icon = "",
   },
   Debian = {
@@ -244,6 +268,7 @@ return {
   DesktopEntry = {
     color = "#563d7c",
     extension = { "desktop" },
+    filetype = { "desktop" },
     icon = "",
   },
   Devuan = {
@@ -254,11 +279,13 @@ return {
   Diff = {
     color = "#41535b",
     extension = { "diff" },
+    filetype = { "diff" },
     icon = "",
   },
   Dockerfile = {
     color = "#458ee6",
     extension = { "Dockerfile" },
+    filetype = { "dockerfile" },
     file = {
       ".dockerignore",
       "compose.yaml",
@@ -288,6 +315,7 @@ return {
   EditorConfig = {
     color = "#fff2f2",
     file = { ".editorconfig" },
+    filetype = { "editorconfig" },
     icon = "",
   },
   Edn = {
@@ -298,6 +326,7 @@ return {
   Ejs = {
     color = "#cbcb41",
     extension = { "ejs" },
+    filetype = { "ejs" },
     icon = "",
   },
   Elementary = {
@@ -308,6 +337,7 @@ return {
   Elm = {
     color = "#519aba",
     extension = { "elm" },
+    filetype = { "elm" },
     icon = "",
   },
   Endeavour = {
@@ -333,6 +363,7 @@ return {
   Erl = {
     color = "#B83998",
     extension = { "erl", "hrl" },
+    filetype = { "erlang" },
     icon = "",
   },
   Eslint = {
@@ -344,6 +375,7 @@ return {
     color = "#a074c4",
     extension = { "ex", "exs", "eex", "leex", "heex" },
     file = { "mix.lock" },
+    filetype = { "elixir" },
     icon = "",
   },
   Excel = {
@@ -369,6 +401,7 @@ return {
   Fennel = {
     color = "#fff3d7",
     extension = { "fnl" },
+    filetype = { "fennel" },
     icon = "",
   },
   Font = {
@@ -379,6 +412,7 @@ return {
   Fortran = {
     color = "#734f96",
     extension = { "f90" },
+    filetype = { "fortran" },
     icon = "󱈚",
   },
   FreeBSD = {
@@ -389,11 +423,13 @@ return {
   FSharp = {
     color = "#519aba",
     extension = { "fs", "f#", "fsi", "fsscript", "fsx" },
+    filetype = { "fsharp" },
     icon = "",
   },
   GDScript = {
     color = "#6d8086",
     extension = { "gd" },
+    filetype = { "gdscript" },
     icon = "",
   },
   Gentoo = {
@@ -404,11 +440,13 @@ return {
   Git = {
     color = "#41535b",
     file = { ".gitattributes", "commit_editmsg", ".gitignore", ".gitmodules" },
+    filetype = { "gitcommit", "gitignore", "gitattributes" },
     icon = "",
   },
   GitConfig = {
     color = "#41535b",
     file = { ".gitconfig" },
+    filetype = { "gitconfig" },
     icon = "",
   },
   GitLogo = {
@@ -424,6 +462,7 @@ return {
   Go = {
     color = "#519aba",
     extension = { "go" },
+    filetype = { "go" },
     icon = "",
   },
   GodotProject = {
@@ -434,11 +473,13 @@ return {
   GraphQL = {
     color = "#e535ab",
     extension = { "gql", "graphql" },
+    filetype = { "graphql" },
     icon = "",
   },
   Groovy = {
     color = "#4a687c",
     file = { "groovy" },
+    filetype = { "groovy" },
     icon = "",
   },
   Gruntfile = {
@@ -464,21 +505,25 @@ return {
   Haml = {
     color = "#eaeae1",
     extension = { "haml" },
+    filetype = { "haml" },
     icon = "",
   },
   Haxe = {
     color = "#ea8220",
     extension = { "hx" },
+    filetype = { "haxe" },
     icon = "",
   },
   Hbs = {
     color = "#f0772b",
     extension = { "hbs" },
+    filetype = { "html.handlebars" },
     icon = "",
   },
   Hs = {
     color = "#a074c4",
     extension = { "hs", "lhs" },
+    filetype = { "haskell" },
     icon = "",
   },
   Htm = {
@@ -489,16 +534,19 @@ return {
   Html = {
     color = "#e44d26",
     extension = { "html" },
+    filetype = { "html" },
     icon = "",
   },
   Huff = {
     color = "#4242c7",
     extension = { "huff" },
+    filetype = { "huff" },
     icon = "󰡘",
   },
   Hurl = {
     color = "#ff0288",
     extension = { "hurl" },
+    filetype = { "hurl" },
     icon = "",
   },
   Ico = {
@@ -514,16 +562,19 @@ return {
   ImportConfiguration = {
     color = "#ECECEC",
     extension = { "import" },
+    filetype = { "import" },
     icon = "",
   },
   Ini = {
     color = "#6d8086",
     extension = { "ini" },
+    filetype = { "ini" },
     icon = "",
   },
   Java = {
     color = "#cc3e44",
     extension = { "java" },
+    filetype = { "java" },
     icon = "",
   },
   JavaScriptReactTest = {
@@ -534,22 +585,26 @@ return {
   Jl = {
     color = "#a270ba",
     extension = { "jl" },
+    filetype = { "julia" },
     icon = "",
   },
   Js = {
     color = "#F1F134",
     extension = { "js", "cjs", "mjs" },
+    filetype = { "javascript" },
     icon = "󰌞",
   },
   Json = {
     color = "#cbcb41",
     extension = { "json", "json5", "jsonc" },
     file = { ".babelrc" },
+    filetype = { "json", "json5", "jsonc" },
     icon = "",
   },
   Jsx = {
     color = "#20c2e3",
     extension = { "jsx" },
+    filetype = { "javascriptreact" },
     icon = "",
   },
   Kali = {
@@ -560,11 +615,13 @@ return {
   Kotlin = {
     color = "#7F52FF",
     extension = { "kt", "kts" },
+    filetype = { "kotlin" },
     icon = "",
   },
   Less = {
     color = "#563d7c",
     extension = { "less" },
+    filetype = { "less" },
     icon = "",
   },
   License = {
@@ -581,6 +638,7 @@ return {
   Liquid = {
     color = "#95BF47",
     extension = { "liquid" },
+    filetype = { "liquid" },
     icon = "",
   },
   Lock = {
@@ -591,16 +649,19 @@ return {
   Log = {
     color = "#dddddd",
     extension = { "log" },
+    filetype = { "log" },
     icon = "󰌱",
   },
   Lua = {
     color = "#51a0cf",
     extension = { "lua" },
+    filetype = { "lua" },
     icon = "",
   },
   Luau = {
     color = "#00a2ff",
     extension = { "luau" },
+    filetype = { "luau" },
     icon = "",
   },
   Luaurc = {
@@ -622,6 +683,7 @@ return {
     color = "#6d8086",
     extension = { "makefile", "mk", "gnumakefile" },
     file = { "makefile", "gnumakefile" },
+    filetype = { "make" },
     icon = "",
   },
   Manjaro = {
@@ -632,6 +694,7 @@ return {
   Markdown = {
     color = "#dddddd",
     extension = { "markdown" },
+    filetype = { "markdown" },
     icon = "",
   },
   Material = {
@@ -658,6 +721,7 @@ return {
   Ml = {
     color = "#e37933",
     extension = { "ml", "mli" },
+    filetype = { "ocaml" },
     icon = "",
   },
   Motoko = {
@@ -668,6 +732,7 @@ return {
   Mustache = {
     color = "#e37933",
     extension = { "mustache" },
+    filetype = { "html.mustache" },
     icon = "",
   },
   NPM = {
@@ -678,11 +743,13 @@ return {
   Nim = {
     color = "#f3d400",
     extension = { "nim" },
+    filetype = { "nim" },
     icon = "",
   },
   Nix = {
     color = "#7ebae4",
     extension = { "nix" },
+    filetype = { "nix" },
     icon = "",
   },
   NixOS = {
@@ -708,6 +775,7 @@ return {
   Nushell = {
     color = "#3aa675",
     extension = { "nu" },
+    filetype = { "nu" },
     icon = ">",
   },
   OPUS = {
@@ -733,6 +801,7 @@ return {
   OrgMode = {
     color = "#77AA99",
     extension = { "org" },
+    filetype = { "org" },
     icon = "",
   },
   PackageJson = {
@@ -763,16 +832,19 @@ return {
   Php = {
     color = "#a074c4",
     extension = { "php" },
+    filetype = { "php" },
     icon = "",
   },
   Picture = {
     color = "#a074c4",
     extension = { "avif", "bmp", "gif", "jpeg", "jxl", "jpg", "png", "webp" },
+    filetype = { "avif", "bmp" },
     icon = "",
   },
   Pl = {
     color = "#519aba",
     extension = { "pl", "pm" },
+    filetype = { "perl" },
     icon = "",
   },
   Pop_OS = {
@@ -793,16 +865,19 @@ return {
   Prisma = {
     color = "#5a67d8",
     extension = { "prisma" },
+    filetype = { "prisma" },
     icon = "",
   },
   Procfile = {
     color = "#a074c4",
     file = { "procfile" },
+    filetype = { "procfile" },
     icon = "",
   },
   Prolog = {
     color = "#e4b854",
     extension = { "pro" },
+    filetype = { "prolog" },
     icon = "",
   },
   PsManifestfile = {
@@ -818,6 +893,7 @@ return {
   PsScriptfile = {
     color = "#4273ca",
     extension = { "ps1" },
+    filetype = { "ps1" },
     icon = "󰨊",
   },
   PhotoShop = {
@@ -829,6 +905,7 @@ return {
     color = "#ffbc03",
     extension = { "py", "pyi" },
     file = { "py.typed" },
+    filetype = { "python", "python2" },
     icon = "",
   },
   PyGen = {
@@ -845,6 +922,7 @@ return {
     color = "#2266ba",
     extension = { "r", "R" },
     file = { "R", "r" },
+    filetype = { "r" },
     icon = "󰟔",
   },
   RaspberryPiOS = {
@@ -855,17 +933,20 @@ return {
   RazorPage = {
     color = "#512bd4",
     extension = { "cshtml", "razor" },
+    filetype = { "razor" },
     icon = "󱦗",
   },
   Ruby = {
     color = "#701516",
     extension = { "config.ru", "gemspec", "rake", "rb" },
     file = { "gemfile$", "rakefile" },
+    filetype = { "gemfile" },
     icon = "",
   },
   ReScript = {
     color = "#cc3e44",
     extension = { "res" },
+    filetype = { "rescript" },
     icon = "",
   },
   ReScriptInterface = {
@@ -882,6 +963,7 @@ return {
     color = "#519aba",
     extension = { "rmd" },
     file = { "rmd" },
+    filetype = { "rmarkdown" },
     icon = "",
   },
   RockyLinux = {
@@ -892,11 +974,13 @@ return {
   Rproj = {
     color = "#358a5b",
     extension = { "rproj" },
+    filetype = { "rproj" },
     icon = "󰗆",
   },
   Rs = {
     color = "#dea584",
     extension = { "rlib", "rs" },
+    filetype = { "rust" },
     icon = "",
   },
   Rss = {
@@ -912,16 +996,19 @@ return {
   Sass = {
     color = "#f55385",
     extension = { "sass", "scss" },
+    filetype = { "sass", "scss" },
     icon = "",
   },
   Scala = {
     color = "#cc3e44",
     extension = { "scala", "sbt" },
+    filetype = { "scala" },
     icon = "",
   },
   Scheme = {
     color = "#eeeeee",
     extension = { "scm" },
+    filetype = { "scheme" },
     icon = "󰘧",
   },
   SettingsJson = {
@@ -932,6 +1019,7 @@ return {
   Sh = {
     color = "#4d5a5e",
     extension = { "awk", "csh", "fish", "ksh", "sh" },
+    filetype = { "awk", "csh", "fish", "sh" },
     icon = "",
   },
   Slackware = {
@@ -942,6 +1030,7 @@ return {
   Slim = {
     color = "#e34c26",
     extension = { "slim" },
+    filetype = { "slim" },
     icon = "",
   },
   Sln = {
@@ -952,11 +1041,13 @@ return {
   Sml = {
     color = "#e37933",
     extension = { "sig", "sml" },
+    filetype = { "sml" },
     icon = "λ",
   },
   Solidity = {
     color = "#519aba",
     extension = { "sol" },
+    filetype = { "solidity" },
     icon = "",
   },
   Solus = {
@@ -967,32 +1058,38 @@ return {
   Styl = {
     color = "#8dc149",
     extension = { "styl" },
+    filetype = { "styl" },
     icon = "",
   },
   Suo = {
     color = "#854CC7",
     extension = { "suo", "sublime" },
+    filetype = { "suo", "sublime" },
     icon = "",
   },
   Svelte = {
     color = "#ff3e00",
     extension = { "svelte" },
     file = { "svelte.config.js" },
+    filetype = { "svelte" },
     icon = "",
   },
   Svg = {
     color = "#FFB13B",
     extension = { "svg" },
+    filetype = { "svg" },
     icon = "󰜡",
   },
   Swift = {
     color = "#e37933",
     extension = { "swift" },
+    filetype = { "swift" },
     icon = "",
   },
   SystemVerilog = {
     color = "#019833",
     extension = { "svh", "sv" },
+    filetype = { "systemverilog" },
     icon = "󰍛",
   },
   TFVars = {
@@ -1013,11 +1110,13 @@ return {
   Tcl = {
     color = "#1e5cb3",
     extension = { "tbc", "tcl" },
+    filetype = { "tcl" },
     icon = "󰛓",
   },
   Templ = {
     color = "#dbbd30",
     extension = { "templ" },
+    filetype = { "template" },
     icon = "",
   },
   Terminal = {
@@ -1028,6 +1127,7 @@ return {
   Terraform = {
     color = "#5F43E9",
     extension = { "tf" },
+    filetype = { "terraform" },
     icon = "",
   },
   TestJs = {
@@ -1043,6 +1143,7 @@ return {
   Tex = {
     color = "#3D6117",
     extension = { "tex" },
+    filetype = { "tex" },
     icon = "󰙩",
   },
   TextResource = {
@@ -1058,6 +1159,7 @@ return {
   Toml = {
     color = "#9c4221",
     extension = { "toml" },
+    filetype = { "toml" },
     icon = "",
   },
   Tor = {
@@ -1068,11 +1170,13 @@ return {
   Ts = {
     color = "#519aba",
     extension = { "cts", "mts", "ts" },
+    filetype = { "typescript" },
     icon = "",
   },
   Tsx = {
     color = "#1354bf",
     extension = { "tsx" },
+    filetype = { "typescriptreact" },
     icon = "",
   },
   Twig = {
@@ -1083,6 +1187,7 @@ return {
   Txt = {
     color = "#89e051",
     extension = { "txt" },
+    filetype = { "text" },
     icon = "󰈙",
   },
   TypeScriptReactTest = {
@@ -1098,27 +1203,32 @@ return {
   VHDL = {
     color = "#019833",
     extension = { "vhdl", "vhd" },
+    filetype = { "vhdl" },
     icon = "󰍛",
   },
   Vagrantfile = {
     color = "#1563FF",
     file = { "vagrantfile$" },
+    filetype = { "vagrantfile" },
     icon = "",
   },
   Vala = {
     color = "#7239b3",
     extension = { "vala" },
+    filetype = { "vala" },
     icon = "",
   },
   Verilog = {
     color = "#019833",
     extension = { "v", "vh" },
+    filetype = { "verilog" },
     icon = "󰍛",
   },
   Vim = {
     color = "#019833",
     extension = { "vim" },
     file = { ".gvimrc", ".vimrc", "_gvimrc", "_vimrc" },
+    filetype = { "vim" },
     icon = "",
   },
   Vlang = {
@@ -1134,6 +1244,7 @@ return {
   Vue = {
     color = "#8dc149",
     extension = { "vue" },
+    filetype = { "vue" },
     icon = "",
   },
   Wasm = {
@@ -1175,6 +1286,7 @@ return {
   Xml = {
     color = "#e37933",
     extension = { "xml" },
+    filetype = { "xml" },
     icon = "󰗀",
   },
   Xul = {
@@ -1185,12 +1297,14 @@ return {
   Yaml = {
     color = "#6d8086",
     extension = { "yml", "yaml" },
+    filetype = { "yaml" },
     icon = "",
   },
   Zig = {
     color = "#f69a1b",
     extension = { "zig" },
     file = { "build.zig.zon" },
+    filetype = { "zig" },
     icon = "",
   },
   Zorin = {
@@ -1201,6 +1315,7 @@ return {
   Zsh = {
     color = "#89e051",
     extension = { "zsh" },
+    filetype = { "zsh" },
     icon = "",
   },
   ZshConfig = {

@@ -1,2 +1,3 @@
+lua/nvim-web-devicons/filetypes.lua
 lua/nvim-web-devicons/icons-light.lua
 lua/nvim-web-devicons/icons-default.lua
