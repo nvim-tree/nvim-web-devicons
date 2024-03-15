@@ -107,6 +107,12 @@ local icons_by_filename = {
     cterm_color = "197",
     name = "NPMrc",
   },
+  [".prettierrc"] = {
+    icon = "",
+    color = "#4285F4",
+    cterm_color = "33",
+    name = "PrettierConfig",
+  },
   [".settings.json"] = {
     icon = "",
     color = "#854CC7",
@@ -1595,7 +1601,7 @@ local icons_by_file_extension = {
   ["scad"] = {
     icon = "",
     color = "#f9d72c",
-    cterm_color = "226",
+    cterm_color = "220",
     name = "OpenSCAD",
   },
   ["scala"] = {
