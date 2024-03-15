@@ -1595,7 +1595,7 @@ local icons_by_file_extension = {
   ["scad"] = {
     icon = "",
     color = "#f9d72c",
-    cterm_color = "226",
+    cterm_color = "220",
     name = "OpenSCAD",
   },
   ["scala"] = {
@@ -1865,7 +1865,7 @@ local icons_by_file_extension = {
   ["typ"] = {
     icon = "𝐭",
     color = "#239dad",
-    cterm_color = "1",
+    cterm_color = "73",
     name = "Typst",
   },
   ["v"] = {
