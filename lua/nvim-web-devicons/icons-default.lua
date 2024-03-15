@@ -1862,6 +1862,12 @@ local icons_by_file_extension = {
     cterm_color = "113",
     name = "Txt",
   },
+  ["typ"] = {
+    icon = "𝐭",
+    color = "#239dad",
+    cterm_color = "1",
+    name = "Typst",
+  },
   ["v"] = {
     icon = "󰍛",
     color = "#019833",
