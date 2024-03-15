@@ -1569,7 +1569,7 @@ local icons_by_file_extension = {
     name = "Rproj",
   },
   ["rs"] = {
-    icon = "",
+    icon = "",
     color = "#6f5242",
     cterm_color = "95",
     name = "Rs",
