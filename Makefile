@@ -1,8 +1,9 @@
+NERD_FONTS_VERSION = 3.1.1
 VIM_COLORTEMPLATE_VERSION = 2.2.3
 
 all: colors style-check lint
 
-colors: vim-colortemplate
+colors: nerd-fonts vim-colortemplate
 	nvim \
 		--clean \
 		--headless \
@@ -18,6 +19,9 @@ colors-check: colors
 vim-colortemplate:
 	git clone --depth 1 -b v$(VIM_COLORTEMPLATE_VERSION) https://github.com/lifepillar/vim-colortemplate.git vim-colortemplate
 
+nerd-fonts:
+	git clone --depth 1 --filter blob:none --sparse -b v$(NERD_FONTS_VERSION) https://github.com/ryanoasis/nerd-fonts.git nerd-fonts
+
 style-check:
 	stylua . --check
 
@@ -28,6 +32,6 @@ lint:
 	luacheck lua
 
 clean:
-	rm -rf vim-colortemplate
+	rm -rf nerd-fonts vim-colortemplate
 
 .PHONY: all colors style-check style-fix lint
