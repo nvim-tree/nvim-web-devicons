@@ -107,6 +107,12 @@ local icons_by_filename = {
     cterm_color = "161",
     name = "NPMrc",
   },
+  [".prettierrc"] = {
+    icon = "",
+    color = "#3264b7",
+    cterm_color = "25",
+    name = "PrettierConfig",
+  },
   [".settings.json"] = {
     icon = "",
     color = "#643995",
