@@ -1,4 +1,4 @@
--- TODO remove following migration to css classes
+-- TODO #192 remove before merge
 local icons_by_filename = {
   [".babelrc"] = {
     icon = "",

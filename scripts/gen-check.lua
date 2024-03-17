@@ -1,4 +1,5 @@
---- one off task to check generated against original
+-- TODO #192 remove before merge
+-- one off task to check generated against original
 
 local inspect = require "inspect"
 
