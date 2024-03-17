@@ -1,1 +1,0 @@
-../lua/nvim-web-devicons/icons-default.lua
