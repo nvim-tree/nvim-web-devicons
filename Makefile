@@ -2,7 +2,20 @@ VIM_COLORTEMPLATE_VERSION = 2.2.3
 
 all: colors style-check lint
 
-colors: vim-colortemplate
+# generate lua/nvim-web-devicons/icons-*.lua from src/by-*.lua
+icons: src/glyphnames.lua
+	lua scripts/gen-icons.lua
+
+# TODO #192 remove before merge
+gen-check: colors
+	lua scripts/gen-check.lua
+
+# only needed when updating nerd font classes
+src/glyphnames.lua: src/glyphnames.json
+	yq '.METADATA' $(^) -oy
+	yq 'del(.METADATA)' $(^) -ol > $(@)
+
+colors: vim-colortemplate icons
 	nvim \
 		--clean \
 		--headless \
@@ -29,4 +42,4 @@ lint:
 clean:
 	rm -rf vim-colortemplate
 
-.PHONY: all colors style-check style-fix lint
+.PHONY: all icons colors style-check style-fix lint
