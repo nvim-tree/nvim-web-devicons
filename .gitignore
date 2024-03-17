@@ -1,3 +1,6 @@
 .lua
 .luarocks
 /vim-colortemplate/
+/css-class-migration/glyphs-by-*.lua
+/css-class-migration/icons-by-*.lua
+/css-class-migration/glyphnames.lua
