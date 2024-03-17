@@ -1,3 +1,5 @@
+-- stylua: ignore start
+
 local M = {}
 
 M.icons_by_filename = {

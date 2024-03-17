@@ -55,8 +55,8 @@ jobs:
         with:
           neovim: true
 
+      - run: luarocks install inspect 3.1.3
+
       - name: make colors-check
-        run: |
-          luarocks install inspect 3.1.3
-          make colors-check
+        run: make colors-check
 

@@ -26,6 +26,7 @@ if not file then
   os.exit(1)
 end
 io.output(file)
+io.write "-- stylua: ignore start\n\n"
 io.write "local M = {}\n\n"
 
 -- generate all bys

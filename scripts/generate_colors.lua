@@ -129,7 +129,12 @@ print "Generating file with icons for light backgrounds..."
 -- move to first line
 vim.cmd ":1"
 
-local lines0 = { "local M = {}", "" }
+local lines0 = {
+  "-- stylua: ignore start",
+  "",
+  "local M = {}",
+  "",
+}
 
 -- first table
 if fn.search("^M.icons_by_filename", "c") == 0 then
