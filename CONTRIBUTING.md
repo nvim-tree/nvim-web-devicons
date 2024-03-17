@@ -1,3 +1,5 @@
+# TODO #192 update following CI configuration
+
 # Contributing to `nvim-web-devicons`
 
 Thank you for your contribution!

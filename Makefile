@@ -2,10 +2,9 @@ VIM_COLORTEMPLATE_VERSION = 2.2.3
 
 all: colors style-check lint
 
-# generate and format lua/nvim-web-devicons/icons-*.lua from src/by-*.lua
+# generate lua/nvim-web-devicons/icons-*.lua from src/by-*.lua
 icons: src/glyphnames.lua
 	lua scripts/gen-icons.lua
-	stylua lua/nvim-web-devicons/icons-*.lua
 
 # TODO #192 remove before merge
 gen-check: colors

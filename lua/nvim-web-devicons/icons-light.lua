@@ -6,477 +6,477 @@ M.icons_by_filename = {
     color = "#666620",
     cterm_color = "58",
     icon = "",
-    name = "Babelrc",
+    name = "Babelrc"
   },
   [".bash_profile"] = {
     class = "seti-config",
     color = "#447028",
     cterm_color = "22",
     icon = "",
-    name = "BashProfile",
+    name = "BashProfile"
   },
   [".bashrc"] = {
     class = "seti-config",
     color = "#447028",
     cterm_color = "22",
     icon = "",
-    name = "Bashrc",
+    name = "Bashrc"
   },
   [".dockerignore"] = {
     class = "md-docker",
     color = "#2e5f99",
     cterm_color = "25",
     icon = "󰡨",
-    name = "Dockerfile",
+    name = "Dockerfile"
   },
   [".ds_store"] = {
     class = "seti-config",
     color = "#41535b",
     cterm_color = "239",
     icon = "",
-    name = "DsStore",
+    name = "DsStore"
   },
   [".editorconfig"] = {
     class = "seti-editorconfig",
     color = "#333030",
     cterm_color = "236",
     icon = "",
-    name = "EditorConfig",
+    name = "EditorConfig"
   },
   [".env"] = {
     class = "oct-sliders",
     color = "#32310d",
     cterm_color = "236",
     icon = "",
-    name = "Env",
+    name = "Env"
   },
   [".eslintignore"] = {
     class = "seti-eslint",
     color = "#4b32c3",
     cterm_color = "56",
     icon = "",
-    name = "EslintIgnore",
+    name = "EslintIgnore"
   },
   [".eslintrc"] = {
     class = "seti-eslint",
     color = "#4b32c3",
     cterm_color = "56",
     icon = "",
-    name = "Eslintrc",
+    name = "Eslintrc"
   },
   [".gitattributes"] = {
     class = "dev-git",
     color = "#41535b",
     cterm_color = "239",
     icon = "",
-    name = "GitAttributes",
+    name = "GitAttributes"
   },
   [".gitconfig"] = {
     class = "seti-config",
     color = "#41535b",
     cterm_color = "239",
     icon = "",
-    name = "GitConfig",
+    name = "GitConfig"
   },
   [".gitignore"] = {
     class = "dev-git",
     color = "#41535b",
     cterm_color = "239",
     icon = "",
-    name = "GitIgnore",
+    name = "GitIgnore"
   },
   [".gitlab-ci.yml"] = {
     class = "fa-gitlab",
     color = "#aa321f",
     cterm_color = "124",
     icon = "",
-    name = "GitlabCI",
+    name = "GitlabCI"
   },
   [".gitmodules"] = {
     class = "dev-git",
     color = "#41535b",
     cterm_color = "239",
     icon = "",
-    name = "GitModules",
+    name = "GitModules"
   },
   [".gvimrc"] = {
     class = "custom-vim",
     color = "#017226",
     cterm_color = "22",
     icon = "",
-    name = "Gvimrc",
+    name = "Gvimrc"
   },
   [".luaurc"] = {
     class = "seti-config",
     color = "#007abf",
     cterm_color = "32",
     icon = "",
-    name = "Luaurc",
+    name = "Luaurc"
   },
   [".npmignore"] = {
     class = "dev-npm",
     color = "#ae1d38",
     cterm_color = "161",
     icon = "",
-    name = "NPMIgnore",
+    name = "NPMIgnore"
   },
   [".npmrc"] = {
     class = "dev-npm",
     color = "#ae1d38",
     cterm_color = "161",
     icon = "",
-    name = "NPMrc",
+    name = "NPMrc"
   },
   [".prettierrc"] = {
     class = "custom-prettier",
     color = "#3264b7",
     cterm_color = "25",
     icon = "",
-    name = "PrettierConfig",
+    name = "PrettierConfig"
   },
   [".settings.json"] = {
     class = "dev-visualstudio",
     color = "#643995",
     cterm_color = "91",
     icon = "",
-    name = "SettingsJson",
+    name = "SettingsJson"
   },
   [".vimrc"] = {
     class = "custom-vim",
     color = "#017226",
     cterm_color = "22",
     icon = "",
-    name = "Vimrc",
+    name = "Vimrc"
   },
   [".zprofile"] = {
     class = "seti-config",
     color = "#447028",
     cterm_color = "22",
     icon = "",
-    name = "Zshprofile",
+    name = "Zshprofile"
   },
   [".zshenv"] = {
     class = "seti-config",
     color = "#447028",
     cterm_color = "22",
     icon = "",
-    name = "Zshenv",
+    name = "Zshenv"
   },
   [".zshrc"] = {
     class = "seti-config",
     color = "#447028",
     cterm_color = "22",
     icon = "",
-    name = "Zshrc",
+    name = "Zshrc"
   },
   R = {
     class = "md-language_r",
     color = "#1a4c8c",
     cterm_color = "25",
     icon = "󰟔",
-    name = "R",
+    name = "R"
   },
   _gvimrc = {
     class = "custom-vim",
     color = "#017226",
     cterm_color = "22",
     icon = "",
-    name = "Gvimrc",
+    name = "Gvimrc"
   },
   _vimrc = {
     class = "custom-vim",
     color = "#017226",
     cterm_color = "22",
     icon = "",
-    name = "Vimrc",
+    name = "Vimrc"
   },
   avif = {
     class = "seti-image",
     color = "#6b4d83",
     cterm_color = "96",
     icon = "",
-    name = "Avif",
+    name = "Avif"
   },
   brewfile = {
     class = "dev-ruby_rough",
     color = "#701516",
     cterm_color = "52",
     icon = "",
-    name = "Brewfile",
+    name = "Brewfile"
   },
   build = {
     class = "seti-bazel",
     color = "#447028",
     cterm_color = "22",
     icon = "",
-    name = "BazelBuild",
+    name = "BazelBuild"
   },
   ["build.zig.zon"] = {
     class = "seti-zig",
     color = "#7b4d0e",
     cterm_color = "94",
     icon = "",
-    name = "ZigObjectNotation",
+    name = "ZigObjectNotation"
   },
   checkhealth = {
     class = "md-stethoscope",
     color = "#3a5a7e",
     cterm_color = "24",
     icon = "󰓙",
-    name = "Checkhealth",
+    name = "Checkhealth"
   },
   ["cmakelists.txt"] = {
     class = "seti-config",
     color = "#526064",
     cterm_color = "59",
     icon = "",
-    name = "CMakeLists",
+    name = "CMakeLists"
   },
   commit_editmsg = {
     class = "dev-git",
     color = "#41535b",
     cterm_color = "239",
     icon = "",
-    name = "GitCommit",
+    name = "GitCommit"
   },
   ["compose.yaml"] = {
     class = "md-docker",
     color = "#2e5f99",
     cterm_color = "25",
     icon = "󰡨",
-    name = "Dockerfile",
+    name = "Dockerfile"
   },
   ["compose.yml"] = {
     class = "md-docker",
     color = "#2e5f99",
     cterm_color = "25",
     icon = "󰡨",
-    name = "Dockerfile",
+    name = "Dockerfile"
   },
   containerfile = {
     class = "md-docker",
     color = "#2e5f99",
     cterm_color = "25",
     icon = "󰡨",
-    name = "Dockerfile",
+    name = "Dockerfile"
   },
   copying = {
     class = "seti-license",
     color = "#666620",
     cterm_color = "58",
     icon = "",
-    name = "License",
+    name = "License"
   },
   ["copying.lesser"] = {
     class = "seti-license",
     color = "#666620",
     cterm_color = "58",
     icon = "",
-    name = "License",
+    name = "License"
   },
   ["docker-compose.yaml"] = {
     class = "md-docker",
     color = "#2e5f99",
     cterm_color = "25",
     icon = "󰡨",
-    name = "Dockerfile",
+    name = "Dockerfile"
   },
   ["docker-compose.yml"] = {
     class = "md-docker",
     color = "#2e5f99",
     cterm_color = "25",
     icon = "󰡨",
-    name = "Dockerfile",
+    name = "Dockerfile"
   },
   dockerfile = {
     class = "md-docker",
     color = "#2e5f99",
     cterm_color = "25",
     icon = "󰡨",
-    name = "Dockerfile",
+    name = "Dockerfile"
   },
   ["favicon.ico"] = {
     class = "seti-favicon",
     color = "#666620",
     cterm_color = "58",
     icon = "",
-    name = "Favicon",
+    name = "Favicon"
   },
   ["gemfile$"] = {
     class = "dev-ruby_rough",
     color = "#701516",
     cterm_color = "52",
     icon = "",
-    name = "Gemfile",
+    name = "Gemfile"
   },
   gnumakefile = {
     class = "dev-gnu",
     color = "#526064",
     cterm_color = "59",
     icon = "",
-    name = "Makefile",
+    name = "Makefile"
   },
   groovy = {
     class = "dev-groovy",
     color = "#384e5d",
     cterm_color = "239",
     icon = "",
-    name = "Groovy",
+    name = "Groovy"
   },
   gruntfile = {
     class = "seti-grunt",
     color = "#975122",
     cterm_color = "130",
     icon = "",
-    name = "Gruntfile",
+    name = "Gruntfile"
   },
   gulpfile = {
     class = "seti-gulp",
     color = "#992e33",
     cterm_color = "88",
     icon = "",
-    name = "Gulpfile",
+    name = "Gulpfile"
   },
   license = {
     class = "seti-license",
     color = "#686020",
     cterm_color = "58",
     icon = "",
-    name = "License",
+    name = "License"
   },
   makefile = {
     class = "dev-gnu",
     color = "#526064",
     cterm_color = "59",
     icon = "",
-    name = "Makefile",
+    name = "Makefile"
   },
   ["mix.lock"] = {
     class = "seti-elixir",
     color = "#6b4d83",
     cterm_color = "96",
     icon = "",
-    name = "MixLock",
+    name = "MixLock"
   },
   node_modules = {
     class = "dev-nodejs_small",
     color = "#ae1d38",
     cterm_color = "161",
     icon = "",
-    name = "NodeModules",
+    name = "NodeModules"
   },
   ["package-lock.json"] = {
     class = "dev-npm",
     color = "#7a0d21",
     cterm_color = "52",
     icon = "",
-    name = "PackageLockJson",
+    name = "PackageLockJson"
   },
   ["package.json"] = {
     class = "dev-npm",
     color = "#ae1d38",
     cterm_color = "161",
     icon = "",
-    name = "PackageJson",
+    name = "PackageJson"
   },
   procfile = {
     class = "seti-heroku",
     color = "#6b4d83",
     cterm_color = "96",
     icon = "",
-    name = "Procfile",
+    name = "Procfile"
   },
   ["py.typed"] = {
     class = "seti-python",
     color = "#805e02",
     cterm_color = "94",
     icon = "",
-    name = "Py.typed",
+    name = "Py.typed"
   },
   r = {
     class = "md-language_r",
     color = "#1a4c8c",
     cterm_color = "25",
     icon = "󰟔",
-    name = "R",
+    name = "R"
   },
   rakefile = {
     class = "dev-ruby_rough",
     color = "#701516",
     cterm_color = "52",
     icon = "",
-    name = "Rakefile",
+    name = "Rakefile"
   },
   rmd = {
     class = "seti-markdown",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "Rmd",
+    name = "Rmd"
   },
   ["svelte.config.js"] = {
     class = "seti-svelte",
     color = "#bf2e00",
     cterm_color = "160",
     icon = "",
-    name = "SvelteConfig",
+    name = "SvelteConfig"
   },
   ["tailwind.config.js"] = {
     class = "md-tailwind",
     color = "#158197",
     cterm_color = "31",
     icon = "󱏿",
-    name = "TailwindConfig",
+    name = "TailwindConfig"
   },
   ["tailwind.config.mjs"] = {
     class = "md-tailwind",
     color = "#158197",
     cterm_color = "31",
     icon = "󱏿",
-    name = "TailwindConfig",
+    name = "TailwindConfig"
   },
   ["tailwind.config.ts"] = {
     class = "md-tailwind",
     color = "#158197",
     cterm_color = "31",
     icon = "󱏿",
-    name = "TailwindConfig",
+    name = "TailwindConfig"
   },
   ["tsconfig.json"] = {
     class = "seti-tsconfig",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "TSConfig",
+    name = "TSConfig"
   },
   unlicense = {
     class = "seti-license",
     color = "#686020",
     cterm_color = "58",
     icon = "",
-    name = "License",
+    name = "License"
   },
   ["vagrantfile$"] = {
     class = "fa-linode",
     color = "#104abf",
     cterm_color = "26",
     icon = "",
-    name = "Vagrantfile",
+    name = "Vagrantfile"
   },
   webpack = {
     class = "md-webpack",
     color = "#36677c",
     cterm_color = "24",
     icon = "󰜫",
-    name = "Webpack",
+    name = "Webpack"
   },
   workspace = {
     class = "seti-bazel",
     color = "#447028",
     cterm_color = "22",
     icon = "",
-    name = "BazelWorkspace",
-  },
+    name = "BazelWorkspace"
+  }
 }
 
 M.icons_by_file_extension = {
@@ -485,1884 +485,1884 @@ M.icons_by_file_extension = {
     color = "#2e5f99",
     cterm_color = "25",
     icon = "󰡨",
-    name = "Dockerfile",
+    name = "Dockerfile"
   },
   R = {
     class = "md-language_r",
     color = "#1a4c8c",
     cterm_color = "25",
     icon = "󰟔",
-    name = "R",
+    name = "R"
   },
   aac = {
     class = "fa-music",
     color = "#336c78",
     cterm_color = "23",
     icon = "",
-    name = "Aac",
+    name = "Aac"
   },
   ai = {
     class = "dev-illustrator",
     color = "#666620",
     cterm_color = "58",
     icon = "",
-    name = "Ai",
+    name = "Ai"
   },
   app = {
     class = "cod-file_binary",
     color = "#9F0500",
     cterm_color = "124",
     icon = "",
-    name = "App",
+    name = "App"
   },
   applescript = {
     class = "fa-apple",
     color = "#526064",
     cterm_color = "59",
     icon = "",
-    name = "AppleScript",
+    name = "AppleScript"
   },
   awk = {
     class = "dev-terminal",
     color = "#3a4446",
     cterm_color = "238",
     icon = "",
-    name = "Awk",
+    name = "Awk"
   },
   azcli = {
     class = "cod-azure_devops",
     color = "#005a9f",
     cterm_color = "25",
     icon = "",
-    name = "AzureCli",
+    name = "AzureCli"
   },
   bak = {
     class = "md-backup_restore",
     color = "#526064",
     cterm_color = "59",
     icon = "󰁯",
-    name = "Backup",
+    name = "Backup"
   },
   bash = {
     class = "dev-terminal",
     color = "#447028",
     cterm_color = "22",
     icon = "",
-    name = "Bash",
+    name = "Bash"
   },
   bat = {
     class = "seti-config",
     color = "#40500f",
     cterm_color = "58",
     icon = "",
-    name = "Bat",
+    name = "Bat"
   },
   bazel = {
     class = "seti-bazel",
     color = "#447028",
     cterm_color = "22",
     icon = "",
-    name = "Bazel",
+    name = "Bazel"
   },
   bib = {
     class = "md-bookshelf",
     color = "#666620",
     cterm_color = "58",
     icon = "󱉟",
-    name = "BibTeX",
+    name = "BibTeX"
   },
   bmp = {
     class = "seti-image",
     color = "#6b4d83",
     cterm_color = "96",
     icon = "",
-    name = "Bmp",
+    name = "Bmp"
   },
   bzl = {
     class = "seti-bazel",
     color = "#447028",
     cterm_color = "22",
     icon = "",
-    name = "Bzl",
+    name = "Bzl"
   },
   c = {
     class = "custom-c",
     color = "#3b69aa",
     cterm_color = "25",
     icon = "",
-    name = "C",
+    name = "C"
   },
   ["c++"] = {
     class = "custom-cpp",
     color = "#a23253",
     cterm_color = "125",
     icon = "",
-    name = "CPlusPlus",
+    name = "CPlusPlus"
   },
   cbl = {
     class = "seti-config",
     color = "#005ca5",
     cterm_color = "25",
     icon = "",
-    name = "Cobol",
+    name = "Cobol"
   },
   cc = {
     class = "custom-cpp",
     color = "#a23253",
     cterm_color = "125",
     icon = "",
-    name = "CPlusPlus",
+    name = "CPlusPlus"
   },
   ccm = {
     class = "custom-cpp",
     color = "#a23253",
     cterm_color = "125",
     icon = "",
-    name = "CPlusPlusModule",
+    name = "CPlusPlusModule"
   },
   cfg = {
     class = "dev-code_badge",
     color = "#2f2f2f",
     cterm_color = "236",
     icon = "",
-    name = "Configuration",
+    name = "Configuration"
   },
   cjs = {
     class = "md-language_javascript",
     color = "#505011",
     cterm_color = "58",
     icon = "󰌞",
-    name = "Cjs",
+    name = "Cjs"
   },
   clj = {
     class = "dev-clojure",
     color = "#466024",
     cterm_color = "22",
     icon = "",
-    name = "Clojure",
+    name = "Clojure"
   },
   cljc = {
     class = "dev-clojure",
     color = "#466024",
     cterm_color = "22",
     icon = "",
-    name = "ClojureC",
+    name = "ClojureC"
   },
   cljd = {
     class = "dev-clojure_alt",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "ClojureDart",
+    name = "ClojureDart"
   },
   cljs = {
     class = "dev-clojure_alt",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "ClojureJS",
+    name = "ClojureJS"
   },
   cmake = {
     class = "seti-config",
     color = "#526064",
     cterm_color = "59",
     icon = "",
-    name = "CMake",
+    name = "CMake"
   },
   cob = {
     class = "seti-config",
     color = "#005ca5",
     cterm_color = "25",
     icon = "",
-    name = "Cobol",
+    name = "Cobol"
   },
   cobol = {
     class = "seti-config",
     color = "#005ca5",
     cterm_color = "25",
     icon = "",
-    name = "Cobol",
+    name = "Cobol"
   },
   coffee = {
     class = "seti-coffee",
     color = "#666620",
     cterm_color = "58",
     icon = "",
-    name = "Coffee",
+    name = "Coffee"
   },
   conf = {
     class = "seti-config",
     color = "#526064",
     cterm_color = "59",
     icon = "",
-    name = "Conf",
+    name = "Conf"
   },
   ["config.ru"] = {
     class = "dev-ruby_rough",
     color = "#701516",
     cterm_color = "52",
     icon = "",
-    name = "ConfigRu",
+    name = "ConfigRu"
   },
   cp = {
     class = "custom-cpp",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "Cp",
+    name = "Cp"
   },
   cpp = {
     class = "custom-cpp",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "Cpp",
+    name = "Cpp"
   },
   cppm = {
     class = "custom-cpp",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "Cppm",
+    name = "Cppm"
   },
   cpy = {
     class = "seti-config",
     color = "#005ca5",
     cterm_color = "25",
     icon = "",
-    name = "Cobol",
+    name = "Cobol"
   },
   cr = {
     class = "seti-crystal",
     color = "#434343",
     cterm_color = "238",
     icon = "",
-    name = "Crystal",
+    name = "Crystal"
   },
   cs = {
     class = "md-language_csharp",
     color = "#434d04",
     cterm_color = "58",
     icon = "󰌛",
-    name = "Cs",
+    name = "Cs"
   },
   csh = {
     class = "dev-terminal",
     color = "#3a4446",
     cterm_color = "238",
     icon = "",
-    name = "Csh",
+    name = "Csh"
   },
   cshtml = {
     class = "md-razor_double_edge",
     color = "#512bd4",
     cterm_color = "56",
     icon = "󱦗",
-    name = "RazorPage",
+    name = "RazorPage"
   },
   cson = {
     class = "seti-json",
     color = "#666620",
     cterm_color = "58",
     icon = "",
-    name = "Cson",
+    name = "Cson"
   },
   csproj = {
     class = "md-dot_net",
     color = "#512bd4",
     cterm_color = "56",
     icon = "󰪮",
-    name = "CSharpProject",
+    name = "CSharpProject"
   },
   css = {
     class = "dev-css3",
     color = "#2c6ea3",
     cterm_color = "24",
     icon = "",
-    name = "Css",
+    name = "Css"
   },
   csv = {
     class = "seti-csv",
     color = "#447028",
     cterm_color = "22",
     icon = "",
-    name = "Csv",
+    name = "Csv"
   },
   cts = {
     class = "seti-typescript",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "Cts",
+    name = "Cts"
   },
   cu = {
     class = "seti-cu",
     color = "#447028",
     cterm_color = "22",
     icon = "",
-    name = "cuda",
+    name = "cuda"
   },
   cuh = {
     class = "seti-cu",
     color = "#6b4d83",
     cterm_color = "96",
     icon = "",
-    name = "cudah",
+    name = "cudah"
   },
   cxx = {
     class = "custom-cpp",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "Cxx",
+    name = "Cxx"
   },
   cxxm = {
     class = "custom-cpp",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "Cxxm",
+    name = "Cxxm"
   },
   d = {
     class = "dev-dlang",
     color = "#325a13",
     cterm_color = "22",
     icon = "",
-    name = "D",
+    name = "D"
   },
   dart = {
     class = "dev-dart",
     color = "#03589C",
     cterm_color = "25",
     icon = "",
-    name = "Dart",
+    name = "Dart"
   },
   db = {
     class = "dev-database",
     color = "#494848",
     cterm_color = "238",
     icon = "",
-    name = "Db",
+    name = "Db"
   },
   desktop = {
     class = "fa-desktop",
     color = "#563d7c",
     cterm_color = "54",
     icon = "",
-    name = "DesktopEntry",
+    name = "DesktopEntry"
   },
   diff = {
     class = "dev-git_compare",
     color = "#41535b",
     cterm_color = "239",
     icon = "",
-    name = "Diff",
+    name = "Diff"
   },
   doc = {
     class = "md-file_word",
     color = "#185abd",
     cterm_color = "26",
     icon = "󰈬",
-    name = "Doc",
+    name = "Doc"
   },
   docx = {
     class = "md-file_word",
     color = "#185abd",
     cterm_color = "26",
     icon = "󰈬",
-    name = "Docx",
+    name = "Docx"
   },
   drl = {
     class = "fae-brain",
     color = "#553a3a",
     cterm_color = "238",
     icon = "",
-    name = "Drools",
+    name = "Drools"
   },
   dropbox = {
     class = "dev-dropbox",
     color = "#0049be",
     cterm_color = "26",
     icon = "",
-    name = "Dropbox",
+    name = "Dropbox"
   },
   dump = {
     class = "dev-database",
     color = "#494848",
     cterm_color = "238",
     icon = "",
-    name = "Dump",
+    name = "Dump"
   },
   edn = {
     class = "dev-clojure_alt",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "Edn",
+    name = "Edn"
   },
   eex = {
     class = "seti-elixir",
     color = "#6b4d83",
     cterm_color = "96",
     icon = "",
-    name = "Eex",
+    name = "Eex"
   },
   ejs = {
     class = "seti-html",
     color = "#666620",
     cterm_color = "58",
     icon = "",
-    name = "Ejs",
+    name = "Ejs"
   },
   elf = {
     class = "cod-file_binary",
     color = "#9F0500",
     cterm_color = "124",
     icon = "",
-    name = "Elf",
+    name = "Elf"
   },
   elm = {
     class = "seti-elm",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "Elm",
+    name = "Elm"
   },
   eot = {
     class = "fa-font",
     color = "#2f2f2f",
     cterm_color = "236",
     icon = "",
-    name = "EmbeddedOpenTypeFont",
+    name = "EmbeddedOpenTypeFont"
   },
   epp = {
     class = "seti-puppet",
     color = "#80530d",
     cterm_color = "94",
     icon = "",
-    name = "Epp",
+    name = "Epp"
   },
   erb = {
     class = "seti-html",
     color = "#701516",
     cterm_color = "52",
     icon = "",
-    name = "Erb",
+    name = "Erb"
   },
   erl = {
     class = "dev-erlang",
     color = "#8a2b72",
     cterm_color = "89",
     icon = "",
-    name = "Erl",
+    name = "Erl"
   },
   ex = {
     class = "seti-elixir",
     color = "#6b4d83",
     cterm_color = "96",
     icon = "",
-    name = "Ex",
+    name = "Ex"
   },
   exe = {
     class = "cod-file_binary",
     color = "#9F0500",
     cterm_color = "124",
     icon = "",
-    name = "Exe",
+    name = "Exe"
   },
   exs = {
     class = "seti-elixir",
     color = "#6b4d83",
     cterm_color = "96",
     icon = "",
-    name = "Exs",
+    name = "Exs"
   },
   ["f#"] = {
     class = "dev-fsharp",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "Fsharp",
+    name = "Fsharp"
   },
   f90 = {
     class = "md-language_fortran",
     color = "#563b70",
     cterm_color = "53",
     icon = "󱈚",
-    name = "Fortran",
+    name = "Fortran"
   },
   fish = {
     class = "dev-terminal",
     color = "#3a4446",
     cterm_color = "238",
     icon = "",
-    name = "Fish",
+    name = "Fish"
   },
   flac = {
     class = "fa-music",
     color = "#336c78",
     cterm_color = "23",
     icon = "",
-    name = "Flac",
+    name = "Flac"
   },
   fnl = {
     class = "custom-fennel",
     color = "#33312b",
     cterm_color = "236",
     icon = "",
-    name = "Fennel",
+    name = "Fennel"
   },
   fs = {
     class = "dev-fsharp",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "Fs",
+    name = "Fs"
   },
   fsi = {
     class = "dev-fsharp",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "Fsi",
+    name = "Fsi"
   },
   fsscript = {
     class = "dev-fsharp",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "Fsscript",
+    name = "Fsscript"
   },
   fsx = {
     class = "dev-fsharp",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "Fsx",
+    name = "Fsx"
   },
   gd = {
     class = "seti-config",
     color = "#526064",
     cterm_color = "59",
     icon = "",
-    name = "GDScript",
+    name = "GDScript"
   },
   gemspec = {
     class = "dev-ruby_rough",
     color = "#701516",
     cterm_color = "52",
     icon = "",
-    name = "Gemspec",
+    name = "Gemspec"
   },
   gif = {
     class = "seti-image",
     color = "#6b4d83",
     cterm_color = "96",
     icon = "",
-    name = "Gif",
+    name = "Gif"
   },
   git = {
     class = "dev-git",
     color = "#b5391e",
     cterm_color = "160",
     icon = "",
-    name = "GitLogo",
+    name = "GitLogo"
   },
   glb = {
     class = "fa-cube",
     color = "#80581e",
     cterm_color = "94",
     icon = "",
-    name = "BinaryGLTF",
+    name = "BinaryGLTF"
   },
   gnumakefile = {
     class = "dev-gnu",
     color = "#526064",
     cterm_color = "59",
     icon = "",
-    name = "Makefile",
+    name = "Makefile"
   },
   go = {
     class = "seti-go",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "Go",
+    name = "Go"
   },
   godot = {
     class = "dev-code_badge",
     color = "#526064",
     cterm_color = "59",
     icon = "",
-    name = "GodotProject",
+    name = "GodotProject"
   },
   gql = {
     class = "fa-connectdevelop",
     color = "#ac2880",
     cterm_color = "126",
     icon = "",
-    name = "GraphQL",
+    name = "GraphQL"
   },
   graphql = {
     class = "fa-connectdevelop",
     color = "#ac2880",
     cterm_color = "126",
     icon = "",
-    name = "GraphQL",
+    name = "GraphQL"
   },
   h = {
     class = "fa-h_square",
     color = "#6b4d83",
     cterm_color = "96",
     icon = "",
-    name = "H",
+    name = "H"
   },
   haml = {
     class = "seti-html",
     color = "#2f2f2d",
     cterm_color = "236",
     icon = "",
-    name = "Haml",
+    name = "Haml"
   },
   hbs = {
     class = "seti-mustache",
     color = "#a04f1d",
     cterm_color = "130",
     icon = "",
-    name = "Hbs",
+    name = "Hbs"
   },
   heex = {
     class = "seti-elixir",
     color = "#6b4d83",
     cterm_color = "96",
     icon = "",
-    name = "Heex",
+    name = "Heex"
   },
   hh = {
     class = "fa-h_square",
     color = "#6b4d83",
     cterm_color = "96",
     icon = "",
-    name = "Hh",
+    name = "Hh"
   },
   hpp = {
     class = "fa-h_square",
     color = "#6b4d83",
     cterm_color = "96",
     icon = "",
-    name = "Hpp",
+    name = "Hpp"
   },
   hrl = {
     class = "dev-erlang",
     color = "#8a2b72",
     cterm_color = "89",
     icon = "",
-    name = "Hrl",
+    name = "Hrl"
   },
   hs = {
     class = "seti-haskell",
     color = "#6b4d83",
     cterm_color = "96",
     icon = "",
-    name = "Hs",
+    name = "Hs"
   },
   htm = {
     class = "seti-html",
     color = "#aa391c",
     cterm_color = "124",
     icon = "",
-    name = "Htm",
+    name = "Htm"
   },
   html = {
     class = "dev-html5",
     color = "#ab3a1c",
     cterm_color = "124",
     icon = "",
-    name = "Html",
+    name = "Html"
   },
   huff = {
     class = "md-chess_knight",
     color = "#4242c7",
     cterm_color = "56",
     icon = "󰡘",
-    name = "Huff",
+    name = "Huff"
   },
   hurl = {
     class = "fa-exchange",
     color = "#bf0266",
     cterm_color = "125",
     icon = "",
-    name = "Hurl",
+    name = "Hurl"
   },
   hx = {
     class = "seti-haxe",
     color = "#9c5715",
     cterm_color = "130",
     icon = "",
-    name = "Haxe",
+    name = "Haxe"
   },
   hxx = {
     class = "fa-h_square",
     color = "#6b4d83",
     cterm_color = "96",
     icon = "",
-    name = "Hxx",
+    name = "Hxx"
   },
   ico = {
     class = "seti-image",
     color = "#666620",
     cterm_color = "58",
     icon = "",
-    name = "Ico",
+    name = "Ico"
   },
   import = {
     class = "fa-paperclip",
     color = "#2f2f2f",
     cterm_color = "236",
     icon = "",
-    name = "ImportConfiguration",
+    name = "ImportConfiguration"
   },
   ini = {
     class = "seti-config",
     color = "#526064",
     cterm_color = "59",
     icon = "",
-    name = "Ini",
+    name = "Ini"
   },
   ino = {
     class = "linux-arduino",
     color = "#397981",
     cterm_color = "30",
     icon = "",
-    name = "arduino",
+    name = "arduino"
   },
   ipynb = {
     class = "seti-python",
     color = "#366b8a",
     cterm_color = "24",
     icon = "",
-    name = "Notebook",
+    name = "Notebook"
   },
   ixx = {
     class = "custom-cpp",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "Ixx",
+    name = "Ixx"
   },
   java = {
     class = "dev-java",
     color = "#992e33",
     cterm_color = "88",
     icon = "",
-    name = "Java",
+    name = "Java"
   },
   jl = {
     class = "seti-julia",
     color = "#6c4b7c",
     cterm_color = "96",
     icon = "",
-    name = "Jl",
+    name = "Jl"
   },
   jpeg = {
     class = "seti-image",
     color = "#6b4d83",
     cterm_color = "96",
     icon = "",
-    name = "Jpeg",
+    name = "Jpeg"
   },
   jpg = {
     class = "seti-image",
     color = "#6b4d83",
     cterm_color = "96",
     icon = "",
-    name = "Jpg",
+    name = "Jpg"
   },
   js = {
     class = "md-language_javascript",
     color = "#505011",
     cterm_color = "58",
     icon = "󰌞",
-    name = "Js",
+    name = "Js"
   },
   json = {
     class = "seti-json",
     color = "#666620",
     cterm_color = "58",
     icon = "",
-    name = "Json",
+    name = "Json"
   },
   json5 = {
     class = "seti-json",
     color = "#666620",
     cterm_color = "58",
     icon = "",
-    name = "Json5",
+    name = "Json5"
   },
   jsonc = {
     class = "seti-json",
     color = "#666620",
     cterm_color = "58",
     icon = "",
-    name = "Jsonc",
+    name = "Jsonc"
   },
   jsx = {
     class = "seti-react",
     color = "#158197",
     cterm_color = "31",
     icon = "",
-    name = "Jsx",
+    name = "Jsx"
   },
   jxl = {
     class = "seti-image",
     color = "#6b4d83",
     cterm_color = "96",
     icon = "",
-    name = "JpegXl",
+    name = "JpegXl"
   },
   ksh = {
     class = "dev-terminal",
     color = "#3a4446",
     cterm_color = "238",
     icon = "",
-    name = "Ksh",
+    name = "Ksh"
   },
   kt = {
     class = "seti-kotlin",
     color = "#5f3ebf",
     cterm_color = "92",
     icon = "",
-    name = "Kotlin",
+    name = "Kotlin"
   },
   kts = {
     class = "seti-kotlin",
     color = "#5f3ebf",
     cterm_color = "92",
     icon = "",
-    name = "KotlinScript",
+    name = "KotlinScript"
   },
   leex = {
     class = "seti-elixir",
     color = "#6b4d83",
     cterm_color = "96",
     icon = "",
-    name = "Leex",
+    name = "Leex"
   },
   less = {
     class = "seti-css",
     color = "#563d7c",
     cterm_color = "54",
     icon = "",
-    name = "Less",
+    name = "Less"
   },
   lhs = {
     class = "seti-haskell",
     color = "#6b4d83",
     cterm_color = "96",
     icon = "",
-    name = "Lhs",
+    name = "Lhs"
   },
   license = {
     class = "seti-license",
     color = "#666620",
     cterm_color = "58",
     icon = "",
-    name = "License",
+    name = "License"
   },
   liquid = {
     class = "seti-liquid",
     color = "#4a6024",
     cterm_color = "58",
     icon = "",
-    name = "Liquid",
+    name = "Liquid"
   },
   lock = {
     class = "fa-unlock_alt",
     color = "#5e5e5e",
     cterm_color = "59",
     icon = "",
-    name = "Lock",
+    name = "Lock"
   },
   log = {
     class = "md-library",
     color = "#4a4a4a",
     cterm_color = "239",
     icon = "󰌱",
-    name = "Log",
+    name = "Log"
   },
   lua = {
     class = "seti-lua",
     color = "#366b8a",
     cterm_color = "24",
     icon = "",
-    name = "Lua",
+    name = "Lua"
   },
   luau = {
     class = "seti-lua",
     color = "#007abf",
     cterm_color = "32",
     icon = "",
-    name = "Luau",
+    name = "Luau"
   },
   m4a = {
     class = "fa-music",
     color = "#336c78",
     cterm_color = "23",
     icon = "",
-    name = "M4A",
+    name = "M4A"
   },
   m4v = {
     class = "fa-video_camera",
     color = "#7e4c10",
     cterm_color = "94",
     icon = "",
-    name = "M4V",
+    name = "M4V"
   },
   makefile = {
     class = "dev-gnu",
     color = "#526064",
     cterm_color = "59",
     icon = "",
-    name = "Makefile",
+    name = "Makefile"
   },
   markdown = {
     class = "seti-markdown",
     color = "#4a4a4a",
     cterm_color = "239",
     icon = "",
-    name = "Markdown",
+    name = "Markdown"
   },
   material = {
     class = "md-image_filter_hdr",
     color = "#8a2b72",
     cterm_color = "89",
     icon = "󰔉",
-    name = "Material",
+    name = "Material"
   },
   md = {
     class = "oct-markdown",
     color = "#4a4a4a",
     cterm_color = "239",
     icon = "",
-    name = "Md",
+    name = "Md"
   },
   mdx = {
     class = "oct-markdown",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "Mdx",
+    name = "Mdx"
   },
   mint = {
     class = "md-leaf",
     color = "#44604a",
     cterm_color = "23",
     icon = "󰌪",
-    name = "Mint",
+    name = "Mint"
   },
   mjs = {
     class = "md-language_javascript",
     color = "#505011",
     cterm_color = "58",
     icon = "󰌞",
-    name = "Mjs",
+    name = "Mjs"
   },
   mk = {
     class = "dev-gnu",
     color = "#526064",
     cterm_color = "59",
     icon = "",
-    name = "Makefile",
+    name = "Makefile"
   },
   mkv = {
     class = "fa-video_camera",
     color = "#7e4c10",
     cterm_color = "94",
     icon = "",
-    name = "Mkv",
+    name = "Mkv"
   },
   ml = {
     class = "seti-ocaml",
     color = "#975122",
     cterm_color = "130",
     icon = "",
-    name = "Ml",
+    name = "Ml"
   },
   mli = {
     class = "seti-ocaml",
     color = "#975122",
     cterm_color = "130",
     icon = "",
-    name = "Mli",
+    name = "Mli"
   },
   mo = {
     class = "md-infinity",
     color = "#654ca7",
     cterm_color = "61",
     icon = "󰛤",
-    name = "Motoko",
+    name = "Motoko"
   },
   mov = {
     class = "fa-video_camera",
     color = "#7e4c10",
     cterm_color = "94",
     icon = "",
-    name = "MOV",
+    name = "MOV"
   },
   mp3 = {
     class = "fa-music",
     color = "#336c78",
     cterm_color = "23",
     icon = "",
-    name = "Mp3",
+    name = "Mp3"
   },
   mp4 = {
     class = "fa-video_camera",
     color = "#7e4c10",
     cterm_color = "94",
     icon = "",
-    name = "Mp4",
+    name = "Mp4"
   },
   mpp = {
     class = "custom-cpp",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "Mpp",
+    name = "Mpp"
   },
   mts = {
     class = "seti-typescript",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "Mts",
+    name = "Mts"
   },
   mustache = {
     class = "seti-mustache",
     color = "#975122",
     cterm_color = "130",
     icon = "",
-    name = "Mustache",
+    name = "Mustache"
   },
   nim = {
     class = "seti-nim",
     color = "#514700",
     cterm_color = "58",
     icon = "",
-    name = "Nim",
+    name = "Nim"
   },
   nix = {
     class = "linux-nixos",
     color = "#3f5d72",
     cterm_color = "24",
     icon = "",
-    name = "Nix",
+    name = "Nix"
   },
   nswag = {
     class = "seti-json",
     color = "#427516",
     cterm_color = "28",
     icon = "",
-    name = "Nswag",
+    name = "Nswag"
   },
   nu = {
     class = "fa-chevron_right",
     color = "#276f4e",
     cterm_color = "29",
     icon = "",
-    name = "Nushell",
+    name = "Nushell"
   },
   ogg = {
     class = "fa-music",
     color = "#336c78",
     cterm_color = "23",
     icon = "",
-    name = "Ogg",
+    name = "Ogg"
   },
   opus = {
     class = "md-file_music",
     color = "#a55c01",
     cterm_color = "130",
     icon = "󰈣",
-    name = "OPUS",
+    name = "OPUS"
   },
   org = {
     class = "custom-orgmode",
     color = "#4f7166",
     cterm_color = "66",
     icon = "",
-    name = "OrgMode",
+    name = "OrgMode"
   },
   otf = {
     class = "fa-font",
     color = "#2f2f2f",
     cterm_color = "236",
     icon = "",
-    name = "OpenTypeFont",
+    name = "OpenTypeFont"
   },
   out = {
     class = "cod-file_binary",
     color = "#9F0500",
     cterm_color = "124",
     icon = "",
-    name = "Out",
+    name = "Out"
   },
   pck = {
     class = "oct-package",
     color = "#526064",
     cterm_color = "59",
     icon = "",
-    name = "PackedResource",
+    name = "PackedResource"
   },
   pdf = {
     class = "cod-file_pdf",
     color = "#b30b00",
     cterm_color = "124",
     icon = "",
-    name = "Pdf",
+    name = "Pdf"
   },
   php = {
     class = "seti-php",
     color = "#6b4d83",
     cterm_color = "96",
     icon = "",
-    name = "Php",
+    name = "Php"
   },
   pl = {
     class = "dev-perl",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "Pl",
+    name = "Pl"
   },
   pm = {
     class = "dev-perl",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "Pm",
+    name = "Pm"
   },
   png = {
     class = "seti-image",
     color = "#6b4d83",
     cterm_color = "96",
     icon = "",
-    name = "Png",
+    name = "Png"
   },
   pp = {
     class = "seti-puppet",
     color = "#80530d",
     cterm_color = "94",
     icon = "",
-    name = "Pp",
+    name = "Pp"
   },
   ppt = {
     class = "md-file_powerpoint",
     color = "#983826",
     cterm_color = "124",
     icon = "󰈧",
-    name = "Ppt",
+    name = "Ppt"
   },
   prisma = {
     class = "seti-prisma",
     color = "#444da2",
     cterm_color = "61",
     icon = "",
-    name = "Prisma",
+    name = "Prisma"
   },
   pro = {
     class = "dev-prolog",
     color = "#725c2a",
     cterm_color = "94",
     icon = "",
-    name = "Prolog",
+    name = "Prolog"
   },
   ps1 = {
     class = "md-powershell",
     color = "#325698",
     cterm_color = "25",
     icon = "󰨊",
-    name = "PsScriptfile",
+    name = "PsScriptfile"
   },
   psb = {
     class = "dev-photoshop",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "Psb",
+    name = "Psb"
   },
   psd = {
     class = "dev-photoshop",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "Psd",
+    name = "Psd"
   },
   psd1 = {
     class = "md-powershell",
     color = "#4f5893",
     cterm_color = "60",
     icon = "󰨊",
-    name = "PsManifestfile",
+    name = "PsManifestfile"
   },
   psm1 = {
     class = "md-powershell",
     color = "#4f5893",
     cterm_color = "60",
     icon = "󰨊",
-    name = "PsScriptModulefile",
+    name = "PsScriptModulefile"
   },
   pxd = {
     class = "seti-python",
     color = "#3c6f98",
     cterm_color = "24",
     icon = "",
-    name = "Pxd",
+    name = "Pxd"
   },
   pxi = {
     class = "seti-python",
     color = "#3c6f98",
     cterm_color = "24",
     icon = "",
-    name = "Pxi",
+    name = "Pxi"
   },
   py = {
     class = "seti-python",
     color = "#805e02",
     cterm_color = "94",
     icon = "",
-    name = "Py",
+    name = "Py"
   },
   pyc = {
     class = "seti-python",
     color = "#332d1d",
     cterm_color = "236",
     icon = "",
-    name = "Pyc",
+    name = "Pyc"
   },
   pyd = {
     class = "seti-python",
     color = "#332d1d",
     cterm_color = "236",
     icon = "",
-    name = "Pyd",
+    name = "Pyd"
   },
   pyi = {
     class = "seti-python",
     color = "#805e02",
     cterm_color = "94",
     icon = "",
-    name = "Pyi",
+    name = "Pyi"
   },
   pyo = {
     class = "seti-python",
     color = "#332d1d",
     cterm_color = "236",
     icon = "",
-    name = "Pyo",
+    name = "Pyo"
   },
   pyx = {
     class = "seti-python",
     color = "#3c6f98",
     cterm_color = "24",
     icon = "",
-    name = "Pyx",
+    name = "Pyx"
   },
   query = {
     class = "fae-tree",
     color = "#607035",
     cterm_color = "58",
     icon = "",
-    name = "Query",
+    name = "Query"
   },
   r = {
     class = "md-language_r",
     color = "#1a4c8c",
     cterm_color = "25",
     icon = "󰟔",
-    name = "R",
+    name = "R"
   },
   rake = {
     class = "dev-ruby_rough",
     color = "#701516",
     cterm_color = "52",
     icon = "",
-    name = "Rake",
+    name = "Rake"
   },
   razor = {
     class = "md-razor_single_edge",
     color = "#512bd4",
     cterm_color = "56",
     icon = "󱦘",
-    name = "RazorPage",
+    name = "RazorPage"
   },
   rb = {
     class = "dev-ruby_rough",
     color = "#701516",
     cterm_color = "52",
     icon = "",
-    name = "Rb",
+    name = "Rb"
   },
   res = {
     class = "seti-rescript",
     color = "#992e33",
     cterm_color = "88",
     icon = "",
-    name = "ReScript",
+    name = "ReScript"
   },
   resi = {
     class = "seti-rescript",
     color = "#a33759",
     cterm_color = "125",
     icon = "",
-    name = "ReScriptInterface",
+    name = "ReScriptInterface"
   },
   rlib = {
     class = "dev-rust",
     color = "#6f5242",
     cterm_color = "95",
     icon = "",
-    name = "Rlib",
+    name = "Rlib"
   },
   rmd = {
     class = "seti-markdown",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "Rmd",
+    name = "Rmd"
   },
   rproj = {
     class = "md-vector_rectangle",
     color = "#286844",
     cterm_color = "29",
     icon = "󰗆",
-    name = "Rproj",
+    name = "Rproj"
   },
   rs = {
     class = "seti-rust",
     color = "#6f5242",
     cterm_color = "95",
     icon = "",
-    name = "Rs",
+    name = "Rs"
   },
   rss = {
     class = "seti-xml",
     color = "#7e4e1e",
     cterm_color = "94",
     icon = "",
-    name = "Rss",
+    name = "Rss"
   },
   sass = {
     class = "seti-sass",
     color = "#a33759",
     cterm_color = "125",
     icon = "",
-    name = "Sass",
+    name = "Sass"
   },
   sbt = {
     class = "dev-scala",
     color = "#992e33",
     cterm_color = "88",
     icon = "",
-    name = "sbt",
+    name = "sbt"
   },
   scad = {
     class = "linux-openscad",
     color = "#53480f",
     cterm_color = "58",
     icon = "",
-    name = "OpenSCAD",
+    name = "OpenSCAD"
   },
   scala = {
     class = "dev-scala",
     color = "#992e33",
     cterm_color = "88",
     icon = "",
-    name = "Scala",
+    name = "Scala"
   },
   scm = {
     class = "md-lambda",
     color = "#303030",
     cterm_color = "236",
     icon = "󰘧",
-    name = "Scheme",
+    name = "Scheme"
   },
   scss = {
     class = "seti-sass",
     color = "#a33759",
     cterm_color = "125",
     icon = "",
-    name = "Scss",
+    name = "Scss"
   },
   sh = {
     class = "dev-terminal",
     color = "#3a4446",
     cterm_color = "238",
     icon = "",
-    name = "Sh",
+    name = "Sh"
   },
   sig = {
     class = "md-lambda",
     color = "#975122",
     cterm_color = "130",
     icon = "󰘧",
-    name = "Sig",
+    name = "Sig"
   },
   slim = {
     class = "seti-html",
     color = "#aa391c",
     cterm_color = "124",
     icon = "",
-    name = "Slim",
+    name = "Slim"
   },
   sln = {
     class = "dev-visualstudio",
     color = "#643995",
     cterm_color = "91",
     icon = "",
-    name = "Sln",
+    name = "Sln"
   },
   sml = {
     class = "md-lambda",
     color = "#975122",
     cterm_color = "130",
     icon = "󰘧",
-    name = "Sml",
+    name = "Sml"
   },
   sol = {
     class = "seti-ethereum",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "Solidity",
+    name = "Solidity"
   },
   ["spec.js"] = {
     class = "oct-beaker",
     color = "#666620",
     cterm_color = "58",
     icon = "",
-    name = "SpecJs",
+    name = "SpecJs"
   },
   ["spec.jsx"] = {
     class = "oct-beaker",
     color = "#158197",
     cterm_color = "31",
     icon = "",
-    name = "JavaScriptReactSpec",
+    name = "JavaScriptReactSpec"
   },
   ["spec.ts"] = {
     class = "oct-beaker",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "SpecTs",
+    name = "SpecTs"
   },
   ["spec.tsx"] = {
     class = "oct-beaker",
     color = "#1354bf",
     cterm_color = "26",
     icon = "",
-    name = "TypeScriptReactSpec",
+    name = "TypeScriptReactSpec"
   },
   sql = {
     class = "dev-database",
     color = "#494848",
     cterm_color = "238",
     icon = "",
-    name = "Sql",
+    name = "Sql"
   },
   sqlite = {
     class = "dev-database",
     color = "#494848",
     cterm_color = "238",
     icon = "",
-    name = "Sql",
+    name = "Sql"
   },
   sqlite3 = {
     class = "dev-database",
     color = "#494848",
     cterm_color = "238",
     icon = "",
-    name = "Sql",
+    name = "Sql"
   },
   styl = {
     class = "seti-stylus",
     color = "#466024",
     cterm_color = "22",
     icon = "",
-    name = "Styl",
+    name = "Styl"
   },
   sublime = {
     class = "dev-sublime",
     color = "#975122",
     cterm_color = "130",
     icon = "",
-    name = "Suo",
+    name = "Suo"
   },
   suo = {
     class = "dev-visualstudio",
     color = "#643995",
     cterm_color = "91",
     icon = "",
-    name = "Suo",
+    name = "Suo"
   },
   sv = {
     class = "md-memory",
     color = "#017226",
     cterm_color = "22",
     icon = "󰍛",
-    name = "SystemVerilog",
+    name = "SystemVerilog"
   },
   svelte = {
     class = "seti-svelte",
     color = "#bf2e00",
     cterm_color = "160",
     icon = "",
-    name = "Svelte",
+    name = "Svelte"
   },
   svg = {
     class = "md-svg",
     color = "#80581e",
     cterm_color = "94",
     icon = "󰜡",
-    name = "Svg",
+    name = "Svg"
   },
   svh = {
     class = "md-memory",
     color = "#017226",
     cterm_color = "22",
     icon = "󰍛",
-    name = "SystemVerilog",
+    name = "SystemVerilog"
   },
   swift = {
     class = "dev-swift",
     color = "#975122",
     cterm_color = "130",
     icon = "",
-    name = "Swift",
+    name = "Swift"
   },
   t = {
     class = "dev-perl",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "Tor",
+    name = "Tor"
   },
   tbc = {
     class = "md-feather",
     color = "#1e5cb3",
     cterm_color = "25",
     icon = "󰛓",
-    name = "Tcl",
+    name = "Tcl"
   },
   tcl = {
     class = "md-feather",
     color = "#1e5cb3",
     cterm_color = "25",
     icon = "󰛓",
-    name = "Tcl",
+    name = "Tcl"
   },
   templ = {
     class = "cod-code",
     color = "#6e5e18",
     cterm_color = "58",
     icon = "",
-    name = "Templ",
+    name = "Templ"
   },
   terminal = {
     class = "oct-terminal",
     color = "#217929",
     cterm_color = "28",
     icon = "",
-    name = "Terminal",
+    name = "Terminal"
   },
   ["test.js"] = {
     class = "oct-beaker",
     color = "#666620",
     cterm_color = "58",
     icon = "",
-    name = "TestJs",
+    name = "TestJs"
   },
   ["test.jsx"] = {
     class = "oct-beaker",
     color = "#158197",
     cterm_color = "31",
     icon = "",
-    name = "JavaScriptReactTest",
+    name = "JavaScriptReactTest"
   },
   ["test.ts"] = {
     class = "oct-beaker",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "TestTs",
+    name = "TestTs"
   },
   ["test.tsx"] = {
     class = "oct-beaker",
     color = "#1354bf",
     cterm_color = "26",
     icon = "",
-    name = "TypeScriptReactTest",
+    name = "TypeScriptReactTest"
   },
   tex = {
     class = "md-text_shadow",
     color = "#3D6117",
     cterm_color = "22",
     icon = "󰙩",
-    name = "Tex",
+    name = "Tex"
   },
   tf = {
     class = "seti-terraform",
     color = "#4732af",
     cterm_color = "55",
     icon = "",
-    name = "Terraform",
+    name = "Terraform"
   },
   tfvars = {
     class = "fa-file",
     color = "#4732af",
     cterm_color = "55",
     icon = "",
-    name = "TFVars",
+    name = "TFVars"
   },
   toml = {
     class = "custom-toml",
     color = "#753219",
     cterm_color = "88",
     icon = "",
-    name = "Toml",
+    name = "Toml"
   },
   tres = {
     class = "dev-database",
     color = "#666620",
     cterm_color = "58",
     icon = "",
-    name = "TextResource",
+    name = "TextResource"
   },
   ts = {
     class = "seti-typescript",
     color = "#36677c",
     cterm_color = "24",
     icon = "",
-    name = "Ts",
+    name = "Ts"
   },
   tscn = {
     class = "md-movie",
     color = "#6b4d83",
     cterm_color = "96",
     icon = "󰎁",
-    name = "TextScene",
+    name = "TextScene"
   },
   tsx = {
     class = "dev-react",
     color = "#1354bf",
     cterm_color = "26",
     icon = "",
-    name = "Tsx",
+    name = "Tsx"
   },
   ttf = {
     class = "fa-font",
     color = "#2f2f2f",
     cterm_color = "236",
     icon = "",
-    name = "TrueTypeFont",
+    name = "TrueTypeFont"
   },
   twig = {
     class = "seti-twig",
     color = "#466024",
     cterm_color = "22",
     icon = "",
-    name = "Twig",
+    name = "Twig"
   },
   txt = {
     class = "md-file_document",
     color = "#447028",
     cterm_color = "22",
     icon = "󰈙",
-    name = "Txt",
+    name = "Txt"
   },
   v = {
     class = "md-memory",
     color = "#017226",
     cterm_color = "22",
     icon = "󰍛",
-    name = "Verilog",
+    name = "Verilog"
   },
   vala = {
     class = "seti-vala",
     color = "#562b86",
     cterm_color = "54",
     icon = "",
-    name = "Vala",
+    name = "Vala"
   },
   vh = {
     class = "md-memory",
     color = "#017226",
     cterm_color = "22",
     icon = "󰍛",
-    name = "Verilog",
+    name = "Verilog"
   },
   vhd = {
     class = "md-memory",
     color = "#017226",
     cterm_color = "22",
     icon = "󰍛",
-    name = "VHDL",
+    name = "VHDL"
   },
   vhdl = {
     class = "md-memory",
     color = "#017226",
     cterm_color = "22",
     icon = "󰍛",
-    name = "VHDL",
+    name = "VHDL"
   },
   vim = {
     class = "custom-vim",
     color = "#017226",
     cterm_color = "22",
     icon = "",
-    name = "Vim",
+    name = "Vim"
   },
   vsh = {
     class = "custom-v_lang",
     color = "#3e5a7f",
     cterm_color = "24",
     icon = "",
-    name = "Vlang",
+    name = "Vlang"
   },
   vue = {
     class = "seti-vue",
     color = "#466024",
     cterm_color = "22",
     icon = "",
-    name = "Vue",
+    name = "Vue"
   },
   wasm = {
     class = "seti-wasm",
     color = "#4539a4",
     cterm_color = "55",
     icon = "",
-    name = "Wasm",
+    name = "Wasm"
   },
   wav = {
     class = "fa-music",
     color = "#336c78",
     cterm_color = "23",
     icon = "",
-    name = "Wav",
+    name = "Wav"
   },
   webm = {
     class = "fa-video_camera",
     color = "#7e4c10",
     cterm_color = "94",
     icon = "",
-    name = "Webm",
+    name = "Webm"
   },
   webmanifest = {
     class = "seti-json",
     color = "#504b1e",
     cterm_color = "58",
     icon = "",
-    name = "Webmanifest",
+    name = "Webmanifest"
   },
   webp = {
     class = "seti-image",
     color = "#6b4d83",
     cterm_color = "96",
     icon = "",
-    name = "Webp",
+    name = "Webp"
   },
   webpack = {
     class = "md-webpack",
     color = "#36677c",
     cterm_color = "24",
     icon = "󰜫",
-    name = "Webpack",
+    name = "Webpack"
   },
   woff = {
     class = "fa-font",
     color = "#2f2f2f",
     cterm_color = "236",
     icon = "",
-    name = "WebOpenFontFormat",
+    name = "WebOpenFontFormat"
   },
   woff2 = {
     class = "fa-font",
     color = "#2f2f2f",
     cterm_color = "236",
     icon = "",
-    name = "WebOpenFontFormat",
+    name = "WebOpenFontFormat"
   },
   xaml = {
     class = "md-language_xaml",
     color = "#512bd4",
     cterm_color = "56",
     icon = "󰙳",
-    name = "Xaml",
+    name = "Xaml"
   },
   xcplayground = {
     class = "dev-swift",
     color = "#975122",
     cterm_color = "130",
     icon = "",
-    name = "XcPlayground",
+    name = "XcPlayground"
   },
   xls = {
     class = "md-file_excel",
     color = "#207245",
     cterm_color = "29",
     icon = "󰈛",
-    name = "Xls",
+    name = "Xls"
   },
   xlsx = {
     class = "md-file_excel",
     color = "#207245",
     cterm_color = "29",
     icon = "󰈛",
-    name = "Xlsx",
+    name = "Xlsx"
   },
   xml = {
     class = "md-xml",
     color = "#975122",
     cterm_color = "130",
     icon = "󰗀",
-    name = "Xml",
+    name = "Xml"
   },
   xul = {
     class = "dev-firefox",
     color = "#975122",
     cterm_color = "130",
     icon = "",
-    name = "Xul",
+    name = "Xul"
   },
   yaml = {
     class = "seti-config",
     color = "#526064",
     cterm_color = "59",
     icon = "",
-    name = "Yaml",
+    name = "Yaml"
   },
   yml = {
     class = "seti-config",
     color = "#526064",
     cterm_color = "59",
     icon = "",
-    name = "Yml",
+    name = "Yml"
   },
   zig = {
     class = "seti-zig",
     color = "#7b4d0e",
     cterm_color = "94",
     icon = "",
-    name = "Zig",
+    name = "Zig"
   },
   zsh = {
     class = "dev-terminal",
     color = "#447028",
     cterm_color = "22",
     icon = "",
-    name = "Zsh",
-  },
+    name = "Zsh"
+  }
 }
 
 M.icons_by_operating_system = {
@@ -2371,267 +2371,267 @@ M.icons_by_operating_system = {
     color = "#bf3437",
     cterm_color = "160",
     icon = "",
-    name = "Almalinux",
+    name = "Almalinux"
   },
   alpine = {
     class = "linux-alpine",
     color = "#0d597f",
     cterm_color = "24",
     icon = "",
-    name = "Alpine",
+    name = "Alpine"
   },
   aosc = {
     class = "linux-aosc",
     color = "#c00000",
     cterm_color = "124",
     icon = "",
-    name = "AOSC",
+    name = "AOSC"
   },
   apple = {
     class = "seti-apple",
     color = "#515556",
     cterm_color = "240",
     icon = "",
-    name = "Apple",
+    name = "Apple"
   },
   arch = {
     class = "md-arch",
     color = "#0b6f9e",
     cterm_color = "24",
     icon = "󰣇",
-    name = "Arch",
+    name = "Arch"
   },
   artix = {
     class = "linux-artix",
     color = "#2b788f",
     cterm_color = "31",
     icon = "",
-    name = "Artix",
+    name = "Artix"
   },
   budgie = {
     class = "linux-budgie",
     color = "#366397",
     cterm_color = "25",
     icon = "",
-    name = "Budgie",
+    name = "Budgie"
   },
   centos = {
     class = "linux-centos",
     color = "#7a3d6a",
     cterm_color = "89",
     icon = "",
-    name = "Centos",
+    name = "Centos"
   },
   debian = {
     class = "linux-debian",
     color = "#a80030",
     cterm_color = "88",
     icon = "",
-    name = "Debian",
+    name = "Debian"
   },
   deepin = {
     class = "linux-deepin",
     color = "#1d6fa5",
     cterm_color = "24",
     icon = "",
-    name = "Deepin",
+    name = "Deepin"
   },
   devuan = {
     class = "linux-devuan",
     color = "#404a52",
     cterm_color = "238",
     icon = "",
-    name = "Devuan",
+    name = "Devuan"
   },
   elementary = {
     class = "linux-elementary",
     color = "#3b6081",
     cterm_color = "24",
     icon = "",
-    name = "Elementary",
+    name = "Elementary"
   },
   endeavour = {
     class = "linux-endeavour",
     color = "#5c2e8b",
     cterm_color = "54",
     icon = "",
-    name = "Endeavour",
+    name = "Endeavour"
   },
   fedora = {
     class = "linux-fedora",
     color = "#072a5e",
     cterm_color = "17",
     icon = "",
-    name = "Fedora",
+    name = "Fedora"
   },
   freebsd = {
     class = "linux-freebsd",
     color = "#c90f02",
     cterm_color = "160",
     icon = "",
-    name = "FreeBSD",
+    name = "FreeBSD"
   },
   gentoo = {
     class = "md-gentoo",
     color = "#585667",
     cterm_color = "60",
     icon = "󰣨",
-    name = "Gentoo",
+    name = "Gentoo"
   },
   guix = {
     class = "linux-gnu_guix",
     color = "#554400",
     cterm_color = "58",
     icon = "",
-    name = "Guix",
+    name = "Guix"
   },
   illumos = {
     class = "linux-illumos",
     color = "#bf320b",
     cterm_color = "160",
     icon = "",
-    name = "Illumos",
+    name = "Illumos"
   },
   kali = {
     class = "linux-kali_linux",
     color = "#1d59bf",
     cterm_color = "26",
     icon = "",
-    name = "Kali",
+    name = "Kali"
   },
   linux = {
     class = "cod-terminal_linux",
     color = "#333332",
     cterm_color = "236",
     icon = "",
-    name = "Linux",
+    name = "Linux"
   },
   mageia = {
     class = "linux-mageia",
     color = "#1a719f",
     cterm_color = "24",
     icon = "",
-    name = "Mageia",
+    name = "Mageia"
   },
   manjaro = {
     class = "linux-manjaro",
     color = "#227b3b",
     cterm_color = "29",
     icon = "",
-    name = "Manjaro",
+    name = "Manjaro"
   },
   mint = {
     class = "md-linux_mint",
     color = "#447529",
     cterm_color = "28",
     icon = "󰣭",
-    name = "Mint",
+    name = "Mint"
   },
   nixos = {
     class = "linux-nixos",
     color = "#3d586e",
     cterm_color = "24",
     icon = "",
-    name = "NixOS",
+    name = "NixOS"
   },
   openbsd = {
     class = "linux-openbsd",
     color = "#514310",
     cterm_color = "58",
     icon = "",
-    name = "OpenBSD",
+    name = "OpenBSD"
   },
   opensuse = {
     class = "linux-opensuse",
     color = "#4a7818",
     cterm_color = "64",
     icon = "",
-    name = "openSUSE",
+    name = "openSUSE"
   },
   parrot = {
     class = "linux-parrot",
     color = "#2a6f80",
     cterm_color = "23",
     icon = "",
-    name = "Parrot",
+    name = "Parrot"
   },
   pop_os = {
     class = "linux-pop_os",
     color = "#307b85",
     cterm_color = "30",
     icon = "",
-    name = "Pop_OS",
+    name = "Pop_OS"
   },
   raspberry_pi = {
     class = "linux-raspberry_pi",
     color = "#be1848",
     cterm_color = "161",
     icon = "",
-    name = "RaspberryPiOS",
+    name = "RaspberryPiOS"
   },
   redhat = {
     class = "md-redhat",
     color = "#EE0000",
     cterm_color = "196",
     icon = "󱄛",
-    name = "Redhat",
+    name = "Redhat"
   },
   rocky = {
     class = "linux-rocky_linux",
     color = "#0b865e",
     cterm_color = "29",
     icon = "",
-    name = "RockyLinux",
+    name = "RockyLinux"
   },
   sabayon = {
     class = "linux-sabayon",
     color = "#424242",
     cterm_color = "238",
     icon = "",
-    name = "Sabayon",
+    name = "Sabayon"
   },
   slackware = {
     class = "linux-slackware",
     color = "#35477f",
     cterm_color = "25",
     icon = "",
-    name = "Slackware",
+    name = "Slackware"
   },
   solus = {
     class = "linux-solus",
     color = "#4b5163",
     cterm_color = "239",
     icon = "",
-    name = "Solus",
+    name = "Solus"
   },
   ubuntu = {
     class = "dev-ubuntu",
     color = "#a6360f",
     cterm_color = "124",
     icon = "",
-    name = "Ubuntu",
+    name = "Ubuntu"
   },
   void = {
     class = "linux-void",
     color = "#295340",
     cterm_color = "23",
     icon = "",
-    name = "Void",
+    name = "Void"
   },
   windows = {
     class = "fa-windows",
     color = "#007bb3",
     cterm_color = "67",
     icon = "",
-    name = "Windows",
+    name = "Windows"
   },
   zorin = {
     class = "linux-zorin",
     color = "#0f79ae",
     cterm_color = "67",
     icon = "",
-    name = "Zorin",
-  },
+    name = "Zorin"
+  }
 }
 
 return M
