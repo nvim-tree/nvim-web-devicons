@@ -1,5 +1,6 @@
 check: icons
 	lua gen-check.lua
+
 icons: glyphs
 	lua gen-icons.lua
 

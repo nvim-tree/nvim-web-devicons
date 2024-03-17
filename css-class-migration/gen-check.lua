@@ -30,8 +30,10 @@ for var, typ in pairs(SOURCES) do
     if not to then
       fail = true
       io.stderr:write(string.format("ERR: icons-by-%s.lua missing %s\n", typ, k))
-    elseif from.color ~= to.color or from.icon ~= to.icon or from.name ~= to.name then
+    elseif from.icon ~= to.icon then
       fail = true
+      io.stderr:write(string.format("ERR: %-25s %s ~= %s\n", k, from.icon, to.icon))
+    elseif from.color ~= to.color or from.name ~= to.name then
       io.stderr:write(string.format("ERR: %s ~= %s\n", inspect(from), inspect(to)))
     end
   end

@@ -9,6 +9,12 @@ local SOURCES = {
   "os",
 }
 
+-- icons not yet available, non-nerd or alpha
+local OVERRIDES = {
+  -- by filename
+  [".prettierrc"] = "",
+}
+
 -- generate all "by"
 for _, typ in pairs(SOURCES) do
   print(string.format("glyphs-by-%s.lua -> icons-by-%s.lua", typ, typ))
@@ -18,13 +24,17 @@ for _, typ in pairs(SOURCES) do
   for key, glyph in pairs(require("glyphs-by-" .. typ)) do
     local icon
 
-    local glyphname = glyphnames[glyph.class]
-    if not glyphname then
-      local err = string.format("ERR: %-25s no icon for class %s", key, glyph.class)
-      icon = err
-      io.stderr:write(err .. "\n")
+    if OVERRIDES[key] then
+      icon = OVERRIDES[key]
     else
-      icon = glyphname.char
+      local glyphname = glyphnames[glyph.class]
+      if not glyphname then
+        local err = string.format("ERR: %-25s no icon for class %s", key, glyph.class)
+        icon = err
+        io.stderr:write(err .. "\n")
+      else
+        icon = glyphname.char
+      end
     end
 
     icons[key] = {

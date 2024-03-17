@@ -9,6 +9,41 @@ local SOURCES = {
   icons_by_operating_system = "os",
 }
 
+-- multiple or no css class
+local OVERRIDES = {
+  -- by filename
+  [".babelrc"] = "seti-less",
+  ["mix.lock"] = "seti-elixir",
+  [".prettierrc"] = "custom-prettier",
+  -- by extension
+  ["elm"] = "seti-elm",
+  ["exs"] = "seti-elixir",
+  ["coffee"] = "seti-coffee",
+  ["json5"] = "seti-json",
+  ["eex"] = "seti-elixir",
+  ["ex"] = "seti-elixir",
+  ["json"] = "seti-json",
+  ["nswag"] = "seti-json",
+  ["cson"] = "seti-json",
+  ["cr"] = "seti-crystal",
+  ["jsonc"] = "seti-json",
+  ["pp"] = "seti-puppet",
+  ["webmanifest"] = "seti-json",
+  ["kt"] = "seti-kotlin",
+  ["heex"] = "seti-elixir",
+  ["leex"] = "seti-elixir",
+  ["kts"] = "seti-kotlin",
+  ["epp"] = "seti-puppet",
+  ["cob"] = "seti-config",
+  ["cbl"] = "seti-config",
+  ["cobol"] = "seti-config",
+  ["cpy"] = "seti-config",
+  ["sml"] = "md-lambda",
+  ["sig"] = "md-lambda",
+  ["mo"] = "md-infinity",
+  ["nu"] = "fa-chevron_right",
+}
+
 -- map name by codepoint value
 local names_by_codepoint = {}
 for name, data in pairs(glyphnames) do
@@ -30,6 +65,10 @@ for var, typ in pairs(SOURCES) do
   for key, icon in pairs(require("icons-default")[var]) do
     local cp = utf8.codepoint(icon.icon)
     local names = names_by_codepoint[cp]
+
+    if OVERRIDES[key] then
+      names = { OVERRIDES[key] }
+    end
 
     local class
     if not names then
