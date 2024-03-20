@@ -2,7 +2,7 @@
 ---Display all icons and their group highlighted, followed by the concrete definition
 --
 ---@class IconDisplay for :NvimTreeHiTest
----@field tag any filename, os or extension, only strings accepted
+---@field tag string filename, os or extension
 ---@field name string name without prefix
 ---@field icon string icon itself
 ---@field group string|nil :hi group name
@@ -10,13 +10,17 @@
 local IconDisplay = {}
 
 ---@param o IconDisplay
----@return IconDisplay
+---@return IconDisplay|nil
 function IconDisplay:new(o)
+  if type(o.tag) ~= "string" or type(o.name) ~= "string" or type(o.icon) ~= "string" then
+    return nil
+  end
+
   setmetatable(o, self)
   self.__index = self
 
   o.group = "DevIcon" .. o.name
-  o.tag = type(o.tag) == "string" and o.tag or ""
+  o.tag = o.tag or ""
 
   -- concrete definition
   local ok, res = pcall(vim.api.nvim_cmd, { cmd = "highlight", args = { o.group } }, { output = true })
@@ -70,9 +74,11 @@ local function render_icons(bufnr, l, icons, header)
   -- build all icon displays
   for tag, icon in pairs(icons) do
     local display = IconDisplay:new { tag = tag, name = icon.name, icon = icon.icon }
-    table.insert(displays, display)
-    max_tag_len = math.max(max_tag_len, #display.tag)
-    max_name_len = math.max(max_name_len, #display.name)
+    if display then
+      table.insert(displays, display)
+      max_tag_len = math.max(max_tag_len, #display.tag)
+      max_name_len = math.max(max_name_len, #display.name)
+    end
   end
 
   -- sort by name
