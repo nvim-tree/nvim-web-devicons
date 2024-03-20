@@ -1,4 +1,16 @@
 local icons_by_filename = {
+  ["build.gradle"] = {
+    icon = "",
+    color = "#005f87",
+    cterm_color = "24",
+    name = "GradleBuildScript",
+  },
+  ["settings.gradle"] = {
+    icon = "",
+    color = "#005f87",
+    cterm_color = "24",
+    name = "GradleSettings",
+  },
   [".babelrc"] = {
     icon = "",
     color = "#cbcb41",
@@ -262,6 +274,24 @@ local icons_by_filename = {
     color = "#6d8086",
     cterm_color = "66",
     name = "Makefile",
+  },
+  ["gradlew"] = {
+    icon = "",
+    color = "#005f87",
+    cterm_color = "24",
+    name = "GradleWrapperScript",
+  },
+  ["gradle.properties"] = {
+    icon = "",
+    color = "#005f87",
+    cterm_color = "24",
+    name = "GradleProperties",
+  },
+  ["gradle-wrapper.properties"] = {
+    icon = "",
+    color = "#005f87",
+    cterm_color = "24",
+    name = "GradleWrapperProperties",
   },
   ["groovy"] = {
     icon = "",
