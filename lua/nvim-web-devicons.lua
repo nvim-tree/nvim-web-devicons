@@ -343,15 +343,23 @@ function M.setup(opts)
 
   local user_filename_icons = user_icons.override_by_filename
   local user_file_ext_icons = user_icons.override_by_extension
+  local user_operating_system_icons = user_icons.override_by_operating_system
 
-  icons =
-    vim.tbl_extend("force", icons, user_icons.override or {}, user_filename_icons or {}, user_file_ext_icons or {})
+  icons = vim.tbl_extend(
+    "force",
+    icons,
+    user_icons.override or {},
+    user_filename_icons or {},
+    user_file_ext_icons or {},
+    user_operating_system_icons or {}
+  )
   global_opts.override = vim.tbl_extend(
     "force",
     global_opts.override,
     user_icons.override or {},
     user_filename_icons or {},
-    user_file_ext_icons or {}
+    user_file_ext_icons or {},
+    user_operating_system_icons or {}
   )
 
   if user_filename_icons then
@@ -359,6 +367,9 @@ function M.setup(opts)
   end
   if user_file_ext_icons then
     icons_by_file_extension = vim.tbl_extend("force", icons_by_file_extension, user_file_ext_icons)
+  end
+  if user_operating_system_icons then
+    icons_by_operating_system = vim.tbl_extend("force", icons_by_operating_system, user_operating_system_icons)
   end
 
   icons[1] = default_icon
@@ -375,6 +386,7 @@ function M.setup(opts)
   vim.api.nvim_create_user_command("NvimWebDeviconsHiTest", function()
     require "nvim-web-devicons.hi-test"(
       default_icon,
+      global_opts.override,
       icons_by_filename,
       icons_by_file_extension,
       icons_by_operating_system

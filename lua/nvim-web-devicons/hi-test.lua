@@ -61,9 +61,11 @@ end
 ---@param header string
 ---@return number l incremented
 local function render_icons(bufnr, l, icons, header)
-  local displays = {}
   local max_tag_len = 0
   local max_name_len = 0
+
+  local displays = {}
+  ---@cast displays IconDisplay[]
 
   -- build all icon displays
   for tag, icon in pairs(icons) do
@@ -92,16 +94,20 @@ end
 ---Icon, name, <tag>, concrete highlight definition
 ---tag and header follows param
 ---@param default_icon table no tag "Default"
+---@param global_override table[] all global overrides "Overrides"
 ---@param icons_by_filename table[] filename "By File Name"
 ---@param icons_by_file_extension table[] extension "By File Extension"
 ---@param icons_by_operating_system table[] os "By Operating System"
-return function(default_icon, icons_by_filename, icons_by_file_extension, icons_by_operating_system)
+return function(default_icon, global_override, icons_by_filename, icons_by_file_extension, icons_by_operating_system)
   -- create a buffer
   local bufnr = vim.api.nvim_create_buf(false, true)
 
   -- render and highlight each section
   local l = 0
   l = render_icons(bufnr, l, { default_icon }, "Default")
+  if global_override and next(global_override) then
+    l = render_icons(bufnr, l, global_override, "Overrides")
+  end
   l = render_icons(bufnr, l, icons_by_filename, "By File Name")
   l = render_icons(bufnr, l, icons_by_file_extension, "By File Extension")
   render_icons(bufnr, l, icons_by_operating_system, "By Operating System")
