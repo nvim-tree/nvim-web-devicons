@@ -150,7 +150,7 @@ local icons_by_filename = {
     name = "Antidote",
   },
   [".zsh_history"] = {
-    icon = "󰯂",
+    icon = "",
     color = "#6d8086",
     cterm_color = "66",
     name = "History",
@@ -298,12 +298,6 @@ local icons_by_filename = {
     color = "#d0bf41",
     cterm_color = "185",
     name = "License",
-  },
-  ["init.lua"] = {
-    icon = "",
-    color = "#00a2ff",
-    cterm_color = "75",
-    name = "Neovim",
   },
   ["makefile"] = {
     icon = "",
@@ -1166,6 +1160,12 @@ local icons_by_file_extension = {
     cterm_color = "99",
     name = "KotlinScript",
   },
+  ["lck"] = {
+    icon = "",
+    color = "#bbbbbb",
+    cterm_color = "250",
+    name = "Lock",
+  },
   ["leex"] = {
     icon = "",
     color = "#a074c4",
@@ -1197,7 +1197,7 @@ local icons_by_file_extension = {
     name = "Liquid",
   },
   ["lock"] = {
-    icon = "",
+    icon = "",
     color = "#bbbbbb",
     cterm_color = "250",
     name = "Lock",
