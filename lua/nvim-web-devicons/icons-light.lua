@@ -143,6 +143,18 @@ local icons_by_filename = {
     cterm_color = "22",
     name = "Zshrc",
   },
+  [".zsh_plugins.txt"] = {
+    icon = "󱉋",
+    color = "#bf0266",
+    cterm_color = "125",
+    name = "Antidote",
+  },
+  [".zsh_history"] = {
+    icon = "󰯂",
+    color = "#526064",
+    cterm_color = "59",
+    name = "History",
+  },
   ["_gvimrc"] = {
     icon = "",
     color = "#017226",
@@ -286,6 +298,12 @@ local icons_by_filename = {
     color = "#686020",
     cterm_color = "58",
     name = "License",
+  },
+  ["init.lua"] = {
+    icon = "",
+    color = "#007abf",
+    cterm_color = "32",
+    name = "Neovim",
   },
   ["makefile"] = {
     icon = "",
@@ -1286,6 +1304,18 @@ local icons_by_file_extension = {
     cterm_color = "130",
     name = "Mli",
   },
+  ["m"] = {
+    icon = "",
+    color = "#3b69aa",
+    cterm_color = "25",
+    name = "Tweak",
+  },
+  ["mm"] = {
+    icon = "",
+    color = "#36677c",
+    cterm_color = "24",
+    name = "Tweak",
+  },
   ["mo"] = {
     icon = "∞",
     color = "#654ca7",
@@ -1411,6 +1441,12 @@ local icons_by_file_extension = {
     color = "#6b4d83",
     cterm_color = "96",
     name = "Png",
+  },
+  ["po"] = {
+    icon = "",
+    color = "#1c708e",
+    cterm_color = "24",
+    name = "Localization",
   },
   ["pp"] = {
     icon = "",
@@ -1700,6 +1736,12 @@ local icons_by_file_extension = {
     cterm_color = "238",
     name = "Sql",
   },
+  ["strings"] = {
+    icon = "",
+    color = "#1c708e",
+    cterm_color = "24",
+    name = "Localization",
+  },
   ["styl"] = {
     icon = "",
     color = "#466024",
@@ -1958,6 +2000,18 @@ local icons_by_file_extension = {
     cterm_color = "236",
     name = "WebOpenFontFormat",
   },
+  ["x"] = {
+    icon = "",
+    color = "#3b69aa",
+    cterm_color = "25",
+    name = "Tweak",
+  },
+  ["xm"] = {
+    icon = "",
+    color = "#36677c",
+    cterm_color = "24",
+    name = "Tweak",
+  },
   ["xaml"] = {
     icon = "󰙳",
     color = "#512bd4",
@@ -1969,6 +2023,12 @@ local icons_by_file_extension = {
     color = "#975122",
     cterm_color = "130",
     name = "XcPlayground",
+  },
+  ["xcstrings"] = {
+    icon = "",
+    color = "#1c708e",
+    cterm_color = "24",
+    name = "XcLocalization",
   },
   ["xls"] = {
     icon = "󰈛",
