@@ -155,18 +155,6 @@ local icons_by_filename = {
     cterm_color = "22",
     name = "Zshrc",
   },
-  [".zsh_plugins.txt"] = {
-    icon = "󱉋",
-    color = "#bf0266",
-    cterm_color = "125",
-    name = "Antidote",
-  },
-  [".zsh_history"] = {
-    icon = "",
-    color = "#526064",
-    cterm_color = "59",
-    name = "History",
-  },
   ["_gvimrc"] = {
     icon = "",
     color = "#017226",
@@ -1338,13 +1326,13 @@ local icons_by_file_extension = {
     icon = "",
     color = "#3b69aa",
     cterm_color = "25",
-    name = "Tweak",
+    name = "Objective-C",
   },
   ["mm"] = {
     icon = "",
     color = "#36677c",
     cterm_color = "24",
-    name = "Tweak",
+    name = "Objective-Cpp",
   },
   ["mo"] = {
     icon = "∞",
@@ -2031,16 +2019,16 @@ local icons_by_file_extension = {
     name = "WebOpenFontFormat",
   },
   ["x"] = {
-    icon = "",
+    icon = "",
     color = "#3b69aa",
     cterm_color = "25",
-    name = "Tweak",
+    name = "Logos",
   },
   ["xm"] = {
-    icon = "",
+    icon = "",
     color = "#36677c",
     cterm_color = "24",
-    name = "Tweak",
+    name = "Logos",
   },
   ["xaml"] = {
     icon = "󰙳",
