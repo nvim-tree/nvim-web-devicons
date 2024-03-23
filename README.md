@@ -93,6 +93,16 @@ require'nvim-web-devicons'.setup {
     name = "Log"
   }
  };
+ -- same as `override` but specifically for operating system
+ -- takes effect when `strict` is true
+ override_by_operating_system = {
+  ["apple"] = {
+    icon = "",
+    color = "#A2AAAD",
+    cterm_color = "248",
+    name = "Apple",
+  },
+ };
 }
 ```
 

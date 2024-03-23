@@ -2,7 +2,7 @@
 ---Display all icons and their group highlighted, followed by the concrete definition
 --
 ---@class IconDisplay for :NvimTreeHiTest
----@field tag any filename, os or extension, only strings accepted
+---@field tag string filename, os or extension
 ---@field name string name without prefix
 ---@field icon string icon itself
 ---@field group string|nil :hi group name
@@ -10,13 +10,17 @@
 local IconDisplay = {}
 
 ---@param o IconDisplay
----@return IconDisplay
+---@return IconDisplay|nil
 function IconDisplay:new(o)
+  if type(o.tag) ~= "string" or type(o.name) ~= "string" or type(o.icon) ~= "string" then
+    return nil
+  end
+
   setmetatable(o, self)
   self.__index = self
 
   o.group = "DevIcon" .. o.name
-  o.tag = type(o.tag) == "string" and o.tag or ""
+  o.tag = o.tag or ""
 
   -- concrete definition
   local ok, res = pcall(vim.api.nvim_cmd, { cmd = "highlight", args = { o.group } }, { output = true })
@@ -61,16 +65,20 @@ end
 ---@param header string
 ---@return number l incremented
 local function render_icons(bufnr, l, icons, header)
-  local displays = {}
   local max_tag_len = 0
   local max_name_len = 0
+
+  local displays = {}
+  ---@cast displays IconDisplay[]
 
   -- build all icon displays
   for tag, icon in pairs(icons) do
     local display = IconDisplay:new { tag = tag, name = icon.name, icon = icon.icon }
-    table.insert(displays, display)
-    max_tag_len = math.max(max_tag_len, #display.tag)
-    max_name_len = math.max(max_name_len, #display.name)
+    if display then
+      table.insert(displays, display)
+      max_tag_len = math.max(max_tag_len, #display.tag)
+      max_name_len = math.max(max_name_len, #display.name)
+    end
   end
 
   -- sort by name
@@ -92,16 +100,20 @@ end
 ---Icon, name, <tag>, concrete highlight definition
 ---tag and header follows param
 ---@param default_icon table no tag "Default"
+---@param global_override table[] all global overrides "Overrides"
 ---@param icons_by_filename table[] filename "By File Name"
 ---@param icons_by_file_extension table[] extension "By File Extension"
 ---@param icons_by_operating_system table[] os "By Operating System"
-return function(default_icon, icons_by_filename, icons_by_file_extension, icons_by_operating_system)
+return function(default_icon, global_override, icons_by_filename, icons_by_file_extension, icons_by_operating_system)
   -- create a buffer
   local bufnr = vim.api.nvim_create_buf(false, true)
 
   -- render and highlight each section
   local l = 0
   l = render_icons(bufnr, l, { default_icon }, "Default")
+  if global_override and next(global_override) then
+    l = render_icons(bufnr, l, global_override, "Overrides")
+  end
   l = render_icons(bufnr, l, icons_by_filename, "By File Name")
   l = render_icons(bufnr, l, icons_by_file_extension, "By File Extension")
   render_icons(bufnr, l, icons_by_operating_system, "By Operating System")
