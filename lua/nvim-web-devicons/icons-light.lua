@@ -1326,13 +1326,13 @@ local icons_by_file_extension = {
     icon = "",
     color = "#3b69aa",
     cterm_color = "25",
-    name = "Objective-C",
+    name = "ObjectiveC",
   },
   ["mm"] = {
     icon = "",
     color = "#36677c",
     cterm_color = "24",
-    name = "Objective-Cpp",
+    name = "ObjectiveCPlusPlus",
   },
   ["mo"] = {
     icon = "∞",
