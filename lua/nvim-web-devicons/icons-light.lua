@@ -1178,6 +1178,12 @@ local icons_by_file_extension = {
     cterm_color = "92",
     name = "KotlinScript",
   },
+  ["lck"] = {
+    icon = "",
+    color = "#5e5e5e",
+    cterm_color = "59",
+    name = "Lock",
+  },
   ["leex"] = {
     icon = "",
     color = "#6b4d83",
@@ -1209,7 +1215,7 @@ local icons_by_file_extension = {
     name = "Liquid",
   },
   ["lock"] = {
-    icon = "",
+    icon = "",
     color = "#5e5e5e",
     cterm_color = "59",
     name = "Lock",
@@ -1315,6 +1321,18 @@ local icons_by_file_extension = {
     color = "#975122",
     cterm_color = "130",
     name = "Mli",
+  },
+  ["m"] = {
+    icon = "",
+    color = "#3b69aa",
+    cterm_color = "25",
+    name = "ObjectiveC",
+  },
+  ["mm"] = {
+    icon = "",
+    color = "#36677c",
+    cterm_color = "24",
+    name = "ObjectiveCPlusPlus",
   },
   ["mo"] = {
     icon = "∞",
@@ -1441,6 +1459,12 @@ local icons_by_file_extension = {
     color = "#6b4d83",
     cterm_color = "96",
     name = "Png",
+  },
+  ["po"] = {
+    icon = "",
+    color = "#1c708e",
+    cterm_color = "24",
+    name = "Localization",
   },
   ["pp"] = {
     icon = "",
@@ -1730,6 +1754,12 @@ local icons_by_file_extension = {
     cterm_color = "238",
     name = "Sql",
   },
+  ["strings"] = {
+    icon = "",
+    color = "#1c708e",
+    cterm_color = "24",
+    name = "Localization",
+  },
   ["styl"] = {
     icon = "",
     color = "#466024",
@@ -1988,6 +2018,18 @@ local icons_by_file_extension = {
     cterm_color = "236",
     name = "WebOpenFontFormat",
   },
+  ["x"] = {
+    icon = "",
+    color = "#3b69aa",
+    cterm_color = "25",
+    name = "Logos",
+  },
+  ["xm"] = {
+    icon = "",
+    color = "#36677c",
+    cterm_color = "24",
+    name = "Logos",
+  },
   ["xaml"] = {
     icon = "󰙳",
     color = "#512bd4",
@@ -1999,6 +2041,12 @@ local icons_by_file_extension = {
     color = "#975122",
     cterm_color = "130",
     name = "XcPlayground",
+  },
+  ["xcstrings"] = {
+    icon = "",
+    color = "#1c708e",
+    cterm_color = "24",
+    name = "XcLocalization",
   },
   ["xls"] = {
     icon = "󰈛",
