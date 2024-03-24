@@ -1664,6 +1664,12 @@ local icons_by_file_extension = {
     cterm_color = "167",
     name = "Scala",
   },
+  ["sc"] = {
+    icon = "",
+    color = "#cc3e44",
+    cterm_color = "167",
+    name = "ScalaScript",
+  },
   ["scm"] = {
     icon = "󰘧",
     color = "#eeeeee",
