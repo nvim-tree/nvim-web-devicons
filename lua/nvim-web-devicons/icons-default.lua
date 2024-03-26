@@ -347,6 +347,12 @@ local icons_by_filename = {
     cterm_color = "52",
     name = "PackageLockJson",
   },
+  ["pom.xml"] = {
+    icon = "",
+    color = "#7a0d21",
+    cterm_color = "52",
+    name = "Maven",
+  },
   ["procfile"] = {
     icon = "",
     color = "#a074c4",
