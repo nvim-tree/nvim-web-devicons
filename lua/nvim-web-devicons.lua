@@ -43,6 +43,7 @@ local filetypes = {
   ["avif"] = "avif",
   ["bzl"] = "bzl",
   ["brewfile"] = "brewfile",
+  ["checkhealth"] = "checkhealth",
   ["commit"] = "commit_editmsg",
   ["copying"] = "copying",
   ["gemfile"] = "gemfile$",
@@ -111,6 +112,7 @@ local filetypes = {
   ["gruntfile"] = "gruntfile",
   ["gulpfile"] = "gulpfile",
   ["haml"] = "haml",
+  ["haxe"] = "hx",
   ["haskell"] = "hs",
   ["hbs"] = "hbs",
   ["heex"] = "heex",
@@ -119,6 +121,7 @@ local filetypes = {
   ["idlang"] = "pro",
   ["ino"] = "ino",
   ["import"] = "import",
+  ["ipynb"] = "ipynb",
   ["java"] = "java",
   ["javascript"] = "js",
   ["javascript.jsx"] = "jsx",
@@ -155,9 +158,11 @@ local filetypes = {
   ["mustache"] = "mustache",
   ["nim"] = "nim",
   ["nix"] = "nix",
+  ["nu"] = "nu",
   ["node"] = "node_modules",
   ["ocaml"] = "ml",
   ["ogg"] = "ogg",
+  ["openscad"] = "scad",
   ["opus"] = "opus",
   ["otf"] = "otf",
   ["pck"] = "pck",
@@ -338,15 +343,23 @@ function M.setup(opts)
 
   local user_filename_icons = user_icons.override_by_filename
   local user_file_ext_icons = user_icons.override_by_extension
+  local user_operating_system_icons = user_icons.override_by_operating_system
 
-  icons =
-    vim.tbl_extend("force", icons, user_icons.override or {}, user_filename_icons or {}, user_file_ext_icons or {})
+  icons = vim.tbl_extend(
+    "force",
+    icons,
+    user_icons.override or {},
+    user_filename_icons or {},
+    user_file_ext_icons or {},
+    user_operating_system_icons or {}
+  )
   global_opts.override = vim.tbl_extend(
     "force",
     global_opts.override,
     user_icons.override or {},
     user_filename_icons or {},
-    user_file_ext_icons or {}
+    user_file_ext_icons or {},
+    user_operating_system_icons or {}
   )
 
   if user_filename_icons then
@@ -354,6 +367,9 @@ function M.setup(opts)
   end
   if user_file_ext_icons then
     icons_by_file_extension = vim.tbl_extend("force", icons_by_file_extension, user_file_ext_icons)
+  end
+  if user_operating_system_icons then
+    icons_by_operating_system = vim.tbl_extend("force", icons_by_operating_system, user_operating_system_icons)
   end
 
   icons[1] = default_icon
@@ -364,6 +380,19 @@ function M.setup(opts)
     desc = "Re-apply icon colors after changing colorschemes",
     group = vim.api.nvim_create_augroup("NvimWebDevicons", { clear = true }),
     callback = M.set_up_highlights,
+  })
+
+  -- highlight test command
+  vim.api.nvim_create_user_command("NvimWebDeviconsHiTest", function()
+    require "nvim-web-devicons.hi-test"(
+      default_icon,
+      global_opts.override,
+      icons_by_filename,
+      icons_by_file_extension,
+      icons_by_operating_system
+    )
+  end, {
+    desc = "nvim-web-devicons: highlight test",
   })
 end
 
@@ -492,6 +521,10 @@ function M.set_icon(user_icons)
   for _, icon_data in pairs(user_icons) do
     set_up_highlight(icon_data)
   end
+end
+
+function M.set_icon_by_filetype(user_filetypes)
+  filetypes = vim.tbl_extend("force", filetypes, user_filetypes or {})
 end
 
 function M.set_default_icon(icon, color, cterm_color)

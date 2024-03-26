@@ -84,6 +84,14 @@ Run `make`. This will:
 
 Please commit both `lua/nvim-web-devicons/icons-default.lua` and `lua/nvim-web-devicons/icons-light.lua`
 
+## Test
+
+Run `:NvimWebDeviconsHiTest` to view the icons and their highlighting.
+
+Start neovim with `TERM=xterm-256color nvim ...` to test cterm.
+
+Check with `&background` `dark` and `light`
+
 ## Pull Request
 
 Please reference any issues in the description e.g. "resolves #1234".
