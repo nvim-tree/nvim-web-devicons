@@ -173,6 +173,30 @@ local icons_by_filename = {
     cterm_color = "25",
     name = "R",
   },
+  ["aac"] = {
+    icon = "",
+    color = "#00afff",
+    cterm_color = "39",
+    name = "AdvancedAudioCoding",
+  },
+  ["aif"] = {
+    icon = "",
+    color = "#00afff",
+    cterm_color = "39",
+    name = "AudioInterchangeFileFormat",
+  },
+  ["aiff"] = {
+    icon = "",
+    color = "#00afff",
+    cterm_color = "39",
+    name = "AudioInterchangeFileFormat",
+  },
+  ["ape"] = {
+    icon = "",
+    color = "#00afff",
+    cterm_color = "39",
+    name = "MonkeysAudio",
+  },
   ["avif"] = {
     icon = "",
     color = "#a074c4",
@@ -263,6 +287,12 @@ local icons_by_filename = {
     cterm_color = "185",
     name = "Favicon",
   },
+  ["flac"] = {
+    icon = "",
+    color = "#0075aa",
+    cterm_color = "24",
+    name = "FreeLosslessAudioCodec",
+  },
   ["gemfile$"] = {
     icon = "",
     color = "#701516",
@@ -317,6 +347,12 @@ local icons_by_filename = {
     cterm_color = "185",
     name = "License",
   },
+  ["m4a"] = {
+    icon = "",
+    color = "#00afff",
+    cterm_color = "39",
+    name = "MPEG4",
+  },
   ["makefile"] = {
     icon = "",
     color = "#6d8086",
@@ -328,6 +364,12 @@ local icons_by_filename = {
     color = "#a074c4",
     cterm_color = "140",
     name = "MixLock",
+  },
+  ["mp3"] = {
+    icon = "",
+    color = "#00afff",
+    cterm_color = "39",
+    name = "MPEGAudioLayerIII",
   },
   ["node_modules"] = {
     icon = "",
@@ -425,11 +467,23 @@ local icons_by_filename = {
     cterm_color = "27",
     name = "Vagrantfile",
   },
+  ["wav"] = {
+    icon = "",
+    color = "#00afff",
+    cterm_color = "39",
+    name = "WaveformAudioFile",
+  },
   ["webpack"] = {
     icon = "󰜫",
     color = "#519aba",
     cterm_color = "74",
     name = "Webpack",
+  },
+  ["wma"] = {
+    icon = "",
+    color = "#00afff",
+    cterm_color = "39",
+    name = "WindowsMediaAudio",
   },
   ["workspace"] = {
     icon = "",
@@ -1402,15 +1456,15 @@ local icons_by_file_extension = {
   },
   ["ogg"] = {
     icon = "",
-    color = "#66D8EF",
-    cterm_color = "45",
-    name = "Ogg",
+    color = "#0075aa",
+    cterm_color = "24",
+    name = "OggVorbis",
   },
   ["opus"] = {
-    icon = "󰈣",
-    color = "#F88A02",
-    cterm_color = "208",
-    name = "OPUS",
+    icon = "",
+    color = "#0075aa",
+    cterm_color = "24",
+    name = "OpusAudioFile",
   },
   ["org"] = {
     icon = "",
