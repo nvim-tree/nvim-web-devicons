@@ -530,6 +530,12 @@ local icons_by_file_extension = {
     cterm_color = "140",
     name = "Bmp",
   },
+  ["blp"] = {
+    icon = "󰺾",
+    color = "#5796E2",
+    cterm_color = "68",
+    name = "Blueprint",
+  },
   ["bzl"] = {
     icon = "",
     color = "#89e051",
