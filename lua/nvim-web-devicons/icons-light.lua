@@ -95,6 +95,12 @@ local icons_by_filename = {
     cterm_color = "239",
     name = "GitModules",
   },
+  [".gtkrc-2.0"] = {
+    icon = "",
+    color = "#333333",
+    cterm_color = "236",
+    name = "GTK",
+  },
   [".gvimrc"] = {
     icon = "",
     color = "#017226",
@@ -184,6 +190,12 @@ local icons_by_filename = {
     color = "#701516",
     cterm_color = "52",
     name = "Brewfile",
+  },
+  ["bspwmrc"] = {
+    icon = "",
+    color = "#2f2f2f",
+    cterm_color = "236",
+    name = "BSPWM",
   },
   ["build"] = {
     icon = "",
@@ -305,17 +317,53 @@ local icons_by_filename = {
     cterm_color = "130",
     name = "Gruntfile",
   },
+  ["gtkrc"] = {
+    icon = "",
+    color = "#333333",
+    cterm_color = "236",
+    name = "GTK",
+  },
   ["gulpfile"] = {
     icon = "",
     color = "#992e33",
     cterm_color = "88",
     name = "Gulpfile",
   },
+  ["hyprland.conf"] = {
+    icon = "",
+    color = "#008082",
+    cterm_color = "30",
+    name = "Hyprland",
+  },
+  ["i3blocks.conf"] = {
+    icon = "",
+    color = "#2e2f30",
+    cterm_color = "236",
+    name = "i3",
+  },
+  ["i3status.conf"] = {
+    icon = "",
+    color = "#2e2f30",
+    cterm_color = "236",
+    name = "i3",
+  },
   ["license"] = {
     icon = "",
     color = "#686020",
     cterm_color = "58",
     name = "License",
+  },
+  ["lxde-rc.xml"] = {
+    icon = "",
+    color = "#606060",
+    cterm_color = "59",
+    name = "LXDEConfigFile",
+  },
+  ["lxqt.conf"] = {
+    icon = "",
+    color = "#016e9e",
+    cterm_color = "24",
+    name = "LXQtConfigFile",
   },
   ["makefile"] = {
     icon = "",
@@ -328,6 +376,12 @@ local icons_by_filename = {
     color = "#6b4d83",
     cterm_color = "96",
     name = "MixLock",
+  },
+  ["mpv.conf"] = {
+    icon = "",
+    color = "#3b1342",
+    cterm_color = "53",
+    name = "Mpv",
   },
   ["node_modules"] = {
     icon = "",
@@ -359,6 +413,18 @@ local icons_by_filename = {
     cterm_color = "96",
     name = "Procfile",
   },
+  ["PrusaSlicer.ini"] = {
+    icon = "",
+    color = "#9d4717",
+    cterm_color = "130",
+    name = "PrusaSlicer",
+  },
+  ["PrusaSlicerGcodeViewer.ini"] = {
+    icon = "",
+    color = "#9d4717",
+    cterm_color = "130",
+    name = "PrusaSlicer",
+  },
   ["py.typed"] = {
     icon = "",
     color = "#805e02",
@@ -388,6 +454,12 @@ local icons_by_filename = {
     color = "#bf2e00",
     cterm_color = "160",
     name = "SvelteConfig",
+  },
+  ["sxhkdrc"] = {
+    icon = "",
+    color = "#2f2f2f",
+    cterm_color = "236",
+    name = "BSPWM",
   },
   ["tailwind.config.js"] = {
     icon = "󱏿",
@@ -425,17 +497,47 @@ local icons_by_filename = {
     cterm_color = "26",
     name = "Vagrantfile",
   },
+  ["vlcrc"] = {
+    icon = "󰕼",
+    color = "#9f5100",
+    cterm_color = "130",
+    name = "VLC",
+  },
   ["webpack"] = {
     icon = "󰜫",
     color = "#36677c",
     cterm_color = "24",
     name = "Webpack",
   },
+  ["weston.ini"] = {
+    icon = "",
+    color = "#805e00",
+    cterm_color = "94",
+    name = "Weston",
+  },
   ["workspace"] = {
     icon = "",
     color = "#447028",
     cterm_color = "22",
     name = "BazelWorkspace",
+  },
+  ["xmobarrc"] = {
+    icon = "",
+    color = "#a9333e",
+    cterm_color = "131",
+    name = "xmonad",
+  },
+  ["xmobarrc.hs"] = {
+    icon = "",
+    color = "#a9333e",
+    cterm_color = "131",
+    name = "xmonad",
+  },
+  ["xmonad.hs"] = {
+    icon = "",
+    color = "#a9333e",
+    cterm_color = "131",
+    name = "xmonad",
   },
   ["build.zig.zon"] = {
     icon = "",
