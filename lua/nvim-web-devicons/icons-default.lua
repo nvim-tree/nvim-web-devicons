@@ -275,6 +275,18 @@ local icons_by_filename = {
     cterm_color = "185",
     name = "Favicon",
   },
+  ["fp-info-cache"] = {
+    icon = "",
+    color = "#ffffff",
+    cterm_color = "231",
+    name = "KiCadCache",
+  },
+  ["fp-lib-table"] = {
+    icon = "",
+    color = "#ffffff",
+    cterm_color = "231",
+    name = "KiCadFootprintTable",
+  },
   ["gemfile$"] = {
     icon = "",
     color = "#701516",
@@ -466,6 +478,12 @@ local icons_by_filename = {
     color = "#2f2f2f",
     cterm_color = "236",
     name = "BSPWM",
+  },
+  ["sym-lib-table"] = {
+    icon = "",
+    color = "#ffffff",
+    cterm_color = "231",
+    name = "KiCadSymbolTable",
   },
   ["tailwind.config.js"] = {
     icon = "󱏿",
@@ -1327,6 +1345,54 @@ local icons_by_file_extension = {
     color = "#a074c4",
     cterm_color = "140",
     name = "JpegXl",
+  },
+  ["kicad_dru"] = {
+    icon = "",
+    color = "#ffffff",
+    cterm_color = "231",
+    name = "KiCad",
+  },
+  ["kicad_mod"] = {
+    icon = "",
+    color = "#ffffff",
+    cterm_color = "231",
+    name = "KiCad",
+  },
+  ["kicad_pcb"] = {
+    icon = "",
+    color = "#ffffff",
+    cterm_color = "231",
+    name = "KiCad",
+  },
+  ["kicad_prl"] = {
+    icon = "",
+    color = "#ffffff",
+    cterm_color = "231",
+    name = "KiCad",
+  },
+  ["kicad_pro"] = {
+    icon = "",
+    color = "#ffffff",
+    cterm_color = "231",
+    name = "KiCad",
+  },
+  ["kicad_sch"] = {
+    icon = "",
+    color = "#ffffff",
+    cterm_color = "231",
+    name = "KiCad",
+  },
+  ["kicad_sym"] = {
+    icon = "",
+    color = "#ffffff",
+    cterm_color = "231",
+    name = "KiCad",
+  },
+  ["kicad_wks"] = {
+    icon = "",
+    color = "#ffffff",
+    cterm_color = "231",
+    name = "KiCad",
   },
   ["ksh"] = {
     icon = "",
