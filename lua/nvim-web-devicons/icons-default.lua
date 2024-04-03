@@ -401,6 +401,12 @@ local icons_by_filename = {
     cterm_color = "52",
     name = "PackageLockJson",
   },
+  ["platformio.ini"] = {
+    icon = "",
+    color = "#f6822b",
+    cterm_color = "208",
+    name = "Platformio",
+  },
   ["pom.xml"] = {
     icon = "",
     color = "#7a0d21",
@@ -631,6 +637,12 @@ local icons_by_file_extension = {
     color = "#cbcb41",
     cterm_color = "185",
     name = "BibTeX",
+  },
+  ["bin"] = {
+    icon = "",
+    color = "#9F0500",
+    cterm_color = "124",
+    name = "Bin",
   },
   ["blend"] = {
     icon = "󰂫",
@@ -1052,6 +1064,12 @@ local icons_by_file_extension = {
     cterm_color = "74",
     name = "Fsx",
   },
+  ["gcode"] = {
+    icon = "󰐫",
+    color = "#1471ad",
+    cterm_color = "32",
+    name = "GCode",
+  },
   ["gd"] = {
     icon = "",
     color = "#6d8086",
@@ -1112,6 +1130,12 @@ local icons_by_file_extension = {
     cterm_color = "199",
     name = "GraphQL",
   },
+  ["gresource"] = {
+    icon = "",
+    color = "#ffffff",
+    cterm_color = "231",
+    name = "GTK",
+  },
   ["h"] = {
     icon = "",
     color = "#a074c4",
@@ -1135,6 +1159,12 @@ local icons_by_file_extension = {
     color = "#f0772b",
     cterm_color = "202",
     name = "Hbs",
+  },
+  ["hex"] = {
+    icon = "",
+    color = "#2e63ff",
+    cterm_color = "27",
+    name = "Hexadecimal",
   },
   ["heex"] = {
     icon = "",
@@ -1243,6 +1273,12 @@ local icons_by_file_extension = {
     color = "#a270ba",
     cterm_color = "133",
     name = "Jl",
+  },
+  ["jwmrc"] = {
+    icon = "",
+    color = "#0078cd",
+    cterm_color = "32",
+    name = "JWM",
   },
   ["jpeg"] = {
     icon = "",
@@ -1489,6 +1525,12 @@ local icons_by_file_extension = {
     color = "#FD971F",
     cterm_color = "208",
     name = "Mp4",
+  },
+  ["msf"] = {
+    icon = "",
+    color = "#137be1",
+    cterm_color = "33",
+    name = "Thunderbird",
   },
   ["mts"] = {
     icon = "",
@@ -2084,6 +2126,12 @@ local icons_by_file_extension = {
     cterm_color = "113",
     name = "Txt",
   },
+  ["ui"] = {
+    icon = "",
+    color = "#0c306e",
+    cterm_color = "17",
+    name = "UI",
+  },
   ["v"] = {
     icon = "󰍛",
     color = "#019833",
@@ -2191,6 +2239,12 @@ local icons_by_file_extension = {
     color = "#512bd4",
     cterm_color = "56",
     name = "Xaml",
+  },
+  ["xcf"] = {
+    icon = "",
+    color = "#635b46",
+    cterm_color = "240",
+    name = "GIMP",
   },
   ["xcplayground"] = {
     icon = "",
