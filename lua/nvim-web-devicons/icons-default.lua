@@ -524,6 +524,12 @@ local icons_by_file_extension = {
     cterm_color = "185",
     name = "BibTeX",
   },
+  ["blend"] = {
+    icon = "󰂫",
+    color = "#ea7600",
+    cterm_color = "208",
+    name = "Blender",
+  },
   ["bmp"] = {
     icon = "",
     color = "#a074c4",
