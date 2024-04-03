@@ -113,6 +113,12 @@ local icons_by_filename = {
     cterm_color = "75",
     name = "Luaurc",
   },
+  [".mailmap"] = {
+    icon = "󰊢",
+    color = "#41535b",
+    cterm_color = "239",
+    name = "Mailmap",
+  },
   [".npmignore"] = {
     icon = "",
     color = "#E8274B",
@@ -142,6 +148,30 @@ local icons_by_filename = {
     color = "#019833",
     cterm_color = "28",
     name = "Vimrc",
+  },
+  [".Xauthority"] = {
+    icon = "",
+    color = "#e54d18",
+    cterm_color = "196",
+    name = "Xauthority",
+  },
+  [".xinitrc"] = {
+    icon = "",
+    color = "#e54d18",
+    cterm_color = "196",
+    name = "XInitrc",
+  },
+  [".Xresources"] = {
+    icon = "",
+    color = "#e54d18",
+    cterm_color = "196",
+    name = "Xresources",
+  },
+  [".xsession"] = {
+    icon = "",
+    color = "#e54d18",
+    cterm_color = "196",
+    name = "Xsession",
   },
   [".zprofile"] = {
     icon = "",
@@ -359,6 +389,48 @@ local icons_by_filename = {
     cterm_color = "255",
     name = "i3",
   },
+  ["cantorrc"] = {
+    icon = "",
+    color = "#1c99f3",
+    cterm_color = "32",
+    name = "Cantorrc",
+  },
+  ["kalgebrarc"] = {
+    icon = "",
+    color = "#1c99f3",
+    cterm_color = "32",
+    name = "Kalgebrarc",
+  },
+  ["kdeglobals"] = {
+    icon = "",
+    color = "#1c99f3",
+    cterm_color = "32",
+    name = "KDEglobals",
+  },
+  ["kdenlive-layoutsrc"] = {
+    icon = "",
+    color = "#83b8f2",
+    cterm_color = "110",
+    name = "Kdenlive-layoutsrc",
+  },
+  ["kdenliverc"] = {
+    icon = "",
+    color = "#83b8f2",
+    cterm_color = "110",
+    name = "Kdenliverc",
+  },
+  ["kritadisplayrc"] = {
+    icon = "",
+    color = "#f245fb",
+    cterm_color = "201",
+    name = "Kritadisplayrc",
+  },
+  ["kritarc"] = {
+    icon = "",
+    color = "#f245fb",
+    cterm_color = "201",
+    name = "Kritarc",
+  },
   ["license"] = {
     icon = "",
     color = "#d0bf41",
@@ -412,6 +484,12 @@ local icons_by_filename = {
     color = "#7a0d21",
     cterm_color = "52",
     name = "PackageLockJson",
+  },
+  ["PKGBUILD"] = {
+    icon = "",
+    color = "#0f94d2",
+    cterm_color = "67",
+    name = "PKGBUILD",
   },
   ["platformio.ini"] = {
     icon = "",
@@ -562,6 +640,18 @@ local icons_by_filename = {
     color = "#fd4d5d",
     cterm_color = "203",
     name = "xmonad",
+  },
+  ["xorg.conf"] = {
+    icon = "",
+    color = "#e54d18",
+    cterm_color = "196",
+    name = "XorgConf",
+  },
+  ["xsettingsd.conf"] = {
+    icon = "",
+    color = "#e54d18",
+    cterm_color = "196",
+    name = "XSettingsdConf",
   },
   ["build.zig.zon"] = {
     icon = "",
@@ -1346,6 +1436,18 @@ local icons_by_file_extension = {
     cterm_color = "140",
     name = "JpegXl",
   },
+  ["kdenlive"] = {
+    icon = "",
+    color = "#83b8f2",
+    cterm_color = "110",
+    name = "Kdenlive",
+  },
+  ["kdenlivetitle"] = {
+    icon = "",
+    color = "#83b8f2",
+    cterm_color = "110",
+    name = "Kdenlive",
+  },
   ["kicad_dru"] = {
     icon = "",
     color = "#ffffff",
@@ -1393,6 +1495,24 @@ local icons_by_file_extension = {
     color = "#ffffff",
     cterm_color = "231",
     name = "KiCad",
+  },
+  ["kpp"] = {
+    icon = "",
+    color = "#f245fb",
+    cterm_color = "201",
+    name = "Krita",
+  },
+  ["kra"] = {
+    icon = "",
+    color = "#f245fb",
+    cterm_color = "201",
+    name = "Krita",
+  },
+  ["krz"] = {
+    icon = "",
+    color = "#f245fb",
+    cterm_color = "201",
+    name = "Krita",
   },
   ["ksh"] = {
     icon = "",
