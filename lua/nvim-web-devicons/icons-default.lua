@@ -143,6 +143,12 @@ local icons_by_filename = {
     cterm_color = "98",
     name = "SettingsJson",
   },
+  [".SRCINFO"] = {
+    icon = "󰣇",
+    color = "#0f94d2",
+    cterm_color = "67",
+    name = "SRCINFO",
+  },
   [".vimrc"] = {
     icon = "",
     color = "#019833",
@@ -662,6 +668,12 @@ local icons_by_filename = {
 }
 
 local icons_by_file_extension = {
+  ["3gp"] = {
+    icon = "",
+    color = "#FD971F",
+    cterm_color = "208",
+    name = "3gp",
+  },
   ["3mf"] = {
     icon = "󰆧",
     color = "#888888",
@@ -703,6 +715,12 @@ local icons_by_file_extension = {
     color = "#6d8085",
     cterm_color = "66",
     name = "AppleScript",
+  },
+  ["ass"] = {
+    icon = "󰨖",
+    color = "#ffb713",
+    cterm_color = "214",
+    name = "Ass",
   },
   ["awk"] = {
     icon = "",
@@ -770,6 +788,12 @@ local icons_by_file_extension = {
     cterm_color = "68",
     name = "Blueprint",
   },
+  ["brep"] = {
+    icon = "󰻫",
+    color = "#839463",
+    cterm_color = "101",
+    name = "BoundaryRepresentation",
+  },
   ["bzl"] = {
     icon = "",
     color = "#89e051",
@@ -787,6 +811,18 @@ local icons_by_file_extension = {
     color = "#f34b7d",
     cterm_color = "204",
     name = "CPlusPlus",
+  },
+  ["cache"] = {
+    icon = "",
+    color = "#ffffff",
+    cterm_color = "231",
+    name = "Cache",
+  },
+  ["cast"] = {
+    icon = "",
+    color = "#FD971F",
+    cterm_color = "208",
+    name = "Asciinema",
   },
   ["cbl"] = {
     icon = "⚙",
@@ -962,6 +998,12 @@ local icons_by_file_extension = {
     cterm_color = "113",
     name = "cuda",
   },
+  ["cue"] = {
+    icon = "󰲹",
+    color = "#ed95ae",
+    cterm_color = "211",
+    name = "Cue",
+  },
   ["cuh"] = {
     icon = "",
     color = "#a074c4",
@@ -998,6 +1040,12 @@ local icons_by_file_extension = {
     cterm_color = "188",
     name = "Db",
   },
+  ["dconf"] = {
+    icon = "",
+    color = "#ffffff",
+    cterm_color = "231",
+    name = "Dconf",
+  },
   ["desktop"] = {
     icon = "",
     color = "#563d7c",
@@ -1022,6 +1070,12 @@ local icons_by_file_extension = {
     cterm_color = "26",
     name = "Docx",
   },
+  ["dot"] = {
+    icon = "󱁉",
+    color = "#30638e",
+    cterm_color = "24",
+    name = "Dot",
+  },
   ["drl"] = {
     icon = "",
     color = "#ffafaf",
@@ -1039,6 +1093,18 @@ local icons_by_file_extension = {
     color = "#dad8d8",
     cterm_color = "188",
     name = "Dump",
+  },
+  ["dwg"] = {
+    icon = "󰻫",
+    color = "#839463",
+    cterm_color = "101",
+    name = "AutoCADDwg",
+  },
+  ["dxf"] = {
+    icon = "󰻫",
+    color = "#839463",
+    cterm_color = "101",
+    name = "AutoCADDxf",
   },
   ["edn"] = {
     icon = "",
@@ -1118,6 +1184,12 @@ local icons_by_file_extension = {
     cterm_color = "74",
     name = "Fsharp",
   },
+  ["f3d"] = {
+    icon = "󰻫",
+    color = "#839463",
+    cterm_color = "101",
+    name = "Fusion360",
+  },
   ["f90"] = {
     icon = "󱈚",
     color = "#734f96",
@@ -1135,6 +1207,18 @@ local icons_by_file_extension = {
     color = "#66D8EF",
     cterm_color = "45",
     name = "Flac",
+  },
+  ["flc"] = {
+    icon = "",
+    color = "#ECECEC",
+    cterm_color = "255",
+    name = "FIGletFontControl",
+  },
+  ["flf"] = {
+    icon = "",
+    color = "#ECECEC",
+    cterm_color = "255",
+    name = "FIGletFontFormat",
   },
   ["fnl"] = {
     icon = "",
@@ -1244,6 +1328,12 @@ local icons_by_file_extension = {
     cterm_color = "231",
     name = "GTK",
   },
+  ["gv"] = {
+    icon = "󱁉",
+    color = "#30638e",
+    cterm_color = "24",
+    name = "Gv",
+  },
   ["h"] = {
     icon = "",
     color = "#a074c4",
@@ -1346,11 +1436,41 @@ local icons_by_file_extension = {
     cterm_color = "185",
     name = "Ico",
   },
+  ["ifc"] = {
+    icon = "󰻫",
+    color = "#839463",
+    cterm_color = "101",
+    name = "Ifc",
+  },
+  ["ige"] = {
+    icon = "󰻫",
+    color = "#839463",
+    cterm_color = "101",
+    name = "Ige",
+  },
+  ["iges"] = {
+    icon = "󰻫",
+    color = "#839463",
+    cterm_color = "101",
+    name = "Iges",
+  },
+  ["igs"] = {
+    icon = "󰻫",
+    color = "#839463",
+    cterm_color = "101",
+    name = "Igs",
+  },
   ["import"] = {
     icon = "",
     color = "#ECECEC",
     cterm_color = "255",
     name = "ImportConfiguration",
+  },
+  ["info"] = {
+    icon = "",
+    color = "#ffffcd",
+    cterm_color = "230",
+    name = "Info",
   },
   ["ini"] = {
     icon = "",
@@ -1362,7 +1482,7 @@ local icons_by_file_extension = {
     icon = "",
     color = "#56b6c2",
     cterm_color = "73",
-    name = "arduino",
+    name = "Arduino",
   },
   ["ipynb"] = {
     icon = "",
@@ -1550,6 +1670,12 @@ local icons_by_file_extension = {
     cterm_color = "54",
     name = "Less",
   },
+  ["lff"] = {
+    icon = "",
+    color = "#ECECEC",
+    cterm_color = "255",
+    name = "LibrecadFontFile",
+  },
   ["lhs"] = {
     icon = "",
     color = "#a074c4",
@@ -1580,7 +1706,19 @@ local icons_by_file_extension = {
     cterm_color = "253",
     name = "Log",
   },
+  ["lrc"] = {
+    icon = "󰨖",
+    color = "#ffb713",
+    cterm_color = "214",
+    name = "Lrc",
+  },
   ["lua"] = {
+    icon = "",
+    color = "#51a0cf",
+    cterm_color = "74",
+    name = "Lua",
+  },
+  ["luac"] = {
     icon = "",
     color = "#51a0cf",
     cterm_color = "74",
@@ -1592,11 +1730,17 @@ local icons_by_file_extension = {
     cterm_color = "75",
     name = "Luau",
   },
-  ["mpp"] = {
-    icon = "",
-    color = "#519aba",
-    cterm_color = "74",
-    name = "Mpp",
+  ["m3u"] = {
+    icon = "󰲹",
+    color = "#ed95ae",
+    cterm_color = "211",
+    name = "M3u",
+  },
+  ["m3u8"] = {
+    icon = "󰲹",
+    color = "#ed95ae",
+    cterm_color = "211",
+    name = "M3u8",
   },
   ["m4a"] = {
     icon = "",
@@ -1605,10 +1749,16 @@ local icons_by_file_extension = {
     name = "M4A",
   },
   ["m4v"] = {
-    icon = "",
+    icon = "",
     color = "#FD971F",
     cterm_color = "208",
     name = "M4V",
+  },
+  ["magnet"] = {
+    icon = "",
+    color = "#a51b16",
+    cterm_color = "124",
+    name = "Magnet",
   },
   ["makefile"] = {
     icon = "",
@@ -1659,7 +1809,7 @@ local icons_by_file_extension = {
     name = "Makefile",
   },
   ["mkv"] = {
-    icon = "",
+    icon = "",
     color = "#FD971F",
     cterm_color = "208",
     name = "Mkv",
@@ -1695,7 +1845,7 @@ local icons_by_file_extension = {
     name = "Motoko",
   },
   ["mov"] = {
-    icon = "",
+    icon = "",
     color = "#FD971F",
     cterm_color = "208",
     name = "MOV",
@@ -1707,10 +1857,16 @@ local icons_by_file_extension = {
     name = "Mp3",
   },
   ["mp4"] = {
-    icon = "",
+    icon = "",
     color = "#FD971F",
     cterm_color = "208",
     name = "Mp4",
+  },
+  ["mpp"] = {
+    icon = "",
+    color = "#519aba",
+    cterm_color = "74",
+    name = "Mpp",
   },
   ["msf"] = {
     icon = "",
@@ -1729,6 +1885,12 @@ local icons_by_file_extension = {
     color = "#e37933",
     cterm_color = "166",
     name = "Mustache",
+  },
+  ["nfo"] = {
+    icon = "",
+    color = "#ffffcd",
+    cterm_color = "230",
+    name = "Nfo",
   },
   ["nim"] = {
     icon = "",
@@ -1814,6 +1976,12 @@ local icons_by_file_extension = {
     cterm_color = "74",
     name = "Pl",
   },
+  ["pls"] = {
+    icon = "󰲹",
+    color = "#ed95ae",
+    cterm_color = "211",
+    name = "Pls",
+  },
   ["ply"] = {
     icon = "󰆧",
     color = "#888888",
@@ -1833,6 +2001,12 @@ local icons_by_file_extension = {
     name = "Png",
   },
   ["po"] = {
+    icon = "",
+    color = "#2596be",
+    cterm_color = "31",
+    name = "Localization",
+  },
+  ["pot"] = {
     icon = "",
     color = "#2596be",
     cterm_color = "31",
@@ -1939,6 +2113,12 @@ local icons_by_file_extension = {
     color = "#5aa7e4",
     cterm_color = "39",
     name = "Pyx",
+  },
+  ["qm"] = {
+    icon = "",
+    color = "#2596be",
+    cterm_color = "31",
+    name = "Localization",
   },
   ["query"] = {
     icon = "",
@@ -2066,6 +2246,24 @@ local icons_by_file_extension = {
     cterm_color = "166",
     name = "Sig",
   },
+  ["skp"] = {
+    icon = "󰻫",
+    color = "#839463",
+    cterm_color = "101",
+    name = "SketchUp",
+  },
+  ["sldasm"] = {
+    icon = "󰻫",
+    color = "#839463",
+    cterm_color = "101",
+    name = "SolidWorksAsm",
+  },
+  ["sldprt"] = {
+    icon = "󰻫",
+    color = "#839463",
+    cterm_color = "101",
+    name = "SolidWorksPrt",
+  },
   ["slim"] = {
     icon = "",
     color = "#e34c26",
@@ -2077,6 +2275,12 @@ local icons_by_file_extension = {
     color = "#854CC7",
     cterm_color = "98",
     name = "Sln",
+  },
+  ["slvs"] = {
+    icon = "󰻫",
+    color = "#839463",
+    cterm_color = "101",
+    name = "SolveSpace",
   },
   ["sml"] = {
     icon = "λ",
@@ -2132,6 +2336,18 @@ local icons_by_file_extension = {
     cterm_color = "188",
     name = "Sql",
   },
+  ["srt"] = {
+    icon = "󰨖",
+    color = "#ffb713",
+    cterm_color = "214",
+    name = "Srt",
+  },
+  ["ssa"] = {
+    icon = "󰨖",
+    color = "#ffb713",
+    cterm_color = "214",
+    name = "Ssa",
+  },
   ["stl"] = {
     icon = "󰆧",
     color = "#888888",
@@ -2144,17 +2360,41 @@ local icons_by_file_extension = {
     cterm_color = "31",
     name = "Localization",
   },
+  ["ste"] = {
+    icon = "󰻫",
+    color = "#839463",
+    cterm_color = "101",
+    name = "Ste",
+  },
+  ["step"] = {
+    icon = "󰻫",
+    color = "#839463",
+    cterm_color = "101",
+    name = "Step",
+  },
+  ["stp"] = {
+    icon = "󰻫",
+    color = "#839463",
+    cterm_color = "101",
+    name = "Stp",
+  },
   ["styl"] = {
     icon = "",
     color = "#8dc149",
     cterm_color = "113",
     name = "Styl",
   },
+  ["sub"] = {
+    icon = "󰨖",
+    color = "#ffb713",
+    cterm_color = "214",
+    name = "Sub",
+  },
   ["sublime"] = {
     icon = "",
     color = "#e37933",
     cterm_color = "166",
-    name = "Suo",
+    name = "Sublime",
   },
   ["suo"] = {
     icon = "",
@@ -2360,11 +2600,23 @@ local icons_by_file_extension = {
     cterm_color = "67",
     name = "Vlang",
   },
+  ["vsix"] = {
+    icon = "",
+    color = "#854CC7",
+    cterm_color = "98",
+    name = "Vsix",
+  },
   ["vue"] = {
     icon = "",
     color = "#8dc149",
     cterm_color = "113",
     name = "Vue",
+  },
+  ["wasm"] = {
+    icon = "",
+    color = "#5c4cdb",
+    cterm_color = "62",
+    name = "Wasm",
   },
   ["wav"] = {
     icon = "",
@@ -2373,7 +2625,7 @@ local icons_by_file_extension = {
     name = "Wav",
   },
   ["webm"] = {
-    icon = "",
+    icon = "",
     color = "#FD971F",
     cterm_color = "208",
     name = "Webm",
@@ -2407,6 +2659,18 @@ local icons_by_file_extension = {
     color = "#ECECEC",
     cterm_color = "255",
     name = "WebOpenFontFormat",
+  },
+  ["wrl"] = {
+    icon = "󰆧",
+    color = "#888888",
+    cterm_color = "102",
+    name = "VRML",
+  },
+  ["wrz"] = {
+    icon = "󰆧",
+    color = "#888888",
+    cterm_color = "102",
+    name = "VRML",
   },
   ["x"] = {
     icon = "",
@@ -2462,6 +2726,12 @@ local icons_by_file_extension = {
     cterm_color = "166",
     name = "Xml",
   },
+  ["xpi"] = {
+    icon = "",
+    color = "#ff1b01",
+    cterm_color = "196",
+    name = "Xpi",
+  },
   ["xul"] = {
     icon = "",
     color = "#e37933",
@@ -2491,12 +2761,6 @@ local icons_by_file_extension = {
     color = "#89e051",
     cterm_color = "113",
     name = "Zsh",
-  },
-  ["wasm"] = {
-    icon = "",
-    color = "#5c4cdb",
-    cterm_color = "62",
-    name = "Wasm",
   },
 }
 
