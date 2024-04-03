@@ -548,6 +548,12 @@ local icons_by_filename = {
 }
 
 local icons_by_file_extension = {
+  ["3mf"] = {
+    icon = "󰆧",
+    color = "#888888",
+    cterm_color = "102",
+    name = "3DObjectFile",
+  },
   ["Dockerfile"] = {
     icon = "󰡨",
     color = "#458ee6",
@@ -997,6 +1003,12 @@ local icons_by_file_extension = {
     color = "#734f96",
     cterm_color = "97",
     name = "Fortran",
+  },
+  ["fbx"] = {
+    icon = "󰆧",
+    color = "#888888",
+    cterm_color = "102",
+    name = "3DObjectFile",
   },
   ["flac"] = {
     icon = "",
@@ -1514,6 +1526,12 @@ local icons_by_file_extension = {
     cterm_color = "36",
     name = "Nushell",
   },
+  ["obj"] = {
+    icon = "󰆧",
+    color = "#888888",
+    cterm_color = "102",
+    name = "3DObjectFile",
+  },
   ["ogg"] = {
     icon = "",
     color = "#66D8EF",
@@ -1567,6 +1585,12 @@ local icons_by_file_extension = {
     color = "#519aba",
     cterm_color = "74",
     name = "Pl",
+  },
+  ["ply"] = {
+    icon = "󰆧",
+    color = "#888888",
+    cterm_color = "102",
+    name = "3DObjectFile",
   },
   ["pm"] = {
     icon = "",
@@ -1879,6 +1903,12 @@ local icons_by_file_extension = {
     color = "#dad8d8",
     cterm_color = "188",
     name = "Sql",
+  },
+  ["stl"] = {
+    icon = "󰆧",
+    color = "#888888",
+    cterm_color = "102",
+    name = "3DObjectFile",
   },
   ["strings"] = {
     icon = "",
