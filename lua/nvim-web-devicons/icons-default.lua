@@ -939,7 +939,7 @@ local icons_by_file_extension = {
     name = "Fsx",
   },
   ["gd"] = {
-    icon = "",
+    icon = "",
     color = "#6d8086",
     cterm_color = "66",
     name = "GDScript",
@@ -981,7 +981,7 @@ local icons_by_file_extension = {
     name = "Go",
   },
   ["godot"] = {
-    icon = "",
+    icon = "",
     color = "#6d8086",
     cterm_color = "66",
     name = "GodotProject",
@@ -1911,10 +1911,10 @@ local icons_by_file_extension = {
     name = "Toml",
   },
   ["tres"] = {
-    icon = "",
-    color = "#cbcb41",
-    cterm_color = "185",
-    name = "TextResource",
+    icon = "",
+    color = "#6d8086",
+    cterm_color = "66",
+    name = "GodotTextResource",
   },
   ["ts"] = {
     icon = "",
@@ -1923,10 +1923,10 @@ local icons_by_file_extension = {
     name = "Ts",
   },
   ["tscn"] = {
-    icon = "󰎁",
-    color = "#a074c4",
-    cterm_color = "140",
-    name = "TextScene",
+    icon = "",
+    color = "#6d8086",
+    cterm_color = "66",
+    name = "GodotTextScene",
   },
   ["tsx"] = {
     icon = "",
