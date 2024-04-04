@@ -2171,12 +2171,6 @@ local icons_by_operating_system = {
     cterm_color = "31",
     name = "Artix",
   },
-  ["budgie"] = {
-    icon = "",
-    color = "#366397",
-    cterm_color = "25",
-    name = "Budgie",
-  },
   ["centos"] = {
     icon = "",
     color = "#7a3d6a",
@@ -2353,8 +2347,60 @@ local icons_by_operating_system = {
   },
 }
 
+local icons_by_desktop_environment = {
+  ["budgie"] = {
+    icon = "",
+    color = "#4e5361",
+    cterm_color = "240",
+    name = "Budgie",
+  },
+  ["cinnamon"] = {
+    icon = "",
+    color = "#93451f",
+    cterm_color = "124",
+    name = "Cinnamon",
+  },
+  ["gnome"] = {
+    icon = "",
+    color = "#333333",
+    cterm_color = "236",
+    name = "GNOME",
+  },
+  ["lxde"] = {
+    icon = "",
+    color = "#525252",
+    cterm_color = "239",
+    name = "LXDE",
+  },
+  ["lxqt"] = {
+    icon = "",
+    color = "#016d9e",
+    cterm_color = "24",
+    name = "LXQt",
+  },
+  ["mate"] = {
+    icon = "",
+    color = "#4e6d2e",
+    cterm_color = "22",
+    name = "MATE",
+  },
+  ["plasma"] = {
+    icon = "",
+    color = "#1467b7",
+    cterm_color = "25",
+    name = "KDEPlasma",
+  },
+  ["xfce"] = {
+    icon = "",
+    color = "#0080a7",
+    cterm_color = "31",
+    name = "Xfce",
+  },
+}
+
 return {
   icons_by_filename = icons_by_filename,
   icons_by_file_extension = icons_by_file_extension,
   icons_by_operating_system = icons_by_operating_system,
+  icons_by_desktop_environment = icons_by_desktop_environment,
 }
