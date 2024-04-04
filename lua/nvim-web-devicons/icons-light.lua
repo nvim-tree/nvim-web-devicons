@@ -2398,9 +2398,79 @@ local icons_by_desktop_environment = {
   },
 }
 
+local icons_by_window_manager = {
+  ["awesomewm"] = {
+    icon = "",
+    color = "#3e4651",
+    cterm_color = "238",
+    name = "awesome",
+  },
+  ["bspwm"] = {
+    icon = "",
+    color = "#4f4f4f",
+    cterm_color = "239",
+    name = "BSPWM",
+  },
+  ["dwm"] = {
+    icon = "",
+    color = "#0d5980",
+    cterm_color = "24",
+    name = "dwm",
+  },
+  ["enlightenment"] = {
+    icon = "",
+    color = "#333333",
+    cterm_color = "236",
+    name = "Enlightenment",
+  },
+  ["fluxbox"] = {
+    icon = "",
+    color = "#404040",
+    cterm_color = "238",
+    name = "Fluxbox",
+  },
+  ["hyprland"] = {
+    icon = "",
+    color = "#008082",
+    cterm_color = "30",
+    name = "Hyprland",
+  },
+  ["i3"] = {
+    icon = "",
+    color = "#2e2f30",
+    cterm_color = "236",
+    name = "i3",
+  },
+  ["jwm"] = {
+    icon = "",
+    color = "#005a9a",
+    cterm_color = "25",
+    name = "JWM",
+  },
+  ["qtile"] = {
+    icon = "",
+    color = "#333333",
+    cterm_color = "236",
+    name = "Qtile",
+  },
+  ["sway"] = {
+    icon = "",
+    color = "#4e5815",
+    cterm_color = "58",
+    name = "Sway",
+  },
+  ["xmonad"] = {
+    icon = "",
+    color = "#a9333e",
+    cterm_color = "131",
+    name = "xmonad",
+  },
+}
+
 return {
   icons_by_filename = icons_by_filename,
   icons_by_file_extension = icons_by_file_extension,
   icons_by_operating_system = icons_by_operating_system,
   icons_by_desktop_environment = icons_by_desktop_environment,
+  icons_by_window_manager = icons_by_window_manager,
 }
