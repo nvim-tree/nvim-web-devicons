@@ -2885,17 +2885,47 @@ local icons_by_operating_system = {
     cterm_color = "24",
     name = "Arch",
   },
+  ["archcraft"] = {
+    icon = "",
+    color = "#435e52",
+    cterm_color = "23",
+    name = "Archcraft",
+  },
+  ["archlabs"] = {
+    icon = "",
+    color = "#503f42",
+    cterm_color = "238",
+    name = "Archlabs",
+  },
+  ["arcolinux"] = {
+    icon = "",
+    color = "#44609d",
+    cterm_color = "25",
+    name = "ArcoLinux",
+  },
   ["artix"] = {
     icon = "",
     color = "#2b788f",
     cterm_color = "31",
     name = "Artix",
   },
+  ["biglinux"] = {
+    icon = "",
+    color = "#127796",
+    cterm_color = "31",
+    name = "BigLinux",
+  },
   ["centos"] = {
     icon = "",
     color = "#7a3d6a",
     cterm_color = "89",
     name = "Centos",
+  },
+  ["crystallinux"] = {
+    icon = "",
+    color = "#a900ff",
+    cterm_color = "129",
+    name = "CrystalLinux",
   },
   ["debian"] = {
     icon = "",
@@ -2939,6 +2969,12 @@ local icons_by_operating_system = {
     cterm_color = "160",
     name = "FreeBSD",
   },
+  ["garuda"] = {
+    icon = "",
+    color = "#1f57a9",
+    cterm_color = "25",
+    name = "GarudaLinux",
+  },
   ["gentoo"] = {
     icon = "󰣨",
     color = "#585667",
@@ -2951,6 +2987,12 @@ local icons_by_operating_system = {
     cterm_color = "58",
     name = "Guix",
   },
+  ["hyperbola"] = {
+    icon = "",
+    color = "#404040",
+    cterm_color = "238",
+    name = "Hyperbola_GNU-Linux_libre",
+  },
   ["illumos"] = {
     icon = "",
     color = "#bf320b",
@@ -2962,6 +3004,30 @@ local icons_by_operating_system = {
     color = "#1d59bf",
     cterm_color = "26",
     name = "Kali",
+  },
+  ["kdeneon"] = {
+    icon = "",
+    color = "#187c7b",
+    cterm_color = "30",
+    name = "KDEneon",
+  },
+  ["kubuntu"] = {
+    icon = "",
+    color = "#005c92",
+    cterm_color = "24",
+    name = "Kubuntu",
+  },
+  ["locos"] = {
+    icon = "",
+    color = "#7d5a01",
+    cterm_color = "94",
+    name = "Loc-OS",
+  },
+  ["lxle"] = {
+    icon = "",
+    color = "#474747",
+    cterm_color = "238",
+    name = "LXLE",
   },
   ["mint"] = {
     icon = "󰣭",
@@ -2981,6 +3047,12 @@ local icons_by_operating_system = {
     cterm_color = "29",
     name = "Manjaro",
   },
+  ["mxlinux"] = {
+    icon = "",
+    color = "#333333",
+    cterm_color = "236",
+    name = "MXLinux",
+  },
   ["nixos"] = {
     icon = "",
     color = "#3d586e",
@@ -2999,6 +3071,12 @@ local icons_by_operating_system = {
     cterm_color = "64",
     name = "openSUSE",
   },
+  ["parabola"] = {
+    icon = "",
+    color = "#515373",
+    cterm_color = "60",
+    name = "Parabola_GNU-Linux_libre",
+  },
   ["parrot"] = {
     icon = "",
     color = "#2a6f80",
@@ -3010,6 +3088,24 @@ local icons_by_operating_system = {
     color = "#307b85",
     cterm_color = "30",
     name = "Pop_OS",
+  },
+  ["postmarketos"] = {
+    icon = "",
+    color = "#007300",
+    cterm_color = "22",
+    name = "postmarketOS",
+  },
+  ["puppylinux"] = {
+    icon = "",
+    color = "#51575c",
+    cterm_color = "240",
+    name = "PuppyLinux",
+  },
+  ["qubesos"] = {
+    icon = "",
+    color = "#2957a2",
+    cterm_color = "25",
+    name = "QubesOS",
   },
   ["raspberry_pi"] = {
     icon = "",
@@ -3047,17 +3143,41 @@ local icons_by_operating_system = {
     cterm_color = "239",
     name = "Solus",
   },
+  ["tails"] = {
+    icon = "",
+    color = "#56347c",
+    cterm_color = "54",
+    name = "Tails",
+  },
+  ["trisquel"] = {
+    icon = "",
+    color = "#0f58b6",
+    cterm_color = "25",
+    name = "Trisquel_GNU-Linux",
+  },
   ["ubuntu"] = {
     icon = "",
     color = "#a6360f",
     cterm_color = "124",
     name = "Ubuntu",
   },
+  ["vanillaos"] = {
+    icon = "",
+    color = "#533f1a",
+    cterm_color = "58",
+    name = "VanillaOS",
+  },
   ["void"] = {
     icon = "",
     color = "#295340",
     cterm_color = "23",
     name = "Void",
+  },
+  ["xerolinux"] = {
+    icon = "",
+    color = "#5b5f97",
+    cterm_color = "60",
+    name = "XeroLinux",
   },
   ["zorin"] = {
     icon = "",
