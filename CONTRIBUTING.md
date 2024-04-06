@@ -122,3 +122,14 @@ Available types:
 If in doubt, look at previous commits.
 
 See also [The Conventional Commits ultimate cheatsheet](https://gist.github.com/gabrielecanepa/fa6cca1a8ae96f77896fe70ddee65527)
+
+## Browser Font
+
+It is useful to see the actual glyphs in the pull request. That can be done by setting the browser font to your nerd font.
+
+Using firefox:
+
+* Settings -> General
+* Fonts -> Advanced
+* Change Monospace to "Hack Nerd Font Mono" or similar
+* Uncheck "Allow pages to choose their own fonts, instead of your selections above"
