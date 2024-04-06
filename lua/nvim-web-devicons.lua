@@ -43,6 +43,7 @@ local filetypes = {
   ["avif"] = "avif",
   ["bzl"] = "bzl",
   ["brewfile"] = "brewfile",
+  ["blueprint"] = "blp",
   ["checkhealth"] = "checkhealth",
   ["commit"] = "commit_editmsg",
   ["copying"] = "copying",
