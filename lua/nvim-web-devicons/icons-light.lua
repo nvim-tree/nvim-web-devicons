@@ -533,6 +533,12 @@ local icons_by_filename = {
     cterm_color = "94",
     name = "Py.typed",
   },
+  ["QtProject.conf"] = {
+    icon = "",
+    color = "#2b8937",
+    cterm_color = "28",
+    name = "Qt",
+  },
   ["r"] = {
     icon = "󰟔",
     color = "#1a4c8c",
@@ -2173,6 +2179,24 @@ local icons_by_file_extension = {
     color = "#1c708e",
     cterm_color = "24",
     name = "Localization",
+  },
+  ["qml"] = {
+    icon = "",
+    color = "#2b8937",
+    cterm_color = "28",
+    name = "Qt",
+  },
+  ["qrc"] = {
+    icon = "",
+    color = "#2b8937",
+    cterm_color = "28",
+    name = "Qt",
+  },
+  ["qss"] = {
+    icon = "",
+    color = "#2b8937",
+    cterm_color = "28",
+    name = "Qt",
   },
   ["query"] = {
     icon = "",
