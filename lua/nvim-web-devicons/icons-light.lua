@@ -2171,12 +2171,6 @@ local icons_by_operating_system = {
     cterm_color = "31",
     name = "Artix",
   },
-  ["budgie"] = {
-    icon = "",
-    color = "#366397",
-    cterm_color = "25",
-    name = "Budgie",
-  },
   ["centos"] = {
     icon = "",
     color = "#7a3d6a",
@@ -2353,8 +2347,130 @@ local icons_by_operating_system = {
   },
 }
 
+local icons_by_desktop_environment = {
+  ["budgie"] = {
+    icon = "",
+    color = "#4e5361",
+    cterm_color = "240",
+    name = "Budgie",
+  },
+  ["cinnamon"] = {
+    icon = "",
+    color = "#93451f",
+    cterm_color = "124",
+    name = "Cinnamon",
+  },
+  ["gnome"] = {
+    icon = "",
+    color = "#333333",
+    cterm_color = "236",
+    name = "GNOME",
+  },
+  ["lxde"] = {
+    icon = "",
+    color = "#525252",
+    cterm_color = "239",
+    name = "LXDE",
+  },
+  ["lxqt"] = {
+    icon = "",
+    color = "#016d9e",
+    cterm_color = "24",
+    name = "LXQt",
+  },
+  ["mate"] = {
+    icon = "",
+    color = "#4e6d2e",
+    cterm_color = "22",
+    name = "MATE",
+  },
+  ["plasma"] = {
+    icon = "",
+    color = "#1467b7",
+    cterm_color = "25",
+    name = "KDEPlasma",
+  },
+  ["xfce"] = {
+    icon = "",
+    color = "#0080a7",
+    cterm_color = "31",
+    name = "Xfce",
+  },
+}
+
+local icons_by_window_manager = {
+  ["awesomewm"] = {
+    icon = "",
+    color = "#3e4651",
+    cterm_color = "238",
+    name = "awesome",
+  },
+  ["bspwm"] = {
+    icon = "",
+    color = "#4f4f4f",
+    cterm_color = "239",
+    name = "BSPWM",
+  },
+  ["dwm"] = {
+    icon = "",
+    color = "#0d5980",
+    cterm_color = "24",
+    name = "dwm",
+  },
+  ["enlightenment"] = {
+    icon = "",
+    color = "#333333",
+    cterm_color = "236",
+    name = "Enlightenment",
+  },
+  ["fluxbox"] = {
+    icon = "",
+    color = "#404040",
+    cterm_color = "238",
+    name = "Fluxbox",
+  },
+  ["hyprland"] = {
+    icon = "",
+    color = "#008082",
+    cterm_color = "30",
+    name = "Hyprland",
+  },
+  ["i3"] = {
+    icon = "",
+    color = "#2e2f30",
+    cterm_color = "236",
+    name = "i3",
+  },
+  ["jwm"] = {
+    icon = "",
+    color = "#005a9a",
+    cterm_color = "25",
+    name = "JWM",
+  },
+  ["qtile"] = {
+    icon = "",
+    color = "#333333",
+    cterm_color = "236",
+    name = "Qtile",
+  },
+  ["sway"] = {
+    icon = "",
+    color = "#4e5815",
+    cterm_color = "58",
+    name = "Sway",
+  },
+  ["xmonad"] = {
+    icon = "",
+    color = "#a9333e",
+    cterm_color = "131",
+    name = "xmonad",
+  },
+}
+
 return {
   icons_by_filename = icons_by_filename,
   icons_by_file_extension = icons_by_file_extension,
   icons_by_operating_system = icons_by_operating_system,
+  icons_by_desktop_environment = icons_by_desktop_environment,
+  icons_by_window_manager = icons_by_window_manager,
 }

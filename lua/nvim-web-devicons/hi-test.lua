@@ -104,7 +104,17 @@ end
 ---@param icons_by_filename table[] filename "By File Name"
 ---@param icons_by_file_extension table[] extension "By File Extension"
 ---@param icons_by_operating_system table[] os "By Operating System"
-return function(default_icon, global_override, icons_by_filename, icons_by_file_extension, icons_by_operating_system)
+---@param icons_by_desktop_environment table[] os "By Desktop Environment"
+---@param icons_by_window_manager table[] os "By Window Manager"
+return function(
+  default_icon,
+  global_override,
+  icons_by_filename,
+  icons_by_file_extension,
+  icons_by_operating_system,
+  icons_by_desktop_environment,
+  icons_by_window_manager
+)
   -- create a buffer
   local bufnr = vim.api.nvim_create_buf(false, true)
 
@@ -116,7 +126,9 @@ return function(default_icon, global_override, icons_by_filename, icons_by_file_
   end
   l = render_icons(bufnr, l, icons_by_filename, "By File Name")
   l = render_icons(bufnr, l, icons_by_file_extension, "By File Extension")
-  render_icons(bufnr, l, icons_by_operating_system, "By Operating System")
+  l = render_icons(bufnr, l, icons_by_operating_system, "By Operating System")
+  l = render_icons(bufnr, l, icons_by_desktop_environment, "By Desktop Environment")
+  render_icons(bufnr, l, icons_by_window_manager, "By Window Manager")
 
   -- finalise and focus the buffer
   vim.api.nvim_buf_set_option(bufnr, "modifiable", false)

@@ -1,7 +1,8 @@
 local M = {}
 
--- When adding new icons, remember to add an entry to the `filetypes` table, if applicable.
+-- NOTE: When adding new icons, remember to add an entry to the `filetypes` table, if applicable.
 local icons, icons_by_filename, icons_by_file_extension, icons_by_operating_system
+local icons_by_desktop_environment, icons_by_window_manager
 
 local default_icon = {
   icon = "",
@@ -33,7 +34,17 @@ local function refresh_icons()
   icons_by_filename = theme.icons_by_filename
   icons_by_file_extension = theme.icons_by_file_extension
   icons_by_operating_system = theme.icons_by_operating_system
-  icons = vim.tbl_extend("keep", {}, icons_by_filename, icons_by_file_extension, icons_by_operating_system)
+  icons_by_desktop_environment = theme.icons_by_desktop_environment
+  icons_by_window_manager = theme.icons_by_window_manager
+  icons = vim.tbl_extend(
+    "keep",
+    {},
+    icons_by_filename,
+    icons_by_file_extension,
+    icons_by_operating_system,
+    icons_by_desktop_environment,
+    icons_by_window_manager
+  )
   icons = vim.tbl_extend("force", icons, global_opts.override)
   icons[1] = default_icon
 end
@@ -345,6 +356,8 @@ function M.setup(opts)
   local user_filename_icons = user_icons.override_by_filename
   local user_file_ext_icons = user_icons.override_by_extension
   local user_operating_system_icons = user_icons.override_by_operating_system
+  local user_desktop_environment_icons = user_icons.override_by_desktop_environment
+  local user_window_manager_icons = user_icons.override_by_window_manager
 
   icons = vim.tbl_extend(
     "force",
@@ -352,7 +365,9 @@ function M.setup(opts)
     user_icons.override or {},
     user_filename_icons or {},
     user_file_ext_icons or {},
-    user_operating_system_icons or {}
+    user_operating_system_icons or {},
+    user_desktop_environment_icons or {},
+    user_window_manager_icons or {}
   )
   global_opts.override = vim.tbl_extend(
     "force",
@@ -360,7 +375,9 @@ function M.setup(opts)
     user_icons.override or {},
     user_filename_icons or {},
     user_file_ext_icons or {},
-    user_operating_system_icons or {}
+    user_operating_system_icons or {},
+    user_desktop_environment_icons or {},
+    user_window_manager_icons or {}
   )
 
   if user_filename_icons then
@@ -371,6 +388,12 @@ function M.setup(opts)
   end
   if user_operating_system_icons then
     icons_by_operating_system = vim.tbl_extend("force", icons_by_operating_system, user_operating_system_icons)
+  end
+  if user_desktop_environment_icons then
+    icons_by_desktop_environment = vim.tbl_extend("force", icons_by_desktop_environment, user_desktop_environment_icons)
+  end
+  if user_window_manager_icons then
+    icons_by_window_manager = vim.tbl_extend("force", icons_by_window_manager, user_window_manager_icons)
   end
 
   icons[1] = default_icon
@@ -390,7 +413,9 @@ function M.setup(opts)
       global_opts.override,
       icons_by_filename,
       icons_by_file_extension,
-      icons_by_operating_system
+      icons_by_operating_system,
+      icons_by_desktop_environment,
+      icons_by_window_manager
     )
   end, {
     desc = "nvim-web-devicons: highlight test",

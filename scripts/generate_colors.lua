@@ -147,16 +147,32 @@ if fn.search("^local icons_by_operating_system", "c") == 0 then
 end
 local lines3 = generate_lines()
 
-table.insert(lines3, "return {")
-table.insert(lines3, "  icons_by_filename = icons_by_filename,")
-table.insert(lines3, "  icons_by_file_extension = icons_by_file_extension,")
-table.insert(lines3, "  icons_by_operating_system = icons_by_operating_system,")
-table.insert(lines3, "}")
+-- fourth table
+if fn.search("^local icons_by_desktop_environment", "c") == 0 then
+  error_exit("Table 'icons_by_desktop_environment' not found in lua/nvim-web-devicons/icons-default.lua", 1)
+end
+local lines4 = generate_lines()
+
+-- fifth table
+if fn.search("^local icons_by_window_manager", "c") == 0 then
+  error_exit("Table 'icons_by_window_manager' not found in lua/nvim-web-devicons/icons-default.lua", 1)
+end
+local lines5 = generate_lines()
+
+table.insert(lines5, "return {")
+table.insert(lines5, "  icons_by_filename = icons_by_filename,")
+table.insert(lines5, "  icons_by_file_extension = icons_by_file_extension,")
+table.insert(lines5, "  icons_by_operating_system = icons_by_operating_system,")
+table.insert(lines5, "  icons_by_desktop_environment = icons_by_desktop_environment,")
+table.insert(lines5, "  icons_by_window_manager = icons_by_window_manager,")
+table.insert(lines5, "}")
 
 -- write both tables to file
 fn.writefile(lines, "lua/nvim-web-devicons/icons-light.lua")
 fn.writefile(lines2, "lua/nvim-web-devicons/icons-light.lua", "a")
 fn.writefile(lines3, "lua/nvim-web-devicons/icons-light.lua", "a")
+fn.writefile(lines4, "lua/nvim-web-devicons/icons-light.lua", "a")
+fn.writefile(lines5, "lua/nvim-web-devicons/icons-light.lua", "a")
 
 print "Finished creating new file!"
 
