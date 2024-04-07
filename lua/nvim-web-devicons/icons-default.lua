@@ -1881,7 +1881,7 @@ local icons_by_file_extension = {
     name = "TypeScriptReactTest",
   },
   ["tex"] = {
-    icon = "󰙩",
+    icon = "",
     color = "#3D6117",
     cterm_color = "22",
     name = "Tex",
