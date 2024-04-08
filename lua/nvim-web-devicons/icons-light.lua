@@ -1,4 +1,10 @@
 local icons_by_filename = {
+  ["wma"] = {
+    icon = "",
+    color = "#0075aa",
+    cterm_color = "24",
+    name = "WindowsMediaAudio",
+  },
   ["build.gradle"] = {
     icon = "",
     color = "#005f87",
@@ -173,30 +179,6 @@ local icons_by_filename = {
     cterm_color = "25",
     name = "R",
   },
-  ["aac"] = {
-    icon = "",
-    color = "#0075aa",
-    cterm_color = "24",
-    name = "AdvancedAudioCoding",
-  },
-  ["aif"] = {
-    icon = "",
-    color = "#0075aa",
-    cterm_color = "24",
-    name = "AudioInterchangeFileFormat",
-  },
-  ["aiff"] = {
-    icon = "",
-    color = "#0075aa",
-    cterm_color = "24",
-    name = "AudioInterchangeFileFormat",
-  },
-  ["ape"] = {
-    icon = "",
-    color = "#0075aa",
-    cterm_color = "24",
-    name = "MonkeysAudio",
-  },
   ["avif"] = {
     icon = "",
     color = "#6b4d83",
@@ -287,12 +269,6 @@ local icons_by_filename = {
     cterm_color = "58",
     name = "Favicon",
   },
-  ["flac"] = {
-    icon = "",
-    color = "#005880",
-    cterm_color = "24",
-    name = "FreeLosslessAudioCodec",
-  },
   ["gemfile$"] = {
     icon = "",
     color = "#701516",
@@ -347,12 +323,6 @@ local icons_by_filename = {
     cterm_color = "58",
     name = "License",
   },
-  ["m4a"] = {
-    icon = "",
-    color = "#0075aa",
-    cterm_color = "24",
-    name = "MPEG4",
-  },
   ["makefile"] = {
     icon = "",
     color = "#526064",
@@ -364,12 +334,6 @@ local icons_by_filename = {
     color = "#6b4d83",
     cterm_color = "96",
     name = "MixLock",
-  },
-  ["mp3"] = {
-    icon = "",
-    color = "#0075aa",
-    cterm_color = "24",
-    name = "MPEGAudioLayerIII",
   },
   ["node_modules"] = {
     icon = "",
@@ -467,23 +431,11 @@ local icons_by_filename = {
     cterm_color = "26",
     name = "Vagrantfile",
   },
-  ["wav"] = {
-    icon = "",
-    color = "#0075aa",
-    cterm_color = "24",
-    name = "WaveformAudioFile",
-  },
   ["webpack"] = {
     icon = "󰜫",
     color = "#36677c",
     cterm_color = "24",
     name = "Webpack",
-  },
-  ["wma"] = {
-    icon = "",
-    color = "#0075aa",
-    cterm_color = "24",
-    name = "WindowsMediaAudio",
   },
   ["workspace"] = {
     icon = "",
@@ -514,9 +466,27 @@ local icons_by_file_extension = {
   },
   ["aac"] = {
     icon = "",
-    color = "#336c78",
-    cterm_color = "23",
-    name = "Aac",
+    color = "#0075aa",
+    cterm_color = "24",
+    name = "AdvancedAudioCoding",
+  },
+  ["aif"] = {
+    icon = "",
+    color = "#0075aa",
+    cterm_color = "24",
+    name = "AudioInterchangeFileFormat",
+  },
+  ["aiff"] = {
+    icon = "",
+    color = "#0075aa",
+    cterm_color = "24",
+    name = "AudioInterchangeFileFormat",
+  },
+  ["ape"] = {
+    icon = "",
+    color = "#0075aa",
+    cterm_color = "24",
+    name = "MonkeysAudio",
   },
   ["ai"] = {
     icon = "",
@@ -946,9 +916,9 @@ local icons_by_file_extension = {
   },
   ["flac"] = {
     icon = "",
-    color = "#336c78",
-    cterm_color = "23",
-    name = "Flac",
+    color = "#005880",
+    cterm_color = "24",
+    name = "FreeLosslessAudioCodec",
   },
   ["fnl"] = {
     icon = "",
@@ -1312,9 +1282,9 @@ local icons_by_file_extension = {
   },
   ["m4a"] = {
     icon = "",
-    color = "#336c78",
-    cterm_color = "23",
-    name = "M4A",
+    color = "#0075aa",
+    cterm_color = "24",
+    name = "MPEG4",
   },
   ["m4v"] = {
     icon = "",
@@ -1414,9 +1384,9 @@ local icons_by_file_extension = {
   },
   ["mp3"] = {
     icon = "",
-    color = "#336c78",
-    cterm_color = "23",
-    name = "Mp3",
+    color = "#0075aa",
+    cterm_color = "24",
+    name = "MPEGAudioLayerIII",
   },
   ["mp4"] = {
     icon = "",
@@ -2050,9 +2020,9 @@ local icons_by_file_extension = {
   },
   ["wav"] = {
     icon = "",
-    color = "#336c78",
-    cterm_color = "23",
-    name = "Wav",
+    color = "#0075aa",
+    cterm_color = "24",
+    name = "WaveformAudioFile",
   },
   ["webm"] = {
     icon = "",
@@ -2077,6 +2047,12 @@ local icons_by_file_extension = {
     color = "#36677c",
     cterm_color = "24",
     name = "Webpack",
+  },
+  ["wma"] = {
+    icon = "",
+    color = "#0075aa",
+    cterm_color = "24",
+    name = "WindowsMediaAudio",
   },
   ["woff"] = {
     icon = "",
