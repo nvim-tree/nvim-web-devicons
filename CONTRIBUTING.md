@@ -2,14 +2,6 @@
 
 Thank you for your contribution!
 
-## Name
-
-Please name your commits and the PR simply e.g.
-
-    add .tex
-    update makefile icon
-    update .kt colors
-
 ## Order
 
 Please ensure `icons_by_filename`, `icons_by_file_extension` and `filetypes` are ordered alphabetically, to prevent merge conflicts.
@@ -92,12 +84,52 @@ Start neovim with `TERM=xterm-256color nvim ...` to test cterm.
 
 Check with `&background` `dark` and `light`
 
-## Pull Request
-
-Please reference any issues in the description e.g. "resolves #1234".
-
-Please check "allow edits by maintainers" to allow nvim-web-devicons maintainers to make small changes such as documentation tweaks.
-
 ## Documentation
 
 When modifying or adding API, please update [Usage](README.md#Usage)
+
+# Pull Request
+
+Please reference any issues in the description e.g. "resolves #1234", which will be closed upon merge.
+
+Please check "allow edits by maintainers" to allow nvim-web-devicons maintainers to make small changes such as documentation tweaks.
+
+## Subject
+
+The merge commit message will be the subject of the PR.
+
+A [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0) subject will be validated by the Semantic Pull Request Subject CI job. Reference the issue to be used in the release notes e.g.
+
+```
+feat: add gradle icons
+fix: update rust icon
+feat(#192): :NvimWebDeviconsHiTest
+```
+
+Available types:
+* feat: A new feature
+* fix: A bug fix
+* docs: Documentation only changes
+* style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+* refactor: A code change that neither fixes a bug nor adds a feature
+* perf: A code change that improves performance
+* test: Adding missing tests or correcting existing tests
+* build: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
+* ci: Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
+* chore: Other changes that don't modify src or test files
+* revert: Reverts a previous commit
+
+If in doubt, look at previous commits.
+
+See also [The Conventional Commits ultimate cheatsheet](https://gist.github.com/gabrielecanepa/fa6cca1a8ae96f77896fe70ddee65527)
+
+## Browser Font
+
+It is useful to see the actual glyphs in the pull request. That can be done by setting the browser font to your nerd font.
+
+Using firefox:
+
+* Settings -> General
+* Fonts -> Advanced
+* Change Monospace to "Hack Nerd Font Mono" or similar
+* Uncheck "Allow pages to choose their own fonts, instead of your selections above"

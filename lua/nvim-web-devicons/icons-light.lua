@@ -1,4 +1,16 @@
 local icons_by_filename = {
+  ["build.gradle"] = {
+    icon = "",
+    color = "#005f87",
+    cterm_color = "24",
+    name = "GradleBuildScript",
+  },
+  ["settings.gradle"] = {
+    icon = "",
+    color = "#005f87",
+    cterm_color = "24",
+    name = "GradleSettings",
+  },
   [".babelrc"] = {
     icon = "",
     color = "#666620",
@@ -106,6 +118,12 @@ local icons_by_filename = {
     color = "#ae1d38",
     cterm_color = "161",
     name = "NPMrc",
+  },
+  [".prettierrc"] = {
+    icon = "",
+    color = "#3264b7",
+    cterm_color = "25",
+    name = "PrettierConfig",
   },
   [".settings.json"] = {
     icon = "",
@@ -287,6 +305,24 @@ local icons_by_filename = {
     cterm_color = "59",
     name = "Makefile",
   },
+  ["gradlew"] = {
+    icon = "",
+    color = "#005f87",
+    cterm_color = "24",
+    name = "GradleWrapperScript",
+  },
+  ["gradle.properties"] = {
+    icon = "",
+    color = "#005f87",
+    cterm_color = "24",
+    name = "GradleProperties",
+  },
+  ["gradle-wrapper.properties"] = {
+    icon = "",
+    color = "#005f87",
+    cterm_color = "24",
+    name = "GradleWrapperProperties",
+  },
   ["groovy"] = {
     icon = "",
     color = "#384e5d",
@@ -352,6 +388,12 @@ local icons_by_filename = {
     color = "#7a0d21",
     cterm_color = "52",
     name = "PackageLockJson",
+  },
+  ["pom.xml"] = {
+    icon = "",
+    color = "#7a0d21",
+    cterm_color = "52",
+    name = "Maven",
   },
   ["procfile"] = {
     icon = "",
@@ -506,6 +548,12 @@ local icons_by_file_extension = {
     cterm_color = "25",
     name = "AzureCli",
   },
+  ["bak"] = {
+    icon = "󰁯",
+    color = "#526064",
+    cterm_color = "59",
+    name = "Backup",
+  },
   ["bash"] = {
     icon = "",
     color = "#447028",
@@ -535,6 +583,12 @@ local icons_by_file_extension = {
     color = "#6b4d83",
     cterm_color = "96",
     name = "Bmp",
+  },
+  ["blp"] = {
+    icon = "󰺾",
+    color = "#3a6497",
+    cterm_color = "25",
+    name = "Blueprint",
   },
   ["bzl"] = {
     icon = "",
@@ -579,8 +633,8 @@ local icons_by_file_extension = {
     name = "Configuration",
   },
   ["cjs"] = {
-    icon = "󰌞",
-    color = "#505011",
+    icon = "",
+    color = "#666620",
     cterm_color = "58",
     name = "Cjs",
   },
@@ -1137,8 +1191,8 @@ local icons_by_file_extension = {
     name = "Jpg",
   },
   ["js"] = {
-    icon = "󰌞",
-    color = "#505011",
+    icon = "",
+    color = "#666620",
     cterm_color = "58",
     name = "Js",
   },
@@ -1190,6 +1244,12 @@ local icons_by_file_extension = {
     cterm_color = "92",
     name = "KotlinScript",
   },
+  ["lck"] = {
+    icon = "",
+    color = "#5e5e5e",
+    cterm_color = "59",
+    name = "Lock",
+  },
   ["leex"] = {
     icon = "",
     color = "#6b4d83",
@@ -1221,7 +1281,7 @@ local icons_by_file_extension = {
     name = "Liquid",
   },
   ["lock"] = {
-    icon = "",
+    icon = "",
     color = "#5e5e5e",
     cterm_color = "59",
     name = "Lock",
@@ -1299,8 +1359,8 @@ local icons_by_file_extension = {
     name = "Mint",
   },
   ["mjs"] = {
-    icon = "󰌞",
-    color = "#505011",
+    icon = "",
+    color = "#504b1e",
     cterm_color = "58",
     name = "Mjs",
   },
@@ -1327,6 +1387,18 @@ local icons_by_file_extension = {
     color = "#975122",
     cterm_color = "130",
     name = "Mli",
+  },
+  ["m"] = {
+    icon = "",
+    color = "#3b69aa",
+    cterm_color = "25",
+    name = "ObjectiveC",
+  },
+  ["mm"] = {
+    icon = "",
+    color = "#36677c",
+    cterm_color = "24",
+    name = "ObjectiveCPlusPlus",
   },
   ["mo"] = {
     icon = "∞",
@@ -1453,6 +1525,12 @@ local icons_by_file_extension = {
     color = "#6b4d83",
     cterm_color = "96",
     name = "Png",
+  },
+  ["po"] = {
+    icon = "",
+    color = "#1c708e",
+    cterm_color = "24",
+    name = "Localization",
   },
   ["pp"] = {
     icon = "",
@@ -1617,7 +1695,7 @@ local icons_by_file_extension = {
     name = "Rproj",
   },
   ["rs"] = {
-    icon = "",
+    icon = "",
     color = "#6f5242",
     cterm_color = "95",
     name = "Rs",
@@ -1640,11 +1718,23 @@ local icons_by_file_extension = {
     cterm_color = "88",
     name = "sbt",
   },
+  ["scad"] = {
+    icon = "",
+    color = "#53480f",
+    cterm_color = "58",
+    name = "OpenSCAD",
+  },
   ["scala"] = {
     icon = "",
     color = "#992e33",
     cterm_color = "88",
     name = "Scala",
+  },
+  ["sc"] = {
+    icon = "",
+    color = "#992e33",
+    cterm_color = "88",
+    name = "ScalaScript",
   },
   ["scm"] = {
     icon = "󰘧",
@@ -1735,6 +1825,12 @@ local icons_by_file_extension = {
     color = "#494848",
     cterm_color = "238",
     name = "Sql",
+  },
+  ["strings"] = {
+    icon = "",
+    color = "#1c708e",
+    cterm_color = "24",
+    name = "Localization",
   },
   ["styl"] = {
     icon = "",
@@ -1839,7 +1935,7 @@ local icons_by_file_extension = {
     name = "TypeScriptReactTest",
   },
   ["tex"] = {
-    icon = "󰙩",
+    icon = "",
     color = "#3D6117",
     cterm_color = "22",
     name = "Tex",
@@ -1994,6 +2090,18 @@ local icons_by_file_extension = {
     cterm_color = "236",
     name = "WebOpenFontFormat",
   },
+  ["x"] = {
+    icon = "",
+    color = "#3b69aa",
+    cterm_color = "25",
+    name = "Logos",
+  },
+  ["xm"] = {
+    icon = "",
+    color = "#36677c",
+    cterm_color = "24",
+    name = "Logos",
+  },
   ["xaml"] = {
     icon = "󰙳",
     color = "#512bd4",
@@ -2005,6 +2113,12 @@ local icons_by_file_extension = {
     color = "#975122",
     cterm_color = "130",
     name = "XcPlayground",
+  },
+  ["xcstrings"] = {
+    icon = "",
+    color = "#1c708e",
+    cterm_color = "24",
+    name = "XcLocalization",
   },
   ["xls"] = {
     icon = "󰈛",
@@ -2110,12 +2224,6 @@ local icons_by_operating_system = {
     color = "#2b788f",
     cterm_color = "31",
     name = "Artix",
-  },
-  ["budgie"] = {
-    icon = "",
-    color = "#366397",
-    cterm_color = "25",
-    name = "Budgie",
   },
   ["centos"] = {
     icon = "",
@@ -2293,8 +2401,130 @@ local icons_by_operating_system = {
   },
 }
 
+local icons_by_desktop_environment = {
+  ["budgie"] = {
+    icon = "",
+    color = "#4e5361",
+    cterm_color = "240",
+    name = "Budgie",
+  },
+  ["cinnamon"] = {
+    icon = "",
+    color = "#93451f",
+    cterm_color = "124",
+    name = "Cinnamon",
+  },
+  ["gnome"] = {
+    icon = "",
+    color = "#333333",
+    cterm_color = "236",
+    name = "GNOME",
+  },
+  ["lxde"] = {
+    icon = "",
+    color = "#525252",
+    cterm_color = "239",
+    name = "LXDE",
+  },
+  ["lxqt"] = {
+    icon = "",
+    color = "#016d9e",
+    cterm_color = "24",
+    name = "LXQt",
+  },
+  ["mate"] = {
+    icon = "",
+    color = "#4e6d2e",
+    cterm_color = "22",
+    name = "MATE",
+  },
+  ["plasma"] = {
+    icon = "",
+    color = "#1467b7",
+    cterm_color = "25",
+    name = "KDEPlasma",
+  },
+  ["xfce"] = {
+    icon = "",
+    color = "#0080a7",
+    cterm_color = "31",
+    name = "Xfce",
+  },
+}
+
+local icons_by_window_manager = {
+  ["awesomewm"] = {
+    icon = "",
+    color = "#3e4651",
+    cterm_color = "238",
+    name = "awesome",
+  },
+  ["bspwm"] = {
+    icon = "",
+    color = "#4f4f4f",
+    cterm_color = "239",
+    name = "BSPWM",
+  },
+  ["dwm"] = {
+    icon = "",
+    color = "#0d5980",
+    cterm_color = "24",
+    name = "dwm",
+  },
+  ["enlightenment"] = {
+    icon = "",
+    color = "#333333",
+    cterm_color = "236",
+    name = "Enlightenment",
+  },
+  ["fluxbox"] = {
+    icon = "",
+    color = "#404040",
+    cterm_color = "238",
+    name = "Fluxbox",
+  },
+  ["hyprland"] = {
+    icon = "",
+    color = "#008082",
+    cterm_color = "30",
+    name = "Hyprland",
+  },
+  ["i3"] = {
+    icon = "",
+    color = "#2e2f30",
+    cterm_color = "236",
+    name = "i3",
+  },
+  ["jwm"] = {
+    icon = "",
+    color = "#005a9a",
+    cterm_color = "25",
+    name = "JWM",
+  },
+  ["qtile"] = {
+    icon = "",
+    color = "#333333",
+    cterm_color = "236",
+    name = "Qtile",
+  },
+  ["sway"] = {
+    icon = "",
+    color = "#4e5815",
+    cterm_color = "58",
+    name = "Sway",
+  },
+  ["xmonad"] = {
+    icon = "",
+    color = "#a9333e",
+    cterm_color = "131",
+    name = "xmonad",
+  },
+}
+
 return {
   icons_by_filename = icons_by_filename,
   icons_by_file_extension = icons_by_file_extension,
   icons_by_operating_system = icons_by_operating_system,
+  icons_by_desktop_environment = icons_by_desktop_environment,
+  icons_by_window_manager = icons_by_window_manager,
 }
