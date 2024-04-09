@@ -776,6 +776,12 @@ local icons_by_file_extension = {
     cterm_color = "124",
     name = "Bin",
   },
+  ["blade.php"] = {
+    icon = "",
+    color = "#f05340",
+    cterm_color = "203",
+    name = "Blade",
+  },
   ["blend"] = {
     icon = "󰂫",
     color = "#ea7600",
