@@ -417,7 +417,7 @@ local icons_by_filename = {
     icon = "",
     color = "#83b8f2",
     cterm_color = "110",
-    name = "Kdenlive-layoutsrc",
+    name = "KdenliveLayoutsrc",
   },
   ["kdenliverc"] = {
     icon = "",
@@ -2991,7 +2991,7 @@ local icons_by_operating_system = {
     icon = "",
     color = "#c0c0c0",
     cterm_color = "250",
-    name = "Hyperbola_GNU-Linux_libre",
+    name = "HyperbolaGNULinuxLibre",
   },
   ["illumos"] = {
     icon = "",
@@ -3021,7 +3021,7 @@ local icons_by_operating_system = {
     icon = "",
     color = "#fab402",
     cterm_color = "214",
-    name = "Loc-OS",
+    name = "LocOS",
   },
   ["lxle"] = {
     icon = "",
@@ -3075,7 +3075,7 @@ local icons_by_operating_system = {
     icon = "",
     color = "#797dac",
     cterm_color = "103",
-    name = "Parabola_GNU-Linux_libre",
+    name = "ParabolaGNULinuxLibre",
   },
   ["parrot"] = {
     icon = "",
@@ -3153,7 +3153,7 @@ local icons_by_operating_system = {
     icon = "",
     color = "#0f58b6",
     cterm_color = "25",
-    name = "Trisquel_GNU-Linux",
+    name = "TrisquelGNULinux",
   },
   ["ubuntu"] = {
     icon = "",
