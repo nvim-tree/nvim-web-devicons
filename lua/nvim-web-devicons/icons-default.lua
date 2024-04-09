@@ -269,6 +269,12 @@ local icons_by_filename = {
     cterm_color = "68",
     name = "Dockerfile",
   },
+  ["config"] = {
+    icon = "",
+    color = "#6d8086",
+    cterm_color = "66",
+    name = "Config",
+  },
   ["containerfile"] = {
     icon = "󰡨",
     color = "#458ee6",
@@ -305,6 +311,12 @@ local icons_by_filename = {
     cterm_color = "68",
     name = "Dockerfile",
   },
+  ["ext_typoscript_setup.txt"] = {
+    icon = "",
+    color = "#FF8700",
+    cterm_color = "208",
+    name = "TypoScriptSetup",
+  },
   ["favicon.ico"] = {
     icon = "",
     color = "#cbcb41",
@@ -322,6 +334,12 @@ local icons_by_filename = {
     color = "#ffffff",
     cterm_color = "231",
     name = "KiCadFootprintTable",
+  },
+  ["FreeCAD.conf"] = {
+    icon = "",
+    color = "#cb0d0d",
+    cterm_color = "160",
+    name = "FreeCADConfig",
   },
   ["gemfile$"] = {
     icon = "",
@@ -686,17 +704,11 @@ local icons_by_file_extension = {
     cterm_color = "102",
     name = "3DObjectFile",
   },
-  ["Dockerfile"] = {
-    icon = "󰡨",
-    color = "#458ee6",
-    cterm_color = "68",
-    name = "Dockerfile",
-  },
-  ["R"] = {
-    icon = "󰟔",
-    color = "#2266ba",
-    cterm_color = "25",
-    name = "R",
+  ["7z"] = {
+    icon = "",
+    color = "#eca517",
+    cterm_color = "214",
+    name = "7z",
   },
   ["aac"] = {
     icon = "",
@@ -722,11 +734,23 @@ local icons_by_file_extension = {
     cterm_color = "66",
     name = "AppleScript",
   },
+  ["asc"] = {
+    icon = "󰦝",
+    color = "#576d7f",
+    cterm_color = "242",
+    name = "Asc",
+  },
   ["ass"] = {
     icon = "󰨖",
     color = "#ffb713",
     cterm_color = "214",
     name = "Ass",
+  },
+  ["astro"] = {
+    icon = "",
+    color = "#e23f67",
+    cterm_color = "197",
+    name = "Astro",
   },
   ["awk"] = {
     icon = "",
@@ -799,6 +823,24 @@ local icons_by_file_extension = {
     color = "#839463",
     cterm_color = "101",
     name = "BoundaryRepresentation",
+  },
+  ["bz"] = {
+    icon = "",
+    color = "#eca517",
+    cterm_color = "214",
+    name = "Bz",
+  },
+  ["bz2"] = {
+    icon = "",
+    color = "#eca517",
+    cterm_color = "214",
+    name = "Bz2",
+  },
+  ["bz3"] = {
+    icon = "",
+    color = "#eca517",
+    cterm_color = "214",
+    name = "Bz3",
   },
   ["bzl"] = {
     icon = "",
@@ -1070,6 +1112,12 @@ local icons_by_file_extension = {
     cterm_color = "26",
     name = "Doc",
   },
+  ["Dockerfile"] = {
+    icon = "󰡨",
+    color = "#458ee6",
+    cterm_color = "68",
+    name = "Dockerfile",
+  },
   ["docx"] = {
     icon = "󰈬",
     color = "#185abd",
@@ -1112,6 +1160,12 @@ local icons_by_file_extension = {
     cterm_color = "101",
     name = "AutoCADDxf",
   },
+  ["ebook"] = {
+    icon = "",
+    color = "#eab16d",
+    cterm_color = "215",
+    name = "Ebook",
+  },
   ["edn"] = {
     icon = "",
     color = "#519aba",
@@ -1153,6 +1207,12 @@ local icons_by_file_extension = {
     color = "#FFA61A",
     cterm_color = "214",
     name = "Epp",
+  },
+  ["epub"] = {
+    icon = "",
+    color = "#eab16d",
+    cterm_color = "215",
+    name = "Epub",
   },
   ["erb"] = {
     icon = "",
@@ -1394,6 +1454,12 @@ local icons_by_file_extension = {
     cterm_color = "24",
     name = "Gv",
   },
+  ["gz"] = {
+    icon = "",
+    color = "#eca517",
+    cterm_color = "214",
+    name = "Gz",
+  },
   ["h"] = {
     icon = "",
     color = "#a074c4",
@@ -1520,6 +1586,18 @@ local icons_by_file_extension = {
     cterm_color = "101",
     name = "Igs",
   },
+  ["image"] = {
+    icon = "",
+    color = "#d0bec8",
+    cterm_color = "181",
+    name = "Image",
+  },
+  ["img"] = {
+    icon = "",
+    color = "#d0bec8",
+    cterm_color = "181",
+    name = "Img",
+  },
   ["import"] = {
     icon = "",
     color = "#ECECEC",
@@ -1543,6 +1621,12 @@ local icons_by_file_extension = {
     color = "#56b6c2",
     cterm_color = "73",
     name = "Arduino",
+  },
+  ["iso"] = {
+    icon = "",
+    color = "#d0bec8",
+    cterm_color = "181",
+    name = "Iso",
   },
   ["ipynb"] = {
     icon = "",
@@ -1615,6 +1699,24 @@ local icons_by_file_extension = {
     color = "#a074c4",
     cterm_color = "140",
     name = "JpegXl",
+  },
+  ["kbx"] = {
+    icon = "󰯄",
+    color = "#737672",
+    cterm_color = "243",
+    name = "Kbx",
+  },
+  ["kdb"] = {
+    icon = "",
+    color = "#529b34",
+    cterm_color = "71",
+    name = "Kdb",
+  },
+  ["kdbx"] = {
+    icon = "",
+    color = "#529b34",
+    cterm_color = "71",
+    name = "Kdbx",
   },
   ["kdenlive"] = {
     icon = "",
@@ -1844,6 +1946,12 @@ local icons_by_file_extension = {
     cterm_color = "253",
     name = "Md",
   },
+  ["md5"] = {
+    icon = "󰕥",
+    color = "#8c86af",
+    cterm_color = "103",
+    name = "Md5",
+  },
   ["mdx"] = {
     icon = "",
     color = "#519aba",
@@ -1903,6 +2011,12 @@ local icons_by_file_extension = {
     color = "#9772FB",
     cterm_color = "135",
     name = "Motoko",
+  },
+  ["mobi"] = {
+    icon = "",
+    color = "#eab16d",
+    cterm_color = "215",
+    name = "Mobi",
   },
   ["mov"] = {
     icon = "",
@@ -2126,6 +2240,12 @@ local icons_by_file_extension = {
     cterm_color = "74",
     name = "Psd",
   },
+  ["pub"] = {
+    icon = "󰷖",
+    color = "#e3c58e",
+    cterm_color = "222",
+    name = "Pub",
+  },
   ["pxd"] = {
     icon = "",
     color = "#5aa7e4",
@@ -2215,6 +2335,12 @@ local icons_by_file_extension = {
     color = "#701516",
     cterm_color = "52",
     name = "Rake",
+  },
+  ["rar"] = {
+    icon = "",
+    color = "#eca517",
+    cterm_color = "214",
+    name = "Rar",
   },
   ["razor"] = {
     icon = "󱦘",
@@ -2317,6 +2443,36 @@ local icons_by_file_extension = {
     color = "#4d5a5e",
     cterm_color = "240",
     name = "Sh",
+  },
+  ["sha1"] = {
+    icon = "󰕥",
+    color = "#8c86af",
+    cterm_color = "103",
+    name = "Sha1",
+  },
+  ["sha224"] = {
+    icon = "󰕥",
+    color = "#8c86af",
+    cterm_color = "103",
+    name = "Sha224",
+  },
+  ["sha256"] = {
+    icon = "󰕥",
+    color = "#8c86af",
+    cterm_color = "103",
+    name = "Sha256",
+  },
+  ["sha384"] = {
+    icon = "󰕥",
+    color = "#8c86af",
+    cterm_color = "103",
+    name = "Sha384",
+  },
+  ["sha512"] = {
+    icon = "󰕥",
+    color = "#8c86af",
+    cterm_color = "103",
+    name = "Sha512",
   },
   ["sig"] = {
     icon = "λ",
@@ -2582,6 +2738,12 @@ local icons_by_file_extension = {
     cterm_color = "93",
     name = "TFVars",
   },
+  ["tgz"] = {
+    icon = "",
+    color = "#eca517",
+    cterm_color = "214",
+    name = "Tgz",
+  },
   ["toml"] = {
     icon = "",
     color = "#9c4221",
@@ -2606,6 +2768,12 @@ local icons_by_file_extension = {
     cterm_color = "66",
     name = "GodotTextScene",
   },
+  ["tsconfig"] = {
+    icon = "",
+    color = "#FF8700",
+    cterm_color = "208",
+    name = "TypoScriptConfig",
+  },
   ["tsx"] = {
     icon = "",
     color = "#1354bf",
@@ -2623,6 +2791,18 @@ local icons_by_file_extension = {
     color = "#8dc149",
     cterm_color = "113",
     name = "Twig",
+  },
+  ["txz"] = {
+    icon = "",
+    color = "#eca517",
+    cterm_color = "214",
+    name = "Txz",
+  },
+  ["typoscript"] = {
+    icon = "",
+    color = "#FF8700",
+    cterm_color = "208",
+    name = "TypoScript",
   },
   ["txt"] = {
     icon = "󰈙",
@@ -2816,6 +2996,12 @@ local icons_by_file_extension = {
     cterm_color = "166",
     name = "Xul",
   },
+  ["xz"] = {
+    icon = "",
+    color = "#eca517",
+    cterm_color = "214",
+    name = "Xz",
+  },
   ["yaml"] = {
     icon = "",
     color = "#6d8086",
@@ -2834,11 +3020,23 @@ local icons_by_file_extension = {
     cterm_color = "172",
     name = "Zig",
   },
+  ["zip"] = {
+    icon = "",
+    color = "#eca517",
+    cterm_color = "214",
+    name = "Zip",
+  },
   ["zsh"] = {
     icon = "",
     color = "#89e051",
     cterm_color = "113",
     name = "Zsh",
+  },
+  ["zst"] = {
+    icon = "",
+    color = "#eca517",
+    cterm_color = "214",
+    name = "Zst",
   },
 }
 
