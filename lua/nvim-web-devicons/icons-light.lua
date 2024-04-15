@@ -1,10 +1,4 @@
 local icons_by_filename = {
-  ["wma"] = {
-    icon = "",
-    color = "#0075aa",
-    cterm_color = "24",
-    name = "WindowsMediaAudio",
-  },
   ["build.gradle"] = {
     icon = "",
     color = "#005f87",
