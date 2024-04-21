@@ -1245,13 +1245,13 @@ local icons_by_file_extension = {
     name = "Elf",
   },
   ["el"] = {
-    icon = "",
+    icon = "",
     color = "#61568e",
     cterm_color = "60",
     name = "Elisp",
   },
   ["elc"] = {
-    icon = "",
+    icon = "",
     color = "#61568e",
     cterm_color = "60",
     name = "Elisp",
@@ -1263,7 +1263,7 @@ local icons_by_file_extension = {
     name = "Elm",
   },
   ["eln"] = {
-    icon = "",
+    icon = "",
     color = "#61568e",
     cterm_color = "60",
     name = "Elisp",
