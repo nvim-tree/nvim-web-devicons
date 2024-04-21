@@ -723,10 +723,10 @@ local icons_by_file_extension = {
     name = "7z",
   },
   ["a"] = {
-    icon = "",
+    icon = "",
     color = "#494a47",
     cterm_color = "239",
-    name = "LinuxStaticLibraryArchive",
+    name = "StaticLibraryArchive",
   },
   ["aac"] = {
     icon = "",
@@ -2667,10 +2667,10 @@ local icons_by_file_extension = {
     name = "Sml",
   },
   ["so"] = {
-    icon = "",
+    icon = "",
     color = "#494a47",
     cterm_color = "239",
-    name = "LinuxSharedObject",
+    name = "SharedObject",
   },
   ["sol"] = {
     icon = "",
