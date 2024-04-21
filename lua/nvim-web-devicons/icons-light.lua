@@ -1029,7 +1029,7 @@ local icons_by_file_extension = {
     name = "Crystal",
   },
   ["crdownload"] = {
-    icon = "󰇚",
+    icon = "",
     color = "#226654",
     cterm_color = "23",
     name = "Crdownload",
@@ -1179,7 +1179,7 @@ local icons_by_file_extension = {
     name = "Dot",
   },
   ["download"] = {
-    icon = "󰇚",
+    icon = "",
     color = "#226654",
     cterm_color = "23",
     name = "Download",
@@ -1401,7 +1401,7 @@ local icons_by_file_extension = {
     name = "FreeCAD",
   },
   ["fdmdownload"] = {
-    icon = "󰇚",
+    icon = "",
     color = "#226654",
     cterm_color = "23",
     name = "Fdmdownload",
@@ -2253,7 +2253,7 @@ local icons_by_file_extension = {
     name = "Out",
   },
   ["part"] = {
-    icon = "󰇚",
+    icon = "",
     color = "#226654",
     cterm_color = "23",
     name = "Part",
@@ -2901,7 +2901,7 @@ local icons_by_file_extension = {
     name = "Toml",
   },
   ["torrent"] = {
-    icon = "󰇚",
+    icon = "",
     color = "#226654",
     cterm_color = "23",
     name = "Torrent",
