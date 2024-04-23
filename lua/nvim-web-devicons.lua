@@ -465,7 +465,7 @@ local function get_icon_by_extension(name, ext, opts)
   return iterate_multi_dotted_extension(name, icon_table)
 end
 
-function M.get_icon(name, ext, opts)
+local function get_icon_data(name, ext, opts)
   if type(name) == "string" then
     name = name:lower()
   end
@@ -482,6 +482,12 @@ function M.get_icon(name, ext, opts)
   else
     icon_data = icons[name] or get_icon_by_extension(name, ext, opts) or (has_default and default_icon)
   end
+
+  return icon_data
+end
+
+function M.get_icon(name, ext, opts)
+  local icon_data = get_icon_data(name, ext, opts)
 
   if icon_data then
     return icon_data.icon, get_highlight_name(icon_data)
@@ -500,18 +506,7 @@ function M.get_icon_by_filetype(ft, opts)
 end
 
 function M.get_icon_colors(name, ext, opts)
-  if not loaded then
-    M.setup()
-  end
-
-  local has_default = if_nil(opts and opts.default, global_opts.default)
-  local is_strict = if_nil(opts and opts.strict, global_opts.strict)
-  local icon_data
-  if is_strict then
-    icon_data = icons_by_filename[name] or get_icon_by_extension(name, ext, opts) or (has_default and default_icon)
-  else
-    icon_data = icons[name] or get_icon_by_extension(name, ext, opts) or (has_default and default_icon)
-  end
+  local icon_data = get_icon_data(name, ext, opts)
 
   if icon_data then
     local color = icon_data.color

@@ -67,20 +67,20 @@ local icons_by_filename = {
   },
   [".gitattributes"] = {
     icon = "",
-    color = "#41535b",
-    cterm_color = "239",
+    color = "#b83a1d",
+    cterm_color = "160",
     name = "GitAttributes",
   },
   [".gitconfig"] = {
     icon = "",
-    color = "#41535b",
-    cterm_color = "239",
+    color = "#b83a1d",
+    cterm_color = "160",
     name = "GitConfig",
   },
   [".gitignore"] = {
     icon = "",
-    color = "#41535b",
-    cterm_color = "239",
+    color = "#b83a1d",
+    cterm_color = "160",
     name = "GitIgnore",
   },
   [".gitlab-ci.yml"] = {
@@ -91,8 +91,8 @@ local icons_by_filename = {
   },
   [".gitmodules"] = {
     icon = "",
-    color = "#41535b",
-    cterm_color = "239",
+    color = "#b83a1d",
+    cterm_color = "160",
     name = "GitModules",
   },
   [".gtkrc-2.0"] = {
@@ -253,8 +253,8 @@ local icons_by_filename = {
   },
   ["commit_editmsg"] = {
     icon = "",
-    color = "#41535b",
-    cterm_color = "239",
+    color = "#b83a1d",
+    cterm_color = "160",
     name = "GitCommit",
   },
   ["compose.yaml"] = {
@@ -611,6 +611,18 @@ local icons_by_filename = {
     cterm_color = "31",
     name = "TailwindConfig",
   },
+  ["tmux.conf"] = {
+    icon = "",
+    color = "#0f8c13",
+    cterm_color = "28",
+    name = "Tmux",
+  },
+  ["tmux.conf.local"] = {
+    icon = "",
+    color = "#0f8c13",
+    cterm_color = "28",
+    name = "Tmux",
+  },
   ["tsconfig.json"] = {
     icon = "",
     color = "#36677c",
@@ -710,6 +722,12 @@ local icons_by_file_extension = {
     cterm_color = "94",
     name = "7z",
   },
+  ["a"] = {
+    icon = "",
+    color = "#494a47",
+    cterm_color = "239",
+    name = "StaticLibraryArchive",
+  },
   ["aac"] = {
     icon = "",
     color = "#0075aa",
@@ -739,6 +757,18 @@ local icons_by_file_extension = {
     color = "#666620",
     cterm_color = "58",
     name = "Ai",
+  },
+  ["android"] = {
+    icon = "",
+    color = "#277e3e",
+    cterm_color = "29",
+    name = "Android",
+  },
+  ["apk"] = {
+    icon = "",
+    color = "#277e3e",
+    cterm_color = "29",
+    name = "apk",
   },
   ["app"] = {
     icon = "",
@@ -915,9 +945,9 @@ local icons_by_file_extension = {
     name = "CPlusPlusModule",
   },
   ["cfg"] = {
-    icon = "",
-    color = "#2f2f2f",
-    cterm_color = "236",
+    icon = "",
+    color = "#526064",
+    cterm_color = "59",
     name = "Configuration",
   },
   ["cjs"] = {
@@ -1015,6 +1045,12 @@ local icons_by_file_extension = {
     color = "#434343",
     cterm_color = "238",
     name = "Crystal",
+  },
+  ["crdownload"] = {
+    icon = "",
+    color = "#226654",
+    cterm_color = "23",
+    name = "Crdownload",
   },
   ["cs"] = {
     icon = "󰌛",
@@ -1130,6 +1166,12 @@ local icons_by_file_extension = {
     cterm_color = "239",
     name = "Diff",
   },
+  ["dll"] = {
+    icon = "",
+    color = "#4d2c0b",
+    cterm_color = "52",
+    name = "Dll",
+  },
   ["doc"] = {
     icon = "󰈬",
     color = "#185abd",
@@ -1153,6 +1195,12 @@ local icons_by_file_extension = {
     color = "#244a6a",
     cterm_color = "24",
     name = "Dot",
+  },
+  ["download"] = {
+    icon = "",
+    color = "#226654",
+    cterm_color = "23",
+    name = "Download",
   },
   ["drl"] = {
     icon = "",
@@ -1214,11 +1262,35 @@ local icons_by_file_extension = {
     cterm_color = "124",
     name = "Elf",
   },
+  ["el"] = {
+    icon = "",
+    color = "#61568e",
+    cterm_color = "60",
+    name = "Elisp",
+  },
+  ["elc"] = {
+    icon = "",
+    color = "#61568e",
+    cterm_color = "60",
+    name = "Elisp",
+  },
   ["elm"] = {
     icon = "",
     color = "#36677c",
     cterm_color = "24",
     name = "Elm",
+  },
+  ["eln"] = {
+    icon = "",
+    color = "#61568e",
+    cterm_color = "60",
+    name = "Elisp",
+  },
+  ["env"] = {
+    icon = "",
+    color = "#32310d",
+    cterm_color = "236",
+    name = "Env",
   },
   ["eot"] = {
     icon = "",
@@ -1345,6 +1417,12 @@ local icons_by_file_extension = {
     color = "#cb0d0d",
     cterm_color = "160",
     name = "FreeCAD",
+  },
+  ["fdmdownload"] = {
+    icon = "",
+    color = "#226654",
+    cterm_color = "23",
+    name = "Fdmdownload",
   },
   ["flac"] = {
     icon = "",
@@ -1586,6 +1664,30 @@ local icons_by_file_extension = {
     cterm_color = "58",
     name = "Ico",
   },
+  ["ical"] = {
+    icon = "",
+    color = "#2B2e83",
+    cterm_color = "18",
+    name = "Ical",
+  },
+  ["icalendar"] = {
+    icon = "",
+    color = "#2B2e83",
+    cterm_color = "18",
+    name = "Icalendar",
+  },
+  ["ics"] = {
+    icon = "",
+    color = "#2B2e83",
+    cterm_color = "18",
+    name = "Ics",
+  },
+  ["ifb"] = {
+    icon = "",
+    color = "#2B2e83",
+    cterm_color = "18",
+    name = "Ifb",
+  },
   ["ifc"] = {
     icon = "󰻫",
     color = "#576342",
@@ -1802,6 +1904,12 @@ local icons_by_file_extension = {
     cterm_color = "236",
     name = "KiCad",
   },
+  ["ko"] = {
+    icon = "",
+    color = "#494a47",
+    cterm_color = "239",
+    name = "LinuxKernelObject",
+  },
   ["kpp"] = {
     icon = "",
     color = "#a12ea7",
@@ -1867,6 +1975,12 @@ local icons_by_file_extension = {
     color = "#6b4d83",
     cterm_color = "96",
     name = "Lhs",
+  },
+  ["lib"] = {
+    icon = "",
+    color = "#4d2c0b",
+    cterm_color = "52",
+    name = "Lib",
   },
   ["license"] = {
     icon = "",
@@ -2114,6 +2228,12 @@ local icons_by_file_extension = {
     cterm_color = "29",
     name = "Nushell",
   },
+  ["o"] = {
+    icon = "",
+    color = "#9F0500",
+    cterm_color = "124",
+    name = "ObjectFile",
+  },
   ["obj"] = {
     icon = "󰆧",
     color = "#5b5b5b",
@@ -2149,6 +2269,18 @@ local icons_by_file_extension = {
     color = "#9F0500",
     cterm_color = "124",
     name = "Out",
+  },
+  ["part"] = {
+    icon = "",
+    color = "#226654",
+    cterm_color = "23",
+    name = "Part",
+  },
+  ["patch"] = {
+    icon = "",
+    color = "#41535b",
+    cterm_color = "239",
+    name = "Patch",
   },
   ["pck"] = {
     icon = "",
@@ -2504,6 +2636,12 @@ local icons_by_file_extension = {
     cterm_color = "130",
     name = "Sig",
   },
+  ["signature"] = {
+    icon = "λ",
+    color = "#975122",
+    cterm_color = "130",
+    name = "Signature",
+  },
   ["skp"] = {
     icon = "󰻫",
     color = "#576342",
@@ -2545,6 +2683,12 @@ local icons_by_file_extension = {
     color = "#975122",
     cterm_color = "130",
     name = "Sml",
+  },
+  ["so"] = {
+    icon = "",
+    color = "#494a47",
+    cterm_color = "239",
+    name = "SharedObject",
   },
   ["sol"] = {
     icon = "",
@@ -2773,6 +2917,12 @@ local icons_by_file_extension = {
     color = "#753219",
     cterm_color = "88",
     name = "Toml",
+  },
+  ["torrent"] = {
+    icon = "",
+    color = "#226654",
+    cterm_color = "23",
+    name = "Torrent",
   },
   ["tres"] = {
     icon = "",
