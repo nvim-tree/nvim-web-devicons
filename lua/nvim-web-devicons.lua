@@ -15,6 +15,14 @@ function M.get_icons()
   return icons
 end
 
+function M.get_icons_by_filename()
+  return icons_by_filename
+end
+
+function M.get_icons_by_extension()
+  return icons_by_file_extension
+end
+
 local global_opts = {
   override = {},
   strict = false,
