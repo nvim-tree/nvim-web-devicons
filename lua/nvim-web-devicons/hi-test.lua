@@ -120,7 +120,7 @@ return function(
 
   -- render and highlight each section
   local l = 0
-  l = render_icons(bufnr, l, { default_icon }, "Default")
+  l = render_icons(bufnr, l, { [""] = default_icon }, "Default")
   if global_override and next(global_override) then
     l = render_icons(bufnr, l, global_override, "Overrides")
   end
