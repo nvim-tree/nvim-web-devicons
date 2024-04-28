@@ -36,12 +36,12 @@ end
 ---Write the line with highlighting
 ---@param bufnr number buffer number
 ---@param max_tag_len number longest tag length
----@param max_name_len number longest name length
+---@param max_group_len number longest group length
 ---@param l number line number
 ---@return number l incremented
-function IconDisplay:render(bufnr, max_tag_len, max_name_len, l)
-  local fmt = string.format("%%s  %%-%d.%ds  %%-%d.%ds  %%s", max_name_len, max_name_len, max_tag_len, max_tag_len)
-  local text = string.format(fmt, self.icon, self.name, self.tag, self.def)
+function IconDisplay:render(bufnr, max_tag_len, max_group_len, l)
+  local fmt = string.format("%%s  %%-%d.%ds  %%-%d.%ds  %%s", max_tag_len, max_tag_len, max_group_len, max_group_len)
+  local text = string.format(fmt, self.icon, self.tag, self.group, self.def)
 
   vim.api.nvim_buf_set_lines(bufnr, l, -1, true, { text })
   vim.api.nvim_buf_add_highlight(bufnr, -1, self.group, l, 0, -1)
@@ -66,7 +66,7 @@ end
 ---@return number l incremented
 local function render_icons(bufnr, l, icons, header)
   local max_tag_len = 0
-  local max_name_len = 0
+  local max_group_len = 0
 
   local displays = {}
   ---@cast displays IconDisplay[]
@@ -77,7 +77,7 @@ local function render_icons(bufnr, l, icons, header)
     if display then
       table.insert(displays, display)
       max_tag_len = math.max(max_tag_len, #display.tag)
-      max_name_len = math.max(max_name_len, #display.name)
+      max_group_len = math.max(max_group_len, #display.group)
     end
   end
 
@@ -89,7 +89,7 @@ local function render_icons(bufnr, l, icons, header)
   l = render_line(bufnr, l, header)
   l = render_line(bufnr, l, header:gsub(".", "-"))
   for _, display in ipairs(displays) do
-    l = display:render(bufnr, max_tag_len, max_name_len, l)
+    l = display:render(bufnr, max_tag_len, max_group_len, l)
   end
   l = render_line(bufnr, l, "")
 
