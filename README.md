@@ -206,6 +206,24 @@ These functions are the same as their counterparts without the `_by_filetype` su
 
 You can also use `get_icon_name_by_filetype(filetype)` to get the icon name associated with the filetype.
 
+## Known Issues
+
+### Windows and WSL not rendering icons properly on some terminals
+
+On Windows and WSL, it is possible that the icons are not rendered properly when
+using a terminal that relies on Windows' default system libraries. An example
+of this is Alacritty ([#271](https://github.com/nvim-tree/nvim-web-devicons/issues/271#issuecomment-2081280928)).
+Other terminals (e.g. Windows Terminal, and WezTerm) do no have this issue, as
+they ship newer versions of these libraries. More precisely, they use newer
+versions of `conpty.dll` and `OpenConsole.exe`. So, as a workaround to the
+rendering issue, you need to make your terminal use these newer files. Whether
+this is possible depends on the terminal you are using. Please refer to the
+terminal's documentation for this.
+
+In the specific case of Alacritty, you need to place up-to-date `conpty.dll` and
+`OpenConsole.exe` files in your `PATH`. Microsoft does not provide these files
+directly, but you can get them from other terminal emulators that ship them.
+
 ## Contributing
 
 PRs are always welcome! Please see [CONTRIBUTING](CONTRIBUTING.md)
