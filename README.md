@@ -154,6 +154,15 @@ require'nvim-web-devicons'.get_icons()
 
 This can be useful for debugging purposes or for creating custom highlights for each icon.
 
+Mapped categories can be fetched via:
+
+```lua
+require'nvim-web-devicons'.get_icons_by_filename()
+require'nvim-web-devicons'.get_icons_by_extension()
+require'nvim-web-devicons'.get_icons_by_operating_system()
+require'nvim-web-devicons'.get_icons_by_desktop_environment()
+require'nvim-web-devicons'.get_icons_by_window_manager()
+```
 
 ### Set an icon
 
