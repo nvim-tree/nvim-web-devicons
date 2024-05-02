@@ -377,7 +377,25 @@ local icons_by_filename = {
     cterm_color = "239",
     name = "Groovy",
   },
-  ["gruntfile"] = {
+  ["gruntfile.babel.js"] = {
+    icon = "",
+    color = "#975122",
+    cterm_color = "130",
+    name = "Gruntfile",
+  },
+  ["gruntfile.coffee"] = {
+    icon = "",
+    color = "#975122",
+    cterm_color = "130",
+    name = "Gruntfile",
+  },
+  ["gruntfile.js"] = {
+    icon = "",
+    color = "#975122",
+    cterm_color = "130",
+    name = "Gruntfile",
+  },
+  ["gruntfile.ts"] = {
     icon = "",
     color = "#975122",
     cterm_color = "130",
@@ -389,7 +407,25 @@ local icons_by_filename = {
     cterm_color = "236",
     name = "GTK",
   },
-  ["gulpfile"] = {
+  ["gulpfile.babel.js"] = {
+    icon = "",
+    color = "#992e33",
+    cterm_color = "88",
+    name = "Gulpfile",
+  },
+  ["gulpfile.coffee"] = {
+    icon = "",
+    color = "#992e33",
+    cterm_color = "88",
+    name = "Gulpfile",
+  },
+  ["gulpfile.js"] = {
+    icon = "",
+    color = "#992e33",
+    cterm_color = "88",
+    name = "Gulpfile",
+  },
+  ["gulpfile.ts"] = {
     icon = "",
     color = "#992e33",
     cterm_color = "88",

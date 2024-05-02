@@ -380,13 +380,13 @@ local icons_by_filename = {
   ["gruntfile.babel.js"] = {
     icon = "",
     color = "#e37933",
-    cterm_color = "167",
+    cterm_color = "166",
     name = "Gruntfile",
   },
   ["gruntfile.coffee"] = {
     icon = "",
     color = "#e37933",
-    cterm_color = "167",
+    cterm_color = "166",
     name = "Gruntfile",
   },
   ["gruntfile.js"] = {
@@ -398,7 +398,7 @@ local icons_by_filename = {
   ["gruntfile.ts"] = {
     icon = "",
     color = "#e37933",
-    cterm_color = "167",
+    cterm_color = "166",
     name = "Gruntfile",
   },
   ["gtkrc"] = {
