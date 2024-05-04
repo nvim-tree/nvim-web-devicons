@@ -1172,6 +1172,12 @@ local icons_by_file_extension = {
     cterm_color = "22",
     name = "D",
   },
+  ["d.ts"] = {
+    icon = "",
+    color = "#6a4c2a",
+    cterm_color = "94",
+    name = "TypeScriptDeclaration",
+  },
   ["dart"] = {
     icon = "",
     color = "#03589C",
@@ -2970,7 +2976,7 @@ local icons_by_file_extension = {
     icon = "",
     color = "#36677c",
     cterm_color = "24",
-    name = "Ts",
+    name = "TypeScript",
   },
   ["tscn"] = {
     icon = "",
