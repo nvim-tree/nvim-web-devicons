@@ -2330,6 +2330,12 @@ local icons_by_file_extension = {
     cterm_color = "59",
     name = "PackedResource",
   },
+  ["pcm"] = {
+    icon = "",
+    color = "#005880",
+    cterm_color = "24",
+    name = "PulseCodeModulation",
+  },
   ["pdf"] = {
     icon = "",
     color = "#b30b00",
@@ -2953,6 +2959,12 @@ local icons_by_file_extension = {
     color = "#76520c",
     cterm_color = "94",
     name = "Tgz",
+  },
+  ["tmux"] = {
+    icon = "",
+    color = "#0f8c13",
+    cterm_color = "28",
+    name = "Tmux",
   },
   ["toml"] = {
     icon = "",
