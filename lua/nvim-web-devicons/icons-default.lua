@@ -377,7 +377,25 @@ local icons_by_filename = {
     cterm_color = "24",
     name = "Groovy",
   },
-  ["gruntfile"] = {
+  ["gruntfile.babel.js"] = {
+    icon = "",
+    color = "#e37933",
+    cterm_color = "166",
+    name = "Gruntfile",
+  },
+  ["gruntfile.coffee"] = {
+    icon = "",
+    color = "#e37933",
+    cterm_color = "166",
+    name = "Gruntfile",
+  },
+  ["gruntfile.js"] = {
+    icon = "",
+    color = "#e37933",
+    cterm_color = "166",
+    name = "Gruntfile",
+  },
+  ["gruntfile.ts"] = {
     icon = "",
     color = "#e37933",
     cterm_color = "166",
@@ -389,7 +407,25 @@ local icons_by_filename = {
     cterm_color = "231",
     name = "GTK",
   },
-  ["gulpfile"] = {
+  ["gulpfile.babel.js"] = {
+    icon = "",
+    color = "#cc3e44",
+    cterm_color = "167",
+    name = "Gulpfile",
+  },
+  ["gulpfile.coffee"] = {
+    icon = "",
+    color = "#cc3e44",
+    cterm_color = "167",
+    name = "Gulpfile",
+  },
+  ["gulpfile.js"] = {
+    icon = "",
+    color = "#cc3e44",
+    cterm_color = "167",
+    name = "Gulpfile",
+  },
+  ["gulpfile.ts"] = {
     icon = "",
     color = "#cc3e44",
     cterm_color = "167",
@@ -1135,6 +1171,12 @@ local icons_by_file_extension = {
     color = "#427819",
     cterm_color = "28",
     name = "D",
+  },
+  ["d.ts"] = {
+    icon = "",
+    color = "#d59855",
+    cterm_color = "172",
+    name = "TypeScriptDeclaration",
   },
   ["dart"] = {
     icon = "",
@@ -2946,7 +2988,7 @@ local icons_by_file_extension = {
     icon = "",
     color = "#519aba",
     cterm_color = "74",
-    name = "Ts",
+    name = "TypeScript",
   },
   ["tscn"] = {
     icon = "",
