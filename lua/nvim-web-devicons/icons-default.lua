@@ -878,6 +878,18 @@ local icons_by_file_extension = {
     cterm_color = "185",
     name = "BibTeX",
   },
+  ["bicep"] = {
+    icon = "",
+    color = "#519aba",
+    cterm_color = "74",
+    name = "Bicep",
+  },
+  ["bicepparam"] = {
+    icon = "",
+    color = "#9f74b3",
+    cterm_color = "133",
+    name = "BicepParameters",
+  },
   ["bin"] = {
     icon = "",
     color = "#9F0500",
