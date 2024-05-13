@@ -106,20 +106,6 @@ require'nvim-web-devicons'.setup {
 }
 ```
 
-#### Note To Plugin Authors
-
-Please check that nvim-web-devicons has not already been setup first, to prevent clobbering user's overrides e.g.
-
-```lua
-local has_devicons, devicons = pcall(require, "nvim-web-devicons")
-
-if has_devicons then
-  if not devicons.has_loaded() then
-    devicons.setup()
-  end
-  ---
-```
-
 ### Get Icon
 
 Get the icon for a given file by passing in the `name`, the `extension` and an _optional_ options `table`.
@@ -224,9 +210,7 @@ You can also use `get_icon_name_by_filetype(filetype)` to get the icon name asso
 
 ### My `setup` Overrides Are Not Applied
 
-*Cause:* A plugin may be calling nvim-web-devicons `setup` after you do, clobbering your overrides.
-
-*Solution:* change plugin to check `has_loaded` before calling `setup`.
+*Cause:* A plugin may be calling nvim-web-devicons `setup` before you do. Your `setup` call will be ignored.
 
 *Workaround:* Call nvim-web-devicons `setup` before the plugin's own `setup`.
 
