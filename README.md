@@ -208,6 +208,14 @@ You can also use `get_icon_name_by_filetype(filetype)` to get the icon name asso
 
 ## Known Issues
 
+### My `setup` Overrides Are Not Applied
+
+*Cause:* A plugin may be calling nvim-web-devicons `setup` after you do, clobbering your overrides.
+
+*Solution:* change plugin to check `has_loaded` before calling `setup`.
+
+*Workaround:* Call nvim-web-devicons `setup` before the plugin's own `setup`.
+
 ### Windows and WSL not rendering icons properly on some terminals
 
 On Windows and WSL, it is possible that the icons are not rendered properly when
