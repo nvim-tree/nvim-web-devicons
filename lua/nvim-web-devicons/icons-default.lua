@@ -65,6 +65,12 @@ local icons_by_filename = {
     cterm_color = "56",
     name = "EslintIgnore",
   },
+  [".git-blame-ignore-revs"] = {
+    icon = "",
+    color = "#f54d27",
+    cterm_color = "196",
+    name = "GitBlameIgnore",
+  },
   [".gitattributes"] = {
     icon = "",
     color = "#f54d27",
@@ -121,8 +127,8 @@ local icons_by_filename = {
   },
   [".mailmap"] = {
     icon = "󰊢",
-    color = "#41535b",
-    cterm_color = "239",
+    color = "#f54d27",
+    cterm_color = "196",
     name = "Mailmap",
   },
   [".npmignore"] = {
@@ -443,11 +449,23 @@ local icons_by_filename = {
     cterm_color = "167",
     name = "Gulpfile",
   },
+  ["hypridle.conf"] = {
+    icon = "",
+    color = "#00aaae",
+    cterm_color = "37",
+    name = "Hypridle",
+  },
   ["hyprland.conf"] = {
     icon = "",
     color = "#00aaae",
     cterm_color = "37",
     name = "Hyprland",
+  },
+  ["hyprlock.conf"] = {
+    icon = "",
+    color = "#00aaae",
+    cterm_color = "37",
+    name = "Hyprlock",
   },
   ["i3blocks.conf"] = {
     icon = "",
@@ -628,6 +646,12 @@ local icons_by_filename = {
     color = "#519aba",
     cterm_color = "74",
     name = "Rmd",
+  },
+  ["robots.txt"] = {
+    icon = "󰚩",
+    color = "#5d7096",
+    cterm_color = "60",
+    name = "RobotsTxt",
   },
   ["svelte.config.js"] = {
     icon = "",
@@ -2533,6 +2557,12 @@ local icons_by_file_extension = {
     color = "#ffe291",
     cterm_color = "222",
     name = "Pyo",
+  },
+  ["pyw"] = {
+    icon = "",
+    color = "#5aa7e4",
+    cterm_color = "39",
+    name = "Pyw",
   },
   ["pyx"] = {
     icon = "",
