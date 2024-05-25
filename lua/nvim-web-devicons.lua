@@ -556,6 +556,7 @@ end
 
 function M.set_icon(user_icons)
   icons = vim.tbl_extend("force", icons, user_icons or {})
+  global_opts.override = vim.tbl_extend("force", global_opts.override, user_icons or {})
   if not global_opts.color_icons then
     return
   end
