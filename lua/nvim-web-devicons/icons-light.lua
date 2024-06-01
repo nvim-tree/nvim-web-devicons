@@ -107,6 +107,12 @@ local icons_by_filename = {
     cterm_color = "22",
     name = "Gvimrc",
   },
+  [".justfile"] = {
+    icon = "",
+    color = "#526064",
+    cterm_color = "59",
+    name = "Justfile",
+  },
   [".luaurc"] = {
     icon = "",
     color = "#007abf",
@@ -454,6 +460,12 @@ local icons_by_filename = {
     color = "#1573b6",
     cterm_color = "32",
     name = "Cantorrc",
+  },
+  ["justfile"] = {
+    icon = "",
+    color = "#526064",
+    cterm_color = "59",
+    name = "Justfile",
   },
   ["kalgebrarc"] = {
     icon = "",
