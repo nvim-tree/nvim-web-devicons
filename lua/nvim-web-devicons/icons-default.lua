@@ -131,6 +131,12 @@ local icons_by_filename = {
     cterm_color = "197",
     name = "NPMrc",
   },
+  [".nvmrc"] = {
+    icon = "",
+    color = "#5FA04E",
+    cterm_color = "71",
+    name = "node",
+  },
   [".prettierrc"] = {
     icon = "",
     color = "#4285F4",
