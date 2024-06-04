@@ -3473,12 +3473,6 @@ local icons_by_operating_system = {
     cterm_color = "238",
     name = "LXLE",
   },
-  ["mint"] = {
-    icon = "󰣭",
-    color = "#447529",
-    cterm_color = "28",
-    name = "Mint",
-  },
   ["mageia"] = {
     icon = "",
     color = "#1a719f",
@@ -3490,6 +3484,18 @@ local icons_by_operating_system = {
     color = "#227b3b",
     cterm_color = "29",
     name = "Manjaro",
+  },
+  ["mint"] = {
+    icon = "󰣭",
+    color = "#447529",
+    cterm_color = "28",
+    name = "Mint",
+  },
+  ["mojo"] = {
+    icon = "󰈸",
+    color = "#bf3917",
+    cterm_color = "160",
+    name = "Mojo",
   },
   ["mxlinux"] = {
     icon = "",
