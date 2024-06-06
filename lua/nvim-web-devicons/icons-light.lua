@@ -3497,6 +3497,12 @@ local icons_by_operating_system = {
     cterm_color = "160",
     name = "Mojo",
   },
+  ["🔥"] = {
+    icon = "",
+    color = "#bf3917",
+    cterm_color = "160",
+    name = "Mojo",
+  },
   ["mxlinux"] = {
     icon = "",
     color = "#333333",
