@@ -3492,7 +3492,7 @@ local icons_by_operating_system = {
     name = "Mint",
   },
   ["mojo"] = {
-    icon = "󰈸",
+    icon = "",
     color = "#bf3917",
     cterm_color = "160",
     name = "Mojo",
