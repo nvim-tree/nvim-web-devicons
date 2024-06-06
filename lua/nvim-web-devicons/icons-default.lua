@@ -132,7 +132,7 @@ local icons_by_filename = {
     name = "NPMrc",
   },
   [".nvmrc"] = {
-    icon = "",
+    icon = "",
     color = "#5FA04E",
     cterm_color = "71",
     name = "node",
