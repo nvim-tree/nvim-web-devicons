@@ -2210,6 +2210,18 @@ local icons_by_file_extension = {
     cterm_color = "94",
     name = "Mobi",
   },
+  ["mojo"] = {
+    icon = "",
+    color = "#bf3917",
+    cterm_color = "160",
+    name = "Mojo",
+  },
+  ["🔥"] = {
+    icon = "",
+    color = "#bf3917",
+    cterm_color = "160",
+    name = "Mojo",
+  },
   ["mov"] = {
     icon = "",
     color = "#7e4c10",
@@ -3490,18 +3502,6 @@ local icons_by_operating_system = {
     color = "#447529",
     cterm_color = "28",
     name = "Mint",
-  },
-  ["mojo"] = {
-    icon = "",
-    color = "#bf3917",
-    cterm_color = "160",
-    name = "Mojo",
-  },
-  ["🔥"] = {
-    icon = "",
-    color = "#bf3917",
-    cterm_color = "160",
-    name = "Mojo",
   },
   ["mxlinux"] = {
     icon = "",
