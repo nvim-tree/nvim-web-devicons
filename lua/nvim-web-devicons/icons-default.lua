@@ -1888,8 +1888,8 @@ local icons_by_file_extension = {
   },
   ["jsx"] = {
     icon = "",
-    color = "#f7df1e",
-    cterm_color = "220",
+    color = "#20c2e3",
+    cterm_color = "45",
     name = "Jsx",
   },
   ["jxl"] = {
@@ -3046,8 +3046,8 @@ local icons_by_file_extension = {
   },
   ["tsx"] = {
     icon = "",
-    color = "#20c2e3",
-    cterm_color = "45",
+    color = "#1354bf",
+    cterm_color = "26",
     name = "Tsx",
   },
   ["ttf"] = {
