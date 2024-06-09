@@ -12,7 +12,7 @@ local icons_by_filename = {
     name = "GradleSettings",
   },
   [".babelrc"] = {
-    icon = "",
+    icon = "",
     color = "#cbcb41",
     cterm_color = "185",
     name = "Babelrc",
