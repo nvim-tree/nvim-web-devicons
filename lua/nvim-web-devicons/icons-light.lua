@@ -1610,6 +1610,12 @@ local icons_by_file_extension = {
     cterm_color = "126",
     name = "GraphQL",
   },
+  ["gradle"] = {
+    icon = "",
+    color = "#005f87",
+    cterm_color = "24",
+    name = "Gradle",
+  },
   ["graphql"] = {
     icon = "",
     color = "#ac2880",
