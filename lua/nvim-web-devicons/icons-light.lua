@@ -137,6 +137,12 @@ local icons_by_filename = {
     cterm_color = "161",
     name = "NPMrc",
   },
+  [".nuxtrc"] = {
+    icon = "󱄆",
+    color = "#00835f",
+    cterm_color = "29",
+    name = "NuxtConfig",
+  },
   [".nvmrc"] = {
     icon = "",
     color = "#3f6b34",
@@ -148,6 +154,42 @@ local icons_by_filename = {
     color = "#3264b7",
     cterm_color = "25",
     name = "PrettierConfig",
+  },
+  [".prettierrc.json"] = {
+    icon = "",
+    color = "#3264b7",
+    cterm_color = "25",
+    name = "PrettierConfig",
+  },
+  [".prettierrc.json5"] = {
+    icon = "",
+    color = "#3264b7",
+    cterm_color = "25",
+    name = "PrettierConfig",
+  },
+  [".prettierrc.toml"] = {
+    icon = "",
+    color = "#3264b7",
+    cterm_color = "25",
+    name = "PrettierConfig",
+  },
+  [".prettierrc.yaml"] = {
+    icon = "",
+    color = "#3264b7",
+    cterm_color = "25",
+    name = "PrettierConfig",
+  },
+  [".prettierrc.yml"] = {
+    icon = "",
+    color = "#3264b7",
+    cterm_color = "25",
+    name = "PrettierConfig",
+  },
+  [".prettierignore"] = {
+    icon = "",
+    color = "#3264b7",
+    cterm_color = "25",
+    name = "PrettierIgnore",
   },
   [".settings.json"] = {
     icon = "",
@@ -269,6 +311,18 @@ local icons_by_filename = {
     cterm_color = "160",
     name = "GitCommit",
   },
+  ["commitlint.config.js"] = {
+    icon = "󰜘",
+    color = "#207067",
+    cterm_color = "23",
+    name = "CommitlintConfig",
+  },
+  ["commitlint.config.ts"] = {
+    icon = "󰜘",
+    color = "#207067",
+    cterm_color = "23",
+    name = "CommitlintConfig",
+  },
   ["compose.yaml"] = {
     icon = "󰡨",
     color = "#2e5f99",
@@ -322,6 +376,30 @@ local icons_by_filename = {
     color = "#2e5f99",
     cterm_color = "25",
     name = "Dockerfile",
+  },
+  ["eslint.config.cjs"] = {
+    icon = "",
+    color = "#4b32c3",
+    cterm_color = "56",
+    name = "Eslintrc",
+  },
+  ["eslint.config.js"] = {
+    icon = "",
+    color = "#4b32c3",
+    cterm_color = "56",
+    name = "Eslintrc",
+  },
+  ["eslint.config.mjs"] = {
+    icon = "",
+    color = "#4b32c3",
+    cterm_color = "56",
+    name = "Eslintrc",
+  },
+  ["eslint.config.ts"] = {
+    icon = "",
+    color = "#4b32c3",
+    cterm_color = "56",
+    name = "Eslintrc",
   },
   ["ext_typoscript_setup.txt"] = {
     icon = "",
@@ -449,6 +527,18 @@ local icons_by_filename = {
     cterm_color = "30",
     name = "Hyprland",
   },
+  ["i18n.config.js"] = {
+    icon = "󰗊",
+    color = "#515987",
+    cterm_color = "60",
+    name = "I18nConfig",
+  },
+  ["i18n.config.ts"] = {
+    icon = "󰗊",
+    color = "#515987",
+    cterm_color = "60",
+    name = "I18nConfig",
+  },
   ["i3blocks.conf"] = {
     icon = "",
     color = "#2e2f30",
@@ -460,6 +550,12 @@ local icons_by_filename = {
     color = "#2e2f30",
     cterm_color = "236",
     name = "i3",
+  },
+  ["ionic.config.json"] = {
+    icon = "",
+    color = "#355fa5",
+    cterm_color = "25",
+    name = "Ionic",
   },
   ["cantorrc"] = {
     icon = "",
@@ -551,6 +647,30 @@ local icons_by_filename = {
     cterm_color = "161",
     name = "NodeModules",
   },
+  ["nuxt.config.cjs"] = {
+    icon = "󱄆",
+    color = "#00835f",
+    cterm_color = "29",
+    name = "NuxtConfig",
+  },
+  ["nuxt.config.js"] = {
+    icon = "󱄆",
+    color = "#00835f",
+    cterm_color = "29",
+    name = "NuxtConfig",
+  },
+  ["nuxt.config.mjs"] = {
+    icon = "󱄆",
+    color = "#00835f",
+    cterm_color = "29",
+    name = "NuxtConfig",
+  },
+  ["nuxt.config.ts"] = {
+    icon = "󱄆",
+    color = "#00835f",
+    cterm_color = "29",
+    name = "NuxtConfig",
+  },
   ["package.json"] = {
     icon = "",
     color = "#ae1d38",
@@ -580,6 +700,30 @@ local icons_by_filename = {
     color = "#7a0d21",
     cterm_color = "52",
     name = "Maven",
+  },
+  ["prettier.config.js"] = {
+    icon = "",
+    color = "#3264b7",
+    cterm_color = "25",
+    name = "PrettierConfig",
+  },
+  ["prettier.config.cjs"] = {
+    icon = "",
+    color = "#3264b7",
+    cterm_color = "25",
+    name = "PrettierConfig",
+  },
+  ["prettier.config.mjs"] = {
+    icon = "",
+    color = "#3264b7",
+    cterm_color = "25",
+    name = "PrettierConfig",
+  },
+  ["prettier.config.ts"] = {
+    icon = "",
+    color = "#3264b7",
+    cterm_color = "25",
+    name = "PrettierConfig",
   },
   ["procfile"] = {
     icon = "",
