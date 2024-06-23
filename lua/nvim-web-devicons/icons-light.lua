@@ -3206,6 +3206,12 @@ local icons_by_file_extension = {
     cterm_color = "240",
     name = "VRML",
   },
+  ["wv"] = {
+    icon = "",
+    color = "#0075aa",
+    cterm_color = "24",
+    name = "WavPack",
+  },
   ["x"] = {
     icon = "",
     color = "#3b69aa",
