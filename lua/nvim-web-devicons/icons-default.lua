@@ -144,9 +144,9 @@ local icons_by_filename = {
     name = "node",
   },
   [".prettierrc"] = {
-    icon = "",
-    color = "#4285F4",
-    cterm_color = "33",
+    icon = "",
+    color = "#cbcb41",
+    cterm_color = "185",
     name = "PrettierConfig",
   },
   [".settings.json"] = {
