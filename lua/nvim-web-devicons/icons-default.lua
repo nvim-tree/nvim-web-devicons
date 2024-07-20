@@ -371,6 +371,24 @@ local icons_by_filename = {
     cterm_color = "66",
     name = "Makefile",
   },
+  ["go.mod"] = {
+    icon = "",
+    color = "#519aba",
+    cterm_color = "74",
+    name = "GoMod",
+  },
+  ["go.sum"] = {
+    icon = "",
+    color = "#519aba",
+    cterm_color = "74",
+    name = "GoSum",
+  },
+  ["go.work"] = {
+    icon = "",
+    color = "#519aba",
+    cterm_color = "74",
+    name = "GoWork",
+  },
   ["gradlew"] = {
     icon = "",
     color = "#005f87",
@@ -1633,6 +1651,12 @@ local icons_by_file_extension = {
     color = "#e535ab",
     cterm_color = "199",
     name = "GraphQL",
+  },
+  ["gradle"] = {
+    icon = "",
+    color = "#005f87",
+    cterm_color = "24",
+    name = "Gradle",
   },
   ["graphql"] = {
     icon = "",
@@ -3235,6 +3259,18 @@ local icons_by_file_extension = {
     color = "#888888",
     cterm_color = "102",
     name = "VRML",
+  },
+  ["wv"] = {
+    icon = "",
+    color = "#00afff",
+    cterm_color = "39",
+    name = "WavPack",
+  },
+  ["wvc"] = {
+    icon = "",
+    color = "#00afff",
+    cterm_color = "39",
+    name = "WavPackCorrection",
   },
   ["x"] = {
     icon = "",
