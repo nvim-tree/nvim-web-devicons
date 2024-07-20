@@ -65,6 +65,12 @@ local icons_by_filename = {
     cterm_color = "56",
     name = "EslintIgnore",
   },
+  [".git-blame-ignore-revs"] = {
+    icon = "",
+    color = "#f54d27",
+    cterm_color = "196",
+    name = "GitBlameIgnore",
+  },
   [".gitattributes"] = {
     icon = "",
     color = "#f54d27",
@@ -127,8 +133,8 @@ local icons_by_filename = {
   },
   [".mailmap"] = {
     icon = "󰊢",
-    color = "#41535b",
-    cterm_color = "239",
+    color = "#f54d27",
+    cterm_color = "196",
     name = "Mailmap",
   },
   [".npmignore"] = {
@@ -371,6 +377,24 @@ local icons_by_filename = {
     cterm_color = "66",
     name = "Makefile",
   },
+  ["go.mod"] = {
+    icon = "",
+    color = "#519aba",
+    cterm_color = "74",
+    name = "GoMod",
+  },
+  ["go.sum"] = {
+    icon = "",
+    color = "#519aba",
+    cterm_color = "74",
+    name = "GoSum",
+  },
+  ["go.work"] = {
+    icon = "",
+    color = "#519aba",
+    cterm_color = "74",
+    name = "GoWork",
+  },
   ["gradlew"] = {
     icon = "",
     color = "#005f87",
@@ -449,11 +473,23 @@ local icons_by_filename = {
     cterm_color = "167",
     name = "Gulpfile",
   },
+  ["hypridle.conf"] = {
+    icon = "",
+    color = "#00aaae",
+    cterm_color = "37",
+    name = "Hypridle",
+  },
   ["hyprland.conf"] = {
     icon = "",
     color = "#00aaae",
     cterm_color = "37",
     name = "Hyprland",
+  },
+  ["hyprlock.conf"] = {
+    icon = "",
+    color = "#00aaae",
+    cterm_color = "37",
+    name = "Hyprlock",
   },
   ["i3blocks.conf"] = {
     icon = "",
@@ -634,6 +670,12 @@ local icons_by_filename = {
     color = "#519aba",
     cterm_color = "74",
     name = "Rmd",
+  },
+  ["robots.txt"] = {
+    icon = "󰚩",
+    color = "#5d7096",
+    cterm_color = "60",
+    name = "RobotsTxt",
   },
   ["svelte.config.js"] = {
     icon = "",
@@ -1616,6 +1658,12 @@ local icons_by_file_extension = {
     cterm_color = "199",
     name = "GraphQL",
   },
+  ["gradle"] = {
+    icon = "",
+    color = "#005f87",
+    cterm_color = "24",
+    name = "Gradle",
+  },
   ["graphql"] = {
     icon = "",
     color = "#e535ab",
@@ -2540,6 +2588,12 @@ local icons_by_file_extension = {
     cterm_color = "222",
     name = "Pyo",
   },
+  ["pyw"] = {
+    icon = "",
+    color = "#5aa7e4",
+    cterm_color = "39",
+    name = "Pyw",
+  },
   ["pyx"] = {
     icon = "",
     color = "#5aa7e4",
@@ -3211,6 +3265,18 @@ local icons_by_file_extension = {
     color = "#888888",
     cterm_color = "102",
     name = "VRML",
+  },
+  ["wv"] = {
+    icon = "",
+    color = "#00afff",
+    cterm_color = "39",
+    name = "WavPack",
+  },
+  ["wvc"] = {
+    icon = "",
+    color = "#00afff",
+    cterm_color = "39",
+    name = "WavPackCorrection",
   },
   ["x"] = {
     icon = "",
