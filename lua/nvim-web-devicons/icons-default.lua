@@ -101,6 +101,12 @@ local icons_by_filename = {
     cterm_color = "196",
     name = "GitModules",
   },
+  [".gleam"] = {
+    icon = "",
+    color = "#ffaff3",
+    cterm_color = "219",
+    name = "Gleam",
+  },
   [".gtkrc-2.0"] = {
     icon = "",
     color = "#ffffff",
