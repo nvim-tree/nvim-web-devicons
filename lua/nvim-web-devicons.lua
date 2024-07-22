@@ -71,11 +71,13 @@ end
 
 -- Map of filetypes -> icon names
 local filetypes = {
+  ["apl"] = "apl",
   ["avif"] = "avif",
   ["bash"] = "bash",
   ["bib"] = "bib",
   ["bicep"] = "bicep",
   ["bicepparam"] = "bicepparam",
+  ["bqn"] = "bqn",
   ["bzl"] = "bzl",
   ["brewfile"] = "brewfile",
   ["blueprint"] = "blp",
