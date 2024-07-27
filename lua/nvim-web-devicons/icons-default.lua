@@ -998,6 +998,12 @@ local icons_by_file_extension = {
     cterm_color = "39",
     name = "MonkeysAudio",
   },
+  ["apl"] = {
+    icon = "⍝",
+    color = "#ffa500",
+    cterm_color = "214",
+    name = "APL",
+  },
   ["ai"] = {
     icon = "",
     color = "#cbcb41",
@@ -1123,6 +1129,12 @@ local icons_by_file_extension = {
     color = "#a074c4",
     cterm_color = "140",
     name = "Bmp",
+  },
+  ["bqn"] = {
+    icon = "⎉",
+    color = "#2b7067",
+    cterm_color = "23",
+    name = "BQN",
   },
   ["blp"] = {
     icon = "󰺾",
