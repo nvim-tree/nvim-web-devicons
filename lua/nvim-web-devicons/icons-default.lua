@@ -101,12 +101,6 @@ local icons_by_filename = {
     cterm_color = "196",
     name = "GitModules",
   },
-  [".gleam"] = {
-    icon = "",
-    color = "#ffaff3",
-    cterm_color = "219",
-    name = "Gleam",
-  },
   [".gtkrc-2.0"] = {
     icon = "",
     color = "#ffffff",
@@ -1789,6 +1783,12 @@ local icons_by_file_extension = {
     color = "#FFB13B",
     cterm_color = "214",
     name = "BinaryGLTF",
+  },
+  ["gleam"] = {
+    icon = "",
+    color = "#ffaff3",
+    cterm_color = "219",
+    name = "Gleam",
   },
   ["gnumakefile"] = {
     icon = "",
