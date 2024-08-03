@@ -890,7 +890,7 @@ local icons_by_filename = {
   ["vercel.json"] = {
     icon = "▲",
     color = "#ffffff",
-    cterm_color = "208",
+    cterm_color = "231",
     name = "Vercel",
   },
   ["webpack"] = {
