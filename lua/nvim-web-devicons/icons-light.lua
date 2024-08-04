@@ -887,6 +887,12 @@ local icons_by_filename = {
     cterm_color = "130",
     name = "VLC",
   },
+  ["vercel.json"] = {
+    icon = "▲",
+    color = "#333333",
+    cterm_color = "236",
+    name = "Vercel",
+  },
   ["webpack"] = {
     icon = "󰜫",
     color = "#36677c",
