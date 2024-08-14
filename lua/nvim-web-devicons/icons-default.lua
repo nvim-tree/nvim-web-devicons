@@ -1,16 +1,4 @@
 local icons_by_filename = {
-  ["build.gradle"] = {
-    icon = "",
-    color = "#005f87",
-    cterm_color = "24",
-    name = "GradleBuildScript",
-  },
-  ["settings.gradle"] = {
-    icon = "",
-    color = "#005f87",
-    cterm_color = "24",
-    name = "GradleSettings",
-  },
   [".babelrc"] = {
     icon = "",
     color = "#cbcb41",
@@ -299,6 +287,18 @@ local icons_by_filename = {
     cterm_color = "113",
     name = "BazelBuild",
   },
+  ["build.gradle"] = {
+    icon = "",
+    color = "#005f87",
+    cterm_color = "24",
+    name = "GradleBuildScript",
+  },
+  ["build.zig.zon"] = {
+    icon = "",
+    color = "#f69a1b",
+    cterm_color = "172",
+    name = "ZigObjectNotation",
+  },
   ["checkhealth"] = {
     icon = "󰓙",
     color = "#75B4FB",
@@ -310,6 +310,18 @@ local icons_by_filename = {
     color = "#6d8086",
     cterm_color = "66",
     name = "CMakeLists",
+  },
+  ["code_of_conduct"] = {
+    icon = "",
+    color = "#E41662",
+    cterm_color = "161",
+    name = "CodeOfConduct",
+  },
+  ["code_of_conduct.md"] = {
+    icon = "",
+    color = "#E41662",
+    cterm_color = "161",
+    name = "CodeOfConduct",
   },
   ["commit_editmsg"] = {
     icon = "",
@@ -647,6 +659,12 @@ local icons_by_filename = {
     cterm_color = "185",
     name = "License",
   },
+  ["license.md"] = {
+    icon = "",
+    color = "#d0bf41",
+    cterm_color = "185",
+    name = "License",
+  },
   ["lxde-rc.xml"] = {
     icon = "",
     color = "#909090",
@@ -815,6 +833,24 @@ local icons_by_filename = {
     cterm_color = "60",
     name = "RobotsTxt",
   },
+  ["security"] = {
+    icon = "󰒃",
+    color = "#BEC4C9",
+    cterm_color = "251",
+    name = "Security",
+  },
+  ["security.md"] = {
+    icon = "󰒃",
+    color = "#BEC4C9",
+    cterm_color = "251",
+    name = "Security",
+  },
+  ["settings.gradle"] = {
+    icon = "",
+    color = "#005f87",
+    cterm_color = "24",
+    name = "GradleSettings",
+  },
   ["svelte.config.js"] = {
     icon = "",
     color = "#ff3e00",
@@ -940,12 +976,6 @@ local icons_by_filename = {
     color = "#e54d18",
     cterm_color = "196",
     name = "XSettingsdConf",
-  },
-  ["build.zig.zon"] = {
-    icon = "",
-    color = "#f69a1b",
-    cterm_color = "172",
-    name = "ZigObjectNotation",
   },
 }
 
@@ -1285,6 +1315,12 @@ local icons_by_file_extension = {
     color = "#701516",
     cterm_color = "52",
     name = "ConfigRu",
+  },
+  ["cow"] = {
+    icon = "󰆚",
+    color = "#965824",
+    cterm_color = "130",
+    name = "CowsayFile",
   },
   ["cp"] = {
     icon = "",
