@@ -593,6 +593,12 @@ local icons_by_filename = {
     cterm_color = "37",
     name = "Hyprlock",
   },
+  ["hyprpaper.conf"] = {
+    icon = "",
+    color = "#00aaae",
+    cterm_color = "37",
+    name = "Hyprpaper",
+  },
   ["i18n.config.js"] = {
     icon = "󰗊",
     color = "#7986cb",
