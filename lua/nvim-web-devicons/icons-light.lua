@@ -149,6 +149,12 @@ local icons_by_filename = {
     cterm_color = "25",
     name = "PrettierConfig",
   },
+  [".prettierrc.cjs"] = {
+    icon = "",
+    color = "#3264b7",
+    cterm_color = "25",
+    name = "PrettierConfig",
+  },
   [".prettierrc.js"] = {
     icon = "",
     color = "#3264b7",
