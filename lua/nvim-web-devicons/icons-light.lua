@@ -149,6 +149,18 @@ local icons_by_filename = {
     cterm_color = "25",
     name = "PrettierConfig",
   },
+  [".prettierrc.cjs"] = {
+    icon = "",
+    color = "#3264b7",
+    cterm_color = "25",
+    name = "PrettierConfig",
+  },
+  [".prettierrc.js"] = {
+    icon = "",
+    color = "#3264b7",
+    cterm_color = "25",
+    name = "PrettierConfig",
+  },
   [".prettierrc.json"] = {
     icon = "",
     color = "#3264b7",
@@ -156,6 +168,12 @@ local icons_by_filename = {
     name = "PrettierConfig",
   },
   [".prettierrc.json5"] = {
+    icon = "",
+    color = "#3264b7",
+    cterm_color = "25",
+    name = "PrettierConfig",
+  },
+  [".prettierrc.mjs"] = {
     icon = "",
     color = "#3264b7",
     cterm_color = "25",
