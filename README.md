@@ -36,7 +36,8 @@ Run `:NvimWebDeviconsHiTest` to see all icons and their highlighting.
 
 ### Variants
 
-Light or dark color variants of the icons depend on `&background`.
+Light or dark color variants of the icons depend on `&background`.  
+The variant can also be set manually in `setup` with the `variant` option.
 
 The variant is updated:
 - on `OptionSet` event for `background`, or
@@ -75,6 +76,9 @@ require'nvim-web-devicons'.setup {
  -- prevents cases when file doesn't have any extension but still gets some icon
  -- because its name happened to match some extension (default to false)
  strict = true;
+ -- set the light or dark variant manually, instead of relying on `background`
+ -- (default to "auto")
+ variant = "light|dark";
  -- same as `override` but specifically for overrides by filename
  -- takes effect when `strict` is true
  override_by_filename = {
