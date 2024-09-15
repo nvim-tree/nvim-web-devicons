@@ -40,12 +40,19 @@ local global_opts = {
   strict = false,
   default = false,
   color_icons = true,
+  variant = "auto",
 }
 
 -- Set the current icons tables, depending on the 'background' option.
 local function refresh_icons()
   local theme
-  if vim.o.background == "light" then
+  if global_opts.variant == "auto" then
+    if vim.o.background == "light" then
+      theme = require "nvim-web-devicons.icons-light"
+    else
+      theme = require "nvim-web-devicons.icons-default"
+    end
+  elseif global_opts.variant == "light" then
     theme = require "nvim-web-devicons.icons-light"
   else
     theme = require "nvim-web-devicons.icons-default"
@@ -371,6 +378,11 @@ function M.setup(opts)
   end
 
   global_opts.color_icons = if_nil(user_icons.color_icons, global_opts.color_icons)
+
+  if user_icons.variant == "light" or user_icons.variant == "dark" then
+    global_opts.variant = user_icons.variant
+    refresh_icons()
+  end
 
   if user_icons.override and user_icons.override.default_icon then
     default_icon = user_icons.override.default_icon
