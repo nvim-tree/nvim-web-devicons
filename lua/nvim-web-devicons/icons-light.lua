@@ -3755,6 +3755,12 @@ local icons_by_operating_system = {
     cterm_color = "238",
     name = "HyperbolaGNULinuxLibre",
   },
+  ["http"] = {
+    icon = "",
+    color = "#008ec7",
+    cterm_color = "38",
+    name = "HTTP",
+  },
   ["illumos"] = {
     icon = "",
     color = "#bf320b",
