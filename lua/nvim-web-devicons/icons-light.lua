@@ -3757,8 +3757,8 @@ local icons_by_operating_system = {
   },
   ["http"] = {
     icon = "",
-    color = "#008ec7",
-    cterm_color = "38",
+    color = "#005b9c",
+    cterm_color = "32",
     name = "HTTP",
   },
   ["illumos"] = {
