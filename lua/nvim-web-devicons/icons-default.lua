@@ -1964,6 +1964,12 @@ local icons_by_file_extension = {
     cterm_color = "140",
     name = "Hs",
   },
+  ["http"] = {
+    icon = "",
+    color = "#008ec7",
+    cterm_color = "38",
+    name = "HTTP",
+  },
   ["htm"] = {
     icon = "",
     color = "#e34c26",
@@ -3754,12 +3760,6 @@ local icons_by_operating_system = {
     color = "#c0c0c0",
     cterm_color = "250",
     name = "HyperbolaGNULinuxLibre",
-  },
-  ["http"] = {
-    icon = "",
-    color = "#008ec7",
-    cterm_color = "38",
-    name = "HTTP",
   },
   ["illumos"] = {
     icon = "",
