@@ -1967,7 +1967,7 @@ local icons_by_file_extension = {
   ["http"] = {
     icon = "",
     color = "#008ec7",
-    cterm_color = "38",
+    cterm_color = "31",
     name = "HTTP",
   },
   ["htm"] = {
