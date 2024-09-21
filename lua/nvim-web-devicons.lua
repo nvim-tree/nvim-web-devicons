@@ -593,7 +593,7 @@ function M.set_default_icon(icon, color, cterm_color)
   set_up_highlight(default_icon)
 end
 
--- Load the icons already, the loaded tables depend only on &background, so that set methods may be called before setup
+-- Load the icons already, the loaded tables depend on the 'background' setting.
 refresh_icons()
 
 function M.refresh()
