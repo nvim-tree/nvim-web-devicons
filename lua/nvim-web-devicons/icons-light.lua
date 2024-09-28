@@ -1574,6 +1574,12 @@ local icons_by_file_extension = {
     cterm_color = "94",
     name = "Ebook",
   },
+  ["ebuild"] = {
+    icon = "",
+    color = "#4C416E",
+    cterm_color = "60",
+    name = "GentooBuild",
+  },
   ["edn"] = {
     icon = "",
     color = "#36677c",
