@@ -354,6 +354,7 @@ local function get_highlight_ctermfg(icon_data)
 end
 
 ---Change all keys in a table to lowercase
+---Remove entry when lowercase entry already exists
 ---@param t table
 local function lowercase_keys(t)
   if not t then
@@ -364,7 +365,9 @@ local function lowercase_keys(t)
     if type(k) == "string" then
       local lower_k = k:lower()
       if lower_k ~= k then
-        t[lower_k] = v
+        if not t[lower_k] then
+          t[lower_k] = v
+        end
         t[k] = nil
       end
     end
@@ -468,7 +471,7 @@ function M.setup(opts)
 
   -- highlight test command
   vim.api.nvim_create_user_command("NvimWebDeviconsHiTest", function()
-    require "nvim-web-devicons.hi-test"(
+    require "nvim-web-devicons.hi-test" (
       default_icon,
       global_opts.override,
       icons_by_filename,
