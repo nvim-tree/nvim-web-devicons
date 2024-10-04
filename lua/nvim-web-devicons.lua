@@ -353,6 +353,27 @@ local function get_highlight_ctermfg(icon_data)
   return nvim_get_hl_by_name(get_highlight_name(icon_data), false).foreground
 end
 
+---Change all keys in a table to lowercase
+---Remove entry when lowercase entry already exists
+---@param t table
+local function lowercase_keys(t)
+  if not t then
+    return
+  end
+
+  for k, v in pairs(t) do
+    if type(k) == "string" then
+      local lower_k = k:lower()
+      if lower_k ~= k then
+        if not t[lower_k] then
+          t[lower_k] = v
+        end
+        t[k] = nil
+      end
+    end
+  end
+end
+
 local loaded = false
 
 function M.has_loaded()
@@ -395,6 +416,11 @@ function M.setup(opts)
   local user_operating_system_icons = user_icons.override_by_operating_system
   local user_desktop_environment_icons = user_icons.override_by_desktop_environment
   local user_window_manager_icons = user_icons.override_by_window_manager
+
+  -- filename matches are case insensitive
+  lowercase_keys(icons_by_filename)
+  lowercase_keys(user_icons.override)
+  lowercase_keys(user_icons.override_by_filename)
 
   icons = vim.tbl_extend(
     "force",
