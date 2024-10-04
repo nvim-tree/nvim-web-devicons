@@ -275,12 +275,6 @@ local icons_by_filename = {
     cterm_color = "22",
     name = "Vimrc",
   },
-  ["R"] = {
-    icon = "󰟔",
-    color = "#1a4c8c",
-    cterm_color = "25",
-    name = "R",
-  },
   ["avif"] = {
     icon = "",
     color = "#6b4d83",
@@ -832,12 +826,6 @@ local icons_by_filename = {
     color = "#2b8937",
     cterm_color = "28",
     name = "Qt",
-  },
-  ["r"] = {
-    icon = "󰟔",
-    color = "#1a4c8c",
-    cterm_color = "25",
-    name = "R",
   },
   ["rakefile"] = {
     icon = "",
