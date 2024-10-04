@@ -471,7 +471,7 @@ function M.setup(opts)
 
   -- highlight test command
   vim.api.nvim_create_user_command("NvimWebDeviconsHiTest", function()
-    require "nvim-web-devicons.hi-test" (
+    require "nvim-web-devicons.hi-test"(
       default_icon,
       global_opts.override,
       icons_by_filename,
