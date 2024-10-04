@@ -45,6 +45,12 @@ The variant is updated:
 
 However, be advised that the plugin using nvim-web-devicons may have cached the icons.
 
+### Case Sensitivity
+
+Filename icons e.g. `"Dockerfile"` are case insensitively matched.
+
+Extension icons e.g. `"lua"` are case sensitive.
+
 ### Setup
 
 This adds all the highlight groups for the devicons
