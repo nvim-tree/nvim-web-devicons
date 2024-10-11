@@ -2858,6 +2858,12 @@ local icons_by_file_extension = {
     cterm_color = "25",
     name = "R",
   },
+  ["R"] = {
+    icon = "󰟔",
+    color = "#1a4c8c",
+    cterm_color = "25",
+    name = "R",
+  },
   ["rake"] = {
     icon = "",
     color = "#701516",
