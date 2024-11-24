@@ -1022,6 +1022,18 @@ local icons_by_file_extension = {
     cterm_color = "39",
     name = "AdvancedAudioCoding",
   },
+  ["adb"] = {
+    icon = "󰆧",
+    color = "#22ffff",
+    cterm_color = "39",
+    name = "AdaBody",
+  },
+  ["ads"] = {
+    icon = "󰨸",
+    color = "#ffffff",
+    cterm_color = "39",
+    name = "AdaSpecification",
+  },
   ["aif"] = {
     icon = "",
     color = "#00afff",
@@ -1867,6 +1879,12 @@ local icons_by_file_extension = {
     color = "#6d8086",
     cterm_color = "66",
     name = "GodotProject",
+  },
+  ["gpr"] = {
+    icon = "󱍕",
+    color = "#FF33FF",
+    cterm_color = "13",
+    name = "GPRBuildProject",
   },
   ["gql"] = {
     icon = "",
