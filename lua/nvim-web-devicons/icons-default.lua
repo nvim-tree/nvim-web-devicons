@@ -1023,13 +1023,13 @@ local icons_by_file_extension = {
     name = "AdvancedAudioCoding",
   },
   ["adb"] = {
-    icon = "󰆧",
+    icon = "",
     color = "#22ffff",
     cterm_color = "51",
     name = "AdaBody",
   },
   ["ads"] = {
-    icon = "󰨸",
+    icon = "",
     color = "#ffffff",
     cterm_color = "231",
     name = "AdaSpecification",
@@ -1881,7 +1881,7 @@ local icons_by_file_extension = {
     name = "GodotProject",
   },
   ["gpr"] = {
-    icon = "󱍕",
+    icon = "",
     color = "#FF33FF",
     cterm_color = "201",
     name = "GPRBuildProject",
