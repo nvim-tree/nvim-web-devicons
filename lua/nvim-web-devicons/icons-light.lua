@@ -311,6 +311,12 @@ local icons_by_filename = {
     cterm_color = "94",
     name = "ZigObjectNotation",
   },
+  ["bun.lockb"] = {
+    icon = "",
+    color = "#4e4946",
+    cterm_color = "239",
+    name = "BunLockfile",
+  },
   ["checkhealth"] = {
     icon = "󰓙",
     color = "#3a5a7e",
