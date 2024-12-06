@@ -5,14 +5,21 @@ Nvim-web-devicons requires version 2.3 or above to work properly. If you are una
 
 # Nvim-web-devicons
 
-A `lua` fork of [vim-devicons](https://github.com/ryanoasis/vim-devicons). This plugin provides the same icons _as well as_ colors for each icon.
+Provides file icons (glyphs) for use by neovim plugins:
+- [Nerd Fonts](https://www.nerdfonts.com/) icons
+- Icons by:
+  - Extension
+  - Full name
+- Colours
+- Light and dark variants
+- API to modify/add icons
 
-Light and dark color variants are provided.
+A `lua` fork of [vim-devicons](https://github.com/ryanoasis/vim-devicons).
 
 ## Requirements
 
 - [neovim >=0.7.0](https://github.com/neovim/neovim/wiki/Installing-Neovim)
-- [A patched font](https://www.nerdfonts.com/)
+- [A Patched Nerd Font](https://www.nerdfonts.com/)
 
 ## Installation
 
