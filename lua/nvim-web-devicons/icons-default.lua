@@ -1868,6 +1868,30 @@ local icons_by_file_extension = {
     cterm_color = "230",
     name = "Fennel",
   },
+  ["fodg"] = {
+    icon = "",
+    color = "#FFFB57",
+    cterm_color = "227",
+    name = "LibreOfficeGraphics",
+  },
+  ["fodp"] = {
+    icon = "",
+    color = "#FE9C45",
+    cterm_color = "215",
+    name = "LibreOfficeImpress",
+  },
+  ["fods"] = {
+    icon = "",
+    color = "#78FC4E",
+    cterm_color = "119",
+    name = "LibreOfficeCalc",
+  },
+  ["fodt"] = {
+    icon = "",
+    color = "#2DCBFD",
+    cterm_color = "81",
+    name = "LibreOfficeWriter",
+  },
   ["fs"] = {
     icon = "",
     color = "#519aba",
@@ -2690,6 +2714,36 @@ local icons_by_file_extension = {
     cterm_color = "102",
     name = "3DObjectFile",
   },
+  ["odf"] = {
+    icon = "",
+    color = "#FF5A96",
+    cterm_color = "204",
+    name = "LibreOfficeFormula",
+  },
+  ["odg"] = {
+    icon = "",
+    color = "#FFFB57",
+    cterm_color = "227",
+    name = "LibreOfficeGraphics",
+  },
+  ["odp"] = {
+    icon = "",
+    color = "#FE9C45",
+    cterm_color = "215",
+    name = "LibreOfficeImpress",
+  },
+  ["ods"] = {
+    icon = "",
+    color = "#78FC4E",
+    cterm_color = "119",
+    name = "LibreOfficeCalc",
+  },
+  ["odt"] = {
+    icon = "",
+    color = "#2DCBFD",
+    cterm_color = "81",
+    name = "LibreOfficeWriter",
+  },
   ["ogg"] = {
     icon = "",
     color = "#0075aa",
@@ -2809,6 +2863,12 @@ local icons_by_file_extension = {
     color = "#cb4a32",
     cterm_color = "160",
     name = "Ppt",
+  },
+  ["pptx"] = {
+    icon = "󰈧",
+    color = "#cb4a32",
+    cterm_color = "160",
+    name = "Pptx",
   },
   ["prisma"] = {
     icon = "",
