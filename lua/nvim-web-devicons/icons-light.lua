@@ -3893,6 +3893,12 @@ local icons_by_operating_system = {
     cterm_color = "24",
     name = "Kubuntu",
   },
+  ["leap"] = {
+    icon = "",
+    color = "#54421f",
+    cterm_color = "58",
+    name = "Leap",
+  },
   ["locos"] = {
     icon = "",
     color = "#7d5a01",
@@ -3934,6 +3940,12 @@ local icons_by_operating_system = {
     color = "#3d586e",
     cterm_color = "24",
     name = "NixOS",
+  },
+  ["nobara"] = {
+    icon = "",
+    color = "#333333",
+    cterm_color = "236",
+    name = "NobaraLinux",
   },
   ["openbsd"] = {
     icon = "",
@@ -4030,6 +4042,12 @@ local icons_by_operating_system = {
     color = "#0f58b6",
     cterm_color = "25",
     name = "TrisquelGNULinux",
+  },
+  ["tumbleweed"] = {
+    icon = "",
+    color = "#237b72",
+    cterm_color = "30",
+    name = "Tumbleweed",
   },
   ["ubuntu"] = {
     icon = "",
@@ -4168,6 +4186,12 @@ local icons_by_window_manager = {
     color = "#333333",
     cterm_color = "236",
     name = "Qtile",
+  },
+  ["river"] = {
+    icon = "",
+    color = "#000000",
+    cterm_color = "16",
+    name = "river",
   },
   ["sway"] = {
     icon = "",
