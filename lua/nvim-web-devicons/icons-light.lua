@@ -17,6 +17,30 @@ local icons_by_filename = {
     cterm_color = "22",
     name = "Bashrc",
   },
+  [".clang-format"] = {
+    icon = "",
+    color = "#526064",
+    cterm_color = "59",
+    name = "ClangConfig",
+  },
+  [".clang-tidy"] = {
+    icon = "",
+    color = "#526064",
+    cterm_color = "59",
+    name = "ClangConfig",
+  },
+  [".codespellrc"] = {
+    icon = "󰓆",
+    color = "#239140",
+    cterm_color = "28",
+    name = "Codespell",
+  },
+  [".condarc"] = {
+    icon = "",
+    color = "#2d751c",
+    cterm_color = "28",
+    name = "Conda",
+  },
   [".dockerignore"] = {
     icon = "󰡨",
     color = "#2e5f99",
@@ -107,6 +131,12 @@ local icons_by_filename = {
     cterm_color = "59",
     name = "Justfile",
   },
+  [".luacheckrc"] = {
+    icon = "",
+    color = "#007abf",
+    cterm_color = "32",
+    name = "Luaurc",
+  },
   [".luaurc"] = {
     icon = "",
     color = "#007abf",
@@ -118,6 +148,12 @@ local icons_by_filename = {
     color = "#b83a1d",
     cterm_color = "160",
     name = "Mailmap",
+  },
+  [".nanorc"] = {
+    icon = "",
+    color = "#440077",
+    cterm_color = "54",
+    name = "Nano",
   },
   [".npmignore"] = {
     icon = "",
@@ -142,6 +178,12 @@ local icons_by_filename = {
     color = "#3f6b34",
     cterm_color = "22",
     name = "node",
+  },
+  [".pre-commit-config.yaml"] = {
+    icon = "󰛢",
+    color = "#7c5a12",
+    cterm_color = "94",
+    name = "PreCommitConfig",
   },
   [".prettierrc"] = {
     icon = "",
@@ -202,6 +244,12 @@ local icons_by_filename = {
     color = "#3264b7",
     cterm_color = "25",
     name = "PrettierIgnore",
+  },
+  [".pylintrc"] = {
+    icon = "",
+    color = "#526064",
+    cterm_color = "59",
+    name = "PyLintConfig",
   },
   [".settings.json"] = {
     icon = "",
@@ -324,9 +372,9 @@ local icons_by_filename = {
     name = "Checkhealth",
   },
   ["cmakelists.txt"] = {
-    icon = "",
-    color = "#526064",
-    cterm_color = "59",
+    icon = "",
+    color = "#2c2d2f",
+    cterm_color = "236",
     name = "CMakeLists",
   },
   ["code_of_conduct"] = {
@@ -839,6 +887,18 @@ local icons_by_filename = {
     cterm_color = "52",
     name = "Rakefile",
   },
+  ["readme"] = {
+    icon = "󰂺",
+    color = "#2f2f2f",
+    cterm_color = "236",
+    name = "Readme",
+  },
+  ["readme.md"] = {
+    icon = "󰂺",
+    color = "#2f2f2f",
+    cterm_color = "236",
+    name = "Readme",
+  },
   ["rmd"] = {
     icon = "",
     color = "#36677c",
@@ -1311,9 +1371,9 @@ local icons_by_file_extension = {
     name = "ClojureDart",
   },
   ["cmake"] = {
-    icon = "",
-    color = "#526064",
-    cterm_color = "59",
+    icon = "",
+    color = "#2c2d2f",
+    cterm_color = "236",
     name = "CMake",
   },
   ["cob"] = {
@@ -1333,6 +1393,12 @@ local icons_by_file_extension = {
     color = "#666620",
     cterm_color = "58",
     name = "Coffee",
+  },
+  ["conda"] = {
+    icon = "",
+    color = "#2d751c",
+    cterm_color = "28",
+    name = "Conda",
   },
   ["conf"] = {
     icon = "",
@@ -1772,6 +1838,12 @@ local icons_by_file_extension = {
     cterm_color = "23",
     name = "Fdmdownload",
   },
+  ["fish"] = {
+    icon = "",
+    color = "#3a4446",
+    cterm_color = "238",
+    name = "Fish",
+  },
   ["flac"] = {
     icon = "",
     color = "#005880",
@@ -1795,12 +1867,6 @@ local icons_by_file_extension = {
     color = "#33312b",
     cterm_color = "236",
     name = "Fennel",
-  },
-  ["fish"] = {
-    icon = "",
-    color = "#3a4446",
-    cterm_color = "238",
-    name = "Fish",
   },
   ["fs"] = {
     icon = "",
@@ -2127,9 +2193,9 @@ local icons_by_file_extension = {
     name = "Iso",
   },
   ["ipynb"] = {
-    icon = "",
-    color = "#366b8a",
-    cterm_color = "24",
+    icon = "",
+    color = "#a35301",
+    cterm_color = "130",
     name = "Notebook",
   },
   ["java"] = {
@@ -3380,6 +3446,12 @@ local icons_by_file_extension = {
     cterm_color = "94",
     name = "Txz",
   },
+  ["typ"] = {
+    icon = "",
+    color = "#097d80",
+    cterm_color = "30",
+    name = "Typst",
+  },
   ["typoscript"] = {
     icon = "",
     color = "#aa5a00",
@@ -3405,8 +3477,8 @@ local icons_by_file_extension = {
     name = "Verilog",
   },
   ["vala"] = {
-    icon = "",
-    color = "#562b86",
+    icon = "",
+    color = "#5c2e8b",
     cterm_color = "54",
     name = "Vala",
   },
@@ -3427,6 +3499,12 @@ local icons_by_file_extension = {
     color = "#017226",
     cterm_color = "22",
     name = "VHDL",
+  },
+  ["vi"] = {
+    icon = "",
+    color = "#554203",
+    cterm_color = "58",
+    name = "LabView",
   },
   ["vim"] = {
     icon = "",
