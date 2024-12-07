@@ -5,8 +5,7 @@ Nvim-web-devicons requires version 2.3 or above to work properly. If you are una
 
 # Nvim-web-devicons
 
-Provides file icons (glyphs) for use by neovim plugins:
-- [Nerd Fonts](https://www.nerdfonts.com/) icons
+Provides [Nerd Font](https://www.nerdfonts.com/) <sup>[1]</sup> icons (glyphs) for use by neovim plugins:
 - Icons by:
   - Extension
   - Full name
@@ -15,6 +14,8 @@ Provides file icons (glyphs) for use by neovim plugins:
 - API to modify/add icons
 
 A `lua` fork of [vim-devicons](https://github.com/ryanoasis/vim-devicons).
+
+<sup>[1]</sup> Not limited to Nerd Font icons: unicode and other fonts may be used.
 
 ## Requirements
 
