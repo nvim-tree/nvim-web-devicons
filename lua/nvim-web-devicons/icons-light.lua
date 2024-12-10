@@ -1534,7 +1534,7 @@ local icons_by_file_extension = {
   },
   ["d"] = {
     icon = "",
-    color = "#b03931",
+    color = "#842b25",
     cterm_color = "88",
     name = "D",
   },
