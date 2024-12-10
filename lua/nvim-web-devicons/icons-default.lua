@@ -1534,8 +1534,8 @@ local icons_by_file_extension = {
   },
   ["d"] = {
     icon = "",
-    color = "#427819",
-    cterm_color = "28",
+    color = "#b03931",
+    cterm_color = "124",
     name = "D",
   },
   ["d.ts"] = {
