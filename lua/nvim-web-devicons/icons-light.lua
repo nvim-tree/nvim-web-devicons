@@ -2727,7 +2727,7 @@ local icons_by_file_extension = {
     name = "LibreOfficeGraphics",
   },
   ["odin"] = {
-    icon = "Ø",
+    icon = "󰟢",
     color = "#3882D2",
     cterm_color = "33",
     name = "Odin",
