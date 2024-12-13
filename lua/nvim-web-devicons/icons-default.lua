@@ -2607,7 +2607,7 @@ local icons_by_file_extension = {
     name = "ObjectiveCPlusPlus",
   },
   ["mo"] = {
-    icon = "∞",
+    icon = "",
     color = "#9772FB",
     cterm_color = "135",
     name = "Motoko",
