@@ -1251,10 +1251,10 @@ local icons_by_file_extension = {
     name = "Bmp",
   },
   ["bqn"] = {
-    icon = "⎉",
-    color = "#2b7067",
-    cterm_color = "23",
-    name = "BQN",
+    icon = "",
+    color = "#24a148",
+    cterm_color = "35",
+    name = "APL",
   },
   ["blp"] = {
     icon = "󰺾",
