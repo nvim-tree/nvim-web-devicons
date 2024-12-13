@@ -3159,13 +3159,13 @@ local icons_by_file_extension = {
     name = "Sha512",
   },
   ["sig"] = {
-    icon = "λ",
+    icon = "󰘧",
     color = "#e37933",
     cterm_color = "166",
     name = "Sig",
   },
   ["signature"] = {
-    icon = "λ",
+    icon = "󰘧",
     color = "#e37933",
     cterm_color = "166",
     name = "Signature",
