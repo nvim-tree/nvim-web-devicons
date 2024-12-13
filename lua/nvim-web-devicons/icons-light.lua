@@ -1119,9 +1119,9 @@ local icons_by_file_extension = {
     name = "MonkeysAudio",
   },
   ["apl"] = {
-    icon = "⍝",
-    color = "#805200",
-    cterm_color = "94",
+    icon = "",
+    color = "#1b7936",
+    cterm_color = "28",
     name = "APL",
   },
   ["ai"] = {
