@@ -1002,7 +1002,7 @@ local icons_by_filename = {
     name = "VLC",
   },
   ["vercel.json"] = {
-    icon = "▲",
+    icon = "",
     color = "#333333",
     cterm_color = "236",
     name = "Vercel",
