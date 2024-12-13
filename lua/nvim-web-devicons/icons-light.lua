@@ -2535,7 +2535,7 @@ local icons_by_file_extension = {
     name = "Markdown",
   },
   ["material"] = {
-    icon = "󰔉",
+    icon = "",
     color = "#8a2b72",
     cterm_color = "89",
     name = "Material",
