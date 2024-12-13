@@ -1317,7 +1317,7 @@ local icons_by_file_extension = {
     name = "Asciinema",
   },
   ["cbl"] = {
-    icon = "⚙",
+    icon = "",
     color = "#005ca5",
     cterm_color = "25",
     name = "Cobol",
@@ -1377,13 +1377,13 @@ local icons_by_file_extension = {
     name = "CMake",
   },
   ["cob"] = {
-    icon = "⚙",
+    icon = "",
     color = "#005ca5",
     cterm_color = "25",
     name = "Cobol",
   },
   ["cobol"] = {
-    icon = "⚙",
+    icon = "",
     color = "#005ca5",
     cterm_color = "25",
     name = "Cobol",
@@ -1437,7 +1437,7 @@ local icons_by_file_extension = {
     name = "Cppm",
   },
   ["cpy"] = {
-    icon = "⚙",
+    icon = "",
     color = "#005ca5",
     cterm_color = "25",
     name = "Cobol",
