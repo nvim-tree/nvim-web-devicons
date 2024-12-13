@@ -3207,7 +3207,7 @@ local icons_by_file_extension = {
     name = "SolveSpace",
   },
   ["sml"] = {
-    icon = "λ",
+    icon = "󰘧",
     color = "#e37933",
     cterm_color = "166",
     name = "Sml",
