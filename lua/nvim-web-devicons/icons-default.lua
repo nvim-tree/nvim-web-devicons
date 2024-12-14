@@ -515,7 +515,7 @@ local icons_by_filename = {
     cterm_color = "160",
     name = "FreeCADConfig",
   },
-  ["gemfile$"] = {
+  ["Gemfile"] = {
     icon = "",
     color = "#701516",
     cterm_color = "52",
@@ -989,7 +989,7 @@ local icons_by_filename = {
     cterm_color = "185",
     name = "License",
   },
-  ["vagrantfile$"] = {
+  ["vagrantfile"] = {
     icon = "",
     color = "#1563FF",
     cterm_color = "27",
