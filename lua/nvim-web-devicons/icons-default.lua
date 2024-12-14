@@ -1119,9 +1119,9 @@ local icons_by_file_extension = {
     name = "MonkeysAudio",
   },
   ["apl"] = {
-    icon = "⍝",
-    color = "#ffa500",
-    cterm_color = "214",
+    icon = "",
+    color = "#24a148",
+    cterm_color = "35",
     name = "APL",
   },
   ["ai"] = {
@@ -1251,10 +1251,10 @@ local icons_by_file_extension = {
     name = "Bmp",
   },
   ["bqn"] = {
-    icon = "⎉",
-    color = "#2b7067",
-    cterm_color = "23",
-    name = "BQN",
+    icon = "",
+    color = "#24a148",
+    cterm_color = "35",
+    name = "APL",
   },
   ["blp"] = {
     icon = "󰺾",
@@ -1317,7 +1317,7 @@ local icons_by_file_extension = {
     name = "Asciinema",
   },
   ["cbl"] = {
-    icon = "⚙",
+    icon = "",
     color = "#005ca5",
     cterm_color = "25",
     name = "Cobol",
@@ -1377,13 +1377,13 @@ local icons_by_file_extension = {
     name = "CMake",
   },
   ["cob"] = {
-    icon = "⚙",
+    icon = "",
     color = "#005ca5",
     cterm_color = "25",
     name = "Cobol",
   },
   ["cobol"] = {
-    icon = "⚙",
+    icon = "",
     color = "#005ca5",
     cterm_color = "25",
     name = "Cobol",
@@ -1437,7 +1437,7 @@ local icons_by_file_extension = {
     name = "Cppm",
   },
   ["cpy"] = {
-    icon = "⚙",
+    icon = "",
     color = "#005ca5",
     cterm_color = "25",
     name = "Cobol",
@@ -2535,7 +2535,7 @@ local icons_by_file_extension = {
     name = "Markdown",
   },
   ["material"] = {
-    icon = "󰔉",
+    icon = "",
     color = "#B83998",
     cterm_color = "163",
     name = "Material",
@@ -2607,7 +2607,7 @@ local icons_by_file_extension = {
     name = "ObjectiveCPlusPlus",
   },
   ["mo"] = {
-    icon = "∞",
+    icon = "",
     color = "#9772FB",
     cterm_color = "135",
     name = "Motoko",
@@ -2697,7 +2697,7 @@ local icons_by_file_extension = {
     name = "Nswag",
   },
   ["nu"] = {
-    icon = ">",
+    icon = "",
     color = "#3aa675",
     cterm_color = "36",
     name = "Nushell",
@@ -3165,13 +3165,13 @@ local icons_by_file_extension = {
     name = "Sha512",
   },
   ["sig"] = {
-    icon = "λ",
+    icon = "󰘧",
     color = "#e37933",
     cterm_color = "166",
     name = "Sig",
   },
   ["signature"] = {
-    icon = "λ",
+    icon = "󰘧",
     color = "#e37933",
     cterm_color = "166",
     name = "Signature",
@@ -3213,7 +3213,7 @@ local icons_by_file_extension = {
     name = "SolveSpace",
   },
   ["sml"] = {
-    icon = "λ",
+    icon = "󰘧",
     color = "#e37933",
     cterm_color = "166",
     name = "Sml",
