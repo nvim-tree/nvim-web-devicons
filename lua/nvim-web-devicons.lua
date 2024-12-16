@@ -57,7 +57,6 @@ local function lowercase_keys(t)
       if lower_k ~= k then
         if not t[lower_k] then
           t[lower_k] = v
-          print(k .. " " .. lower_k)
         end
         t[k] = nil
       end
