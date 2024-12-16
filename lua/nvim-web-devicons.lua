@@ -43,6 +43,28 @@ local global_opts = {
   variant = nil,
 }
 
+---Change all keys in a table to lowercase
+---Remove entry when lowercase entry already exists
+---@param t table
+local function lowercase_keys(t)
+  if not t then
+    return
+  end
+
+  for k, v in pairs(t) do
+    if type(k) == "string" then
+      local lower_k = k:lower()
+      if lower_k ~= k then
+        if not t[lower_k] then
+          t[lower_k] = v
+          print(k .. " " .. lower_k)
+        end
+        t[k] = nil
+      end
+    end
+  end
+end
+
 -- Set the current icons tables, depending on variant option, then &background
 local function refresh_icons()
   local theme
@@ -63,6 +85,10 @@ local function refresh_icons()
   icons_by_operating_system = theme.icons_by_operating_system
   icons_by_desktop_environment = theme.icons_by_desktop_environment
   icons_by_window_manager = theme.icons_by_window_manager
+
+  -- filename matches are case insensitive
+  lowercase_keys(icons_by_filename)
+
   icons = vim.tbl_extend(
     "keep",
     {},
@@ -91,9 +117,9 @@ local filetypes = {
   ["checkhealth"] = "checkhealth",
   ["commit"] = "commit_editmsg",
   ["copying"] = "copying",
-  ["gemfile"] = "gemfile$",
+  ["gemfile"] = "gemfile",
   ["lesser"] = "copying.lesser",
-  ["vagrantfile"] = "vagrantfile$",
+  ["vagrantfile"] = "vagrantfile",
   ["awk"] = "awk",
   ["bmp"] = "bmp",
   ["c"] = "c",
@@ -352,27 +378,6 @@ local function get_highlight_ctermfg(icon_data)
   end
 
   return nvim_get_hl_by_name(get_highlight_name(icon_data), false).foreground
-end
-
----Change all keys in a table to lowercase
----Remove entry when lowercase entry already exists
----@param t table
-local function lowercase_keys(t)
-  if not t then
-    return
-  end
-
-  for k, v in pairs(t) do
-    if type(k) == "string" then
-      local lower_k = k:lower()
-      if lower_k ~= k then
-        if not t[lower_k] then
-          t[lower_k] = v
-        end
-        t[k] = nil
-      end
-    end
-  end
 end
 
 local loaded = false
