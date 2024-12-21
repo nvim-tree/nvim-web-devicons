@@ -10,11 +10,11 @@ jobs:
   auto-update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4.5.0
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
       - run: pip install pre-commit
       - run: pre-commit autoupdate
-      - uses: peter-evans/create-pull-request@v4
+      - uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: update/pre-commit-hooks
