@@ -323,6 +323,18 @@ local icons_by_filename = {
     cterm_color = "22",
     name = "Vimrc",
   },
+  ["AUTHORS"] = {
+    icon = "",
+    color = "#6b4caa",
+    cterm_color = "61",
+    name = "AUTHORS",
+  },
+  ["AUTHORS.txt"] = {
+    icon = "",
+    color = "#6b4caa",
+    cterm_color = "61",
+    name = "AUTHORS",
+  },
   ["avif"] = {
     icon = "",
     color = "#6b4d83",
@@ -670,6 +682,12 @@ local icons_by_filename = {
     color = "#2e2f30",
     cterm_color = "236",
     name = "i3",
+  },
+  ["index.theme"] = {
+    icon = "",
+    color = "#1e7b4a",
+    cterm_color = "29",
+    name = "IndexTheme",
   },
   ["ionic.config.json"] = {
     icon = "",
