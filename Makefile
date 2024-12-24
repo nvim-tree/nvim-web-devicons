@@ -1,6 +1,6 @@
 VIM_COLORTEMPLATE_VERSION = 2.2.3
 
-all: colors style-check lint
+all: colors style-check lint filetypes
 
 colors: vim-colortemplate
 	nvim \
@@ -26,7 +26,10 @@ style-fix:
 lint:
 	luacheck lua scripts
 
+filetypes:
+	./scripts/filetypes.sh
+
 clean:
 	rm -rf vim-colortemplate
 
-.PHONY: all colors style-check style-fix lint
+.PHONY: all colors style-check style-fix lint filetypes
