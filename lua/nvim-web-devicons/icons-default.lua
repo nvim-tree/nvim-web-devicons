@@ -1178,6 +1178,12 @@ local icons_by_file_extension = {
     cterm_color = "242",
     name = "Asc",
   },
+  ["asm"] = {
+    icon = "",
+    color = "#0091BD",
+    cterm_color = "31",
+    name = "ASM",
+  },
   ["ass"] = {
     icon = "󰨖",
     color = "#ffb713",
@@ -3103,6 +3109,12 @@ local icons_by_file_extension = {
     color = "#FB9D3B",
     cterm_color = "215",
     name = "Rss",
+  },
+  ["s"] = {
+    icon = "",
+    color = "#0071C5",
+    cterm_color = "25",
+    name = "ASM",
   },
   ["sass"] = {
     icon = "",
