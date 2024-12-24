@@ -335,12 +335,6 @@ local icons_by_filename = {
     cterm_color = "135",
     name = "AUTHORS",
   },
-  ["avif"] = {
-    icon = "",
-    color = "#a074c4",
-    cterm_color = "140",
-    name = "Avif",
-  },
   ["brewfile"] = {
     icon = "",
     color = "#701516",
@@ -1195,6 +1189,12 @@ local icons_by_file_extension = {
     color = "#e23f67",
     cterm_color = "197",
     name = "Astro",
+  },
+  ["avif"] = {
+    icon = "",
+    color = "#a074c4",
+    cterm_color = "140",
+    name = "Avif",
   },
   ["awk"] = {
     icon = "",
