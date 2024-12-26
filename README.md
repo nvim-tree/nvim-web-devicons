@@ -1,11 +1,7 @@
-# Notice
-Nerd fonts moved some symbols with version 3.0. Version 2.3 is meant for transition, supporting both version 2 and version 3 icons.
-
-Nvim-web-devicons requires version 2.3 or above to work properly. If you are unable to update please use your plugin manager to pin version of nvim-web-dev icons to `nerd-v2-compat` tag.
-
 # Nvim-web-devicons
 
-Provides [Nerd Font](https://www.nerdfonts.com/) <sup>[1]</sup> icons (glyphs) for use by neovim plugins:
+Provides [Nerd Font](https://www.nerdfonts.com/) [^1] icons (glyphs) for use by *Neovim* plugins:
+
 - Icons by:
   - Extension
   - Full name
@@ -15,7 +11,13 @@ Provides [Nerd Font](https://www.nerdfonts.com/) <sup>[1]</sup> icons (glyphs) f
 
 A `lua` fork of [vim-devicons](https://github.com/ryanoasis/vim-devicons).
 
-<sup>[1]</sup> Not limited to Nerd Font icons: unicode and other fonts may be used.
+> [!IMPORTANT]
+> Nerd fonts moved some symbols with version 3.0. Version 2.3 is meant for transition,
+> supporting both version 2 and version 3 icons.
+> Nvim-web-devicons requires version 2.3 or above to work properly. If you are unable to update
+> please use your plugin manager to pin version of nvim-web-dev icons to `nerd-v2-compat` tag.
+
+[^1]: Not limited to Nerd Font icons: unicode and other fonts may be used.
 
 ## Requirements
 
@@ -30,8 +32,14 @@ Plug 'nvim-tree/nvim-web-devicons'
 
 or with [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
-```
+```lua
 use 'nvim-tree/nvim-web-devicons'
+```
+
+or with [lazy.nvim](https://github.com/folke/lazy.nvim)
+
+```lua
+{ "nvim-tree/nvim-web-devicons", opts = {} },
 ```
 
 [![LuaRocks](https://img.shields.io/luarocks/v/nvim-tree/nvim-web-devicons?logo=lua&color=purple)](https://luarocks.org/modules/nvim-tree/nvim-web-devicons)
@@ -48,6 +56,7 @@ Light or dark color variants of the icons depend on `&background`.
 The variant can also be set manually in `setup` with the `variant` option.
 
 The variant is updated:
+
 - on `OptionSet` event for `background`, or
 - after explicitly calling `require("nvim-web-devicons").refresh()`.
 
@@ -68,7 +77,7 @@ if the color scheme changes
 
 ```lua
 require'nvim-web-devicons'.setup {
- -- your personnal icons can go here (to override)
+ -- your personal icons can go here (to override)
  -- you can specify color or cterm_color instead of specifying both of them
  -- DevIcon will be appended to `name`
  override = {
@@ -126,7 +135,7 @@ require'nvim-web-devicons'.setup {
 
 ### Get Icon
 
-Get the icon for a given file by passing in the `name`, the `extension` and an _optional_ options `table`.
+Get the icon for a given file by passing in the `name`, the `extension` and an *optional* options `table`.
 The name is passed in to check for an exact match e.g. `.bashrc` if there is no exact name match the extension
 is used. Calls `.setup()` if it hasn't already ran.
 
@@ -146,6 +155,7 @@ require'nvim-web-devicons'.get_icon(filename, extension, { default = true })
 ```
 
 You can check if the setup function was already called with:
+
 ```lua
 require'nvim-web-devicons'.has_loaded()
 ```
@@ -156,6 +166,7 @@ require'nvim-web-devicons'.has_loaded()
 `get_icon_cterm_color` returns cterm color instead of gui color
 `get_icon` returns icon and highlight name.
 If you want to get color code, you can use this function.
+
 ```lua
 local icon, color = require'nvim-web-devicons'.get_icon_color("init.lua", "lua")
 assert(icon == "")
@@ -220,7 +231,8 @@ or set the icon to use for a filetype with:
 require("nvim-web-devicons").set_icon_by_filetype { cpp = "c", pandoc = "md", }
 ```
 
-These functions are the same as their counterparts without the `_by_filetype` suffix, but they take a filetype instead of a name/extension.
+These functions are the same as their counterparts without the `_by_filetype` suffix,
+but they take a filetype instead of a name/extension.
 
 You can also use `get_icon_name_by_filetype(filetype)` to get the icon name associated with the filetype.
 
