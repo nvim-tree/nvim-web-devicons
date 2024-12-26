@@ -2714,6 +2714,12 @@ local icons_by_file_extension = {
     cterm_color = "110",
     name = "Nix",
   },
+  ["norg"] = {
+    icon = "",
+    color = "#4878be",
+    cterm_color = "32",
+    name = "Norg",
+  },
   ["nswag"] = {
     icon = "",
     color = "#85ea2d",
