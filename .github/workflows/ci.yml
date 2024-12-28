@@ -52,3 +52,14 @@ jobs:
       - name: make colors-check
         run: make colors-check
 
+  filetypes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: rhysd/action-setup-vim@v1
+        with:
+          neovim: true
+
+      - name: make filetypes
+        run: make filetypes
