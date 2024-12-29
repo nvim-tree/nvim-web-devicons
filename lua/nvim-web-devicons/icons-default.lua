@@ -462,14 +462,14 @@ local icons_by_filename = {
     name = "Dockerfile",
   },
   ["docker-compose.yml"] = {
-    icon = "󰡨",
-    color = "#458ee6",
+    icon = "",
+    color = "#0db7ed",
     cterm_color = "68",
     name = "Dockerfile",
   },
   ["dockerfile"] = {
-    icon = "󰡨",
-    color = "#458ee6",
+    icon = "/",
+    color = "#0db7ed",
     cterm_color = "68",
     name = "Dockerfile",
   },
