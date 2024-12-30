@@ -10,6 +10,9 @@ fi
 exit_value=0
 in_section=false
 
+echo "VIMRUNTIME=${VIMRUNTIME}"
+ls "${VIMRUNTIME}/syntax"
+
 while IFS= read -r line; do
 	if [[ $line =~ ^local\ icons_by_file_extension\ =\ \{$ ]]; then
 		in_section=true
