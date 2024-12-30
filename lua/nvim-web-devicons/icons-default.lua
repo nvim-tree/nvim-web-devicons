@@ -3242,6 +3242,12 @@ local icons_by_file_extension = {
     cterm_color = "98",
     name = "Sln",
   },
+  ["slnx"] = {
+    icon = "",
+    color = "#854CC7",
+    cterm_color = "98",
+    name = "Slnx",
+  },
   ["slvs"] = {
     icon = "󰻫",
     color = "#839463",
