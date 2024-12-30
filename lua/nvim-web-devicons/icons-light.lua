@@ -473,6 +473,24 @@ local icons_by_filename = {
     cterm_color = "25",
     name = "Dockerfile",
   },
+  ["Directory.Packages.props"] = {
+    icon = "",
+    color = "#007abf",
+    cterm_color = "32",
+    name = "PackagesProps",
+  },
+  ["Directory.Build.targets"] = {
+    icon = "",
+    color = "#007abf",
+    cterm_color = "32",
+    name = "BuildTargets",
+  },
+  ["Directory.Build.props"] = {
+    icon = "",
+    color = "#007abf",
+    cterm_color = "32",
+    name = "BuildProps",
+  },
   ["eslint.config.cjs"] = {
     icon = "",
     color = "#4b32c3",
