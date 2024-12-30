@@ -62,4 +62,6 @@ jobs:
           neovim: true
 
       - name: make filetypes
+        env:
+          VIMRUNTIME: /home/runner/nvim-stable/share/nvim/runtime
         run: make filetypes
