@@ -7,6 +7,7 @@ if [ -z "${VIMRUNTIME}" ]; then
 	export VIMRUNTIME="/usr/share/nvim/runtime"
 fi
 
+exit_value=0
 in_section=false
 
 while IFS= read -r line; do
@@ -24,7 +25,9 @@ while IFS= read -r line; do
 			continue
 		else
 			[ -f "${VIMRUNTIME}/syntax/$key.vim" ] &&
-				echo -e "\e[33mPlease add \"$key\" to filetypes Lua table.\e[0m"
+				echo -e "\e[33mPlease add \"$key\" to filetypes Lua table.\e[0m" &&
+				exit_value=1
 		fi
 	fi
 done <"lua/nvim-web-devicons/icons-default.lua"
+exit $exit_value
