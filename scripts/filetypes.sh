@@ -9,8 +9,14 @@ fi
 
 in_section=false
 
-echo "VIMRUNTIME=${VIMRUNTIME}"
+printf "VIMRUNTIME=%s\n" "${VIMRUNTIME}"
+
+printf "\n%s/syntax contents:\n" "${VIMRUNTIME}"
 ls "${VIMRUNTIME}/syntax"
+
+printf "\n~ contents:\n"
+ls ~
+printf "\n"
 
 while IFS= read -r line; do
 	if [[ $line =~ ^local\ icons_by_file_extension\ =\ \{$ ]]; then
