@@ -3246,7 +3246,7 @@ local icons_by_file_extension = {
     icon = "",
     color = "#854CC7",
     cterm_color = "98",
-    name = "Sln",
+    name = "Slnx",
   },
   ["slvs"] = {
     icon = "󰻫",
