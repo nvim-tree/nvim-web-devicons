@@ -104,7 +104,6 @@ end
 -- Map of filetypes -> icon names
 local filetypes = {
   ["apl"] = "apl",
-  ["asm"] = "asm",
   ["astro"] = "astro",
   ["avif"] = "avif",
   ["bash"] = "bash",
