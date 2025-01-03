@@ -467,6 +467,24 @@ local icons_by_filename = {
     cterm_color = "25",
     name = "Dockerfile",
   },
+  ["Directory.Packages.props"] = {
+    icon = "",
+    color = "#007abf",
+    cterm_color = "32",
+    name = "PackagesProps",
+  },
+  ["Directory.Build.targets"] = {
+    icon = "",
+    color = "#007abf",
+    cterm_color = "32",
+    name = "BuildTargets",
+  },
+  ["Directory.Build.props"] = {
+    icon = "",
+    color = "#007abf",
+    cterm_color = "32",
+    name = "BuildProps",
+  },
   ["eslint.config.cjs"] = {
     icon = "",
     color = "#4b32c3",
@@ -2780,11 +2798,29 @@ local icons_by_file_extension = {
     cterm_color = "24",
     name = "LibreOfficeWriter",
   },
+  ["oga"] = {
+    icon = "",
+    color = "#005880",
+    cterm_color = "24",
+    name = "OggVorbis",
+  },
   ["ogg"] = {
     icon = "",
     color = "#005880",
     cterm_color = "24",
     name = "OggVorbis",
+  },
+  ["ogv"] = {
+    icon = "",
+    color = "#7e4c10",
+    cterm_color = "94",
+    name = "OggVideo",
+  },
+  ["ogx"] = {
+    icon = "",
+    color = "#7e4c10",
+    cterm_color = "94",
+    name = "OggMultiplex",
   },
   ["opus"] = {
     icon = "",
@@ -3242,6 +3278,12 @@ local icons_by_file_extension = {
     cterm_color = "91",
     name = "Sln",
   },
+  ["slnx"] = {
+    icon = "",
+    color = "#643995",
+    cterm_color = "91",
+    name = "Slnx",
+  },
   ["slvs"] = {
     icon = "󰻫",
     color = "#576342",
@@ -3289,6 +3331,12 @@ local icons_by_file_extension = {
     color = "#1354bf",
     cterm_color = "26",
     name = "TypeScriptReactSpec",
+  },
+  ["spx"] = {
+    icon = "",
+    color = "#005880",
+    cterm_color = "24",
+    name = "OggSpeexAudio",
   },
   ["sql"] = {
     icon = "",
