@@ -3983,6 +3983,12 @@ local icons_by_operating_system = {
     cterm_color = "91",
     name = "Endeavour",
   },
+  ["feature"] = {
+    icon = "",
+    color = "#00a818",
+    cterm_color = "34",
+    name = "Feature",
+  },
   ["fedora"] = {
     icon = "",
     color = "#072a5e",
