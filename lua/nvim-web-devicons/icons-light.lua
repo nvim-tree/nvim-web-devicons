@@ -1880,6 +1880,12 @@ local icons_by_file_extension = {
     cterm_color = "23",
     name = "Fdmdownload",
   },
+  ["feature"] = {
+    icon = "",
+    color = "#007e12",
+    cterm_color = "28",
+    name = "Feature",
+  },
   ["fish"] = {
     icon = "",
     color = "#3a4446",
@@ -3982,12 +3988,6 @@ local icons_by_operating_system = {
     color = "#5c2e8b",
     cterm_color = "54",
     name = "Endeavour",
-  },
-  ["feature"] = {
-    icon = "",
-    color = "#007e12",
-    cterm_color = "28",
-    name = "Feature",
   },
   ["fedora"] = {
     icon = "",
