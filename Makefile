@@ -3,6 +3,8 @@ VIM_COLORTEMPLATE_VERSION = 2.2.3
 all: colors style-check lint filetypes
 
 colors: vim-colortemplate
+	rm lua/nvim-web-devicons/icons-light.lua
+	cp lua/nvim-web-devicons/icons-default.lua lua/nvim-web-devicons/icons-light.lua
 	nvim \
 		--clean \
 		--headless \
