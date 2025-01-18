@@ -16,6 +16,7 @@ colors: vim-colortemplate mini-align
 		-c 'qall'
 
 colors-check: colors
+	git diff --exit-code lua/nvim-web-devicons/icons-default.lua
 	git diff --exit-code lua/nvim-web-devicons/icons-light.lua
 
 vim-colortemplate:
