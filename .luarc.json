@@ -5,8 +5,8 @@
 		"globals": [
 			"vim",
 			"jit",
-			"bit"
+			"bit",
+			"MiniAlign"
 		]
 	}
 }
-
