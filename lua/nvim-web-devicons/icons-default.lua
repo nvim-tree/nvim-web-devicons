@@ -623,6 +623,12 @@ local icons_by_filename = {
     cterm_color = "231",
     name = "GTK",
   },
+  ["guard.ts"] = {
+    icon = "",
+    color = "#43A047",
+    cterm_color = "71",
+    name = "NestAppGuard",
+  },
   ["gulpfile.babel.js"] = {
     icon = "",
     color = "#cc3e44",
@@ -1454,6 +1460,12 @@ local icons_by_file_extension = {
     cterm_color = "52",
     name = "ConfigRu",
   },
+  ["controller.ts"] = {
+    icon = "",
+    color = "#0288D1",
+    cterm_color = "32",
+    name = "NestAppController",
+  },
   ["cow"] = {
     icon = "󰆚",
     color = "#965824",
@@ -1885,6 +1897,12 @@ local icons_by_file_extension = {
     color = "#00a818",
     cterm_color = "34",
     name = "Feature",
+  },
+  ["filter.ts"] = {
+    icon = "",
+    color = "#FF7043",
+    cterm_color = "209",
+    name = "NestAppFilter",
   },
   ["fish"] = {
     icon = "",
@@ -2606,6 +2624,12 @@ local icons_by_file_extension = {
     cterm_color = "74",
     name = "Mdx",
   },
+  ["middleware.ts"] = {
+    icon = "",
+    color = "#5C6BC0",
+    cterm_color = "61",
+    name = "NestAppMiddelware",
+  },
   ["mint"] = {
     icon = "󰌪",
     color = "#87c095",
@@ -2665,6 +2689,12 @@ local icons_by_file_extension = {
     color = "#eab16d",
     cterm_color = "215",
     name = "Mobi",
+  },
+  ["module.ts"] = {
+    icon = "",
+    color = "#E53935",
+    cterm_color = "196",
+    name = "NestAppModule",
   },
   ["mojo"] = {
     icon = "",
@@ -2887,6 +2917,12 @@ local icons_by_file_extension = {
     color = "#a074c4",
     cterm_color = "140",
     name = "Php",
+  },
+  ["pipe.ts"] = {
+    icon = "",
+    color = "#00897B",
+    cterm_color = "30",
+    name = "NestAppPipe",
   },
   ["pl"] = {
     icon = "",
@@ -3205,6 +3241,12 @@ local icons_by_file_extension = {
     color = "#f55385",
     cterm_color = "204",
     name = "Scss",
+  },
+  ["service.ts"] = {
+    icon = "",
+    color = "#FFCA28",
+    cterm_color = "220",
+    name = "NestAppService",
   },
   ["sh"] = {
     icon = "",
@@ -4007,6 +4049,12 @@ local icons_by_operating_system = {
     cterm_color = "33",
     name = "GarudaLinux",
   },
+  ["gateway.ts"] = {
+    icon = "",
+    color = "#AFB42B",
+    cterm_color = "142",
+    name = "NestAppGateway",
+  },
   ["gentoo"] = {
     icon = "󰣨",
     color = "#b1abce",
@@ -4096,6 +4144,12 @@ local icons_by_operating_system = {
     color = "#7ab1db",
     cterm_color = "110",
     name = "NixOS",
+  },
+  ["nest-cli.json"] = {
+    icon = "",
+    color = "#E53935",
+    cterm_color = "196",
+    name = "NestCLIJSON",
   },
   ["nobara"] = {
     icon = "",
@@ -4300,6 +4354,12 @@ local icons_by_window_manager = {
     color = "#4f4f4f",
     cterm_color = "239",
     name = "BSPWM",
+  },
+  ["decorator.ts"] = {
+    icon = "",
+    color = "#AB47BC",
+    cterm_color = "133",
+    name = "NestAppDecorator",
   },
   ["dwm"] = {
     icon = "",
