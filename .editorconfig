@@ -7,3 +7,10 @@ end_of_line = lf
 [*.lua]
 indent_style = space
 indent_size = 2
+
+[*.sh]
+indent_style = space
+indent_size = 2
+
+[.luarc.json]
+indent_style = tab

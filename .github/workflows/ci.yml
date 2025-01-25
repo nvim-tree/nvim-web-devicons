@@ -34,10 +34,10 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: stylua
-        uses: JohnnyMorganz/stylua-action@v3
+        uses: JohnnyMorganz/stylua-action@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          version: "0.19"
+          version: "v2.0.2"
           args: --check lua scripts
 
   colors:
