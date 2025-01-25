@@ -1,5 +1,5 @@
 VIM_COLORTEMPLATE_VERSION = 2.2.3
-VIM_NVIM_ALIGN_VERSION = 0.14.0
+VIM_MINI_ALIGN_VERSION = 0.14.0
 
 all: colors style-check lint filetypes
 
@@ -25,7 +25,7 @@ vim-colortemplate:
 
 mini-align:
 	mkdir -p mini-align
-	curl -L https://github.com/echasnovski/mini.align/archive/refs/tags/v$(VIM_NVIM_ALIGN_VERSION).tar.gz | tar zx --directory mini-align --strip-components=1
+	curl -L https://github.com/echasnovski/mini.align/archive/refs/tags/v$(VIM_MINI_ALIGN_VERSION).tar.gz | tar zx --directory mini-align --strip-components=1
 
 style-check:
 	stylua . --check
