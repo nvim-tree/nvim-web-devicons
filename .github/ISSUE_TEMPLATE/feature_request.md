@@ -2,7 +2,7 @@
 name: Feature request
 about: Suggest an idea for nvim-web-devicons
 title: ''
-labels: enhancement
+type: enhancement
 assignees: ''
 
 ---
