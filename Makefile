@@ -1,9 +1,9 @@
 VIM_COLORTEMPLATE_VERSION = 2.2.3
 VIM_MINI_ALIGN_VERSION = 0.14.0
 
-all: colors style-check lint filetypes
+all: generate style-check lint filetypes
 
-colors: vim-colortemplate mini-align
+generate: vim-colortemplate mini-align
 	rm lua/nvim-web-devicons/light/icons_by_*.lua
 	cp lua/nvim-web-devicons/default/icons_by_*.lua lua/nvim-web-devicons/light/
 	nvim \
@@ -15,9 +15,9 @@ colors: vim-colortemplate mini-align
 		-c 'source scripts/align_spaces.lua' \
 		-c 'qall'
 
-colors-check: colors
-	git diff --exit-code lua/nvim-web-devicons/icons-default.lua
-	git diff --exit-code lua/nvim-web-devicons/icons-light.lua
+colors-check: generate
+	git diff --exit-code lua/nvim-web-devicons/default/
+	git diff --exit-code lua/nvim-web-devicons/light/
 
 vim-colortemplate:
 	mkdir -p vim-colortemplate
@@ -43,4 +43,4 @@ clean:
 	rm -rf vim-colortemplate
 	rm -rf mini-align
 
-.PHONY: all colors style-check style-fix lint filetypes
+.PHONY: all clean generate colors-check style-check style-fix lint filetypes
