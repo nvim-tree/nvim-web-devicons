@@ -1,4 +1,5 @@
--- Map of filetypes -> icon names
+---Maps filetypes to icon names
+---@type table<string, string>
 return {
   ["apl"] = "apl",
   ["asm"] = "asm",
