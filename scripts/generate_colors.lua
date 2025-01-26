@@ -130,6 +130,12 @@ for _, file in ipairs(_G.ICON_FILES) do
   vim.cmd("noswapfile drop lua/nvim-web-devicons/light/" .. file)
   io.write("Generating colors for light background: " .. file .. "...")
   iterate_colors(generate_for_light_bg)
+    vim.cmd(
+    string.format(
+      "1s/.*/& -- this file is generated from lua\\/nvim-web-devicons\\/default\\/%s, please do not edit",
+      file
+    )
+  )
   vim.cmd "silent! wall!"
   io.write " OK\n"
 end
