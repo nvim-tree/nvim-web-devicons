@@ -4,7 +4,7 @@ VIM_MINI_ALIGN_VERSION = 0.14.0
 all: generate style-check lint filetypes
 
 generate: vim-colortemplate mini-align
-	rm lua/nvim-web-devicons/light/icons_by_*.lua
+	rm -f lua/nvim-web-devicons/light/icons_by_*.lua
 	cp lua/nvim-web-devicons/default/icons_by_*.lua lua/nvim-web-devicons/light/
 	nvim \
 		--clean \
