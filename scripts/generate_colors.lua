@@ -2,7 +2,7 @@
 --
 -- The current working directory must be set to the repo root
 --
--- This file should be run from the shell with `make colors`
+-- This file should be run from the shell with `make generate`
 
 vim.opt.wrapscan = false -- don't wrap after reaching end of file
 
