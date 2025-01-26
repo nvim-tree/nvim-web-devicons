@@ -16,7 +16,7 @@ while read -r key; do
       exit_value=1
   fi
 done < <(
-  sed -nr '1,$!d; s/.*\["(.*)"\].*/\1/p' lua/nvim-web-devicons/default/icons_by_file_extension.lua
+  sed -nr 's/\s\s\["(.*)"\].*/\1/p' lua/nvim-web-devicons/default/icons_by_file_extension.lua
 )
 
 exit $exit_value
