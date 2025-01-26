@@ -1,4 +1,4 @@
-return {
+return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_window_manager.lua, please do not edit
   ["awesomewm"]     = { icon = "", color = "#3E4651", cterm_color = "238", name = "awesome"       },
   ["bspwm"]         = { icon = "", color = "#4F4F4F", cterm_color = "239", name = "BSPWM"         },
   ["dwm"]           = { icon = "", color = "#0D5980", cterm_color = "24",  name = "dwm"           },

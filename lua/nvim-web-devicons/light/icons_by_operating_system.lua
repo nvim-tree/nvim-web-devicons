@@ -1,4 +1,4 @@
-return {
+return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_operating_system.lua, please do not edit
   ["alma"]         = { icon = "", color = "#BF3437", cterm_color = "160", name = "Almalinux"              },
   ["alpine"]       = { icon = "", color = "#0D597F", cterm_color = "24",  name = "Alpine"                 },
   ["aosc"]         = { icon = "", color = "#C00000", cterm_color = "124", name = "AOSC"                   },

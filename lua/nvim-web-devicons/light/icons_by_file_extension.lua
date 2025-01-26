@@ -1,4 +1,4 @@
-return {
+return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_file_extension.lua, please do not edit
   ["3gp"]           = { icon = "", color = "#7E4C10", cterm_color = "94",  name = "3gp"                        },
   ["3mf"]           = { icon = "󰆧", color = "#5B5B5B", cterm_color = "240", name = "3DObjectFile"               },
   ["7z"]            = { icon = "", color = "#76520C", cterm_color = "94",  name = "7z"                         },

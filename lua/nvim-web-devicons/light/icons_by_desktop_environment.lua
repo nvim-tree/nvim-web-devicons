@@ -1,4 +1,4 @@
-return {
+return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_desktop_environment.lua, please do not edit
   ["budgie"]   = { icon = "", color = "#4E5361", cterm_color = "240", name = "Budgie"    },
   ["cinnamon"] = { icon = "", color = "#93451F", cterm_color = "124", name = "Cinnamon"  },
   ["gnome"]    = { icon = "", color = "#333333", cterm_color = "236", name = "GNOME"     },
