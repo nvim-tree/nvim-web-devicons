@@ -48,7 +48,13 @@ or with [lazy.nvim](https://github.com/folke/lazy.nvim)
 
 Additional icons may be added for icons that are present in Nerd Fonts: use the [Cheat Sheet](https://www.nerdfonts.com/cheat-sheet) search for available icons.
 
-Please submit a Pull Request to add an icon, see [CONTRIBUTING](CONTRIBUTING.md)
+> [!IMPORTANT]
+> If the icon you need is not available on Nerd Fonts you first need to make a
+> PR to a project that feeds glyphs to Nerd Fonts. Probably the most adequate
+> project to contribute is <https://github.com/devicons/devicon>.
+> Take into account that **months** can pass before the icon is available on the
+> Nerd Fonts project, once there feel free to open a PR on this project, see 
+> [CONTRIBUTING](CONTRIBUTING.md)
 
 ## Usage
 
