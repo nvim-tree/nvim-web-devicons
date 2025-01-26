@@ -76,6 +76,13 @@ Each icon must have the following structure (this is an example):
   ["lua"]           = { icon = "", color = "#51A0CF", cterm_color = "74",  name = "Lua"                        },
 ```
 
+> [!IMPORTANT]
+> If the icon you need is not available on Nerd Fonts you first need to make a
+> PR to a project that feeds glyphs to Nerd Fonts. Probably the most adequate
+> project to contribute is <https://github.com/devicons/devicon>.
+> Take into account that **months** can pass before the icon is available on the
+> Nerd Fonts project, once there feel free to open a PR on this project.
+
 ***Key/value pairs must appear in the same exact order!***
 
 - `color` must contain a color in the html notation
@@ -143,9 +150,9 @@ See also [The Conventional Commits ultimate cheatsheet](https://gist.github.com/
 
 ## Browser Font
 
-It is useful to see the actual glyphs in the pull request. That can be done by setting the browser font to your nerd font.
+It is useful to see the actual glyphs in the pull request. That can be done by setting the browser font to your Nerd Font.
 
-Using firefox:
+Using Firefox:
 
 - Settings -> General
 - Fonts -> Advanced
