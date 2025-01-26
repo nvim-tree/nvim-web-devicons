@@ -11,4 +11,4 @@ return {
   ["river"]         = { icon = "", color = "#000000", cterm_color = "16",  name = "river"         },
   ["sway"]          = { icon = "", color = "#68751C", cterm_color = "64",  name = "Sway"          },
   ["xmonad"]        = { icon = "", color = "#FD4D5D", cterm_color = "203", name = "xmonad"        },
-}
+} --[[@as table<string, Icon>]]

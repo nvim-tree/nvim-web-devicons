@@ -1,11 +1,20 @@
 local M = {}
 
+---@alias iconName string Name of the icon
+
+---@class Icon
+---@field icon string Nerd-font glyph
+---@field color string Hex color code
+---@field cterm_color string cterm color code
+---@field name iconName
+
 -- NOTE: When adding new icons, remember to add an entry to the `filetypes` table, if applicable.
 local icons, icons_by_filename, icons_by_file_extension, icons_by_operating_system
 local icons_by_desktop_environment, icons_by_window_manager
 
 local filetypes = require "nvim-web-devicons.filetypes"
 
+---@type Icon
 local default_icon = {
   icon = "",
   color = "#6d8086",

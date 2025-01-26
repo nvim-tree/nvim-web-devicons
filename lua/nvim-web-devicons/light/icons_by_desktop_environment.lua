@@ -7,4 +7,4 @@ return {
   ["mate"]     = { icon = "", color = "#4E6D2E", cterm_color = "22",  name = "MATE"      },
   ["plasma"]   = { icon = "", color = "#1467B7", cterm_color = "25",  name = "KDEPlasma" },
   ["xfce"]     = { icon = "", color = "#0080A7", cterm_color = "31",  name = "Xfce"      },
-}
+} --[[@as table<string, Icon>]]

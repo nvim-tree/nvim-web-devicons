@@ -1,5 +1,5 @@
 ---Maps filetypes to icon names
----@type table<string, string>
+---@type table<string, iconName>
 return {
   ["apl"] = "apl",
   ["asm"] = "asm",

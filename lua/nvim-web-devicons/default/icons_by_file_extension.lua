@@ -463,4 +463,4 @@ return {
   ["zsh"]           = { icon = "", color = "#89E051", cterm_color = "113", name = "Zsh"                        },
   ["zst"]           = { icon = "", color = "#ECA517", cterm_color = "214", name = "Zst"                        },
   ["🔥"]            = { icon = "", color = "#FF4C1F", cterm_color = "196", name = "Mojo"                       },
-}
+} --[[@as table<string, Icon>]]

@@ -59,4 +59,4 @@ return {
   ["windows"]      = { icon = "", color = "#007BB3", cterm_color = "67",  name = "Windows"                },
   ["xerolinux"]    = { icon = "", color = "#5B5F97", cterm_color = "60",  name = "XeroLinux"              },
   ["zorin"]        = { icon = "", color = "#0F79AE", cterm_color = "67",  name = "Zorin"                  },
-}
+} --[[@as table<string, Icon>]]

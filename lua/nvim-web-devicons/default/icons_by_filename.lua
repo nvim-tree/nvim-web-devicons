@@ -180,4 +180,4 @@ return {
   ["xmonad.hs"]                  = { icon = "", color = "#FD4D5D", cterm_color = "203", name = "xmonad"                  },
   ["xorg.conf"]                  = { icon = "", color = "#E54D18", cterm_color = "196", name = "XorgConf"                },
   ["xsettingsd.conf"]            = { icon = "", color = "#E54D18", cterm_color = "196", name = "XSettingsdConf"          },
-}
+} --[[@as table<string, Icon>]]
