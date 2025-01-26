@@ -10,4 +10,4 @@ read_globals = {
   "MiniAlign",
 }
 
-files["lua/nvim-web-devicons/icons-*.lua"].max_line_length = 200
+files["lua/nvim-web-devicons/*/icons_*.lua"].max_line_length = 200

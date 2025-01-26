@@ -2,7 +2,7 @@
 --
 -- The current working directory must be set to the repo root
 --
--- This file should be run from the shell with `make colors`
+-- This file should be run from the shell with `make generate`
 
 vim.opt.wrapscan = false -- don't wrap after reaching end of file
 
@@ -16,8 +16,19 @@ local function error_exit(msg, rc)
   vim.cmd("cq " .. rc)
 end
 
-if fn.filereadable "lua/nvim-web-devicons/icons-default.lua" == 0 then
-  error_exit("lua/nvim-web-devicons/icons-default.lua not found", 1)
+_G.ICON_FILES = {
+  "icons_by_desktop_environment.lua",
+  "icons_by_file_extension.lua",
+  "icons_by_filename.lua",
+  "icons_by_operating_system.lua",
+  "icons_by_window_manager.lua",
+}
+
+for _, file in ipairs(_G.ICON_FILES) do
+  local f = "lua/nvim-web-devicons/default/" .. file
+  if fn.filereadable(f) == 0 then
+    error_exit(f, 1)
+  end
 end
 
 if not jit then
@@ -104,23 +115,27 @@ end
 --------------------------------------------------------------------------------
 -- Update cterm_color for dark background
 --------------------------------------------------------------------------------
-vim.cmd "noswapfile drop lua/nvim-web-devicons/icons-default.lua"
-
-io.write "Generating cterm colors for dark background..."
-
-iterate_colors(generate_cterm)
-
-vim.cmd "silent! wall!"
-io.write " OK\n"
+for _, file in ipairs(_G.ICON_FILES) do
+  vim.cmd(string.format("noswapfile drop lua/nvim-web-devicons/default/%s", file))
+  io.write(string.format("Generating cterm colors for dark background: %s...", file))
+  iterate_colors(generate_cterm)
+  vim.cmd "silent! wall!"
+  io.write " OK\n"
+end
 
 --------------------------------------------------------------------------------
 -- Update color and cterm_color for light backgrounds
 --------------------------------------------------------------------------------
-vim.cmd "noswapfile drop lua/nvim-web-devicons/icons-light.lua"
-
-io.write "Generating colors for light background..."
-
-iterate_colors(generate_for_light_bg)
-
-vim.cmd "silent! wall!"
-io.write " OK\n"
+for _, file in ipairs(_G.ICON_FILES) do
+  vim.cmd("noswapfile drop lua/nvim-web-devicons/light/" .. file)
+  io.write("Generating colors for light background: " .. file .. "...")
+  iterate_colors(generate_for_light_bg)
+  vim.cmd(
+    string.format(
+      "1s/.*/& -- this file is generated from lua\\/nvim-web-devicons\\/default\\/%s, please do not edit",
+      file
+    )
+  )
+  vim.cmd "silent! wall!"
+  io.write " OK\n"
+end
