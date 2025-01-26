@@ -1,3 +1,9 @@
+-- Plugin echasnovski/mini.align must be available on &runtimepath
+--
+-- The current working directory must be set to the repo root
+--
+-- This file should be run from the shell with `make generate`
+
 require("mini.align").setup {}
 
 -- https://github.com/echasnovski/mini.align/blob/main/lua/mini/align.lua#L633C9-L640C8

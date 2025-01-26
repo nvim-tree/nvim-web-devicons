@@ -11,8 +11,8 @@ generate: vim-colortemplate mini-align
 		--headless \
 		--cmd "set rtp^=vim-colortemplate" \
 		--cmd "set rtp^=mini-align" \
-		-c 'source scripts/generate_colors.lua' \
-		-c 'source scripts/align_spaces.lua' \
+		-c 'source scripts/generate.lua' \
+		-c 'source scripts/align.lua' \
 		-c 'qall'
 
 colors-check: generate
