@@ -44,6 +44,20 @@ or with [lazy.nvim](https://github.com/folke/lazy.nvim)
 
 [![LuaRocks](https://img.shields.io/luarocks/v/nvim-tree/nvim-web-devicons?logo=lua&color=purple)](https://luarocks.org/modules/nvim-tree/nvim-web-devicons)
 
+## Additional Icons
+
+Additional icons may be added for icons that are present in Nerd Fonts: use the [Cheat Sheet](https://www.nerdfonts.com/cheat-sheet) search for available icons.
+
+PRs are always welcome! Please see [CONTRIBUTING](CONTRIBUTING.md)
+
+> [!IMPORTANT]
+> If the icon you need is not available on Nerd Fonts you first need to make a
+> PR to a project that feeds glyphs to Nerd Fonts. Probably the most adequate
+> project to contribute is <https://github.com/devicons/devicon>.
+> Take into account that **months** can pass before the icon is available on the
+> Nerd Fonts project, once there feel free to open a PR on this project, see 
+> [CONTRIBUTING](CONTRIBUTING.md)
+
 ## Usage
 
 ### Viewing

@@ -1,0 +1,58 @@
+name: Bug report
+description: Report a problem
+type: bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before reporting:
+        * search [existing issues](https://github.com/nvim-tree/nvim-web-devicons/issues)
+        * ensure that nvim-web-devicons is updated to the latest version
+
+        Please submit a Pull Request to add an icon, see [CONTRIBUTING.md](https://github.com/nvim-tree/nvim-web-devicons/blob/master/CONTRIBUTING.md)
+  - type: textarea
+    attributes:
+      label: "Description"
+      description: "A short description of the problem you are reporting."
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "Neovim version"
+      description: "Output of `nvim --version`"
+      placeholder: |
+        NVIM v0.10.3
+        Build type: RelWithDebInfo
+        LuaJIT 2.1.1731601260
+      render: text
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: "nvim-web-devicons version"
+      description: "`cd <your-package-directory>/nvim-web-devicons.lua ; git log --format='%h' -n 1`"
+      placeholder: |
+        commit hash
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: "Operating system and version"
+      placeholder: "Linux 5.16.11-arch1-1, macOS 11.5, Windows 10"
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: "Windows variant"
+      placeholder: "WSL, PowerShell, cygwin, msys"
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: "Expected behavior"
+      description: "A description of the behavior you expected:"
+  - type: textarea
+    attributes:
+      label: "Actual behavior"
+      description: "Observed behavior (may optionally include images, videos or a screencast)."
+ 
