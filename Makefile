@@ -13,11 +13,13 @@ generate: vim-colortemplate mini-align
 		--cmd "set rtp^=mini-align" \
 		-c 'source scripts/generate.lua' \
 		-c 'source scripts/align.lua' \
+		-c 'source scripts/sort_filetypes.lua' \
 		-c 'qall'
 
 colors-check: generate
 	git diff --exit-code lua/nvim-web-devicons/default/
 	git diff --exit-code lua/nvim-web-devicons/light/
+	git diff --exit-code lua/nvim-web-devicons/filetypes.lua
 
 vim-colortemplate:
 	mkdir -p vim-colortemplate
