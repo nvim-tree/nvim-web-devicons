@@ -125,6 +125,7 @@ return {
   ["nim"] = "nim",
   ["nix"] = "nix",
   ["node"] = "node_modules",
+  ["norg"] = "norg",
   ["nu"] = "nu",
   ["obj"] = "obj",
   ["ocaml"] = "ml",
