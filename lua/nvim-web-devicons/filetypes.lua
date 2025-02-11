@@ -202,6 +202,7 @@ return {
   ["txt"] = "txt",
   ["typescript"] = "ts",
   ["typescriptreact"] = "tsx",
+  ["typst"] = "typ",
   ["unlicense"] = "unlicense",
   ["vagrantfile"] = "vagrantfile$",
   ["vala"] = "vala",
