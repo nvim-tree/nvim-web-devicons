@@ -191,9 +191,9 @@ local function get_highlight_ctermfg(icon_data)
 
   if vim.fn.has "nvim-0.9" == 1 then
     --- @diagnostic disable-next-line: undefined-field  vim.api.keyset.hl_info specifies cterm, not ctermfg
-    return vim.api.nvim_get_hl(0, { name = higroup, link = false }).ctermfg
+    return tostring(vim.api.nvim_get_hl(0, { name = higroup, link = false }).ctermfg)
   else
-    return vim.api.nvim_get_hl_by_name(higroup, false).foreground ---@diagnostic disable-line: deprecated
+    return tostring(vim.api.nvim_get_hl_by_name(higroup, false).foreground) ---@diagnostic disable-line: deprecated
   end
 end
 
