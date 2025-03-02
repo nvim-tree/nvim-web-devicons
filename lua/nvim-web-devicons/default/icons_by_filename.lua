@@ -69,6 +69,7 @@ return {
   ["build"]                      = { icon = "", color = "#89E051", cterm_color = "113", name = "BazelBuild"              },
   ["build.gradle"]               = { icon = "", color = "#005F87", cterm_color = "24",  name = "GradleBuildScript"       },
   ["build.zig.zon"]              = { icon = "", color = "#F69A1B", cterm_color = "172", name = "ZigObjectNotation"       },
+  ["bun.lock"]                   = { icon = "", color = "#EADCD1", cterm_color = "253", name = "BunLockfile"             },
   ["bun.lockb"]                  = { icon = "", color = "#EADCD1", cterm_color = "253", name = "BunLockfile"             },
   ["cantorrc"]                   = { icon = "", color = "#1C99F3", cterm_color = "32",  name = "Cantorrc"                },
   ["checkhealth"]                = { icon = "󰓙", color = "#75B4FB", cterm_color = "75",  name = "Checkhealth"             },

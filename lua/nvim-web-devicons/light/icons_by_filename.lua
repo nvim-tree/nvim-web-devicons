@@ -69,6 +69,7 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   ["build"]                      = { icon = "", color = "#447028", cterm_color = "22",  name = "BazelBuild"              },
   ["build.gradle"]               = { icon = "", color = "#005F87", cterm_color = "24",  name = "GradleBuildScript"       },
   ["build.zig.zon"]              = { icon = "", color = "#7B4D0E", cterm_color = "94",  name = "ZigObjectNotation"       },
+  ["bun.lock"]                   = { icon = "", color = "#4E4946", cterm_color = "239", name = "BunLockfile"             },
   ["bun.lockb"]                  = { icon = "", color = "#4E4946", cterm_color = "239", name = "BunLockfile"             },
   ["cantorrc"]                   = { icon = "", color = "#1573B6", cterm_color = "32",  name = "Cantorrc"                },
   ["checkhealth"]                = { icon = "󰓙", color = "#3A5A7E", cterm_color = "24",  name = "Checkhealth"             },
