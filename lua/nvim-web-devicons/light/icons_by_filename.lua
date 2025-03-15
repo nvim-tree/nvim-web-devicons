@@ -176,6 +176,8 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   ["webpack"]                    = { icon = "󰜫", color = "#36677C", cterm_color = "24",  name = "Webpack"                 },
   ["weston.ini"]                 = { icon = "", color = "#805E00", cterm_color = "94",  name = "Weston"                  },
   ["workspace"]                  = { icon = "", color = "#447028", cterm_color = "22",  name = "BazelWorkspace"          },
+  ["wrangler.jsonc"]             = { icon = "", color = "#A35615", cterm_color = "130", name = "WranglerConfig"          },
+  ["wrangler.toml"]              = { icon = "", color = "#A35615", cterm_color = "130", name = "WranglerConfig"          },
   ["xmobarrc"]                   = { icon = "", color = "#A9333E", cterm_color = "131", name = "xmonad"                  },
   ["xmobarrc.hs"]                = { icon = "", color = "#A9333E", cterm_color = "131", name = "xmonad"                  },
   ["xmonad.hs"]                  = { icon = "", color = "#A9333E", cterm_color = "131", name = "xmonad"                  },
