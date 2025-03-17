@@ -87,6 +87,7 @@ return {
   ["dart"]          = { icon = "", color = "#03589C", cterm_color = "25",  name = "Dart"                       },
   ["db"]            = { icon = "", color = "#DAD8D8", cterm_color = "188", name = "Db"                         },
   ["dconf"]         = { icon = "", color = "#FFFFFF", cterm_color = "231", name = "Dconf"                      },
+  ["dockerignore"]  = { icon = "󰡨", color = "#FFFFFF", cterm_color = "231", name = "DockerIgnore"                      },
   ["desktop"]       = { icon = "", color = "#563D7C", cterm_color = "54",  name = "DesktopEntry"               },
   ["diff"]          = { icon = "", color = "#41535B", cterm_color = "239", name = "Diff"                       },
   ["dll"]           = { icon = "", color = "#4D2C0B", cterm_color = "52",  name = "Dll"                        },
