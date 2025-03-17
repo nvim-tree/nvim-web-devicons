@@ -91,6 +91,7 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   ["diff"]          = { icon = "", color = "#41535B", cterm_color = "239", name = "Diff"                       },
   ["dll"]           = { icon = "", color = "#4D2C0B", cterm_color = "52",  name = "Dll"                        },
   ["doc"]           = { icon = "󰈬", color = "#185ABD", cterm_color = "26",  name = "Doc"                        },
+  ["dockerignore"]  = { icon = "󰡨", color = "#2E5F99", cterm_color = "25",  name = "DockerIgnore"               },
   ["docx"]          = { icon = "󰈬", color = "#185ABD", cterm_color = "26",  name = "Docx"                       },
   ["dot"]           = { icon = "󱁉", color = "#244A6A", cterm_color = "24",  name = "Dot"                        },
   ["download"]      = { icon = "", color = "#226654", cterm_color = "23",  name = "Download"                   },

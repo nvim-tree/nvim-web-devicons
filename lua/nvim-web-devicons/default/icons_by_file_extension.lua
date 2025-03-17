@@ -91,6 +91,7 @@ return {
   ["diff"]          = { icon = "", color = "#41535B", cterm_color = "239", name = "Diff"                       },
   ["dll"]           = { icon = "", color = "#4D2C0B", cterm_color = "52",  name = "Dll"                        },
   ["doc"]           = { icon = "󰈬", color = "#185ABD", cterm_color = "26",  name = "Doc"                        },
+  ["dockerignore"]  = { icon = "󰡨", color = "#458EE6", cterm_color = "68",  name = "DockerIgnore"               },
   ["docx"]          = { icon = "󰈬", color = "#185ABD", cterm_color = "26",  name = "Docx"                       },
   ["dot"]           = { icon = "󱁉", color = "#30638E", cterm_color = "24",  name = "Dot"                        },
   ["download"]      = { icon = "", color = "#44CDA8", cterm_color = "43",  name = "Download"                   },
