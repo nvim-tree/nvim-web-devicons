@@ -132,7 +132,6 @@ return {
   ["odin"] = "odin",
   ["openscad"] = "scad",
   ["opus"] = "opus",
-  ["org"] = "org",
   ["otf"] = "otf",
   ["pck"] = "pck",
   ["pdf"] = "pdf",

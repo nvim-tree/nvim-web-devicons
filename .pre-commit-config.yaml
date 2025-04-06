@@ -21,7 +21,7 @@ repos:
       - id: colors
         name: colors
         description: Ensures Light Color Scheme version has been generated.
-        entry: make colors-check
+        entry: make colors
         language: system
         require_serial: true
         pass_filenames: false
