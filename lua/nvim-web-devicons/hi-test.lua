@@ -1,7 +1,7 @@
 ---Run a test similar to :so $VIMRUNTIME/syntax/hitest.vim
 ---Display all icons and their group highlighted, followed by the concrete definition
 
-local namespace_hi_test_id = vim.api.nvim_create_namespace("NvimWebDeviconsHiTest")
+local namespace_hi_test_id = vim.api.nvim_create_namespace "NvimWebDeviconsHiTest"
 
 ---@class (exact) IconDisplay for :NvimTreeHiTest
 ---@field tag string filename, os or extension
@@ -47,8 +47,8 @@ function IconDisplay:render(bufnr, max_tag_len, max_group_len, l)
   local text = string.format(fmt, self.icon, self.tag, self.group, self.def)
 
   vim.api.nvim_buf_set_lines(bufnr, l, -1, true, { text })
-  if vim.fn.has("nvim-0.11") == 1 and vim.hl and vim.hl.range then
-    vim.hl.range(bufnr, namespace_hi_test_id, self.group, { l, 0 }, { l, -1, }, {})
+  if vim.fn.has "nvim-0.11" == 1 and vim.hl and vim.hl.range then
+    vim.hl.range(bufnr, namespace_hi_test_id, self.group, { l, 0 }, { l, -1 }, {})
   else
     vim.api.nvim_buf_add_highlight(bufnr, -1, self.group, l, 0, -1) ---@diagnostic disable-line: deprecated
   end
