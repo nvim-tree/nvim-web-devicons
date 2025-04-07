@@ -11,6 +11,7 @@ local M = {}
 -- NOTE: When adding new icons, remember to add an entry to the `filetypes` table, if applicable.
 local icons, icons_by_filename, icons_by_file_extension, icons_by_operating_system
 local icons_by_desktop_environment, icons_by_window_manager
+local user_icons
 
 local filetypes = require "nvim-web-devicons.filetypes"
 
@@ -197,37 +198,9 @@ local function get_highlight_ctermfg(icon_data)
   end
 end
 
-local loaded = false
-
-function M.has_loaded()
-  return loaded
-end
-
-local if_nil = vim.F.if_nil
-function M.setup(opts)
-  if loaded then
+local function apply_user_icons()
+  if type(user_icons) ~= "table" then
     return
-  end
-
-  loaded = true
-
-  local user_icons = opts or {}
-
-  if user_icons.default then
-    global_opts.default = true
-  end
-
-  if user_icons.strict then
-    global_opts.strict = true
-  end
-
-  global_opts.color_icons = if_nil(user_icons.color_icons, global_opts.color_icons)
-
-  if user_icons.variant == "light" or user_icons.variant == "dark" then
-    global_opts.variant = user_icons.variant
-
-    -- Reload the icons after setting variant option
-    refresh_icons()
   end
 
   if user_icons.override and user_icons.override.default_icon then
@@ -283,6 +256,42 @@ function M.setup(opts)
   end
 
   icons[1] = default_icon
+end
+
+local loaded = false
+
+function M.has_loaded()
+  return loaded
+end
+
+local if_nil = vim.F.if_nil
+function M.setup(opts)
+  if loaded then
+    return
+  end
+
+  loaded = true
+
+  user_icons = opts or {}
+
+  if user_icons.default then
+    global_opts.default = true
+  end
+
+  if user_icons.strict then
+    global_opts.strict = true
+  end
+
+  global_opts.color_icons = if_nil(user_icons.color_icons, global_opts.color_icons)
+
+  if user_icons.variant == "light" or user_icons.variant == "dark" then
+    global_opts.variant = user_icons.variant
+
+    -- Reload the icons after setting variant option
+    refresh_icons()
+  end
+
+  apply_user_icons()
 
   M.set_up_highlights()
 
@@ -419,14 +428,14 @@ function M.get_icon_cterm_color_by_filetype(ft, opts)
   return M.get_icon_cterm_color(name or "", nil, opts)
 end
 
-function M.set_icon(user_icons)
-  icons = vim.tbl_extend("force", icons, user_icons or {})
-  global_opts.override = vim.tbl_extend("force", global_opts.override, user_icons or {})
+function M.set_icon(user_icons_opts)
+  icons = vim.tbl_extend("force", icons, user_icons_opts or {})
+  global_opts.override = vim.tbl_extend("force", global_opts.override, user_icons_opts or {})
   if not global_opts.color_icons then
     return
   end
 
-  for _, icon_data in pairs(user_icons) do
+  for _, icon_data in pairs(user_icons_opts) do
     set_up_highlight(icon_data)
   end
 end
@@ -447,6 +456,7 @@ refresh_icons()
 
 function M.refresh()
   refresh_icons()
+  apply_user_icons()
   M.set_up_highlights(true)
 end
 
