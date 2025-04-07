@@ -1,12 +1,15 @@
 ---Run a test similar to :so $VIMRUNTIME/syntax/hitest.vim
 ---Display all icons and their group highlighted, followed by the concrete definition
---
----@class IconDisplay for :NvimTreeHiTest
+
+local namespace_hi_test_id = vim.api.nvim_create_namespace "NvimWebDeviconsHiTest"
+
+---@class (exact) IconDisplay for :NvimTreeHiTest
 ---@field tag string filename, os or extension
 ---@field name string name without prefix
 ---@field icon string icon itself
 ---@field group string|nil :hi group name
 ---@field def string|nil :hi concrete definition
+---@field private __index IconDisplay? TODO migrate to classic
 local IconDisplay = {}
 
 ---@param o IconDisplay
@@ -44,7 +47,11 @@ function IconDisplay:render(bufnr, max_tag_len, max_group_len, l)
   local text = string.format(fmt, self.icon, self.tag, self.group, self.def)
 
   vim.api.nvim_buf_set_lines(bufnr, l, -1, true, { text })
-  vim.api.nvim_buf_add_highlight(bufnr, -1, self.group, l, 0, -1)
+  if vim.fn.has "nvim-0.11" == 1 and vim.hl and vim.hl.range then
+    vim.hl.range(bufnr, namespace_hi_test_id, self.group, { l, 0 }, { l, -1 }, {})
+  else
+    vim.api.nvim_buf_add_highlight(bufnr, -1, self.group, l, 0, -1) ---@diagnostic disable-line: deprecated
+  end
 
   return l + 1
 end
