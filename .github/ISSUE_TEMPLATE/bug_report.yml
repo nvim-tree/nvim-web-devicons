@@ -8,6 +8,8 @@ body:
         Before reporting:
         * search [existing issues](https://github.com/nvim-tree/nvim-web-devicons/issues)
         * ensure that nvim-web-devicons is updated to the latest version
+        * please ensure that you are running the latest version of a [Nerd Font](https://www.nerdfonts.com/)
+        * windows users please see [Windows and WSL not rendering icons properly on some terminals](https://github.com/nvim-tree/nvim-web-devicons?tab=readme-ov-file#windows-and-wsl-not-rendering-icons-properly-on-some-terminals)
 
         Please submit a Pull Request to add an icon, see [CONTRIBUTING.md](https://github.com/nvim-tree/nvim-web-devicons/blob/master/CONTRIBUTING.md)
   - type: textarea
