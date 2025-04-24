@@ -115,6 +115,7 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   ["gulpfile.ts"]                = { icon = "", color = "#992E33", cterm_color = "88",  name = "Gulpfile"                },
   ["hypridle.conf"]              = { icon = "", color = "#008082", cterm_color = "30",  name = "Hypridle"                },
   ["hyprland.conf"]              = { icon = "", color = "#008082", cterm_color = "30",  name = "Hyprland"                },
+  ["hyprlandd.conf"]             = { icon = "", color = "#008082", cterm_color = "30",  name = "Hyprlandd"               },
   ["hyprlock.conf"]              = { icon = "", color = "#008082", cterm_color = "30",  name = "Hyprlock"                },
   ["hyprpaper.conf"]             = { icon = "", color = "#008082", cterm_color = "30",  name = "Hyprpaper"               },
   ["i18n.config.js"]             = { icon = "󰗊", color = "#515987", cterm_color = "60",  name = "I18nConfig"              },
