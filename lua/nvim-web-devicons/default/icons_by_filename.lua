@@ -115,6 +115,7 @@ return {
   ["gulpfile.ts"]                = { icon = "", color = "#CC3E44", cterm_color = "167", name = "Gulpfile"                },
   ["hypridle.conf"]              = { icon = "", color = "#00AAAE", cterm_color = "37",  name = "Hypridle"                },
   ["hyprland.conf"]              = { icon = "", color = "#00AAAE", cterm_color = "37",  name = "Hyprland"                },
+  ["hyprlandd.conf"]             = { icon = "", color = "#00AAAE", cterm_color = "37",  name = "Hyprlandd"               },
   ["hyprlock.conf"]              = { icon = "", color = "#00AAAE", cterm_color = "37",  name = "Hyprlock"                },
   ["hyprpaper.conf"]             = { icon = "", color = "#00AAAE", cterm_color = "37",  name = "Hyprpaper"               },
   ["i18n.config.js"]             = { icon = "󰗊", color = "#7986CB", cterm_color = "104", name = "I18nConfig"              },
