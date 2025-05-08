@@ -75,7 +75,7 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   ["cshtml"]         = { icon = "󱦗", color = "#512BD4", cterm_color = "56",  name = "RazorPage"                  },
   ["cson"]           = { icon = "", color = "#666620", cterm_color = "58",  name = "Cson"                       },
   ["csproj"]         = { icon = "󰪮", color = "#512BD4", cterm_color = "56",  name = "CSharpProject"              },
-  ["css"]            = { icon = "", color = "#2C6EA3", cterm_color = "24",  name = "Css"                        },
+  ["css"]            = { icon = "", color = "#2C6EA3", cterm_color = "24",  name = "Css"                        },
   ["csv"]            = { icon = "", color = "#447028", cterm_color = "22",  name = "Csv"                        },
   ["cts"]            = { icon = "", color = "#36677C", cterm_color = "24",  name = "Cts"                        },
   ["cu"]             = { icon = "", color = "#447028", cterm_color = "22",  name = "cuda"                       },
