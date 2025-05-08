@@ -156,7 +156,7 @@ return {
   ["glb"]            = { icon = "", color = "#FFB13B", cterm_color = "214", name = "BinaryGLTF"                 },
   ["gleam"]          = { icon = "", color = "#FFAFF3", cterm_color = "219", name = "Gleam"                      },
   ["gnumakefile"]    = { icon = "", color = "#6D8086", cterm_color = "66",  name = "Makefile"                   },
-  ["go"]             = { icon = "", color = "#519ABA", cterm_color = "74",  name = "Go"                         },
+  ["go"]             = { icon = "", color = "#00ADD8", cterm_color = "38",  name = "Go"                         },
   ["godot"]          = { icon = "", color = "#6D8086", cterm_color = "66",  name = "GodotProject"               },
   ["gpr"]            = { icon = "", color = "#6D8086", cterm_color = "66",  name = "GPRBuildProject"            },
   ["gql"]            = { icon = "", color = "#E535AB", cterm_color = "199", name = "GraphQL"                    },
