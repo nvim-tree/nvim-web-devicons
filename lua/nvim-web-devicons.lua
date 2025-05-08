@@ -200,6 +200,10 @@ local function get_highlight_ctermfg(icon_data)
 end
 
 local function apply_user_icons()
+  if type(user_icons) ~= "table" then
+    return
+  end
+
   if user_icons.override and user_icons.override.default_icon then
     default_icon = user_icons.override.default_icon
   end
