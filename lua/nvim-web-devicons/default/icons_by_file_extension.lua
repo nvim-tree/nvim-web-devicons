@@ -416,7 +416,7 @@ return {
   ["tf"]             = { icon = "", color = "#5F43E9", cterm_color = "93",  name = "Terraform"                  },
   ["tfvars"]         = { icon = "", color = "#5F43E9", cterm_color = "93",  name = "TFVars"                     },
   ["tgz"]            = { icon = "", color = "#ECA517", cterm_color = "214", name = "Tgz"                        },
-  ["tmpl"]           = { icon = "󰢪", color = "#4051B5", cterm_color = "61",  name = "ChezmoiTemplate"            },
+  ["tmpl"]           = { icon = "󰢪", color = "#4051B5", cterm_color = "26",  name = "ChezmoiTemplate"            },
   ["tmux"]           = { icon = "", color = "#14BA19", cterm_color = "34",  name = "Tmux"                       },
   ["toml"]           = { icon = "", color = "#9C4221", cterm_color = "124", name = "Toml"                       },
   ["torrent"]        = { icon = "", color = "#44CDA8", cterm_color = "43",  name = "Torrent"                    },
