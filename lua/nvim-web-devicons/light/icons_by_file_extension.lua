@@ -156,7 +156,7 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   ["glb"]            = { icon = "", color = "#80581E", cterm_color = "94",  name = "BinaryGLTF"                 },
   ["gleam"]          = { icon = "", color = "#553A51", cterm_color = "53",  name = "Gleam"                      },
   ["gnumakefile"]    = { icon = "", color = "#526064", cterm_color = "59",  name = "Makefile"                   },
-  ["go"]             = { icon = "", color = "#36677C", cterm_color = "24",  name = "Go"                         },
+  ["go"]             = { icon = "", color = "#0082A2", cterm_color = "31",  name = "Go"                         },
   ["godot"]          = { icon = "", color = "#526064", cterm_color = "59",  name = "GodotProject"               },
   ["gpr"]            = { icon = "", color = "#526064", cterm_color = "59",  name = "GPRBuildProject"            },
   ["gql"]            = { icon = "", color = "#AC2880", cterm_color = "126", name = "GraphQL"                    },
