@@ -75,7 +75,7 @@ return {
   ["cshtml"]         = { icon = "󱦗", color = "#512BD4", cterm_color = "56",  name = "RazorPage"                  },
   ["cson"]           = { icon = "", color = "#CBCB41", cterm_color = "185", name = "Cson"                       },
   ["csproj"]         = { icon = "󰪮", color = "#512BD4", cterm_color = "56",  name = "CSharpProject"              },
-  ["css"]            = { icon = "", color = "#42A5F5", cterm_color = "75",  name = "Css"                        },
+  ["css"]            = { icon = "", color = "#663399", cterm_color = "91",  name = "Css"                        },
   ["csv"]            = { icon = "", color = "#89E051", cterm_color = "113", name = "Csv"                        },
   ["cts"]            = { icon = "", color = "#519ABA", cterm_color = "74",  name = "Cts"                        },
   ["cu"]             = { icon = "", color = "#89E051", cterm_color = "113", name = "cuda"                       },
