@@ -11,6 +11,10 @@ Provides [Nerd Font](https://www.nerdfonts.com/) [^1] icons (glyphs) for use by 
 
 A `lua` fork of [vim-devicons](https://github.com/ryanoasis/vim-devicons).
 
+> [!TIP]
+> nvim-web-devicons adds new icons as they are introduced to Nerd Fonts.
+> Please ensure that you are using the latest version of the font as newly introuduced icons may display incorrectly or as an "unknown character".
+
 > [!IMPORTANT]
 > Nerd fonts moved some symbols with version 3.0. Version 2.3 is meant for transition,
 > supporting both version 2 and version 3 icons.
