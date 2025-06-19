@@ -336,6 +336,7 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   ["r"]              = { icon = "󰟔", color = "#1A4C8C", cterm_color = "25",  name = "R"                          },
   ["rake"]           = { icon = "", color = "#701516", cterm_color = "52",  name = "Rake"                       },
   ["rar"]            = { icon = "", color = "#76520C", cterm_color = "94",  name = "Rar"                        },
+  ["rasi"]           = { icon = "", color = "#666620", cterm_color = "58",  name = "Rasi"                       },
   ["razor"]          = { icon = "󱦘", color = "#512BD4", cterm_color = "56",  name = "RazorPage"                  },
   ["rb"]             = { icon = "", color = "#701516", cterm_color = "52",  name = "Rb"                         },
   ["res"]            = { icon = "", color = "#992E33", cterm_color = "88",  name = "ReScript"                   },
