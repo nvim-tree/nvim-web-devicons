@@ -336,6 +336,7 @@ return {
   ["r"]              = { icon = "󰟔", color = "#2266BA", cterm_color = "25",  name = "R"                          },
   ["rake"]           = { icon = "", color = "#701516", cterm_color = "52",  name = "Rake"                       },
   ["rar"]            = { icon = "", color = "#ECA517", cterm_color = "214", name = "Rar"                        },
+  ["rasi"]           = { icon = "", color = "#CBCB41", cterm_color = "185", name = "Rasi"                       },
   ["razor"]          = { icon = "󱦘", color = "#512BD4", cterm_color = "56",  name = "RazorPage"                  },
   ["rb"]             = { icon = "", color = "#701516", cterm_color = "52",  name = "Rb"                         },
   ["res"]            = { icon = "", color = "#CC3E44", cterm_color = "167", name = "ReScript"                   },

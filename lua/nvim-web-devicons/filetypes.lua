@@ -160,6 +160,7 @@ return {
   ["qml"] = "qml",
   ["query"] = "query",
   ["r"] = "r",
+  ["rasi"] = "rasi",
   ["res"] = "rescript",
   ["resi"] = "rescript",
   ["rlib"] = "rlib",
