@@ -450,6 +450,7 @@ return {
   ["webp"]           = { icon = "", color = "#A074C4", cterm_color = "140", name = "Webp"                       },
   ["webpack"]        = { icon = "󰜫", color = "#519ABA", cterm_color = "74",  name = "Webpack"                    },
   ["wma"]            = { icon = "", color = "#00AFFF", cterm_color = "39",  name = "WindowsMediaAudio"          },
+  ["wmv"]            = { icon = "", color = "#FD971F", cterm_color = "208", name = "WindowsMediaVideo"          },
   ["woff"]           = { icon = "", color = "#ECECEC", cterm_color = "255", name = "WebOpenFontFormat"          },
   ["woff2"]          = { icon = "", color = "#ECECEC", cterm_color = "255", name = "WebOpenFontFormat"          },
   ["wrl"]            = { icon = "󰆧", color = "#888888", cterm_color = "102", name = "VRML"                       },
