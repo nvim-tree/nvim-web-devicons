@@ -1,4 +1,5 @@
 return {
+
   ["3gp"]            = { icon = "", color = "#FD971F", cterm_color = "208", name = "3gp"                        },
   ["3mf"]            = { icon = "󰆧", color = "#888888", cterm_color = "102", name = "3DObjectFile"               },
   ["7z"]             = { icon = "", color = "#ECA517", cterm_color = "214", name = "7z"                         },
@@ -201,6 +202,7 @@ return {
   ["ipynb"]          = { icon = "", color = "#F57D01", cterm_color = "208", name = "Notebook"                   },
   ["iso"]            = { icon = "", color = "#D0BEC8", cterm_color = "181", name = "Iso"                        },
   ["ixx"]            = { icon = "", color = "#519ABA", cterm_color = "74",  name = "Ixx"                        },
+  ["jar"]            = { icon = "", color = "#ffaf67", cterm_color = "215", name = "Jar"                        },
   ["java"]           = { icon = "", color = "#CC3E44", cterm_color = "167", name = "Java"                       },
   ["jl"]             = { icon = "", color = "#A270BA", cterm_color = "133", name = "Jl"                         },
   ["jpeg"]           = { icon = "", color = "#A074C4", cterm_color = "140", name = "Jpeg"                       },

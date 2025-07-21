@@ -1,4 +1,5 @@
 return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_file_extension.lua, please do not edit
+
   ["3gp"]            = { icon = "", color = "#7E4C10", cterm_color = "94",  name = "3gp"                        },
   ["3mf"]            = { icon = "󰆧", color = "#5B5B5B", cterm_color = "240", name = "3DObjectFile"               },
   ["7z"]             = { icon = "", color = "#76520C", cterm_color = "94",  name = "7z"                         },
@@ -201,6 +202,7 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   ["ipynb"]          = { icon = "", color = "#A35301", cterm_color = "130", name = "Notebook"                   },
   ["iso"]            = { icon = "", color = "#453F43", cterm_color = "238", name = "Iso"                        },
   ["ixx"]            = { icon = "", color = "#36677C", cterm_color = "24",  name = "Ixx"                        },
+  ["jar"]            = { icon = "", color = "#805834", cterm_color = "94",  name = "Jar"                        },
   ["java"]           = { icon = "", color = "#992E33", cterm_color = "88",  name = "Java"                       },
   ["jl"]             = { icon = "", color = "#6C4B7C", cterm_color = "96",  name = "Jl"                         },
   ["jpeg"]           = { icon = "", color = "#6B4D83", cterm_color = "96",  name = "Jpeg"                       },
