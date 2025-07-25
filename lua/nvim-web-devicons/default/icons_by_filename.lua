@@ -1,4 +1,5 @@
 return {
+  ["next.config.cjs"]            = { icon = "", color = "#ffffff", сterm_color = "231", name = "NextConfig"              },
   ["next.config.ts"]             = { icon = "", color = "#ffffff", сterm_color = "231", name = "NextConfig"              },
   ["next.config.js"]             = { icon = "", color = "#ffffff", сterm_color = "231", name = "NextConfig"              },
   [".SRCINFO"]                   = { icon = "󰣇", color = "#0F94D2", cterm_color = "67",  name = "SRCINFO"                 },
