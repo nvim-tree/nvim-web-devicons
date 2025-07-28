@@ -1,4 +1,7 @@
 return {
+  ["next.config.js"]             = { icon = "", color = "#FFFFFF", cterm_color = "231", name = "NextConfigJs"            },
+  ["next.config.ts"]             = { icon = "", color = "#FFFFFF", cterm_color = "231", name = "NextConfigTs"            },
+  ["next.config.cjs"]            = { icon = "", color = "#FFFFFF", cterm_color = "231", name = "NextConfigCjs"           },
   [".SRCINFO"]                   = { icon = "󰣇", color = "#0F94D2", cterm_color = "67",  name = "SRCINFO"                 },
   [".Xauthority"]                = { icon = "", color = "#E54D18", cterm_color = "196", name = "Xauthority"              },
   [".Xresources"]                = { icon = "", color = "#E54D18", cterm_color = "196", name = "Xresources"              },

@@ -1,4 +1,7 @@
 return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_filename.lua, please do not edit
+  ["next.config.js"]             = { icon = "", color = "#333333", cterm_color = "236", name = "NextConfigJs"            },
+  ["next.config.ts"]             = { icon = "", color = "#333333", cterm_color = "236", name = "NextConfigTs"            },
+  ["next.config.cjs"]            = { icon = "", color = "#333333", cterm_color = "236", name = "NextConfigCjs"           },
   [".SRCINFO"]                   = { icon = "󰣇", color = "#0B6F9E", cterm_color = "24",  name = "SRCINFO"                 },
   [".Xauthority"]                = { icon = "", color = "#AC3A12", cterm_color = "124", name = "Xauthority"              },
   [".Xresources"]                = { icon = "", color = "#AC3A12", cterm_color = "124", name = "Xresources"              },
