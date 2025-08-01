@@ -1,7 +1,4 @@
 return {
-  ["next.config.js"]             = { icon = "", color = "#FFFFFF", cterm_color = "231", name = "NextConfigJs"            },
-  ["next.config.ts"]             = { icon = "", color = "#FFFFFF", cterm_color = "231", name = "NextConfigTs"            },
-  ["next.config.cjs"]            = { icon = "", color = "#FFFFFF", cterm_color = "231", name = "NextConfigCjs"           },
   [".SRCINFO"]                   = { icon = "󰣇", color = "#0F94D2", cterm_color = "67",  name = "SRCINFO"                 },
   [".Xauthority"]                = { icon = "", color = "#E54D18", cterm_color = "196", name = "Xauthority"              },
   [".Xresources"]                = { icon = "", color = "#E54D18", cterm_color = "196", name = "Xresources"              },
@@ -141,6 +138,9 @@ return {
   ["makefile"]                   = { icon = "", color = "#6D8086", cterm_color = "66",  name = "Makefile"                },
   ["mix.lock"]                   = { icon = "", color = "#A074C4", cterm_color = "140", name = "MixLock"                 },
   ["mpv.conf"]                   = { icon = "", color = "#3B1342", cterm_color = "53",  name = "Mpv"                     },
+  ["next.config.cjs"]            = { icon = "", color = "#FFFFFF", cterm_color = "231", name = "NextConfigCjs"           },
+  ["next.config.js"]             = { icon = "", color = "#FFFFFF", cterm_color = "231", name = "NextConfigJs"            },
+  ["next.config.ts"]             = { icon = "", color = "#FFFFFF", cterm_color = "231", name = "NextConfigTs"            },
   ["node_modules"]               = { icon = "", color = "#E8274B", cterm_color = "197", name = "NodeModules"             },
   ["nuxt.config.cjs"]            = { icon = "󱄆", color = "#00C58E", cterm_color = "42",  name = "NuxtConfig"              },
   ["nuxt.config.js"]             = { icon = "󱄆", color = "#00C58E", cterm_color = "42",  name = "NuxtConfig"              },

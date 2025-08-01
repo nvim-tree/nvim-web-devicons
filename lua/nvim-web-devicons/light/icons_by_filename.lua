@@ -1,7 +1,4 @@
 return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_filename.lua, please do not edit
-  ["next.config.js"]             = { icon = "", color = "#333333", cterm_color = "236", name = "NextConfigJs"            },
-  ["next.config.ts"]             = { icon = "", color = "#333333", cterm_color = "236", name = "NextConfigTs"            },
-  ["next.config.cjs"]            = { icon = "", color = "#333333", cterm_color = "236", name = "NextConfigCjs"           },
   [".SRCINFO"]                   = { icon = "󰣇", color = "#0B6F9E", cterm_color = "24",  name = "SRCINFO"                 },
   [".Xauthority"]                = { icon = "", color = "#AC3A12", cterm_color = "124", name = "Xauthority"              },
   [".Xresources"]                = { icon = "", color = "#AC3A12", cterm_color = "124", name = "Xresources"              },
@@ -141,6 +138,9 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   ["makefile"]                   = { icon = "", color = "#526064", cterm_color = "59",  name = "Makefile"                },
   ["mix.lock"]                   = { icon = "", color = "#6B4D83", cterm_color = "96",  name = "MixLock"                 },
   ["mpv.conf"]                   = { icon = "", color = "#3B1342", cterm_color = "53",  name = "Mpv"                     },
+  ["next.config.cjs"]            = { icon = "", color = "#333333", cterm_color = "236", name = "NextConfigCjs"           },
+  ["next.config.js"]             = { icon = "", color = "#333333", cterm_color = "236", name = "NextConfigJs"            },
+  ["next.config.ts"]             = { icon = "", color = "#333333", cterm_color = "236", name = "NextConfigTs"            },
   ["node_modules"]               = { icon = "", color = "#AE1D38", cterm_color = "161", name = "NodeModules"             },
   ["nuxt.config.cjs"]            = { icon = "󱄆", color = "#00835F", cterm_color = "29",  name = "NuxtConfig"              },
   ["nuxt.config.js"]             = { icon = "󱄆", color = "#00835F", cterm_color = "29",  name = "NuxtConfig"              },
