@@ -88,6 +88,7 @@ return {
   ["heex"] = "heex",
   ["hex"] = "hex",
   ["html"] = "html",
+  ["hyprlang"] = "hyprland",
   ["ico"] = "ico",
   ["idlang"] = "pro",
   ["import"] = "import",
