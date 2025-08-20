@@ -58,6 +58,7 @@ return {
   ["Directory.Packages.props"]   = { icon = "", color = "#00A2FF", cterm_color = "75",  name = "PackagesProps"           },
   ["FreeCAD.conf"]               = { icon = "", color = "#CB333B", cterm_color = "160", name = "FreeCADConfig"           },
   ["Gemfile"]                    = { icon = "", color = "#701516", cterm_color = "52",  name = "Gemfile"                 },
+  ["Jenkinsfile"]                = { icon = "", color = "#D33833", cterm_color = "160", name = "Jenkins"                 },
   ["PKGBUILD"]                   = { icon = "", color = "#0F94D2", cterm_color = "67",  name = "PKGBUILD"                },
   ["PrusaSlicer.ini"]            = { icon = "", color = "#EC6B23", cterm_color = "202", name = "PrusaSlicer"             },
   ["PrusaSlicerGcodeViewer.ini"] = { icon = "", color = "#EC6B23", cterm_color = "202", name = "PrusaSlicer"             },
