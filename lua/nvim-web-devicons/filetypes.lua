@@ -73,6 +73,7 @@ return {
   ["gitconfig"] = ".gitconfig",
   ["gitignore"] = ".gitignore",
   ["glb"] = "glb",
+  ["glsl"] = "glsl",
   ["go"] = "go",
   ["godot"] = "godot",
   ["gql"] = "gql",
