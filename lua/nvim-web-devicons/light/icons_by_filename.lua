@@ -58,6 +58,7 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   ["Directory.Packages.props"]   = { icon = "", color = "#007ABF", cterm_color = "32",  name = "PackagesProps"           },
   ["FreeCAD.conf"]               = { icon = "", color = "#98262C", cterm_color = "88",  name = "FreeCADConfig"           },
   ["Gemfile"]                    = { icon = "", color = "#701516", cterm_color = "52",  name = "Gemfile"                 },
+  ["Jenkinsfile"]                = { icon = "", color = "#9E2A26", cterm_color = "124", name = "Jenkins"                 },
   ["PKGBUILD"]                   = { icon = "", color = "#0B6F9E", cterm_color = "24",  name = "PKGBUILD"                },
   ["PrusaSlicer.ini"]            = { icon = "", color = "#9D4717", cterm_color = "130", name = "PrusaSlicer"             },
   ["PrusaSlicerGcodeViewer.ini"] = { icon = "", color = "#9D4717", cterm_color = "130", name = "PrusaSlicer"             },
