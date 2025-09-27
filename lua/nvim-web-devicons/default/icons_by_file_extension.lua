@@ -27,7 +27,7 @@ return {
   ["awk"]            = { icon = "", color = "#4D5A5E", cterm_color = "240", name = "Awk"                        },
   ["azcli"]          = { icon = "", color = "#0078D4", cterm_color = "32",  name = "AzureCli"                   },
   ["bak"]            = { icon = "󰁯", color = "#6D8086", cterm_color = "66",  name = "Backup"                     },
-  ["bash"]           = { icon = "", color = "#89E051", cterm_color = "113", name = "Bash"                       },
+  ["bash"]           = { icon = "", color = "#89E051", cterm_color = "113", name = "Bash"                       },
   ["bat"]            = { icon = "", color = "#C1F12E", cterm_color = "191", name = "Bat"                        },
   ["bazel"]          = { icon = "", color = "#89E051", cterm_color = "113", name = "Bazel"                      },
   ["bib"]            = { icon = "󱉟", color = "#CBCB41", cterm_color = "185", name = "BibTeX"                     },
