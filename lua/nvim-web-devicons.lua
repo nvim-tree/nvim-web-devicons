@@ -130,13 +130,14 @@ local function set_up_highlight(icon_data)
 
   local hl_group = get_highlight_name(icon_data)
   if hl_group and (icon_data.color or icon_data.cterm_color) then
-
     local hl_def = {
       fg = icon_data.color,
       ctermfg = tonumber(icon_data.cterm_color),
     }
 
-    if global_opts.blend then hl_def.blend = global_opts.blend end
+    if global_opts.blend then
+      hl_def.blend = global_opts.blend
+    end
 
     nvim_set_hl(0, get_highlight_name(icon_data), hl_def)
   end
