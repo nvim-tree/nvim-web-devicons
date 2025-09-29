@@ -53,6 +53,7 @@ local global_opts = {
   default = false,
   color_icons = true,
   variant = nil,
+  blend = nil,
 }
 
 ---Change all keys in a table to lowercase
@@ -129,10 +130,16 @@ local function set_up_highlight(icon_data)
 
   local hl_group = get_highlight_name(icon_data)
   if hl_group and (icon_data.color or icon_data.cterm_color) then
-    nvim_set_hl(0, get_highlight_name(icon_data), {
+    local hl_def = {
       fg = icon_data.color,
       ctermfg = tonumber(icon_data.cterm_color),
-    })
+    }
+
+    if global_opts.blend then
+      hl_def.blend = global_opts.blend
+    end
+
+    nvim_set_hl(0, get_highlight_name(icon_data), hl_def)
   end
 end
 
@@ -290,6 +297,10 @@ function M.setup(opts)
 
     -- Reload the icons after setting variant option
     refresh_icons()
+  end
+
+  if type(user_icons.blend) == "number" then
+    global_opts.blend = user_icons.blend
   end
 
   apply_user_icons()
