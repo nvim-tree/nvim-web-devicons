@@ -27,7 +27,7 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   ["awk"]            = { icon = "", color = "#3A4446", cterm_color = "238", name = "Awk"                        },
   ["azcli"]          = { icon = "", color = "#005A9F", cterm_color = "25",  name = "AzureCli"                   },
   ["bak"]            = { icon = "󰁯", color = "#526064", cterm_color = "59",  name = "Backup"                     },
-  ["bash"]           = { icon = "", color = "#447028", cterm_color = "22",  name = "Bash"                       },
+  ["bash"]           = { icon = "", color = "#447028", cterm_color = "22",  name = "Bash"                       },
   ["bat"]            = { icon = "", color = "#40500F", cterm_color = "58",  name = "Bat"                        },
   ["bazel"]          = { icon = "", color = "#447028", cterm_color = "22",  name = "Bazel"                      },
   ["bib"]            = { icon = "󱉟", color = "#666620", cterm_color = "58",  name = "BibTeX"                     },
