@@ -30,7 +30,7 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   [".gtkrc-2.0"]                 = { icon = "", color = "#333333", cterm_color = "236", name = "GTK"                     },
   [".gvimrc"]                    = { icon = "", color = "#017226", cterm_color = "22",  name = "Gvimrc"                  },
   [".justfile"]                  = { icon = "", color = "#526064", cterm_color = "59",  name = "Justfile"                },
-  [".luacheckrc"]                = { icon = "", color = "#007ABF", cterm_color = "32",  name = "Luaurc"                  },
+  [".luacheckrc"]                = { icon = "", color = "#007ABF", cterm_color = "32",  name = "Luacheckrc"              },
   [".luaurc"]                    = { icon = "", color = "#007ABF", cterm_color = "32",  name = "Luaurc"                  },
   [".mailmap"]                   = { icon = "󰊢", color = "#B83A1D", cterm_color = "160", name = "Mailmap"                 },
   [".nanorc"]                    = { icon = "", color = "#440077", cterm_color = "54",  name = "Nano"                    },
