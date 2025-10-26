@@ -30,7 +30,7 @@ return {
   [".gtkrc-2.0"]                 = { icon = "", color = "#FFFFFF", cterm_color = "231", name = "GTK"                     },
   [".gvimrc"]                    = { icon = "", color = "#019833", cterm_color = "28",  name = "Gvimrc"                  },
   [".justfile"]                  = { icon = "", color = "#6D8086", cterm_color = "66",  name = "Justfile"                },
-  [".luacheckrc"]                = { icon = "", color = "#00A2FF", cterm_color = "75",  name = "Luaurc"                  },
+  [".luacheckrc"]                = { icon = "", color = "#00A2FF", cterm_color = "75",  name = "Luacheckrc"              },
   [".luaurc"]                    = { icon = "", color = "#00A2FF", cterm_color = "75",  name = "Luaurc"                  },
   [".mailmap"]                   = { icon = "󰊢", color = "#F54D27", cterm_color = "196", name = "Mailmap"                 },
   [".nanorc"]                    = { icon = "", color = "#440077", cterm_color = "54",  name = "Nano"                    },
