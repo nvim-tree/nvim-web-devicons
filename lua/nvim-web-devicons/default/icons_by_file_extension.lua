@@ -475,6 +475,7 @@ return {
   ["xm"]             = { icon = "", color = "#519ABA", cterm_color = "74",  name = "Logos"                      },
   ["xml"]            = { icon = "󰗀", color = "#E37933", cterm_color = "166", name = "Xml"                        },
   ["xpi"]            = { icon = "", color = "#FF1B01", cterm_color = "196", name = "Xpi"                        },
+  ["xslt"]           = { icon = "󰗀", color = "#33A9DC", cterm_color = "74",  name = "Xslt"                       },
   ["xul"]            = { icon = "", color = "#E37933", cterm_color = "166", name = "Xul"                        },
   ["xz"]             = { icon = "", color = "#ECA517", cterm_color = "214", name = "Xz"                         },
   ["yaml"]           = { icon = "", color = "#6D8086", cterm_color = "66",  name = "Yaml"                       },

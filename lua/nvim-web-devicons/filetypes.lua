@@ -225,6 +225,7 @@ return {
   ["xls"] = "xls",
   ["xlsx"] = "xlsx",
   ["xml"] = "xml",
+  ["xslt"] = "xslt",
   ["yaml"] = "yaml",
   ["zig"] = "zig",
   ["zsh"] = "zsh",

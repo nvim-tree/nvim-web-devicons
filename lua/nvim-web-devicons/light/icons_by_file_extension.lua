@@ -475,6 +475,7 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   ["xm"]             = { icon = "", color = "#36677C", cterm_color = "24",  name = "Logos"                      },
   ["xml"]            = { icon = "󰗀", color = "#975122", cterm_color = "130", name = "Xml"                        },
   ["xpi"]            = { icon = "", color = "#BF1401", cterm_color = "124", name = "Xpi"                        },
+  ["xslt"]           = { icon = "󰗀", color = "#227193", cterm_color = "24",  name = "Xslt"                       },
   ["xul"]            = { icon = "", color = "#975122", cterm_color = "130", name = "Xul"                        },
   ["xz"]             = { icon = "", color = "#76520C", cterm_color = "94",  name = "Xz"                         },
   ["yaml"]           = { icon = "", color = "#526064", cterm_color = "59",  name = "Yaml"                       },
