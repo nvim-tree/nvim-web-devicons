@@ -56,6 +56,8 @@ Each icon must have the following structure (this is an example):
 
 Note: Ensure your current working directory is the repo root.
 
+### Generate
+
 Following your changes, please run:
 
 ```sh
@@ -79,6 +81,16 @@ make style-fix
 
 Please commit all files from `lua/nvim-web-devicons/default/`, `lua/nvim-web-devicons/light/` end `lua/nvim-web-devicons/filetypes.lua`
 
+### Validate
+
+After committing, please run:
+
+```sh
+make colors-check
+```
+
+This is run in CI and ensures that generation was correct by re-running it and validating that no changes were made.
+
 ## Test
 
 Run `:NvimWebDeviconsHiTest` to view the icons and their highlighting.
@@ -95,8 +107,7 @@ When modifying or adding API, please update [Usage](README.md#Usage)
 
 Please reference any issues in the description e.g. "resolves #1234", which will be closed upon merge.
 
-Please check "allow edits by maintainers" to allow *nvim-web-devicons* maintainers to make small changes
-such as documentation tweaks.
+Please check "allow edits by maintainers" to allow *nvim-web-devicons* maintainers to make small changes such as documentation tweaks.
 
 ## Subject
 
