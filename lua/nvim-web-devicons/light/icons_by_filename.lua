@@ -50,6 +50,8 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   [".prettierrc.toml"]           = { icon = "", color = "#3264B7", cterm_color = "25",  name = "PrettierConfig"          },
   [".prettierrc.yaml"]           = { icon = "", color = "#3264B7", cterm_color = "25",  name = "PrettierConfig"          },
   [".prettierrc.yml"]            = { icon = "", color = "#3264B7", cterm_color = "25",  name = "PrettierConfig"          },
+  ["prisma.config.ts"]           = { icon = "", color = "#444DA2", cterm_color = "61",  name = "PrismaConfig"            },
+  ["prisma.config.mts"]          = { icon = "", color = "#444DA2", cterm_color = "61",  name = "PrismaConfig"            },
   [".pylintrc"]                  = { icon = "", color = "#526064", cterm_color = "59",  name = "PyLintConfig"            },
   [".settings.json"]             = { icon = "", color = "#643995", cterm_color = "91",  name = "SettingsJson"            },
   [".vimrc"]                     = { icon = "", color = "#017226", cterm_color = "22",  name = "Vimrc"                   },
