@@ -171,6 +171,8 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   ["prettier.config.js"]         = { icon = "", color = "#3264B7", cterm_color = "25",  name = "PrettierConfig"          },
   ["prettier.config.mjs"]        = { icon = "", color = "#3264B7", cterm_color = "25",  name = "PrettierConfig"          },
   ["prettier.config.ts"]         = { icon = "", color = "#3264B7", cterm_color = "25",  name = "PrettierConfig"          },
+  ["prisma.config.mts"]          = { icon = "", color = "#444DA2", cterm_color = "61",  name = "PrismaConfig"            },
+  ["prisma.config.ts"]           = { icon = "", color = "#444DA2", cterm_color = "61",  name = "PrismaConfig"            },
   ["procfile"]                   = { icon = "", color = "#6B4D83", cterm_color = "96",  name = "Procfile"                },
   ["py.typed"]                   = { icon = "", color = "#805E02", cterm_color = "94",  name = "Py.typed"                },
   ["rakefile"]                   = { icon = "", color = "#701516", cterm_color = "52",  name = "Rakefile"                },
