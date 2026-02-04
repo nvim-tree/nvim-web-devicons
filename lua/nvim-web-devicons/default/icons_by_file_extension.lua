@@ -348,6 +348,7 @@ return {
   ["rb"]             = { icon = "", color = "#701516", cterm_color = "52",  name = "Rb"                         },
   ["res"]            = { icon = "", color = "#CC3E44", cterm_color = "167", name = "ReScript"                   },
   ["resi"]           = { icon = "", color = "#F55385", cterm_color = "204", name = "ReScriptInterface"          },
+  ["rkt"]            = { icon = "󰘧", color = "#9F1D20", cterm_color = "124", name = "Racket"                     },
   ["rlib"]           = { icon = "", color = "#DEA584", cterm_color = "216", name = "Rlib"                       },
   ["rmd"]            = { icon = "", color = "#519ABA", cterm_color = "74",  name = "Rmd"                        },
   ["rproj"]          = { icon = "󰗆", color = "#358A5B", cterm_color = "29",  name = "Rproj"                      },

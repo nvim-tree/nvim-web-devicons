@@ -348,6 +348,7 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   ["rb"]             = { icon = "", color = "#701516", cterm_color = "52",  name = "Rb"                         },
   ["res"]            = { icon = "", color = "#992E33", cterm_color = "88",  name = "ReScript"                   },
   ["resi"]           = { icon = "", color = "#A33759", cterm_color = "125", name = "ReScriptInterface"          },
+  ["rkt"]            = { icon = "󰘧", color = "#9F1D20", cterm_color = "124", name = "Racket"                     },
   ["rlib"]           = { icon = "", color = "#6F5242", cterm_color = "95",  name = "Rlib"                       },
   ["rmd"]            = { icon = "", color = "#36677C", cterm_color = "24",  name = "Rmd"                        },
   ["rproj"]          = { icon = "󰗆", color = "#286844", cterm_color = "29",  name = "Rproj"                      },
