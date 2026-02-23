@@ -407,6 +407,7 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   ["sublime"]        = { icon = "", color = "#975122", cterm_color = "130", name = "Sublime"                    },
   ["suo"]            = { icon = "", color = "#643995", cterm_color = "91",  name = "Suo"                        },
   ["sv"]             = { icon = "󰍛", color = "#017226", cterm_color = "22",  name = "SystemVerilog"              },
+  ["svx"]            = { icon = "", color = "#BF0032", cterm_color = "196", name = "Svelte Markdown"            },
   ["svelte"]         = { icon = "", color = "#BF2E00", cterm_color = "160", name = "Svelte"                     },
   ["svg"]            = { icon = "󰜡", color = "#80581E", cterm_color = "94",  name = "Svg"                        },
   ["svgz"]           = { icon = "󰜡", color = "#80581E", cterm_color = "94",  name = "Svgz"                       },
