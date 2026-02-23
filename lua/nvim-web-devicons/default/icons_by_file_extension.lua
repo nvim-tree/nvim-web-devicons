@@ -407,6 +407,7 @@ return {
   ["sublime"]        = { icon = "", color = "#E37933", cterm_color = "166", name = "Sublime"                    },
   ["suo"]            = { icon = "", color = "#854CC7", cterm_color = "98",  name = "Suo"                        },
   ["sv"]             = { icon = "󰍛", color = "#019833", cterm_color = "28",  name = "SystemVerilog"              },
+  ["svx"]            = { icon = "", color = "#FF0042", cterm_color = "196", name = "Svelte Markdown"            },
   ["svelte"]         = { icon = "", color = "#FF3E00", cterm_color = "196", name = "Svelte"                     },
   ["svg"]            = { icon = "󰜡", color = "#FFB13B", cterm_color = "214", name = "Svg"                        },
   ["svgz"]           = { icon = "󰜡", color = "#FFB13B", cterm_color = "214", name = "Svgz"                       },
