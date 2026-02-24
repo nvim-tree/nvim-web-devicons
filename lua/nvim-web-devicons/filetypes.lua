@@ -48,6 +48,7 @@ return {
   ["drools"] = "drl",
   ["dropbox"] = "dropbox",
   ["dump"] = "dump",
+  ["dune"] = "dune",
   ["editorconfig"] = ".editorconfig",
   ["eex"] = "eex",
   ["ejs"] = "ejs",

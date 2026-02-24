@@ -96,6 +96,7 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   ["docker-compose.yaml"]        = { icon = "󰡨", color = "#2E5F99", cterm_color = "25",  name = "Dockerfile"              },
   ["docker-compose.yml"]         = { icon = "󰡨", color = "#2E5F99", cterm_color = "25",  name = "Dockerfile"              },
   ["dockerfile"]                 = { icon = "󰡨", color = "#2E5F99", cterm_color = "25",  name = "Dockerfile"              },
+  ["dune"]                       = { icon = "", color = "#8a421e", cterm_color = "124", name = "Dunefile"                },
   ["eslint.config.cjs"]          = { icon = "", color = "#4B32C3", cterm_color = "56",  name = "Eslintrc"                },
   ["eslint.config.js"]           = { icon = "", color = "#4B32C3", cterm_color = "56",  name = "Eslintrc"                },
   ["eslint.config.mjs"]          = { icon = "", color = "#4B32C3", cterm_color = "56",  name = "Eslintrc"                },
