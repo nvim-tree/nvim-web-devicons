@@ -411,6 +411,7 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   ["svg"]            = { icon = "󰜡", color = "#80581E", cterm_color = "94",  name = "Svg"                        },
   ["svgz"]           = { icon = "󰜡", color = "#80581E", cterm_color = "94",  name = "Svgz"                       },
   ["svh"]            = { icon = "󰍛", color = "#017226", cterm_color = "22",  name = "SystemVerilog"              },
+  ["svx"]            = { icon = "", color = "#FF0042", cterm_color = "197", name = "SvelteMarkdown"             },
   ["swift"]          = { icon = "", color = "#975122", cterm_color = "130", name = "Swift"                      },
   ["t"]              = { icon = "", color = "#36677C", cterm_color = "24",  name = "Tor"                        },
   ["tbc"]            = { icon = "󰛓", color = "#1E5CB3", cterm_color = "25",  name = "Tcl"                        },

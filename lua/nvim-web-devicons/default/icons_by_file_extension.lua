@@ -411,6 +411,7 @@ return {
   ["svg"]            = { icon = "󰜡", color = "#FFB13B", cterm_color = "214", name = "Svg"                        },
   ["svgz"]           = { icon = "󰜡", color = "#FFB13B", cterm_color = "214", name = "Svgz"                       },
   ["svh"]            = { icon = "󰍛", color = "#019833", cterm_color = "28",  name = "SystemVerilog"              },
+  ["svx"]            = { icon = "", color = "#FF0042", cterm_color = "197", name = "SvelteMarkdown"             },
   ["swift"]          = { icon = "", color = "#E37933", cterm_color = "166", name = "Swift"                      },
   ["t"]              = { icon = "", color = "#519ABA", cterm_color = "74",  name = "Tor"                        },
   ["tbc"]            = { icon = "󰛓", color = "#1E5CB3", cterm_color = "25",  name = "Tcl"                        },
