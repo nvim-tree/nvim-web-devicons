@@ -200,9 +200,9 @@ local function get_highlight_ctermfg(icon_data)
   if vim.fn.has "nvim-0.9" == 1 then
     --- @type string
     --- @diagnostic disable-next-line: undefined-field  vim.api.keyset.hl_info specifies cterm, not ctermfg
-    return vim.api.nvim_get_hl(0, { name = higroup, link = false }).ctermfg
+    return tostring(vim.api.nvim_get_hl(0, { name = higroup, link = false }).ctermfg)
   else
-    return vim.api.nvim_get_hl_by_name(higroup, false).foreground ---@diagnostic disable-line: deprecated
+    return tostring(vim.api.nvim_get_hl_by_name(higroup, false).foreground) ---@diagnostic disable-line: deprecated
   end
 end
 
@@ -220,6 +220,7 @@ local function apply_user_icons()
   local user_operating_system_icons = user_icons.override_by_operating_system
   local user_desktop_environment_icons = user_icons.override_by_desktop_environment
   local user_window_manager_icons = user_icons.override_by_window_manager
+  local user_icon_overrides = user_icons.override_by_icon
 
   -- filename matches are case insensitive
   lowercase_keys(icons_by_filename)
@@ -234,7 +235,8 @@ local function apply_user_icons()
     user_file_ext_icons or {},
     user_operating_system_icons or {},
     user_desktop_environment_icons or {},
-    user_window_manager_icons or {}
+    user_window_manager_icons or {},
+    user_icon_overrides or {}
   )
   global_opts.override = vim.tbl_extend(
     "force",
@@ -244,7 +246,8 @@ local function apply_user_icons()
     user_file_ext_icons or {},
     user_operating_system_icons or {},
     user_desktop_environment_icons or {},
-    user_window_manager_icons or {}
+    user_window_manager_icons or {},
+    user_icon_overrides or {}
   )
 
   if user_filename_icons then
@@ -375,6 +378,11 @@ local function get_icon_data(name, ext, opts)
     icon_data = icons_by_filename[name] or get_icon_by_extension(name, ext, opts) or (has_default and default_icon)
   else
     icon_data = icons[name] or get_icon_by_extension(name, ext, opts) or (has_default and default_icon)
+  end
+
+  -- Check for icon override
+  if icon_data and global_opts.override[icon_data.icon] then
+    icon_data = vim.tbl_extend("force", icon_data, global_opts.override[icon_data.icon])
   end
 
   return icon_data
