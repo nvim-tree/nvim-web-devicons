@@ -11,6 +11,7 @@ return {
   [".babelrc"]                   = { icon = "", color = "#CBCB41", cterm_color = "185", name = "Babelrc"                 },
   [".bash_profile"]              = { icon = "", color = "#89E051", cterm_color = "113", name = "BashProfile"             },
   [".bashrc"]                    = { icon = "", color = "#89E051", cterm_color = "113", name = "Bashrc"                  },
+  [".clangd"]                    = { icon = "", color = "#6D8086", cterm_color = "66",  name = "ClangConfig"             },
   [".clang-format"]              = { icon = "", color = "#6D8086", cterm_color = "66",  name = "ClangConfig"             },
   [".clang-tidy"]                = { icon = "", color = "#6D8086", cterm_color = "66",  name = "ClangConfig"             },
   [".codespellrc"]               = { icon = "󰓆", color = "#35DA60", cterm_color = "41",  name = "Codespell"               },

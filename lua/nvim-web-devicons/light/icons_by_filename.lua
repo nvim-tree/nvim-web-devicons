@@ -11,6 +11,7 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   [".babelrc"]                   = { icon = "", color = "#666620", cterm_color = "58",  name = "Babelrc"                 },
   [".bash_profile"]              = { icon = "", color = "#447028", cterm_color = "22",  name = "BashProfile"             },
   [".bashrc"]                    = { icon = "", color = "#447028", cterm_color = "22",  name = "Bashrc"                  },
+  [".clangd"]                    = { icon = "", color = "#526064", cterm_color = "59",  name = "ClangConfig"             },
   [".clang-format"]              = { icon = "", color = "#526064", cterm_color = "59",  name = "ClangConfig"             },
   [".clang-tidy"]                = { icon = "", color = "#526064", cterm_color = "59",  name = "ClangConfig"             },
   [".codespellrc"]               = { icon = "󰓆", color = "#239140", cterm_color = "28",  name = "Codespell"               },
