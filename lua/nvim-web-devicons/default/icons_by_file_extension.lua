@@ -1,5 +1,4 @@
 return {
-
   ["3gp"]            = { icon = "", color = "#FD971F", cterm_color = "208", name = "3gp"                        },
   ["3mf"]            = { icon = "󰆧", color = "#888888", cterm_color = "102", name = "3DObjectFile"               },
   ["7z"]             = { icon = "", color = "#ECA517", cterm_color = "214", name = "7z"                         },
