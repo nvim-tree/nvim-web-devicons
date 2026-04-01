@@ -79,7 +79,7 @@ You can automatically fix any style issues via:
 make style-fix
 ```
 
-Please commit all files from `lua/nvim-web-devicons/default/`, `lua/nvim-web-devicons/light/` end `lua/nvim-web-devicons/filetypes.lua`
+Please commit all files from `lua/nvim-web-devicons/default/`, `lua/nvim-web-devicons/light/` and `lua/nvim-web-devicons/filetypes.lua`
 
 ### Validate
 
