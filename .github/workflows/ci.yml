@@ -25,7 +25,7 @@ jobs:
 
       - name: luacheck
         run: |
-          luarocks install luacheck 1.1.1
+          luarocks install luacheck 1.2.0
           make lint
 
   style:
