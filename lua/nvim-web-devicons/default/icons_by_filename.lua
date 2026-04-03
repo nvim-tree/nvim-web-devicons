@@ -13,6 +13,7 @@ return {
   [".bashrc"]                    = { icon = "", color = "#89E051", cterm_color = "113", name = "Bashrc"                  },
   [".clang-format"]              = { icon = "", color = "#6D8086", cterm_color = "66",  name = "ClangConfig"             },
   [".clang-tidy"]                = { icon = "", color = "#6D8086", cterm_color = "66",  name = "ClangConfig"             },
+  [".clangd"]                    = { icon = "", color = "#6D8086", cterm_color = "66",  name = "ClangConfig"             },
   [".codespellrc"]               = { icon = "󰓆", color = "#35DA60", cterm_color = "41",  name = "Codespell"               },
   [".condarc"]                   = { icon = "", color = "#43B02A", cterm_color = "34",  name = "Conda"                   },
   [".dockerignore"]              = { icon = "󰡨", color = "#458EE6", cterm_color = "68",  name = "Dockerfile"              },

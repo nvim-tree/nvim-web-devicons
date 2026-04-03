@@ -13,6 +13,7 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   [".bashrc"]                    = { icon = "", color = "#447028", cterm_color = "22",  name = "Bashrc"                  },
   [".clang-format"]              = { icon = "", color = "#526064", cterm_color = "59",  name = "ClangConfig"             },
   [".clang-tidy"]                = { icon = "", color = "#526064", cterm_color = "59",  name = "ClangConfig"             },
+  [".clangd"]                    = { icon = "", color = "#526064", cterm_color = "59",  name = "ClangConfig"             },
   [".codespellrc"]               = { icon = "󰓆", color = "#239140", cterm_color = "28",  name = "Codespell"               },
   [".condarc"]                   = { icon = "", color = "#2D751C", cterm_color = "28",  name = "Conda"                   },
   [".dockerignore"]              = { icon = "󰡨", color = "#2E5F99", cterm_color = "25",  name = "Dockerfile"              },
