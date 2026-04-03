@@ -6,17 +6,38 @@ Thank you for your contribution!
 
 Code is formatted using *stylua* and linted using *luacheck*.
 
-You can install these with:
+### stylua
+
+Install via your OS package manager e.g. *Arch Linux*:
+
+```sh
+pacman -S stylua
+```
+
+or using cargo:
 
 ```sh
 cargo install stylua
-luarocks install luacheck
+```
+
+### luacheck
+
+Install using luarocks (preferred):
+
+```sh
+luarocks install --local luacheck
 ```
 
 or via your OS package manager e.g. *Arch Linux*:
 
 ```sh
-pacman -S stylua luacheck
+pacman -S luacheck
+```
+
+If you experience `luarocks` dependency issues installing `luacheck`, you may need to set an older lua version e.g.
+
+```sh
+luarocks config --local lua_version 5.1
 ```
 
 ## Adding icons
