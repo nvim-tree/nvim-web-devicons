@@ -12,7 +12,7 @@ markdown-toc --maxdepth=3 -i CONTRIBUTING.md
 - [Prerequisites](#prerequisites)
   * [stylua](#stylua)
   * [luacheck](#luacheck)
-- [Adding icons](#adding-icons)
+- [Adding Or Updating Icons](#adding-or-updating-icons)
 - [Building](#building)
   * [Generate](#generate)
   * [Validate](#validate)
