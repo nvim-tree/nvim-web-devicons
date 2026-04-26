@@ -441,6 +441,7 @@ return {
   ["typ"]            = { icon = "", color = "#0DBCC0", cterm_color = "37",  name = "Typst"                      },
   ["typoscript"]     = { icon = "", color = "#FF8700", cterm_color = "208", name = "TypoScript"                 },
   ["ui"]             = { icon = "", color = "#015BF0", cterm_color = "27",  name = "UI"                         },
+  ["unity"]          = { icon = "", color = "#fdfdfd", cterm_color = "231", name = "Unity"                      },
   ["v"]              = { icon = "󰍛", color = "#019833", cterm_color = "28",  name = "Verilog"                    },
   ["vala"]           = { icon = "", color = "#7B3DB9", cterm_color = "91",  name = "Vala"                       },
   ["vert"]           = { icon = "", color = "#5586A6", cterm_color = "67",  name = "VertexShader"               },

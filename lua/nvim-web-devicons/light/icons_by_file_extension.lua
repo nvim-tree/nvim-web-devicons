@@ -441,6 +441,7 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   ["typ"]            = { icon = "", color = "#097D80", cterm_color = "30",  name = "Typst"                      },
   ["typoscript"]     = { icon = "", color = "#AA5A00", cterm_color = "130", name = "TypoScript"                 },
   ["ui"]             = { icon = "", color = "#015BF0", cterm_color = "27",  name = "UI"                         },
+  ["unity"]          = { icon = "", color = "#333333", cterm_color = "236", name = "Unity"                      },
   ["v"]              = { icon = "󰍛", color = "#017226", cterm_color = "22",  name = "Verilog"                    },
   ["vala"]           = { icon = "", color = "#5C2E8B", cterm_color = "54",  name = "Vala"                       },
   ["vert"]           = { icon = "", color = "#40647C", cterm_color = "24",  name = "VertexShader"               },
