@@ -317,6 +317,7 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   ["pp"]             = { icon = "", color = "#80530D", cterm_color = "94",  name = "Pp"                         },
   ["ppt"]            = { icon = "󰈧", color = "#983826", cterm_color = "124", name = "Ppt"                        },
   ["pptx"]           = { icon = "󰈧", color = "#983826", cterm_color = "124", name = "Pptx"                       },
+  ["prefab"]         = { icon = "", color = "#314753", cterm_color = "238", name = "Prefab"                     },
   ["prisma"]         = { icon = "", color = "#444DA2", cterm_color = "61",  name = "Prisma"                     },
   ["pro"]            = { icon = "", color = "#725C2A", cterm_color = "94",  name = "Prolog"                     },
   ["ps1"]            = { icon = "󰨊", color = "#325698", cterm_color = "25",  name = "PsScriptfile"               },
