@@ -12,20 +12,20 @@ Provides [Nerd Font](https://www.nerdfonts.com/) [^1] icons (glyphs) for use by 
 A `lua` fork of [vim-devicons](https://github.com/ryanoasis/vim-devicons).
 
 > [!TIP]
-> nvim-web-devicons adds new icons as they are introduced to Nerd Fonts. Please ensure that you are using the latest version of the font as newly introduced icons may display incorrectly or as an "unknown character".
+> nvim-web-devicons is a rolling release, adding new icons as they are introduced to Nerd Fonts. Please ensure that you are using the latest version of the font as newly introduced icons may display incorrectly or as an "unknown character".
 
 > [!IMPORTANT]
-> Nerd fonts moved some symbols with version 3.0. Version 2.3 is meant for transition,
-> supporting both version 2 and version 3 icons.
-> Nvim-web-devicons requires version 2.3 or above to work properly. If you are unable to update
-> please use your plugin manager to pin version of nvim-web-dev icons to `nerd-v2-compat` tag.
+> Nerd fonts has introduced some breaking changes with the following releases.
+> Please use your plugin manager to pin nvim-web-devicons to the compatibility tag, for use with earlier Nerd Font versions.
+> - `3.3`: `nerd-v3.2-compat`
+> - `3.0`: `nerd-v2-compat`
 
 [^1]: Not limited to Nerd Font icons: unicode and other fonts may be used.
 
 ## Requirements
 
 - [neovim >=0.7.0](https://github.com/neovim/neovim/wiki/Installing-Neovim)
-- [A Patched Nerd Font](https://www.nerdfonts.com/)
+- [A Patched Nerd Font](https://www.nerdfonts.com/) >= 3.3
 
 ## Installation
 
