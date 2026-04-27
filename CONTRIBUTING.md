@@ -135,6 +135,15 @@ make colors-check
 
 This is run in CI and ensures that generation was correct by re-running it and validating that no changes were made.
 
+### Using the local container image
+
+You can build and use the included container image to run the previous commands.
+
+```sh
+docker build -t nvim-web-devicons:latest .
+docker run --rm -ti --user "`id -u`:`id -g`" -v "$(pwd):/host" -w /host nvim-web-devicons:latest make
+```
+
 ## Test
 
 Run `:NvimWebDeviconsHiTest` to view the icons and their highlighting.
