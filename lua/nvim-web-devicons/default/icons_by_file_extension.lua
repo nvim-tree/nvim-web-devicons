@@ -317,6 +317,7 @@ return {
   ["pp"]             = { icon = "", color = "#FFA61A", cterm_color = "214", name = "Pp"                         },
   ["ppt"]            = { icon = "󰈧", color = "#CB4A32", cterm_color = "160", name = "Ppt"                        },
   ["pptx"]           = { icon = "󰈧", color = "#CB4A32", cterm_color = "160", name = "Pptx"                       },
+  ["prefab"]         = { icon = "", color = "#94D4F9", cterm_color = "117", name = "Prefab"                     },
   ["prisma"]         = { icon = "", color = "#5A67D8", cterm_color = "62",  name = "Prisma"                     },
   ["pro"]            = { icon = "", color = "#E4B854", cterm_color = "179", name = "Prolog"                     },
   ["ps1"]            = { icon = "󰨊", color = "#4273CA", cterm_color = "68",  name = "PsScriptfile"               },
