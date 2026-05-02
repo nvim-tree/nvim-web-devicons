@@ -73,7 +73,7 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   ["QtProject.conf"]             = { icon = "", color = "#2B8937", cterm_color = "28",  name = "Qt"                       },
   ["_gvimrc"]                    = { icon = "", color = "#017226", cterm_color = "22",  name = "Gvimrc"                   },
   ["_vimrc"]                     = { icon = "", color = "#017226", cterm_color = "22",  name = "Vimrc"                    },
-  ["bitbucket-pipelines.yml"]    = { icon = "", color = "#1C63BF", cterm_color = "25",  name = "BitbucketPipelinesConfig" },
+  ["bitbucket-pipelines.yml"]    = { icon = "", color = "#1C63BF", cterm_color = "25",  name = "BitbucketPipelinesConfig" },
   ["brewfile"]                   = { icon = "", color = "#701516", cterm_color = "52",  name = "Brewfile"                 },
   ["bspwmrc"]                    = { icon = "", color = "#2F2F2F", cterm_color = "236", name = "BSPWM"                    },
   ["build"]                      = { icon = "", color = "#447028", cterm_color = "22",  name = "BazelBuild"               },
