@@ -73,7 +73,7 @@ return {
   ["QtProject.conf"]             = { icon = "", color = "#40CD52", cterm_color = "77",  name = "Qt"                       },
   ["_gvimrc"]                    = { icon = "", color = "#019833", cterm_color = "28",  name = "Gvimrc"                   },
   ["_vimrc"]                     = { icon = "", color = "#019833", cterm_color = "28",  name = "Vimrc"                    },
-  ["bitbucket-pipelines.yml"]    = { icon = "", color = "#2684FF", cterm_color = "33",  name = "BitbucketPipelinesConfig" },
+  ["bitbucket-pipelines.yml"]    = { icon = "󰂨", color = "#2684FF", cterm_color = "33",  name = "BitbucketPipelinesConfig" },
   ["brewfile"]                   = { icon = "", color = "#701516", cterm_color = "52",  name = "Brewfile"                 },
   ["bspwmrc"]                    = { icon = "", color = "#2F2F2F", cterm_color = "236", name = "BSPWM"                    },
   ["build"]                      = { icon = "", color = "#89E051", cterm_color = "113", name = "BazelBuild"               },
