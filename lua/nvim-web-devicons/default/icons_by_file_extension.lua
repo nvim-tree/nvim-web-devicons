@@ -22,6 +22,7 @@ return {
   ["asm"]            = { icon = "", color = "#0091BD", cterm_color = "31",  name = "ASM"                        },
   ["ass"]            = { icon = "󰨖", color = "#FFB713", cterm_color = "214", name = "Ass"                        },
   ["astro"]          = { icon = "", color = "#E23F67", cterm_color = "197", name = "Astro"                      },
+  ["avi"]            = { icon = "", color = "#FD971F", cterm_color = "208", name = "AudioVideoInterleave"       },
   ["avif"]           = { icon = "", color = "#A074C4", cterm_color = "140", name = "Avif"                       },
   ["awk"]            = { icon = "", color = "#4D5A5E", cterm_color = "240", name = "Awk"                        },
   ["azcli"]          = { icon = "", color = "#0078D4", cterm_color = "32",  name = "AzureCli"                   },

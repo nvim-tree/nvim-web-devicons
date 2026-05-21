@@ -22,6 +22,7 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   ["asm"]            = { icon = "", color = "#006D8E", cterm_color = "24",  name = "ASM"                        },
   ["ass"]            = { icon = "󰨖", color = "#805C0A", cterm_color = "94",  name = "Ass"                        },
   ["astro"]          = { icon = "", color = "#AA2F4D", cterm_color = "125", name = "Astro"                      },
+  ["avi"]            = { icon = "", color = "#7E4C10", cterm_color = "94",  name = "AudioVideoInterleave"       },
   ["avif"]           = { icon = "", color = "#6B4D83", cterm_color = "96",  name = "Avif"                       },
   ["awk"]            = { icon = "", color = "#3A4446", cterm_color = "238", name = "Awk"                        },
   ["azcli"]          = { icon = "", color = "#005A9F", cterm_color = "25",  name = "AzureCli"                   },
