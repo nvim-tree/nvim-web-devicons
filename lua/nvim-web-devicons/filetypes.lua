@@ -109,6 +109,7 @@ return {
   ["json"] = "json",
   ["json5"] = "json5",
   ["jsonc"] = "jsonc",
+  ["jsonl"] = "jsonl",
   ["julia"] = "jl",
   ["kotlin"] = "kt",
   ["leex"] = "leex",

@@ -214,6 +214,7 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   ["json"]           = { icon = "", color = "#666620", cterm_color = "58",  name = "Json"                       },
   ["json5"]          = { icon = "", color = "#666620", cterm_color = "58",  name = "Json5"                      },
   ["jsonc"]          = { icon = "", color = "#666620", cterm_color = "58",  name = "Jsonc"                      },
+  ["jsonl"]          = { icon = "", color = "#666620", cterm_color = "58",  name = "Jsonl"                      },
   ["jsx"]            = { icon = "", color = "#158197", cterm_color = "31",  name = "Jsx"                        },
   ["jwmrc"]          = { icon = "", color = "#005A9A", cterm_color = "25",  name = "JWM"                        },
   ["jxl"]            = { icon = "", color = "#6B4D83", cterm_color = "96",  name = "JpegXl"                     },
