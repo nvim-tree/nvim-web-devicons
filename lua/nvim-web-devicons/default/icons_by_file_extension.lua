@@ -214,6 +214,7 @@ return {
   ["json"]           = { icon = "", color = "#CBCB41", cterm_color = "185", name = "Json"                       },
   ["json5"]          = { icon = "", color = "#CBCB41", cterm_color = "185", name = "Json5"                      },
   ["jsonc"]          = { icon = "", color = "#CBCB41", cterm_color = "185", name = "Jsonc"                      },
+  ["jsonl"]          = { icon = "", color = "#CBCB41", cterm_color = "185", name = "Jsonl"                      },
   ["jsx"]            = { icon = "", color = "#20C2E3", cterm_color = "45",  name = "Jsx"                        },
   ["jwmrc"]          = { icon = "", color = "#0078CD", cterm_color = "32",  name = "JWM"                        },
   ["jxl"]            = { icon = "", color = "#A074C4", cterm_color = "140", name = "JpegXl"                     },
