@@ -20,6 +20,7 @@ return {
   ["applescript"]    = { icon = "", color = "#6D8085", cterm_color = "66",  name = "AppleScript"                },
   ["asc"]            = { icon = "󰦝", color = "#576D7F", cterm_color = "242", name = "Asc"                        },
   ["asm"]            = { icon = "", color = "#0091BD", cterm_color = "31",  name = "ASM"                        },
+  ["asmdef"]         = { icon = "󰐱", color = "#407AAB", cterm_color = "67",  name = "Asmdef"                     },
   ["ass"]            = { icon = "󰨖", color = "#FFB713", cterm_color = "214", name = "Ass"                        },
   ["astro"]          = { icon = "", color = "#E23F67", cterm_color = "197", name = "Astro"                      },
   ["avi"]            = { icon = "", color = "#FD971F", cterm_color = "208", name = "AudioVideoInterleave"       },

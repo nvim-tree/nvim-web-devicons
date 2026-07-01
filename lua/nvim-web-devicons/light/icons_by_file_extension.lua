@@ -20,6 +20,7 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   ["applescript"]    = { icon = "", color = "#526064", cterm_color = "59",  name = "AppleScript"                },
   ["asc"]            = { icon = "󰦝", color = "#41525F", cterm_color = "239", name = "Asc"                        },
   ["asm"]            = { icon = "", color = "#006D8E", cterm_color = "24",  name = "ASM"                        },
+  ["asmdef"]         = { icon = "󰐱", color = "#305C80", cterm_color = "24",  name = "Asmdef"                     },
   ["ass"]            = { icon = "󰨖", color = "#805C0A", cterm_color = "94",  name = "Ass"                        },
   ["astro"]          = { icon = "", color = "#AA2F4D", cterm_color = "125", name = "Astro"                      },
   ["avi"]            = { icon = "", color = "#7E4C10", cterm_color = "94",  name = "AudioVideoInterleave"       },
