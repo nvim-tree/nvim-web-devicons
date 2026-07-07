@@ -142,6 +142,15 @@ require'nvim-web-devicons'.setup {
     name = "Log"
   }
  };
+ -- same as `override` but specifically for overrides by pattern
+ -- takes effect when `strict` is true
+ override_by_pattern = {
+  ["^%.env%.[%l]+[.]?[%l]+$"] = {
+    icon = "",
+    color = "#f85e43",
+    name = "SpecificEnvs"  -- env.example, env.local
+  }
+ };
  -- same as `override` but specifically for operating system
  -- takes effect when `strict` is true
  override_by_operating_system = {

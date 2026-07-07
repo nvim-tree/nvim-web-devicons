@@ -9,9 +9,9 @@ local M = {}
 ---@field name iconName
 
 -- NOTE: When adding new icons, remember to add an entry to the `filetypes` table, if applicable.
-local icons, icons_by_filename, icons_by_file_extension, icons_by_operating_system
+local icons, icons_by_filename, icons_by_file_extension, icons_by_pattern, icons_by_operating_system
 local icons_by_desktop_environment, icons_by_window_manager
-local user_icons
+local user_icons, user_patterns_sorted, icons_by_pattern_default
 
 local filetypes = require "nvim-web-devicons.filetypes"
 
@@ -33,6 +33,10 @@ end
 
 function M.get_icons_by_extension()
   return icons_by_file_extension
+end
+
+function M.get_icons_by_pattern()
+  return icons_by_pattern
 end
 
 function M.get_icons_by_operating_system()
@@ -94,6 +98,8 @@ local function refresh_icons()
 
   icons_by_filename = theme.icons_by_filename
   icons_by_file_extension = theme.icons_by_file_extension
+  icons_by_pattern = theme.icons_by_pattern
+  icons_by_pattern_default = theme.icons_by_pattern
   icons_by_operating_system = theme.icons_by_operating_system
   icons_by_desktop_environment = theme.icons_by_desktop_environment
   icons_by_window_manager = theme.icons_by_window_manager
@@ -106,6 +112,7 @@ local function refresh_icons()
     {},
     icons_by_filename,
     icons_by_file_extension,
+    icons_by_pattern,
     icons_by_operating_system,
     icons_by_desktop_environment,
     icons_by_window_manager
@@ -206,6 +213,15 @@ local function get_highlight_ctermfg(icon_data)
   end
 end
 
+---Count regex metas and other non literal characters, return number of literal chars to
+---determine pattern specificity as higher chars = more specific
+---@param pattern string
+---@return integer
+local function count_literal_chars(pattern)
+  local _, count = pattern:gsub("[a-zA-Z0-9_]", "")
+  return count
+end
+
 local function apply_user_icons()
   if type(user_icons) ~= "table" then
     return
@@ -217,6 +233,7 @@ local function apply_user_icons()
 
   local user_filename_icons = user_icons.override_by_filename
   local user_file_ext_icons = user_icons.override_by_extension
+  local user_pattern_icons = user_icons.override_by_pattern
   local user_operating_system_icons = user_icons.override_by_operating_system
   local user_desktop_environment_icons = user_icons.override_by_desktop_environment
   local user_window_manager_icons = user_icons.override_by_window_manager
@@ -232,6 +249,7 @@ local function apply_user_icons()
     user_icons.override or {},
     user_filename_icons or {},
     user_file_ext_icons or {},
+    user_pattern_icons or {},
     user_operating_system_icons or {},
     user_desktop_environment_icons or {},
     user_window_manager_icons or {}
@@ -242,6 +260,7 @@ local function apply_user_icons()
     user_icons.override or {},
     user_filename_icons or {},
     user_file_ext_icons or {},
+    user_pattern_icons or {},
     user_operating_system_icons or {},
     user_desktop_environment_icons or {},
     user_window_manager_icons or {}
@@ -252,6 +271,14 @@ local function apply_user_icons()
   end
   if user_file_ext_icons then
     icons_by_file_extension = vim.tbl_extend("force", icons_by_file_extension, user_file_ext_icons)
+  end
+  if user_pattern_icons then
+    icons_by_pattern = vim.tbl_extend("force", icons_by_pattern, user_pattern_icons)
+    user_patterns_sorted = {}
+    for pattern, icon_data in pairs(user_pattern_icons) do
+      user_patterns_sorted[#user_patterns_sorted + 1] = { pattern, icon_data }
+    end
+    table.sort(user_patterns_sorted, function(a, b) return count_literal_chars(a[1]) > count_literal_chars(b[1]) end)
   end
   if user_operating_system_icons then
     icons_by_operating_system = vim.tbl_extend("force", icons_by_operating_system, user_operating_system_icons)
@@ -320,6 +347,7 @@ function M.setup(opts)
       global_opts.override,
       icons_by_filename,
       icons_by_file_extension,
+      icons_by_pattern_default or icons_by_pattern,
       icons_by_operating_system,
       icons_by_desktop_environment,
       icons_by_window_manager
@@ -359,6 +387,23 @@ local function get_icon_by_extension(name, ext, opts)
   return iterate_multi_dotted_extension(name, icon_table)
 end
 
+local function get_icon_by_pattern(name)
+  if name then
+    if user_patterns_sorted then
+      for _, entry in ipairs(user_patterns_sorted) do
+        if name:match(entry[1]) then
+          return entry[2]
+        end
+      end
+    end
+    for pattern, icon_data in pairs(icons_by_pattern) do
+      if name:match(pattern) then
+        return icon_data
+      end
+    end
+  end
+end
+
 local function get_icon_data(name, ext, opts)
   if type(name) == "string" then
     name = name:lower()
@@ -372,9 +417,17 @@ local function get_icon_data(name, ext, opts)
   local is_strict = if_nil(opts and opts.strict, global_opts.strict)
   local icon_data
   if is_strict then
-    icon_data = icons_by_filename[name] or get_icon_by_extension(name, ext, opts) or (has_default and default_icon)
+    icon_data = icons_by_filename[name] or get_icon_by_extension(name, ext, opts)
   else
-    icon_data = icons[name] or get_icon_by_extension(name, ext, opts) or (has_default and default_icon)
+    icon_data = icons[name] or get_icon_by_extension(name, ext, opts)
+  end
+
+  if not icon_data then
+    icon_data = get_icon_by_pattern(name)
+  end
+
+  if not icon_data and has_default then
+    icon_data = default_icon
   end
 
   return icon_data
