@@ -29,20 +29,11 @@ A `lua` fork of [vim-devicons](https://github.com/ryanoasis/vim-devicons).
 
 ## Installation
 
-```vim
-Plug 'nvim-tree/nvim-web-devicons'
-```
-
-or with [packer.nvim](https://github.com/wbthomason/packer.nvim)
-
+### [vim.pack](https://neovim.io/doc/user/pack.html#vim.pack) - Neovim 0.12+ Native Plugin Manager
 ```lua
-use 'nvim-tree/nvim-web-devicons'
-```
-
-or with [lazy.nvim](https://github.com/folke/lazy.nvim)
-
-```lua
-{ "nvim-tree/nvim-web-devicons", opts = {} },
+vim.pack.add({
+  { src = 'https://github.com/nvim-tree/nvim-web-devicons' }
+})
 ```
 
 [![LuaRocks](https://img.shields.io/luarocks/v/nvim-tree/nvim-web-devicons?logo=lua&color=purple)](https://luarocks.org/modules/nvim-tree/nvim-web-devicons)
