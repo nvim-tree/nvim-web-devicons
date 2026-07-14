@@ -36,8 +36,6 @@ vim.pack.add({
 })
 ```
 
-[![LuaRocks](https://img.shields.io/luarocks/v/nvim-tree/nvim-web-devicons?logo=lua&color=purple)](https://luarocks.org/modules/nvim-tree/nvim-web-devicons)
-
 ## Additional Icons
 
 Additional icons may be added for icons that are present in Nerd Fonts: use the [Cheat Sheet](https://www.nerdfonts.com/cheat-sheet) search for available icons.
