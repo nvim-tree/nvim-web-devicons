@@ -176,6 +176,7 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   ["haml"]           = { icon = "", color = "#2F2F2D", cterm_color = "236", name = "Haml"                       },
   ["hbs"]            = { icon = "", color = "#A04F1D", cterm_color = "130", name = "Hbs"                        },
   ["heex"]           = { icon = "", color = "#6B4D83", cterm_color = "96",  name = "Heex"                       },
+  ["heic"]           = { icon = "", color = "#6B4D83", cterm_color = "96",  name = "HEIC"                       },
   ["hex"]            = { icon = "", color = "#224ABF", cterm_color = "26",  name = "Hexadecimal"                },
   ["hh"]             = { icon = "", color = "#6B4D83", cterm_color = "96",  name = "Hh"                         },
   ["hpp"]            = { icon = "", color = "#6B4D83", cterm_color = "96",  name = "Hpp"                        },

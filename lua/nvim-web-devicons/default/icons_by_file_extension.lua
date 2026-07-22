@@ -176,6 +176,7 @@ return {
   ["haml"]           = { icon = "", color = "#EAEAE1", cterm_color = "255", name = "Haml"                       },
   ["hbs"]            = { icon = "", color = "#F0772B", cterm_color = "202", name = "Hbs"                        },
   ["heex"]           = { icon = "", color = "#A074C4", cterm_color = "140", name = "Heex"                       },
+  ["heic"]           = { icon = "", color = "#A074C4", cterm_color = "140", name = "HEIC"                       },
   ["hex"]            = { icon = "", color = "#2E63FF", cterm_color = "27",  name = "Hexadecimal"                },
   ["hh"]             = { icon = "", color = "#A074C4", cterm_color = "140", name = "Hh"                         },
   ["hpp"]            = { icon = "", color = "#A074C4", cterm_color = "140", name = "Hpp"                        },
