@@ -225,6 +225,7 @@ return {
   ["webm"] = "webm",
   ["webp"] = "webp",
   ["webpack"] = "webpack",
+  ["wgsl"] = "wgsl",
   ["xcplayground"] = "xcplayground",
   ["xls"] = "xls",
   ["xlsx"] = "xlsx",

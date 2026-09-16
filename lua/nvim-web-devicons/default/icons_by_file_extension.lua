@@ -464,6 +464,7 @@ return {
   ["webmanifest"]    = { icon = "", color = "#F1E05A", cterm_color = "185", name = "Webmanifest"                },
   ["webp"]           = { icon = "", color = "#A074C4", cterm_color = "140", name = "Webp"                       },
   ["webpack"]        = { icon = "󰜫", color = "#519ABA", cterm_color = "74",  name = "Webpack"                    },
+  ["wgsl"]           = { icon = "", color = "#005A9C", cterm_color = "25",  name = "WebGPUShadingLanguage"      },
   ["wma"]            = { icon = "", color = "#00AFFF", cterm_color = "39",  name = "WindowsMediaAudio"          },
   ["wmv"]            = { icon = "", color = "#FD971F", cterm_color = "208", name = "WindowsMediaVideo"          },
   ["woff"]           = { icon = "", color = "#ECECEC", cterm_color = "255", name = "WebOpenFontFormat"          },

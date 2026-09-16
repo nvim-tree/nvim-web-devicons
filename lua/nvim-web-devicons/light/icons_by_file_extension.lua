@@ -464,6 +464,7 @@ return { -- this file is generated from lua/nvim-web-devicons/default/icons_by_f
   ["webmanifest"]    = { icon = "", color = "#504B1E", cterm_color = "58",  name = "Webmanifest"                },
   ["webp"]           = { icon = "", color = "#6B4D83", cterm_color = "96",  name = "Webp"                       },
   ["webpack"]        = { icon = "󰜫", color = "#36677C", cterm_color = "24",  name = "Webpack"                    },
+  ["wgsl"]           = { icon = "", color = "#005A9C", cterm_color = "25",  name = "WebGPUShadingLanguage"      },
   ["wma"]            = { icon = "", color = "#0075AA", cterm_color = "24",  name = "WindowsMediaAudio"          },
   ["wmv"]            = { icon = "", color = "#7E4C10", cterm_color = "94",  name = "WindowsMediaVideo"          },
   ["woff"]           = { icon = "", color = "#2F2F2F", cterm_color = "236", name = "WebOpenFontFormat"          },
