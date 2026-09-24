@@ -21,6 +21,7 @@ _G.ICON_FILES = {
   "icons_by_file_extension.lua",
   "icons_by_filename.lua",
   "icons_by_operating_system.lua",
+  "icons_by_pattern.lua",
   "icons_by_window_manager.lua",
 }
 
