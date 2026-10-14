@@ -70,13 +70,15 @@ Icons must be added to `/default/` files only. The `/light/` files are automatic
 
 1. `icons_by_filename.lua`
 2. `icons_by_file_extension.lua`
-3. `icons_by_operating_system.lua`
-4. `icons_by_desktop_environment.lua`
-5. `icons_by_window_manager.lua`
+3. `icons_by_pattern.lua`
+4. `icons_by_operating_system.lua`
+5. `icons_by_desktop_environment.lua`
+6. `icons_by_window_manager.lua`
 
 Add the icon to table in file **1.** if the icon is for a file that is always named that way, for example `.gitconfig`.
 Add the icon to table in file **2.** if the icon is for all files with an extension, for example `vim`.
-Add the icon to table in files **3.**, **4.** and **5.** if the icon is from an OS, DE or WM.
+Add the icon to table in file **3.** if the icon is for all files with an pattern, for example `^%.env%.[%l]+[.]?[%l]+$`.
+Add the icon to table in files **4.**, **5.** and **6.** if the icon is from an OS, DE or WM.
 
 Each icon must have the following structure (this is an example):
 
