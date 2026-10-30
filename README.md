@@ -105,6 +105,10 @@ require'nvim-web-devicons'.setup {
  -- prevents cases when file doesn't have any extension but still gets some icon
  -- because its name happened to match some extension (default to false)
  strict = true;
+ -- globally enable matching by filename prefix: when neither the filename nor the
+ -- extension matches, the part before the first dot is looked up by filename,
+ -- e.g. `Dockerfile.dev` gets the `Dockerfile` icon (default to false)
+ prefix = true;
  -- set the light or dark variant manually, instead of relying on `background`
  -- (default to nil)
  variant = "light|dark";
@@ -159,6 +163,9 @@ The optional `options` argument can used to change how the plugin works the keys
 function will return a default if there is no matching icon. If the strict key is set
 to true this function will lookup icon specifically by filename, and if not found then
 specifically by extension, and fallback to default icon if default key is set to true.
+If the prefix key is set to true and neither the name nor the extension matches, the part
+of the name before the first dot is looked up by filename e.g. `Dockerfile.dev` uses the
+`Dockerfile` icon.
 e.g.
 
 ```lua

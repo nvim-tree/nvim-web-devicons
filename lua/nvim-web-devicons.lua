@@ -50,6 +50,7 @@ end
 local global_opts = {
   override = {},
   strict = false,
+  prefix = false,
   default = false,
   color_icons = true,
   variant = nil,
@@ -290,6 +291,10 @@ function M.setup(opts)
     global_opts.strict = true
   end
 
+  if user_icons.prefix then
+    global_opts.prefix = true
+  end
+
   global_opts.color_icons = if_nil(user_icons.color_icons, global_opts.color_icons)
 
   if user_icons.variant == "light" or user_icons.variant == "dark" then
@@ -359,6 +364,14 @@ local function get_icon_by_extension(name, ext, opts)
   return iterate_multi_dotted_extension(name, icon_table)
 end
 
+local function get_icon_by_prefix(name, opts)
+  if not if_nil(opts and opts.prefix, global_opts.prefix) or type(name) ~= "string" then
+    return nil
+  end
+  local prefix = name:match "^([^.]+)%.."
+  return prefix and icons_by_filename[prefix]
+end
+
 local function get_icon_data(name, ext, opts)
   if type(name) == "string" then
     name = name:lower()
@@ -372,9 +385,15 @@ local function get_icon_data(name, ext, opts)
   local is_strict = if_nil(opts and opts.strict, global_opts.strict)
   local icon_data
   if is_strict then
-    icon_data = icons_by_filename[name] or get_icon_by_extension(name, ext, opts) or (has_default and default_icon)
+    icon_data = icons_by_filename[name]
+      or get_icon_by_extension(name, ext, opts)
+      or get_icon_by_prefix(name, opts)
+      or (has_default and default_icon)
   else
-    icon_data = icons[name] or get_icon_by_extension(name, ext, opts) or (has_default and default_icon)
+    icon_data = icons[name]
+      or get_icon_by_extension(name, ext, opts)
+      or get_icon_by_prefix(name, opts)
+      or (has_default and default_icon)
   end
 
   return icon_data
